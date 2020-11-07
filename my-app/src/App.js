@@ -10,7 +10,7 @@ export default class App extends React.Component{
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and bing bing bong bong.
+            Edit <code>src/App.js</code> and this is the development of RFA Website Design
           </p>
           <a
             className="App-link"
