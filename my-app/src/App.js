@@ -10,15 +10,8 @@ export default class App extends React.Component{
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
-            bingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
+            bingbongbingbongbingbongbingbongbing bong bing
+            bongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
 
             http://DevSandboxx.github.io/RFA_website_design
 
