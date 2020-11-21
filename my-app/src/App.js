@@ -2,36 +2,36 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, NavDropdown, FormControl, Button,
-Form } from 'react-bootstrap';
+import {Container, Row, Image, Col} from 'react-bootstrap';
+import navbar from "./images/navbar.png";
+import homePageImage from "./images/homePageImage.png";
+
 
 export default class App extends React.Component{
 
   render() {
     return (
-      <div className="App">
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Navbar.Collapse>
-        </Navbar>
-      </div>
+      <Container fluid style = {{backgroundColor: 'yellow'}}>
+        <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
+          <Container>
+              <header>
+                <nav>
+                  fdfsfsdf
+                </nav>
+              </header>
+          </Container>
+        </Row>
+        <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
+          <Container>
+              <Image src= {navbar} alt = "navbar" fluid />
+          </Container>
+        </Row>
+        <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
+          <Container>
+              <Image src= {homePageImage} alt = "homePageImage" fluid />
+          </Container>
+        </Row>
+      </Container>
     );
   }
 }
