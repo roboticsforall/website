@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Image, Col,} from 'react-bootstrap';
 import navbar from "./images/navbar.png";
 import homePageImage from "./images/homePageImage.png";
-import Card from "./components/Card.js";
+import RFA_Card from "./components/RFA_Card.js";
 
 export default class App extends React.Component{
 
@@ -30,11 +30,13 @@ export default class App extends React.Component{
               <Image src= {homePageImage} alt = "homePageImage" fluid />
           </Container>
         </Row>
-        <Row>
-          <Col>
-            <Card></Card>
-          </Col>
-        </Row>
+        <Container>
+          <Row>
+              <RFA_Card title = "Robotics For All" content = "fsfsdfsdsdjsnsjf"></RFA_Card>
+              <RFA_Card title = "Robotics For All" content = "fsfsdfsdsdjsnsjf"></RFA_Card>
+              <RFA_Card title = "Robotics For All" content = "fsfsdfsdsdjsnsjf"></RFA_Card>
+          </Row>
+        </Container>
       </Container>
     );
   }
