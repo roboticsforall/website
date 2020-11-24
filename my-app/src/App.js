@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Image, Col} from 'react-bootstrap';
+import {Container, Row, Image, Col,} from 'react-bootstrap';
 import navbar from "./images/navbar.png";
 import homePageImage from "./images/homePageImage.png";
-
+import Card from "./components/Card.js";
 
 export default class App extends React.Component{
 
@@ -30,6 +29,11 @@ export default class App extends React.Component{
           <Container>
               <Image src= {homePageImage} alt = "homePageImage" fluid />
           </Container>
+        </Row>
+        <Row>
+          <Col>
+            <Card></Card>
+          </Col>
         </Row>
       </Container>
     );
