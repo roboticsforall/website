@@ -5,6 +5,7 @@ import {Container, Row, Image, Col,} from 'react-bootstrap';
 import navbar from "./images/navbar.png";
 import homePageImage from "./images/homePageImage.png";
 import RFA_Card from "./components/RFA_Card.js";
+import RFA_Navbar from "./components/RFA_Navbar.js"
 
 export default class App extends React.Component{
 
@@ -14,15 +15,8 @@ export default class App extends React.Component{
         <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
           <Container>
               <header>
-                <nav>
-                  fdfsfsdf
-                </nav>
+                  <RFA_Navbar></RFA_Navbar>
               </header>
-          </Container>
-        </Row>
-        <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
-          <Container>
-              <Image src= {navbar} alt = "navbar" fluid />
           </Container>
         </Row>
         <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
@@ -35,6 +29,9 @@ export default class App extends React.Component{
               <RFA_Card title = "Robotics For All" content = "fsfsdfsdsdjsnsjf"></RFA_Card>
               <RFA_Card title = "Robotics For All" content = "fsfsdfsdsdjsnsjf"></RFA_Card>
               <RFA_Card title = "Robotics For All" content = "fsfsdfsdsdjsnsjf"></RFA_Card>
+          </Row>
+          <Row>
+            The hacker is in 
           </Row>
         </Container>
       </Container>
