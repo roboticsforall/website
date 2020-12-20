@@ -1,6 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Container, Row, Col, CardDeck} from 'react-bootstrap';
+import RFANavbar from "./components/RFANavbar";
+import RFACard from "./components/RFACard";
 
 export default class App extends React.Component{
 
