@@ -11,7 +11,6 @@ export default class App extends React.Component{
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             bingbongbingbongbingbongbingbongbing bong bing
-            bongbingbongbingbongbingbongbingbongbingbongbingbongbingbong
 
             http://DevSandboxx.github.io/RFA_website_design
 
