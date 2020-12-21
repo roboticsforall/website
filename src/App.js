@@ -18,7 +18,9 @@ export default class App extends React.Component{
               </header>
           </Container>
         </Row>
-        <Container>
+        <RFAAffOrgs/>
+
+        {/* <Container>
           <Row>
             {
               ["one", "two", "three"].map(element => (
@@ -39,7 +41,7 @@ export default class App extends React.Component{
               <RFACard />
             </CardDeck>
           </Row>
-        </Container>
+        </Container> */}
       </Container>
     );
   }
