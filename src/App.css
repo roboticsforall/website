@@ -11,7 +11,7 @@ html, body {
 
 .page-header {
   font-family: "mazzard-h-bold";
-  font-size: 5vmax;
+  font-size: 5vh;
   color: #FFCC00;
   transform: rotate(358deg);
   text-align: center;
@@ -31,7 +31,7 @@ h2 {
 
 .page-header-description {
   font-family: 'Be Vietnam', sans-serif;
-  font-size: 1.5vmax;
+  font-size: 1.5vw;
   color: black;
 }
 .header-blobs{
