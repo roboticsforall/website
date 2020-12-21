@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, NavDropdown, Nav} from "react-bootstrap";
+import {Container, Navbar, NavDropdown, Nav} from "react-bootstrap";
 
 export default function RFANavbar(props){
     return (
