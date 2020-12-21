@@ -9,7 +9,7 @@ export default class App extends React.Component{
 
   render() {
     return (
-      <Container className = "border" fluid>
+      <Container fluid>
         <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
           <Container>
               <header>
