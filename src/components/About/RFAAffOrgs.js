@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Image, Jumbotron} from "react-bootstrap";
+import {Container, Row} from "react-bootstrap";
 // import {headerBlobYellow} from "../../media/HeaderBlobs/yellow.png";
 
 export default function RFAAffOrgs(props){
