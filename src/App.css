@@ -32,12 +32,12 @@ h2 {
 @media only screen and (max-width: 600px) {
   .page-header-description {
     font-family: 'Be Vietnam', sans-serif;
-    font-size: 8px;
+    font-size: 10px;
     color: black;
   }
   .page-header {
     font-family: "mazzard-h-bold";
-    font-size: 15px;
+    font-size: 27px;
     color: #FFCC00;
     transform: rotate(358deg);
     text-align: center;
