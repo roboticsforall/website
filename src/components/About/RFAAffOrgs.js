@@ -6,7 +6,7 @@ export default function RFAAffOrgs(props){
     return (
         <Row className = "header-blobs">
           <Container className = "d-flex align-self-end">
-            <Row className = "mb-3 w-100 justify-content-center">
+            <Row className = "m-3 w-100 justify-content-center">
               <h1 className = "page-header">Check out our Affiliate Organizations!</h1>
               <p className = "page-header-description">Learn more about our affiliate organizations started from members of Robotics for All!</p>
             </Row>
