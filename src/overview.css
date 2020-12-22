@@ -40,3 +40,31 @@ h2 {
   height: 40vw;
   width: 100vw;
 }
+
+
+h1 {
+  font-family:'mazzard-h-bold';
+  font-size: 59px;
+  color: #fa8d1f;
+  transform: rotate(358deg);
+ }
+
+h2 {
+  font-family: 'Oswald';
+  font-size: 75px;
+}
+
+.vol_intern_positions {
+  color: #fa8d1f
+}
+.teach_positions {
+  color: #fcaf62;
+}
+
+p { 
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
