@@ -1,11 +1,11 @@
 import React from 'react';
 import './overview.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Col, CardDeck, Image} from 'react-bootstrap';
+import {Container, Row, Image} from 'react-bootstrap'; //Col, CardDeck,
 import RFANavbar from "./components/RFANavbar";
 import RFACard from "./components/RFACard";
-import RFAAffOrgs from "./components/About/RFAAffOrgs";
-import headerBlobYellow from "./media/HeaderBlobs/yellow.png";
+//import RFAAffOrgs from "./components/About/RFAAffOrgs";
+//import headerBlobYellow from "./media/HeaderBlobs/yellow.png";
 
 
 export default class App extends React.Component {
@@ -15,7 +15,7 @@ export default class App extends React.Component {
         <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
           <Container>
               <header>
-                  <RFA_Navbar></RFA_Navbar>
+                  <RFANavbar></RFANavbar>
               </header>
           </Container>
         </Row>
@@ -29,8 +29,8 @@ export default class App extends React.Component {
           <Row>
               <h2 class = "vol_intern_positions">VOLUNTEER  POSTIONS</h2>
               <p>Robotics for All is run through the support of volunteers like you! Apply today to become a volunteer teacher or business development intern. Volunteer with us virtually from anywhere in the world! Descriptions of our positions are below:</p>
-              <RFA_Card title = "Robotics For All" content = "ONLINE TEACHER"> <Image src={logo} alt = "logo"></Image></RFA_Card>
-              <RFA_Card title = "Robotics For All" content = "BUSINESS DEVELOPMENT INTERN"></RFA_Card>
+              <RFACard title = "Robotics For All" content = "ONLINE TEACHER"> <Image src="logo.svg" alt = "logo"></Image></RFACard>
+              <RFACard title = "Robotics For All" content = "BUSINESS DEVELOPMENT INTERN"></RFACard>
           </Row>
           </Container>
           <Container fluid style = {{backgroundColor: 'white'}}>
@@ -39,8 +39,8 @@ export default class App extends React.Component {
             <p>Becoming a teacher is an amazing opportunity open to all volunteers. Join us and teach K-8th grade students coding, CAD, robotics, and so much more.</p>
             <break></break>
             <p>View our teacher positions:</p>
-            <RFA_Card title = "Robotics For All" content = "Lead Instructor"></RFA_Card>
-            <RFA_Card title = "Robotics For All" content = "Teacher Assistant Instructor"></RFA_Card>
+            <RFACard title = "Robotics For All" content = "Lead Instructor"></RFACard>
+            <RFACard title = "Robotics For All" content = "Teacher Assistant Instructor"></RFACard>
           </Row>
         </Container>
         <Container>
@@ -49,8 +49,8 @@ export default class App extends React.Component {
             <p>Become a business development intern and help with curriculum, publicity, grant writing and much more. Learn valuable skills in business and STEM and meet volunteers from all over the world.</p>
             <break></break>
             <p>View our business development intern positions:</p>
-            <RFA_Card title = "Robotics For All" content = "General Business Development Intern"></RFA_Card>
-            <RFA_Card title = "Robotics For All" content = "Publicity Business Development Intern"></RFA_Card>
+            <RFACard title = "Robotics For All" content = "General Business Development Intern"></RFACard>
+            <RFACard title = "Robotics For All" content = "Publicity Business Development Intern"></RFACard>
           </Row>
         </Container>
         
