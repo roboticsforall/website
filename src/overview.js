@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+import './overview.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Col, CardDeck, Image} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
 import RFACard from "./components/RFACard";
 import RFAAffOrgs from "./components/About/RFAAffOrgs";
 import headerBlobYellow from "./media/HeaderBlobs/yellow.png";
-export default class App extends React.Component{
+
 
 export default class App extends React.Component {
   render() {
@@ -49,8 +49,8 @@ export default class App extends React.Component {
             <p>Become a business development intern and help with curriculum, publicity, grant writing and much more. Learn valuable skills in business and STEM and meet volunteers from all over the world.</p>
             <break></break>
             <p>View our business development intern positions:</p>
-            <RFA_Card title = "Robotics For All" content = "General Business Development Intern"</RFA_Card>
-            <RFA_Card title = "Robotics For All" content = "Publicity Business Development Intern"</RFA_Card>
+            <RFA_Card title = "Robotics For All" content = "General Business Development Intern"></RFA_Card>
+            <RFA_Card title = "Robotics For All" content = "Publicity Business Development Intern"></RFA_Card>
           </Row>
         </Container>
         
