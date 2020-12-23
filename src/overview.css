@@ -18,10 +18,14 @@ h2 {
 }
 
 .vol_intern_positions {
-  color: #fa8d1f
+  color: #fa8d1f;
+  font-size:75px;
+  text-align: center;
 }
 .teach_positions {
   color: #fcaf62;
+  font-size:75px;
+  text-align: center;
 }
 
 .page-header-description {
@@ -61,14 +65,29 @@ p {
   top: 70%;
 }
 
-.circle{
-  height: 250px;
-  width: 250px;
+.circle1{
+  height: 300px;
+  width: 300px;
+  background-color:#fcaf62;
+  border-radius: 50%;
+}
+
+.circle2{
+  height: 300px;
+  width: 300px;
+  background-color:#fcaf62;
+  border-radius: 50%;
+}
+
+.circle3{
+  height: 350px;
+  width: 350px;
   background-color:#fcaf62;
   border-radius: 50%;
 }
 
 .circle-text{
+  vertical-align: middle;
   text-align: center;
   bottom:50%;
 }

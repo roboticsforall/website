@@ -1,7 +1,7 @@
 import React from 'react';
 import './overview.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Image} from 'react-bootstrap'; //Col, CardDeck,
+import {Container, Row, Image, Col} from 'react-bootstrap'; //Col, CardDeck,
 import RFANavbar from "./components/RFANavbar";
 import RFACard from "./components/RFACard";
 //import RFAAffOrgs from "./components/About/RFAAffOrgs";
@@ -35,17 +35,20 @@ export default class App extends React.Component {
         <Row>
           <Container>
             <Row>
-              <div style={{align:"center"}}>
-                <div class="circle">
+              <Col>
+                <div class="circle1">
                   <div class="circle-text">
                     <h3 class = "stats_title" style={{fontSize:33}}>Work With:</h3>
                     <div class="stats_numbers">
                     <CountUp end={12}></CountUp>
                     </div>
-                    <h4 class = "stats_subtext">Levels of Curriculum</h4>
+                    <h4 class = "stats_subtext">Levels of</h4>
+                    <h4 class = "stats_subtext">Curriculum</h4>
                   </div>
                 </div>
-                <div class="circle">
+              </Col>
+              <Col>
+                <div class="circle2">
                   <div class="circle-text">
                     <h3 class = "stats_title">Join our:</h3>
                     <div class="stats_numbers">
@@ -54,7 +57,9 @@ export default class App extends React.Component {
                     <h4 class = "stats_subtext">Active Volunteers</h4>
                   </div>
                 </div>
-                <div class="circle">
+              </Col>
+              <Col>
+                <div class="circle3">
                   <div class="circle-text">
                     <h3 class = "stats_title">Support our:</h3>
                     <div class="stats_numbers">
@@ -63,36 +68,38 @@ export default class App extends React.Component {
                     <h4 class = "stats_subtext" style = {{fontSize:25}}>Students Taught</h4>
                   </div>
                 </div>
-              </div>
+              </Col>
             </Row>
           </Container>
         </Row>
         <Row>
-          <Container fluid style = {{backgroundColor: "#ffcb00"}}>
+          <Container fluid style = {{backgroundColor: " #ffefb1"}}>
             <Row>
               <Container>
                 <h2 class = "vol_intern_positions">VOLUNTEER  POSTIONS</h2>
                 <p>Robotics for All is run through the support of volunteers like you! Apply today to become a volunteer teacher or business development intern. Volunteer with us virtually from anywhere in the world! Descriptions of our positions are below:</p>
-                <RFACard title = {"ONLINE TEACHER"}> <Image src="logo.svg" alt = "logo"></Image></RFACard>
+                <RFACard title = {"ONLINE TEACHER"}> <Image src="teacher toby.webp" alt = ""></Image></RFACard>
                 <RFACard title = {"BUSINESS DEVELOPMENT INTERN"}></RFACard>
               </Container>
           </Row>
         </Container>
         </Row>
         <Row>
-          <Container>
+          <Container fluid>
             <Row>
-              <h2 class = "teach_positions">TEACHER POSITIONS</h2>
-              <p>Becoming a teacher is an amazing opportunity open to all volunteers. Join us and teach K-8th grade students coding, CAD, robotics, and so much more.</p>
-              <break></break>
-              <p>View our teacher positions:</p>
-              <RFACard title = {"Lead Instructor"}></RFACard>
-              <RFACard title = {"Teacher Assistant Instructor"}></RFACard>
+              <Container>
+                <h2 class = "teach_positions">TEACHER POSITIONS</h2>
+                <p>Becoming a teacher is an amazing opportunity open to all volunteers. Join us and teach K-8th grade students coding, CAD, robotics, and so much more.</p>
+                <break></break>
+                <p>View our teacher positions:</p>
+                <RFACard title = {"Lead Instructor"}></RFACard>
+                <RFACard title = {"Teacher Assistant Instructor"}></RFACard>
+              </Container>
           </Row>
         </Container>
         </Row>
         <Row>
-        <Container fluid style = {{backgroundColor: "#ffcb00"}}>
+        <Container fluid style = {{backgroundColor: "#ffefb1"}}>
           <Row>
             <Container>
               <h2 class = "vol_intern_positions">BUSINESS INTERN POSITIONS</h2>
