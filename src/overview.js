@@ -20,8 +20,8 @@ export default class App extends React.Component {
           </Container>
         </Row>
         <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
-          <Container fluid style = {{backgroundColor: 'white'}}>
-              <p>Volunteer with Robotics for All</p>
+          <Container class="header-blobs" fluid style = {{backgroundColor: 'white'}}>
+              <h1>Volunteer with Robotics for All</h1>
               <p>Volunteer with us to teach or develop your skills as a business development intern!</p>
           </Container>
         </Row>
@@ -32,8 +32,8 @@ export default class App extends React.Component {
               <RFACard title = {"ONLINE TEACHER"}> <Image src="logo.svg" alt = "logo"></Image></RFACard>
               <RFACard title = {"BUSINESS DEVELOPMENT INTERN"}></RFACard>
           </Row>
-          </Container>
-          <Container fluid style = {{backgroundColor: 'white'}}>
+        </Container>
+        <Container fluid style = {{backgroundColor: 'white'}}>
           <Row>
             <h2 class = "teach_positions">TEACHER POSITIONS</h2>
             <p>Becoming a teacher is an amazing opportunity open to all volunteers. Join us and teach K-8th grade students coding, CAD, robotics, and so much more.</p>
