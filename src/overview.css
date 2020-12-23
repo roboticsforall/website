@@ -7,15 +7,10 @@
 
 html, body {
   height: 100%;
-}
-
-.page-header {
-  font-family: "mazzard-h-bold";
-  font-size: 5vmax;
-  color: #FFCC00;
-  transform: rotate(358deg);
   text-align: center;
- }
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 h2 {
   font-family: 'Oswald';
@@ -44,9 +39,9 @@ h2 {
 
 h1 {
   font-family:'mazzard-h-bold';
-  font-size: 59px;
+  font-size: 2vmax;
   color: #fa8d1f;
-  transform: rotate(358deg);
+  transform: rotate(2deg);
  }
 
 h2 {
@@ -54,15 +49,40 @@ h2 {
   font-size: 75px;
 }
 
-.vol_intern_positions {
-  color: #fa8d1f
-}
-.teach_positions {
-  color: #fcaf62;
-}
-
 p { 
   font-family: 'Be Vietnam', sans-serif;
   font-size: 20px;
   color: black;
+}
+
+.header-text{
+  position: relative;
+  text-align: center;
+  top: 70%;
+}
+
+.circle{
+  height: 250px;
+  width: 250px;
+  background-color:#fcaf62;
+  border-radius: 50%;
+}
+
+.circle-text{
+  text-align: center;
+  bottom:50%;
+}
+.stats_subtext{
+  font-family:'Be Vietnam';
+  font-size:20px;
+}
+
+.stats_title{
+  font-family:'mazzard-h-bold';
+  font-size: 35px;
+}
+.stats_numbers{
+  font-family:'mazzard-h-bold';
+  font-size:100px;
+  color:black;
 }
