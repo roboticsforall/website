@@ -70,6 +70,7 @@ p {
   width: 300px;
   background-color:#fcaf62;
   border-radius: 50%;
+  padding-top: 70px;
 }
 
 .circle2{
@@ -77,6 +78,7 @@ p {
   width: 300px;
   background-color:#fcaf62;
   border-radius: 50%;
+  padding-top: 70px;
 }
 
 .circle3{
@@ -84,24 +86,27 @@ p {
   width: 350px;
   background-color:#fcaf62;
   border-radius: 50%;
+  padding-top: 100px;
 }
 
 .circle-text{
-  vertical-align: middle;
+  vertical-align: baseline;
   text-align: center;
-  bottom:50%;
 }
 .stats_subtext{
   font-family:'Be Vietnam';
   font-size:20px;
+  line-height: 88%;
 }
 
 .stats_title{
   font-family:'mazzard-h-bold';
   font-size: 35px;
+  line-height: 88%;
 }
 .stats_numbers{
   font-family:'mazzard-h-bold';
   font-size:100px;
   color:black;
+  line-height: 88%;
 }
