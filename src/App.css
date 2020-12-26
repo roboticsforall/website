@@ -4,6 +4,12 @@
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
 }
+@font-face{
+  font-family: "BeVietnam-Medium";
+  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
+}
 
 html, body {
   height: 100%;
@@ -30,17 +36,24 @@ h2 {
 
 .page-header-description {
   font-family: 'Be Vietnam', sans-serif;
-  font-size: 10px;
+  font-weight: 600;
   color: black;
-  text-align: center;
 }
 .page-header {
   font-family: "mazzard-h-extrabold";
-  font-size: 27px;
-  color: #FFCC00;
   transform: rotate(358deg);
-  text-align: center;
 }
+
+.afforgs-header{
+  font-family: "mazzard-h-extrabold";
+}
+
+
+.afforgs-card-text{
+  font-family: 'BeVietnam-Medium', sans-serif;
+  font-size: large;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {
