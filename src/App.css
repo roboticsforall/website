@@ -13,6 +13,7 @@
 
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -48,19 +49,26 @@ h2 {
   font-family: "mazzard-h-extrabold";
 }
 
-
 .afforgs-card-text{
   font-family: 'BeVietnam-Medium', sans-serif;
   font-size: large;
 }
 
+.aff-orgs-logo-size {
+  width: 20vh;
+}
+
+.w-60 {
+  width: 60%
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {
-    font-size: 10px;
+    font-size: 15px;
   }
   .header-size {
-    font-size: 27px;
+    font-size: 30px;
   }
 }
 
