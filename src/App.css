@@ -10,6 +10,12 @@
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
 }
+@font-face{
+  font-family: "BeVietnam-ExtraBold";
+  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
+}
 
 html, body {
   height: 100%;
@@ -26,6 +32,19 @@ h2 {
 }
 .teach_positions {
   color: #fcaf62;
+}
+
+.aff-org-card-link {
+  font-family: 'BeVietnam-ExtraBold', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  transition: 0.2s;
+}
+
+.aff-org-card-link:hover{
+  transition: 0.2s;
+  letter-spacing: 0.25em;
+  text-decoration: none;
 }
 
 .header-blobs{
@@ -55,7 +74,7 @@ h2 {
 }
 
 .aff-orgs-logo-size {
-  height: 25vh;
+  height: 20vh;
 }
 
 .w-60 {
