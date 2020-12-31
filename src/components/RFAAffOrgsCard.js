@@ -26,7 +26,7 @@ export default class RFAAffOrgsCard extends React.Component{
     render () {
     return (
         <Col>
-            {(window.innerWidth > 768) && (<h1 style = {{color: this.props.color}} className = "border header-size afforgs-header">{this.props.affOrgName}</h1>)}            
+            {(window.innerWidth >= 768) && (<h1 style = {{color: this.props.color}} className = "border header-size afforgs-header">{this.props.affOrgName}</h1>)}            
             <Row style = {{backgroundColor: (this.props.color + "80"), borderRadius: 15}} className = "justify-content-center"> 
                 {(window.innerWidth >= 768) ? (
                     <Col md = {3} className = "p-3 border d-flex align-items-center justify-content-center">
