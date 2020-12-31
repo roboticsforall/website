@@ -37,24 +37,24 @@ export default class RFAAffOrgsCard extends React.Component{
     return (
         <Col>
             <br/><br/>
-            {(window.innerWidth >= 768) && (<Col><h1 style = {{color: this.props.mainColor}} className = "ml-3 border header-size afforgs-header">{this.props.affOrgName}</h1></Col>)}            
-            <Row className = "justify-content-center"> 
+            {(window.innerWidth >= 768) && (<h1 style = {{color: this.props.mainColor}} className = "border header-size afforgs-header">{this.props.affOrgName}</h1>)}            
+            <Row style = {{backgroundColor: (this.props.mainColor + "80"), borderRadius: 15}}className = "justify-content-center">
                 {(window.innerWidth >= 768) ? (
-                    <Col md = {3} style = {{...borderRadiusLeft, backgroundColor: (this.props.mainColor + "80")}} className = "p-3 border d-flex align-items-center justify-content-center">
+                    <Col md = {3} className = "p-3 border d-flex align-items-center justify-content-center">
                         <Image className = "aff-orgs-logo-size" src = {MFALogo}/>
                     </Col>
                 ) : (
-                    <Col md = {3} style = {{...borderRadiusLeft, backgroundColor: (this.props.mainColor + "80")}}>
+                    <Col md = {3}>
                         <Row className = "p-3 d-flex justify-content-around align-items-center border">
                             <Image className = "aff-orgs-logo-size" src = {MFALogo}/>
                             <h1 style = {{color: this.props.mainColor}} className = "border w-60 text-center header-size afforgs-header">{this.props.affOrgName}</h1>
                         </Row>
                     </Col>
                 )}
-                <Col md = {4} style = {{backgroundColor: (this.props.mainColor + "80")}}  className = "p-3 border d-flex align-items-center justify-content-center">
+                <Col md = {4} className = "p-3 border d-flex align-items-center justify-content-center">
                     <Image className = "aff-orgs-logo-size" src = {MFALogo} />
                 </Col>
-                <Col md = {4} style = {{...borderRadiusRight, backgroundColor: (this.props.mainColor + "80")}}  className = "p-3 border d-flex align-items-center">
+                <Col md = {4} className = "p-3 border d-flex align-items-center">
                     <Container>
                         <Row><p className = "afforgs-card-text">{this.props.affOrgsDescription}</p></Row>
                         <Row className = "justify-content-center"><a style = {{color: this.props.linkColor}} className = "text-center aff-org-card-link" href = "#">VISIT {this.props.orgAbrv}</a></Row>
