@@ -15,8 +15,11 @@ export default function RFAAffOrgs(props){
             </div>
           </Row>
           <Container>
+            <br/><br/>
             <RFAAffOrgsCard linkColor = {"#c06204"} orgAbrv = {"TFA"} mainColor = {"#fa8d1f"} affOrgName = {"Tutoring For All"} affOrgsDescription = {"Tutoring for All is a branch of the non-profit organization Robotics for All. Our goal is to provide free, quality tutoring services to primarily low income and disadvantaged students."}/>
+            <br/><br/>
             <RFAAffOrgsCard linkColor = {"#248f47"} orgAbrv = {"MFA"} mainColor = {"#33cc66"} affOrgName = {"Mentoring For All"} affOrgsDescription = {"Mentoring for All is a branch of the non-profit organization Robotics for All with the goal of providing guidance on the path towards future success for underserved high school students."}/>
+            <br/><br/>
             <RFAAffOrgsCard linkColor = {"#006bd6"} orgAbrv = {"CFC"} mainColor = {"#3399ff"} affOrgName = {"Crafts For Charity"} affOrgsDescription = {"Crafts for Charity is a student-led nonprofit providing classes and opportunities for everyone to give back to their communities through crafting! We help donate handmade goods to charities for causes like homelessness."}/>
           </Container>
         </div>
