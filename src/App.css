@@ -40,9 +40,9 @@ h2 {
   letter-spacing: 0.1em;
   transition: 0.2s;
 }
-a:focus{
+/* a:focus{
   text-decoration: none;
-}
+} */
 
 .header-blobs{
   background-image: url("media/HeaderBlobs/Blob-RFA 4.png");
@@ -117,7 +117,7 @@ a:focus{
     font-size: 20px;
   }
   .header-size {
-    font-size: 55px;
+    font-size: 58px;
   }
   .aff-org-card-link:hover{
     transition: 0.2s;
@@ -131,6 +131,6 @@ a:focus{
     font-size: 20px;
   }
   .header-size {
-    font-size: 60px;
+    font-size: 63px;
   }
 }
