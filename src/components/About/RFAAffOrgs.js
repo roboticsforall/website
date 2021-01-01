@@ -6,7 +6,7 @@ import RFAAffOrgsCard from "../RFAAffOrgsCard";
 export default function RFAAffOrgs(props){
     return (
         <div>
-          <Row className = "header-blobs">
+          <Row className = "pb-5 header-blobs">
             <div className = "d-flex justify-content-center align-self-end">
               <Row className = "m-5 justify-content-center">
                 <h1 style = {{color: "#FFCC00"}} className = "w-70 page-header header-size text-center">Check out our Affiliate Organizations!</h1>

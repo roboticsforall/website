@@ -36,7 +36,7 @@ export default class RFAAffOrgsCard extends React.Component{
 
     return (
         <Row className = "justify-content-center">
-            <Col className = "border" md = {10}>
+            <Col className = "border" md = {11}>
                 {(window.innerWidth >= 768) && (<Row><h1 style = {{color: this.props.mainColor}} className = "border header-size afforgs-header">{this.props.affOrgName}</h1></Row>)}            
                 <Row style = {{backgroundColor: (this.props.mainColor + "80"), borderRadius: 15}} className = "border">
                     {(window.innerWidth >= 768) ? (
@@ -55,10 +55,10 @@ export default class RFAAffOrgsCard extends React.Component{
                             </Row>
                         </Col>
                     )}
-                    <Col md = {4} className = "p-3 border d-flex align-items-center justify-content-center">
+                    <Col md = {5} className = "p-3 border d-flex align-items-center justify-content-center">
                         <Image className = "aff-orgs-logo-size" src = {MFALogo} />
                     </Col>
-                    <Col md = {5} className = "p-3 border">
+                    <Col md = {4} className = "p-3 border">
                         <Container>
                             <Row className = "justify-content-center">
                                 <p className = "afforgs-card-text">{this.props.affOrgsDescription}</p>
