@@ -40,6 +40,9 @@ h2 {
   letter-spacing: 0.1em;
   transition: 0.2s;
 }
+a:focus{
+  text-decoration: none;
+}
 
 .header-blobs{
   background-image: url("media/HeaderBlobs/Blob-RFA 4.png");
@@ -119,7 +122,6 @@ h2 {
   .aff-org-card-link:hover{
     transition: 0.2s;
     letter-spacing: 0.25em;
-    text-decoration: none;
   }
 }
 
