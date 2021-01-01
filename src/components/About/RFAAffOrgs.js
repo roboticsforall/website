@@ -9,7 +9,7 @@ export default function RFAAffOrgs(props){
           <Row className = "pb-5 header-blobs">
             <div className = "d-flex justify-content-center align-self-end">
               <Row className = "m-5 justify-content-center">
-                <h1 style = {{color: "#FFCC00"}} className = "w-75 page-header header-size text-center">Check out our Affiliate Organizations!</h1>
+                <h1 style = {{color: "#FFCC00"}} className = "w-100 page-header header-size text-center">Check out our Affiliate Organizations!</h1>
                 <p className = "page-header-description header-description-size text-center">Learn more about our affiliate organizations started from members of Robotics for All!</p>
               </Row>
             </div>
