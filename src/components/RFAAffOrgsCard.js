@@ -44,10 +44,10 @@ export default class RFAAffOrgsCard extends React.Component{
                     ) : (
                         <Col>
                             <Row className = "p-3">
-                                <Col className = "d-flex align-items-center justify-content-center ">
+                                <Col sm = {5} md = {5} lg = {5} xl = {5}className = "d-flex align-items-center justify-content-center ">
                                     <Image className = "aff-orgs-logo-size" src = {this.props.logo}/>
                                 </Col>
-                                <Col className = "d-flex align-items-center justify-content-center ">
+                                <Col sm = {6} md = {6} lg = {6} xl = {6} className = "d-flex align-items-center justify-content-center ">
                                     <h1 style = {{color: this.props.mainColor}} className = "text-center header-size afforgs-header">{this.props.affOrgName}</h1>
                                 </Col>
                             </Row>
