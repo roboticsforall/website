@@ -1,7 +1,5 @@
 import React from 'react';
 import {Container, Row, Image, Col, ResponsiveEmbed} from "react-bootstrap";
-import Iframe from 'react-iframe';
-
 export default class RFAAffOrgsCard extends React.Component{
 
     constructor(props) {
