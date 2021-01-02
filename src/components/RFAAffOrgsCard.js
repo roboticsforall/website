@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container, Row, Image, Col, Card, CardDeck} from "react-bootstrap";
-import MFALogo from "../media/AffiliatedOrgs/MFALogo.png";
+import {Container, Row, Image, Col, ResponsiveEmbed} from "react-bootstrap";
+import Iframe from 'react-iframe';
 
 export default class RFAAffOrgsCard extends React.Component{
 
@@ -41,13 +41,13 @@ export default class RFAAffOrgsCard extends React.Component{
                 <Row style = {{backgroundColor: (this.props.mainColor + "80"), borderRadius: 15}} className = "">
                     {(window.innerWidth >= 768) ? (
                         <Col sm = {3} md = {3} lg = {3} xl = {3} className = "p-3 d-flex align-items-center justify-content-center">
-                            <Image className = "aff-orgs-logo-size" src = {MFALogo}/>
+                            <Image className = "border aff-orgs-logo-size" src = {this.props.logo}/>
                         </Col>
                     ) : (
                         <Col>
                             <Row className = "p-3">
                                 <Col className = "d-flex align-items-center justify-content-center ">
-                                    <Image className = " aff-orgs-logo-size" src = {MFALogo}/>
+                                    <Image className = "aff-orgs-logo-size" src = {this.props.logo}/>
                                 </Col>
                                 <Col className = "d-flex align-items-center justify-content-center ">
                                     <h1 style = {{color: this.props.mainColor}} className = "text-center header-size afforgs-header">{this.props.affOrgName}</h1>
@@ -56,7 +56,10 @@ export default class RFAAffOrgsCard extends React.Component{
                         </Col>
                     )}
                     <Col md = {5} lg = {5} xl = {5} className = "p-3 border d-flex align-items-center justify-content-center">
-                        <Image className = "aff-orgs-logo-size" src = {MFALogo} />
+                    {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI?playlist=NpEaa2P7qZI&loop=1&controls=0&autoplay=1&mute=1"></iframe> */}
+                    <ResponsiveEmbed aspectRatio="16by9">
+                        <embed src="https://www.youtube.com/embed/NpEaa2P7qZI?playlist=NpEaa2P7qZI&loop=1&controls=0&autoplay=1&mute=1" />
+                    </ResponsiveEmbed>
                     </Col>
                     <Col md = {4} lg = {4} xl = {4} className = "p-3 border">
                         <Container>
