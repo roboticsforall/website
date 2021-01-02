@@ -81,6 +81,12 @@ h2 {
   width: 70%
 }
 
+.center-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {
