@@ -107,3 +107,140 @@ h2 {
     text-align: center;
   }
 }
+
+.pos-container {
+  border: 15px solid;
+  border-radius: 15px;
+  margin: 0 0 40px 0
+}
+
+.pos-container:nth-of-type(odd) {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.pos-container:nth-of-type(even) {
+  color: #FA8D1F;
+  border-color: #FA8D1F;
+}
+
+.pos-container:first-of-type {
+  color: #FFCC00;
+  border-color: #FFCC00;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-link.pos {
+    font-family: "mazzard-h-bold";
+    font-size: 20px;
+    color: #000000;
+    padding: 20px;
+  }
+
+  .pos-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 12px;
+    color: #000000;
+  }
+
+  .pos-header {
+    font-family: "mazzard-h-bold";
+    font-size: 27px;
+    letter-spacing: 0.25em;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-link.pos {
+    font-family: "mazzard-h-bold";
+    font-size: 25px;
+    color: #000000;
+    padding: 20px;
+  }
+
+  .pos-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 15px;
+    color: #000000;
+  }
+
+  .pos-header {
+    font-family: "mazzard-h-bold";
+    font-size: 35px;
+    letter-spacing: 0.25em;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-link.pos {
+    font-family: "mazzard-h-bold";
+    font-size: 25px;
+    color: #000000;
+    padding: 20px;
+  }
+
+  .pos-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 15px;
+    color: #000000;
+  }
+
+  .pos-header {
+    font-family: "mazzard-h-bold";
+    font-size: 40px;
+    letter-spacing: 0.25em;
+    text-align: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-link.pos {
+    font-family: "mazzard-h-bold";
+    font-size: 32px;
+    color: #000000;
+    padding: 20px;
+  }
+  
+  .pos-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .pos-header {
+    font-family: "mazzard-h-bold";
+    font-size: 70px;
+    letter-spacing: 0.25em;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav-link.pos {
+    font-family: "mazzard-h-bold";
+    font-size: 32px;
+    color: #000000;
+    padding: 20px;
+  }
+  
+  .pos-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .pos-header {
+    font-family: "mazzard-h-bold";
+    font-size: 75px;
+    letter-spacing: 0.25em;
+    text-align: center;
+  }
+}
