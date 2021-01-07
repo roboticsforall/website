@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import {Container, Row, Col, Tab, Nav} from "react-bootstrap";
+import {Container, Row, Tab, Nav} from "react-bootstrap";
 import RFAPositionCard from "../RFAPositionCard";
+import RFAPositionCard1 from "../RFAPositionCard1";
+import RFAPositionCard2 from "../RFAPositionCard2";
+import Placeholder from "../../media/placeholder.png"
 
 export default function TeacherPos(props){
   const [key, setKey] = useState("one")
@@ -49,20 +52,21 @@ export default function TeacherPos(props){
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard posHeader = {"TASKS"} posDescription = {
-                    <ul>
-                      <li>Work on helping Robotics for All to grow and expand</li>
-                      <li>Help with projects you are passionate about</li>
-                      <li>Improve outreach to more schools and students</li>
-                    </ul>}/>
-                  <RFAPositionCard posHeader = {"TIME COMMITMENT"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {Placeholder} posDescription = {
+                   <ul>
+                    <li>Work on helping Robotics for All to grow and expand</li>
+                    <li>Help with projects you are passionate about</li>
+                    <li>Improve outreach to more schools and students</li>
+                  </ul>
+                  }/>
+                  <RFAPositionCard2 posHeader = {"TIME COMMITMENT"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>3-10 hours a week</li>
                       <li>Spend time on projects of your choice</li>
                       <li>Hours may differ depending on different projects</li>
-                    </ul>
+                  </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"BENEFITS"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"BENEFITS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>Earn community service hours for time spent volunteering with Robotics for All.</li>
                       <li>Leading a Robotics for All class will look good on any resume, whether applying for a future internship, job, or college</li>
@@ -70,14 +74,14 @@ export default function TeacherPos(props){
                       <li>Learn valuable leadership and teamwork skills.</li>
                     </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"REQUIREMENTS"} posDescription = {
+                  <RFAPositionCard2 posHeader = {"REQUIREMENTS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>8th grade in middle school or above (exceptions may be made to 6th-7th graders with a strong volunteering background.)</li>
                       <li>Strong communication skills and the ability to work effectively in a team</li>
                       <li>Quick response to questions and other communications</li>
                     </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"BENEFICIAL QUALIFICATIONS"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>Experience with business development skills (graphic design, curriculum, operations etc)</li>
                     </ul>
@@ -94,7 +98,7 @@ export default function TeacherPos(props){
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard posHeader = {"TASKS"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>Help the lead instructor lead the live virtual classes (either once or twice weekly)</li>
                       <ul>
@@ -104,7 +108,7 @@ export default function TeacherPos(props){
                       <li>Answering student questions</li>
                     </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"TIME COMMITMENT"} posDescription = {
+                  <RFAPositionCard2 posHeader = {"TIME COMMITMENT"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>2-4 hours weekly per class</li>
                       <ul>
@@ -114,7 +118,7 @@ export default function TeacherPos(props){
                       <li>Teach for at least one eight-week class session.</li>
                     </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"BENEFITS"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"BENEFITS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>Earn community service hours from Robotics for All</li>
                       <li>Teaching will look good on any resume, whether applying for a future internship, job, or college</li>
@@ -122,14 +126,14 @@ export default function TeacherPos(props){
                       <li>Learn valuable leadership and teamwork skills.</li>
                     </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"REQUIREMENTS"} posDescription = {
+                  <RFAPositionCard2 posHeader = {"REQUIREMENTS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>8th grade or above (exceptions may be made to 6th-7th graders with a strong volunteering/teaching background.)</li>
                       <li>Familiarity with any of the platforms used for curricula (Code.org, Scratch,  Python, Java, TinkerCAD, Fusion 360, HTML/CSS, and Snap Circuits)</li>
                       <li>Strong communication skills and the ability to work effectively in a team</li>
                     </ul>
                   }/>
-                  <RFAPositionCard posHeader = {"BENEFICIAL QUALIFICATIONS"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>Experience teaching STEM classes</li>
                       <li>Past leadership or classroom management experience</li>

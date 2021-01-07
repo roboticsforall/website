@@ -1,7 +1,7 @@
 import React from 'react';
-import {Container, Row, Col} from "react-bootstrap";
+import {Container, Row, Col, Image} from "react-bootstrap";
 
-export default class RFAPositionCard extends React.Component{
+export default class RFAPositionCard2 extends React.Component{
     
     render () {
 
@@ -13,6 +13,9 @@ export default class RFAPositionCard extends React.Component{
                         <Row>
                             <Col>
                                 {this.props.posDescription}
+                            </Col>
+                            <Col  xs = {3}>
+                                <Image className = "justify-content-center" src = {this.props.posImage} fluid />
                             </Col>
                         </Row>
                     </div>
