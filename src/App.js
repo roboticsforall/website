@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
 // import RFACard from "./components/RFACard";
-import RFAAffOrgsCard from "./components/RFAAffOrgsCard";
-import RFAAffOrgs from "./components/About/RFAAffOrgs";
+import TeacherPos from "./components/Volunteer/teacherpos";
 export default class App extends React.Component{
 
   render() {
@@ -18,7 +17,30 @@ export default class App extends React.Component{
               </header>
           </Container>
         </Row>
-        <RFAAffOrgs/>
+        <TeacherPos/>
+
+        {/* <Container>
+          <Row>
+            {
+              ["one", "two", "three"].map(element => (
+                <Col>
+                  Image
+                  Text
+                </Col>
+              ))
+            }
+          </Row>
+        </Container>
+        <Container>
+          <Row>
+            <CardDeck>
+              <RFACard />
+              <RFACard />
+              <RFACard />
+              <RFACard />
+            </CardDeck>
+          </Row>
+        </Container> */}
       </Container>
     );
   }
