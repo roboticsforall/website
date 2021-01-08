@@ -9,6 +9,29 @@
   float: left;
   padding:20px;
 }
+.donimg{
+  width:75px;
+  height:50px;
+}
+.donor{
+  width: 16.666%;
+  float: left;
+  padding:10px;
+}
+.donor2{
+  width: 25%;
+  float: left;
+  padding:10px;
+}
+.talks{
+  width: 25%;
+  float: left;
+  padding:20px;
+}
+iframe{
+  width:200px;
+  height: 150px;
+}
 button{
   background-color:#f7d913;
 	border:1px solid #ffffff;
