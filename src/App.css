@@ -28,86 +28,6 @@ h2 {
   width: 100vw;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .page-header-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 10px;
-    color: black;
-  }
-  .page-header {
-    font-family: "mazzard-h-bold";
-    font-size: 27px;
-    color: #FFCC00;
-    transform: rotate(358deg);
-    text-align: center;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .page-header-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 13px;
-    color: black;
-  }
-  .page-header {
-    font-family: "mazzard-h-bold";
-    font-size: 35px;
-    color: #FFCC00;
-    transform: rotate(358deg);
-    text-align: center;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .page-header-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 15px;
-    color: black;
-  }
-  .page-header {
-    font-family: "mazzard-h-bold";
-    font-size: 43px;
-    color: #FFCC00;
-    transform: rotate(358deg);
-    text-align: center;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .page-header-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 20px;
-    color: black;
-  }
-  .page-header {
-    font-family: "mazzard-h-bold";
-    font-size: 55px;
-    color: #FFCC00;
-    transform: rotate(358deg);
-    text-align: center;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .page-header-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 20px;
-    color: black;
-  }
-  .page-header {
-    font-family: "mazzard-h-bold";
-    font-size: 70px;
-    color: #FFCC00;
-    transform: rotate(358deg);
-    text-align: center;
-  }
-}
-
 .pos-container {
   border: 15px solid;
   border-radius: 15px;
@@ -132,22 +52,32 @@ h2 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .page-header-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 10px;
+    color: black;
+  }
+  .page-header {
+    font-family: "mazzard-h-bold";
+    font-size: 27px;
+    color: #FFCC00;
+    transform: rotate(358deg);
+    text-align: center;
+  }
   .nav-link.pos {
     font-family: "mazzard-h-bold";
     font-size: 20px;
     color: #000000;
     padding: 20px;
   }
-
   .pos-description {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 12px;
     color: #000000;
   }
-
   .pos-header {
     font-family: "mazzard-h-bold";
-    font-size: 27px;
+    font-size: 20px;
     letter-spacing: 0.25em;
     text-align: center;
   }
@@ -155,19 +85,29 @@ h2 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .page-header-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 13px;
+    color: black;
+  }
+  .page-header {
+    font-family: "mazzard-h-bold";
+    font-size: 35px;
+    color: #FFCC00;
+    transform: rotate(358deg);
+    text-align: center;
+  }
   .nav-link.pos {
     font-family: "mazzard-h-bold";
     font-size: 25px;
     color: #000000;
     padding: 20px;
   }
-
   .pos-description {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 15px;
     color: #000000;
   }
-
   .pos-header {
     font-family: "mazzard-h-bold";
     font-size: 35px;
@@ -178,19 +118,29 @@ h2 {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .page-header-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 15px;
+    color: black;
+  }
+  .page-header {
+    font-family: "mazzard-h-bold";
+    font-size: 43px;
+    color: #FFCC00;
+    transform: rotate(358deg);
+    text-align: center;
+  }
   .nav-link.pos {
     font-family: "mazzard-h-bold";
     font-size: 25px;
     color: #000000;
     padding: 20px;
   }
-
   .pos-description {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 15px;
     color: #000000;
   }
-
   .pos-header {
     font-family: "mazzard-h-bold";
     font-size: 40px;
@@ -201,19 +151,29 @@ h2 {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .page-header-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  .page-header {
+    font-family: "mazzard-h-bold";
+    font-size: 55px;
+    color: #FFCC00;
+    transform: rotate(358deg);
+    text-align: center;
+  }
   .nav-link.pos {
     font-family: "mazzard-h-bold";
     font-size: 32px;
     color: #000000;
     padding: 20px;
   }
-  
   .pos-description {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 20px;
     color: #000000;
   }
-  
   .pos-header {
     font-family: "mazzard-h-bold";
     font-size: 70px;
@@ -224,19 +184,29 @@ h2 {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .page-header-description {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  .page-header {
+    font-family: "mazzard-h-bold";
+    font-size: 70px;
+    color: #FFCC00;
+    transform: rotate(358deg);
+    text-align: center;
+  }
   .nav-link.pos {
     font-family: "mazzard-h-bold";
     font-size: 32px;
     color: #000000;
     padding: 20px;
   }
-  
   .pos-description {
     font-family: 'Be Vietnam', sans-serif;
     font-size: 20px;
     color: #000000;
   }
-  
   .pos-header {
     font-family: "mazzard-h-bold";
     font-size: 75px;

@@ -30,6 +30,8 @@ export default function TeacherPos(props){
           </Row>
         </Container>
       </Row>
+        <br></br>
+        <br></br>
         <Container>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
               <Nav justify fill variant = "tabs">
