@@ -5,6 +5,7 @@ import {Container, Row} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
 // import RFACard from "./components/RFACard";
 import RFAAffOrgs from "./components/About/RFAAffOrgs";
+import RFANewsletter from "./components/About/RFANewsletter";
 export default class App extends React.Component{
 
   render() {
@@ -17,7 +18,7 @@ export default class App extends React.Component{
               </header>
           </Container>
         </Row>
-        <RFAAffOrgs/>
+        <RFANewsletter/>
 
         {/* <Container>
           <Row>
