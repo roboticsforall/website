@@ -45,10 +45,15 @@ h2 {
 } */
 
 .header-blobs{
-  background-image: url("media/HeaderBlobs/Blob-RFA 4.png");
+  background-image: url("media/HeaderBlobs/Blob-RFA 4.PNG");
   background-size: 100% 100%;
-  height: 45vw;
+  height: 50vw;
   width: 100vw;
+  border: 2px solid black;
+}
+
+.mb-6{
+  margin-bottom: 6em;
 }
 
 .page-header-description {

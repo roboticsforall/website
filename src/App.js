@@ -6,6 +6,7 @@ import RFANavbar from "./components/RFANavbar";
 // import RFACard from "./components/RFACard";
 import RFAAffOrgsCard from "./components/RFAAffOrgsCard";
 import RFAAffOrgs from "./components/About/RFAAffOrgs";
+import RFANewsletter from "./components/About/RFANewsletter";
 export default class App extends React.Component{
 
   render() {
