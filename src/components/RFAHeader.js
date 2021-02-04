@@ -2,8 +2,7 @@ import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 
 export default function RFAHeader(props){
-
-  console.log(props.image);
+  
     return (
         <Row style = {{backgroundImage: `url(${props.image})`}} className = "header-blobs">
           <Container className = "d-flex align-self-end">
