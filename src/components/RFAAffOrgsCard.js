@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container, Row, Image, Col, ResponsiveEmbed} from "react-bootstrap";
+
 export default class RFAAffOrgsCard extends React.Component{
 
     constructor(props) {
@@ -18,7 +19,7 @@ export default class RFAAffOrgsCard extends React.Component{
     }
 
     updateWindowDimensions() {
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
 
     render () {

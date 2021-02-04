@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row, Image, Col, Card, CardDeck} from "react-bootstrap";
 import RFAAffOrgsCard from "../RFAAffOrgsCard";
+import RFAHeader from "../RFAHeader";
+import headerBlobYellow from "../../media/HeaderBlobs/HBLightYellow.png";
 import MFALogo from "../../media/AffiliatedOrgs/MFA_Logo.png";
 import CFCLogo from "../../media/AffiliatedOrgs/CFC_Logo.png";
 import TFALogo from "../../media/AffiliatedOrgs/TFA_Logo.png";
@@ -9,14 +11,7 @@ import TFALogo from "../../media/AffiliatedOrgs/TFA_Logo.png";
 export default function RFAAffOrgs(props){
     return (
         <div>
-          <Row className = "pb-5 header-blobs">
-            <div className = "d-flex justify-content-center align-self-end">
-              <Row className = "m-5 justify-content-center">
-                <h1 style = {{color: "#FFCC00"}} className = "page-header header-size text-center">Check out our Affiliated Organizations!</h1>
-                <p className = "page-header-description header-description-size text-center">Learn more about our affiliate organizations started from Robotics for All volunteers! </p>
-              </Row>
-            </div>
-          </Row>
+          <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Check out our Affiliated Organizations!"} description = {"Learn more about our affiliate organizations started from Robotics for All volunteers! "}/>
           <Container>
             <br/><br/>
             <RFAAffOrgsCard logo =  {TFALogo} linkColor = {"#c06204"} orgAbrv = {"TFA"} mainColor = {"#fa8d1f"} affOrgName = {"Tutoring For All"} affOrgsDescription = {"Tutoring for All is a branch of the non-profit organization Robotics for All. Our goal is to provide free, quality tutoring services to primarily low income and disadvantaged students."}/>
