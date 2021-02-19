@@ -1,5 +1,5 @@
 @font-face{
-  font-family: "mazzard-h-extrabold";
+  font-family: "Mazzard-H-Extrabold";
   src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
@@ -16,17 +16,6 @@
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
 }
-
-html, body {
-  height: 100%;
-  overflow-x: hidden;
-}
-
-h2 {
-  font-family: 'Oswald';
-  font-size: 100px;
-}
-
 /* a:focus{
   text-decoration: none;
 } */
@@ -47,7 +36,7 @@ h2 {
   color: black;
 }
 .page-header {
-  font-family: "mazzard-h-extrabold";
+  font-family: "Mazzard-H-Extrabold";
   transform: rotate(358deg);
 }
 
