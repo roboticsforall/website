@@ -52,7 +52,7 @@ export default class RFAAffOrgsCard extends React.Component{
                 {(window.innerWidth >= 768) && (<Row><h1 style = {affOrgsHeader} className = "header-size">{this.props.affOrgName}</h1></Row>)}            
                 <Row style = {{backgroundColor: (this.props.mainColor + "80"), borderRadius: 15}}>
                     {(window.innerWidth >= 768) ? (
-                        <Col sm = {3} md = {3} lg = {3} xl = {3} className = "p-3 d-flex align-items-center justify-content-center">
+                        <Col sm = {3} md = {3} lg = {3} xl = {3} className = "p-3 center-align">
                             <Image style = {affOrgsLogoSize} className = "border" src = {this.props.logo}/>
                         </Col>
                     ) : (
@@ -67,7 +67,7 @@ export default class RFAAffOrgsCard extends React.Component{
                             </Row>
                         </Col>
                     )}
-                    <Col md = {5} lg = {5} xl = {5} className = "p-3 border d-flex align-items-center justify-content-center">
+                    <Col md = {5} lg = {5} xl = {5} className = "p-3 border center-align">
                     {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI?playlist=NpEaa2P7qZI&loop=1&controls=0&autoplay=1&mute=1"></iframe> */}
                     <ResponsiveEmbed aspectRatio="16by9">
                         <embed src="https://www.youtube.com/embed/NpEaa2P7qZI?playlist=NpEaa2P7qZI&loop=1&controls=0&autoplay=1&mute=1" />
