@@ -33,23 +33,36 @@ export default class RFAAffOrgsCard extends React.Component{
         borderBottomRightRadius: 15,
     }
 
+    const affOrgsCardText = {
+        fontFamily: 'BeVietnam-Medium',
+        fontSize: "large",   
+    }
+
+    const affOrgsHeader = {
+        fontFamily: "Mazzard-H-Extrabold",
+        color: this.props.mainColor
+    }
+    const affOrgsLogoSize = {
+        height: "20vh",
+    }      
+
     return (
         <Row className = "justify-content-center">
             <Col className = "" md = {11} lg = {11} xl = {11}>
-                {(window.innerWidth >= 768) && (<Row><h1 style = {{color: this.props.mainColor}} className = "header-size afforgs-header">{this.props.affOrgName}</h1></Row>)}            
-                <Row style = {{backgroundColor: (this.props.mainColor + "80"), borderRadius: 15}} className = "">
+                {(window.innerWidth >= 768) && (<Row><h1 style = {affOrgsHeader} className = "header-size">{this.props.affOrgName}</h1></Row>)}            
+                <Row style = {{backgroundColor: (this.props.mainColor + "80"), borderRadius: 15}}>
                     {(window.innerWidth >= 768) ? (
                         <Col sm = {3} md = {3} lg = {3} xl = {3} className = "p-3 d-flex align-items-center justify-content-center">
-                            <Image className = "border aff-orgs-logo-size" src = {this.props.logo}/>
+                            <Image style = {affOrgsLogoSize} className = "border" src = {this.props.logo}/>
                         </Col>
                     ) : (
                         <Col>
                             <Row className = "p-2">
                                 <Col className = "center-align">
-                                    <Image className = "aff-orgs-logo-size" src = {this.props.logo}/>
+                                    <Image style = {affOrgsLogoSize} src = {this.props.logo}/>
                                 </Col>
                                 <Col className = "center-align">
-                                    <h1 style = {{color: this.props.mainColor}} className = "text-center header-size afforgs-header">{this.props.affOrgName}</h1>
+                                    <h1 style = {affOrgsHeader} className = "text-center header-size">{this.props.affOrgName}</h1>
                                 </Col>
                             </Row>
                         </Col>
@@ -63,7 +76,7 @@ export default class RFAAffOrgsCard extends React.Component{
                     <Col md = {4} lg = {4} xl = {4} className = "p-3 border">
                         <Container>
                             <Row className = "justify-content-center">
-                                <p className = "afforgs-card-text text-center">{this.props.affOrgsDescription}</p>
+                                <p style = {affOrgsCardText} className = "text-center">{this.props.affOrgsDescription}</p>
                                 <a style = {{color: this.props.linkColor}} className = "text-center aff-org-card-link" href = "#">VISIT {this.props.orgAbrv}</a>
                             </Row>
                         </Container>

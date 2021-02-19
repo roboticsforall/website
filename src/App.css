@@ -1,5 +1,5 @@
 @font-face{
-  font-family: "mazzard-h-extrabold";
+  font-family: "Mazzard-H-Extrabold";
   src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
@@ -20,18 +20,6 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
-}
-
-h2 {
-  font-family: 'Oswald';
-  font-size: 100px;
-}
-
-.vol_intern_positions {
-  color: #fa8d1f
-}
-.teach_positions {
-  color: #fcaf62;
 }
 
 .aff-org-card-link {
@@ -60,21 +48,8 @@ h2 {
   color: black;
 }
 .page-header {
-  font-family: "mazzard-h-extrabold";
+  font-family: "Mazzard-H-Extrabold";
   transform: rotate(358deg);
-}
-
-.afforgs-header{
-  font-family: "mazzard-h-extrabold";
-}
-
-.afforgs-card-text{
-  font-family: 'BeVietnam-Medium', sans-serif;
-  font-size: large;
-}
-
-.aff-orgs-logo-size {
-  height: 20vh;
 }
 
 .w-60 {
