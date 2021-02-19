@@ -20,24 +20,8 @@
   text-decoration: none;
 } */
 
-.header-blobs{
-  background-size: 100% 100%;
-  height: 45vw;
-  width: 100vw;
-}
-
 .mb-6{
   margin-bottom: 6em;
-}
-
-.page-header-description {
-  font-family: 'Be Vietnam', sans-serif;
-  font-weight: 600;
-  color: black;
-}
-.page-header {
-  font-family: "Mazzard-H-Extrabold";
-  transform: rotate(358deg);
 }
 
 /* Extra small devices (phones, 600px and down) */
