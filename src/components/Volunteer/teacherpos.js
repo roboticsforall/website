@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import {Container, Row, Tab, Nav} from "react-bootstrap";
+import {Container, Row, Tab, Nav, Button} from "react-bootstrap";
+import RFAHeader from "../RFAHeader";
+import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
@@ -18,6 +20,13 @@ export default function TeacherPos(props){
     background: "#FA8D1F",
     border: 0,
     borderRadius: "15px 15px 0 0"
+  };
+  const button = {
+    color: "#000000",
+    background: "#FA8D1F",
+    fontFamily: "mazzard-h-bold",
+    fontSize: "45px",
+    borderColor: "#FA8D1F",
   };
     
   return (
@@ -47,101 +56,145 @@ export default function TeacherPos(props){
                   <RFAPositionCard posHeader = {"OVERVIEW"} posDescription = {
                     <div>
                       <p>
-                        Lead instructors are responsible for leading an 8-week long class. This includes leading two weekly synchronous classes, reviewing student homework, and overseeing teacher's assistants. It will be your responsibility to ensure that the class runs smoothly and take care of any issues, whether related to student behavior or errors in programs the students develop. Teachers will be given a position every few months based on availability, position, and class interest. 
-                      </p>
-                      <p>
-                        We currently offer curricula with the platforms Code.org, Scratch,  Python, and TinkerCAD and will continue to expand our curriculum. You will earn community service hours for the work that you do. Learn more about this position below!
+                        Lead Instructors are responsible for running Robotics for All classes, managing Teacher Assistants, and checking student homework. They also must ensure that classes run smoothly by helping students with debugging, and addressing any issues with student behavior. Lead Instructors are the highest authority in the class, so they must possess strong leadership and independence.
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {Placeholder} posDescription = {
+                  <RFAPositionCard posHeader = {"SCHEDULING"} posDescription = {
+                    <div>
+                      <p>
+                        We start class sessions periodically (usually every few months). At the start of each session, accepted teachers may choose to volunteer in the class session. Although we do our best to administer classes efficiently, they are given based on teacher availability, position, and class interest. For that reason, it can take some time to get a class.
+                      </p>
+                      <p>
+                        Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time).
+                      </p>
+                    </div>
+                  }/>
+                  <RFAPositionCard1 posHeader = {"TASKS"} posDescription = {
                    <ul>
-                    <li>Work on helping Robotics for All to grow and expand</li>
-                    <li>Help with projects you are passionate about</li>
-                    <li>Improve outreach to more schools and students</li>
+                    <li>Teach students in synchronous classes</li>
+                    <li>Manage any Teacher Assistants</li>
+                    <li>Post and review homework assignments</li>
+                    <li>Email and respond to emails from parents</li>
+                    <li>Answer student questions in a timely manner</li>
+                  </ul>
+                  }/>
+                  <RFAPositionCard1 posHeader = {"CURRICULA"} posDescription = {
+                   <ul>
+                    <li>Our current curricula for online classes include the Code.org Curriculum (for K-3rd graders), Basic Scratch Curriculum (for K-3rd graders), Scratch Curriculum (for 4th-6th graders), Python Curriculum (for 6th-8th graders), and TinkerCAD Curriculum (for 5th-8th graders).</li>
+                    <li>Please note that we are not currently accepting applications from people who only are interested in teaching Python.</li>
                   </ul>
                   }/>
                   <RFAPositionCard2 posHeader = {"TIME COMMITMENT"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>3-10 hours a week</li>
-                      <li>Spend time on projects of your choice</li>
-                      <li>Hours may differ depending on different projects</li>
+                      <li>The total time commitment is 3 - 4 hours per week (or more if you choose to take on more than one class)</li>
+                      <li>There are two, hour-long, synchronous classes per week</li>
+                      <li>The rest of the time goes to checking homework and writing emails</li>
                   </ul>
                   }/>
                   <RFAPositionCard1 posHeader = {"BENEFITS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>Earn community service hours for time spent volunteering with Robotics for All.</li>
+                      <li>We award community service hours</li>
                       <li>Leading a Robotics for All class will look good on any resume, whether applying for a future internship, job, or college</li>
-                      <li>Potential future leadership positions within Robotics for All may be offered (ex. Board position, sub-director)</li>
-                      <li>Learn valuable leadership and teamwork skills.</li>
+                      <li>Potential future leadership opportunities (Robotics for All board, etc.) may be offered.</li>
+                      <li>Become part of a fun, welcoming community</li>
+                      <li>Practical and fulfilling teaching experience</li>
                     </ul>
                   }/>
                   <RFAPositionCard2 posHeader = {"REQUIREMENTS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>8th grade in middle school or above (exceptions may be made to 6th-7th graders with a strong volunteering background.)</li>
-                      <li>Strong communication skills and the ability to work effectively in a team</li>
-                      <li>Quick response to questions and other communications</li>
+                      <li>Be in 10th grade or above (exceptions may be made to 9th graders with a strong background in teaching)</li>
+                      <li>Mastery of one or more of the platforms that Robotics for All has curricula in (You can find a list of our curricula here)</li>
                     </ul>
                   }/>
                   <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>Experience with business development skills (graphic design, curriculum, operations etc)</li>
+                      <li>Strong communication skills</li>
+                      <li>Good at working with teams</li>
+                      <li>Prior teaching experience</li>
+                      <li>Leadership or classroom management experience</li>
                     </ul>
                   }/>
+                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posDescription = {
+                    <ul>
+                      <li>If you have any other questions, please visit our <a href="#">teacher FAQ's</a></li>
+                      <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
+                    </ul>
+                  }/>
+                  <Button size="lg" style={button} block>Apply Now!</Button>
+                  <br></br>
+                  <br></br>
                 </Tab.Pane>
                 <Tab.Pane eventKey = "two">
                   <RFAPositionCard posHeader = {"OVERVIEW"} posDescription = {
                     <div>
                       <p>
-                        The teacher's assistant position is the perfect entry level position to teaching! Teacher assistants help the lead instructor teach the 8-week classes, answer student questions, and review homework. Teachers will be given a position every few months based on availability, position, and class interest.
-                      </p>
-                      <p>
-                        We currently offer curricula with the platforms Code.org, Scratch,  Python, and TinkerCAD and will continue to expand our curriculum. You will earn community service hours for the work that you do. Learn more about this position below!
+                        The teacher's assistant position is the perfect entry level position to teaching. As a teacher’s assistant, you will assist the lead instructor in classes by answering student questions, leading breakout rooms of 3 - 5 students, and reviewing homework.
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {Placeholder} posDescription = {
+                  <RFAPositionCard1 posHeader = {"SCHEDULING"} posDescription = {
+                    <div>
+                      <p>
+                        We start class sessions periodically (usually every few months). At the start of each session, accepted teachers may choose to volunteer in the class session. Although we do our best to administer classes efficiently, they are given based on teacher availability, position, and class interest. For that reason, it can take some time to get a class.
+                      </p>
+                      <p>
+                        Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time).
+                      </p>
+                    </div>
+                  }/>
+                  <RFAPositionCard2 posHeader = {"TASKS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>Help the lead instructor lead the live virtual classes (either once or twice weekly)</li>
-                      <ul>
-                        <li>Lead breakout rooms with 3-5 students in your class</li>
-                      </ul>
-                      <li>Review student homework on Google Classroom</li>
-                      <li>Answering student questions</li>
+                      <li>Teach small groups students in synchronous classes using breakout rooms</li>
+                      <li>Review homework assignments</li>
+                      <li>Answer student questions in a timely manner</li>
+                    </ul>
+                  }/>
+                  <RFAPositionCard1 posHeader = {"CURRICULA"} posImage = {Placeholder} posDescription = {
+                    <ul>
+                      <li>Our current curricula for online classes include the Code.org Curriculum (for K-3rd graders), Basic Scratch Curriculum (for K-3rd graders), Scratch Curriculum (for 4th-6th graders), Python Curriculum (for 6th-8th graders), and TinkerCAD Curriculum (for 5th-8th graders).</li>
+                      <li>Please note that we are not currently accepting applications from people who only are interested in teaching Python.</li>
                     </ul>
                   }/>
                   <RFAPositionCard2 posHeader = {"TIME COMMITMENT"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>2-4 hours weekly per class</li>
-                      <ul>
-                        <li>2 weekly hour-long synchronous class meetings</li>
-                        <li>Checking homework, preparing for classes, etc.</li>
-                      </ul>
-                      <li>Teach for at least one eight-week class session.</li>
+                      <li>The total time commitment is 3 - 4 hours per week (or more if you choose to take on more than one class)</li>
+                      <li>There are two, hour-long, synchronous classes per week</li>
+                      <li>The rest of the time goes to checking homework and writing emails</li>
                     </ul>
                   }/>
                   <RFAPositionCard1 posHeader = {"BENEFITS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>Earn community service hours from Robotics for All</li>
-                      <li>Teaching will look good on any resume, whether applying for a future internship, job, or college</li>
-                      <li>Potential future leadership positions within Robotics for All may (ex. lead instructor, board position)</li>
-                      <li>Learn valuable leadership and teamwork skills.</li>
+                      <li>We award community service hours</li>
+                      <li>Leading a Robotics for All class will look good on any resume, whether applying for a future internship, job, or college</li>
+                      <li>Potential future leadership opportunities (Robotics for All board, etc.) may be offered.</li>
+                      <li>Become part of a fun, welcoming community</li>
+                      <li>Practical and fulfilling teaching experience</li>
                     </ul>
                   }/>
                   <RFAPositionCard2 posHeader = {"REQUIREMENTS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>8th grade or above (exceptions may be made to 6th-7th graders with a strong volunteering/teaching background.)</li>
-                      <li>Familiarity with any of the platforms used for curricula (Code.org, Scratch,  Python, Java, TinkerCAD, Fusion 360, HTML/CSS, and Snap Circuits)</li>
-                      <li>Strong communication skills and the ability to work effectively in a team</li>
+                      <li>Be in 10th grade or above (exceptions may be made to 9th graders with a strong background in teaching)</li>
+                      <li>Mastery of one or more of the platforms that Robotics for All has curricula in (You can find a list of our curricula here)</li>
                     </ul>
                   }/>
                   <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>Experience teaching STEM classes</li>
-                      <li>Past leadership or classroom management experience</li>
-                      <li>Experience working with educational institutions</li>
+                      <li>Strong communication skills</li>
+                      <li>Good at working with teams</li>
+                      <li>Prior teaching experience</li>
+                      <li>Leadership or classroom management experience</li>
                     </ul>
                   }/>
+                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {Placeholder} posDescription = {
+                    <ul>
+                      <li>If you have any other questions, please visit our <a href="#">teacher FAQ's</a></li>
+                      <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
+                    </ul>
+                  }/>
+                  <Button size="lg" style={button} block>Apply Now!</Button>
+                  <br></br>
+                  <br></br>
                 </Tab.Pane>
               </Tab.Content>
           </Tab.Container>
