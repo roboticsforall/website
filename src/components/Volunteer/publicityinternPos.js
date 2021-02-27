@@ -22,7 +22,7 @@ export default function publicityinternPos(props){
   };
 
     return (
-      <div className = "InternPos">
+      <div className = "publicityinternPos">
         <Row className = "header-blobs">
           <Container className = "d-flex align-self-end">
             <Row className = "m-4 w-100 justify-content-center">
