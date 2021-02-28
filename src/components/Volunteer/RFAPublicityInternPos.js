@@ -5,8 +5,7 @@ import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
 import Placeholder from "../../media/placeholder.png";
 import RFAHeader from '../RFAHeader';
-import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA-4.png';
-// import {headerBlobYellow} from "../../media/HeaderBlobs/yellow.png";
+import headerBlob from '../../media/HeaderBlobs/Blob-RFA.PNG';
 
 export default function RFAPublicityInternPos(props){
   const [key, setKey] = useState("one")
@@ -25,7 +24,7 @@ export default function RFAPublicityInternPos(props){
 
     return (
       <div>
-      <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
+      <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlob} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
         <br></br>
         <br></br>
         <Container>
@@ -83,10 +82,10 @@ export default function RFAPublicityInternPos(props){
                       <li>9th grade or above (exceptions may be made, on occasion, for 8th graders with a volunteering background)</li>
                       <li>Consistent access to a computer and stable WiFi</li>
                       <li>QHave skills in one of the following categories:</li>
-                      <ul>
-                      <li>Illustration (Creating Graphics)</li>
-                      <li>Graphic Design (Putting graphics together)</li>
-                      </ul>
+                        <ul>
+                        <li>Illustration (Creating Graphics)</li>
+                        <li>Graphic Design (Putting graphics together)</li>
+                        </ul>
                     </ul>
                   }/>
                   <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {Placeholder} posDescription = {
@@ -98,10 +97,10 @@ export default function RFAPublicityInternPos(props){
                     </ul>
                   }/>
                   <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {Placeholder} posDescription = {
-                  <ul>
-                  <li>If you have any other questions, please visit our intern FAQ's</li>
-                  <li>Please direct additional questions to info@roboticsforall.net</li>
-                  </ul>
+                    <ul>
+                      <li>If you have any other questions, please visit our intern FAQ's</li>
+                      <li>Please direct additional questions to info@roboticsforall.net</li>
+                    </ul>
                   }/>
                 </Tab.Pane>
                 </Tab.Content>
