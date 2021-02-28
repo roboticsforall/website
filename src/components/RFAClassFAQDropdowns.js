@@ -1,16 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Container, Row} from "react-bootstrap";
 import dropdownIcon from '../media/Shapes/dropDownArrow.svg'; // add correct image here
 
+
 export default function RFAClassFAQ(props){
 
-    let state = {
-        dropdownAnswerDisplay: 'none'
-    } 
+    const [dropdownAnswerDisplay, setdropdownAnswerDisplay] = useState('none');
+    const [dropdownColor, setdropdownColor] = useState('#ffcc0080')
 
     const dropdownQuestion = {
       borderRadius: "1em",
-      backgroundColor: "#ffcc00",
+      backgroundColor: dropdownColor,
       fontFamily: "BeVietnam-ExtraBold"
     }
 
@@ -18,27 +18,57 @@ export default function RFAClassFAQ(props){
         borderRadius: "1em",
         backgroundColor: "#ffcc00",
         fontFamily: "BeVietnam-Medium",
-        display: state.dropdownAnswerDisplays,
+
+    }
+    const dropdownDisplay = {
+        display: dropdownAnswerDisplay,
     }
     const button = {
       background: "none",
     }
 
     const displayDiv = () => {
-        (state.dropdownAnswerDisplay == 'none') ? 
-            this.setState({dropdownAnswerDisplay: 'initial'}) : this.setState({dropdownAnswerDisplay: 'none'})
+        (dropdownAnswerDisplay == 'none') ? 
+            setdropdownAnswerDisplay('block') :  setdropdownAnswerDisplay('none');
+        (dropdownColor == '#ffcc0080') ? 
+            setdropdownColor('#ffcc00') :  setdropdownColor('#ffcc0080');
     }
 
+    const returnCourseInfo = () => {
+        console.log(props.typeOfQuestion)
+        if(props.typeOfQuestion == "courses"){
+            return (
+                <Row style = {dropdownAnswer} className = "d-flex flex-column p-2">
+                    <h3>{props.answer}</h3>
+                    <ul>
+                        {
+                            props.coursesList.map(courseName => (<li key = {courseName}>{courseName}</li>))
+                        }
+                    </ul>
+                    <h3>These courses will be offered in the {props.season} session of {props.year} starting {props.date}</h3>
+                </Row>
+            )
+        }
+        else {
+            return (
+                <Row style = {dropdownAnswer} className = "p-2 justify-content-between align-items-center">
+                    <h3>{props.answer}</h3>
+                </Row>
+            )
+        }
+    }
     return (
         <div>
             <Row style = {dropdownQuestion} className = "p-2 justify-content-between align-items-center">
-                <h3 className = "">When will I know if my class time is confirmed?</h3>
+                <h3 className = "w-75">{props.question}</h3>
                 <button style = {button} onClick = {displayDiv} className = "background-none border-0"><img width = "50" height = "50" src = {dropdownIcon}/></button>
             </Row>
             <br/>
-            <Row style = {dropdownAnswer} className = "p-2 justify-content-between align-items-center">
-                <h3>You will receive an email a week before the class start date with a final confirmation of the class time.</h3>
-            </Row>
+            <div style = {dropdownDisplay}>
+                {returnCourseInfo()}
+            <br/>
+            </div>
+
         </div>
     );
 }
