@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Container, Row, Tab, Nav} from "react-bootstrap";
+import {Container, Row, Tab, Nav, Button} from "react-bootstrap";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
@@ -99,10 +99,10 @@ export default function RFAPublicityInternPos(props){
                   <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>If you have any other questions, please visit our <a href="#">intern FAQ's</a></li>
-                      <li>Please direct additional questions to a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
+                      <li>Please direct additional questions to <a> href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
                     </ul>
                   }/>
-                  <Button size="lg" style={button} block>Apply Now!</Button>
+                  {/* <Button size="lg" style={button} block>Apply Now!</Button> */}
                   <br></br>
                   <br></br>
                 </Tab.Pane>
