@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Container, Row, Tab, Nav, Button} from "react-bootstrap";
 import RFAHeader from "../RFAHeader";
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
+import headerBlobYellow from "../../media/HeaderBlobs/HBLightYellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
@@ -13,42 +13,43 @@ export default function TeacherPos(props){
     color: "#000000",
     background: "#FFCC00",
     border: 0,
-    borderRadius: "15px 15px 0 0"
+    borderRadius: "15px 15px 0 0",
+    fontFamily: "mazzard-h-extrabold",
+    fontSize: "x-large",
+    padding: "30px",
   };
   const inActiveStyle = {
     color: "#000000",
     background: "#FA8D1F",
     border: 0,
-    borderRadius: "15px 15px 0 0"
+    borderRadius: "15px 15px 0 0",
+    fontFamily: "mazzard-h-extrabold",
+    fontSize: "x-large",
+    padding: "30px",
   };
   const button = {
     color: "#000000",
     background: "#FA8D1F",
-    fontFamily: "mazzard-h-bold",
+    fontFamily: "mazzard-h-extrabold",
     fontSize: "45px",
     borderColor: "#FA8D1F",
   };
     
   return (
     <div className = "TeacherPos">
-      <Row className = "header-blobs">
-        <Container className = "d-flex align-self-end">
-          <Row className = "m-4 w-100 justify-content-center">
-            <h1 className = "page-header vol_intern_positions">Volunteer to Teach Students STEM!</h1>
-            <p className = "page-header-description">Volunteer to help with graphic design, curriculum development, and much much more!</p>
-          </Row>
-        </Container>
-      </Row>
+      <div>
+        <RFAHeader headerTextColor = {"#FA8D1F"} image = {headerBlobYellow} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
+      </div>
         <br></br>
         <br></br>
         <Container>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
               <Nav justify fill variant = "tabs">
                 <Nav.Item>
-                  <Nav.Link eventKey = "one" className = "pos" style = {key === "one" ? ActiveStyle : inActiveStyle}>Lead Instructor</Nav.Link>
+                  <Nav.Link eventKey = "one" style = {key === "one" ? ActiveStyle : inActiveStyle}>Lead Instructor</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey = "two" className = "pos" style = {key === "two" ? ActiveStyle : inActiveStyle}>Teacher Assistant</Nav.Link>
+                  <Nav.Link eventKey = "two" style = {key === "two" ? ActiveStyle : inActiveStyle}>Teacher Assistant</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -121,7 +122,7 @@ export default function TeacherPos(props){
                       <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
                     </ul>
                   }/>
-                  <Button size="lg" style={button} block>Apply Now!</Button>
+                  <Button size="lg" className = "header-size" style = {button} block>Apply Now!</Button>
                   <br></br>
                   <br></br>
                 </Tab.Pane>
@@ -133,7 +134,7 @@ export default function TeacherPos(props){
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard1 posHeader = {"SCHEDULING"} posDescription = {
+                  <RFAPositionCard posHeader = {"SCHEDULING"} posDescription = {
                     <div>
                       <p>
                         We start class sessions periodically (usually every few months). At the start of each session, accepted teachers may choose to volunteer in the class session. Although we do our best to administer classes efficiently, they are given based on teacher availability, position, and class interest. For that reason, it can take some time to get a class.
