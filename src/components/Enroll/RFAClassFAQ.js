@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
-import RFAClassFAQDropdowns from '../RFAClassFAQDropdowns';
+import RFAClassFAQDropdowns from '../RFAFAQDropdowns';
 import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA.PNG'; // add correct image here
 import dropdownIcon from '../../media/Shapes/dropDownArrow.svg'; // add correct image here
 
