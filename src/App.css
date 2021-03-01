@@ -30,7 +30,7 @@ html, body {
   border: 15px solid;
   border-radius: 15px;
   margin: 0 0 40px 0
-  }
+}
   
 .pos-container:nth-of-type(odd) {
   color: #FFCC00;
