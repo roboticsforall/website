@@ -24,7 +24,7 @@ export default function RFAPublicityInternPos(props){
 
     return (
       <div>
-      <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlob} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
+      <RFAHeader headerTextColor = {"#FA8D1F"} image = {headerBlob} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
         <br></br>
         <br></br>
         <Container>
@@ -43,7 +43,7 @@ export default function RFAPublicityInternPos(props){
                         These volunteers are super important to our organization, as they increase the professionalism and personality of our whole
                         organization with their talents. You may apply in one of two categories: Graphic Design (Puts graphics together into finished
                         products like Instagram posts, flyers, and much more), and Illustrators (Illustrates new graphics). Please only apply if you
-                        are skilled in one of the two above categories. They also may complete Business Development Intern tasks.
+                        are skilled in one of the two above categories. They also may complete <u>Business Development Intern tasks</u>.
                       </p>
                     </div>
                   }/>
@@ -81,7 +81,7 @@ export default function RFAPublicityInternPos(props){
                     <ul>
                       <li>9th grade or above (exceptions may be made, on occasion, for 8th graders with a volunteering background)</li>
                       <li>Consistent access to a computer and stable WiFi</li>
-                      <li>QHave skills in one of the following categories:</li>
+                      <li>Have skills in one of the following categories:</li>
                         <ul>
                         <li>Illustration (Creating Graphics)</li>
                         <li>Graphic Design (Putting graphics together)</li>
@@ -98,10 +98,13 @@ export default function RFAPublicityInternPos(props){
                   }/>
                   <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
-                      <li>If you have any other questions, please visit our intern FAQ's</li>
-                      <li>Please direct additional questions to info@roboticsforall.net</li>
+                      <li>If you have any other questions, please visit our <a href="#">intern FAQ's</a></li>
+                      <li>Please direct additional questions to a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
                     </ul>
                   }/>
+                  <Button size="lg" style={button} block>Apply Now!</Button>
+                  <br></br>
+                  <br></br>
                 </Tab.Pane>
                 </Tab.Content>
             </Tab.Container>
