@@ -16,7 +16,10 @@ h2 {
   font-family: 'Oswald';
   font-size: 100px;
 }
-
+.RFACard{
+  font-family: 'Oswald';
+  font-size:75px;
+}
 .vol_intern_positions {
   color: #fa8d1f;
   font-size:75px;
@@ -118,4 +121,19 @@ h1 {
   margin-left:auto;
   margin-right:auto;
   width:900px;
+}
+.card-positions {
+  
+  padding:5px;
+  align-items: center;
+  
+}
+.card-pos-title {
+  font-family:'Oswald';
+  font-size:30px;
+}
+#div-positions {
+  margin-left:auto;
+  margin-right:auto;
+  width:1100px;
 }

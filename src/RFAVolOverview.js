@@ -1,11 +1,13 @@
 import React from 'react';
-import './overview.css';
+import './RFAVOStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Image, Col, CardDeck } from 'react-bootstrap'; //Col,
+import { Container, Row, Image, Col, CardDeck, Card } from 'react-bootstrap'; //Col,
 import RFANavbar from "./components/RFANavbar";
+import TeacherToby from "./media/teacher toby.webp";
+import BusinessToby from "./media/toby business.webp";
 import RFACard from "./components/RFACard";
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor'; //using it to detect if numbers are visible on screen to know when to start counting up
+
 //import RFAAffOrgs from "./components/About/RFAAffOrgs";
 //import headerBlobYellow from "./media/HeaderBlobs/yellow.png";
 
@@ -67,22 +69,47 @@ export default class App extends React.Component {
             </div>
           </Container>
         </Row>
-        
+
         <Row>
           <Container fluid>
             <Container>
               <h2 class="vol_intern_positions">VOLUNTEER  POSTIONS</h2>
               <p>Robotics for All is run through the support of volunteers like you! Apply today to become a volunteer teacher or business development intern. Volunteer with us virtually from anywhere in the world! Hover over the icons below to learn about our positions:</p>
-              <CardDeck>
-                <RFACard title={"Lead Instructor"}><a href="https://raw.githubusercontent.com/DevSandBoxx/RFA_website_design/overview/src/media/teacher%20toby.webp"><img src="https://raw.githubusercontent.com/DevSandBoxx/RFA_website_design/overview/src/media/teacher%20toby.webp"></img></a></RFACard>
-                <RFACard title={"Teacher Assistant"}><a href="https://raw.githubusercontent.com/DevSandBoxx/RFA_website_design/overview/src/media/teacher%20toby.webp"><img src="https://raw.githubusercontent.com/DevSandBoxx/RFA_website_design/overview/src/media/teacher%20toby.webp"></img></a></RFACard>
-                <RFACard title={"Business Development Intern"}><a href="https://raw.githubusercontent.com/DevSandBoxx/RFA_website_design/overview/src/media/teacher%20toby.webp"><img src="https://raw.githubusercontent.com/DevSandBoxx/RFA_website_design/overview/src/media/teacher%20toby.webp"></img></a></RFACard>
-              </CardDeck>
             </Container>
           </Container>
         </Row>
 
+        <Row>
+          <Container>
 
+            <Row id="div-positions">
+              <Col>
+                <Card className="card-positions">
+                  <Card.Img variant="top" src={TeacherToby} />
+                  <Card.Body>
+                    <Card.Title class="card-pos-title" style={{color:"#33cc66"}}>Lead Instructor</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card className="card-positions">
+                  <Card.Img variant="top" src={TeacherToby} />
+                  <Card.Body>
+                    <Card.Title class="card-pos-title" style={{color: "#fa8d1f"}}>Teacher Assistant</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card className="card-positions">
+                  <Card.Img variant="top" src={BusinessToby} />
+                  <Card.Body>
+                    <Card.Title class="card-pos-title" style={{color: "#3399ff"}}>Publicity Volunteer</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </Row>
       </Container>
     );
   }

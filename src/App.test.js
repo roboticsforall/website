@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './overview.js';
+import App from './RFAVolOverview.js';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
