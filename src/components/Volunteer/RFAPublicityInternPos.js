@@ -13,13 +13,26 @@ export default function RFAPublicityInternPos(props){
     color: "#000000",
     background: "#FFCC00",
     border: 0,
-    borderRadius: "15px 15px 0 0"
+    borderRadius: "15px 15px 0 0",
+    fontFamily: "mazzard-h-extrabold",
+    fontSize: "x-large",
+    padding: "30px",
   };
   const inActiveStyle = {
     color: "#000000",
     background: "#FA8D1F",
     border: 0,
-    borderRadius: "15px 15px 0 0"
+    borderRadius: "15px 15px 0 0",
+    fontFamily: "mazzard-h-extrabold",
+    fontSize: "x-large",
+    padding: "30px",
+  };
+  const button = {
+    color: "#000000",
+    background: "#FA8D1F",
+    fontFamily: "mazzard-h-extrabold",
+    fontSize: "45px",
+    borderColor: "#FA8D1F",
   };
 
     return (
@@ -99,10 +112,10 @@ export default function RFAPublicityInternPos(props){
                   <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {Placeholder} posDescription = {
                     <ul>
                       <li>If you have any other questions, please visit our <a href="#">intern FAQ's</a></li>
-                      <li>Please direct additional questions to <a> href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
+                      <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
                     </ul>
                   }/>
-                  {/* <Button size="lg" style={button} block>Apply Now!</Button> */}
+                  <Button size="lg" style={button} block>Apply Now!</Button>
                   <br></br>
                   <br></br>
                 </Tab.Pane>
