@@ -73,23 +73,6 @@ h2 {
   .header-size {
     font-size: 27px;
   }
-  .nav-link.pos {
-    font-family: "mazzard-h-bold";
-    font-size: 20px;
-    color: #000000;
-    padding: 20px;
-  }
-  .pos-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 12px;
-    color: #000000;
-  }
-  .pos-header {
-    font-family: "mazzard-h-bold";
-    font-size: 20px;
-    letter-spacing: 0.25em;
-    text-align: center;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -99,23 +82,6 @@ h2 {
   }
   .header-size {
     font-size: 35px;
-  }
-  .nav-link.pos {
-    font-family: "mazzard-h-bold";
-    font-size: 25px;
-    color: #000000;
-    padding: 20px;
-  }
-  .pos-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 15px;
-    color: #000000;
-  }
-  .pos-header {
-    font-family: "mazzard-h-bold";
-    font-size: 35px;
-    letter-spacing: 0.25em;
-    text-align: center;
   }
 }
 
@@ -127,23 +93,6 @@ h2 {
   .header-size {
     font-size: 43px;
   }
-  .nav-link.pos {
-    font-family: "mazzard-h-bold";
-    font-size: 25px;
-    color: #000000;
-    padding: 20px;
-  }
-  .pos-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 15px;
-    color: #000000;
-  }
-  .pos-header {
-    font-family: "mazzard-h-bold";
-    font-size: 40px;
-    letter-spacing: 0.25em;
-    text-align: center;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -154,23 +103,6 @@ h2 {
   .header-size {
     font-size: 55px;
   }
-  .nav-link.pos {
-    font-family: "mazzard-h-bold";
-    font-size: 32px;
-    color: #000000;
-    padding: 20px;
-  }
-  .pos-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 20px;
-    color: #000000;
-  }
-  .pos-header {
-    font-family: "mazzard-h-bold";
-    font-size: 70px;
-    letter-spacing: 0.25em;
-    text-align: center;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -180,22 +112,5 @@ h2 {
   }
   .header-size {
     font-size: 60px;
-  }
-  .nav-link.pos {
-    font-family: "mazzard-h-bold";
-    font-size: 32px;
-    color: #000000;
-    padding: 20px;
-  }
-  .pos-description {
-    font-family: 'Be Vietnam', sans-serif;
-    font-size: 20px;
-    color: #000000;
-  }
-  .pos-header {
-    font-family: "mazzard-h-bold";
-    font-size: 75px;
-    letter-spacing: 0.25em;
-    text-align: center;
   }
 }
