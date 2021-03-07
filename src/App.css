@@ -1,0 +1,92 @@
+@font-face{
+  font-family: "MazzardH-Bold";
+  src:url("./fonts/Mazzard/MazzardH-Bold.otf") format("woff"),
+  url("./fonts/Mazzard/MazzardH-Bold.otf") format("opentype"),
+  url("./fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
+}
+@font-face{
+  font-family: "MazzardH-ExtraBold";
+  src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
+  url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
+  url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
+}
+
+@font-face{
+  font-family: "BeVietnam-Medium";
+  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
+}
+@font-face{
+  font-family: "BeVietnam-ExtraBold";
+  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
+}
+@font-face{
+  font-family: "BeVietnam-SemiBold";
+  src: url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
+}
+html, body {
+  height: 100%;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.mb-6{
+  margin-bottom: 6em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header-description-size {
+    font-size: 13px;
+  }
+  .header-size {
+    font-size: 27px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-description-size {
+    font-size: 13px;
+  }
+  .header-size {
+    font-size: 35px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header-description-size {
+    font-size: 15px;
+  }
+  .header-size {
+    font-size: 43px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header-description-size {
+    font-size: 20px;
+  }
+  .header-size {
+    font-size: 55px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header-description-size {
+    font-size: 20px;
+  }
+  .header-size {
+    font-size: 60px;
+  }
+}
