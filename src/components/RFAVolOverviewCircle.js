@@ -3,10 +3,7 @@ import { Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CountUp from 'react-countup';
 export default class RFAVolOverviewCircle extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    
+   
     render() {
         const circleText = {
             verticalAlign: "baseline",

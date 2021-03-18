@@ -5,6 +5,12 @@
   url("./fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
 }
 @font-face{
+  font-family: "MazzardH-Black";
+  src:url("./fonts/Mazzard/MazzardH-Black.otf") format("woff"),
+  url("./fonts/Mazzard/MazzardH-Black.otf") format("opentype"),
+  url("./fonts/Mazzard/MazzardH-Black.otf") format("truetype");
+}
+@font-face{
   font-family: "MazzardH-ExtraBold";
   src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),

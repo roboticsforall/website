@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap'; //Col,
 //import RFANavbar from "../RFANavbar";
 import TeacherToby from "../../media/TobyImages/teacher toby.webp";
 import BusinessToby from "../../media/TobyImages/toby business.webp";
+import RFAVolOverviewImg from "../RFAVolOverviewImg";
 import RFAVolOverviewCard from "../RFAVolOverviewCard";
 import YellowHeaderBlob from "../../media/HeaderBlobs/yellow.png";
 import RFAVolOverviewHeader from "../RFAVolOverviewHeader";
@@ -26,10 +27,10 @@ export default function RFAVolOverview(props) {
     fontSize: "2.6vh",
     color: "black",
   }
-  const positionsCards = {
+  const positions = {
     marginLeft: "auto",
     marginRight: "auto",
-    width: "1000px",
+    width: "120vh",
     textAlign: "center",
   }
   return (
@@ -38,7 +39,7 @@ export default function RFAVolOverview(props) {
       <Container fluid style={{ backgroundColor: 'white' }}>
         <Row>
           <Container fluid>
-            <Container style={{ width: "950px" }}>
+            <Container style={{ width: "120vh" }}>
               <h2 style={positionsTitle} class="vol_intern_positions">VOLUNTEER  POSTIONS</h2>
               <p style={positionsDescription}>Robotics for All is run through the support of volunteers like you! Apply today to become a volunteer teacher or business development intern. Volunteer with us virtually from anywhere in the world! Click on the icons below to learn about our positions:</p>
             </Container>
@@ -46,17 +47,28 @@ export default function RFAVolOverview(props) {
         </Row>
         <Row>
           <Container>
-            <Row style={positionsCards}>
+            <Row style={positions}>
               <Col>
-                <RFAVolOverviewCard image={TeacherToby} color={"#33cc66"} title={"Lead Instructor"}></RFAVolOverviewCard>
+                <RFAVolOverviewImg image={TeacherToby} color={"#248F47"} title={"Lead Instructor"}></RFAVolOverviewImg>
               </Col>
               <Col>
-                <RFAVolOverviewCard image={TeacherToby} color={"#fa8d1f"} title={"Teacher Assistant"}></RFAVolOverviewCard>
+                <RFAVolOverviewImg image={TeacherToby} color={"#c06204"} title={"Teacher Assistant"}></RFAVolOverviewImg>
               </Col>
               <Col>
-                <RFAVolOverviewCard image={BusinessToby} color={"#3399ff"} title={"Publicity Volunteer"}></RFAVolOverviewCard>
+                <RFAVolOverviewImg image={BusinessToby} color={"#006bd6"} title={"Publicity Volunteer"}></RFAVolOverviewImg>
               </Col>
             </Row>
+          </Container>
+        </Row>
+        <Row>
+          <Container>
+            <RFAVolOverviewCard backgroundcolor = {"#B7EDC9"} buttonColor = {"#248F47"} title={"Lead Instructor"} description={"Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."} buttonfloat={"right"} cardfloat={"left"} buttonPaddingleft={"20px"} arrowLocation={"40px"}></RFAVolOverviewCard>
+          </Container>
+          <Container>
+            <RFAVolOverviewCard backgroundcolor={"#FDD7B0"} buttonColor={"#c06204"} title={"Teacher Assistant"} description={"Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."} buttonfloat={"right"} cardfloat={"left"} buttonPaddingleft={"20px"} arrowLocation={"390px"}></RFAVolOverviewCard>
+          </Container>
+          <Container>
+            <RFAVolOverviewCard backgroundcolor={"#B7DBFF"} buttonColor={"#006bd6"} title={"Publicity Intern"} description={"Publicity Interns help our publicity team to make awesome new visuals, giving you the great branding on this website!"} buttonfloat={"left"} cardfloat={"right"} buttonPaddingleft={"0px"} arrowLocation={"750px"}></RFAVolOverviewCard>
           </Container>
         </Row>
       </Container>

@@ -67,12 +67,12 @@ export default function RFAVolOverviewHeader(props) {
                         <Row>
                             <Col>
                                 <Container style={circle1}>
-                                    <RFAVolOverviewCircle title={"Work With"} subtext={"Levels of Curriculum"} end={12} subtextSize={"20px"} titleSize={"33px"}></RFAVolOverviewCircle>
+                                    <RFAVolOverviewCircle title={"Work With:"} subtext={"Levels of Curriculum"} end={12} subtextSize={"20px"} titleSize={"30px"}></RFAVolOverviewCircle>
                                 </Container>
                             </Col>
                             <Col>
                                 <Container style={circle2}>
-                                    <RFAVolOverviewCircle title={"Join our:"} subtext={"Active Volunteers"} end={221} subtextSize={"20px"} titleSize={"35px"}></RFAVolOverviewCircle>
+                                    <RFAVolOverviewCircle title={"Join our:"} subtext={"Active Volunteers"} end={221} subtextSize={"20px"} titleSize={"30px"}></RFAVolOverviewCircle>
                                 </Container>
                             </Col>
                             <Col>
