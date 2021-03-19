@@ -3,7 +3,6 @@ import {Container, Row} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import RFAFAQDropdowns from '../RFAFAQDropdowns';
 import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA.PNG'; // add correct image here
-import dropdownIcon from '../../media/Shapes/dropDownArrow.svg'; // add correct image here
 
 export default function RFAVolunteerFAQ(props){
 
