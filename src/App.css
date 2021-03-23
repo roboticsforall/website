@@ -16,6 +16,12 @@
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
 }
+@font-face{
+  font-family: "BeVietnam-SemiBold";
+  src: url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
+}
 /* a:focus{
   text-decoration: none;
 } */
