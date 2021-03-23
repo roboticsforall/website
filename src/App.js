@@ -3,8 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
-// import RFACard from "./components/RFACard";
-import RFAAddWebpage from './components/Volunteer/RFAVolunteerFAQ';
+import RFAContact from "./components/Contact/RFAContact";
 export default class App extends React.Component{
 
   render() {
@@ -17,8 +16,11 @@ export default class App extends React.Component{
               </header>
           </Container>
         </Row>
-        <RFAAddWebpage/>
+
+        <RFAContact email = {"info@roboticsforall.net"} telephone = {6506659734}/>
+
       </Container>
+
     );
   }
 }
