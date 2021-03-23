@@ -17,7 +17,7 @@ export default class App extends React.Component{
           </Container>
         </Row>
 
-        <RFAContact email = {"info@roboticsforall.net"} telephone = {6506659734}/>
+        <RFAContact email = {"info@roboticsforall.net"} telephone = {6506659734} address = {"P.O. Box 56, Palo Alto, CA 94302"}/>
 
       </Container>
 
