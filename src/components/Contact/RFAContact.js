@@ -1,71 +1,129 @@
 import React from 'react';
-import {Container, Row, Col, Form,} from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
+import { useFormik } from 'formik';
+import * as emailjs from 'emailjs-com'
 
-export default function RFAContact(props){
+export default function RFAContact(props) {
 
 
   const contactInfo = {
-    fontFamily: "Oswald",
+    fontFamily: "BeVietnam-SemiBold",
   }
 
-    return (
-      <div>
-        <RFAHeader 
-          headerTextColor = {"#ffcc00"} 
-          image = {headerBlobYellow} 
-          title = {"Want to know more? Contact us!"} 
-          description = {"Contact us for more information, questions, partnerships and much more!"}
-        />
+  const linkStyle = {
+    color: "#C06202"
+  }
 
-        <Container className = "border">
-          <br/>
-          <Row className = "justify-content-between">
-            <Col md = {5}>
-              <Row className = "flex-column">
-                <h3>
-                  EMAIL | <a href = {"mailto:" + props.email}>{props.email}</a>
-                </h3>
-                <br></br>
-                <h3>
-                 PHONE | <a href = {"tel:+" + props.telephone}>+{props.telephone}</a>
-                </h3>
-                <br></br>
-                <h3>
-                  ADDRESS | {props.address}
-                </h3>
+  const formik = useFormik({
+    initialValues: {
+      user_name: '',
+      user_email: '',
+      message: '',
+    },
+    onSubmit: values => {
+      alert(JSON.stringify(values, null, 2));
+
+
+      // generate a five digit number for the contact_number variable
+      values.contact_number = (Math.random() * 100000 | 0).toString();
+
+      // these IDs from the previous steps
+
+      emailjs.send('service_t6ov7gc', 'contact_form', values, "user_UgObGpueIJlqijMucq52k")
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+          console.log('FAILED...', error);
+        });
+    },
+  });
+  return (
+    <div>
+      <RFAHeader
+        headerTextColor={"#ffcc00"}
+        image={headerBlobYellow}
+        title={"Want to know more? Contact us!"}
+        description={"Contact us for more information, questions, partnerships and much more!"}
+      />
+
+      <Container className="border">
+        <br />
+        <Row className="justify-content-between">
+          <Col style={contactInfo} md={5}>
+            <Row className="flex-column">
+              <h3>
+                EMAIL | <a className="hyperlink" style={linkStyle} href={"mailto:" + props.email}>{props.email}</a>
+              </h3>
+              <br></br>
+              <h3>
+                PHONE | <a className="hyperlink" style={linkStyle} href={"tel:+" + props.telephone}>+{props.telephone}</a>
+              </h3>
+              <br></br>
+              <h3>
+                ADDRESS | <p style={linkStyle}>{props.address}</p>
+              </h3>
+            </Row>
+            <Row>
+              Add Icons here
               </Row>
-              <Row>
-                Add Icons here
-              </Row>
-            </Col>
-            <Col md = {6} className = "justify-content-end">
-              <Form>
-                <Form.Group controlId="formGroupName">
-                  <Form.Control type="text" placeholder="First Name" />
-                </Form.Group>
-                <Form.Group controlId="formGroupEmail">
-                  <Form.Control type="email" placeholder="Email" />
-                </Form.Group>
-              </Form>
-            </Col>
-          </Row>
-          <br></br>
-          <br></br>
+          </Col>
+          <Col md={6} className="justify-content-end">
+            <Form id="contact-form" onSubmit={formik.handleSubmit}>
+              <Form.Control
+                type="text"
+                placeholder="First Name"
+                id="user_name"
+                name="user_name"
+                onChange={formik.handleChange}
+                value={formik.values.user_name}
+                required
+              />
+              <br></br>
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                id="user_email"
+                name="user_email"
+                onChange={formik.handleChange}
+                value={formik.values.user_email}
+                required
+              />
+              <br></br>
+              <Form.Control
+                as="textarea"
+                rows={3}
+                placeholder="Question, Comments, Concerns"
+                id="message"
+                name="message"
+                onChange={formik.handleChange}
+                value={formik.values.message}
+                required
+              />
+              <br></br>
 
-          <br></br>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
+          </Col>
+        </Row>
+        <br></br>
+        <br></br>
 
-          <br></br>
+        <br></br>
 
-          <br></br>
+        <br></br>
 
-          <br></br>
+        <br></br>
 
-          <br></br>
+        <br></br>
 
-        </Container>
+        <br></br>
 
-      </div>
-    );
+      </Container>
+
+    </div>
+  );
 }

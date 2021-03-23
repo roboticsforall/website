@@ -26,9 +26,19 @@
   text-decoration: none;
 } */
 
+.C06202 {
+  color: #C06202;
+}
+
+
 html, body {
   height: 100%;
   overflow-x: hidden;
+}
+
+.hyperlink, .hyperlink:hover {
+  text-decoration: none;
+  color: black;
 }
 
 .mb-6{
