@@ -3,7 +3,11 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
 import { useFormik } from 'formik';
-import * as emailjs from 'emailjs-com'
+import * as emailjs from 'emailjs-com';
+import RFAFormInput from "../RFAFormInput";
+import RFATextArea from "../RFATextArea";
+import RFASubmitButton from "../RFASubmitButton";
+
 
 export default function RFAContact(props) {
 
@@ -71,41 +75,33 @@ export default function RFAContact(props) {
           </Col>
           <Col md={6} className="justify-content-end">
             <Form id="contact-form" onSubmit={formik.handleSubmit}>
-              <Form.Control
-                type="text"
-                placeholder="First Name"
+              <RFAFormInput
+                type = "text"
+                placeholder = "Full Name"
+                height = "3em"
                 id="user_name"
-                name="user_name"
+                name="user_name"  
                 onChange={formik.handleChange}
                 value={formik.values.user_name}
-                required
               />
-              <br></br>
-              <Form.Control
+              <RFAFormInput
                 type="email"
                 placeholder="Email"
+                height = "3em"
                 id="user_email"
                 name="user_email"
                 onChange={formik.handleChange}
                 value={formik.values.user_email}
-                required
               />
-              <br></br>
-              <Form.Control
-                as="textarea"
-                rows={3}
+              <RFATextArea
+                rows = {4}
                 placeholder="Question, Comments, Concerns"
                 id="message"
                 name="message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
-                required
               />
-              <br></br>
-
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
+              <RFASubmitButton/>
             </Form>
           </Col>
         </Row>

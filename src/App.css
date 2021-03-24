@@ -30,6 +30,39 @@
   color: #C06202;
 }
 
+input::placeholder, textarea::placeholder {
+  color: #B38F00;
+}
+
+button, input, textarea{
+  outline: none !important;
+}
+input, textarea{
+  background-color: #ffcc004D;
+}
+input:invalid:focus, textarea:invalid:focus{
+  border: 2px solid red;
+  background-color: white;
+}
+input:valid {
+  border: 1px solid black;
+}
+
+input:hover, textarea:hover{
+  background-color: white;
+}
+
+.long-button {
+  border-radius: 1em;
+  border: none;
+  transition: 200ms;
+  background-color: #ffcc00;
+}
+
+.long-button:hover {
+  transition: 200ms;
+  background-color: #ffcc00CA;
+}
 
 html, body {
   height: 100%;
