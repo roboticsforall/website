@@ -16,7 +16,7 @@ export default function RFAHomePage(props) {
     }
     const title = {
         fontFamily: "Oswald",
-        fontSize: "7vw",
+        fontSize: "12vh",
         color: "#ffcc00",
         textAlign: "center",
     }
@@ -24,6 +24,9 @@ export default function RFAHomePage(props) {
         fontFamily: "BeVietnam-Regular",
         textAlign: "center",
         fontSize: "2vw",
+    }
+    const imageSize = {
+        height: "20vh",
     }
 
 
@@ -78,7 +81,7 @@ export default function RFAHomePage(props) {
                                 }
                             ].map((buttons) => (
                                 <Col md={4} className="text-center">
-                                    <Image className="mb-3" width="200" src={buttons.logo} />
+                                    <Image style = {imageSize} className="mb-3" src={buttons.logo} />
                                     <h1 style={{ color: buttons.color, fontFamily: "Oswald", textAlign: 'center' }}>{buttons.label}</h1>
                                 </Col>
                             ))
