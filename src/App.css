@@ -115,7 +115,7 @@ html, body {
   .home-aff-org-card-link:hover{
     transition: 0.2s;
     text-decoration: none;
-    color:white;
+    color:white !important;
   }
 }
 
@@ -130,5 +130,10 @@ html, body {
   .video-width {
     width: 75% !important;
     height: 60vh;
+  }
+  .home-aff-org-card-link:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    color:white;
   }
 }

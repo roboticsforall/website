@@ -16,14 +16,14 @@ export default function RFAHomePage(props) {
     }
     const title = {
         fontFamily: "Oswald",
-        fontSize: "12vh",
+        fontSize: "10vh",
         color: "#ffcc00",
         textAlign: "center",
     }
     const titleText = {
         fontFamily: "BeVietnam-Regular",
         textAlign: "center",
-        fontSize: "2vw",
+        fontSize: "4vh",
     }
     const imageSize = {
         height: "20vh",
