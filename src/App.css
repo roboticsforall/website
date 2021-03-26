@@ -11,6 +11,12 @@
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
 }
 @font-face{
+  font-family: "BeVietnam-Bold";
+  src: url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("truetype");
+}
+@font-face{
   font-family: "BeVietnam-ExtraBold";
   src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),  
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
