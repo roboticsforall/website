@@ -22,10 +22,31 @@
   url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
 }
+@font-face{
+  font-family: "BeVietnam-Regular";
+  src: url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-Medium.ttf") format("tff"),
+  url("./fonts/Oswald/Oswald-Medium.ttf") format("opentype"),
+  url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald-Bold";
+  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("tff"),
+  url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
+  url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+}
 /* a:focus{
   text-decoration: none;
 } */
 
+h1, h2, h3, h4, h5, h6, p, a{
+  letter-spacing: 1.4px;
+}
 html, body {
   height: 100%;
   overflow-x: hidden;
@@ -35,6 +56,16 @@ html, body {
   margin-bottom: 6em;
 }
 
+.home-aff-org-card-link {
+  font-family: 'BeVietnam-ExtraBold', sans-serif;
+  font-size: 2.5em;
+  transition: 0.2s;
+}
+
+.video-size {
+  height: 60vh;
+  width: 75%;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {
@@ -63,6 +94,10 @@ html, body {
   .header-size {
     font-size: 43px;
   }
+  .video-width {
+    width: 100% !important;
+    height: auto;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -73,6 +108,15 @@ html, body {
   .header-size {
     font-size: 55px;
   }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
+  }
+  .home-aff-org-card-link:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    color:white;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -82,5 +126,9 @@ html, body {
   }
   .header-size {
     font-size: 60px;
+  }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
   }
 }
