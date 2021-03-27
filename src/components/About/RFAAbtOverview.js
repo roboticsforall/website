@@ -9,20 +9,13 @@ export default function RFAAbtOverview(props) {
     const title = {
         fontFamily: 'Oswald',
         fontSize: "9vh",
-        color: "#fa8d1f",
         textAlign: "center",
         letterSpacing: "5px",
       }
       const description = {
         fontFamily: 'Be Vietnam',
-        fontSize: "2.6vh",
+        fontSize: "2vh",
         color: "black",
-      }
-      const positions = {
-        marginLeft: "auto",
-        marginRight: "auto",
-        width: "120vh",
-        textAlign: "center",
       }
     return(
         <div>
@@ -31,13 +24,13 @@ export default function RFAAbtOverview(props) {
                 <Row>
                     <Container fluid>
                         <Container style={{ width: "120vh"}}>
-                            <h2 style={title} class="our_mission">OUR MISSION</h2>
+                            <h2 style={title } class="our_mission">OUR MISSION</h2>
                             <p style={description}>Robotics for All aims to inspire the next generation of students and volunteers to achieve their full potential, regardless of their background.</p>
                         </Container>    
                     </Container>
                 </Row>
                 <Row>
-                    <Container fluid>
+                    <Container fluid style={{ backgroundColor: "#B7EDC9"}}>
                         <Container style={{ width: "120vh"}}>
                             <h2 style={title} class="our_vision">OUR VISION</h2>
                             <p style={description}>A world where all students are able to access equitable educational opportunities to create their futures.</p>
@@ -47,7 +40,7 @@ export default function RFAAbtOverview(props) {
                 <Row>
                     <Container fluid>
                         <Container style={{ width: "120vh"}}>
-                            <h2 style={title} class="our_mission">OUR VALUES</h2>
+                            <h2 style={title} class="our_values">OUR VALUES</h2>
                             <p style={description}>We are motivated. Each and every day, we strive to be a positive force in this world and create social change.</p>
                             <div></div>
                             <p style={description}>We are inclusive. We celebrate the diversity of our students and volunteers alike.</p>
