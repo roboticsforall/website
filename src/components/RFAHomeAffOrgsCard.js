@@ -6,7 +6,7 @@ import {Row, Col, Image} from 'react-bootstrap';
 export default function RFAHomeAffOrgsCard(props) {
     
     const affOrgsTitle = {
-        fontFamily: "Oswald-Bold",
+        fontFamily: "Mazzard-H-ExtraBold",
         color: "white",
         textAlign: 'center'
     }
@@ -32,7 +32,7 @@ export default function RFAHomeAffOrgsCard(props) {
                 <h1 className = "header-size" style={affOrgsTitle}>{props.org}</h1>
             </Col>
             <Col className = "text-center" md={3} lg={3} xl={3}>
-                <a href = "#" className = "home-aff-org-card-link" style = {linkColor} >Learn More</a>
+                <a href = "#" className = "home-aff-org-card-link" style = {linkColor} >LEARN MORE</a>
             </Col>
         </Row>
     );

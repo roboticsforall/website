@@ -17,13 +17,12 @@ import YMCA from '../media/Sponsors/ymca.png';
 
 
 import RFAHomeAffOrgsCard from "./RFAHomeAffOrgsCard";
+
+
 export default function RFAHomePage(props) {
 
     const videoRow = {
         backgroundColor: "#FFCC00",
-    }
-    const yellowRow = {
-        backgroundColor: "#FFCC004D",
     }
     const header = {
         fontFamily: "Oswald",
@@ -41,8 +40,14 @@ export default function RFAHomePage(props) {
         textAlign: "center",
         fontSize: "4vh",
     }
+    const affOrgsHeader = {
+        fontFamily: "Oswald",
+        fontSize: "8vh",
+        color: "#ffcc00",
+        textAlign: "center",
+    }
     const sponsorImageSize = {
-        height: "8vh",
+        height: "7vh",
     }
     const imageSize = {
         height: "20vh",
@@ -76,7 +81,7 @@ export default function RFAHomePage(props) {
                 </Row>
             </Container>
 
-            <Row className="p-5" style={yellowRow}>
+            <Row className = "p-5 yellow-row">
                 <Container>
                     <Row>
                         {
@@ -98,10 +103,10 @@ export default function RFAHomePage(props) {
                                     color: "#fa8d1f"
 
                                 }
-                            ].map((buttons) => (
-                                <Col md={4} className="text-center">
-                                    <Image style = {imageSize} className="mb-3" src={buttons.logo} />
-                                    <h1 style={{ color: buttons.color, fontFamily: "Oswald", textAlign: 'center' }}>{buttons.label}</h1>
+                            ].map((buttons, i) => (
+                                <Col key = {i} md={4} className="text-center">
+                                    <Image  key = {buttons.logo} style = {imageSize} className="mb-3" src={buttons.logo} />
+                                    <h1 key = {buttons.label} style={{ color: buttons.color, fontFamily: "Oswald", textAlign: 'center' }}>{buttons.label}</h1>
                                 </Col>
                             ))
                         }
@@ -110,7 +115,7 @@ export default function RFAHomePage(props) {
             </Row>
             <Container>
                 <Row className="justify-content-center">
-                    <h1 style={header}>AFFILIATED ORGANIZATIONS</h1>
+                    <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
                 </Row>
                 {
                             [
@@ -139,27 +144,26 @@ export default function RFAHomePage(props) {
                                     <RFAHomeAffOrgsCard key = {i} org = {afforgs.label} linkColor = {afforgs.linkColor} bgColor ={afforgs.bgColor} logo = {afforgs.logo}/>
                                     <br/>
                                 </>
-                            ))
+                                ))
                         }
             </Container>
             <Container>
                 <h3 style = {sponsorsLabel}>Supported by the following organizations and over 50 independent donors:</h3>
                 <br/><br/>
                 <div className = "d-flex justify-content-around flex-wrap">
-                    {[LM, TF, WMM, Google, NSP].map((sponsor) => (
-                        <Image style = {sponsorImageSize} src = {sponsor} />
+                    {[LM, TF, WMM, Google, NSP].map((sponsor, i) => (
+                        <Image key = {i} className = "m-3" style = {sponsorImageSize} src = {sponsor} />
                     ))}
                 </div>
                 <br/><br/>
                 <h3 style = {sponsorsLabel}>​Proud partners of the following organizations:</h3>
                 <br/><br/>
                 <div className = "d-flex justify-content-around flex-wrap">
-                    {[AH, YMCA, NGN, WH].map((partner) => (
-                        <Image className = "m-2" style = {sponsorImageSize} src = {partner} />
+                    {[AH, YMCA, NGN, WH].map((partner, i) => (
+                        <Image key = {i} className = "m-2" style = {sponsorImageSize} src = {partner} />
                     ))}
                 </div>
             </Container>
-
         </>
     );
 

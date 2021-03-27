@@ -62,16 +62,29 @@ html, body {
   margin-bottom: 6em;
 }
 
+.hyperlink, .hyperlink:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .home-aff-org-card-link {
   font-family: 'BeVietnam-ExtraBold', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.0em;
   transition: 0.2s;
+}
+.yellow-row {
+  background-color: #FFCC004D;
 }
 
 .video-size {
   height: 60vh;
   width: 75%;
 }
+
+.C06202 {
+  color: #C06202;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {

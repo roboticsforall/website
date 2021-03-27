@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Row} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
 import RFAHomePage from './components/RFAHomePage';
+import RFAFooter from "./components/RFAFooter";
+
 export default class App extends React.Component{
 
   render() {
@@ -17,6 +19,10 @@ export default class App extends React.Component{
           </Container>
         </Row>
         <RFAHomePage/>
+        <br/>
+        <br/>
+        <br/>
+        <RFAFooter/>
       </Container>
     );
   }
