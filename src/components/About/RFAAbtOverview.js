@@ -23,7 +23,7 @@ export default function RFAAbtOverview(props) {
              <Container fluid style={{ backgroundColor: 'white'}}>
                 <Row>
                     <Container fluid>
-                        <Container style={{ width: "145vh"}}>
+                        <Container style={{ width: "145vh", padding: "5vh"}}>
                             <h2 style={title } class="our_mission">OUR MISSION</h2>
                             <p style={description}>Robotics for All aims to inspire the next generation of students and volunteers to achieve their full potential, regardless of their background.</p>
                         </Container>    
@@ -31,7 +31,7 @@ export default function RFAAbtOverview(props) {
                 </Row>
                 <Row>
                     <Container fluid style={{ backgroundColor: "#B7EDC9"}}>
-                        <Container style={{ width: "145vh"}}>
+                        <Container style={{ width: "145vh", padding: "5vh"}}>
                             <h2 style={title} class="our_vision">OUR VISION</h2>
                             <p style={description}>A world where all students are able to access equitable educational opportunities to create their futures.</p>
                         </Container>    
@@ -39,7 +39,7 @@ export default function RFAAbtOverview(props) {
                 </Row>
                 <Row>
                     <Container fluid>
-                        <Container style={{ width: "145vh"}}>
+                        <Container style={{ width: "145vh", align: "left", padding: "5vh"}}>
                             <h2 style={title} class="our_values">OUR VALUES</h2>
                             <p style={description}>We are <span style={{fontFamily: 'BeVietnam-Semibold', color: "#fa8d1f"}}>motivated</span>. Each and every day, we strive to be a positive force in this world and create social change.</p>
                             <div></div>
