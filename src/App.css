@@ -35,6 +35,21 @@
   url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
 }
+
+@font-face{
+  font-family: "BeVietnam-Light";
+  src: url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "BeVietnam-Regular";
+  src: url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
+}
+
 html, body {
   height: 100%;
   text-align: center;

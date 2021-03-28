@@ -8,13 +8,13 @@ import RFAHeader from "../RFAHeader";
 export default function RFAAbtOverview(props) {
     const title = {
         fontFamily: 'Oswald',
-        fontSize: "9vh",
+        fontSize: "12vh",
         textAlign: "center",
         letterSpacing: "5px",
       }
       const description = {
-        fontFamily: 'Be Vietnam',
-        fontSize: "2vh",
+        fontFamily: 'BeVietnam-Regular',
+        fontSize: "3.5vh",
         color: "black",
       }
     return(
@@ -23,7 +23,7 @@ export default function RFAAbtOverview(props) {
              <Container fluid style={{ backgroundColor: 'white'}}>
                 <Row>
                     <Container fluid>
-                        <Container style={{ width: "120vh"}}>
+                        <Container style={{ width: "145vh"}}>
                             <h2 style={title } class="our_mission">OUR MISSION</h2>
                             <p style={description}>Robotics for All aims to inspire the next generation of students and volunteers to achieve their full potential, regardless of their background.</p>
                         </Container>    
@@ -31,7 +31,7 @@ export default function RFAAbtOverview(props) {
                 </Row>
                 <Row>
                     <Container fluid style={{ backgroundColor: "#B7EDC9"}}>
-                        <Container style={{ width: "120vh"}}>
+                        <Container style={{ width: "145vh"}}>
                             <h2 style={title} class="our_vision">OUR VISION</h2>
                             <p style={description}>A world where all students are able to access equitable educational opportunities to create their futures.</p>
                         </Container>    
@@ -39,17 +39,17 @@ export default function RFAAbtOverview(props) {
                 </Row>
                 <Row>
                     <Container fluid>
-                        <Container style={{ width: "120vh"}}>
+                        <Container style={{ width: "145vh"}}>
                             <h2 style={title} class="our_values">OUR VALUES</h2>
-                            <p style={description}>We are motivated. Each and every day, we strive to be a positive force in this world and create social change.</p>
+                            <p style={description}>We are <span style={{fontFamily: 'BeVietnam-Semibold', color: "#fa8d1f"}}>motivated</span>. Each and every day, we strive to be a positive force in this world and create social change.</p>
                             <div></div>
-                            <p style={description}>We are inclusive. We celebrate the diversity of our students and volunteers alike.</p>
+                            <p style={description}>We are <span style={{fontFamily: 'BeVietnam-Semibold', color: "#ffcc00"}}>inclusive</span>. We celebrate the diversity of our students and volunteers alike.</p>
                             <div></div>
-                            <p style={description}>We are accountable. We remain honest and transparent in everything we do.</p>
+                            <p style={description}>We are <span style={{fontFamily: 'BeVietnam-Semibold', color: "#33cc66"}}>accountable</span>. We remain honest and transparent in everything we do.</p>
                             <div></div>
-                            <p style={description}>We are collaborative. Through the strength of teamwork, we are able to generate stronger ideas and do more.</p>
+                            <p style={description}>We are <span style={{fontFamily: 'BeVietnam-Semibold', color: "#70b8ff"}}>collaborative</span>. Through the strength of teamwork, we are able to generate stronger ideas and do more.</p>
                             <div></div>
-                            <p style={description}>We are compassionate. We care deeply about all of our students, volunteers, and our community.</p>
+                            <p style={description}>We are <span style={{fontFamily: 'BeVietnam-Semibold', color: "#006bd6"}}>compassionate</span>. We care deeply about all of our students, volunteers, and our community.</p>
                         </Container>    
                     </Container>
                 </Row>
