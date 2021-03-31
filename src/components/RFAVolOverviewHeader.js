@@ -8,7 +8,7 @@ export default function RFAVolOverviewHeader(props) {
     const headerText = {
         position: "relative",
         textAlign: "center",
-        bottom: "100px",
+        bottom: "3vw",
     }
     const pageHeader = {
         fontFamily: "MazzardH-Bold",
@@ -23,65 +23,36 @@ export default function RFAVolOverviewHeader(props) {
     }
     const pageHeaderDescription = {
         fontFamily: 'Be Vietnam',
-        fontSize: "1.5vmax",
+        fontWeight: 600,
         color: "black",
     }
     const statCircles = {
-        marginLeft: "auto",
-        marginRight: "auto",
-        width: "900px",
-    }
-    const circle1 = {
-        height: "225px",
-        width: "225px",
-        backgroundColor: "#fcaf62",
-        borderRadius: "50%",
-        paddingTop: "52px",
-        marginTop: "50%",
-        marginBottom: "50%",
-    }
-
-    const circle2 = {
-        height: "225px",
-        width: "225px",
-        backgroundColor: "#fcaf62",
-        borderRadius: "50%",
-        paddingTop: "52px",
-        marginTop: "5%",
-    }
-
-    const circle3 = {
-        height: "250px",
-        width: "260px",
-        backgroundColor: "#fcaf62",
-        borderRadius: "50%",
-        paddingTop: "65px",
-        marginTop: "35%",
+        paddingLeft: "5vmax",
     }
 
     return (
         <Row style={headerBlob}>
             <Container className="align-self-end">
                 <Col>
-                    <div style={statCircles}>
-                        <Row>
+                   
+                        <Row style = {statCircles}>
                             <Col>
-                                <Container style={circle1}>
-                                    <RFAVolOverviewCircle title={"Work With:"} subtext={"Levels of Curriculum"} end={12} subtextSize={"20px"} titleSize={"30px"}></RFAVolOverviewCircle>
-                                </Container>
+                                <div>
+                                    <RFAVolOverviewCircle paddingtop = {"3.3vmax"} width = {"16vmax"} height = {"16vmax"} top={"-20vmax"} title={"Work With:"} subtext={"Levels of Curriculum"} end={12} subtextSize={"1.3vmax"} titleSize={"2.1vmax"}></RFAVolOverviewCircle>
+                                </div>
                             </Col>
                             <Col>
-                                <Container style={circle2}>
-                                    <RFAVolOverviewCircle title={"Join our:"} subtext={"Active Volunteers"} end={221} subtextSize={"20px"} titleSize={"30px"}></RFAVolOverviewCircle>
-                                </Container>
+                                <div>
+                                    <RFAVolOverviewCircle paddingtop = {"3.3vmax"} width = {"16vmax"} height = {"16vmax"} top={"-32vmax"} title={"Join our:"} subtext={"Active Volunteers"} end={221} subtextSize={"1.3vmax"} titleSize={"2.1vmax"}></RFAVolOverviewCircle>
+                                </div>
                             </Col>
                             <Col>
-                                <Container style={circle3}>
-                                    <RFAVolOverviewCircle title={"Support our:"} subtext={"Students Taught"} end={1296} subtextSize={"25px"} titleSize={"35px"}></RFAVolOverviewCircle>
-                                </Container>
+                                <div>
+                                    <RFAVolOverviewCircle paddingtop = {"3.8vmax"} width = {"18vmax"} height = {"17vmax"} top={"-23vmax"} title={"Support our:"} subtext={"Students Taught"} end={1296} subtextSize={"1.6vmax"} titleSize={"2.4vmax"}></RFAVolOverviewCircle>
+                                </div>
                             </Col>
                         </Row>
-                    </div>
+                   
                     <div style={headerText}>
                         <Row className="justify-content-center">
                             <h1 style={pageHeader} className="text-center header-size">{props.title}</h1>

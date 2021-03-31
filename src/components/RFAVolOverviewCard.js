@@ -6,42 +6,41 @@ export default class RFAVolOverviewCard extends React.Component {
     render() {
         const positionsTitle = {
             fontFamily: "Oswald",
-            fontSize: "50px",
+            fontSize: "3.2vmax",
         }
         const description = {
             fontFamilt: "BeVietnam-Medium",
-            fontSize: "20px",
+            fontSize: "1.3vmax",
         }
         const card = {
             borderRadius: "15px",
             backgroundColor: this.props.backgroundcolor,
-            padding: "20px",
-            height: "170px",
+            padding: "1.2vmax",
+            height: "12vmax",
             float: this.props.cardfloat,
-            width: "70%",
-            lineHeight: "24px",
+            width: "68%",
+            lineHeight: "2vmax",
         }
         const buttonBox = {
             float: this.props.buttonfloat,
-            paddingLeft: this.props.buttonPaddingleft,
         }
         const button = {
             borderRadius: "15px",
             backgroundColor: this.props.backgroundcolor,
             color: this.props.buttonColor,
             fontFamily: "Oswald",
-            fontSize: "30px",
+            fontSize: "2.2vmax",
             letterSpacing: "5px",
-            width: "200px",
-            height: "80px",
-            paddingTop: "15px",
+            width: "17vmax",
+            height: "5.7vmax",
+            paddingTop: "1vmax",
             textAlign: "center",
-            marginBottom: "10px",
+            marginBottom: "0.6vmax",
         }
         const containerStyle = {
-            paddingLeft: "90px",
-            paddingRight: "40px",
-            width: "1000px",
+            paddingLeft: "7vmax",
+            paddingRight: "6vmax",
+            width: "75%",
         }
         const arrow = {
             borderBottom: `70px solid ${this.props.backgroundcolor}`,

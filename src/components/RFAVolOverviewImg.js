@@ -1,26 +1,22 @@
 import React from 'react';
-import { Container, Row, Image, Col } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import '../App.css';
 export default class RFAVolOverviewCard extends React.Component {
     
     render() {
         const cardTitle = {
             fontFamily: 'Oswald',
-            fontSize: "35px",
+            fontSize: "2.5vmax",
             color: this.props.color,
         }
         const overviewImgSize = {
-            height: "32vh",
+            height: "20vmax",
         }
         return (
-            <Row>
-                <Col>
-                    <Container>
+                <div style = {{width:"100%"}}>
                         <Image style={overviewImgSize} src={this.props.image}></Image>
                         <p style={cardTitle}>{this.props.title}</p>
-                    </Container>
-                </Col>
-            </Row>
+                </div>
         );
     }
 }
