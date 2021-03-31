@@ -5,6 +5,8 @@ import { Container, Row, Col } from 'react-bootstrap'; //Col,
 //import RFANavbar from "../RFANavbar";
 import TeacherToby from "../../media/TobyImages/teacher toby.webp";
 import BusinessToby from "../../media/TobyImages/toby business.webp";
+import InternToby from "../../media/TobyImages/publicity intern.webp";
+import TAToby from "../../media/TobyImages/TA.webp";
 import RFAVolOverviewImg from "../RFAVolOverviewImg";
 import RFAVolOverviewCard from "../RFAVolOverviewCard";
 import YellowHeaderBlob from "../../media/HeaderBlobs/yellow.png";
@@ -48,10 +50,10 @@ export default function RFAVolOverview(props) {
                 <RFAVolOverviewImg image={TeacherToby} color={"#248F47"} title={"Lead Instructor"}></RFAVolOverviewImg>
               </Col>
               <Col>
-                <RFAVolOverviewImg image={TeacherToby} color={"#c06204"} title={"Teacher Assistant"}></RFAVolOverviewImg>
+                <RFAVolOverviewImg image={TAToby} color={"#c06204"} title={"Teacher Assistant"}></RFAVolOverviewImg>
               </Col>
               <Col>
-                <RFAVolOverviewImg image={BusinessToby} color={"#006bd6"} title={"Publicity Volunteer"}></RFAVolOverviewImg>
+                <RFAVolOverviewImg image={InternToby} color={"#006bd6"} title={"Publicity Volunteer"}></RFAVolOverviewImg>
               </Col>
         </Row>
         <Col>
