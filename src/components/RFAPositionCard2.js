@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Row, Col, Image} from "react-bootstrap";
 
 export default class RFAPositionCard2 extends React.Component{
-    
     render () {
 
     return (

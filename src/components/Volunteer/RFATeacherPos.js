@@ -5,7 +5,7 @@ import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
 import Placeholder from "../../media/placeholder.png"
 
-export default function TeacherPos(props){
+export default function RFATeacherPos(props){
   const [key, setKey] = useState("one")
   const ActiveStyle = {
     color: "#000000",
