@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Row, Container, ResponsiveEmbed, Col, Image } from "react-bootstrap";
+import React from 'react';
+import { Row, Container, Col } from "react-bootstrap";
 import homePageVideo from "../media/homePageVideo.mp4";
 import RFAHomeAffOrgsCard from "./RFAHomeAffOrgsCard";
 

@@ -61,10 +61,20 @@ html, body {
 .mb-6 {
   margin-bottom: 6em;
 }
-
+a.nav-link{
+  color: #ffcc00 !important;
+  font-family: "BeVietnam-ExtraBold" !important;
+}
 .hyperlink, .hyperlink:hover {
   text-decoration: none;
   color: black;
+}
+.nav-link::after {
+  content: none !important;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block !important;
 }
 
 .home-aff-org-card-link {

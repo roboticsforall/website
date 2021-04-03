@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Row, Container, ResponsiveEmbed, Col, Image } from "react-bootstrap";
 import homePageVideo from "../media/homePageVideo.mp4";
 import TFALogo from '../media/AffiliatedOrgs/TFA_Logo.png';
@@ -52,14 +52,6 @@ export default function RFAHomePage(props) {
     const imageSize = {
         height: "20vh",
     }
-
-
-
-    // const [aspectRatio, setAspectRatio] = useState("21by9");
-
-    // useEffect(() => {
-    //     window.innerWidth <= 768 ? setAspectRatio("16by9") : setAspectRatio("21by9")
-    // }, []);
 
     return (
         <>

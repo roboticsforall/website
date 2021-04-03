@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
 import RFAHomePage from './components/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";

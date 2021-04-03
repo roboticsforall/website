@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import {Row, Col, Image} from 'react-bootstrap';
 
 
@@ -32,7 +31,7 @@ export default function RFAHomeAffOrgsCard(props) {
                 <h1 className = "header-size" style={affOrgsTitle}>{props.org}</h1>
             </Col>
             <Col className = "text-center" md={3} lg={3} xl={3}>
-                <a href = "#" className = "home-aff-org-card-link" style = {linkColor} >LEARN MORE</a>
+                <a href = "google.com" className = "home-aff-org-card-link" style = {linkColor} >LEARN MORE</a>
             </Col>
         </Row>
     );
