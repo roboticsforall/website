@@ -1,6 +1,7 @@
 import React from 'react';
 import {Row} from "react-bootstrap";
 import TobyHeaderLogo from "../media/TobyHeaderLogo.png"
+import {Link} from "react-router-dom";
 
 export default function RFANavbar(props) {
 
@@ -19,14 +20,14 @@ export default function RFANavbar(props) {
     return (
         <Row>
             <nav className="w-100 navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand hyperlink d-flex align-items-center">
+                <Link to = "/" className="navbar-brand hyperlink d-flex align-items-center">
                     <img
                         alt=""
                         src={TobyHeaderLogo}
                         style={logoImageSize}
                     />
                     <h2 className = "m-0" style = {header}>Robotics For All</h2>
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
