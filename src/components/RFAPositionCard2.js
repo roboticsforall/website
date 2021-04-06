@@ -11,6 +11,7 @@ export default class RFAPositionCard2 extends React.Component{
         };
 
         const posDescription = {
+            fontFamily: "BeVietnam-Medium",
             color: "#000000",
         }
 
