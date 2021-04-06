@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function RFAHeader(props){
   
     const pageHeaderDescription = {
-      fontFamily: 'BeVietnam-Medium',
+      fontFamily: 'BeVietnam-SemiBold',
       fontWeight: 600,
       color: "black",
     }
