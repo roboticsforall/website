@@ -91,7 +91,8 @@ export default function RFANavbar(props) {
                                 <a className="nav-link" href="#">Donate </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Site Language</a>
+                                {/* <a className="nav-link" href="#">Site Language</a> */}
+                                <div id="google_translate_element"></div>
                             </li>
                         </ul>
                     </div>
