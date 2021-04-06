@@ -7,8 +7,6 @@ import RFAHomePage from './components/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
-// import RFACard from "./components/RFACard";
-
 export default class App extends React.Component{
 
   render() {
