@@ -56,8 +56,8 @@ export default function RFAHomePage(props) {
     return (
         <>
             <Row style={videoRow} className="justify-content-center">
-                <ResponsiveEmbed className="video-width" aspectRatio={"16by9"}>
-                    <video loop autoPlay muted type="video/mp4" src={homePageVideo} />
+                <ResponsiveEmbed className="video-width" aspectRatio = "16by9">
+                    <video className = "w-100 h-100" type="video/mp4" src={homePageVideo} />
                 </ResponsiveEmbed>
             </Row>
 

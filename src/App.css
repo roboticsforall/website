@@ -61,9 +61,34 @@ html, body {
 .mb-6 {
   margin-bottom: 6em;
 }
-a.nav-link{
+.nav-link{
   color: #ffcc00 !important;
   font-family: "BeVietnam-ExtraBold" !important;
+  font-size: 1.5em;
+}
+.nav-link:hover {
+  transition: 0.2s;
+  color: #fa8d1f !important;
+}
+.nav-link:active {
+  transition: 0.2s;
+  color: black !important;
+}
+.dropdown-item {
+  color: #fa8d1f !important;
+  font-family: "BeVietnam-ExtraBold";
+  background-color: #ffdb4d !important;
+  font-size: 1.2em;
+}
+.dropdown-item:hover {
+  transition: 0.2s;
+  background-color: #ffcc00 !important;
+  color: #c06204 !important;
+}
+.dropdown-item:active {
+  transition: 0.2s;
+  background-color: #ffcc00 !important;
+  color: black !important;
 }
 .hyperlink, .hyperlink:hover {
   text-decoration: none;
@@ -76,6 +101,10 @@ a.nav-link{
 .dropdown:hover .dropdown-menu{
   display: block !important;
 }
+.dropdown-menu {
+  border-radius: 15px !important;
+  background-color: #ffdb4d !important;
+}
 
 .home-aff-org-card-link {
   font-family: 'BeVietnam-ExtraBold', sans-serif;
@@ -86,9 +115,9 @@ a.nav-link{
   background-color: #FFCC004D;
 }
 
-.video-size {
+.video-width {
   height: 60vh;
-  width: 75%;
+  width: 75% !important;
 }
 
 .C06202 {
