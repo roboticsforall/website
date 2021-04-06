@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {Container, Row} from "react-bootstrap";
-import dropdownIcon from '../media/Shapes/dropdownArrow.png'; // add correct image here
+import {Container, Row, Col} from "react-bootstrap";
+import dropdownIcon from '../media/Shapes/brownarrow.png'; // add correct image here
 
 
 export default function RFAClassFAQ(props){
@@ -60,8 +60,12 @@ export default function RFAClassFAQ(props){
     return (
         <div>
             <Row style = {dropdownQuestion} className = "p-2 justify-content-between align-items-center">
-                <h3 className = "w-75">{props.question}</h3>
-                <button style = {button} onClick = {displayDiv} className = "background-none border-0"><img width = "80" height = "50" src = {dropdownIcon}/></button>
+                <Col md = {11}>
+                    <h3 className = "w-75">{props.question}</h3>
+                </Col>
+                <Col>
+                    <button style = {button} onClick = {displayDiv} className = "background-none border-0"><img width = "70" height = "40" src = {dropdownIcon}/></button>
+                </Col>
             </Row>
             <br/>
             <div style = {dropdownDisplay}>

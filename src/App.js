@@ -1,24 +1,30 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 import RFANavbar from "./components/RFANavbar";
-// import RFACard from "./components/RFACard";
-import RFAAddWebpage from './components/Volunteer/RFAVolunteerFAQ';
+import RFAHomePage from './components/RFAHomePage';
+import RFAFooter from "./components/RFAFooter";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
+
 export default class App extends React.Component{
 
   render() {
     return (
-      <Container fluid>
-        <Row> {/* Structure of webpage will follow grid layout => row, column, container */}
-          <Container>
-              <header>
-                  <RFANavbar/>
-              </header>
-          </Container>
-        </Row>
-        <RFAAddWebpage/>
-      </Container>
+      <Router>
+        <Container fluid>
+          <RFANavbar/>
+          <Switch>
+            <Route exact path = "/" component = {RFAHomePage}/>
+            <Route path = "/enroll/classfaq" component = {RFAClassFAQ}/>
+          </Switch>
+          <br/>
+          <br/>
+          <br/>
+          <RFAFooter/>
+        </Container>
+      </Router>
     );
   }
 }
