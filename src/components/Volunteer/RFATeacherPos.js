@@ -14,7 +14,7 @@ import Presentation from "../../media/VolunteerPos/presentation.png";
 import Tasks from "../../media/VolunteerPos/tasks.png";
 import ThumbsUp from "../../media/VolunteerPos/thumbs up.png";
 
-export default function TeacherPos(props){
+export default function RFATeacherPos(props){
   const [key, setKey] = useState("one")
   const ActiveStyle = {
     color: "#000000",
