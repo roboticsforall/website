@@ -110,6 +110,7 @@ html, body {
   font-family: 'BeVietnam-ExtraBold', sans-serif;
   font-size: 2.0em;
   transition: 0.2s;
+  text-decoration: none;
 }
 .yellow-row {
   background-color: #FFCC004D;
