@@ -38,10 +38,7 @@ export default function RFANavbar(props) {
                                     Enroll
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
+                                    <Link to = "/enroll/classfaq" className="dropdown-item" href="#">Class Faq</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
