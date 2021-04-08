@@ -12,11 +12,14 @@ export default class RFABylawEntry extends React.Component{
             fontSize: "large",
             textAlign: "center",
         };
+        const link ={
+            color: "black",
+        }
     return (
         <Row>
             <Col xs={3} style={background}><p>{this.props.date}</p></Col>
             <Col xs={7} style={background}><p>{this.props.bylaw}</p></Col>
-            <Col xs={2} style={background}><p>{this.props.download}</p></Col>
+            <Col xs={2} style={background}><p><a href={this.props.download} style={link}>Download</a></p></Col>
         </Row>
     );
     }
