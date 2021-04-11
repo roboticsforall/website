@@ -1,5 +1,5 @@
 @font-face{
-  font-family: "MazzardH-Bold";
+  font-family: "Mazzard-H-Bold";
   src:url("./fonts/Mazzard/MazzardH-Bold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-Bold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
@@ -52,11 +52,8 @@
 
 html, body {
   height: 100%;
-  text-align: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  overflow-x: hidden;
 }
-
 
 .mb-6{
   margin-bottom: 6em;
@@ -111,19 +108,6 @@ html, body {
     font-size: 60px;
   }
 }
-
-.our_mission {
-  color: #fa8d1f;
-}
-
-.our_vision {
-  color: #33cc66;
-}
-
-.our_values {
-  color: #3399ff;
-}
-
 
 
  

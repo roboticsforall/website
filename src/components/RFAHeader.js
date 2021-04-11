@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function RFAHeader(props) {
 
     const pageHeaderDescription = {
-        fontFamily: 'Be Vietnam',
+        fontFamily: 'BeVietnam-SemiBold',
         fontWeight: 600,
         color: "black",
     }
     const pageHeader = {
-        fontFamily: "MazzardH-Bold",
+        fontFamily: "Mazzard-H-Bold",
         transform: 'rotate(358deg)',
         color: props.headerTextColor,
     }
