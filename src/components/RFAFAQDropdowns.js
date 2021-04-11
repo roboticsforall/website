@@ -6,18 +6,21 @@ import dropdownIcon from '../media/Shapes/brownarrow.png'; // add correct image 
 export default function RFAFAQDropdowns(props){
 
     const [dropdownAnswerDisplay, setdropdownAnswerDisplay] = useState('none');
-    const [dropdownColor, setdropdownColor] = useState('#ffcc0080')
+    const [dropdownBGColor, setdropdownBGColor] = useState('#ffcc0080')
+    const [dropdownTextColor, setdropdownTextColor] = useState('#c06204')
+
 
     const dropdownQuestion = {
       borderRadius: "1em",
-      backgroundColor: dropdownColor,
-      fontFamily: "BeVietnam-ExtraBold"
+      fontFamily: "BeVietnam-ExtraBold",
+      backgroundColor: dropdownBGColor,
+      color: dropdownTextColor
     }
 
     const dropdownAnswer = {
         borderRadius: "1em",
         backgroundColor: "#ffcc00",
-        fontFamily: "BeVietnam-Medium",
+        fontFamily: "BeVietnam-SemiBold",
 
     }
     const dropdownDisplay = {
@@ -30,8 +33,10 @@ export default function RFAFAQDropdowns(props){
     const displayDiv = () => {
         (dropdownAnswerDisplay == 'none') ? 
             setdropdownAnswerDisplay('block') :  setdropdownAnswerDisplay('none');
-        (dropdownColor == '#ffcc0080') ? 
-            setdropdownColor('#ffcc00') :  setdropdownColor('#ffcc0080');
+        (dropdownBGColor == '#ffcc0080') ? 
+            setdropdownBGColor('#ffcc00') :  setdropdownBGColor('#ffcc0080');
+        (dropdownTextColor == '#c06204') ? 
+            setdropdownTextColor('#532f04') :  setdropdownTextColor('#c06204');
     }
 
     const returnCourseInfo = () => {
@@ -59,7 +64,7 @@ export default function RFAFAQDropdowns(props){
     }
     return (
         <div>
-            <Row style = {dropdownQuestion} className = "p-2 justify-content-between align-items-center">
+            <Row style = {dropdownQuestion} className = "faq-dropdown p-2 justify-content-between align-items-center">
                 <Col md = {11}>
                     <h3 className = "w-75">{props.question}</h3>
                 </Col>

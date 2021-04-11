@@ -8,7 +8,8 @@ export default function RFAVolunteerFAQ(props){
 
 
   const heading = {
-    fontFamily: 'Oswald'
+    fontFamily: 'Oswald',
+    color: "#532f0A"
   }
 
     return (

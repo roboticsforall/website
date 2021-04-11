@@ -137,6 +137,17 @@ h1, h2, h3, h4, h5, h6, p, a{
   color: #C06202;
 }
 
+.faq-dropdown {
+  background-color: #ffcc0080;
+  color: #c06204;
+  transition: 200ms;
+}
+.faq-dropdown:hover {
+  background-color: #ffdb4d !important;
+  color: #532f04;
+  transition: 200ms;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {

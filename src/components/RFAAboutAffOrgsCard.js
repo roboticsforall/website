@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { Container, Row, Image, Col } from "react-bootstrap";
+import homePageVideo from "../media/homePageVideo.mp4";
+
 
 export default function RFAAboutAffOrgsCard(props) {
 
     const [width, setWidth] = useState(0);
     const [height, setHeight] = useState(0);
-    
+
     useEffect(() => {
         window.addEventListener('resize', updateWindowDimensions);
     });
@@ -50,8 +52,8 @@ export default function RFAAboutAffOrgsCard(props) {
                             </Col>
                         )}
                         <Col md={5} lg={5} xl={5} className="p-3 border center-align">
-                            <video width="320" height="240" autoPlay muted loop>
-                                <source src="https://www.youtube.com/embed/NpEaa2P7qZI?playlist=NpEaa2P7qZ1" type="video/mp4"/>
+                            <video className = "w-100 h-100" autoPlay muted loop>
+                                <source src={homePageVideo} type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
                         </Col>
@@ -59,7 +61,7 @@ export default function RFAAboutAffOrgsCard(props) {
                             <Container>
                                 <Row className="justify-content-center">
                                     <p style={affOrgsCardText} className="text-center">{props.affOrgsDescription}</p>
-                                    <a style={{ color: props.linkColor }} className="text-center hyperlink aff-org-card-link" href={props.website}>VISIT {props.orgAbrv}</a>
+                                    <a style={{ color: props.linkColor }} target = "_blank" className="text-center hyperlink aff-org-card-link" href={props.website}>VISIT {props.orgAbrv}</a>
                                 </Row>
                             </Container>
                         </Col>
