@@ -11,11 +11,11 @@ export default function RFANavbar(props) {
     const header = {
         fontFamily: "Oswald",
     }
-    const navItems = {
-        color: "#ffcc00",
-        fontFamily: "BeVietnam-ExtraBold",
-        fontSize: "1.0em"
-    }
+    // const navItems = {
+    //     color: "#ffcc00",
+    //     fontFamily: "BeVietnam-ExtraBold",
+    //     fontSize: "1.0em"
+    // }
 
     return (
         <Row>
@@ -55,6 +55,7 @@ export default function RFANavbar(props) {
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link to = "/about/afforgs" className="dropdown-item" href="#">Affiliated Organizations</Link>
+                                    <Link to = "/about/overview" className="dropdown-item" href="#">Overview</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
