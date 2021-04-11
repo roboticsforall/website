@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import RFAFAQDropdowns from '../RFAFAQDropdowns';
-import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA.PNG'; // add correct image here
+import headerBlobOrange from '../../media/HeaderBlobs/orange.png'; // add correct image here
 
 export default function RFAVolunteerFAQ(props){
 
@@ -13,7 +13,7 @@ export default function RFAVolunteerFAQ(props){
 
     return (
       <div>
-        <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Questions?"} description = {"Here are the answers to our commonly asked questions. Please feel free to contact us if your question is not answered here!"}/>
+        <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobOrange} title = {"Questions?"} description = {"Here are the answers to our commonly asked questions. Please feel free to contact us if your question is not answered here!"}/>
         <br/>
 
         <Container>

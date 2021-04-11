@@ -60,12 +60,12 @@ html, body {
   font-size: 2.5em;
   letter-spacing: 0.1em;
   transition: 0.2s;
-  
+}
 .center-align{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
 h1, h2, h3, h4, h5, h6, p, a{
   letter-spacing: 1.4px;
 }
@@ -183,6 +183,7 @@ h1, h2, h3, h4, h5, h6, p, a{
     transition: 0.2s;
     letter-spacing: 0.25em;
     text-decoration: none;
+  }
   /* .video-width {
     width: 75% !important;
     height: 60vh;
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p, a{
   .home-aff-org-card-link:hover{
     transition: 0.2s;
     text-decoration: none;
-    color:white !important;
+    color: white !important;
   }
 }
 
