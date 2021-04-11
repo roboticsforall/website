@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 .faq-dropdown:hover {
   background-color: #ffdb4d !important;
-  color: #532f04;
+  color: #532f04 !important;
   transition: 200ms;
 }
 
