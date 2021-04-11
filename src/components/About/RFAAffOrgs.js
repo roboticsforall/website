@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Row, Image, Col, Card, CardDeck} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import RFAAffOrgsCard from "../RFAAboutAffOrgsCard";
 import RFAHeader from "../RFAHeader";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
