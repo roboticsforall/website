@@ -7,6 +7,8 @@ import RFAHomePage from './components/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
+import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
+
 
 export default class App extends React.Component{
 
@@ -18,6 +20,7 @@ export default class App extends React.Component{
           <Switch>
             <Route exact path = "/" component = {RFAHomePage}/>
             <Route path = "/enroll/classfaq" component = {RFAClassFAQ}/>
+            <Route path = "/volunteer/volunteerfaq" component = {RFAVolunteerFAQ}/>
           </Switch>
           <br/>
           <br/>

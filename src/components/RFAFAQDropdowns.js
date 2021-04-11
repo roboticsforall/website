@@ -3,7 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import dropdownIcon from '../media/Shapes/brownarrow.png'; // add correct image here
 
 
-export default function RFAClassFAQ(props){
+export default function RFAFAQDropdowns(props){
 
     const [dropdownAnswerDisplay, setdropdownAnswerDisplay] = useState('none');
     const [dropdownColor, setdropdownColor] = useState('#ffcc0080')

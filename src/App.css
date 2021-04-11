@@ -153,10 +153,10 @@ html, body {
   .header-size {
     font-size: 43px;
   }
-  .video-width {
+  /* .video-width {
     width: 100% !important;
     height: auto;
-  }
+  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -167,10 +167,10 @@ html, body {
   .header-size {
     font-size: 55px;
   }
-  .video-width {
+  /* .video-width {
     width: 75% !important;
     height: 60vh;
-  }
+  } */
   .home-aff-org-card-link:hover{
     transition: 0.2s;
     text-decoration: none;
@@ -186,10 +186,10 @@ html, body {
   .header-size {
     font-size: 60px;
   }
-  .video-width {
+  /* .video-width {
     width: 75% !important;
     height: 60vh;
-  }
+  } */
   .home-aff-org-card-link:hover{
     transition: 0.2s;
     text-decoration: none;

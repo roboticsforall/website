@@ -19,7 +19,7 @@ export default function RFANavbar(props) {
 
     return (
         <Row>
-            <nav className="w-100 navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="w-100 py-5 navbar navbar-expand-lg">
                 <Link to = "/" className="navbar-brand hyperlink d-flex align-items-center">
                     <img
                         alt=""
@@ -38,7 +38,7 @@ export default function RFANavbar(props) {
                                     Enroll
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/enroll/classfaq" className="dropdown-item" href="#">Class Faq</Link>
+                                    <Link to = "/enroll/classfaq" className="dropdown-item" href="#">Class FAQ's</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -46,10 +46,8 @@ export default function RFANavbar(props) {
                                     Volunteer
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
+                                    <Link to = "/volunteer/volunteerfaq" className="dropdown-item" href="#">Volunteer FAQ's</Link>
+
                                 </div>
                             </li>
                             <li className="nav-item dropdown">

@@ -20,7 +20,7 @@ export default function RFAVolunteerFAQ(props){
         <h1 style = {heading} class = "mb-4 header-size">Teacher FAQ's</h1>
         {[
             {
-              question: "WWhat is the time commitment?",
+              question: "What is the time commitment?",
               answer: "The minimum time commitment is about 3 hours per week. If you choose to take on multiple classes, the time commitment is increased.",
             },
             {

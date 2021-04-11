@@ -3,7 +3,7 @@ import { Row, Container, Col } from "react-bootstrap";
 import homePageVideo from "../media/homePageVideo.mp4";
 import RFAHomeAffOrgsCard from "./RFAHomeAffOrgsCard";
 
-export default function RFAHomePage(props) {
+export default function RFAFooter(props) {
 
     const darkBrown = {
         color: "#532F0A"
@@ -20,7 +20,7 @@ export default function RFAHomePage(props) {
             <Container>
                 <br/>
                 <Row className = "justify-content-center">
-                    <Col md = {4}>
+                    <Col md = {3}>
                         <h1 style = {headerStyle}>NAVIGATION</h1>
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Home</p></a>
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Enroll</p></a>
@@ -30,7 +30,7 @@ export default function RFAHomePage(props) {
                         <a style = {linkStyle} className = "hyperlink C06202" href = "#"><p>News</p></a>
                     </Col>
                     <br/>
-                    <Col md = {4}>
+                    <Col md = {3}>
                         <h1 style = {headerStyle}>FIND US</h1>
                         <p style = {darkBrown, linkStyle}>
                             EMAIL | <a className="hyperlink C06202" href={"mailto:info@roboticsforall.net"}>info@roboticsforall.net</a>
@@ -43,7 +43,7 @@ export default function RFAHomePage(props) {
                         </p>
                     </Col>
                     <br/>
-                    <Col md = {4}>
+                    <Col md = {3}>
                         <h1 style = {headerStyle}>MORE</h1>
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Privacy Policy</p></a>
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></a>
