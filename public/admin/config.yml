@@ -18,8 +18,9 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: string}
-          - label: Upcoming Courses FAQ
-            name: upcoming_courses_faq
-            fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Upcoming Courses Markdown, name: upcoming_courses_md, widget: markdown}
+          - label: Upcoming Courses Question
+            name: upcoming_courses_question
+            widget: string
+          - label:  Upcoming Courses Answer
+            name: upcoming_courses_answer
+            widget: markdown
