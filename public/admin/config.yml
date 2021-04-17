@@ -18,6 +18,8 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: string}
-          - label: Upcoming Courses
-            name: upcomingCourses
-            widget: markdown
+          - label: Upcoming Courses FAQ
+            name: upcoming_courses_faq
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Upcoming Courses Markdown, name: upcoming_courses_md, widget: markdown}
