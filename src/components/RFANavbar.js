@@ -34,7 +34,7 @@ export default function RFANavbar(props) {
                     <div className ="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className ="navbar-nav w-100 d-flex justify-content-around">
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Enroll
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,20 +42,20 @@ export default function RFANavbar(props) {
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Volunteer
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/volunteer/volunteerfaq" className="dropdown-item" href="#">Volunteer FAQ's</Link>
+                                    <Link to = "/volunteer/volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     About
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/about/afforgs" className="dropdown-item" href="#">Affiliated Organizations</Link>
-                                    <Link to = "/about/overview" className="dropdown-item" href="#">Overview</Link>
+                                    <Link to = "/about/afforgs" className="dropdown-item">Affiliated Organizations</Link>
+                                    <Link to = "/about/overview" className="dropdown-item">Overview</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
