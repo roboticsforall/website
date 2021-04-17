@@ -18,7 +18,7 @@ export default function RFAVolunteerFAQ(props){
         <br/>
 
         <Container>
-        <h1 style = {heading} class = "mb-4 header-size">Teacher FAQ's</h1>
+        <h1 style = {heading} className = "mb-4 header-size">Teacher FAQ's</h1>
         {[
             {
               question: "What is the time commitment?",

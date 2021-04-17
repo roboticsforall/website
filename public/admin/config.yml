@@ -1,0 +1,14 @@
+collections:
+  - label: "FAQ's" # used in UI
+    name: "faqs" # used in routes
+    files:
+      - label: "Class FAQ's"
+        name: "class_faqs"
+        file: "src/posts/class_faqs.json"
+        fields:
+          - label: Class FAQ List
+            name: class_faq_list
+            widget: list
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: string}

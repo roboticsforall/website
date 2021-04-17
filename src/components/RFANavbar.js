@@ -19,16 +19,16 @@ export default function RFANavbar(props) {
 
     return (
         <Row>
-            <nav className="w-100 py-5 navbar navbar-expand-lg">
+            <nav className="w-100 py-5 navbar navbar-light navbar-expand-lg">
                 <Link to = "/" className="navbar-brand hyperlink d-flex align-items-center">
                     <img
                         alt=""
                         src={TobyHeaderLogo}
                         style={logoImageSize}
                     />
-                    <h2 className = "m-0" style = {header}>Robotics For All</h2>
+                    <h2 className = "m-0 ms-3 d-none d-sm-none d-md-block" style = {header}>Robotics For All</h2>
                 </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="me-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                     <div className ="collapse navbar-collapse" id="navbarSupportedContent">
@@ -84,7 +84,6 @@ export default function RFANavbar(props) {
                                 <a className="nav-link" href="#">Donate </a>
                             </li>
                             <li className="nav-item">
-                                {/* <a className="nav-link" href="#">Site Language</a> */}
                                 <div id="google_translate_element"></div>
                             </li>
                         </ul>

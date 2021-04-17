@@ -130,10 +130,7 @@ export default function RFAHomePage(props) {
 
                                 }
                             ].map((afforgs, i) => (
-                                <>
                                     <RFAHomeAffOrgsCard key = {i} org = {afforgs.label} linkColor = {afforgs.linkColor} bgColor ={afforgs.bgColor} logo = {afforgs.logo}/>
-                                    <br/>
-                                </>
                                 ))
                         }
             </Container>

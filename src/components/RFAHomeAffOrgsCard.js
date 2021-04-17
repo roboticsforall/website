@@ -23,6 +23,7 @@ export default function RFAHomeAffOrgsCard(props) {
     }
 
     return(
+        <>
         <Row style = {{backgroundColor: props.bgColor, ...borderRadius}} className="justify-content-center align-items-center">
             <Col className = "d-flex justify-content-center" sm={3} md={3} lg={3} xl={3}>
                 <Image style={imageSize} src={props.logo} />
@@ -34,6 +35,8 @@ export default function RFAHomeAffOrgsCard(props) {
                 <a href = "google.com" className = "home-aff-org-card-link" style = {linkColor} >LEARN MORE</a>
             </Col>
         </Row>
+        <br/>
+        </>
     );
 
 }

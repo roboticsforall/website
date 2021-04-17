@@ -124,6 +124,9 @@ h1, h2, h3, h4, h5, h6, p, a{
   transition: 0.2s;
   text-decoration: none;
 }
+.navbar-collapse{
+  text-align: center;
+}
 .yellow-row {
   background-color: #FFCC004D;
 }
@@ -156,6 +159,10 @@ h1, h2, h3, h4, h5, h6, p, a{
   .header-size {
     font-size: 27px;
   }
+  .video-width {
+    width: 100% !important;
+    height: auto;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -165,6 +172,10 @@ h1, h2, h3, h4, h5, h6, p, a{
   }
   .header-size {
     font-size: 35px;
+  }
+  .video-width {
+    width: 100% !important;
+    height: auto;
   }
 }
 
@@ -176,10 +187,10 @@ h1, h2, h3, h4, h5, h6, p, a{
   .header-size {
     font-size: 43px;
   }
-  /* .video-width {
+  .video-width {
     width: 100% !important;
     height: auto;
-  } */
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -195,10 +206,10 @@ h1, h2, h3, h4, h5, h6, p, a{
     letter-spacing: 0.25em;
     text-decoration: none;
   }
-  /* .video-width {
+  .video-width {
     width: 75% !important;
     height: 60vh;
-  } */
+  }
   .home-aff-org-card-link:hover{
     transition: 0.2s;
     text-decoration: none;
@@ -214,10 +225,10 @@ h1, h2, h3, h4, h5, h6, p, a{
   .header-size {
     font-size: 60px;
   }
-  /* .video-width {
+  .video-width {
     width: 75% !important;
     height: 60vh;
-  } */
+  }
   .home-aff-org-card-link:hover{
     transition: 0.2s;
     text-decoration: none;
