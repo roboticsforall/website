@@ -8,18 +8,6 @@ import ReactMarkdown from "react-markdown";
 
 export default function RFAClassFAQ(props){
 
-    console.log(classFAQJSON)
-    const markdown = `
-    # Header 1
-    ## Header 2
-  
-    _ italic _
-  
-    ** bold **
-  
-    <b> bold Html </b>
-    `;
-
     return (
       <div>
         <RFAHeader headerTextColor = {"#fa8d1f "} image = {headerBlobOrange} title = {"Questions?"} description = {"Here are the answers to our commonly asked questions. Please feel free to contact us if your question is not answered here!"}/>
