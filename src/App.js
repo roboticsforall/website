@@ -16,10 +16,10 @@ export default class App extends React.Component{
           <RFANavbar/>
           <Switch>
             <Route exact path = "/" component = {RFAHomePage}/>
-            <Route path = "/about/overview" component = {RFAAbtOverview}/>
-            <Route path = "/enroll/classfaq" component = {RFAClassFAQ}/>
-            <Route path = "/volunteer/volunteerfaq" component = {RFAVolunteerFAQ}/>
-            <Route path = "/about/afforgs" component = {RFAAffOrgs}/>
+            <Route path = "/about-overview" component = {RFAAbtOverview}/>
+            <Route path = "/enroll-classfaq" component = {RFAClassFAQ}/>
+            <Route path = "/volunteer-volunteerfaq" component = {RFAVolunteerFAQ}/>
+            <Route path = "/about-afforgs" component = {RFAAffOrgs}/>
           </Switch>
           <br/>
           <br/>

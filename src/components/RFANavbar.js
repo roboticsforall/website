@@ -38,7 +38,7 @@ export default function RFANavbar(props) {
                                     Enroll
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/enroll/classfaq" className="dropdown-item" href="#">Class FAQ's</Link>
+                                    <Link to = "/enroll-classfaq" className="dropdown-item" href="#">Class FAQ's</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -46,7 +46,7 @@ export default function RFANavbar(props) {
                                     Volunteer
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/volunteer/volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
+                                    <Link to = "/volunteer-volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -54,8 +54,8 @@ export default function RFANavbar(props) {
                                     About
                             </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/about/afforgs" className="dropdown-item">Affiliated Organizations</Link>
-                                    <Link to = "/about/overview" className="dropdown-item">Overview</Link>
+                                    <Link to = "/about-afforgs" className="dropdown-item">Affiliated Organizations</Link>
+                                    <Link to = "/about-overview" className="dropdown-item">Overview</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
