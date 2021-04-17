@@ -18,3 +18,6 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: string}
+          - label: Upcoming Courses
+            name: upcomingCourses
+            widget: markup

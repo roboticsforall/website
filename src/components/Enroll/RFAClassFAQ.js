@@ -3,36 +3,20 @@ import {Container} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import RFAFAQDropdowns from '../RFAFAQDropdowns';
 import headerBlobOrange from '../../media/HeaderBlobs/orange.png'; // add correct image here
+import classFAQJSON from "../../posts/class_faqs.json";
 
 export default function RFAClassFAQ(props){
+
+    console.log(classFAQJSON)
 
     return (
       <div>
         <RFAHeader headerTextColor = {"#fa8d1f "} image = {headerBlobOrange} title = {"Questions?"} description = {"Here are the answers to our commonly asked questions. Please feel free to contact us if your question is not answered here!"}/>
         <br/>
         <Container>
-        {[
-              {
-                question: "When will I know if my class time is confirmed?",
-                answer: "You will receive an email a week before the class start date with a final confirmation of the class time.",
-              },
-              {
-                question: "What is the cost of the classes?",
-                answer: "Classes cost a minimum of $100, however, we do offer fee waivers if you are unable to pay the class fees.",
-              },
-              {
-                question: "Where can I find more information regarding the class curriculum?",
-                answer: "You can learn more in our syllabi's.",
-              },
-              {
-                question: "Can I enroll my students in multiple classes?",
-                answer: "Yes, there is no limit to the amount of classes you may enroll your student in.",
-              },
-
-            ].map(QAPair => (
+            {classFAQJSON.class_faq_list.map(QAPair => (
               <RFAFAQDropdowns key = {QAPair.question} question = {QAPair.question} answer = {QAPair.answer}/>
             ))}
-
 
             {[
               {
