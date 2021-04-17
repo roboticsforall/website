@@ -5,18 +5,6 @@ import homePageVideo from "../media/homePageVideo.mp4";
 
 export default function RFAAboutAffOrgsCard(props) {
 
-    const [width, setWidth] = useState(0);
-    const [height, setHeight] = useState(0);
-
-    useEffect(() => {
-        window.addEventListener('resize', updateWindowDimensions);
-    });
-
-    const updateWindowDimensions = () => {
-        setWidth(window.innerWidth);
-        setHeight(window.innerHeight);
-    }
-
     const affOrgsCardText = {
         fontFamily: 'BeVietnam-Medium',
         fontSize: "large",
