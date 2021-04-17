@@ -4,10 +4,21 @@ import RFAHeader from '../RFAHeader';
 import RFAFAQDropdowns from '../RFAFAQDropdowns';
 import headerBlobOrange from '../../media/HeaderBlobs/orange.png'; // add correct image here
 import classFAQJSON from "../../posts/class_faqs.json";
+import ReactMarkdown from "react-markdown";
 
 export default function RFAClassFAQ(props){
 
     console.log(classFAQJSON)
+    const markdown = `
+    # Header 1
+    ## Header 2
+  
+    _ italic _
+  
+    ** bold **
+  
+    <b> bold Html </b>
+    `;
 
     return (
       <div>
@@ -17,8 +28,12 @@ export default function RFAClassFAQ(props){
             {classFAQJSON.class_faq_list.map(QAPair => (
               <RFAFAQDropdowns key = {QAPair.question} question = {QAPair.question} answer = {QAPair.answer}/>
             ))}
+            <RFAFAQDropdowns 
+            question = {classFAQJSON.upcoming_courses_question} 
+            answer = {(<ReactMarkdown children = {classFAQJSON.upcoming_courses_answer}/>)}/>
 
-            {[
+
+            {/* {[
               {
                 question: "When will more courses be offered?",
                 answer: "We are planning on launching more courses including:",
@@ -39,7 +54,7 @@ export default function RFAClassFAQ(props){
             ].map(QAPair => (
               <RFAFAQDropdowns key = {1} coursesList = {QAPair.coursesList} typeOfQuestion = {QAPair.typeOfQuestion} question = {QAPair.question} answer = {QAPair.answer}
                 season = {QAPair.season} year = {QAPair.year} date = {QAPair.date}/>
-            ))}
+            ))} */}
         </Container>
       </div>
     );

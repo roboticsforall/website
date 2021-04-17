@@ -39,29 +39,6 @@ export default function RFAFAQDropdowns(props){
             setdropdownTextColor('#532f04') :  setdropdownTextColor('#c06204');
     }
 
-    const returnCourseInfo = () => {
-        console.log(props.typeOfQuestion)
-        if(props.typeOfQuestion === "courses"){
-            return (
-                <Row style = {dropdownAnswer} className = "d-flex flex-column p-2">
-                    <h3>{props.answer}</h3>
-                    <ul>
-                        {
-                            props.coursesList.map(courseName => (<li key = {courseName}>{courseName}</li>))
-                        }
-                    </ul>
-                    <h3>These courses will be offered in the {props.season} session of {props.year} starting {props.date}</h3>
-                </Row>
-            )
-        }
-        else {
-            return (
-                <Row style = {dropdownAnswer} className = "p-2 justify-content-between align-items-center">
-                    <h3>{props.answer}</h3>
-                </Row>
-            )
-        }
-    }
     return (
         <div>
             <Row style = {dropdownQuestion} className = "faq-dropdown p-2 justify-content-between align-items-center">
@@ -74,7 +51,9 @@ export default function RFAFAQDropdowns(props){
             </Row>
             <br/>
             <div style = {dropdownDisplay}>
-                {returnCourseInfo()}
+                <Row style = {dropdownAnswer} className = "p-2 justify-content-between align-items-center">
+                    <h3>{props.answer}</h3>
+                </Row>
             <br/>
             </div>
 

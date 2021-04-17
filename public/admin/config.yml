@@ -24,3 +24,19 @@ collections:
           - label:  Upcoming Courses Answer
             name: upcoming_courses_answer
             widget: markdown
+      - label: "Volunteer FAQ's"
+        name: "volunteer_faqs"
+        file: "src/posts/volunteer_faqs.json"
+        fields:
+          - label: Teacher FAQ List
+            name: teacher_faq_list
+            widget: list
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: string}
+          - label: Publicity FAQ List
+            name: publicity_faq_list
+            widget: list
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: string}
