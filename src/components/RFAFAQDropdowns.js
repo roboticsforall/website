@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Row, Col} from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 import dropdownIcon from '../media/Shapes/brownarrow.png'; // add correct image here
 
 
@@ -31,17 +31,17 @@ export default function RFAFAQDropdowns(props){
     }
 
     const displayDiv = () => {
-        (dropdownAnswerDisplay == 'none') ? 
+        (dropdownAnswerDisplay === 'none') ? 
             setdropdownAnswerDisplay('block') :  setdropdownAnswerDisplay('none');
-        (dropdownBGColor == '#ffcc0080') ? 
+        (dropdownBGColor === '#ffcc0080') ? 
             setdropdownBGColor('#ffcc00') :  setdropdownBGColor('#ffcc0080');
-        (dropdownTextColor == '#c06204') ? 
+        (dropdownTextColor === '#c06204') ? 
             setdropdownTextColor('#532f04') :  setdropdownTextColor('#c06204');
     }
 
     const returnCourseInfo = () => {
         console.log(props.typeOfQuestion)
-        if(props.typeOfQuestion == "courses"){
+        if(props.typeOfQuestion === "courses"){
             return (
                 <Row style = {dropdownAnswer} className = "d-flex flex-column p-2">
                     <h3>{props.answer}</h3>
@@ -69,7 +69,7 @@ export default function RFAFAQDropdowns(props){
                     <h3 className = "w-75">{props.question}</h3>
                 </Col>
                 <Col>
-                    <button style = {button} onClick = {displayDiv} className = "background-none border-0"><img width = "70" height = "40" src = {dropdownIcon}/></button>
+                    <button style = {button} onClick = {displayDiv} className = "background-none border-0"><img alt = "dropdownArrow" width = "70" height = "40" src = {dropdownIcon}/></button>
                 </Col>
             </Row>
             <br/>

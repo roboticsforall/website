@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Container, ResponsiveEmbed, Col, Image } from "react-bootstrap";
+import { Row, Container, Col, Image } from "react-bootstrap";
 import homePageVideo from "../media/homePageVideo.mp4";
 import TFALogo from '../media/AffiliatedOrgs/TFA_Logo.png';
 import CFCLogo from '../media/AffiliatedOrgs/CFC_Logo.png';

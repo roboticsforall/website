@@ -1,7 +1,5 @@
 import React from 'react';
 import { Row, Container, Col } from "react-bootstrap";
-import homePageVideo from "../media/homePageVideo.mp4";
-import RFAHomeAffOrgsCard from "./RFAHomeAffOrgsCard";
 
 export default function RFAFooter(props) {
 
@@ -9,7 +7,8 @@ export default function RFAFooter(props) {
         color: "#532F0A"
     }
     const linkStyle = {
-        fontFamily: "BeVietnam-Bold"
+        fontFamily: "BeVietnam-Bold",
+        marginBottom: "1rem",
     }
     const headerStyle = {
         fontFamily: "Oswald"
@@ -32,15 +31,15 @@ export default function RFAFooter(props) {
                     <br/>
                     <Col md = {3}>
                         <h1 style = {headerStyle}>FIND US</h1>
-                        <p style = {darkBrown, linkStyle}>
+                        <div style = {{...darkBrown, ...linkStyle}}>
                             EMAIL | <a className="hyperlink C06202" href={"mailto:info@roboticsforall.net"}>info@roboticsforall.net</a>
-                        </p>
-                        <p style = {darkBrown, linkStyle}>
+                        </div>
+                        <div style = {{...darkBrown, ...linkStyle}}>
                             PHONE | <a className="hyperlink C06202" href={"tel:+6506659734"}>(650)-665-9734</a>
-                        </p>
-                        <p style = {darkBrown, linkStyle}>
+                        </div>
+                        <div style = {{...darkBrown, ...linkStyle}}>
                             ADDRESS | <p className = "C06202">P.O. Box 56, Palo Alto, CA 94302</p>
-                        </p>
+                        </div>
                     </Col>
                     <br/>
                     <Col md = {3}>
@@ -49,9 +48,9 @@ export default function RFAFooter(props) {
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></a>
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Robotics For All Bylaws</p></a>
                         <a style = {linkStyle} className = "hyperlink C06202" href = "#"><p>Meeting Minutes & Agendas</p></a>
-                        <p style = {darkBrown, linkStyle}>
+                        <div style = {{...darkBrown, ...linkStyle}}>
                             TAX IDs | <p className = "C06202">83-2012119</p>
-                        </p>
+                        </div>
                     </Col>
                     <br/>
                 </Row>

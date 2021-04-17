@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Container, Row, Image, Col } from "react-bootstrap";
 import homePageVideo from "../media/homePageVideo.mp4";
 
@@ -49,7 +49,7 @@ export default function RFAAboutAffOrgsCard(props) {
                             <Container>
                                 <Row className="justify-content-center">
                                     <p style={affOrgsCardText} className="text-center">{props.affOrgsDescription}</p>
-                                    <a style={{ color: props.linkColor }} target = "_blank" className="text-center hyperlink aff-org-card-link" href={props.website}>VISIT {props.orgAbrv}</a>
+                                    <a style={{ color: props.linkColor }} rel="noopener noreferrer" target = "_blank" className="text-center hyperlink aff-org-card-link" href={props.website}>VISIT {props.orgAbrv}</a>
                                 </Row>
                             </Container>
                         </Col>
