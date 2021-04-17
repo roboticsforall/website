@@ -20,4 +20,4 @@ collections:
               - {label: Answer, name: answer, widget: string}
           - label: Upcoming Courses
             name: upcomingCourses
-            widget: markup
+            widget: markdown
