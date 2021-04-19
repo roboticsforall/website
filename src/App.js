@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import RFANavbar from "./components/RFANavbar";
+import RFATeacherPos from "./components/Volunteer/RFATeacherPos";
 import RFAAffOrgs from "./components/About/RFAAffOrgs";
 import RFAHomePage from './components/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";

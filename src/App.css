@@ -70,6 +70,11 @@ h1, h2, h3, h4, h5, h6, p, a{
   letter-spacing: 1.4px;
 }
 
+.center-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .mb-6 {
   margin-bottom: 6em;
 }
@@ -116,6 +121,28 @@ h1, h2, h3, h4, h5, h6, p, a{
 .dropdown-menu {
   border-radius: 15px !important;
   background-color: #ffdb4d !important;
+}
+
+.pos-container {
+  border: 15px solid;
+  border-radius: 15px;
+  margin: 0 0 40px 0
+}
+
+.pos-container:nth-of-type(odd) {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.pos-container:nth-of-type(even) {
+  color: #FA8D1F;
+  border-color: #FA8D1F;
+}
+
+.pos-container:first-of-type {
+  color: #FFCC00;
+  border-color: #FFCC00;
+  border-radius: 0 0 15px 15px;
 }
 
 .home-aff-org-card-link {
@@ -235,6 +262,3 @@ h1, h2, h3, h4, h5, h6, p, a{
     color:white;
   }
 }
-
-
- 
