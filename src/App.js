@@ -20,6 +20,7 @@ export default class App extends React.Component{
             <Route path = "/about-overview" component = {RFAAbtOverview}/>
             <Route path = "/enroll-classfaq" component = {RFAClassFAQ}/>
             <Route path = "/volunteer-volunteerfaq" component = {RFAVolunteerFAQ}/>
+            <Route path = "/volunteer-teacherpos" component = {RFATeacherPos}/>
             <Route path = "/about-afforgs" component = {RFAAffOrgs}/>
           </Switch>
           <br/>

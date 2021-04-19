@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import {Container, Row, Tab, Nav, Button} from "react-bootstrap";
 import RFAHeader from "../RFAHeader";
-import headerBlobYellow from "../../media/HeaderBlobs/HBLightYellow.png";
+import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
-import Placeholder from "../../media/VolunteerPos/placeholder.png";
-import Calendar from "../../media/VolunteerPos/calendar.png";
-import Clock from "../../media/VolunteerPos/clock.png";
-import Curriculum from "../../media/VolunteerPos/curriculum.png";
-import Laptop from "../../media/VolunteerPos/laptop.png";
-import Presentation from "../../media/VolunteerPos/presentation.png";
-import Tasks from "../../media/VolunteerPos/tasks.png";
-import ThumbsUp from "../../media/VolunteerPos/thumbs up.png";
+import Placeholder from "../../media/Graphics/placeholder.png";
+import Calendar from "../../media/Graphics/calendar.png";
+import Clock from "../../media/Graphics/clock.png";
+import Curriculum from "../../media/Graphics/curriculum.png";
+import Laptop from "../../media/Graphics/laptop.png";
+import Presentation from "../../media/Graphics/presentation.png";
+import Tasks from "../../media/Graphics/tasks.png";
+import ThumbsUp from "../../media/Graphics/thumbs up.png";
 
 export default function RFATeacherPos(props){
   const [key, setKey] = useState("one")
@@ -35,21 +35,26 @@ export default function RFATeacherPos(props){
     padding: "30px",
   };
   const button = {
-    color: "#000000",
     background: "#FA8D1F",
-    fontFamily: "mazzard-h-extrabold",
-    fontSize: "45px",
-    borderColor: "#FA8D1F",
+    fontFamily: "Mazzard-H-Extrabold",
+    borderRadius: "15px"
   };
     
   return (
-    <div className = "TeacherPos">
+    <div>
       <div>
         <RFAHeader headerTextColor = {"#FA8D1F"} image = {headerBlobYellow} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
       </div>
         <br></br>
         <br></br>
         <Container>
+        <a className = "hyperlink" href = "#">
+            <Row style = {button} className = "p-2 d-flex justify-content-center align-items-center">
+                <h2 className = "BeVietnam-ExtraBold text-center">Apply Now!</h2>
+            </Row>
+        </a>
+          <br></br>
+          <br></br>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
               <Nav justify fill variant = "tabs">
                 <Nav.Item>
@@ -129,9 +134,6 @@ export default function RFATeacherPos(props){
                       <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
                     </ul>
                   }/>
-                  <Button size="lg" className = "header-size" style = {button} block>Apply Now!</Button>
-                  <br></br>
-                  <br></br>
                 </Tab.Pane>
                 <Tab.Pane eventKey = "two">
                   <RFAPositionCard posHeader = {"OVERVIEW"} posDescription = {
@@ -200,12 +202,12 @@ export default function RFATeacherPos(props){
                       <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
                     </ul>
                   }/>
-                  <Button size="lg" style={button} block>Apply Now!</Button>
                   <br></br>
                   <br></br>
                 </Tab.Pane>
               </Tab.Content>
           </Tab.Container>
+
         </Container>
     </div>
   ); 

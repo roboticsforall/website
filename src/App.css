@@ -61,11 +61,6 @@ html, body {
   letter-spacing: 0.1em;
   transition: 0.2s;
 }
-.center-align{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 h1, h2, h3, h4, h5, h6, p, a{
   letter-spacing: 1.4px;
 }
@@ -78,16 +73,16 @@ h1, h2, h3, h4, h5, h6, p, a{
 .mb-6 {
   margin-bottom: 6em;
 }
-.nav-link{
+.navbar .nav-link{
   color: #ffcc00 !important;
   font-family: "BeVietnam-ExtraBold" !important;
   font-size: 1.5em;
 }
-.nav-link:hover {
+.navbar .nav-link:hover {
   transition: 0.2s;
   color: #fa8d1f !important;
 }
-.nav-link:active {
+.navbar .nav-link:active {
   transition: 0.2s;
   color: black !important;
 }
