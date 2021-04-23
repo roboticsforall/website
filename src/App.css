@@ -49,22 +49,6 @@ h2 {
   margin: 0 0 40px 0
 }
 
-.pos-container:nth-of-type(odd) {
-  color: #FFCC00;
-  border-color: #FFCC00;
-}
-
-.pos-container:nth-of-type(even) {
-  color: #FA8D1F;
-  border-color: #FA8D1F;
-}
-
-.pos-container:first-of-type {
-  color: #FFCC00;
-  border-color: #FFCC00;
-  border-radius: 0 0 15px 15px;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {
