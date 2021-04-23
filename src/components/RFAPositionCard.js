@@ -16,7 +16,9 @@ export default class RFAPositionCard extends React.Component{
         };
 
         const posContainer = {
-            backgroundColor: "#ffeb99"
+            backgroundColor: this.props.color,
+            borderRadius: "0 0 15px 15px",
+            borderColor: this.props.borderColor,
         };
 
     return (
