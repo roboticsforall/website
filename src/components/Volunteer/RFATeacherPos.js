@@ -41,15 +41,23 @@ export default function RFATeacherPos(props){
     fontSize: "45px",
     borderColor: "#FA8D1F",
   };
+  const link = {
+    color: "#000000",
+  };
     
   return (
     <div className = "TeacherPos">
       <div>
         <RFAHeader headerTextColor = {"#FA8D1F"} image = {headerBlobYellow} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
       </div>
-        <br></br>
-        <br></br>
         <Container>
+        <a className = "hyperlink" href = "#">
+            <Row style = {button} className = "p-2 d-flex justify-content-center align-items-center">
+                <h2 className = "BeVietnam-ExtraBold text-center">Apply Now!</h2>
+            </Row>
+        </a>
+          <br></br>
+          <br></br>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
               <Nav justify fill variant = "tabs">
                 <Nav.Item>
@@ -196,11 +204,10 @@ export default function RFATeacherPos(props){
                   }/>
                   <RFAPositionCard2 posHeader = {"QUESTIONS"} posDescription = {
                     <ul>
-                      <li>If you have any other questions, please visit our <a href="#">teacher FAQ's</a></li>
-                      <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
+                      <li>If you have any other questions, please visit our <a href="#" style={link}>teacher FAQ's</a></li>
+                      <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net" style={link}>info@roboticsforall.net</a></li>
                     </ul>
                   }/>
-                  <Button size="lg" style={button} block>Apply Now!</Button>
                   <br></br>
                   <br></br>
                 </Tab.Pane>
