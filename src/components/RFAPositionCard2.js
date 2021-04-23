@@ -12,6 +12,10 @@ export default class RFAPositionCard2 extends React.Component{
         const posDescription = {
             fontFamily: "BeVietnam-Medium",
             color: "#000000",
+        };
+
+        const img = {
+            marginBottom: "10px",
         }
 
     return (
@@ -23,7 +27,7 @@ export default class RFAPositionCard2 extends React.Component{
                             <p className = "header-description-size" style = {posDescription}>{this.props.posDescription}</p>
                         </Col>
                         <Col  xs = {3}>
-                            <Image className = "justify-content-center" src = {this.props.posImage} fluid />
+                            <Image className = "center-align" src = {this.props.posImage} style = {img} fluid />
                         </Col>
                     </Row>
                 </div>
