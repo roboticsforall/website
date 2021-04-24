@@ -48,6 +48,7 @@ export default function RFANavbar(props) {
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link to = "/volunteer-volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
                                     <Link to = "/volunteer-teacherpos" className="dropdown-item">Teacher Positions</Link>
+                                    <Link to = "/volunteer-volunteerapp" className="dropdown-item">Volunteer App</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">

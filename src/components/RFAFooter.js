@@ -39,9 +39,9 @@ export default function RFAFooter(props) {
                         <p style = {darkBrown, linkStyle}>
                             PHONE | <a className="hyperlink C06202" href={"tel:+6506659734"}>(650)-665-9734</a>
                         </p>
-                        <p style = {darkBrown, linkStyle}>
+                        <div style = {darkBrown, linkStyle}>
                             ADDRESS | <p className = "C06202">P.O. Box 56, Palo Alto, CA 94302</p>
-                        </p>
+                        </div>
                     </Col>
                     <br/>
                     <Col md = {3}>
@@ -50,9 +50,9 @@ export default function RFAFooter(props) {
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></a>
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Robotics For All Bylaws</p></a>
                         <a style = {linkStyle} className = "hyperlink C06202" href = "#"><p>Meeting Minutes & Agendas</p></a>
-                        <p style = {darkBrown, linkStyle}>
+                        <div style = {darkBrown, linkStyle}>
                             TAX IDs | <p className = "C06202">83-2012119</p>
-                        </p>
+                        </div>
                     </Col>
                     <br/>
                 </Row>

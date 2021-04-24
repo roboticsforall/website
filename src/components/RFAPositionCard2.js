@@ -24,7 +24,7 @@ export default class RFAPositionCard2 extends React.Component{
                 <h1 className = "header-size" style = {posHeader}>{this.props.posHeader}</h1>                    
                     <Row>
                         <Col>
-                            <p className = "header-description-size" style = {posDescription}>{this.props.posDescription}</p>
+                            <div className = "header-description-size" style = {posDescription}>{this.props.posDescription}</div>
                         </Col>
                         <Col  xs = {3}>
                             <Image className = "center-align" src = {this.props.posImage} style = {img} fluid />

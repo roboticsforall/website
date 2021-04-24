@@ -9,6 +9,7 @@ import RFAFooter from "./components/RFAFooter";
 import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
 import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
 import RFAAbtOverview from "./components/About/RFAAbtOverview";
+import RFAVolunteerApp from "./components/Volunteer/RFAVolunteerApp";
 
 export default class App extends React.Component{
   render() {
@@ -21,6 +22,7 @@ export default class App extends React.Component{
             <Route path = "/enroll-classfaq" component = {RFAClassFAQ}/>
             <Route path = "/volunteer-volunteerfaq" component = {RFAVolunteerFAQ}/>
             <Route path = "/volunteer-teacherpos" component = {RFATeacherPos}/>
+            <Route path = "/volunteer-volunteerapp" component = {RFAVolunteerApp}/>
             <Route path = "/about-afforgs" component = {RFAAffOrgs}/>
           </Switch>
           <br/>

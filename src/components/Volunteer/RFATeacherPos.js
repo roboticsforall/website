@@ -19,20 +19,22 @@ export default function RFATeacherPos(props){
   const ActiveStyle = {
     color: "#000000",
     background: "#FFCC00",
-    border: 0,
+    border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-extrabold",
+    fontFamily: "Mazzard-H-Extrabold",
     fontSize: "x-large",
     padding: "30px",
+    height: "100%",
   };
   const inActiveStyle = {
     color: "#000000",
     background: "#FA8D1F",
-    border: 0,
+    border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-extrabold",
+    fontFamily: "Mazzard-H-Extrabold",
     fontSize: "x-large",
     padding: "30px",
+    height: "100%",
   };
   const button = {
     background: "#FA8D1F",
@@ -45,7 +47,7 @@ export default function RFATeacherPos(props){
         <RFAHeader headerTextColor = {"#FA8D1F"} image = {headerBlobYellow} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
         <br></br>
         <br></br>
-        <Container className = "margins">
+        <Container>
         <a className = "hyperlink" href = "#">
             <Row style = {button} className = "p-2 d-flex justify-content-center align-items-center">
                 <h2 className = "BeVietnam-ExtraBold text-center">Apply Now!</h2>

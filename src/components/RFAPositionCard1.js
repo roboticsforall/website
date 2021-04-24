@@ -28,7 +28,7 @@ export default class RFAPositionCard1 extends React.Component{
                             <Image className = "center-align" src = {this.props.posImage} style = {img} fluid />
                         </Col>
                         <Col>
-                            <p className = "header-description-size" style = {posDescription}>{this.props.posDescription}</p>
+                            <div className = "header-description-size" style = {posDescription}>{this.props.posDescription}</div>
                         </Col>
                     </Row>
                 </div>   
