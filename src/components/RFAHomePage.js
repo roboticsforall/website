@@ -114,12 +114,14 @@ export default function RFAHomePage(props) {
                                     logo: TFALogo,
                                     linkColor: "#C06204",
                                     bgColor: "#FCAF62",
+                                    link: "https://www.tutoringforall.org/"
                                 },
                                 {
                                     label: "mentoring for all",
                                     logo: MFALogo,
                                     linkColor: "#248F47",
                                     bgColor: "#70DB94",
+                                    link: "https://www.mentoringforall.org/",
 
                                 },
                                 {
@@ -127,10 +129,11 @@ export default function RFAHomePage(props) {
                                     logo: CFCLogo,
                                     linkColor: "#006BD6",
                                     bgColor: "#70BAFF",
+                                    link: "https://craftsforcharity.com/"
 
                                 }
                             ].map((afforgs, i) => (
-                                    <RFAHomeAffOrgsCard key = {i} org = {afforgs.label} linkColor = {afforgs.linkColor} bgColor ={afforgs.bgColor} logo = {afforgs.logo}/>
+                                    <RFAHomeAffOrgsCard key = {i} org = {afforgs.label} link = {afforgs.link} linkColor = {afforgs.linkColor} bgColor ={afforgs.bgColor} logo = {afforgs.logo}/>
                                 ))
                         }
             </Container>
