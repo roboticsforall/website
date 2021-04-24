@@ -1,5 +1,5 @@
 @font-face{
-  font-family: "mazzard-h-extrabold";
+  font-family: "Mazzard-H-Extrabold";
   src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
@@ -11,24 +11,58 @@
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
 }
 @font-face{
+  font-family: "BeVietnam-Bold";
+  src: url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("truetype");
+}
+@font-face{
   font-family: "BeVietnam-ExtraBold";
   src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),  
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
 }
+@font-face{
+  font-family: "BeVietnam-SemiBold";
+  src: url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
+}
+@font-face{
+  font-family: "BeVietnam-Regular";
+  src: url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald";
+  src: url("./fonts/Oswald/Oswald-Medium.ttf") format("tff"),
+  url("./fonts/Oswald/Oswald-Medium.ttf") format("opentype"),
+  url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald-Bold";
+  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("tff"),
+  url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
+  url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+}
+/* a:focus{
+  text-decoration: none;
+} */
 
 html, body {
   height: 100%;
   overflow-x: hidden;
 }
 
-h2 {
-  font-family: 'Oswald';
-  font-size: 100px;
+.aff-org-card-link {
+  font-family: 'BeVietnam-ExtraBold', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  transition: 0.2s;
 }
-
-.mb-6{
-  margin-bottom: 5rem;
+h1, h2, h3, h4, h5, h6, p, a{
+  letter-spacing: 1.4px;
 }
 
 .center-align{
@@ -36,17 +70,107 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.mb-6 {
+  margin-bottom: 6em;
+}
+.navbar .nav-link{
+  color: #ffcc00 !important;
+  font-family: "BeVietnam-ExtraBold" !important;
+  font-size: 1.5em;
+}
+.navbar .nav-link:hover {
+  transition: 0.2s;
+  color: #fa8d1f !important;
+}
+.navbar .nav-link:active {
+  transition: 0.2s;
+  color: black !important;
+}
+.dropdown-item {
+  color: #fa8d1f !important;
+  font-family: "BeVietnam-ExtraBold";
+  background-color: #ffdb4d !important;
+  font-size: 1.2em;
+}
+.dropdown-item:hover {
+  transition: 0.2s;
+  background-color: #ffcc00 !important;
+  color: #c06204 !important;
+}
+.dropdown-item:active {
+  transition: 0.2s;
+  background-color: #ffcc00 !important;
+  color: black !important;
+}
+.hyperlink, .hyperlink:hover {
+  text-decoration: none;
+  color: black;
+}
+.nav-link::after {
+  content: none !important;
+}
 
-.header-blobs{
-  background-size: 100% 100%;
-  height: 45vw;
-  width: 100vw;
+.dropdown:hover .dropdown-menu{
+  display: block !important;
+}
+.dropdown-menu {
+  border-radius: 15px !important;
+  background-color: #ffdb4d !important;
 }
 
 .pos-container {
   border: 15px solid;
   border-radius: 15px;
   margin: 0 0 40px 0
+}
+
+.pos-container:nth-of-type(odd) {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.pos-container:nth-of-type(even) {
+  color: #FA8D1F;
+  border-color: #FA8D1F;
+}
+
+.pos-container:first-of-type {
+  color: #FFCC00;
+  border-color: #FFCC00;
+  border-radius: 0 0 15px 15px;
+}
+
+.home-aff-org-card-link {
+  font-family: 'BeVietnam-ExtraBold', sans-serif;
+  font-size: 2.0em;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.navbar-collapse{
+  text-align: center;
+}
+.yellow-row {
+  background-color: #FFCC004D;
+}
+
+.video-width {
+  height: 60vh;
+  width: 75% !important;
+}
+
+.C06202 {
+  color: #C06202;
+}
+
+.faq-dropdown {
+  background-color: #ffcc0080;
+  color: #c06204;
+  transition: 200ms;
+}
+.faq-dropdown:hover {
+  background-color: #ffdb4d !important;
+  color: #532f04 !important;
+  transition: 200ms;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -56,6 +180,10 @@ h2 {
   }
   .header-size {
     font-size: 27px;
+  }
+  .video-width {
+    width: 100% !important;
+    height: auto;
   }
 }
 
@@ -67,6 +195,10 @@ h2 {
   .header-size {
     font-size: 35px;
   }
+  .video-width {
+    width: 100% !important;
+    height: auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -76,6 +208,10 @@ h2 {
   }
   .header-size {
     font-size: 43px;
+  }
+  .video-width {
+    width: 100% !important;
+    height: auto;
   }
 }
 
@@ -87,6 +223,20 @@ h2 {
   .header-size {
     font-size: 55px;
   }
+  .aff-org-card-link:hover{
+    transition: 0.2s;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+  }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
+  }
+  .home-aff-org-card-link:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    color: white !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -96,5 +246,14 @@ h2 {
   }
   .header-size {
     font-size: 60px;
+  }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
+  }
+  .home-aff-org-card-link:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    color:white;
   }
 }

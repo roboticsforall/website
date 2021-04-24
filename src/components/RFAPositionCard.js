@@ -12,17 +12,12 @@ export default class RFAPositionCard extends React.Component{
         };
 
         const posDescription = {
+            fontFamily: "BeVietnam-Medium",
             color: "#000000",
-        };
-
-        const posContainer = {
-            backgroundColor: this.props.color,
-            borderRadius: "0 0 15px 15px",
-            borderColor: this.props.borderColor,
-        };
+        }
 
     return (
-            <Container className = "pos-container" style = {posContainer}>
+            <Container className = "pos-container">
                 <div>                
                     <Row>
                         <Col>
