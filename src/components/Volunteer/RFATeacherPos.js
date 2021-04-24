@@ -42,12 +42,10 @@ export default function RFATeacherPos(props){
     
   return (
     <div>
-      <div>
         <RFAHeader headerTextColor = {"#FA8D1F"} image = {headerBlobYellow} title = {"Volunteer to Teach Students STEM!"} description = {"Volunteer to help with graphic design, curriculum development, and much much more!"}/>
-      </div>
         <br></br>
         <br></br>
-        <Container>
+        <Container className = "margins">
         <a className = "hyperlink" href = "#">
             <Row style = {button} className = "p-2 d-flex justify-content-center align-items-center">
                 <h2 className = "BeVietnam-ExtraBold text-center">Apply Now!</h2>
