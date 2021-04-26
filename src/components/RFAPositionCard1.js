@@ -17,10 +17,18 @@ export default class RFAPositionCard1 extends React.Component{
 
         const img = {
             marginBottom: "10px",
-        }
+            width: "auto",
+            maxHeight: "250px",
+        };
+
+        const con = {
+            width: "75%",
+            margin: "auto",
+            marginBottom: "40px",
+        };
 
     return (
-            <Container className = "pos-container">
+            <Container className = "pos-container center-align" style = {con}>
                 <div>
                     <h1 className = "header-size" style = {posHeader}>{this.props.posHeader}</h1>                    
                     <Row>

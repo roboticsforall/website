@@ -14,10 +14,16 @@ export default class RFAPositionCard extends React.Component{
         const posDescription = {
             fontFamily: "BeVietnam-Medium",
             color: "#000000",
-        }
+        };
+
+        const con = {
+            width: "75%",
+            margin: "auto",
+            marginBottom: "40px",
+        };
 
     return (
-            <Container className = "pos-container">
+            <Container className = "pos-container" style = {con}>
                 <div>                
                     <Row>
                         <Col>
