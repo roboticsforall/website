@@ -7,6 +7,7 @@ import mercurynews from "../../media/News/Mercury-News.png";
 import houseofreps from "../../media/News/House-of-Representatives.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 const photosImport = Array.from({ length: 10 }, (_, i) =>
   import(`../../media/Photos/${i + 1}.jpg`)
 );
