@@ -1,9 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Image} from "react-bootstrap";
 
-export default class RFAPositionCard1 extends React.Component{
-    
-    render () {
+export default function RFAPositionCard1(){
         const posHeader = {
             fontFamily: "Mazzard-H-Extrabold",
             letterSpacing: "0.25em",
@@ -34,5 +32,4 @@ export default class RFAPositionCard1 extends React.Component{
                 </div>   
             </Container>
     );
-    }
 }
