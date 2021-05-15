@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import RFANavbar from "./components/RFANavbar";
-import RFAPublicityInternPos from "./components/Volunteer/RFAPublicityInternPos";
 import RFAAffOrgs from "./components/About/RFAAffOrgs";
 import RFAHomePage from './components/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";
@@ -19,7 +18,7 @@ export default class App extends React.Component{
             <Route exact path = "/" component = {RFAHomePage}/>
             <Route path = "/about-overview" component = {RFAAbtOverview}/>
             <Route path = "/enroll-classfaq" component = {RFAClassFAQ}/>
-            <Route path = "/volunteer-volunteerfaq" component = {RFAPublicityInternPos}/>
+            <Route path = "/volunteer-volunteerfaq" component = {RFAVolunteerFAQ}/>
             <Route path = "/about-afforgs" component = {RFAAffOrgs}/>
           </Switch>
           <br/>
