@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Container, Row, Tab, Nav} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
-import headerBlobYellow from '../../media/HeaderBlobs/HBLightYellow.png'; 
+import headerBlobYellow from '../../media/HeaderBlobs/yellow.png'; 
 import RFAPositionCard from "../RFAPositionCard";
 
 export default function VolunteerApp(props){

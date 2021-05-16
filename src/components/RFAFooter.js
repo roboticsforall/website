@@ -6,8 +6,7 @@ import instagramIcon from "../media/Social Media Logos/instagram.png";
 import linkedin from "../media/Social Media Logos/linkedin.png";
 import guidestar from "../media/Social Media Logos/guidestar.png";
 
-import homePageVideo from "../media/homePageVideo.mp4";
-import RFAHomeAffOrgsCard from "./RFAHomeAffOrgsCard";
+import {Link} from "react-router-dom";
 
 export default function RFAFooter(props) {
 
@@ -67,10 +66,10 @@ export default function RFAFooter(props) {
                     <br/>
                     <Col lg = {3}>
                         <h1 style = {headerStyle}>MORE</h1>
-                        <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Privacy Policy</p></a>
-                        <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></a>
-                        <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Robotics For All Bylaws</p></a>
-                        <a style = {linkStyle} className = "hyperlink C06202" href = "#"><p>Meeting Minutes & Agendas</p></a>
+                        <Link style = {linkStyle} className="hyperlink C06202" href = "#"><p>Privacy Policy</p></Link>
+                        <Link style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></Link>
+                        <Link to = "/more-bylaws" style = {linkStyle} className="hyperlink C06202" href = "#"><p>Robotics For All Bylaws</p></Link>
+                        <Link style = {linkStyle} className = "hyperlink C06202" href = "#"><p>Meeting Minutes & Agendas</p></Link>
                         <div style = {darkBrown, linkStyle}>
                             TAX IDs | <p className = "C06202">83-2012119</p>
                         </div>

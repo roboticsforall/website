@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Nav, Button} from "react-bootstrap";
-import RFAHeader from "../components/RFAHeader";
-import headerBlobYellow from "../media/HeaderBlobs/HBLightYellow.png";
-import RFABylawEntry from './RFABylawEntry';
+import RFAHeader from "../RFAHeader";
+import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
+import RFABylawEntry from '../RFABylawEntry';
 
 export default function RFACorpBylaws(props){
     const background = {
