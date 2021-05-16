@@ -30,7 +30,7 @@ const responsive = {
   },
 };
 
-export default function RFANews(props) {
+export default function RFANews() {
   let [images, setImages] = useState([]);
   useEffect(() => {
     (async () => {
@@ -254,9 +254,8 @@ export default function RFANews(props) {
                   height="315"
                   src="https://www.youtube.com/embed/xK1wg0mwJP8"
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
               <div>
@@ -265,9 +264,8 @@ export default function RFANews(props) {
                   height="315"
                   src="https://www.youtube.com/embed/IqgSK39czO0"
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
               <div>
@@ -276,9 +274,8 @@ export default function RFANews(props) {
                   height="315"
                   src="https://www.youtube.com/embed/aYSU-1hKHiY"
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
               <div>
@@ -287,9 +284,8 @@ export default function RFANews(props) {
                   height="315"
                   src="https://www.youtube.com/embed/jHhpK_vlJcQ"
                   title="YouTube video player"
-                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </Carousel>
@@ -314,12 +310,11 @@ export default function RFANews(props) {
           >
             <Carousel responsive={responsive}>
               {photos.map((x, i) => (
-                <div style={{ height: "286px", overflow: "hidden" }}>
+                <div style={{ height: "286px", overflow: "hidden" }} key={"img" + i}>
                   <img
                     src={x.default}
                     style={{ width: "100%" }}
                     alt=""
-                    key={"img" + i}
                   />
                 </div>
               ))}
