@@ -5,14 +5,14 @@ import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
-import Placeholder from "../../media/Graphics/placeholder.png";
 import Calendar from "../../media/Graphics/calendar.png";
 import Clock from "../../media/Graphics/clock.png";
 import Curriculum from "../../media/Graphics/curriculum.png";
 import Laptop from "../../media/Graphics/laptop.png";
 import Presentation from "../../media/Graphics/presentation.png";
-import Tasks from "../../media/Graphics/tasks.png";
-import ThumbsUp from "../../media/Graphics/thumbs up.png";
+import TasksOrange from "../../media/Graphics/tasksOrange.png";
+import ThumbsUp from "../../media/Graphics/thumbsUp.png";
+import QuestionMark from "../../media/Graphics/questionMark.png";
 
 export default function RFATeacherPos(props){
   const [key, setKey] = useState("one")
@@ -83,7 +83,7 @@ export default function RFATeacherPos(props){
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {Tasks} posDescription = {
+                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {TasksOrange} posDescription = {
                    <ul>
                     <li>Teach students in synchronous classes</li>
                     <li>Manage any Teacher Assistants</li>
@@ -128,7 +128,7 @@ export default function RFATeacherPos(props){
                       <li>Leadership or classroom management experience</li>
                     </ul>
                   }/>
-                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posDescription = {
+                  <RFAPositionCard1 posHeader = {"QUESTIONS"} posImage = {QuestionMark} posDescription = {
                     <ul>
                       <li>If you have any other questions, please visit our <a href="#">teacher FAQ's</a></li>
                       <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>
@@ -153,14 +153,14 @@ export default function RFATeacherPos(props){
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard2 posHeader = {"TASKS"} posImage = {Placeholder} posDescription = {
+                  <RFAPositionCard2 posHeader = {"TASKS"} posImage = {TasksOrange} posDescription = {
                     <ul>
                       <li>Teach small groups students in synchronous classes using breakout rooms</li>
                       <li>Review homework assignments</li>
                       <li>Answer student questions in a timely manner</li>
                     </ul>
                   }/>
-                  <RFAPositionCard1 posHeader = {"CURRICULA"} posImage = {Placeholder} posDescription = {
+                  <RFAPositionCard1 posHeader = {"CURRICULA"} posImage = {Curriculum} posDescription = {
                     <ul>
                       <li>Our current curricula for online classes include the Code.org Curriculum (for K-3rd graders), Basic Scratch Curriculum (for K-3rd graders), Scratch Curriculum (for 4th-6th graders), Python Curriculum (for 6th-8th graders), and TinkerCAD Curriculum (for 5th-8th graders).</li>
                       <li>Please note that we are not currently accepting applications from people who only are interested in teaching Python.</li>
@@ -196,7 +196,7 @@ export default function RFATeacherPos(props){
                       <li>Leadership or classroom management experience</li>
                     </ul>
                   }/>
-                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posDescription = {
+                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {QuestionMark} posDescription = {
                     <ul>
                       <li>If you have any other questions, please visit our <a href="#">teacher FAQ's</a></li>
                       <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net">info@roboticsforall.net</a></li>

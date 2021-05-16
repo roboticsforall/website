@@ -11,6 +11,8 @@ import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
 import RFAAbtOverview from "./components/About/RFAAbtOverview";
 import RFAVolunteerApp from "./components/Volunteer/RFAVolunteerApp";
 import RFANews from "./components/News/RFANews";
+import RFACorpBylaws from "./components/More/RFACorpBylaws";
+
 
 export default class App extends React.Component{
   render() {
@@ -26,6 +28,12 @@ export default class App extends React.Component{
             <Route path = "/volunteer-volunteerapp" component = {RFAVolunteerApp}/>
             <Route path = "/about-afforgs" component = {RFAAffOrgs}/>
             <Route path = "/news" component = {RFANews}/>
+            <Route path = "/more-privacypolicy" component = {RFANews}/>
+            <Route path = "/more-websitetos" component = {RFANews}/>
+            <Route path = "/more-bylaws" component = {RFACorpBylaws}/>
+            <Route path = "/more-privacypolicy" component = {RFANews}/>
+            <Route path = "/more-meetingminutesandagendas" component = {RFANews}/>
+
           </Switch>
           <br/>
           <br/>
