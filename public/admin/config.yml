@@ -58,8 +58,7 @@ collections:
                 widget: file
                 folder: src/posts/corpsbylawsuploads
                 path: src/posts/corpsbylawsuploads
-                media_folder: ''
-                public_folder: ''
+                media_folder: 'src/posts/corpsbylawsuploads'
 
               # - label: File
               #   name: corpbylawsuploads
