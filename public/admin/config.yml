@@ -53,7 +53,10 @@ collections:
             fields:
               - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
               - {label: Item Name, name: item_name, widget: string}
-              - {label: file, name: "file", widget: file, folder: "src/posts/corpsbylawsuploads", create: true, default: ''}
+              - label: file
+                name: "file"
+                widget: file
+                path: "src/posts/corpsbylawsuploads"
 
               # - label: File
               #   name: corpbylawsuploads
