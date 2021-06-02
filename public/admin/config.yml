@@ -56,12 +56,4 @@ collections:
               - label: file
                 name: "file"
                 widget: file
-                # folder: src/posts/corpsbylawsuploads
-                # path: src/posts/corpsbylawsuploads
                 media_folder: 'corpsbylawsuploads'
-
-              # - label: File
-              #   name: corpbylawsuploads
-              #   folder: "src/posts/corpsbylawsuploads"
-              #   create: true
-              #   fields:
