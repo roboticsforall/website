@@ -40,7 +40,7 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: string}
-  - label: "Bylaws and Minutes"" # used in UI
+  - label: "Bylaws and Minutes" # used in UI
     name: "bylaws_minutes" # used in routes
     files:
       - label: "Corporation Bylaws"
