@@ -56,7 +56,9 @@ collections:
               - label: file
                 name: "file"
                 widget: file
-                path: "src/posts/corpsbylawsuploads"
+                folder: src/posts/corpsbylawsuploads
+                media_folder: ''
+                public_folder: ''
 
               # - label: File
               #   name: corpbylawsuploads
