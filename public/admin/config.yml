@@ -40,3 +40,15 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: string}
+  - label: "Corporation Bylaws"
+    name: "corp_bylaws"
+    file: "src/posts/corp_bylaws.json"
+    fields:
+      - label: "Corporation Bylaws"
+        name: "corp_bylaws_list"
+        widget: list
+        fields:
+          - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+          - {label: Item Name, name: item_name, widget: string}
+          - {label: File, name: file_name, widget: file, default: "src/corpbylawsuploads"}
+
