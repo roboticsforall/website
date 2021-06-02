@@ -50,5 +50,5 @@ collections:
         fields:
           - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
           - {label: Item Name, name: item_name, widget: string}
-          - {label: File, name: file_name, widget: file, default: "src/corpbylawsuploads"}
+          - {label: File, name: file_name, widget: file, folder: "src/corpbylawsuploads"}
 
