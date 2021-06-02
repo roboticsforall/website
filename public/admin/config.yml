@@ -57,5 +57,5 @@ collections:
                 name: corpbylawsuploads
                 folder: "src/posts/corpsbylawsuploads"
                 fields:
-                  - {label: file, name: "file" widget: file}
+                  - {label: file, name: "file", widget: file}
 
