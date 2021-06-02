@@ -40,15 +40,18 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: string}
-  - label: "Corporation Bylaws"
-    name: "corp_bylaws"
-    file: "src/posts/corp_bylaws.json"
-    fields:
+  - label: "Bylaws and Minutes"" # used in UI
+    name: "bylaws_minutes" # used in routes
+    files:
       - label: "Corporation Bylaws"
-        name: "corp_bylaws_list"
-        widget: list
+        name: "corp_bylaws"
+        file: "src/posts/corp_bylaws.json"
         fields:
-          - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
-          - {label: Item Name, name: item_name, widget: string}
-          # - {label: File, name: file_name, widget: file, folder: "src/corpbylawsuploads"}
+          - label: "Corporation Bylaws"
+            name: "corp_bylaws_list"
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+              - {label: Item Name, name: item_name, widget: string}
+              - {label: File, name: file_name, widget: file, default: "src/corpbylawsuploads"}
 
