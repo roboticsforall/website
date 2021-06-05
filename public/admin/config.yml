@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "/images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - label: "FAQ's" # used in UI
@@ -10,7 +10,7 @@ collections:
     files:
       - label: "Class FAQ's"
         name: "class_faqs"
-        file: "/public/posts/faqs/class_faqs.json"
+        file: "/posts/faqs/class_faqs.json"
         fields:
           - label: Class FAQ List
             name: class_faq_list
@@ -26,7 +26,7 @@ collections:
             widget: markdown
       - label: "Volunteer FAQ's"
         name: "volunteer_faqs"
-        file: "/public/post/faqs/volunteer_faqs.json"
+        file: "/posts/faqs/volunteer_faqs.json"
         fields:
           - label: Teacher FAQ List
             name: teacher_faq_list
@@ -45,7 +45,7 @@ collections:
     files:
       - label: "Corporation Bylaws"
         name: "corp_bylaws"
-        file: "src/posts/corp_bylaws.json"
+        file: "/posts/uploads/faqs/corp_bylaws.json"
         fields:
           - label: "Corporation Bylaws"
             name: "corp_bylaws_list"
@@ -56,4 +56,4 @@ collections:
               - label: file
                 name: "file_path"
                 widget: file
-                media_folder: 'corpsbylawsuploads'
+                media_folder: '/public/uploads/downloads/corpsbylaws'

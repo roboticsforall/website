@@ -4,6 +4,7 @@ import RFAHeader from "../RFAHeader";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFABylawEntry from '../RFABylawEntry';
 import bylawsListJSON from "../../mosts/corp_bylaws.json";
+// import image from "/post/faqs/volunteer_faqs.json";
 // import pdf from "../../posts/corpsbylawsuploads/codebase_eye_forward_rev3.pdf";
 
 export default function RFACorpBylaws(props){
@@ -35,7 +36,7 @@ return (
         </Container>
         <Container style ={background}>
             {bylawsListJSON.corp_bylaws_list.map((bylawEntry, i) => (
-                <RFABylawEntry key = {i} date = {bylawEntry.date} bylawName = {"corpsbylawsuploads/bach_brandenburg3_parts-1-.pdf"} download = {"/codebase.pdf"}/>
+                <RFABylawEntry key = {i} date = {bylawEntry.date} bylawName = {"corpsbylawsuploads/bach_brandenburg3_parts-1-.pdf"} download = {"/post/faqs/volunteer_faqs.json"}/>
             ))}
         </Container>
     </div>
