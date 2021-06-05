@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import RFANavbar from "./components/RFANavbar";
+import RFAMeetingRecords from "./components/More/RFAMeetingRecords";
 import RFATeacherPos from "./components/Volunteer/RFATeacherPos";
 import RFAAffOrgs from "./components/About/RFAAffOrgs";
 import RFAHomePage from './components/RFAHomePage';
@@ -31,6 +32,7 @@ export default class App extends React.Component{
             <Route path = "/more-privacypolicy" component = {RFANews}/>
             <Route path = "/more-websitetos" component = {RFANews}/>
             <Route path = "/more-bylaws" component = {RFACorpBylaws}/>
+            <Route path = "/more-meetingrecords" component = {RFAMeetingRecords}/>
             <Route path = "/more-privacypolicy" component = {RFANews}/>
             <Route path = "/more-meetingminutesandagendas" component = {RFANews}/>
           </Switch>
