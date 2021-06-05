@@ -57,7 +57,7 @@ collections:
                 name: "file_path"
                 widget: file
                 media_folder: '/uploads/downloads/corpsbylaws'
-                public_folder: '/public'
+                public_folder: 'public'
       - label: "Meeting Minutes and Agendas"
         name: "meeting_records"
         file: "src/posts/downloads/meeting_records.json"
