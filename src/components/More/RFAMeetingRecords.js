@@ -36,7 +36,7 @@ return (
         </Container>
         <Container style = {background}>
             {meetingRecordsListJSON.meeting_records_list.map((meeting_record_entry, i) => (
-                <RFAMeetingEntry key = {i} date = {meeting_record_entry.date} agendaDownload = {"#"} minutesDownload = {meeting_record_entry.minute}/>
+                <RFAMeetingEntry key = {i} date = {meeting_record_entry.date} agendaDownload = {meeting_record_entry.agenda_file_path.replace("/public", "")} minutesDownload = {meeting_record_entry.meeting_minute_file_path.replace("/public", "")}/>
             ))}
         </Container>
     </div>
