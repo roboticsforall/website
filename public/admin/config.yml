@@ -10,7 +10,7 @@ collections:
     files:
       - label: "Class FAQ's"
         name: "class_faqs"
-        file: "/public/posts/class_faqs.json"
+        file: "/public/posts/faqs/class_faqs.json"
         fields:
           - label: Class FAQ List
             name: class_faq_list
@@ -26,7 +26,7 @@ collections:
             widget: markdown
       - label: "Volunteer FAQ's"
         name: "volunteer_faqs"
-        file: "/public/posts/volunteer_faqs.json"
+        file: "/public/post/faqs/volunteer_faqs.json"
         fields:
           - label: Teacher FAQ List
             name: teacher_faq_list
