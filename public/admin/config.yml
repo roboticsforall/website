@@ -43,20 +43,20 @@ collections:
   - label: "Bylaws and Minutes" # used in UI
     name: "bylaws_minutes" # used in routes
     files:
-      - label: "Corporation Bylaws"
-        name: "corp_bylaws"
-        file: "src/posts/downloads/corp_bylaws.json"
-        fields:
-          - label: "Corporation Bylaws"
-            name: "corp_bylaws_list"
-            widget: list
-            fields:
-              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
-              - {label: Item Name, name: item_name, widget: string}
-              - label: file
-                name: "file_path"
-                widget: file
-                media_folder: '/uploads/downloads/corpsbylaws'
+      # - label: "Corporation Bylaws"
+      #   name: "corp_bylaws"
+      #   file: "src/posts/downloads/corp_bylaws.json"
+      #   fields:
+      #     - label: "Corporation Bylaws"
+      #       name: "corp_bylaws_list"
+      #       widget: list
+      #       fields:
+      #         - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+      #         - {label: Item Name, name: item_name, widget: string}
+      #         - label: file
+      #           name: "file_path"
+      #           widget: file
+      #           media_folder: '/uploads/downloads/corpsbylaws'
       - label: "Meeting Minutes and Agendas"
         name: "meeting_records"
         file: "src/posts/downloads/meeting_records.json"
