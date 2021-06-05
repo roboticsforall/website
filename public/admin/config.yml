@@ -72,4 +72,4 @@ collections:
                 name: "file_path"
                 widget: file
                 media_folder: '/uploads/downloads/meetingrecords'
-                public_folder: '/uploads/downloads/corpsbylaws'
+                public_folder: '/uploads/downloads/meetingrecords'
