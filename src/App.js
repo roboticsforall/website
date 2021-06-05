@@ -32,9 +32,8 @@ export default class App extends React.Component{
             <Route path = "/more-privacypolicy" component = {RFANews}/>
             <Route path = "/more-websitetos" component = {RFANews}/>
             <Route path = "/more-bylaws" component = {RFACorpBylaws}/>
-            <Route path = "/more-meetingrecords" component = {RFAMeetingRecords}/>
             <Route path = "/more-privacypolicy" component = {RFANews}/>
-            <Route path = "/more-meetingminutesandagendas" component = {RFANews}/>
+            <Route path = "/more-meetingrecords" component = {RFAMeetingRecords}/>
           </Switch>
           <br/>
           <br/>

@@ -28,12 +28,12 @@ return (
         <br></br>
         <Container>
             <Row className="center-align">
-                <Col xs={6} style ={header}>Meeting Date and Time</Col>
-                <Col xs={3} style ={header}>Date</Col>
-                <Col xs={3} style ={header}>Minutes</Col>
+                <Col xs={6} style = {header}>Meeting Date and Time</Col>
+                <Col xs={3} style = {header}>Agenda</Col>
+                <Col xs={3} style = {header}>Minutes</Col>
             </Row>
         </Container>
-        <Container style ={background}>
+        <Container style = {background}>
             <RFAMeetingEntry date = {"December 1st, 2018"} agenda = {"#"} minutes = {"#"}/>
         </Container>
     </div>

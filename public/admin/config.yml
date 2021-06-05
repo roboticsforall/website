@@ -57,3 +57,17 @@ collections:
                 name: "file_path"
                 widget: file
                 media_folder: '/uploads/downloads/corpsbylaws'
+      - label: "Meeting Minutes and Agendas"
+        name: "meeting_records"
+        file: "src/posts/downloads/meeting_records.json"
+        fields:
+          - label: "Meeting Minutes and Agendas"
+            name: "meeting_records_list"
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+              - {label: Item Name, name: item_name, widget: string}
+              - label: file
+                name: "file_path"
+                widget: file
+                media_folder: '/uploads/downloads/meetingrecords'
