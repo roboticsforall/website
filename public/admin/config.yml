@@ -68,16 +68,13 @@ collections:
             fields:
               - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
               - {label: Item Name, name: item_name, widget: string}
-              - label: file
-                name: "files"
-                fields:
-                  - label: Meeting Minute File
-                    name: "meeting_minute_file_path"
-                    widget: file
-                    media_folder: '/uploads/downloads/meetingrecords/meetingminutes'
-                    public_folder: '/uploads/downloads/meetingrecords/meetingminutes'
-                  - label: Agenda file
-                    widget: file
-                    name: "agenda_file_path"
-                    media_folder: '/uploads/downloads/meetingrecords/agendas'
-                    public_folder: '/uploads/downloads/meetingrecords/agendas'
+              - label: Meeting Minute File
+                name: "meeting_minute_file_path"
+                widget: file
+                media_folder: '/uploads/downloads/meetingrecords'
+                public_folder: '/uploads/downloads/meetingrecords'
+              - label: Agenda File
+                name: "agenda_file_path"
+                widget: file
+                media_folder: '/uploads/downloads/meetingrecords'
+                public_folder: '/uploads/downloads/meetingrecords'
