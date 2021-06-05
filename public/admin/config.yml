@@ -45,7 +45,7 @@ collections:
     files:
       - label: "Corporation Bylaws"
         name: "corp_bylaws"
-        file: "src/posts/faqs/corp_bylaws.json"
+        file: "src/posts/downloads/corp_bylaws.json"
         fields:
           - label: "Corporation Bylaws"
             name: "corp_bylaws_list"
@@ -56,4 +56,4 @@ collections:
               - label: file
                 name: "file_path"
                 widget: file
-                media_folder: '/public/uploads/downloads/corpsbylaws'
+                media_folder: '/uploads/downloads/corpsbylaws'
