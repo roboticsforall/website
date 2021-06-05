@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
-export default class RFABylawEntry extends React.Component{
-    render () {
+export default function RFABylawEntry(props){
         const background ={
             backgroundColor: "white",
             borderRadius: "20px",
@@ -12,15 +12,14 @@ export default class RFABylawEntry extends React.Component{
             fontSize: "large",
             textAlign: "center",
         };
-        const link ={
+        const link = {
             color: "black",
         }
     return (
         <Row>
-            <Col xs={3} style={background}><p>{this.props.date}</p></Col>
-            <Col xs={7} style={background}><p>{this.props.bylaw}</p></Col>
-            <Col xs={2} style={background}><p><a href={this.props.download} style={link}>Download</a></p></Col>
+            <Col xs={3} style={background}><p>{props.date}</p></Col>
+            <Col xs={7} style={background}><p>{props.bylawName}</p></Col>
+            <Col xs={2} style={background}><p><a href = {props.download} style={link} download>Download</a></p></Col>
         </Row>
     );
-    }
 }

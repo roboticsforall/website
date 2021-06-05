@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "/images/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
@@ -10,7 +10,7 @@ collections:
     files:
       - label: "Class FAQ's"
         name: "class_faqs"
-        file: "src/posts/class_faqs.json"
+        file: "/posts/class_faqs.json"
         fields:
           - label: Class FAQ List
             name: class_faq_list
@@ -54,6 +54,6 @@ collections:
               - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
               - {label: Item Name, name: item_name, widget: string}
               - label: file
-                name: "file"
+                name: "file_path"
                 widget: file
                 media_folder: 'corpsbylawsuploads'

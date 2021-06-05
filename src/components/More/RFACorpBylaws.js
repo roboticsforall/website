@@ -3,6 +3,8 @@ import {Container, Row, Col, Nav, Button} from "react-bootstrap";
 import RFAHeader from "../RFAHeader";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFABylawEntry from '../RFABylawEntry';
+import bylawsListJSON from "../../posts/corp_bylaws.json";
+// import pdf from "../../posts/corpsbylawsuploads/codebase_eye_forward_rev3.pdf";
 
 export default function RFACorpBylaws(props){
     const background = {
@@ -21,9 +23,7 @@ export default function RFACorpBylaws(props){
     }
 return (
     <div>
-        <div>
-            <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Corporate Bylaws"} description = {"Learn more about Robotics for All's bylaws!"}/>
-        </div>
+        <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Corporate Bylaws"} description = {"Learn more about Robotics for All's bylaws!"}/>
         <br></br>
         <br></br>
         <Container>
@@ -34,7 +34,9 @@ return (
             </Row>
         </Container>
         <Container style ={background}>
-            <RFABylawEntry date = {"December 1st, 2018"} bylaw = {"Initial Incorporation Bylaws"} download = {"#"}/>
+            {bylawsListJSON.corp_bylaws_list.map((bylawEntry, i) => (
+                <RFABylawEntry key = {i} date = {bylawEntry.date} bylawName = {"corpsbylawsuploads/bach_brandenburg3_parts-1-.pdf"} download = {"/codebase.pdf"}/>
+            ))}
         </Container>
     </div>
 );

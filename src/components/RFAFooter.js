@@ -66,10 +66,10 @@ export default function RFAFooter(props) {
                     <br/>
                     <Col lg = {3}>
                         <h1 style = {headerStyle}>MORE</h1>
-                        <Link style = {linkStyle} className="hyperlink C06202" href = "#"><p>Privacy Policy</p></Link>
-                        <Link style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></Link>
-                        <Link to = "/more-bylaws" style = {linkStyle} className="hyperlink C06202" href = "#"><p>Robotics For All Bylaws</p></Link>
-                        <Link style = {linkStyle} className = "hyperlink C06202" href = "#"><p>Meeting Minutes & Agendas</p></Link>
+                        <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Privacy Policy</p></a>
+                        <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></a>
+                        <Link to = "/more-bylaws" style = {linkStyle} className="hyperlink C06202"><p>Robotics For All Bylaws</p></Link>
+                        <a style = {linkStyle} className = "hyperlink C06202" href = "#"><p>Meeting Minutes & Agendas</p></a>
                         <div style = {darkBrown, linkStyle}>
                             TAX IDs | <p className = "C06202">83-2012119</p>
                         </div>
