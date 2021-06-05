@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
-export default class RFABylawEntry extends React.Component{
-    render () {
+export default function RFABylawEntry(props){
         const background ={
             backgroundColor: "white",
             borderRadius: "20px",
@@ -22,5 +22,4 @@ export default class RFABylawEntry extends React.Component{
             <Col xs={3} style={background}><p><a href={this.props.minutes} style={link}>Minutes</a></p></Col>
         </Row>
     );
-    }
 }
