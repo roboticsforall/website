@@ -36,7 +36,7 @@ return (
         </Container>
         <Container style ={background}>
             {bylawsListJSON.corp_bylaws_list.map((bylawEntry, i) => (
-                <RFABylawEntry key = {i} date = {bylawEntry.date} bylawName = {"corpsbylawsuploads/bach_brandenburg3_parts-1-.pdf"} download = {"/post/faqs/volunteer_faqs.json"}/>
+                <RFABylawEntry key = {i} date = {bylawEntry.date} bylawName = {bylawEntry.item_name} download = {bylawEntry.file_path}/>
             ))}
         </Container>
     </div>
