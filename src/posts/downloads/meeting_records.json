@@ -3,7 +3,9 @@
     {
       "date": "June 17th, 2021",
       "item_name": "Meeting 1",
-      "file_path": "/uploads/downloads/meetingrecords/codebase_eye_forward_rev3.6ba5f7ef.pdf"
+      "file_path": "/uploads/downloads/meetingrecords/codebase_eye_forward_rev3.6ba5f7ef.pdf",
+      "meeting_minute_file_path": "/uploads/downloads/meetingrecords/codebase_eye_forward_rev3.6ba5f7ef.pdf",
+      "agenda_file_path": "/uploads/downloads/meetingrecords/bach_brandenburg3_parts-1-.pdf"
     }
   ]
 }
