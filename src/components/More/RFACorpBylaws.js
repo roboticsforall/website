@@ -4,8 +4,6 @@ import RFAHeader from "../RFAHeader";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFABylawEntry from '../RFABylawEntry';
 import bylawsListJSON from "../../posts/downloads/corp_bylaws.json";
-// import image from "/post/faqs/volunteer_faqs.json";
-// import pdf from "../../posts/corpsbylawsuploads/codebase_eye_forward_rev3.pdf";
 
 export default function RFACorpBylaws(props){
     const background = {

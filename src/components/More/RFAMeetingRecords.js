@@ -3,6 +3,7 @@ import {Container, Row, Col, Nav, Button} from "react-bootstrap";
 import RFAHeader from "../RFAHeader";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAMeetingEntry from '../RFAMeetingEntry';
+import meetingRecordsListJSON from "../../posts/downloads/meeting_records.json";
 
 export default function RFAMeetingRecords(props){
     const background = {
@@ -34,7 +35,9 @@ return (
             </Row>
         </Container>
         <Container style = {background}>
-            <RFAMeetingEntry date = {"December 1st, 2018"} agenda = {"#"} minutes = {"#"}/>
+            {meetingRecordsListJSON.meeting_records_list.map((meeting_record_entry, i) => (
+                <RFAMeetingEntry key = {i} date = {meeting_record_entry.date} agendaDownload = {"#"} minutesDownload = {meeting_record_entry.minute}/>
+            ))}
         </Container>
     </div>
 );
