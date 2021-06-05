@@ -56,7 +56,7 @@ collections:
               - label: file
                 name: "file_path"
                 widget: file
-                media_folder: 'public/uploads/downloads/corpsbylaws'
+                media_folder: '/public/uploads/downloads/corpsbylaws'
       - label: "Meeting Minutes and Agendas"
         name: "meeting_records"
         file: "src/posts/downloads/meeting_records.json"
@@ -70,8 +70,8 @@ collections:
               - label: Meeting Minute File
                 name: "meeting_minute_file_path"
                 widget: file
-                media_folder: 'public/uploads/downloads/meetingrecords'
+                media_folder: '/public/uploads/downloads/meetingrecords'
               - label: Agenda File
                 name: "agenda_file_path"
                 widget: file
-                media_folder: 'public/uploads/downloads/meetingrecords'
+                media_folder: '/public/uploads/downloads/meetingrecords'
