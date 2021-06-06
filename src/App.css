@@ -179,6 +179,26 @@ h1, h2, h3, h4, h5, h6, p, a{
   transition: 200ms;
 }
 
+/* Fade Animation for Webpages*/
+.fade-enter {
+  opacity: 0;
+  transition: opacity 200ms;
+
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-exit {
+  opacity: 1;
+  transition: opacity 200ms;
+
+}
+.fade-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header-description-size {

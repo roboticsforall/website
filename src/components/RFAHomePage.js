@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Container, Col, Image } from "react-bootstrap";
+import {CSSTransition, TransitionGroup} from "react-transition-group";
 import homePageVideo from "../media/homePageVideo.mp4";
 import TFALogo from '../media/AffiliatedOrgs/TFA_Logo.png';
 import CFCLogo from '../media/AffiliatedOrgs/CFC_Logo.png';
@@ -55,6 +56,7 @@ export default function RFAHomePage(props) {
 
     return (
         <>
+        
             <Row style={videoRow} className="justify-content-center">
                 <video className = "video-width" autoPlay loop muted type="video/mp4" src={homePageVideo} />
             </Row>
