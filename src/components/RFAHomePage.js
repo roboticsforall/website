@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Container, Col, Image } from "react-bootstrap";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 import homePageVideo from "../media/homePageVideo.mp4";
