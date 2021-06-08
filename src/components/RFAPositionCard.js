@@ -12,7 +12,13 @@ export default function RFAPositionCard(props){
         const posDescription = {
             fontFamily: "BeVietnam-Medium",
             color: "#000000",
-        }
+        };
+
+        const con = {
+            width: "75%",
+            margin: "auto",
+            marginBottom: "40px",
+        };
         const posContainer = {
             backgroundColor: props.color,
             borderRadius: "0 0 15px 15px",
@@ -21,7 +27,7 @@ export default function RFAPositionCard(props){
 
 
     return (
-            <Container className = "pos-container" style = {posContainer}>
+            <Container className = "pos-container" style = {con}>
                 <div>                
                     <Row>
                         <Col>
