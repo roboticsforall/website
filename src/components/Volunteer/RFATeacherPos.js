@@ -7,10 +7,10 @@ import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
 import Scheduling from "../../media/VolunteerPos/Scheduling.png";
 import TimeCommitment from "../../media/VolunteerPos/Time Commitment.png";
-import Curriculum from "../../media/VolunteerPos/Curriculum.png";
+import Curriculum from "../../media/VolunteerPos/curriculum.png";
 import Requirements from "../../media/VolunteerPos/Requirements.png";
 import BeneficialQualifications from "../../media/VolunteerPos/Beneficial Qualifications.png";
-import Tasks from "../../media/VolunteerPos/Tasks.png";
+import Tasks from "../../media/VolunteerPos/tasks.png";
 import Benefits from "../../media/VolunteerPos/Benefits.png";
 import Questions from "../../media/VolunteerPos/Questions.png"
 
