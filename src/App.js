@@ -8,6 +8,7 @@ import RFAFooter from "./components/RFAFooter";
 import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
 import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
 import RFAAbtOverview from "./components/About/RFAAbtOverview";
+import RFAPublicityInternPos from "./components/Volunteer/RFAPublicityInternPos";
 
 export default class App extends React.Component{
   render() {
