@@ -7,7 +7,7 @@ import RFAHeader from "../RFAHeader";
 
 export default function RFAAbtOverview(props) {
     const title = {
-        fontFamily: 'Oswald',
+        fontFamily: 'Oswald-Medium',
         fontSize: "10vh",
         textAlign: "center",
       }

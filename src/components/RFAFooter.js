@@ -18,7 +18,7 @@ export default function RFAFooter(props) {
         fontSize: "large"
     }
     const headerStyle = {
-        fontFamily: "Oswald"
+        fontFamily: "Oswald-Medium"
     }
     const copyrightDisclaimer = {
         fontFamily: "BeVietnam-Light",

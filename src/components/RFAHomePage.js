@@ -27,7 +27,7 @@ export default function RFAHomePage(props) {
         backgroundColor: "#FFCC00",
     }
     const header = {
-        fontFamily: "Oswald",
+        fontFamily: "Oswald-Medium",
         fontSize: "10vh",
         color: "#ffcc00",
         textAlign: "center",
@@ -43,7 +43,7 @@ export default function RFAHomePage(props) {
         fontSize: "4vh",
     }
     const affOrgsHeader = {
-        fontFamily: "Oswald",
+        fontFamily: "Oswald-Medium",
         fontSize: "8vh",
         color: "#ffcc00",
         textAlign: "center",
@@ -99,7 +99,7 @@ export default function RFAHomePage(props) {
                             ].map((buttons, i) => (
                                 <Col key = {i} md={4} className="text-center">
                                     <Image  key = {buttons.logo} style = {imageSize} className="mb-3" src={buttons.logo} />
-                                    <h1 key = {buttons.label} style={{ color: buttons.color, fontFamily: "Oswald", textAlign: 'center' }}>{buttons.label}</h1>
+                                    <h1 key = {buttons.label} style={{ color: buttons.color, fontFamily: "Oswald-Medium", textAlign: 'center' }}>{buttons.label}</h1>
                                 </Col>
                             ))
                         }

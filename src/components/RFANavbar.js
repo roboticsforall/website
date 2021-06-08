@@ -9,13 +9,23 @@ export default function RFANavbar(props) {
         height: "7vh",
     }
     const header = {
-        fontFamily: "Oswald",
+        fontFamily: "Oswald-Medium",
     }
     // const navItems = {
     //     color: "#ffcc00",
     //     fontFamily: "BeVietnam-ExtraBold",
     //     fontSize: "1.0em"
     // }
+    
+    const donateBtnText = {
+        color: "#fffff",
+        fontFamily: "BeVietnam-ExtraBold",
+        fontSize: "1.5em",
+    }
+    const donateBtn = {
+        borderRadius: "1em",
+        backgroundColor: "#3399ff"
+     }
 
     return (
         <Row>
@@ -76,8 +86,13 @@ export default function RFANavbar(props) {
                                     News
                                 </Link>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Donate </a>
+                            <li className= "d-flex flex-column justify-content-center text-center align-items-center nav-item dropdown">
+                                <a className= "hyperlink donate-nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Donate
+                                </a>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href = "https://www.bonfire.com/store/rfa/" className="dropdown-item">Merch</a>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 <div id="google_translate_element"></div>
