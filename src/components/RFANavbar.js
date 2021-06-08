@@ -9,13 +9,23 @@ export default function RFANavbar(props) {
         height: "7vh",
     }
     const header = {
-        fontFamily: "Oswald",
+        fontFamily: "Oswald-Medium",
     }
     // const navItems = {
     //     color: "#ffcc00",
     //     fontFamily: "BeVietnam-ExtraBold",
     //     fontSize: "1.0em"
     // }
+    
+    const donateBtnText = {
+        color: "#fffff",
+        fontFamily: "BeVietnam-ExtraBold",
+        fontSize: "1.5em",
+    }
+    const donateBtn = {
+        borderRadius: "1em",
+        backgroundColor: "#3399ff"
+     }
 
     return (
         <Row>
@@ -44,15 +54,18 @@ export default function RFANavbar(props) {
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Volunteer
-                            </a>
+                                </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link to = "/volunteer-volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
+                                    <Link to = "/volunteer-teacherpos" className="dropdown-item">Teacher Positions</Link>
+                                    <Link to = "/volunteer-volunteerapp" className="dropdown-item">Volunteer App</Link>
+                                    <Link to = "/volunteer-internpos" className="dropdown-item">Intern Pos</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     About
-                            </a>
+                                </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link to = "/about-afforgs" className="dropdown-item">Affiliated Organizations</Link>
                                     <Link to = "/about-overview" className="dropdown-item">Overview</Link>
@@ -61,7 +74,7 @@ export default function RFANavbar(props) {
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Contact
-                            </a>
+                                </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a className="dropdown-item" href="#">Action</a>
                                     <a className="dropdown-item" href="#">Another action</a>
@@ -69,19 +82,18 @@ export default function RFANavbar(props) {
                                     <a className="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li className="nav-item">
+                                <Link to = "/news" className="nav-link" href="#">
                                     News
-                            </a>
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
-                                </div>
+                                </Link>
                             </li>
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">Donate </a>
+                            <li className= "d-flex flex-column justify-content-center text-center align-items-center nav-item dropdown">
+                                <a className= "hyperlink donate-nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Donate
+                                </a>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href = "https://www.bonfire.com/store/rfa/" className="dropdown-item">Merch</a>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 <div id="google_translate_element"></div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Container, Row, Tab, Nav, Button} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
-import headerBlobYellow from "../../media/HeaderBlobs/HBLightYellow.png";
+import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
@@ -10,7 +10,7 @@ import TimeCommitment from "../../media/VolunteerPos/Time Commitment.png";
 import Curriculum from "../../media/VolunteerPos/Curriculum.png";
 import Requirements from "../../media/VolunteerPos/Requirements.png";
 import BeneficialQualifications from "../../media/VolunteerPos/Beneficial Qualifications.png";
-import Tasks from "../../media/VolunteerPos/Tasks.png";
+import Tasks from "../../media/VolunteerPos/tasks.png";
 import Benefits from "../../media/VolunteerPos/Benefits.png";
 import Questions from "../../media/VolunteerPos/Questions.png"
 
