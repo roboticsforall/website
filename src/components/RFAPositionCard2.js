@@ -24,7 +24,7 @@ export default function RFAPositionCard2(props){
         };
 
     return (
-            <Container className = "pos-container" style = {con}>
+            <Container className = "pos-container">
                 <div>
                 <h1 className = "header-size" style = {posHeader}>{props.posHeader}</h1>                    
                     <Row>

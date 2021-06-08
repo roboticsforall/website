@@ -27,7 +27,7 @@ export default function RFAPositionCard(props){
 
 
     return (
-            <Container className = "pos-container" style = {con}>
+            <Container className = "pos-container" style = {posContainer}>
                 <div>                
                     <Row>
                         <Col>

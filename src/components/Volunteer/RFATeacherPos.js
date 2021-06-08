@@ -41,7 +41,7 @@ export default function RFATeacherPos(props){
     fontFamily: "Mazzard-H-Extrabold",
     fontSize: "45px",
     borderColor: "#FA8D1F",
-    width: "75%",
+    // width: "75%",
     borderRadius: "15px",
     margin: "auto",
   };
@@ -68,7 +68,7 @@ export default function RFATeacherPos(props){
           <br></br>
           <br></br>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
-              <Nav justify fill variant = "tabs" style = {con}>
+              <Nav justify fill variant = "tabs">
                 <Nav.Item>
                   <Nav.Link eventKey = "one" style = {key === "one" ? ActiveStyle : inActiveStyle}><p style = {black}>Lead Instructor</p></Nav.Link>
                 </Nav.Item>
