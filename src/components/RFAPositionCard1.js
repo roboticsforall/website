@@ -1,9 +1,7 @@
 import React from 'react';
 import {Container, Row, Col, Image} from "react-bootstrap";
 
-export default class RFAPositionCard1 extends React.Component{
-    
-    render () {
+export default function RFAPositionCard1(props){
         const posHeader = {
             fontFamily: "Mazzard-H-Extrabold",
             letterSpacing: "0.25em",
@@ -30,17 +28,16 @@ export default class RFAPositionCard1 extends React.Component{
     return (
             <Container className = "pos-container center-align" style = {con}>
                 <div>
-                    <h1 className = "header-size" style = {posHeader}>{this.props.posHeader}</h1>                    
+                    <h1 className = "header-size" style = {posHeader}>{props.posHeader}</h1>                    
                     <Row>
                         <Col xs = {3}>
-                            <Image className = "center-align" src = {this.props.posImage} style = {img} fluid />
+                            <Image className = "center-align" src = {props.posImage} style = {img} fluid/>
                         </Col>
                         <Col>
-                            <p className = "header-description-size" style = {posDescription}>{this.props.posDescription}</p>
+                            <div className = "header-description-size" style = {posDescription}>{props.posDescription}</div>
                         </Col>
                     </Row>
                 </div>   
             </Container>
     );
-    }
 }

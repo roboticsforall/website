@@ -35,7 +35,13 @@
   url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
 }
 @font-face{
-  font-family: "Oswald";
+  font-family: "BeVietnam-Light";
+  src: url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald-Medium";
   src: url("./fonts/Oswald/Oswald-Medium.ttf") format("tff"),
   url("./fonts/Oswald/Oswald-Medium.ttf") format("opentype"),
   url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
@@ -50,9 +56,16 @@
   text-decoration: none;
 } */
 
+/* .container{
+  max-width: 900px;
+} */
+
 html, body {
   height: 100%;
   overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+  letter-spacing: 1.4px;
 }
 
 .aff-org-card-link {
@@ -61,38 +74,54 @@ html, body {
   letter-spacing: 0.1em;
   transition: 0.2s;
 }
-.center-align{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-h1, h2, h3, h4, h5, h6, p, a{
-  letter-spacing: 1.4px;
-}
 
-.center-align{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mb-6 {
-  margin-bottom: 6em;
-}
-.nav-link{
-  color: #ffcc00 !important;
-  font-family: "BeVietnam-ExtraBold" !important;
+/* #region Overrided Bootstrap styles for navbar */ 
+.navbar .nav-link{
+  color: #ffcc00 !important; /* nav headers font style */
+  font-family: "BeVietnam-ExtraBold" !important; 
   font-size: 1.5em;
 }
-.nav-link:hover {
+.navbar .nav-link:hover {
   transition: 0.2s;
   color: #fa8d1f !important;
 }
-.nav-link:active {
+.navbar .nav-link:active {
   transition: 0.2s;
   color: black !important;
 }
+.nav-link::after {
+  content: none !important;
+}
+
+/* for donate button specifically */
+.navbar .donate-nav-link{
+  color: #ffffff !important; /* nav headers font style */
+  font-family: "BeVietnam-ExtraBold" !important; 
+  font-size: 1.5em;
+  
+}
+.navbar .donate-nav-link:hover {
+  transition: 0.2s;
+  color: #3399ff !important;
+}
+.navbar .donate-nav-link:active {
+  transition: 0.2s;
+  color: #006bd6 !important;
+}
+.donate-nav-item {
+  border-radius: 1em;
+  background-color: #3399ff;
+}
+.donate-nav-link::after {
+  content: none !important;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
 .dropdown-item {
-  color: #fa8d1f !important;
+  color: #fa8d1f !important; /* font styling for dropdown text */ 
   font-family: "BeVietnam-ExtraBold";
   background-color: #ffdb4d !important;
   font-size: 1.2em;
@@ -107,14 +136,6 @@ h1, h2, h3, h4, h5, h6, p, a{
   background-color: #ffcc00 !important;
   color: black !important;
 }
-.hyperlink, .hyperlink:hover {
-  text-decoration: none;
-  color: black;
-}
-.nav-link::after {
-  content: none !important;
-}
-
 .dropdown:hover .dropdown-menu{
   display: block !important;
 }
@@ -122,7 +143,10 @@ h1, h2, h3, h4, h5, h6, p, a{
   border-radius: 15px !important;
   background-color: #ffdb4d !important;
 }
+/*#endregion*/ 
 
+/* #region styling for pages like teacher positions */
+/*teacherpos, publicitypos, privacypolicy, websitetos*/
 .pos-container {
   border: 15px solid;
   border-radius: 15px;
@@ -144,16 +168,16 @@ h1, h2, h3, h4, h5, h6, p, a{
   border-color: #FFCC00;
   border-radius: 0 0 15px 15px;
 }
+/*#endregion*/
 
+/* #region homepage styling */
 .home-aff-org-card-link {
   font-family: 'BeVietnam-ExtraBold', sans-serif;
   font-size: 2.0em;
   transition: 0.2s;
   text-decoration: none;
 }
-.navbar-collapse{
-  text-align: center;
-}
+
 .yellow-row {
   background-color: #FFCC004D;
 }
@@ -162,11 +186,9 @@ h1, h2, h3, h4, h5, h6, p, a{
   height: 60vh;
   width: 75% !important;
 }
+/* #endregion */
 
-.C06202 {
-  color: #C06202;
-}
-
+/* #region faq hover styling */
 .faq-dropdown {
   background-color: #ffcc0080;
   color: #c06204;
@@ -177,10 +199,53 @@ h1, h2, h3, h4, h5, h6, p, a{
   color: #532f04 !important;
   transition: 200ms;
 }
+/*#endregion*/
 
+/* #region helper classes */
+.hyperlink, .hyperlink:hover {
+  text-decoration: none;
+  color: black;
+}
+.C06202 {
+  color: #C06202;
+}
+.center-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-6 {
+  margin-bottom: 6em;
+}
+/*#endregion*/
+
+/* #region Fade Animation for Webpages */
+.fade-enter {
+  opacity: 0;
+  transition: opacity 200ms;
+
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-exit {
+  opacity: 1;
+  transition: opacity 200ms;
+
+}
+.fade-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+/*#endregion*/
+
+/* #region media queries */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header-description-size {
+@media only screen and (max-width: 600px) { 
+
+  /* text style on header blobs */
+  .header-description-size { 
     font-size: 13px;
   }
   .header-size {
@@ -262,3 +327,4 @@ h1, h2, h3, h4, h5, h6, p, a{
     color:white;
   }
 }
+/*#endregion*/
