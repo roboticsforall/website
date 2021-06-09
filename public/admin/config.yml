@@ -75,3 +75,19 @@ collections:
                 name: "agenda_file_path"
                 widget: file
                 media_folder: '/public/uploads/downloads/meetingrecords'
+  - label: "Newsletters" # used in UI
+    name: "newsletters" # used in routes
+    files:
+      - label: "Newsletters"
+        name: "newsletters"
+        file: "src/posts/newsletters.json"
+        fields:
+          - label: "Newsletters"
+            name: "newsletters_list"
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM YYYY"}
+              - label: file
+                name: "file_path"
+                widget: file
+                media_folder: '/public/uploads/newsletters'
