@@ -9,7 +9,8 @@ export default function RFATextArea(props){
         fontFamily: "BeVietnam-ExtraBold",
         paddingLeft: "0.5em",
         fontSize: "1.2em",
-        marginBottom: "0.5em"
+        margin: "auto"
+        //marginBottom: "0.5em"
     }
 
     return (
