@@ -3,17 +3,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 import {useLocation, BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import RFANavbar from "./components/RFANavbar";
-import RFAMeetingRecords from "./components/More/RFAMeetingRecords";
-import RFATeacherPos from "./components/Volunteer/RFATeacherPos";
-import RFAAffOrgs from "./components/About/RFAAffOrgs";
+// Base Pages
 import RFAHomePage from './components/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";
+//Enroll
 import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
+import RFARegister from "./components/Enroll/RFARegister";
+//Volunteer
+import RFATeacherPos from "./components/Volunteer/RFATeacherPos";
 import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
-import RFAAbtOverview from "./components/About/RFAAbtOverview";
 import RFAVolunteerApp from "./components/Volunteer/RFAVolunteerApp";
+//About
+import RFAAffOrgs from "./components/About/RFAAffOrgs";
+import RFAAbtOverview from "./components/About/RFAAbtOverview";
+//News
 import RFANews from "./components/News/RFANews";
+//More
 import RFACorpBylaws from "./components/More/RFACorpBylaws";
+import RFAMeetingRecords from "./components/More/RFAMeetingRecords";
+
 
 
 export default function App(props){
@@ -34,6 +42,7 @@ export default function App(props){
                 <Route exact path = "/" component = {RFAHomePage}/>
                 <Route path = "/about-overview" component = {RFAAbtOverview}/>
                 <Route path = "/enroll-classfaq" component = {RFAClassFAQ}/>
+                <Route path = "/enroll-register" component = {RFARegister}/>
                 <Route path = "/volunteer-volunteerfaq" component = {RFAVolunteerFAQ}/>
                 <Route path = "/volunteer-teacherpos" component = {RFATeacherPos}/>
                 <Route path = "/volunteer-volunteerapp" component = {RFAVolunteerApp}/>

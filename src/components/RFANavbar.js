@@ -17,11 +17,6 @@ export default function RFANavbar(props) {
     //     fontSize: "1.0em"
     // }
     
-    const donateBtnText = {
-        color: "#fffff",
-        fontFamily: "BeVietnam-ExtraBold",
-        fontSize: "1.5em",
-    }
     const donateBtn = {
         borderRadius: "1em",
         backgroundColor: "#3399ff"
@@ -49,6 +44,7 @@ export default function RFANavbar(props) {
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link to = "/enroll-classfaq" className="dropdown-item" href="#">Class FAQ's</Link>
+                                    <Link to = "/enroll-register" className="dropdown-item" href="#">Register</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -86,12 +82,12 @@ export default function RFANavbar(props) {
                                     News
                                 </Link>
                             </li>
-                            <li className= "d-flex flex-column justify-content-center text-center align-items-center nav-item dropdown">
+                            <li className= "center-align flex-column text-center donate-nav-item dropdown">
                                 <a className= "hyperlink donate-nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Donate
                                 </a>
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a href = "https://www.bonfire.com/store/rfa/" className="dropdown-item">Merch</a>
+                                <div className="dropdown-menu border" aria-labelledby="navbarDropdown">
+                                    <a href = "https://www.bonfire.com/store/rfa/" target = "_blank" className="dropdown-item">Merch</a>
                                 </div>
                             </li>
                             <li className="nav-item">
