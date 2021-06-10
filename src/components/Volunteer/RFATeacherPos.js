@@ -60,11 +60,7 @@ export default function RFATeacherPos(props){
         <br></br>
         <br></br>
         <Container>
-        <a className = "hyperlink" href = "#">
-            <Row style = {button} className = "p-2 d-flex justify-content-center align-items-center">
-                <h2 className = "BeVietnam-ExtraBold text-center">Apply Now!</h2>
-            </Row>
-        </a>
+        <RFAPosButton title = {"Apply Now!"} backgroundColor = {"#ffcc00"} link = "https://www.google.com/"/>
           <br></br>
           <br></br>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
