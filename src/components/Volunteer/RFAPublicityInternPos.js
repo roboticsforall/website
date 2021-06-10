@@ -5,14 +5,13 @@ import headerBlobYellow from "../../media/HeaderBlobs/HBLightYellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
-import Scheduling from "../../media/VolunteerPos/Scheduling.png";
-import TimeCommitment from "../../media/VolunteerPos/Time Commitment.png";
-import Curriculum from "../../media/VolunteerPos/Curriculum.png";
-import Requirements from "../../media/VolunteerPos/Requirements.png";
-import BeneficialQualifications from "../../media/VolunteerPos/Beneficial Qualifications.png";
-import Tasks from "../../media/VolunteerPos/Tasks.png";
-import Benefits from "../../media/VolunteerPos/Benefits.png";
-import Questions from "../../media/VolunteerPos/Questions.png"
+import RFAPosButton from "../RFAPosButton";
+import Clock from "../../media/Graphics/clock.png";
+import Laptop from "../../media/Graphics/laptop.png";
+import Presentation from "../../media/Graphics/presentation.png";
+import TasksYellow from "../../media/Graphics/tasksYellow.png";
+import ThumbsUp from "../../media/Graphics/thumbsUp.png";
+import QuestionMark from "../../media/Graphics/questionMark.png"
 
 export default function RFAPublicityInternPos(props){
   const [key, setKey] = useState("one")
@@ -40,16 +39,12 @@ export default function RFAPublicityInternPos(props){
     fontFamily: "mazzard-h-extrabold",
     fontSize: "45px",
     borderColor: "#FA8D1F",
-    width: "75%",
+    // width: "75%",
     borderRadius: "15px",
     margin: "auto",
   };
   const black = {
     color: "#000000",
-  };
-  const con = {
-    width: "75%",
-    margin: "auto",
   };
 
     return (
@@ -58,15 +53,11 @@ export default function RFAPublicityInternPos(props){
         <Container>
           <br></br>
           <br></br>
-        <a className = "hyperlink" href = "#">
-            <Row style = {button} className = "p-2 d-flex justify-content-center align-items-center">
-                <h2 className = "BeVietnam-ExtraBold text-center">Apply Now!</h2>
-            </Row>
-        </a>
+          <RFAPosButton title = {"Apply Now!"} backgroundColor = {"#ffcc00"} link = "https://www.google.com/"/>
           <br></br>
           <br></br>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>
-              <Nav justify fill variant = "tabs" style = {con}>
+              <Nav justify fill variant = "tabs">
                 <Nav.Item>
                   <Nav.Link eventKey = "one" className = "pos" style = {key === "one" ? ActiveStyle : inActiveStyle}><p style = {black}>Publicity Intern</p></Nav.Link>
                 </Nav.Item>
@@ -80,7 +71,7 @@ export default function RFAPublicityInternPos(props){
                       </p>
                     </div>
                   }/>
-                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {Tasks} posDescription = {
+                  <RFAPositionCard1 posHeader = {"TASKS"} posImage = {TasksYellow} posDescription = {
                   <div>
                     <p>
                       You are not required to know how to do all of these tasks, but you must be able to do at least one specific task.
@@ -94,14 +85,14 @@ export default function RFAPublicityInternPos(props){
                     </ul>
                   </div>
                   }/>
-                  <RFAPositionCard2 posHeader = {"TIME COMMITMENT"} posImage = {TimeCommitment} posDescription = {
+                  <RFAPositionCard2 posHeader = {"TIME COMMITMENT"} posImage = {Clock} posDescription = {
                     <ul>
                         <li>The minimum time commitment for this position is 3 hours per week, for one month</li>
                         <li>The total time commitment varies depending on which tasks you take and time of year</li>
                         <li>Interns are expected to attend bimonthly meetings</li>
                     </ul>
                   }/>
-                  <RFAPositionCard1 posHeader = {"BENEFITS"} posImage = {Benefits} posDescription = {
+                  <RFAPositionCard1 posHeader = {"BENEFITS"} posImage = {ThumbsUp} posDescription = {
                     <ul>
                       <li>This is an unpaid position. Due to that, we can offer community service hours</li>
                       <li>Interning with Robotics for All looks great on any resume, whether applying for a future internship, job, or college</li>
@@ -110,7 +101,7 @@ export default function RFAPublicityInternPos(props){
                       <li>Earn a recommendation letter from one of Robotics for All's leadership members.</li>
                     </ul>
                   }/>
-                  <RFAPositionCard2 posHeader = {"REQUIREMENTS"} posImage = {Requirements} posDescription = {
+                  <RFAPositionCard2 posHeader = {"REQUIREMENTS"} posImage = {Laptop} posDescription = {
                     <ul>
                       <li>9th grade or above (exceptions may be made, on occasion, for 8th graders with a volunteering background)</li>
                       <li>Consistent access to a computer and stable WiFi</li>
@@ -121,7 +112,7 @@ export default function RFAPublicityInternPos(props){
                         </ul>
                     </ul>
                   }/>
-                  <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {BeneficialQualifications} posDescription = {
+                  <RFAPositionCard1 posHeader = {"BENEFICIAL QUALIFICATIONS"} posImage = {Presentation} posDescription = {
                     <ul>
                       <li>Strong communication skills</li>
                       <li>Good at working with teams</li>
@@ -129,7 +120,7 @@ export default function RFAPublicityInternPos(props){
                       <li>Well organized</li>
                     </ul>
                   }/>
-                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {Questions} posDescription = {
+                  <RFAPositionCard2 posHeader = {"QUESTIONS"} posImage = {QuestionMark} posDescription = {
                     <ul>
                       <li>If you have any other questions, please visit our <a href="#" style={black}>intern FAQ's</a></li>
                       <li>Please direct additional questions to <a href="mailto:info@roboticsforall.net" style={black}>info@roboticsforall.net</a></li>

@@ -145,6 +145,16 @@ h1, h2, h3, h4, h5, h6, p, a{
   border-radius: 0 0 15px 15px;
 }
 
+.pos-container-button {
+  background-color: #FA8D1F;
+  transition: 200ms;
+}
+
+.pos-container-button:hover {
+  background-color: #FFCC00;
+  transition: 200ms;
+}
+
 .home-aff-org-card-link {
   font-family: 'BeVietnam-ExtraBold', sans-serif;
   font-size: 2.0em;

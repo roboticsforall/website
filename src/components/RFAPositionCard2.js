@@ -25,7 +25,7 @@ export default class RFAPositionCard2 extends React.Component{
         };
 
     return (
-            <Container className = "pos-container" style = {con}>
+            <Container className = "pos-container">
                 <div>
                 <h1 className = "header-size" style = {posHeader}>{this.props.posHeader}</h1>                    
                     <Row>

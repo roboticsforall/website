@@ -23,7 +23,7 @@ export default class RFAPositionCard extends React.Component{
         };
 
     return (
-            <Container className = "pos-container" style = {con}>
+            <Container className = "pos-container">
                 <div>                
                     <Row>
                         <Col>

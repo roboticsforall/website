@@ -28,7 +28,7 @@ export default class RFAPositionCard1 extends React.Component{
         };
 
     return (
-            <Container className = "pos-container center-align" style = {con}>
+            <Container className = "pos-container center-align">
                 <div>
                     <h1 className = "header-size" style = {posHeader}>{this.props.posHeader}</h1>                    
                     <Row>
