@@ -24,7 +24,7 @@ export default function RFAHeader(props){
     return (
         <Row style = {headerBlob}>
           <Container className = "align-self-end">
-            <Col className = "border mb-6 w-100">
+            <Col className = "mb-6 w-100">
               <Row className = "justify-content-center">
                 <h1 style = {pageHeader} className = "text-center header-size">{props.title}</h1>
               </Row>
