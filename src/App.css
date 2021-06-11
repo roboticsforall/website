@@ -37,14 +37,20 @@
 }
 html, body {
   height: 100%;
-  text-align: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  overflow-x: hidden;
 }
-
+/* .container {
+  max-width: 980px !important;
+} */
 
 .mb-6{
   margin-bottom: 6em;
+}
+
+.center-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Extra small devices (phones, 600px and down) */

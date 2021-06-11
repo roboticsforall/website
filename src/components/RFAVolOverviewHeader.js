@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import RFAVolOverviewCircle from './RFAVolOverviewCircle';
+
 export default function RFAVolOverviewHeader(props) {
 
     const headerText = {
@@ -22,9 +22,7 @@ export default function RFAVolOverviewHeader(props) {
         backgroundImage: `url(${props.image})`,
     }
     const pageHeaderDescription = {
-        fontFamily: 'Be Vietnam',
-        fontWeight: 600,
-        color: "black",
+        fontFamily: 'BeVietnam-SemiBold',
     }
     const statCircles = {
         paddingLeft: "5vmax",
