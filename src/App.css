@@ -175,13 +175,13 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 .pos-container-button {
-  background-color: #FA8D1F;
-  transition: 200ms;
+  background-color: #FA8D1F !important;
+  transition: 200ms !important;
 }
 
 .pos-container-button:hover {
-  background-color: #FFCC00;
-  transition: 200ms;
+  background-color: #FFCC00 !important;
+  transition: 200ms !important;
 }
 /*#endregion*/
 

@@ -5,6 +5,7 @@ import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAPositionCard from "../RFAPositionCard";
 import RFAPositionCard1 from "../RFAPositionCard1";
 import RFAPositionCard2 from "../RFAPositionCard2";
+import RFAPosButton from "../RFAPosButton";
 import Calendar from "../../media/Graphics/calendar.png";
 import Clock from "../../media/Graphics/clock.png";
 import Curriculum from "../../media/Graphics/curriculum.png";
