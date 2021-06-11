@@ -25,7 +25,7 @@ export default function RFAAboutAffOrgsCard(props) {
                     <Row style={{ backgroundColor: (props.mainColor + "80"), borderRadius: 15 }}>
                         {(window.innerWidth >= 768) ? (
                             <Col sm={3} md={3} lg={3} xl={3} className="p-3 center-align">
-                                <Image style={affOrgsLogoSize} className="border" src={props.logo} />
+                                <Image style={affOrgsLogoSize} className="" src={props.logo} />
                             </Col>
                         ) : (
                             <Col>
@@ -39,13 +39,13 @@ export default function RFAAboutAffOrgsCard(props) {
                                 </Row>
                             </Col>
                         )}
-                        <Col md={5} lg={5} xl={5} className="p-3 border center-align">
+                        <Col md={5} lg={5} xl={5} className="p-3 center-align">
                             <video className = "w-100 h-100" autoPlay muted loop>
                                 <source src={homePageVideo} type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
                         </Col>
-                        <Col md={4} lg={4} xl={4} className="p-3 border">
+                        <Col md={4} lg={4} xl={4} className="p-3">
                             <Container>
                                 <Row className="justify-content-center">
                                     <p style={affOrgsCardText} className="text-center">{props.affOrgsDescription}</p>

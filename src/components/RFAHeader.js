@@ -11,28 +11,22 @@ export default function RFAHeader(props){
     }
     const pageHeader = {
       fontFamily: "Mazzard-H-Extrabold",
-      transform: 'rotate(358deg)',
+      // transform: 'rotate(358deg)',
       color: props.headerTextColor,
     }
     const headerBlob = {
       backgroundSize: "100% 100%",
-      height: "45vw",
+      height: "45vmax",
       width: "100vw",
       backgroundImage: `url(${props.image})`,
     }
 
     return (
-        <Row style = {headerBlob}>
-          <Container className = "align-self-end">
-            <Col className = "mb-6 w-100">
-              <Row className = "justify-content-center">
-                <h1 style = {pageHeader} className = "text-center header-size">{props.title}</h1>
-              </Row>
-              <Row className = "justify-content-center">
-                <p style = {pageHeaderDescription} className = "text-center header-description-size">{props.description}</p>
-              </Row>
-            </Col>
-          </Container>
-        </Row>
+        <div className = "d-flex justify-content-center align-items-end order" style = {headerBlob}>
+            <div className = "w-75 mb-6">
+              <h1 style = {pageHeader} className = "text-center header-size">{props.title}</h1>
+              <p style = {pageHeaderDescription} className = "text-center header-description-size">{props.description}</p>
+            </div>
+        </div>
     );
 }

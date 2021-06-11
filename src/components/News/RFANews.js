@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import RFAHeader from "../RFAHeader";
-import headerBlobYellow from "../../media/HeaderBlobs/orange.png";
+import headerBlobOrange from "../../media/HeaderBlobs/orange.png";
 import paloaltoonline from "../../media/News/Palo-Alto-Online.png";
 import mercurynews from "../../media/News/Mercury-News.png";
 import houseofreps from "../../media/News/House-of-Representatives.png";
@@ -66,7 +66,7 @@ export default function RFANews() {
     <div>
       <RFAHeader
         headerTextColor="#ffcc00"
-        image={headerBlobYellow}
+        image={headerBlobOrange}
         title="See us in the news!"
         description="Learn more about our progress and community outreach."
       />
