@@ -1,5 +1,7 @@
 import React from 'react';
 import {Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
+
 
 export default function RFAPosButton(props){
     const button = {
@@ -16,10 +18,10 @@ export default function RFAPosButton(props){
     };
 
     return (
-        <a className = "hyperlink" href = {props.link}>
+        <Link className = "hyperlink" to = {props.link}>
             <Row className = "pos-container-button justify-content-center align-items-center" style = {button}>
                 <h2 className = "text-center">{props.title}</h2>
             </Row>
-        </a>
+        </Link>
     ); 
 }

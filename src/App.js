@@ -11,6 +11,7 @@ import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
 import RFARegister from "./components/Enroll/RFARegister";
 //Volunteer
 import RFATeacherPos from "./components/Volunteer/RFATeacherPos";
+import RFAPublicityInternPos from "./components/Volunteer/RFAPublicityInternPos";
 import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
 import RFAVolunteerApp from "./components/Volunteer/RFAVolunteerApp";
 //About
@@ -45,6 +46,7 @@ export default function App(props){
                 <Route path = "/enroll-register" component = {RFARegister}/>
                 <Route path = "/volunteer-volunteerfaq" component = {RFAVolunteerFAQ}/>
                 <Route path = "/volunteer-teacherpos" component = {RFATeacherPos}/>
+                <Route path = "/volunteer-publicitypos" component = {RFAPublicityInternPos}/>
                 <Route path = "/volunteer-volunteerapp" component = {RFAVolunteerApp}/>
                 <Route path = "/about-afforgs" component = {RFAAffOrgs}/>
                 <Route path = "/news" component = {RFANews}/>

@@ -1,12 +1,12 @@
 @font-face{
-  font-family: "Mazzard-H-Extrabold";
+  font-family: "mazzard-h-extrabold";
   src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
 }
 @font-face{
   font-family: "BeVietnam-Medium";
-  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),  
+  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
 }
@@ -18,7 +18,7 @@
 }
 @font-face{
   font-family: "BeVietnam-ExtraBold";
-  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),  
+  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
 }
