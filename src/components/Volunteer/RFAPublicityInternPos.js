@@ -53,7 +53,7 @@ export default function RFAPublicityInternPos(props){
         <Container>
           <br></br>
           <br></br>
-          <RFAPosButton title = {"Apply Now!"} backgroundColor = {"#ffcc00"} link = "https://www.google.com/"/>
+          <RFAPosButton title = {"Apply Now!"} backgroundColor = {"#ffcc00"} link = "volunteer-volunteerapp"/>
           <br></br>
           <br></br>
           <Tab.Container activeKey = {key} onSelect = {key => setKey(key)}>

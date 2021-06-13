@@ -3,13 +3,13 @@ import {Container} from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import RFAFAQDropdowns from '../RFAFAQDropdowns';
 import headerBlobOrange from '../../media/HeaderBlobs/orange.png'; // add correct image here
-import volunteerFAQJSON from "../../posts/volunteer_faqs.json";
+import volunteerFAQJSON from "../../posts/faqs/volunteer_faqs.json";
 
 export default function RFAVolunteerFAQ(props){
 
 
   const heading = {
-    fontFamily: 'Oswald',
+    fontFamily: 'Oswald-Medium',
     color: "#532f0A"
   }
 

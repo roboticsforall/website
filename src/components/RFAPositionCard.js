@@ -1,9 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
 
-export default class RFAPositionCard extends React.Component{
-    
-    render () {
+export default function RFAPositionCard(props){
 
         const posHeader = {
             fontFamily: "Mazzard-H-Extrabold",
@@ -21,18 +19,23 @@ export default class RFAPositionCard extends React.Component{
             margin: "auto",
             marginBottom: "40px",
         };
+        const posContainer = {
+            backgroundColor: props.color,
+            borderRadius: "0 0 15px 15px",
+            borderColor: props.borderColor,
+        };
+
 
     return (
-            <Container className = "pos-container">
+            <Container className = "pos-container" style = {posContainer}>
                 <div>                
                     <Row>
                         <Col>
-                            <h1 className = "header-size" style = {posHeader}>{this.props.posHeader}</h1>    
-                            <p className = "header-description-size" style = {posDescription}>{this.props.posDescription}</p>
+                            <h1 className = "header-size" style = {posHeader}>{props.posHeader}</h1>    
+                            <div className = "header-description-size" style = {posDescription}>{props.posDescription}</div>
                         </Col>
                     </Row>
                 </div>
             </Container>
     );
-    }
 }
