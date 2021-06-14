@@ -39,9 +39,9 @@ export default function RFANavbar(props) {
                     <div className ="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className ="navbar-nav w-100 d-flex justify-content-around">
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <Link to = "/enroll-register" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Enroll
-                                </a>
+                                </Link>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link to = "/enroll-classfaq" className="dropdown-item" href="#">Class FAQ's</Link>
                                     <Link to = "/enroll-register" className="dropdown-item" href="#">Register</Link>
@@ -52,10 +52,10 @@ export default function RFANavbar(props) {
                                     Volunteer
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to = "/volunteer-volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
                                     <Link to = "/volunteer-teacherpos" className="dropdown-item">Teacher Positions</Link>
-                                    <Link to = "/volunteer-volunteerapp" className="dropdown-item">Volunteer Application</Link>
                                     <Link to = "/volunteer-publicitypos" className="dropdown-item">Publicity Positions</Link>
+                                    <Link to = "/volunteer-volunteerapp" className="dropdown-item">Volunteer Application</Link>
+                                    <Link to = "/volunteer-volunteerfaq" className="dropdown-item">Volunteer FAQ's</Link>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -67,16 +67,10 @@ export default function RFANavbar(props) {
                                     <Link to = "/about-overview" className="dropdown-item">Overview</Link>
                                 </div>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li className="nav-item">
+                                <Link to = "/contact" className="nav-link" href="#">
                                     Contact
-                                </a>
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Something else here</a>
-                                </div>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <Link to = "/news" className="nav-link" href="#">
