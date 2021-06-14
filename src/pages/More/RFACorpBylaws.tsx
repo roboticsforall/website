@@ -6,11 +6,11 @@ import RFABylawEntry from '@/components/RFABylawEntry';
 import bylawsListJSON from "@/posts/downloads/corp_bylaws.json";
 
 export default function RFACorpBylaws(props){
-    const background = {
+    const background: React.CSSProperties = {
         background: "rgba(255, 204, 0, 0.5)",
         borderRadius: "15px",
     };
-    const header = {
+    const header: React.CSSProperties = {
         background: "rgba(255, 204, 0, 0.5)",
         borderRadius: "20px",
         border: "10px solid white",

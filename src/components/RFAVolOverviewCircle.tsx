@@ -1,29 +1,29 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CountUp from 'react-countup';
-export default class RFAVolOverviewCircle extends React.Component {
+export default function RFAVolOverviewCircle(props) {
    
-    render() {
-        const circleText = {
+    
+        const circleText: React.CSSProperties = {
             borderRadius: "50%",
             backgroundColor: "#fcaf62",
             textAlign: "center",
-            marginTop: this.props.top,
-            height: this.props.height,
-            width: this.props.width,
-            paddingTop: this.props.paddingtop,
+            marginTop: props.top,
+            height: props.height,
+            width: props.width,
+            paddingTop: props.paddingtop,
         }
-        const circleTitle = {
+        const circleTitle: React.CSSProperties = {
             fontFamily: 'Mazzard-H-ExtraBold',
-            fontSize: this.props.titleSize,
+            fontSize: props.titleSize,
             lineHeight: "88%",
         }
-        const circleSubtext = {
+        const circleSubtext: React.CSSProperties = {
             fontFamily: 'BeVietnam-SemiBold',
-            fontSize: this.props.subtextSize,
+            fontSize: props.subtextSize,
             lineHeight: "88%",
         }
-        const statNumbers = {
+        const statNumbers: React.CSSProperties = {
             fontFamily: 'Mazzard-H-Bold',
             fontSize: "5.4vmax",
             color: "black",
@@ -31,12 +31,12 @@ export default class RFAVolOverviewCircle extends React.Component {
         }
         return (
             <div style={circleText}>
-                <h3 style={circleTitle}>{this.props.title}</h3>
+                <h3 style={circleTitle}>{props.title}</h3>
                 <div style={statNumbers}>
-                    <CountUp end={this.props.end} start={1}/>
+                    <CountUp end={props.end} start={1}/>
                 </div>
-                <h4 style={circleSubtext}>{this.props.subtext}</h4>
+                <h4 style={circleSubtext}>{props.subtext}</h4>
             </div>
         );
-    }
+    
 }

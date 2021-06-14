@@ -3,12 +3,12 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import RFAHeader from '@/components/RFAHeader';
 import headerBlobYellow from '@/media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
 import { useForm, ValidationError } from '@formspree/react'
-import RFAFormInput from "@/RFAFormInput";
-import RFATextArea from "@/RFATextArea";
-import RFASubmitButton from "@/RFASubmitButton";
+import RFAFormInput from "@/components/RFAFormInput";
+import RFATextArea from "@/components/RFATextArea";
+import RFASubmitButton from "@/components/RFASubmitButton";
 
 function ContactForm() {
-
+  return <></>;
 }
 
 export default function RFAContactwithFormspree(props) {

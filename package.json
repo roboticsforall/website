@@ -7,9 +7,9 @@
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.1",
     "emailjs-com": "^3.1.0",
+    "preact": "^10.5.13",
     "react-bootstrap": "^1.6.1",
     "react-countup": "^4.3.3",
-    "preact": "^10.5.13",
     "react-markdown": "^6.0.2",
     "react-multi-carousel": "^2.6.3",
     "react-router-dom": "^5.2.0"
@@ -17,10 +17,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "start": "vite",
-    "build": "vite build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "build": "vite build",
+    "lint": "eslint"
   },
   "browserslist": {
     "production": [
@@ -36,9 +34,15 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.1.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.28.0",
+    "eslint-plugin-react": "^7.24.0",
     "formik": "^2.2.9",
     "react-bootstrap": "^1.6.1",
     "react-transition-group": "^4.4.2",
+    "typescript": "^4.3.2",
     "vite": "^2.3.7"
   }
 }

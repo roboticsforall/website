@@ -212,7 +212,6 @@ export default function RFANews() {
                         key={x.key}
                         style={{ width: "100%", display: "block" }}
                         controls
-                        alt=""
                       >
                         <source src={x.media_url} type="video/mp4" />
                       </video>

@@ -23,35 +23,35 @@ import RFAHomeAffOrgsCard from "@/components/RFAHomeAffOrgsCard";
 
 export default function RFAHomePage(props) {
 
-    const videoRow = {
+    const videoRow: React.CSSProperties = {
         backgroundColor: "#FFCC00",
     }
-    const header = {
+    const header: React.CSSProperties = {
         fontFamily: "Oswald-Medium",
         fontSize: "10vh",
         color: "#ffcc00",
         textAlign: "center",
     }
-    const headerDescription = {
+    const headerDescription: React.CSSProperties = {
         fontFamily: "BeVietnam-Regular",
         textAlign: "center",
         fontSize: "4vh",
     }
-    const sponsorsLabel = {
+    const sponsorsLabel: React.CSSProperties = {
         fontFamily: "BeVietnam-Bold",
         textAlign: "center",
         fontSize: "4vh",
     }
-    const affOrgsHeader = {
+    const affOrgsHeader: React.CSSProperties = {
         fontFamily: "Oswald-Medium",
         fontSize: "8vh",
         color: "#ffcc00",
         textAlign: "center",
     }
-    const sponsorImageSize = {
+    const sponsorImageSize: React.CSSProperties = {
         height: "7vh",
     }
-    const imageSize = {
+    const imageSize: React.CSSProperties = {
         height: "20vh",
     }
 
@@ -59,7 +59,7 @@ export default function RFAHomePage(props) {
         <>
         
             <Row style={videoRow} className="justify-content-center">
-                <video className = "video-width" autoPlay loop muted type="video/mp4" src={homePageVideo} />
+                <video className = "video-width" autoPlay loop muted src={homePageVideo} />
             </Row>
 
             <Container>

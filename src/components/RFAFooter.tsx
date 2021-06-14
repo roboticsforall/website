@@ -10,21 +10,21 @@ import {Link} from "react-router-dom";
 
 export default function RFAFooter(props) {
 
-    const darkBrown = {
+    const darkBrown: React.CSSProperties = {
         color: "#532F0A"
     }
-    const linkStyle = {
+    const linkStyle: React.CSSProperties = {
         fontFamily: "BeVietnam-Bold",
         fontSize: "large"
     }
-    const headerStyle = {
+    const headerStyle: React.CSSProperties = {
         fontFamily: "Oswald-Medium"
     }
-    const copyrightDisclaimer = {
+    const copyrightDisclaimer : React.CSSProperties= {
         fontFamily: "BeVietnam-Light",
         textAlign: "center"
     }
-    const iconSize = {
+    const iconSize : React.CSSProperties= {
         width: "4vw",
         height: "4vw",
         margin: "0.1em"
@@ -47,13 +47,13 @@ export default function RFAFooter(props) {
                     <br/>
                     <Col lg = {3}>
                         <h1 style = {headerStyle}>FIND US</h1>
-                        <p style = {darkBrown, linkStyle}>
+                        <p style = {{...darkBrown, ...linkStyle}}>
                             EMAIL | <a className="hyperlink C06202" href={"mailto:info@roboticsforall.net"}>info@roboticsforall.net</a>
                         </p>
-                        <p style = {darkBrown, linkStyle}>
+                        <p style = {{...darkBrown, ...linkStyle}}>
                             PHONE | <a className="hyperlink C06202" href={"tel:+6506659734"}>(650)-665-9734</a>
                         </p>
-                        <div style = {darkBrown, linkStyle}>
+                        <div style = {{...darkBrown, ...linkStyle}}>
                             ADDRESS | <p className = "C06202">P.O. Box 56, Palo Alto, CA 94302</p>
                         </div>
                         <div className = "d-flex align-items-baseline">
@@ -70,7 +70,7 @@ export default function RFAFooter(props) {
                         <a style = {linkStyle} className="hyperlink C06202" href = "#"><p>Website Terms of Use</p></a>
                         <Link to = "/more-bylaws" style = {linkStyle} className="hyperlink C06202"><p>Robotics For All Bylaws</p></Link>
                         <Link to = "/more-meetingrecords" style = {linkStyle} className = "hyperlink C06202" ><p>Meeting Minutes & Agendas</p></Link>
-                        <div style = {darkBrown, linkStyle}>
+                        <div style = {{...darkBrown, ...linkStyle}}>
                             TAX IDs | <p className = "C06202">83-2012119</p>
                         </div>
                     </Col>

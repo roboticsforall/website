@@ -31,7 +31,7 @@ export default function RFAContact(props) {
 
 
       // generate a five digit number for the contact_number variable
-      values.contact_number = (Math.random() * 100000 | 0).toString();
+      (values as any).contact_number = (Math.random() * 100000 | 0).toString();
 
       // these IDs from the previous steps
 

@@ -6,7 +6,7 @@ import RFAPositionCard from "@/components/RFAPositionCard";
 
 export default function VolunteerApp(props){
   const [key, setKey] = useState("one")
-  const ActiveStyle = {
+  const ActiveStyle: React.CSSProperties = {
     color: "#000000",
     background: "#FFCC00",
     border: "none",
@@ -15,7 +15,7 @@ export default function VolunteerApp(props){
     fontSize: "x-large",
     padding: "30px",
   };
-  const ActiveStyle2 = {
+  const ActiveStyle2: React.CSSProperties = {
     color: "#000000",
     background: "#FA8D1F",
     border: "none",
@@ -44,14 +44,14 @@ export default function VolunteerApp(props){
                 <Tab.Pane eventKey = "one">
                   <RFAPositionCard borderColor = "#FFCC00" color = {"#ffeb99"} posHeader = {""} posDescription = {
                       <div className = "center-align">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxQe6sYXbPoLQ5MpFnptT6e5ptCQYFXq5U2fwcAaBBONrP8g/viewform?embedded=true" width="100%" height="800vmax" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxQe6sYXbPoLQ5MpFnptT6e5ptCQYFXq5U2fwcAaBBONrP8g/viewform?embedded=true" width="100%" height="800vmax" frameBorder="0" marginHeight={0} marginWidth={0}>Loading…</iframe>
                       </div>
                     }/>
                 </Tab.Pane>
                 <Tab.Pane eventKey = "two">
                   <RFAPositionCard borderColor = "#FA8D1F" color = {"#FCBB79"} posHeader = {""} posDescription = {
                         <div className = "center-align">
-                          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYi6eUvSdgRQ6Yw2EsF_bdhCuKEskR-draKjd7FoNk_8jrbw/viewform?embedded=true" width="100%" height="800vmax" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+                          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYi6eUvSdgRQ6Yw2EsF_bdhCuKEskR-draKjd7FoNk_8jrbw/viewform?embedded=true" width="100%" height="800vmax" frameBorder="0" marginHeight={0} marginWidth={0}>Loading…</iframe>
                         </div>
                       }/>
                 </Tab.Pane>

@@ -11,7 +11,7 @@ export default function RFARegister(props){
         <Container>
           <Row>
             <Col className = "d-flex justify-content-center">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true" width="640" height="975" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true" width="640" height="975" frameBorder="0" marginHeight={0} marginWidth={0}>Loading…</iframe>
             </Col>
           </Row>
         </Container>

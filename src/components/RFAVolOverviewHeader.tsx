@@ -5,26 +5,26 @@ import RFAVolOverviewCircle from './RFAVolOverviewCircle';
 
 export default function RFAVolOverviewHeader(props) {
 
-    const headerText = {
+    const headerText: React.CSSProperties = {
         position: "relative",
         textAlign: "center",
         bottom: "3vw",
     }
-    const pageHeader = {
+    const pageHeader: React.CSSProperties = {
         fontFamily: "Mazzard-H-Bold",
         transform: 'rotate(358deg)',
         color: props.headerTextColor,
     }
-    const headerBlob = {
+    const headerBlob: React.CSSProperties = {
         backgroundSize: "100% 100%",
         height: "45vw",
         width: "100vw",
         backgroundImage: `url(${props.image})`,
     }
-    const pageHeaderDescription = {
+    const pageHeaderDescription : React.CSSProperties= {
         fontFamily: 'BeVietnam-SemiBold',
     }
-    const statCircles = {
+    const statCircles : React.CSSProperties= {
         paddingLeft: "5vmax",
     }
 

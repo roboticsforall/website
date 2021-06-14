@@ -2,22 +2,22 @@ import React from 'react';
 import {Container, Row, Col, Image} from "react-bootstrap";
 
 export default function RFAPositionCard2(props){
-        const posHeader = {
+        const posHeader : React.CSSProperties= {
             fontFamily: "Mazzard-H-Extrabold",
             letterSpacing: "0.25em",
             textAlign: "center",
         };
 
-        const posDescription = {
+        const posDescription : React.CSSProperties= {
             fontFamily: "BeVietnam-Medium",
             color: "#000000",
         };
 
-        const img = {
+        const img : React.CSSProperties= {
             marginBottom: "10px",
         };
 
-        const con = {
+        const con: React.CSSProperties = {
             width: "75%",
             margin: "auto",
             marginBottom: "40px",

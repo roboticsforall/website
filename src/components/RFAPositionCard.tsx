@@ -3,23 +3,23 @@ import {Container, Row, Col} from "react-bootstrap";
 
 export default function RFAPositionCard(props){
 
-        const posHeader = {
+        const posHeader : React.CSSProperties= {
             fontFamily: "Mazzard-H-Extrabold",
             letterSpacing: "0.25em",
             textAlign: "center",
         };
 
-        const posDescription = {
+        const posDescription : React.CSSProperties= {
             fontFamily: "BeVietnam-Medium",
             color: "#000000",
         };
 
-        const con = {
+        const con: React.CSSProperties = {
             width: "75%",
             margin: "auto",
             marginBottom: "40px",
         };
-        const posContainer = {
+        const posContainer: React.CSSProperties = {
             backgroundColor: props.color,
             borderRadius: "0 0 15px 15px",
             borderColor: props.borderColor,

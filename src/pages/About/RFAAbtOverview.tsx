@@ -6,25 +6,25 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import RFAHeader from "@/components/RFAHeader";
 
 export default function RFAAbtOverview(props) {
-    const title = {
+    const title: React.CSSProperties = {
         fontFamily: 'Oswald-Medium',
         fontSize: "10vh",
         textAlign: "center",
       }
-      const description = {
+      const description: React.CSSProperties = {
         fontFamily: 'BeVietnam-Regular',
         fontSize: "3.5vh",
         color: "black",
       }
-      const missionColor = {
+      const missionColor: React.CSSProperties = {
         color: "#fa8d1f"
       }
       
-      const visionColor = {
+      const visionColor: React.CSSProperties = {
         color: "#33cc66"
       }
       
-      const valuesColor = {
+      const valuesColor: React.CSSProperties = {
         color: "#3399ff"
       }
       

@@ -6,11 +6,11 @@ import RFAMeetingEntry from '@/components/RFAMeetingEntry';
 import meetingRecordsListJSON from "@/posts/downloads/meeting_records.json";
 
 export default function RFAMeetingRecords(props){
-    const background = {
+    const background: React.CSSProperties = {
         background: "rgba(255, 204, 0, 0.5)",
         borderRadius: "15px",
     };
-    const header = {
+    const header: React.CSSProperties = {
         background: "rgba(255, 204, 0, 0.5)",
         borderRadius: "20px",
         border: "10px solid white",

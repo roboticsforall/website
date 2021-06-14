@@ -16,19 +16,19 @@ import RFAVolOverviewHeader from "@/components/RFAVolOverviewHeader";
 
 
 export default function RFAVolOverview(props) {
-  const positionsTitle = {
+  const positionsTitle: React.CSSProperties = {
     fontFamily: 'Oswald-Medium',
     fontSize: "5.5vmax",
     color: "#fa8d1f",
     textAlign: "center",
     letterSpacing: "0.1em",
   }
-  const positionsDescription = {
+  const positionsDescription: React.CSSProperties = {
     fontFamily: 'BeVietnam-SemiBold',
     fontSize: "1.3vmax",
     color: "black",
   }
-  const positions = {
+  const positions: React.CSSProperties = {
     // marginLeft: "auto",
     // marginRight: "auto",
     // width: "120vh",

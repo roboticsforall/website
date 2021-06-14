@@ -4,12 +4,12 @@ import {Row, Col, Image} from 'react-bootstrap';
 
 export default function RFAHomeAffOrgsCard(props) {
     
-    const affOrgsTitle = {
+    const affOrgsTitle: React.CSSProperties = {
         fontFamily: "Mazzard-H-ExtraBold",
         color: "white",
         textAlign: 'center'
     }
-    const imageSize = {
+    const imageSize: React.CSSProperties = {
         height: "20vh",
     }
     const borderRadius = {
@@ -18,7 +18,7 @@ export default function RFAHomeAffOrgsCard(props) {
         borderTopRightRadius: 15,
         borderBottomRightRadius: 15,
     };
-    const linkColor = {
+    const linkColor: React.CSSProperties = {
         color: props.linkColor,
     }
 

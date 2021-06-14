@@ -3,7 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 export default function RFABylawEntry(props){
-        const background = {
+        const background: React.CSSProperties = {
             backgroundColor: "white",
             borderRadius: "20px",
             border: "10px solid rgba(255, 204, 0, 0.5)",
