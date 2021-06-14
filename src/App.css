@@ -1,18 +1,36 @@
 @font-face{
-  font-family: "Mazzard-H-Extrabold";
+  font-family: "Mazzard-H-Bold";
+  src:url("./fonts/Mazzard/MazzardH-Bold.otf") format("woff"),
+  url("./fonts/Mazzard/MazzardH-Bold.otf") format("opentype"),
+  url("./fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
+}
+@font-face{
+  font-family: "Mazzard-H-Black";
+  src:url("./fonts/Mazzard/MazzardH-Black.otf") format("woff"),
+  url("./fonts/Mazzard/MazzardH-Black.otf") format("opentype"),
+  url("./fonts/Mazzard/MazzardH-Black.otf") format("truetype");
+}
+@font-face{
+  font-family: "Mazzard-H-ExtraBold";
   src:url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
   url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
 }
 @font-face{
   font-family: "BeVietnam-Medium";
-  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),  
+  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
 }
 @font-face{
+  font-family: "BeVietnam-Bold";
+  src: url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("truetype");
+}
+@font-face{
   font-family: "BeVietnam-ExtraBold";
-  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),  
+  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
 }
@@ -21,6 +39,30 @@
   src: url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("tff"),  
   url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
   url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
+}
+@font-face{
+  font-family: "BeVietnam-Regular";
+  src: url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
+}
+@font-face{
+  font-family: "BeVietnam-Light";
+  src: url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("tff"),  
+  url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("opentype"),
+  url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald-Medium";
+  src: url("./fonts/Oswald/Oswald-Medium.ttf") format("tff"),
+  url("./fonts/Oswald/Oswald-Medium.ttf") format("opentype"),
+  url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Oswald-Bold";
+  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("tff"),
+  url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
+  url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
 /* a:focus{
   text-decoration: none;
@@ -63,28 +105,219 @@ input:hover, textarea:hover{
   transition: 200ms;
   background-color: #ffcc00CA;
 }
+/* .container{
+  max-width: 980px;
+} */
 
 html, body {
   height: 100%;
   overflow-x: hidden;
 }
+h1, h2, h3, h4, h5, h6, p, a{
+  letter-spacing: 1.4px;
+}
 
+.aff-org-card-link {
+  font-family: 'BeVietnam-ExtraBold', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  transition: 0.2s;
+}
+
+/* #region Overrided Bootstrap styles for navbar */ 
+.navbar .nav-link{
+  color: #ffcc00 !important; /* nav headers font style */
+  font-family: "BeVietnam-ExtraBold" !important; 
+  font-size: 1.5em;
+}
+.navbar .nav-link:hover {
+  transition: 0.2s;
+  color: #fa8d1f !important;
+}
+.navbar .nav-link:active {
+  transition: 0.2s;
+  color: black !important;
+}
+.nav-link::after {
+  content: none !important;
+}
+
+/* for donate button specifically */
+.navbar .donate-nav-link{
+  color: #ffffff !important; /* nav headers font style */
+  font-family: "BeVietnam-ExtraBold" !important; 
+  font-size: 1.5em;
+  padding: 0 !important;
+}
+.navbar .donate-nav-link:hover {
+  transition: 0.2s;
+  color: #3399ff !important;
+}
+.navbar .donate-nav-link:active {
+  transition: 0.2s;
+  color: #006bd6 !important;
+}
+.donate-nav-item {
+  border-radius: 1em;
+  background-color: #3399ff;
+  padding: 0em 2rem !important;
+}
+.donate-nav-item:hover{
+  background-color: #70b8ff;
+}
+.donate-nav-link::after {
+  content: none !important;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+/* for dropdowns */
+.dropdown-item {
+  color: #fa8d1f !important; /* font styling for dropdown text */ 
+  font-family: "BeVietnam-ExtraBold";
+  background-color: #ffdb4d !important;
+  font-size: 1.2em;
+}
+.dropdown-item:hover {
+  transition: 0.2s;
+  background-color: #ffcc00 !important;
+  color: #c06204 !important;
+}
+.dropdown-item:active {
+  transition: 0.2s;
+  background-color: #ffcc00 !important;
+  color: black !important;
+}
+.dropdown:hover .dropdown-menu{
+  display: block !important;
+}
+.dropdown-menu {
+  border-radius: 15px !important;
+  background-color: #ffdb4d !important;
+}
+/*#endregion*/ 
+
+/* #region styling for pages like teacher positions */
+/*teacherpos, publicitypos, privacypolicy, websitetos*/
+.pos-container {
+  border: 15px solid;
+  border-radius: 15px;
+  margin: 0 0 40px 0
+}
+
+.pos-container:nth-of-type(odd) {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+.pos-container:nth-of-type(even) {
+  color: #FA8D1F;
+  border-color: #FA8D1F;
+}
+
+.pos-container:first-of-type {
+  color: #FFCC00;
+  border-color: #FFCC00;
+  border-radius: 0 0 15px 15px;
+}
+
+.pos-container-button {
+  background-color: #FA8D1F !important;
+  transition: 200ms !important;
+}
+
+.pos-container-button:hover {
+  background-color: #FFCC00 !important;
+  transition: 200ms !important;
+}
+/*#endregion*/
+
+/* #region homepage styling */
+.home-aff-org-card-link {
+  font-family: 'BeVietnam-ExtraBold', sans-serif;
+  font-size: 2.0em;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.yellow-row {
+  background-color: #FFCC004D;
+}
+
+.video-width {
+  height: 60vh;
+  width: 75% !important;
+}
+/* #endregion */
+
+/* #region faq hover styling */
+.faq-dropdown {
+  background-color: #ffcc0080;
+  color: #c06204;
+  transition: 200ms;
+}
+.faq-dropdown:hover {
+  background-color: #ffdb4d !important;
+  color: #532f04 !important;
+  transition: 200ms;
+}
+/*#endregion*/
+
+/* #region helper classes */
 .hyperlink, .hyperlink:hover {
   text-decoration: none;
   color: black;
 }
-
-.mb-6{
+.C06202 {
+  color: #C06202;
+}
+.center-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mb-6 {
   margin-bottom: 6em;
 }
+/*#endregion*/
 
+/* #region Fade Animation for Webpages */
+.fade-enter {
+  opacity: 0;
+  transition: opacity 200ms;
+
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-exit {
+  opacity: 1;
+  transition: opacity 200ms;
+
+}
+.fade-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+/*#endregion*/
+
+/* #region media queries */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header-description-size {
+@media only screen and (max-width: 600px) { 
+
+  /* text style on header blobs */
+  .header-description-size { 
     font-size: 13px;
   }
   .header-size {
     font-size: 27px;
+  }
+  .video-width {
+    width: 100% !important;
+    height: auto;
   }
 }
 
@@ -96,6 +329,10 @@ html, body {
   .header-size {
     font-size: 35px;
   }
+  .video-width {
+    width: 100% !important;
+    height: auto;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -105,6 +342,10 @@ html, body {
   }
   .header-size {
     font-size: 43px;
+  }
+  .video-width {
+    width: 100% !important;
+    height: auto;
   }
 }
 
@@ -116,6 +357,20 @@ html, body {
   .header-size {
     font-size: 55px;
   }
+  .aff-org-card-link:hover{
+    transition: 0.2s;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+  }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
+  }
+  .home-aff-org-card-link:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    color: white !important;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -126,4 +381,14 @@ html, body {
   .header-size {
     font-size: 60px;
   }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
+  }
+  .home-aff-org-card-link:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    color:white;
+  }
 }
+/*#endregion*/
