@@ -5,7 +5,7 @@ import '../App.css';
 export default function RFAVolOverviewCard(props){
     
         const cardTitle = {
-            fontFamily: 'Oswald',
+            fontFamily: 'Oswald-Medium',
             fontSize: "2.5vmax",
             color: props.color,
         }

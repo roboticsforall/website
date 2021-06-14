@@ -11,7 +11,7 @@ export default function RFAVolOverviewHeader(props) {
         bottom: "3vw",
     }
     const pageHeader = {
-        fontFamily: "MazzardH-Bold",
+        fontFamily: "Mazzard-H-Bold",
         transform: 'rotate(358deg)',
         color: props.headerTextColor,
     }

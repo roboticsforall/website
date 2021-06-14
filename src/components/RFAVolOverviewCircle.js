@@ -14,7 +14,7 @@ export default class RFAVolOverviewCircle extends React.Component {
             paddingTop: this.props.paddingtop,
         }
         const circleTitle = {
-            fontFamily: 'MazzardH-ExtraBold',
+            fontFamily: 'Mazzard-H-ExtraBold',
             fontSize: this.props.titleSize,
             lineHeight: "88%",
         }
@@ -24,7 +24,7 @@ export default class RFAVolOverviewCircle extends React.Component {
             lineHeight: "88%",
         }
         const statNumbers = {
-            fontFamily: 'MazzardH-Bold',
+            fontFamily: 'Mazzard-H-Bold',
             fontSize: "5.4vmax",
             color: "black",
             lineHeight: "88%",

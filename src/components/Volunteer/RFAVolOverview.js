@@ -9,7 +9,7 @@ import InternToby from "../../media/TobyImages/publicity intern.webp";
 import TAToby from "../../media/TobyImages/TA.webp";
 import RFAVolOverviewImg from "../RFAVolOverviewImg";
 import RFAVolOverviewCard from "../RFAVolOverviewCard";
-import YellowHeaderBlob from "../../media/HeaderBlobs/yellow.png";
+import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import RFAVolOverviewHeader from "../RFAVolOverviewHeader";
 
 //import RFAAffOrgs from "./components/About/RFAAffOrgs";
@@ -18,7 +18,7 @@ import RFAVolOverviewHeader from "../RFAVolOverviewHeader";
 
 export default function RFAVolOverview(props) {
   const positionsTitle = {
-    fontFamily: 'Oswald',
+    fontFamily: 'Oswald-Medium',
     fontSize: "5.5vmax",
     color: "#fa8d1f",
     textAlign: "center",
@@ -37,7 +37,7 @@ export default function RFAVolOverview(props) {
   }
   return (
     <>
-      <RFAVolOverviewHeader headerTextColor={"#fa8d1f"} image={YellowHeaderBlob} title={"Volunteer with Robotics for All"} description={"Volunteer with us to teach or develop your skills as a business development intern!"}></RFAVolOverviewHeader>
+      <RFAVolOverviewHeader headerTextColor={"#fa8d1f"} image={headerBlobYellow} title={"Volunteer with Robotics for All"} description={"Volunteer with us to teach or develop your skills as a business development intern!"}></RFAVolOverviewHeader>
       <Container>
         <Row>
             <h2 style={positionsTitle}>VOLUNTEER  POSTIONS</h2>
@@ -55,9 +55,9 @@ export default function RFAVolOverview(props) {
           </Col>
         </Row>
         <Col>
-            <RFAVolOverviewCard backgroundcolor = {"#70db9480"} buttonColor = {"#248F47"} title={"Lead Instructor"} description={"Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."} buttonfloat={"right"} cardfloat={"left"} arrowLocation={"4.6vmax"}></RFAVolOverviewCard>
-            <RFAVolOverviewCard backgroundcolor={"#fcaf6280"} buttonColor={"#c06204"} title={"Teacher Assistant"} description={"Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."} buttonfloat={"right"} cardfloat={"left"} arrowLocation={"26vmax"}></RFAVolOverviewCard>
-            <RFAVolOverviewCard backgroundcolor={"#70b8ff80"} buttonColor={"#006bd6"} title={"Publicity Intern"} description={"Publicity Interns help our publicity team to make awesome new visuals, giving you the great branding on this website!"} buttonfloat={"left"} cardfloat={"right"} arrowLocation={"47vmax"}></RFAVolOverviewCard>
+            <RFAVolOverviewCard applyLink = "/volunteer-volunteerapp" learnMoreLink = "/volunteer-teacherpos" backgroundcolor = {"#70db9480"} buttonColor = {"#248F47"} title={"Lead Instructor"} description={"Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."} buttonfloat={"right"} cardfloat={"left"} arrowLocation={"4.6vmax"}></RFAVolOverviewCard>
+            <RFAVolOverviewCard applyLink = "/volunteer-volunteerapp" learnMoreLink = "/volunteer-teacherpos" backgroundcolor={"#fcaf6280"} buttonColor={"#c06204"} title={"Teacher Assistant"} description={"Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."} buttonfloat={"right"} cardfloat={"left"} arrowLocation={"26vmax"}></RFAVolOverviewCard>
+            <RFAVolOverviewCard applyLink = "/volunteer-volunteerapp" learnMoreLink = "/volunteer-publicitypos" backgroundcolor={"#70b8ff80"} buttonColor={"#006bd6"} title={"Publicity Intern"} description={"Publicity Interns help our publicity team to make awesome new visuals, giving you the great branding on this website!"} buttonfloat={"left"} cardfloat={"right"} arrowLocation={"47vmax"}></RFAVolOverviewCard>
         </Col>
       </Container>
     </>
