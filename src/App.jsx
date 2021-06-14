@@ -4,25 +4,25 @@ import {CSSTransition, TransitionGroup} from "react-transition-group";
 import {useLocation, BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import RFANavbar from "./components/RFANavbar";
 // Base Pages
-import RFAHomePage from './components/RFAHomePage';
+import RFAHomePage from './pages/RFAHomePage';
 import RFAFooter from "./components/RFAFooter";
 //Enroll
-import RFAClassFAQ from "./components/Enroll/RFAClassFAQ";
-import RFARegister from "./components/Enroll/RFARegister";
+import RFAClassFAQ from "./pages/Enroll/RFAClassFAQ";
+import RFARegister from "./pages/Enroll/RFARegister";
 //Volunteer
-import RFAVolOverview from "./components/Volunteer/RFAVolOverview";
-import RFATeacherPos from "./components/Volunteer/RFATeacherPos";
-import RFAPublicityInternPos from "./components/Volunteer/RFAPublicityInternPos";
-import RFAVolunteerFAQ from "./components/Volunteer/RFAVolunteerFAQ";
-import RFAVolunteerApp from "./components/Volunteer/RFAVolunteerApp";
+import RFAVolOverview from "./pages/Volunteer/RFAVolOverview";
+import RFATeacherPos from "./pages/Volunteer/RFATeacherPos";
+import RFAPublicityInternPos from "./pages/Volunteer/RFAPublicityInternPos";
+import RFAVolunteerFAQ from "./pages/Volunteer/RFAVolunteerFAQ";
+import RFAVolunteerApp from "./pages/Volunteer/RFAVolunteerApp";
 //About
-import RFAAffOrgs from "./components/About/RFAAffOrgs";
-import RFAAbtOverview from "./components/About/RFAAbtOverview";
+import RFAAffOrgs from "./pages/About/RFAAffOrgs";
+import RFAAbtOverview from "./pages/About/RFAAbtOverview";
 //News
-import RFANews from "./components/News/RFANews";
+import RFANews from "./pages/News/RFANews";
 //More
-import RFACorpBylaws from "./components/More/RFACorpBylaws";
-import RFAMeetingRecords from "./components/More/RFAMeetingRecords";
+import RFACorpBylaws from "./pages/More/RFACorpBylaws";
+import RFAMeetingRecords from "./pages/More/RFAMeetingRecords";
 
 
 
