@@ -14,7 +14,7 @@ export default function RFATextArea(props){
     }
 
     return (
-        <textarea style = {inputStyle} id = {props.id} name = {props.name} placeholder = {props.placeholder} onChange={props.onChange}
-        value={props.value} rows = {props.rows} className = "w-100" required></textarea>
+        <textarea required style = {inputStyle} id = {props.id} name = {props.name} placeholder = {props.placeholder} onChange={props.onChange}
+        value={props.value} rows = {props.rows} className = "w-100"></textarea>
     );
 }

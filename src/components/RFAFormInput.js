@@ -14,7 +14,7 @@ export default function RFAFormInput(props){
     }
 
     return (
-        <input type = {props.type} style = {inputStyle} id = {props.id} name = {props.name} placeholder = {props.placeholder} onChange={props.onChange}
-                value={props.value} className = "w-100" required></input>
+        <input required type = {props.type} style = {inputStyle} id = {props.id} name = {props.name} placeholder = {props.placeholder} onChange={props.onChange}
+                value={props.value} className = "w-100"></input>
     );
 }

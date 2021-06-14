@@ -1,23 +1,41 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import RFAHeader from '../RFAHeader';
 import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
-import { useform, ValidationError } from '@formspree/react'
-import * as emailjs from 'emailjs-com';
+import { useForm, ValidationError } from '@formspree/react'
 import RFAFormInput from "../RFAFormInput";
 import RFATextArea from "../RFATextArea";
 import RFASubmitButton from "../RFASubmitButton";
 
 function ContactForm() {
-    const [state, handleSubmit] = useForm("xeqvkqbo");
-    if(state.succeeded) {
-        return <p>Thank you for contacting Robotics for All! We will get back to you shortly</p>;
-    }
+
 }
 
 export default function RFAContactwithFormspree(props) {
 
-const contactInfo = {
+  // const [state, handleSubmit] = useForm("xeqvkqbo");
+  const [state, handleSubmit] = useForm("mzbybwgz");
+  const [submitMessage, handleMessage] = useState("");
+
+  const checkFormState = () => {
+    if(state.succeeded) {
+      // handleMessage("Thank you for contacting Robotics for All!");
+      return(<p style = {{color: "green"}}>Thank you for contacting Robotics for All!</p>)
+    }
+    else {
+      return(
+        state.errors.map((error, i) => (
+          <>
+            <p key = {i} style = {{color: "red"}}>{error.field}</p>
+            <p key = {i+1} style = {{color: "red"}}>{error.message}</p>
+          </>
+        ))
+      )
+    }
+  }
+
+
+  const contactInfo = {
     fontFamily: "BeVietnam-SemiBold",
   }
 
@@ -26,7 +44,7 @@ const contactInfo = {
   }
 
   return (
-    <div>
+    <>
       <RFAHeader
         headerTextColor={"#ffcc00"}
         image={headerBlobYellow}
@@ -87,19 +105,17 @@ const contactInfo = {
                 field="message"
                 errors={state.errors}
                 />
-              )
-
               <br></br>
-              <RFASubmitButton/>
+              <RFASubmitButton state = {state.submitting}/>
+              <br/>
+              <br/>
+              {checkFormState()}
             </Form>
           </Col>
         </Row>
-
         <br></br>
-
       </Container>
-
-    </div>
+    </>
   );
 }
 
