@@ -1,27 +1,39 @@
-import React from 'react';
-import {Container} from "react-bootstrap";
-import RFAHeader from '@/components/RFAHeader';
-import RFAFAQDropdowns from '@/components/RFAFAQDropdowns';
-import headerBlobOrange from '@/media/HeaderBlobs/orange.png'; // add correct image here
+import React from "react";
+import { Container } from "react-bootstrap";
+import RFAHeader from "@/components/RFAHeader";
+import RFAFAQDropdowns from "@/components/RFAFAQDropdowns";
+import headerBlobOrange from "@/media/HeaderBlobs/orange.png"; // add correct image here
 import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import ReactMarkdown from "react-markdown";
 
-export default function RFAClassFAQ(props){
+export default function RFAClassFAQ(props) {
+  return (
+    <div>
+      <RFAHeader
+        headerTextColor={"#fa8d1f "}
+        image={headerBlobOrange}
+        title={"Questions?"}
+        description={
+          "Here are the answers to our commonly asked questions. Please feel free to contact us if your question is not answered here!"
+        }
+      />
+      <br />
+      <Container>
+        {classFAQJSON.class_faq_list.map((QAPair) => (
+          <RFAFAQDropdowns
+            key={QAPair.question}
+            question={QAPair.question}
+            answer={QAPair.answer}
+          />
+        ))}
+        <RFAFAQDropdowns
+          question={classFAQJSON.upcoming_courses_question}
+          answer={
+            <ReactMarkdown children={classFAQJSON.upcoming_courses_answer} />
+          }
+        />
 
-    return (
-      <div>
-        <RFAHeader headerTextColor = {"#fa8d1f "} image = {headerBlobOrange} title = {"Questions?"} description = {"Here are the answers to our commonly asked questions. Please feel free to contact us if your question is not answered here!"}/>
-        <br/>
-        <Container>
-            {classFAQJSON.class_faq_list.map(QAPair => (
-              <RFAFAQDropdowns key = {QAPair.question} question = {QAPair.question} answer = {QAPair.answer}/>
-            ))}
-            <RFAFAQDropdowns 
-            question = {classFAQJSON.upcoming_courses_question} 
-            answer = {(<ReactMarkdown children = {classFAQJSON.upcoming_courses_answer}/>)}/>
-
-
-            {/* {[
+        {/* {[
               {
                 question: "When will more courses be offered?",
                 answer: "We are planning on launching more courses including:",
@@ -43,7 +55,7 @@ export default function RFAClassFAQ(props){
               <RFAFAQDropdowns key = {1} coursesList = {QAPair.coursesList} typeOfQuestion = {QAPair.typeOfQuestion} question = {QAPair.question} answer = {QAPair.answer}
                 season = {QAPair.season} year = {QAPair.year} date = {QAPair.date}/>
             ))} */}
-        </Container>
-      </div>
-    );
+      </Container>
+    </div>
+  );
 }

@@ -8,8 +8,9 @@ import houseofreps from "@/media/News/House-of-Representatives.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const photosImport = Array.from({ length: 10 }, (_, i) =>
-  import(`../../media/Photos/${i + 1}.jpg`)
+const photosImport = Array.from(
+  { length: 10 },
+  (_, i) => import(`../../media/Photos/${i + 1}.jpg`)
 );
 
 const responsive = {
@@ -53,7 +54,7 @@ export default function RFANews() {
     border: "none",
     fontSize: "28px",
     fontFamily: "BeVietnam-Medium",
-    color: "black"
+    color: "black",
   };
   const linkStyles = {
     textDecoration: "none",
@@ -309,12 +310,11 @@ export default function RFANews() {
           >
             <Carousel responsive={responsive}>
               {photos.map((x, i) => (
-                <div style={{ height: "286px", overflow: "hidden" }} key={"img" + i}>
-                  <img
-                    src={x.default}
-                    style={{ width: "100%" }}
-                    alt=""
-                  />
+                <div
+                  style={{ height: "286px", overflow: "hidden" }}
+                  key={"img" + i}
+                >
+                  <img src={x.default} style={{ width: "100%" }} alt="" />
                 </div>
               ))}
             </Carousel>
