@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Image, Col } from "react-bootstrap";
-import homePageVideo from "../media/homePageVideo.mp4";
+import homePageVideo from "@/media/homePageVideo.mp4";
 
 
 export default function RFAAboutAffOrgsCard(props) {

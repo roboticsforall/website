@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import {Container, Row, Tab, Nav, Button} from "react-bootstrap";
-import RFAHeader from '../RFAHeader';
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
-import RFAPositionCard from "../RFAPositionCard";
-import RFAPositionCard1 from "../RFAPositionCard1";
-import RFAPositionCard2 from "../RFAPositionCard2";
-import RFAPosButton from "../RFAPosButton";
-import Clock from "../../media/Graphics/clock.png";
-import Laptop from "../../media/Graphics/laptop.png";
-import Presentation from "../../media/Graphics/presentation.png";
-import TasksYellow from "../../media/Graphics/tasksYellow.png";
-import ThumbsUp from "../../media/Graphics/thumbsUp.png";
-import QuestionMark from "../../media/Graphics/questionMark.png"
+import RFAHeader from '@/components/RFAHeader';
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import RFAPositionCard from "@/components/RFAPositionCard";
+import RFAPositionCard1 from "@/components/RFAPositionCard1";
+import RFAPositionCard2 from "@/components/RFAPositionCard2";
+import RFAPosButton from "@/components/RFAPosButton";
+import Clock from "@/media/Graphics/clock.png";
+import Laptop from "@/media/Graphics/laptop.png";
+import Presentation from "@/media/Graphics/presentation.png";
+import TasksYellow from "@/media/Graphics/tasksYellow.png";
+import ThumbsUp from "@/media/Graphics/thumbsUp.png";
+import QuestionMark from "@/media/Graphics/questionMark.png"
 
 export default function RFAPublicityInternPos(props){
   const [key, setKey] = useState("one")

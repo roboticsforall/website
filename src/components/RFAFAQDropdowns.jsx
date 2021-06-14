@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Row, Col} from "react-bootstrap";
-import dropdownIcon from '../media/Shapes/brownarrow.png'; // add correct image here
+import dropdownIcon from '@/media/Shapes/brownarrow.png'; // add correct image here
 
 
 export default function RFAFAQDropdowns(props){

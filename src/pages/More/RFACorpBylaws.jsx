@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Nav, Button} from "react-bootstrap";
-import RFAHeader from "../RFAHeader";
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
-import RFABylawEntry from '../RFABylawEntry';
-import bylawsListJSON from "../../posts/downloads/corp_bylaws.json";
+import RFAHeader from "@/components/RFAHeader";
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import RFABylawEntry from '@/components/RFABylawEntry';
+import bylawsListJSON from "@/posts/downloads/corp_bylaws.json";
 
 export default function RFACorpBylaws(props){
     const background = {

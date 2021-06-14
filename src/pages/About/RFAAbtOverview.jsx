@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../App.css';
+import '@/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from 'react-bootstrap'; 
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
-import RFAHeader from "../RFAHeader";
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import RFAHeader from "@/components/RFAHeader";
 
 export default function RFAAbtOverview(props) {
     const title = {

@@ -1,16 +1,15 @@
 import React from 'react';
-import '../../App.css';
+import '@/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap'; //Col,
-//import RFANavbar from "../RFANavbar";
-import TeacherToby from "../../media/TobyImages/teacher toby.webp";
-import BusinessToby from "../../media/TobyImages/toby business.webp";
-import InternToby from "../../media/TobyImages/publicity intern.webp";
-import TAToby from "../../media/TobyImages/TA.webp";
-import RFAVolOverviewImg from "../RFAVolOverviewImg";
-import RFAVolOverviewCard from "../RFAVolOverviewCard";
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
-import RFAVolOverviewHeader from "../RFAVolOverviewHeader";
+import TeacherToby from "@/media/TobyImages/teacher toby.webp";
+import BusinessToby from "@/media/TobyImages/toby business.webp";
+import InternToby from "@/media/TobyImages/publicity intern.webp";
+import TAToby from "@/media/TobyImages/TA.webp";
+import RFAVolOverviewImg from "@/components/RFAVolOverviewImg";
+import RFAVolOverviewCard from "@/components/RFAVolOverviewCard";
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import RFAVolOverviewHeader from "@/components/RFAVolOverviewHeader";
 
 //import RFAAffOrgs from "./components/About/RFAAffOrgs";
 //import headerBlobYellow from "./media/HeaderBlobs/yellow.png";

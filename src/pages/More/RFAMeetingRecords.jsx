@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Nav, Button} from "react-bootstrap";
-import RFAHeader from "../RFAHeader";
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
-import RFAMeetingEntry from '../RFAMeetingEntry';
-import meetingRecordsListJSON from "../../posts/downloads/meeting_records.json";
+import RFAHeader from "@/components/RFAHeader";
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import RFAMeetingEntry from '@/components/RFAMeetingEntry';
+import meetingRecordsListJSON from "@/posts/downloads/meeting_records.json";
 
 export default function RFAMeetingRecords(props){
     const background = {

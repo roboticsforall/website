@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Container, Col, Image } from "react-bootstrap";
 
-import facebookIcon from "../media/Social Media Logos/facebook.png";
-import instagramIcon from "../media/Social Media Logos/instagram.png";
-import linkedin from "../media/Social Media Logos/linkedin.png";
-import guidestar from "../media/Social Media Logos/guidestar.png";
+import facebookIcon from "@/media/Social Media Logos/facebook.png";
+import instagramIcon from "@/media/Social Media Logos/instagram.png";
+import linkedin from "@/media/Social Media Logos/linkedin.png";
+import guidestar from "@/media/Social Media Logos/guidestar.png";
 
 import {Link} from "react-router-dom";
 

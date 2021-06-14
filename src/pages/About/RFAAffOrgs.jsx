@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from "react-bootstrap";
-import RFAAffOrgsCard from "../RFAAboutAffOrgsCard";
-import RFAHeader from "../RFAHeader";
-import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
-import MFALogo from "../../media/AffiliatedOrgs/MFA_Logo.png";
-import CFCLogo from "../../media/AffiliatedOrgs/CFC_Logo.png";
-import TFALogo from "../../media/AffiliatedOrgs/TFA_Logo.png";
+import RFAAffOrgsCard from "@/components/RFAAboutAffOrgsCard";
+import RFAHeader from "@/components/RFAHeader";
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
+import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
+import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 
 export default function RFAAffOrgs(props){
     return (

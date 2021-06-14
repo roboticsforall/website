@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import RFAHeader from '../../components/RFAHeader';
-import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
+import RFAHeader from '@/components/RFAHeader';
+import headerBlobYellow from '@/media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
 import { useFormik } from 'formik';
 import * as emailjs from 'emailjs-com';
-import RFAFormInput from "../../components/RFAFormInput";
-import RFATextArea from "../../components/RFATextArea";
-import RFASubmitButton from "../../components/RFASubmitButton";
+import RFAFormInput from "@/components/RFAFormInput";
+import RFATextArea from "@/components/RFATextArea";
+import RFASubmitButton from "@/components/RFASubmitButton";
 
 
 export default function RFAContact(props) {

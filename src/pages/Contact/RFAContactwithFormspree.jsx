@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import RFAHeader from '../RFAHeader';
-import headerBlobYellow from '../../media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
+import RFAHeader from '@/components/RFAHeader';
+import headerBlobYellow from '@/media/HeaderBlobs/Blob-RFA-4.png'; // add correct image and filepath here
 import { useForm, ValidationError } from '@formspree/react'
-import RFAFormInput from "../RFAFormInput";
-import RFATextArea from "../RFATextArea";
-import RFASubmitButton from "../RFASubmitButton";
+import RFAFormInput from "@/RFAFormInput";
+import RFATextArea from "@/RFATextArea";
+import RFASubmitButton from "@/RFASubmitButton";
 
 function ContactForm() {
 

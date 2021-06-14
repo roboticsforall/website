@@ -1,9 +1,9 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
-import RFAHeader from '../RFAHeader';
-import RFAFAQDropdowns from '../RFAFAQDropdowns';
-import headerBlobOrange from '../../media/HeaderBlobs/orange.png'; // add correct image here
-import classFAQJSON from "../../posts/faqs/class_faqs.json";
+import RFAHeader from '@/components/RFAHeader';
+import RFAFAQDropdowns from '@/components/RFAFAQDropdowns';
+import headerBlobOrange from '@/media/HeaderBlobs/orange.png'; // add correct image here
+import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import ReactMarkdown from "react-markdown";
 
 export default function RFAClassFAQ(props){

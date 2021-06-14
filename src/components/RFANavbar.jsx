@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row} from "react-bootstrap";
-import TobyHeaderLogo from "../media/TobyHeaderLogo.png"
+import TobyHeaderLogo from "@/media/TobyHeaderLogo.png"
 import {Link} from "react-router-dom";
 
 export default function RFANavbar(props) {
