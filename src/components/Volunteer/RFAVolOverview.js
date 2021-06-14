@@ -22,7 +22,7 @@ export default function RFAVolOverview(props) {
     fontSize: "5.5vmax",
     color: "#fa8d1f",
     textAlign: "center",
-    letterSpacing: "6px",
+    letterSpacing: "0.1em",
   }
   const positionsDescription = {
     fontFamily: 'BeVietnam-SemiBold',
