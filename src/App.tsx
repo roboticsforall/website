@@ -24,6 +24,7 @@ import { RFANews } from "./pages/News/RFANews";
 //More
 import { RFACorpBylaws } from "./pages/More/RFACorpBylaws";
 import { RFAMeetingRecords } from "./pages/More/RFAMeetingRecords";
+import { RFAWebsiteTOS } from "./pages/More/RFAWebsiteTOS";
 
 export const App: React.FC = () => {
   return (
@@ -55,10 +56,9 @@ export const App: React.FC = () => {
                 <Route path="/about-afforgs" component={RFAAffOrgs} />
                 <Route path="/contact" component={RFAContact} />
                 <Route path="/news" component={RFANews} />
-                <Route path="/more-privacypolicy" component={RFANews} />
-                <Route path="/more-websitetos" component={RFANews} />
+                <Route path="/more-privacypolicy" component={RFAWebsiteTOS} />
+                <Route path="/more-websitetos" component={RFAWebsiteTOS} />
                 <Route path="/more-bylaws" component={RFACorpBylaws} />
-                <Route path="/more-privacypolicy" component={RFANews} />
                 <Route
                   path="/more-meetingrecords"
                   component={RFAMeetingRecords}

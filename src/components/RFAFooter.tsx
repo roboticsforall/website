@@ -125,12 +125,20 @@ export const RFAFooter: React.FC = () => {
           <br />
           <Col lg={3}>
             <h1 style={headerStyle}>MORE</h1>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            <Link
+              style={linkStyle}
+              className="hyperlink C06202"
+              to="/more-privacypolicy"
+            >
               <p>Privacy Policy</p>
-            </a>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            </Link>
+            <Link
+              style={linkStyle}
+              className="hyperlink C06202"
+              to="/more-websitetos"
+            >
               <p>Website Terms of Use</p>
-            </a>
+            </Link>
             <Link
               to="/more-bylaws"
               style={linkStyle}
