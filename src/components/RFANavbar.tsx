@@ -117,7 +117,7 @@ export const RFANavbar: React.FC = () => {
             </li>
             <li className="nav-item donate-nav-item dropdown">
               <Link
-                to = "/donate"
+                to="/donate"
                 className="mt-2 nav-link donate-nav-link dropdown-toggle"
                 id="navbarDropdown"
                 data-toggle="dropdown"
@@ -126,10 +126,7 @@ export const RFANavbar: React.FC = () => {
               >
                 Donate
               </Link>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-              >
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a
                   href="https://www.bonfire.com/store/rfa/"
                   target="_blank"
