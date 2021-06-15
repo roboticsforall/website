@@ -1,41 +1,18 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
-import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
-import { useForm, ValidationError } from "@formspree/react";
+import React from "react";
+import { Container, Row, Col, Form } from "react-bootstrap";
+import { RFAHeader } from "@/components/RFAHeader";
+import headerBlobYellow from "@/media/HeaderBlobs/Blob-RFA-4.png"; // add correct image and filepath here
+import { useFormik } from "formik";
+import * as emailjs from "emailjs-com";
 import { RFAFormInput } from "@/components/RFAFormInput";
 import { RFATextArea } from "@/components/RFATextArea";
 import { RFASubmitButton } from "@/components/RFASubmitButton";
 
-export const RFAContactwithFormspree: React.FC<{
+export const RFAContactWithEmailJS: React.FC<{
   address: string;
   telephone: string;
   email: string;
 }> = (props) => {
-  const [state, handleSubmit] = useForm("mzbybwgz");
-
-  const checkFormState = () => {
-    if (state.succeeded) {
-      // handleMessage("Thank you for contacting Robotics for All!");
-      return (
-        <p style={{ color: "green" }}>
-          Thank you for contacting Robotics for All!
-        </p>
-      );
-    } else {
-      return state.errors.map((error, i) => (
-        <>
-          <p key={i} style={{ color: "red" }}>
-            {error.field}
-          </p>
-          <p key={i + 1} style={{ color: "red" }}>
-            {error.message}
-          </p>
-        </>
-      ));
-    }
-  };
-
   const contactInfo = {
     fontFamily: "BeVietnam-SemiBold",
   };
@@ -44,18 +21,52 @@ export const RFAContactwithFormspree: React.FC<{
     color: "#C06202",
   };
 
+  const formik = useFormik({
+    initialValues: {
+      user_name: "",
+      user_email: "",
+      message: "",
+    },
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+
+      // generate a five digit number for the contact_number variable
+      (values as any).contact_number = (
+        (Math.random() * 100000) |
+        0
+      ).toString();
+
+      // these IDs from the previous steps
+
+      emailjs
+        .send(
+          "service_t6ov7gc",
+          "contact_form",
+          values,
+          "user_UgObGpueIJlqijMucq52k"
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+    },
+  });
   return (
-    <>
+    <div>
       <RFAHeader
         headerTextColor={"#ffcc00"}
         image={headerBlobYellow}
-        title={"Want to know more?"}
+        title={"Want to know more? Contact us!"}
         description={
           "Contact us for more information, questions, partnerships and much more!"
         }
       />
 
-      <Container>
+      <Container className="border">
         <br />
         <Row className="justify-content-between">
           <Col style={contactInfo} md={5}>
@@ -76,7 +87,7 @@ export const RFAContactwithFormspree: React.FC<{
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"tel:+(650)-665-9734"}
+                  href={"tel:+(650)-665-9734}
                 >
                   +(650)-665-9734
                 </a>
@@ -86,16 +97,18 @@ export const RFAContactwithFormspree: React.FC<{
                 ADDRESS | <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
               </h3>
             </Row>
-            <Row></Row>
+            <Row>Add Icons here</Row>
           </Col>
           <Col md={6} className="justify-content-end">
-            <Form id="contact-form" onSubmit={handleSubmit}>
+            <Form id="contact-form" onSubmit={formik.handleSubmit}>
               <RFAFormInput
                 type="text"
                 placeholder="Full Name"
                 height="3em"
                 id="user_name"
                 name="user_name"
+                onChange={formik.handleChange}
+                value={formik.values.user_name}
               />
               <RFAFormInput
                 type="email"
@@ -103,34 +116,34 @@ export const RFAContactwithFormspree: React.FC<{
                 height="3em"
                 id="user_email"
                 name="user_email"
-              />
-              <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
+                onChange={formik.handleChange}
+                value={formik.values.user_email}
               />
               <RFATextArea
                 rows={4}
-                placeholder="Question, Comments, or Concerns"
+                placeholder="Question, Comments, Concerns"
                 id="message"
                 name="message"
+                onChange={formik.handleChange}
+                value={formik.values.message}
               />
-              <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-              />
-              <br></br>
-              <RFASubmitButton state={state.submitting} />
-              <br />
-              <br />
-              {checkFormState()}
+              <RFASubmitButton />
             </Form>
           </Col>
         </Row>
+        <br></br>
+        <br></br>
+
+        <br></br>
+
+        <br></br>
+
+        <br></br>
+
+        <br></br>
 
         <br></br>
       </Container>
-    </>
+    </div>
   );
 };

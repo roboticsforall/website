@@ -24,8 +24,8 @@ export const RFAFooter: React.FC = () => {
     textAlign: "center",
   };
   const iconSize: React.CSSProperties = {
-    width: "4vw",
-    height: "4vw",
+    width: "4vmax",
+    height: "4vmax",
     margin: "0.1em",
   };
 
@@ -36,24 +36,24 @@ export const RFAFooter: React.FC = () => {
         <Row className="justify-content-center">
           <Col lg={3}>
             <h1 style={headerStyle}>NAVIGATION</h1>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            <Link style={linkStyle} className="hyperlink C06202" to="/">
               <p>Home</p>
-            </a>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            </Link>
+            <Link style={linkStyle} className="hyperlink C06202" to="/individlearners">
               <p>Enroll</p>
-            </a>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            </Link>
+            <Link style={linkStyle} className="hyperlink C06202" to="/volunteer-overview">
               <p>Volunteer</p>
-            </a>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            </Link>
+            <Link style={linkStyle} className="hyperlink C06202" to="/about-overview">
               <p>About</p>
-            </a>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            </Link>
+            <Link style={linkStyle} className="hyperlink C06202" to="/contact">
               <p>Contact</p>
-            </a>
-            <a style={linkStyle} className="hyperlink C06202" href="#">
+            </Link>
+            <Link style={linkStyle} className="hyperlink C06202" to="/news">
               <p>News</p>
-            </a>
+            </Link>
           </Col>
           <br />
           <Col lg={3}>
@@ -61,6 +61,7 @@ export const RFAFooter: React.FC = () => {
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
               <a
+                target = "_blank"
                 className="hyperlink C06202"
                 href={"mailto:info@roboticsforall.net"}
               >
@@ -69,19 +70,19 @@ export const RFAFooter: React.FC = () => {
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
-              <a className="hyperlink C06202" href={"tel:+6506659734"}>
+              <a target = "_blank" className="hyperlink C06202" href={"tel:+6506659734"}>
                 (650)-665-9734
               </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
               ADDRESS |{" "}
-              <p className="C06202">P.O. Box 56, Palo Alto, CA 94302</p>
+              <a target = "_blank" href = "" className="C06202 hyperlink">P.O. Box 56, Palo Alto, CA 94302</a>
             </div>
             <div className="d-flex align-items-baseline">
-              <Image style={iconSize} src={facebookIcon} />
-              <Image style={iconSize} src={instagramIcon} />
-              <Image style={iconSize} src={linkedin} />
-              <Image style={{ width: "8vw", height: "8vw" }} src={guidestar} />
+              <a target = "_blank" href = "https://www.facebook.com/roboticsforalleducation/"><Image style={iconSize} src={facebookIcon} /></a>
+              <a target = "_blank" href = "https://www.instagram.com/roboticsforall/"><Image style={iconSize} src={instagramIcon} /></a>
+              <a target = "_blank" href = "https://www.linkedin.com/company/robotics-for-all"><Image style={iconSize} src={linkedin} /></a>
+              <a target = "_blank" href = "https://www.guidestar.org/"><Image style={{ width: "8vmax", height: "8vmax" }} src={guidestar} /></a>
             </div>
           </Col>
           <br />
@@ -108,7 +109,7 @@ export const RFAFooter: React.FC = () => {
               <p>Meeting Minutes & Agendas</p>
             </Link>
             <div style={{ ...darkBrown, ...linkStyle }}>
-              TAX IDs | <p className="C06202">83-2012119</p>
+              TAX IDs | <a target = "_blank" href = "https://www.guidestar.org/profile/83-2012119" className="hyperlink C06202">83-2012119</a>
             </div>
           </Col>
           <br />

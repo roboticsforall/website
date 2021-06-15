@@ -14,11 +14,11 @@ import { RFAVolOverview } from "./pages/Volunteer/RFAVolOverview";
 import { RFATeacherPos } from "./pages/Volunteer/RFATeacherPos";
 import { RFAPublicityInternPos } from "./pages/Volunteer/RFAPublicityInternPos";
 import { RFAVolunteerFAQ } from "./pages/Volunteer/RFAVolunteerFAQ";
-import { VolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
+import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
-import {RFAAffOrgs} from "./pages/About/RFAAffOrgs";
-import {RFAAbtOverview} from "./pages/About/RFAAbtOverview";
-import {RFAContact} from "./pages/Contact/RFAContactwithFormspree";
+import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
+import { RFAAbtOverview } from "./pages/About/RFAAbtOverview";
+import { RFAContact } from "./pages/Contact/RFAContact";
 //News
 import { RFANews } from "./pages/News/RFANews";
 //More
@@ -53,7 +53,7 @@ export const App: React.FC = () => {
                 />
                 <Route
                   path="/volunteer-volunteerapp"
-                  component={VolunteerApp}
+                  component={RFAVolunteerApp}
                 />
                 <Route path="/about-afforgs" component={RFAAffOrgs} />
                 <Route path = "/contact" component = {RFAContact}/>

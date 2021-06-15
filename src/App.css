@@ -266,7 +266,6 @@ a {
 .home-page-house-img:hover {
   background-image: url("media/HoverImages/house_2.png") !important;
   transition: 200ms;
-
 }
 .home-page-house-img + h1 {
   color: #3399ff;

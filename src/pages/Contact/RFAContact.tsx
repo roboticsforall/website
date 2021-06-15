@@ -1,18 +1,49 @@
-import React from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
-import headerBlobYellow from "@/media/HeaderBlobs/Blob-RFA-4.png"; // add correct image and filepath here
-import { useFormik } from "formik";
-import * as emailjs from "emailjs-com";
+import React, { useState } from "react";
+import { Container, Row, Col, Form, Button, Image} from "react-bootstrap";
+import {RFAHeader} from "@/components/RFAHeader";
+import { useForm, ValidationError } from "@formspree/react";
 import { RFAFormInput } from "@/components/RFAFormInput";
 import { RFATextArea } from "@/components/RFATextArea";
 import { RFASubmitButton } from "@/components/RFASubmitButton";
+
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
+import facebookIcon from "@/media/Social Media Logos/facebook.png";
+import instagramIcon from "@/media/Social Media Logos/instagram.png";
+import linkedin from "@/media/Social Media Logos/linkedin.png";
 
 export const RFAContact: React.FC<{
   address: string;
   telephone: string;
   email: string;
+  // facebookLink: "https://www.facebook.com/roboticsforalleducation/";
+  // instagramLink: "https://www.instagram.com/roboticsforall/";
+  // linkedin: "https://www.linkedin.com/company/robotics-for-all"
+
 }> = (props) => {
+  const [state, handleSubmit] = useForm("mzbybwgz");
+
+  const checkFormState = () => {
+    if (state.succeeded) {
+      // handleMessage("Thank you for contacting Robotics for All!");
+      return (
+        <p style={{ color: "green" }}>
+          Thank you for contacting Robotics for All!
+        </p>
+      );
+    } else {
+      return state.errors.map((error, i) => (
+        <>
+          <p key={i} style={{ color: "red" }}>
+            {error.field}
+          </p>
+          <p key={i + 1} style={{ color: "red" }}>
+            {error.message}
+          </p>
+        </>
+      ));
+    }
+  };
+
   const contactInfo = {
     fontFamily: "BeVietnam-SemiBold",
   };
@@ -21,52 +52,24 @@ export const RFAContact: React.FC<{
     color: "#C06202",
   };
 
-  const formik = useFormik({
-    initialValues: {
-      user_name: "",
-      user_email: "",
-      message: "",
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+  const iconSize = {
+    width: "auto",
+    height: "5vmax",
+    margin: "0.1em",
+  };
 
-      // generate a five digit number for the contact_number variable
-      (values as any).contact_number = (
-        (Math.random() * 100000) |
-        0
-      ).toString();
-
-      // these IDs from the previous steps
-
-      emailjs
-        .send(
-          "service_t6ov7gc",
-          "contact_form",
-          values,
-          "user_UgObGpueIJlqijMucq52k"
-        )
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-          },
-          (error) => {
-            console.log("FAILED...", error);
-          }
-        );
-    },
-  });
   return (
-    <div>
+    <>
       <RFAHeader
         headerTextColor={"#ffcc00"}
         image={headerBlobYellow}
-        title={"Want to know more? Contact us!"}
+        title={"Want to know more?"}
         description={
           "Contact us for more information, questions, partnerships and much more!"
         }
       />
 
-      <Container className="border">
+      <Container>
         <br />
         <Row className="justify-content-between">
           <Col style={contactInfo} md={5}>
@@ -87,7 +90,7 @@ export const RFAContact: React.FC<{
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"tel:+(650)-665-9734}
+                  href={"tel:+(650)-665-9734"}
                 >
                   +(650)-665-9734
                 </a>
@@ -97,18 +100,22 @@ export const RFAContact: React.FC<{
                 ADDRESS | <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
               </h3>
             </Row>
-            <Row>Add Icons here</Row>
+            <div className="d-flex">
+              <a target = "_blank" href = "https://www.facebook.com/roboticsforalleducation/"><Image style={iconSize} src={facebookIcon} /></a>
+              <a target = "_blank" href = "https://www.instagram.com/roboticsforall/"><Image style={iconSize} src={instagramIcon} /></a>
+              <a target = "_blank" href = "https://www.linkedin.com/company/robotics-for-all"><Image style={iconSize} src={linkedin} /></a>
+            </div>
+            <br></br>
+
           </Col>
           <Col md={6} className="justify-content-end">
-            <Form id="contact-form" onSubmit={formik.handleSubmit}>
+            <Form id="contact-form" onSubmit={handleSubmit}>
               <RFAFormInput
                 type="text"
                 placeholder="Full Name"
                 height="3em"
                 id="user_name"
                 name="user_name"
-                onChange={formik.handleChange}
-                value={formik.values.user_name}
               />
               <RFAFormInput
                 type="email"
@@ -116,34 +123,33 @@ export const RFAContact: React.FC<{
                 height="3em"
                 id="user_email"
                 name="user_email"
-                onChange={formik.handleChange}
-                value={formik.values.user_email}
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
               <RFATextArea
                 rows={4}
-                placeholder="Question, Comments, Concerns"
+                placeholder="Question, Comments, or Concerns"
                 id="message"
                 name="message"
-                onChange={formik.handleChange}
-                value={formik.values.message}
               />
-              <RFASubmitButton />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+              <br></br>
+              <RFASubmitButton state={state.submitting} />
+              <br />
+              <br />
+              {checkFormState()}
             </Form>
           </Col>
         </Row>
         <br></br>
-        <br></br>
-
-        <br></br>
-
-        <br></br>
-
-        <br></br>
-
-        <br></br>
-
-        <br></br>
       </Container>
-    </div>
+    </>
   );
 };
