@@ -1,38 +1,31 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import {
-  useLocation,
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import RFANavbar from "./components/RFANavbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { RFANavbar } from "./components/RFANavbar";
 // Base Pages
-import RFAHomePage from "./pages/RFAHomePage";
-import RFAFooter from "./components/RFAFooter";
+import { RFAHomePage } from "./pages/RFAHomePage";
+import { RFAFooter } from "./components/RFAFooter";
 //Enroll
-import RFAClassFAQ from "./pages/Enroll/RFAClassFAQ";
-import RFARegister from "./pages/Enroll/RFARegister";
+import { RFAClassFAQ } from "./pages/Enroll/RFAClassFAQ";
+import { RFARegister } from "./pages/Enroll/RFARegister";
 //Volunteer
-import RFAVolOverview from "./pages/Volunteer/RFAVolOverview";
-import RFATeacherPos from "./pages/Volunteer/RFATeacherPos";
-import RFAPublicityInternPos from "./pages/Volunteer/RFAPublicityInternPos";
-import RFAVolunteerFAQ from "./pages/Volunteer/RFAVolunteerFAQ";
-import RFAVolunteerApp from "./pages/Volunteer/RFAVolunteerApp";
+import { RFAVolOverview } from "./pages/Volunteer/RFAVolOverview";
+import { RFATeacherPos } from "./pages/Volunteer/RFATeacherPos";
+import { RFAPublicityInternPos } from "./pages/Volunteer/RFAPublicityInternPos";
+import { RFAVolunteerFAQ } from "./pages/Volunteer/RFAVolunteerFAQ";
+import { VolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
-import RFAAffOrgs from "./pages/About/RFAAffOrgs";
-import RFAAbtOverview from "./pages/About/RFAAbtOverview";
-import RFAContact from "./pages/Contact/RFAContactwithFormspree";
+import {RFAAffOrgs} from "./pages/About/RFAAffOrgs";
+import {RFAAbtOverview} from "./pages/About/RFAAbtOverview";
+import {RFAContact} from "./pages/Contact/RFAContactwithFormspree";
 //News
-import RFANews from "./pages/News/RFANews";
+import { RFANews } from "./pages/News/RFANews";
 //More
-import RFACorpBylaws from "./pages/More/RFACorpBylaws";
-import RFAMeetingRecords from "./pages/More/RFAMeetingRecords";
+import { RFACorpBylaws } from "./pages/More/RFACorpBylaws";
+import { RFAMeetingRecords } from "./pages/More/RFAMeetingRecords";
 
-export default function App(props) {
-  let location = useLocation();
-
+export const App: React.FC = () => {
   return (
     <Router>
       <RFANavbar />
@@ -60,7 +53,7 @@ export default function App(props) {
                 />
                 <Route
                   path="/volunteer-volunteerapp"
-                  component={RFAVolunteerApp}
+                  component={VolunteerApp}
                 />
                 <Route path="/about-afforgs" component={RFAAffOrgs} />
                 <Route path = "/contact" component = {RFAContact}/>
@@ -84,4 +77,4 @@ export default function App(props) {
       <RFAFooter />
     </Router>
   );
-}
+};

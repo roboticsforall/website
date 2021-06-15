@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png"; // add correct image and filepath here
 
-export default function RFARegister(props) {
+export const RFARegister: React.FC = () => {
   return (
     <>
       <RFAHeader
@@ -36,4 +36,4 @@ export default function RFARegister(props) {
       </Container>
     </>
   );
-}
+};

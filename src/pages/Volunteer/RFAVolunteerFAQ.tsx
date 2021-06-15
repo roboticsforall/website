@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
-import RFAFAQDropdowns from "@/components/RFAFAQDropdowns";
+import { RFAHeader } from "@/components/RFAHeader";
+import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png"; // add correct image here
 import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
-export default function RFAVolunteerFAQ(props) {
+export const RFAVolunteerFAQ: React.FC = () => {
   const heading = {
     fontFamily: "Oswald-Medium",
     color: "#532f0A",
@@ -50,4 +50,4 @@ export default function RFAVolunteerFAQ(props) {
       </Container>
     </div>
   );
-}
+};

@@ -1,14 +1,18 @@
 import React from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
+import { Container, Row, Col, Form } from "react-bootstrap";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/Blob-RFA-4.png"; // add correct image and filepath here
 import { useFormik } from "formik";
 import * as emailjs from "emailjs-com";
-import RFAFormInput from "@/components/RFAFormInput";
-import RFATextArea from "@/components/RFATextArea";
-import RFASubmitButton from "@/components/RFASubmitButton";
+import { RFAFormInput } from "@/components/RFAFormInput";
+import { RFATextArea } from "@/components/RFATextArea";
+import { RFASubmitButton } from "@/components/RFASubmitButton";
 
-export default function RFAContact(props) {
+export const RFAContact: React.FC<{
+  address: string;
+  telephone: string;
+  email: string;
+}> = (props) => {
   const contactInfo = {
     fontFamily: "BeVietnam-SemiBold",
   };
@@ -42,10 +46,10 @@ export default function RFAContact(props) {
           "user_UgObGpueIJlqijMucq52k"
         )
         .then(
-          function (response) {
+          (response) => {
             console.log("SUCCESS!", response.status, response.text);
           },
-          function (error) {
+          (error) => {
             console.log("FAILED...", error);
           }
         );
@@ -142,4 +146,4 @@ export default function RFAContact(props) {
       </Container>
     </div>
   );
-}
+};

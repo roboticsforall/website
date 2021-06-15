@@ -3,9 +3,9 @@ import "@/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import RFAHeader from "@/components/RFAHeader";
+import { RFAHeader } from "@/components/RFAHeader";
 
-export default function RFAAbtOverview(props) {
+export const RFAAbtOverview: React.FC = () => {
   const title: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "10vh",
@@ -120,4 +120,4 @@ export default function RFAAbtOverview(props) {
       </Container>
     </div>
   );
-}
+};

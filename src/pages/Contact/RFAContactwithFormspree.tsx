@@ -3,18 +3,16 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import RFAHeader from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 import { useForm, ValidationError } from "@formspree/react";
-import RFAFormInput from "@/components/RFAFormInput";
-import RFATextArea from "@/components/RFATextArea";
-import RFASubmitButton from "@/components/RFASubmitButton";
+import { RFAFormInput } from "@/components/RFAFormInput";
+import { RFATextArea } from "@/components/RFATextArea";
+import { RFASubmitButton } from "@/components/RFASubmitButton";
 
-function ContactForm() {
-  return <></>;
-}
-
-export default function RFAContactwithFormspree(props) {
-  // const [state, handleSubmit] = useForm("xeqvkqbo");
+export const RFAContactwithFormspree: React.FC<{
+  address: string;
+  telephone: string;
+  email: string;
+}> = (props) => {
   const [state, handleSubmit] = useForm("mzbybwgz");
-  const [submitMessage, handleMessage] = useState("");
 
   const checkFormState = () => {
     if (state.succeeded) {
@@ -135,4 +133,4 @@ export default function RFAContactwithFormspree(props) {
       </Container>
     </>
   );
-}
+};

@@ -2,7 +2,15 @@ import React from "react";
 import { Container, Row, Image, Col } from "react-bootstrap";
 import homePageVideo from "@/media/homePageVideo.mp4";
 
-export default function RFAAboutAffOrgsCard(props) {
+export const RFAAboutAffOrgsCard: React.FC<{
+  mainColor: string;
+  affOrgName: string;
+  logo: string;
+  affOrgsDescription: string;
+  website: string;
+  orgAbrv: string;
+  linkColor: string;
+}> = (props) => {
   const affOrgsCardText = {
     fontFamily: "BeVietnam-Medium",
     fontSize: "large",
@@ -75,4 +83,4 @@ export default function RFAAboutAffOrgsCard(props) {
       </Col>
     </Row>
   );
-}
+};

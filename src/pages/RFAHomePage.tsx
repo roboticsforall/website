@@ -18,7 +18,6 @@ import world2 from "@/media/HoverImages/world_1.png";
 
 import LM from "@/media/Sponsors/lm.png";
 import TF from "@/media/Sponsors/tf.png";
-// import MW from '@/media/Sponsors/mw.png';
 import WMM from "@/media/Sponsors/wmm.png";
 import Google from "@/media/Sponsors/google.png";
 import NSP from "@/media/Sponsors/nsp.png";
@@ -27,9 +26,9 @@ import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
 import YMCA from "@/media/Sponsors/ymca.png";
 
-import RFAHomeAffOrgsCard from "@/components/RFAHomeAffOrgsCard";
+import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
 
-export default function RFAHomePage(props) {
+export const RFAHomePage: React.FC = () => {
   const videoRow: React.CSSProperties = {
     backgroundColor: "#FFCC00",
   };
@@ -230,4 +229,4 @@ export default function RFAHomePage(props) {
       </Container>
     </>
   );
-}
+};

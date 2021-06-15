@@ -8,7 +8,7 @@ import guidestar from "@/media/Social Media Logos/guidestar.png";
 
 import { Link } from "react-router-dom";
 
-export default function RFAFooter(props) {
+export const RFAFooter: React.FC = () => {
   const darkBrown: React.CSSProperties = {
     color: "#532F0A",
   };
@@ -129,4 +129,4 @@ export default function RFAFooter(props) {
       </Container>
     </Row>
   );
-}
+};

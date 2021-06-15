@@ -3,22 +3,12 @@ import { Row } from "react-bootstrap";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 
-export default function RFANavbar(props) {
+export const RFANavbar: React.FC = () => {
   const logoImageSize = {
     height: "7vh",
   };
   const header = {
     fontFamily: "Oswald-Medium",
-  };
-  // const navItems = {
-  //     color: "#ffcc00",
-  //     fontFamily: "BeVietnam-ExtraBold",
-  //     fontSize: "1.0em"
-  // }
-
-  const donateBtn = {
-    borderRadius: "1em",
-    backgroundColor: "#3399ff",
   };
 
   return (
@@ -143,6 +133,7 @@ export default function RFANavbar(props) {
                   href="https://www.bonfire.com/store/rfa/"
                   target="_blank"
                   className="dropdown-item"
+                  rel="noreferrer"
                 >
                   Merch
                 </a>
@@ -156,4 +147,4 @@ export default function RFANavbar(props) {
       </nav>
     </Row>
   );
-}
+};

@@ -1,7 +1,13 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 
-export default function RFAHomeAffOrgsCard(props) {
+export const RFAHomeAffOrgsCard: React.FC<{
+  linkColor: string;
+  bgColor: string;
+  link: string;
+  org: string;
+  logo: string;
+}> = (props) => {
   const affOrgsTitle: React.CSSProperties = {
     fontFamily: "Mazzard-H-ExtraBold",
     color: "white",
@@ -46,6 +52,7 @@ export default function RFAHomeAffOrgsCard(props) {
             target="_blank"
             className="home-aff-org-card-link"
             style={linkColor}
+            rel="noreferrer"
           >
             LEARN MORE
           </a>
@@ -54,4 +61,4 @@ export default function RFAHomeAffOrgsCard(props) {
       <br />
     </>
   );
-}
+};

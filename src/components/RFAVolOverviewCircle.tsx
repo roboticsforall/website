@@ -1,7 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CountUp } from "use-count-up";
-export default function RFAVolOverviewCircle(props) {
+export const RFAVolOverviewCircle: React.FC<{
+  top: string;
+  width: string;
+  height: string;
+  paddingtop: string;
+  subtextSize: string;
+  titleSize: string;
+  title: string;
+  subtext: string;
+  end: number;
+}> = (props) => {
   const circleText: React.CSSProperties = {
     borderRadius: "50%",
     backgroundColor: "#fcaf62",
@@ -36,4 +46,4 @@ export default function RFAVolOverviewCircle(props) {
       <h4 style={circleSubtext}>{props.subtext}</h4>
     </div>
   );
-}
+};

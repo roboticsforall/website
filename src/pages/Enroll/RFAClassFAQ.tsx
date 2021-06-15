@@ -1,12 +1,12 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
-import RFAFAQDropdowns from "@/components/RFAFAQDropdowns";
+import { RFAHeader } from "@/components/RFAHeader";
+import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png"; // add correct image here
 import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import Markdown from "markdown-to-jsx";
 
-export default function RFAClassFAQ(props) {
+export const RFAClassFAQ: React.FC = () => {
   return (
     <div>
       <RFAHeader
@@ -56,4 +56,4 @@ export default function RFAClassFAQ(props) {
       </Container>
     </div>
   );
-}
+};

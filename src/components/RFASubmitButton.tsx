@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 
-export default function RFASubmitButton(props) {
+export const RFASubmitButton: React.FC<{ state?: boolean }> = (props) => {
   const textStyle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
@@ -19,4 +19,4 @@ export default function RFASubmitButton(props) {
       </button>
     </Row>
   );
-}
+};
