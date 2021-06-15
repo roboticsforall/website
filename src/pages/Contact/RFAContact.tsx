@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Form, Button, Image} from "react-bootstrap";
-import {RFAHeader} from "@/components/RFAHeader";
+import React from "react";
+import { Container, Row, Col, Form, Image } from "react-bootstrap";
+import { RFAHeader } from "@/components/RFAHeader";
 import { useForm, ValidationError } from "@formspree/react";
 import { RFAFormInput } from "@/components/RFAFormInput";
 import { RFATextArea } from "@/components/RFATextArea";
@@ -18,8 +18,7 @@ export const RFAContact: React.FC<{
   // facebookLink: "https://www.facebook.com/roboticsforalleducation/";
   // instagramLink: "https://www.instagram.com/roboticsforall/";
   // linkedin: "https://www.linkedin.com/company/robotics-for-all"
-
-}> = (props) => {
+}> = () => {
   const [state, handleSubmit] = useForm("mzbybwgz");
 
   const checkFormState = () => {
@@ -97,16 +96,31 @@ export const RFAContact: React.FC<{
               </h3>
               <br></br>
               <h3>
-                ADDRESS | <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
+                ADDRESS |{" "}
+                <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
               </h3>
             </Row>
             <div className="d-flex">
-              <a target = "_blank" href = "https://www.facebook.com/roboticsforalleducation/"><Image style={iconSize} src={facebookIcon} /></a>
-              <a target = "_blank" href = "https://www.instagram.com/roboticsforall/"><Image style={iconSize} src={instagramIcon} /></a>
-              <a target = "_blank" href = "https://www.linkedin.com/company/robotics-for-all"><Image style={iconSize} src={linkedin} /></a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/roboticsforalleducation/"
+              >
+                <Image style={iconSize} src={facebookIcon} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/roboticsforall/"
+              >
+                <Image style={iconSize} src={instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/robotics-for-all"
+              >
+                <Image style={iconSize} src={linkedin} />
+              </a>
             </div>
             <br></br>
-
           </Col>
           <Col md={6} className="justify-content-end">
             <Form id="contact-form" onSubmit={handleSubmit}>

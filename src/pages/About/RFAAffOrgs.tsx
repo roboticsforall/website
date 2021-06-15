@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import { RFAAboutAffOrgsCard } from "@/components/RFAAboutAffOrgsCard";
 import { RFAHeader } from "@/components/RFAHeader";

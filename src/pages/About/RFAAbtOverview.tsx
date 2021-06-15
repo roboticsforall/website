@@ -1,6 +1,4 @@
 import React from "react";
-import "@/App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAHeader } from "@/components/RFAHeader";

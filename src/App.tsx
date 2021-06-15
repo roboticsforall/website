@@ -38,10 +38,7 @@ export const App: React.FC = () => {
                 <Route path="/about-overview" component={RFAAbtOverview} />
                 <Route path="/enroll-classfaq" component={RFAClassFAQ} />
                 <Route path="/enroll-register" component={RFARegister} />
-                <Route
-                  path="/volunteer-overview"
-                  component={RFAVolOverview}
-                />
+                <Route path="/volunteer-overview" component={RFAVolOverview} />
                 <Route
                   path="/volunteer-volunteerfaq"
                   component={RFAVolunteerFAQ}
@@ -56,7 +53,7 @@ export const App: React.FC = () => {
                   component={RFAVolunteerApp}
                 />
                 <Route path="/about-afforgs" component={RFAAffOrgs} />
-                <Route path = "/contact" component = {RFAContact}/>
+                <Route path="/contact" component={RFAContact} />
                 <Route path="/news" component={RFANews} />
                 <Route path="/more-privacypolicy" component={RFANews} />
                 <Route path="/more-websitetos" component={RFANews} />

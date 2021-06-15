@@ -39,13 +39,25 @@ export const RFAFooter: React.FC = () => {
             <Link style={linkStyle} className="hyperlink C06202" to="/">
               <p>Home</p>
             </Link>
-            <Link style={linkStyle} className="hyperlink C06202" to="/individlearners">
+            <Link
+              style={linkStyle}
+              className="hyperlink C06202"
+              to="/individlearners"
+            >
               <p>Enroll</p>
             </Link>
-            <Link style={linkStyle} className="hyperlink C06202" to="/volunteer-overview">
+            <Link
+              style={linkStyle}
+              className="hyperlink C06202"
+              to="/volunteer-overview"
+            >
               <p>Volunteer</p>
             </Link>
-            <Link style={linkStyle} className="hyperlink C06202" to="/about-overview">
+            <Link
+              style={linkStyle}
+              className="hyperlink C06202"
+              to="/about-overview"
+            >
               <p>About</p>
             </Link>
             <Link style={linkStyle} className="hyperlink C06202" to="/contact">
@@ -61,7 +73,7 @@ export const RFAFooter: React.FC = () => {
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
               <a
-                target = "_blank"
+                target="_blank"
                 className="hyperlink C06202"
                 href={"mailto:info@roboticsforall.net"}
               >
@@ -70,19 +82,45 @@ export const RFAFooter: React.FC = () => {
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
-              <a target = "_blank" className="hyperlink C06202" href={"tel:+6506659734"}>
+              <a
+                target="_blank"
+                className="hyperlink C06202"
+                href={"tel:+6506659734"}
+              >
                 (650)-665-9734
               </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
               ADDRESS |{" "}
-              <a target = "_blank" href = "" className="C06202 hyperlink">P.O. Box 56, Palo Alto, CA 94302</a>
+              <a target="_blank" href="" className="C06202 hyperlink">
+                P.O. Box 56, Palo Alto, CA 94302
+              </a>
             </div>
             <div className="d-flex align-items-baseline">
-              <a target = "_blank" href = "https://www.facebook.com/roboticsforalleducation/"><Image style={iconSize} src={facebookIcon} /></a>
-              <a target = "_blank" href = "https://www.instagram.com/roboticsforall/"><Image style={iconSize} src={instagramIcon} /></a>
-              <a target = "_blank" href = "https://www.linkedin.com/company/robotics-for-all"><Image style={iconSize} src={linkedin} /></a>
-              <a target = "_blank" href = "https://www.guidestar.org/"><Image style={{ width: "8vmax", height: "8vmax" }} src={guidestar} /></a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/roboticsforalleducation/"
+              >
+                <Image style={iconSize} src={facebookIcon} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/roboticsforall/"
+              >
+                <Image style={iconSize} src={instagramIcon} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/robotics-for-all"
+              >
+                <Image style={iconSize} src={linkedin} />
+              </a>
+              <a target="_blank" href="https://www.guidestar.org/">
+                <Image
+                  style={{ width: "8vmax", height: "8vmax" }}
+                  src={guidestar}
+                />
+              </a>
             </div>
           </Col>
           <br />
@@ -109,7 +147,14 @@ export const RFAFooter: React.FC = () => {
               <p>Meeting Minutes & Agendas</p>
             </Link>
             <div style={{ ...darkBrown, ...linkStyle }}>
-              TAX IDs | <a target = "_blank" href = "https://www.guidestar.org/profile/83-2012119" className="hyperlink C06202">83-2012119</a>
+              TAX IDs |{" "}
+              <a
+                target="_blank"
+                href="https://www.guidestar.org/profile/83-2012119"
+                className="hyperlink C06202"
+              >
+                83-2012119
+              </a>
             </div>
           </Col>
           <br />

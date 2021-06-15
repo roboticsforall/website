@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { CountUp } from "use-count-up";
 export const RFAVolOverviewCircle: React.FC<{
   top: string;
