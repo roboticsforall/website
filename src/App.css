@@ -162,6 +162,9 @@ a {
   font-family: "BeVietnam-ExtraBold" !important;
   font-size: 1.5em;
   padding: 0 !important;
+  display: flex !important;
+  align-self: center !important;
+  justify-self: center !important;
 }
 .navbar .donate-nav-link:hover {
   transition: 0.2s;

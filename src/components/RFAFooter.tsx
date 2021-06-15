@@ -61,7 +61,6 @@ export const RFAFooter: React.FC = () => {
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
               <a
-                target = "_blank"
                 className="hyperlink C06202"
                 href={"mailto:info@roboticsforall.net"}
               >
@@ -70,13 +69,18 @@ export const RFAFooter: React.FC = () => {
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
-              <a target = "_blank" className="hyperlink C06202" href={"tel:+6506659734"}>
+              <a className="hyperlink C06202" href={"tel:+6506659734"}>
                 (650)-665-9734
               </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
               ADDRESS |{" "}
-              <a target = "_blank" href = "" className="C06202 hyperlink">P.O. Box 56, Palo Alto, CA 94302</a>
+              <a target = "_blank" 
+                href = "https://www.google.com/maps/place/Palo+Alto,+CA+94302/@37.4400162,-122.1487548,15z/data=!3m1!4b1!4m8!1m2!2m1!1sP.O.+Box+56,+Palo+Alto,+CA+94302!3m4!1s0x808fbb1b431541ef:0x2d06ff09a989536f!8m2!3d37.44!4d-122.14" 
+                className="C06202 hyperlink"
+              >
+                  P.O. Box 56, Palo Alto, CA 94302
+              </a>
             </div>
             <div className="d-flex align-items-baseline">
               <a target = "_blank" href = "https://www.facebook.com/roboticsforalleducation/"><Image style={iconSize} src={facebookIcon} /></a>

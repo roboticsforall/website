@@ -115,18 +115,19 @@ export const RFANavbar: React.FC = () => {
                 News
               </Link>
             </li>
-            <li className="center-align flex-column text-center donate-nav-item dropdown">
-              <a
-                className="hyperlink donate-nav-link dropdown-toggle"
+            <li className="nav-item donate-nav-item dropdown">
+              <Link
+                to = "/donate"
+                className="mt-2 nav-link donate-nav-link dropdown-toggle"
                 id="navbarDropdown"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
                 Donate
-              </a>
+              </Link>
               <div
-                className="dropdown-menu border"
+                className="dropdown-menu"
                 aria-labelledby="navbarDropdown"
               >
                 <a
