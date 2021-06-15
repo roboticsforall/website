@@ -3,7 +3,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../App.css";
 
-export default function RFAVolOverviewCard(props) {
+export const RFAVolOverviewCard: React.FC<{
+  backgroundcolor: string;
+  buttonColor: string;
+  arrowLocation: string;
+  learnMoreLink: string;
+  title: string;
+  description: string;
+  applyLink: string;
+  buttonfloat: string;
+  cardfloat: string;
+}> = (props) => {
   const positionsTitle = {
     fontFamily: "Oswald-Medium",
     fontSize: "3.2vmax",
@@ -82,4 +92,4 @@ export default function RFAVolOverviewCard(props) {
       </Row>
     </Container>
   );
-}
+};

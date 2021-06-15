@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container, Row, Tab, Nav, Button } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import RFAPositionCard from "@/components/RFAPositionCard";
-import RFAPositionCard1 from "@/components/RFAPositionCard1";
-import RFAPositionCard2 from "@/components/RFAPositionCard2";
-import RFAPosButton from "@/components/RFAPosButton";
+import { RFAPositionCard } from "@/components/RFAPositionCard";
+import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
+import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
+import { RFAPosButton } from "@/components/RFAPosButton";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";
@@ -13,7 +13,7 @@ import TasksYellow from "@/media/Graphics/tasksYellow.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import QuestionMark from "@/media/Graphics/questionMark.png";
 
-export default function RFAPublicityInternPos(props) {
+export const RFAPublicityInternPos: React.FC<{}> = (props) => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
     color: "#000000",
@@ -60,14 +60,10 @@ export default function RFAPublicityInternPos(props) {
       <Container>
         <br></br>
         <br></br>
-        <RFAPosButton
-          title={"Apply Now!"}
-          backgroundColor={"#ffcc00"}
-          link="volunteer-volunteerapp"
-        />
+        <RFAPosButton title={"Apply Now!"} link="volunteer-volunteerapp" />
         <br></br>
         <br></br>
-        <Tab.Container activeKey={key} onSelect={(key) => setKey(key)}>
+        <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
               <Nav.Link
@@ -236,4 +232,4 @@ export default function RFAPublicityInternPos(props) {
       </Container>
     </div>
   );
-}
+};

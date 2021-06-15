@@ -3,7 +3,7 @@ import { Row } from "react-bootstrap";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 
-export default function RFANavbar(props) {
+export const RFANavbar: React.FC<{}> = (props) => {
   const logoImageSize = {
     height: "7vh",
   };
@@ -143,6 +143,7 @@ export default function RFANavbar(props) {
                   href="https://www.bonfire.com/store/rfa/"
                   target="_blank"
                   className="dropdown-item"
+                  rel="noreferrer"
                 >
                   Merch
                 </a>
@@ -156,4 +157,4 @@ export default function RFANavbar(props) {
       </nav>
     </Row>
   );
-}
+};

@@ -1,9 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import RFAVolOverviewCircle from "./RFAVolOverviewCircle";
+import { RFAVolOverviewCircle } from "./RFAVolOverviewCircle";
 
-export default function RFAVolOverviewHeader(props) {
+export const RFAVolOverviewHeader: React.FC<{
+  title: string;
+  description: string;
+  image: string;
+  headerTextColor: string;
+}> = (props) => {
   const headerText: React.CSSProperties = {
     position: "relative",
     textAlign: "center",
@@ -98,4 +103,4 @@ export default function RFAVolOverviewHeader(props) {
       </Container>
     </Row>
   );
-}
+};

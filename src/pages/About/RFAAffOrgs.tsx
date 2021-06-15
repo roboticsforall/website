@@ -1,14 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
-import RFAAffOrgsCard from "@/components/RFAAboutAffOrgsCard";
-import RFAHeader from "@/components/RFAHeader";
+import { RFAAboutAffOrgsCard } from "@/components/RFAAboutAffOrgsCard";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 
-export default function RFAAffOrgs(props) {
+export const RFAAffOrgs: React.FC<{}> = (props) => {
   return (
     <div>
       <RFAHeader
@@ -22,7 +22,7 @@ export default function RFAAffOrgs(props) {
       <Container>
         <br />
         <br />
-        <RFAAffOrgsCard
+        <RFAAboutAffOrgsCard
           website={"https://www.tutoringforall.org"}
           logo={TFALogo}
           linkColor={"#c06204"}
@@ -35,7 +35,7 @@ export default function RFAAffOrgs(props) {
         />
         <br />
         <br />
-        <RFAAffOrgsCard
+        <RFAAboutAffOrgsCard
           website={"https://www.mentoringforall.org"}
           logo={MFALogo}
           linkColor={"#248f47"}
@@ -48,7 +48,7 @@ export default function RFAAffOrgs(props) {
         />
         <br />
         <br />
-        <RFAAffOrgsCard
+        <RFAAboutAffOrgsCard
           website={"https://craftsforcharity.com/"}
           logo={CFCLogo}
           linkColor={"#006bd6"}
@@ -62,4 +62,4 @@ export default function RFAAffOrgs(props) {
       </Container>
     </div>
   );
-}
+};

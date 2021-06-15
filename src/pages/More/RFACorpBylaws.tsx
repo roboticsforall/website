@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Nav, Button } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import RFABylawEntry from "@/components/RFABylawEntry";
+import { RFABylawEntry } from "@/components/RFABylawEntry";
 import bylawsListJSON from "@/posts/downloads/corp_bylaws.json";
 
-export default function RFACorpBylaws(props) {
+export const RFACorpBylaws: React.FC<{}> = (props) => {
   const background: React.CSSProperties = {
     background: "rgba(255, 204, 0, 0.5)",
     borderRadius: "15px",
@@ -55,4 +55,4 @@ export default function RFACorpBylaws(props) {
       </Container>
     </div>
   );
-}
+};

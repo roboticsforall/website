@@ -2,7 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function RFABylawEntry(props) {
+export const RFABylawEntry: React.FC<{
+  date: string;
+  bylawName: string;
+  download: string;
+}> = (props) => {
   const background: React.CSSProperties = {
     backgroundColor: "white",
     borderRadius: "20px",
@@ -29,4 +33,4 @@ export default function RFABylawEntry(props) {
       </Col>
     </Row>
   );
-}
+};

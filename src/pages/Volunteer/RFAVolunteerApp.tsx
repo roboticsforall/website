@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Container, Row, Tab, Nav } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
+import { Container, Tab, Nav } from "react-bootstrap";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import RFAPositionCard from "@/components/RFAPositionCard";
+import { RFAPositionCard } from "@/components/RFAPositionCard";
 
-export default function VolunteerApp(props) {
+export const VolunteerApp: React.FC<{}> = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle: React.CSSProperties = {
     color: "#000000",
@@ -38,7 +38,7 @@ export default function VolunteerApp(props) {
       <br></br>
       <br></br>
       <Container>
-        <Tab.Container activeKey={key} onSelect={(key) => setKey(key)}>
+        <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
               <Nav.Link
@@ -105,4 +105,4 @@ export default function VolunteerApp(props) {
       </Container>
     </div>
   );
-}
+};

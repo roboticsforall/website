@@ -2,7 +2,11 @@ import React from "react";
 import { Row, Image, Container } from "react-bootstrap";
 import "../App.css";
 
-export default function RFAVolOverviewCard(props) {
+export const RFAVolOverviewImg: React.FC<{
+  color: string;
+  title: string;
+  image: string;
+}> = (props) => {
   const cardTitle = {
     fontFamily: "Oswald-Medium",
     fontSize: "2.5vmax",
@@ -13,7 +17,11 @@ export default function RFAVolOverviewCard(props) {
   };
   return (
     <div>
-      <a target="_blank" href="https://www.bonfire.com/store/rfa/">
+      <a
+        target="_blank"
+        href="https://www.bonfire.com/store/rfa/"
+        rel="noreferrer"
+      >
         <Image style={overviewImgSize} src={props.image} />
       </a>
       <p className="text-center" style={cardTitle}>
@@ -21,4 +29,4 @@ export default function RFAVolOverviewCard(props) {
       </p>
     </div>
   );
-}
+};

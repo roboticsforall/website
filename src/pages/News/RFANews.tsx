@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import RFAHeader from "@/components/RFAHeader";
+import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
 import mercurynews from "@/media/News/Mercury-News.png";
@@ -31,18 +31,18 @@ const responsive = {
   },
 };
 
-export default function RFANews() {
-  let [images, setImages] = useState([]);
+export const RFANews: React.FC<{}> = () => {
+  const [images, setImages] = useState<any[]>([]);
   useEffect(() => {
     (async () => {
-      let data = await fetch(
+      const data = await fetch(
         "https://graph.instagram.com/me/media?fields=media_count,media_type,permalink,media_url&&access_token=IGQVJYTWU0MzNrQW85YkVBdTZA5ck5GQnI5OF95Wm81SWN1U3pyaUlLbXdqU2pKZAGI3cEcxRjNqT013M0tDUGZAFazhQQ2dDQWQ5cWpPMTc2M3VJZA2NmYlJhaGRUT2dTaElURjhadHE2U1lFQlUzV2dlNAZDZD"
       );
       setImages((await data.json()).data);
     })();
   }, []);
 
-  let [photos, setPhotos] = useState([]);
+  const [photos, setPhotos] = useState<any[]>([]);
   useEffect(() => {
     Promise.all(photosImport).then(setPhotos);
   }, []);
@@ -323,4 +323,4 @@ export default function RFANews() {
       </Container>
     </div>
   );
-}
+};

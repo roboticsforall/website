@@ -1,7 +1,15 @@
 import React from "react";
 import { Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
 
-export default function RFAFormInput(props) {
+export const RFAFormInput: React.FC<{
+  type: string;
+  height: string;
+  id: string;
+  name: string;
+  placeholder: string;
+  value?: string;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+}> = (props) => {
   const inputStyle = {
     borderRadius: 15,
     borderWidth: 1,
@@ -25,4 +33,4 @@ export default function RFAFormInput(props) {
       className="w-100"
     ></input>
   );
-}
+};

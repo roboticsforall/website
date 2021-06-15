@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import dropdownIcon from "@/media/Shapes/brownarrow.png"; // add correct image here
 
-export default function RFAFAQDropdowns(props) {
+export const RFAFAQDropdowns: React.FC<{
+  question: string;
+  answer: JSX.Element | string;
+}> = (props) => {
   const [dropdownAnswerDisplay, setdropdownAnswerDisplay] = useState("none");
   const [dropdownBGColor, setdropdownBGColor] = useState("#ffcc0080");
   const [dropdownTextColor, setdropdownTextColor] = useState("#c06204");
@@ -74,4 +77,4 @@ export default function RFAFAQDropdowns(props) {
       </div>
     </div>
   );
-}
+};

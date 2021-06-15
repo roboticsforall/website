@@ -17,9 +17,9 @@ import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
 import YMCA from "@/media/Sponsors/ymca.png";
 
-import RFAHomeAffOrgsCard from "@/components/RFAHomeAffOrgsCard";
+import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
 
-export default function RFAHomePage(props) {
+export const RFAHomePage: React.FC<{}> = (props) => {
   const videoRow: React.CSSProperties = {
     backgroundColor: "#FFCC00",
   };
@@ -193,4 +193,4 @@ export default function RFAHomePage(props) {
       </Container>
     </>
   );
-}
+};

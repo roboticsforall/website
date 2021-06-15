@@ -1,7 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-export default function RFAPositionCard(props) {
+export const RFAPositionCard: React.FC<{
+  posHeader: string;
+  posDescription: JSX.Element;
+  color?: string;
+  borderColor?: string;
+}> = (props) => {
   const posHeader: React.CSSProperties = {
     fontFamily: "Mazzard-H-Extrabold",
     letterSpacing: "0.25em",
@@ -40,4 +45,4 @@ export default function RFAPositionCard(props) {
       </div>
     </Container>
   );
-}
+};

@@ -6,15 +6,15 @@ import TeacherToby from "@/media/TobyImages/teacher toby.webp";
 import BusinessToby from "@/media/TobyImages/toby business.webp";
 import InternToby from "@/media/TobyImages/publicity intern.webp";
 import TAToby from "@/media/TobyImages/TA.webp";
-import RFAVolOverviewImg from "@/components/RFAVolOverviewImg";
-import RFAVolOverviewCard from "@/components/RFAVolOverviewCard";
+import { RFAVolOverviewImg } from "@/components/RFAVolOverviewImg";
+import { RFAVolOverviewCard } from "@/components/RFAVolOverviewCard";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import RFAVolOverviewHeader from "@/components/RFAVolOverviewHeader";
+import { RFAVolOverviewHeader } from "@/components/RFAVolOverviewHeader";
 
 //import RFAAffOrgs from "./components/About/RFAAffOrgs";
 //import headerBlobYellow from "./media/HeaderBlobs/yellow.png";
 
-export default function RFAVolOverview(props) {
+export const RFAVolOverview: React.FC<{}> = (props) => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "5.5vmax",
@@ -120,4 +120,4 @@ export default function RFAVolOverview(props) {
       </Container>
     </>
   );
-}
+};

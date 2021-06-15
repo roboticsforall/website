@@ -2,7 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function RFAMeetingEntry(props) {
+export const RFAMeetingEntry: React.FC<{
+  date: string;
+  agendaDownload: string;
+  minutesDownload: string;
+}> = (props) => {
   const background: React.CSSProperties = {
     backgroundColor: "white",
     borderRadius: "20px",
@@ -34,4 +38,4 @@ export default function RFAMeetingEntry(props) {
       </Col>
     </Row>
   );
-}
+};

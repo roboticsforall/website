@@ -2,7 +2,9 @@ import React from "react";
 import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function RFAPosButton(props) {
+export const RFAPosButton: React.FC<{ link: string; title: string }> = (
+  props
+) => {
   const button = {
     color: "#000000",
     background: "#FA8D1F",
@@ -26,4 +28,4 @@ export default function RFAPosButton(props) {
       </Row>
     </Link>
   );
-}
+};
