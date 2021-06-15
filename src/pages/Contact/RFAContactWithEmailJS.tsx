@@ -12,7 +12,7 @@ export const RFAContactWithEmailJS: React.FC<{
   address: string;
   telephone: string;
   email: string;
-}> = (props) => {
+}> = () => {
   const contactInfo = {
     fontFamily: "BeVietnam-SemiBold",
   };
@@ -87,14 +87,15 @@ export const RFAContactWithEmailJS: React.FC<{
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"tel:+(650)-665-9734}
+                  href={"tel:+(650)-665-9734"}
                 >
                   +(650)-665-9734
                 </a>
               </h3>
               <br></br>
               <h3>
-                ADDRESS | <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
+                ADDRESS |{" "}
+                <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
               </h3>
             </Row>
             <Row>Add Icons here</Row>

@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "jsx": "preserve",
     "paths": {
       "@/*": ["src/*"]

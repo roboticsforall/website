@@ -1,6 +1,5 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import "../App.css";
 
 export const RFAVolOverviewImg: React.FC<{
   color: string;

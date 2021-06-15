@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { RFAVolOverviewCircle } from "./RFAVolOverviewCircle";
 
 export const RFAVolOverviewHeader: React.FC<{
@@ -84,7 +83,7 @@ export const RFAVolOverviewHeader: React.FC<{
             </Col>
           </Row>
 
-          <div className = "mb-5"style={headerText}>
+          <div className="mb-5" style={headerText}>
             <Row className="justify-content-center">
               <h1 style={pageHeader} className="text-center header-size">
                 {props.title}
