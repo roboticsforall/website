@@ -4,13 +4,13 @@ import RFAHeader from "@/components/RFAHeader";
 import RFAFAQDropdowns from "@/components/RFAFAQDropdowns";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png"; // add correct image here
 import classFAQJSON from "@/posts/faqs/class_faqs.json";
-import ReactMarkdown from "react-markdown";
+import Markdown from "markdown-to-jsx";
 
 export default function RFAClassFAQ(props) {
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#fa8d1f "}
+        headerTextColor={"#fa8d1f"}
         image={headerBlobOrange}
         title={"Questions?"}
         description={
@@ -28,9 +28,7 @@ export default function RFAClassFAQ(props) {
         ))}
         <RFAFAQDropdowns
           question={classFAQJSON.upcoming_courses_question}
-          answer={
-            <ReactMarkdown children={classFAQJSON.upcoming_courses_answer} />
-          }
+          answer={<Markdown children={classFAQJSON.upcoming_courses_answer} />}
         />
 
         {/* {[
