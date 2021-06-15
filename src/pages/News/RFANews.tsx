@@ -10,7 +10,7 @@ import "react-multi-carousel/lib/styles.css";
 
 const photosImport = Array.from(
   { length: 10 },
-  (_, i) => import(`../../media/Photos/${i + 1}.jpg`)
+  (_, i) => import(`../../media/Photos/${(i + 1).toString()}.jpg`)
 );
 
 const responsive = {
