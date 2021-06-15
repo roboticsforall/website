@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const RFAHeader: React.FC<{
@@ -15,7 +14,6 @@ export const RFAHeader: React.FC<{
   };
   const pageHeader = {
     fontFamily: "Mazzard-H-Extrabold",
-    // transform: 'rotate(358deg)',
     color: props.headerTextColor,
   };
   const headerBlob = {

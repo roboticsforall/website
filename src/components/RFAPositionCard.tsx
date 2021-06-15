@@ -18,11 +18,6 @@ export const RFAPositionCard: React.FC<{
     color: "#000000",
   };
 
-  const con: React.CSSProperties = {
-    width: "75%",
-    margin: "auto",
-    marginBottom: "40px",
-  };
   const posContainer: React.CSSProperties = {
     backgroundColor: props.color,
     borderRadius: "0 0 15px 15px",

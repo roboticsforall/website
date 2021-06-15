@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Image, Container } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import "../App.css";
 
 export const RFAVolOverviewImg: React.FC<{

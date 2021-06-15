@@ -1,14 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Container, Col, Image } from "react-bootstrap";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import homePageVideo from "@/media/homePageVideo.mp4";
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
 import LM from "@/media/Sponsors/lm.png";
 import TF from "@/media/Sponsors/tf.png";
-// import MW from '@/media/Sponsors/mw.png';
 import WMM from "@/media/Sponsors/wmm.png";
 import Google from "@/media/Sponsors/google.png";
 import NSP from "@/media/Sponsors/nsp.png";
@@ -19,7 +17,7 @@ import YMCA from "@/media/Sponsors/ymca.png";
 
 import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
 
-export const RFAHomePage: React.FC<{}> = (props) => {
+export const RFAHomePage: React.FC = () => {
   const videoRow: React.CSSProperties = {
     backgroundColor: "#FFCC00",
   };

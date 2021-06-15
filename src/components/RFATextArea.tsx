@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Navbar, NavDropdown, Nav } from "react-bootstrap";
 
 export const RFATextArea: React.FC<{
   id: string;
@@ -16,7 +15,6 @@ export const RFATextArea: React.FC<{
     paddingLeft: "0.5em",
     fontSize: "1.2em",
     margin: "auto",
-    //marginBottom: "0.5em"
   };
 
   return (

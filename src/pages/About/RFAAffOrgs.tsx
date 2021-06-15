@@ -8,7 +8,7 @@ import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 
-export const RFAAffOrgs: React.FC<{}> = (props) => {
+export const RFAAffOrgs: React.FC = () => {
   return (
     <div>
       <RFAHeader

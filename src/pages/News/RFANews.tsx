@@ -31,18 +31,28 @@ const responsive = {
   },
 };
 
-export const RFANews: React.FC<{}> = () => {
-  const [images, setImages] = useState<any[]>([]);
+export const RFANews: React.FC = () => {
+  const [images, setImages] = useState(
+    [] as {
+      media_type: string;
+      media_url: string;
+      key: string;
+      permalink: string;
+      id: string;
+    }[]
+  );
   useEffect(() => {
     (async () => {
       const data = await fetch(
         "https://graph.instagram.com/me/media?fields=media_count,media_type,permalink,media_url&&access_token=IGQVJYTWU0MzNrQW85YkVBdTZA5ck5GQnI5OF95Wm81SWN1U3pyaUlLbXdqU2pKZAGI3cEcxRjNqT013M0tDUGZAFazhQQ2dDQWQ5cWpPMTc2M3VJZA2NmYlJhaGRUT2dTaElURjhadHE2U1lFQlUzV2dlNAZDZD"
       );
-      setImages((await data.json()).data);
+      const json = await data.json();
+      if (json.error) console.error("Importing images failed", json.error);
+      else setImages(json.data);
     })();
   }, []);
 
-  const [photos, setPhotos] = useState<any[]>([]);
+  const [photos, setPhotos] = useState([] as { default: string }[]);
   useEffect(() => {
     Promise.all(photosImport).then(setPhotos);
   }, []);

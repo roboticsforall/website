@@ -4,7 +4,7 @@ import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
 
-export const VolunteerApp: React.FC<{}> = () => {
+export const VolunteerApp: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle: React.CSSProperties = {
     color: "#000000",

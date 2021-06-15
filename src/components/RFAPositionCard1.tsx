@@ -23,12 +23,6 @@ export const RFAPositionCard1: React.FC<{
     maxHeight: "250px",
   };
 
-  const con: React.CSSProperties = {
-    width: "75%",
-    margin: "auto",
-    marginBottom: "40px",
-  };
-
   return (
     <Container className="pos-container">
       <div>

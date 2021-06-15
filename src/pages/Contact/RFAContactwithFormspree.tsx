@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/Blob-RFA-4.png"; // add correct image and filepath here
 import { useForm, ValidationError } from "@formspree/react";
@@ -12,9 +12,7 @@ export const RFAContactwithFormspree: React.FC<{
   telephone: string;
   email: string;
 }> = (props) => {
-  // const [state, handleSubmit] = useForm("xeqvkqbo");
   const [state, handleSubmit] = useForm("mzbybwgz");
-  const [submitMessage, handleMessage] = useState("");
 
   const checkFormState = () => {
     if (state.succeeded) {

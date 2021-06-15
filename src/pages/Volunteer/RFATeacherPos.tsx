@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Tab, Nav, Button } from "react-bootstrap";
+import { Container, Tab, Nav } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
@@ -15,7 +15,7 @@ import TasksOrange from "@/media/Graphics/tasksOrange.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import QuestionMark from "@/media/Graphics/questionMark.png";
 
-export const RFATeacherPos: React.FC<{}> = (props) => {
+export const RFATeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
     color: "#000000 !important",
@@ -37,22 +37,8 @@ export const RFATeacherPos: React.FC<{}> = (props) => {
     padding: "20px",
     height: "100%",
   };
-  const button = {
-    background: "#FA8D1F",
-    fontFamily: "Mazzard-H-Extrabold",
-    fontSize: "45px",
-    borderColor: "#FA8D1F",
-    // width: "75%",
-    borderRadius: "15px",
-    margin: "auto",
-  };
   const black = {
     color: "#000000",
-  };
-
-  const con = {
-    width: "75%",
-    margin: "auto",
   };
 
   return (

@@ -6,7 +6,7 @@ import headerBlobOrange from "@/media/HeaderBlobs/orange.png"; // add correct im
 import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import Markdown from "markdown-to-jsx";
 
-export const RFAClassFAQ: React.FC<{}> = (props) => {
+export const RFAClassFAQ: React.FC = () => {
   return (
     <div>
       <RFAHeader

@@ -1,12 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import {
-  useLocation,
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { RFANavbar } from "./components/RFANavbar";
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
@@ -29,9 +24,7 @@ import { RFANews } from "./pages/News/RFANews";
 import { RFACorpBylaws } from "./pages/More/RFACorpBylaws";
 import { RFAMeetingRecords } from "./pages/More/RFAMeetingRecords";
 
-export const App: React.FC<{}> = (props) => {
-  const location = useLocation();
-
+export const App: React.FC = () => {
   return (
     <Router>
       <RFANavbar />

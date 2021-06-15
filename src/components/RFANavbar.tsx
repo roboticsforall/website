@@ -3,22 +3,12 @@ import { Row } from "react-bootstrap";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 
-export const RFANavbar: React.FC<{}> = (props) => {
+export const RFANavbar: React.FC = () => {
   const logoImageSize = {
     height: "7vh",
   };
   const header = {
     fontFamily: "Oswald-Medium",
-  };
-  // const navItems = {
-  //     color: "#ffcc00",
-  //     fontFamily: "BeVietnam-ExtraBold",
-  //     fontSize: "1.0em"
-  // }
-
-  const donateBtn = {
-    borderRadius: "1em",
-    backgroundColor: "#3399ff",
   };
 
   return (

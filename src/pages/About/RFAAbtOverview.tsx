@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAHeader } from "@/components/RFAHeader";
 
-export const RFAAbtOverview: React.FC<{}> = (props) => {
+export const RFAAbtOverview: React.FC = () => {
   const title: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "10vh",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Tab, Nav, Button } from "react-bootstrap";
+import { Container, Tab, Nav } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
@@ -13,7 +13,7 @@ import TasksYellow from "@/media/Graphics/tasksYellow.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import QuestionMark from "@/media/Graphics/questionMark.png";
 
-export const RFAPublicityInternPos: React.FC<{}> = (props) => {
+export const RFAPublicityInternPos: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
     color: "#000000",
@@ -32,16 +32,6 @@ export const RFAPublicityInternPos: React.FC<{}> = (props) => {
     fontFamily: "mazzard-h-extrabold",
     fontSize: "x-large",
     padding: "30px",
-  };
-  const button = {
-    color: "#000000",
-    background: "#FA8D1F",
-    fontFamily: "mazzard-h-extrabold",
-    fontSize: "45px",
-    borderColor: "#FA8D1F",
-    // width: "75%",
-    borderRadius: "15px",
-    margin: "auto",
   };
   const black = {
     color: "#000000",

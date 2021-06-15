@@ -1,9 +1,8 @@
 import React from "react";
 import "@/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap"; //Col,
+import { Container, Row, Col } from "react-bootstrap";
 import TeacherToby from "@/media/TobyImages/teacher toby.webp";
-import BusinessToby from "@/media/TobyImages/toby business.webp";
 import InternToby from "@/media/TobyImages/publicity intern.webp";
 import TAToby from "@/media/TobyImages/TA.webp";
 import { RFAVolOverviewImg } from "@/components/RFAVolOverviewImg";
@@ -11,10 +10,7 @@ import { RFAVolOverviewCard } from "@/components/RFAVolOverviewCard";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAVolOverviewHeader } from "@/components/RFAVolOverviewHeader";
 
-//import RFAAffOrgs from "./components/About/RFAAffOrgs";
-//import headerBlobYellow from "./media/HeaderBlobs/yellow.png";
-
-export const RFAVolOverview: React.FC<{}> = (props) => {
+export const RFAVolOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "5.5vmax",
@@ -27,12 +23,7 @@ export const RFAVolOverview: React.FC<{}> = (props) => {
     fontSize: "1.3vmax",
     color: "black",
   };
-  const positions: React.CSSProperties = {
-    // marginLeft: "auto",
-    // marginRight: "auto",
-    // width: "120vh",
-    // textAlign: "center",
-  };
+
   return (
     <>
       <RFAVolOverviewHeader

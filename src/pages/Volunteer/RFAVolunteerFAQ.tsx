@@ -5,7 +5,7 @@ import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png"; // add correct image here
 import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
-export const RFAVolunteerFAQ: React.FC<{}> = (props) => {
+export const RFAVolunteerFAQ: React.FC = () => {
   const heading = {
     fontFamily: "Oswald-Medium",
     color: "#532f0A",

@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Nav, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAMeetingEntry } from "@/components/RFAMeetingEntry";
 import meetingRecordsListJSON from "@/posts/downloads/meeting_records.json";
 
-export const RFAMeetingRecords: React.FC<{}> = (props) => {
+export const RFAMeetingRecords: React.FC = () => {
   const background: React.CSSProperties = {
     background: "rgba(255, 204, 0, 0.5)",
     borderRadius: "15px",

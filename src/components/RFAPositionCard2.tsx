@@ -21,12 +21,6 @@ export const RFAPositionCard2: React.FC<{
     marginBottom: "10px",
   };
 
-  const con: React.CSSProperties = {
-    width: "75%",
-    margin: "auto",
-    marginBottom: "40px",
-  };
-
   return (
     <Container className="pos-container">
       <div>
