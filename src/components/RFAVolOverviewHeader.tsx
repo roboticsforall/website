@@ -79,7 +79,7 @@ export default function RFAVolOverviewHeader(props) {
             </Col>
           </Row>
 
-          <div style={headerText}>
+          <div className = "mb-5"style={headerText}>
             <Row className="justify-content-center">
               <h1 style={pageHeader} className="text-center header-size">
                 {props.title}

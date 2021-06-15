@@ -1,11 +1,21 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Container, Col, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import homePageVideo from "@/media/homePageVideo.mp4";
+
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
+
+import house1 from "@/media/HoverImages/house_1.png";
+import house2 from "@/media/HoverImages/house_1.png";
+import apple1 from "@/media/HoverImages/apple_1.png";
+import apple2 from "@/media/HoverImages/apple_1.png";
+import world1 from "@/media/HoverImages/world_1.png";
+import world2 from "@/media/HoverImages/world_1.png";
+
 import LM from "@/media/Sponsors/lm.png";
 import TF from "@/media/Sponsors/tf.png";
 // import MW from '@/media/Sponsors/mw.png';
@@ -48,9 +58,6 @@ export default function RFAHomePage(props) {
   const sponsorImageSize: React.CSSProperties = {
     height: "7vh",
   };
-  const imageSize: React.CSSProperties = {
-    height: "20vh",
-  };
 
   return (
     <>
@@ -80,7 +87,7 @@ export default function RFAHomePage(props) {
       <Row className="p-5 yellow-row">
         <Container>
           <Row>
-            {[
+            {/* {[
               {
                 label: "STUDENTS & PARENTS",
                 logo: TFALogo,
@@ -96,26 +103,56 @@ export default function RFAHomePage(props) {
                 logo: TFALogo,
                 color: "#fa8d1f",
               },
-            ].map((buttons, i) => (
-              <Col key={i} md={4} className="text-center">
-                <Image
-                  key={buttons.logo}
-                  style={imageSize}
-                  className="mb-3"
-                  src={buttons.logo}
-                />
-                <h1
-                  key={buttons.label}
-                  style={{
-                    color: buttons.color,
-                    fontFamily: "Oswald-Medium",
-                    textAlign: "center",
-                  }}
-                >
-                  {buttons.label}
-                </h1>
+            ].map((buttons, i) => ( */}
+              <Col md={4} className="text-center">
+                <Link to = "/individlearners" className = "hyperlink">
+                  <Image
+                    className="mb-3 home-page-house-img"
+                    // src = {house1}
+                  />
+                  <h1
+                    style={{
+                      fontFamily: "Oswald-Medium",
+                      textAlign: "center",
+                    }}
+                  >
+                    Students and Parents
+                  </h1>
+                </Link>
               </Col>
-            ))}
+              <Col md={4} className="text-center">
+                <Link to = "/forschools" className = "hyperlink">
+                    <Image
+                      className="mb-3 home-page-apple-img"
+                      // src = {house1}
+                    />
+                    <h1
+                      style={{
+                        fontFamily: "Oswald-Medium",
+                        textAlign: "center",
+                      }}
+                    >
+                      School
+                    </h1>
+                </Link>
+              </Col>
+              <Col md={4} className="text-center">
+                <Link to = "/volunteer-overview" className = "hyperlink">
+                  <Image
+                    className="mb-3 home-page-world-img"
+                    // src = {house1}
+                  />
+                  <h1
+                    style={{
+                      fontFamily: "Oswald-Medium",
+                      textAlign: "center",
+                    }}
+                  >
+                    Volunteers
+                  </h1>
+                </Link>
+              </Col>
+            {/* ))} */}
           </Row>
         </Container>
       </Row>

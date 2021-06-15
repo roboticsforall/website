@@ -23,6 +23,7 @@ import RFAVolunteerApp from "./pages/Volunteer/RFAVolunteerApp";
 //About
 import RFAAffOrgs from "./pages/About/RFAAffOrgs";
 import RFAAbtOverview from "./pages/About/RFAAbtOverview";
+import RFAContact from "./pages/Contact/RFAContactwithFormspree";
 //News
 import RFANews from "./pages/News/RFANews";
 //More
@@ -45,7 +46,7 @@ export default function App(props) {
                 <Route path="/enroll-classfaq" component={RFAClassFAQ} />
                 <Route path="/enroll-register" component={RFARegister} />
                 <Route
-                  path="/volunteer-voloverview"
+                  path="/volunteer-overview"
                   component={RFAVolOverview}
                 />
                 <Route
@@ -62,6 +63,7 @@ export default function App(props) {
                   component={RFAVolunteerApp}
                 />
                 <Route path="/about-afforgs" component={RFAAffOrgs} />
+                <Route path = "/contact" component = {RFAContact}/>
                 <Route path="/news" component={RFANews} />
                 <Route path="/more-privacypolicy" component={RFANews} />
                 <Route path="/more-websitetos" component={RFANews} />

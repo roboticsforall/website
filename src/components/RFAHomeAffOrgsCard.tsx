@@ -8,7 +8,7 @@ export default function RFAHomeAffOrgsCard(props) {
     textAlign: "center",
   };
   const imageSize: React.CSSProperties = {
-    height: "20vh",
+    height: "12vmax",
   };
   const borderRadius = {
     borderTopLeftRadius: 15,

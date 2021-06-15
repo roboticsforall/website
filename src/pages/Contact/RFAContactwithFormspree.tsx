@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import RFAHeader from "@/components/RFAHeader";
-import headerBlobYellow from "@/media/HeaderBlobs/Blob-RFA-4.png"; // add correct image and filepath here
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 import { useForm, ValidationError } from "@formspree/react";
 import RFAFormInput from "@/components/RFAFormInput";
 import RFATextArea from "@/components/RFATextArea";
@@ -57,7 +57,7 @@ export default function RFAContactwithFormspree(props) {
         }
       />
 
-      <Container className="border">
+      <Container>
         <br />
         <Row className="justify-content-between">
           <Col style={contactInfo} md={5}>
@@ -67,9 +67,9 @@ export default function RFAContactwithFormspree(props) {
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"mailto:" + props.email}
+                  href={"mailto:info@roboticsforall.net"}
                 >
-                  {props.email}
+                  info@roboticsforall.net
                 </a>
               </h3>
               <br></br>
@@ -78,14 +78,14 @@ export default function RFAContactwithFormspree(props) {
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"tel:+" + props.telephone}
+                  href={"tel:+(650)-665-9734"}
                 >
-                  +{props.telephone}
+                  +(650)-665-9734
                 </a>
               </h3>
               <br></br>
               <h3>
-                ADDRESS | <p style={linkStyle}>{props.address}</p>
+                ADDRESS | <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
               </h3>
             </Row>
             <Row></Row>
@@ -130,12 +130,9 @@ export default function RFAContactwithFormspree(props) {
             </Form>
           </Col>
         </Row>
+
         <br></br>
       </Container>
     </>
   );
-}
-
-function App() {
-  return <ContactForm />;
 }
