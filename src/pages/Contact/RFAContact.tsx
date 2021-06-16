@@ -104,18 +104,21 @@ export const RFAContact: React.FC<{
               <a
                 target="_blank"
                 href="https://www.facebook.com/roboticsforalleducation/"
+                rel="noreferrer"
               >
                 <Image style={iconSize} src={facebookIcon} />
               </a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/roboticsforall/"
+                rel="noreferrer"
               >
                 <Image style={iconSize} src={instagramIcon} />
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/company/robotics-for-all"
+                rel="noreferrer"
               >
                 <Image style={iconSize} src={linkedin} />
               </a>

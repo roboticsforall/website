@@ -10,7 +10,7 @@ export const RFAWebsiteTOS: React.FC = () => {
   #ffcc00
   rgb(255, 204, 0, 0.5)
   */
-  const ActiveStyle = {
+  const ActiveStyle: React.CSSProperties = {
     color: "#000000",
     background: "rgb(255, 204, 0, 0.5)",
     border: 0,
@@ -25,7 +25,7 @@ export const RFAWebsiteTOS: React.FC = () => {
   rgb(252, 175, 98, 0.5)
   */
 
-  const ActiveStyle2 = {
+  const ActiveStyle2: React.CSSProperties = {
     color: "#000000",
     background: "rgb(252, 175, 98, 0.5)",
     border: 0,
@@ -37,7 +37,7 @@ export const RFAWebsiteTOS: React.FC = () => {
   };
 
   /*right side with no styling, inactive*/
-  const inActiveStyle = {
+  const inActiveStyle: React.CSSProperties = {
     color: "#000000",
     background: "#fff",
     border: 0,

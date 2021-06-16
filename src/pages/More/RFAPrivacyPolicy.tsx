@@ -6,7 +6,7 @@ import { RFAWebsiteTOSCard } from "@/components/RFAWebsiteTOSCard";
 import { RFAWebsiteTOSCard2 } from "@/components/RFAWebsiteTOSCard2";
 
 export const RFAPrivacyPolicy: React.FC = () => {
-  const ActiveStyle = {
+  const ActiveStyle: React.CSSProperties = {
     color: "#000000",
     background: "rgb(255, 204, 0, 0.5)",
     border: 0,
@@ -17,7 +17,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     textAlign: "left",
   };
 
-  const ActiveStyle2 = {
+  const ActiveStyle2: React.CSSProperties = {
     color: "#000000",
     background: "rgb(252, 175, 98, 0.5)",
     border: 0,
@@ -28,7 +28,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     textAlign: "left",
   };
 
-  const inActiveStyle = {
+  const inActiveStyle: React.CSSProperties = {
     color: "#000000",
     background: "#fff",
     border: 0,
@@ -39,7 +39,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     textAlign: "left",
   };
 
-  const positionsDescription = {
+  const positionsDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-SemiBold",
     fontWeight: 600,
     color: "black",

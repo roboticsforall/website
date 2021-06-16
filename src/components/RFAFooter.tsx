@@ -91,6 +91,7 @@ export const RFAFooter: React.FC = () => {
                 target="_blank"
                 href="https://www.google.com/maps/place/Palo+Alto,+CA+94302/@37.4400162,-122.1487548,15z/data=!3m1!4b1!4m8!1m2!2m1!1sP.O.+Box+56,+Palo+Alto,+CA+94302!3m4!1s0x808fbb1b431541ef:0x2d06ff09a989536f!8m2!3d37.44!4d-122.14"
                 className="C06202 hyperlink"
+                rel="noreferrer"
               >
                 P.O. Box 56, Palo Alto, CA 94302
               </a>
@@ -99,22 +100,29 @@ export const RFAFooter: React.FC = () => {
               <a
                 target="_blank"
                 href="https://www.facebook.com/roboticsforalleducation/"
+                rel="noreferrer"
               >
                 <Image style={iconSize} src={facebookIcon} />
               </a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/roboticsforall/"
+                rel="noreferrer"
               >
                 <Image style={iconSize} src={instagramIcon} />
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/company/robotics-for-all"
+                rel="noreferrer"
               >
                 <Image style={iconSize} src={linkedin} />
               </a>
-              <a target="_blank" href="https://www.guidestar.org/">
+              <a
+                target="_blank"
+                href="https://www.guidestar.org/"
+                rel="noreferrer"
+              >
                 <Image
                   style={{ width: "8vmax", height: "8vmax" }}
                   src={guidestar}
@@ -159,6 +167,7 @@ export const RFAFooter: React.FC = () => {
                 target="_blank"
                 href="https://www.guidestar.org/profile/83-2012119"
                 className="hyperlink C06202"
+                rel="noreferrer"
               >
                 83-2012119
               </a>
