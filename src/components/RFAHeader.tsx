@@ -18,7 +18,7 @@ export const RFAHeader: React.FC<{
   const headerBlob = {
     backgroundSize: "100% 100%",
     height: "45vmax",
-    width: "100vw",
+    // width: "100vw",
     backgroundImage: `url(${props.image})`,
   };
 

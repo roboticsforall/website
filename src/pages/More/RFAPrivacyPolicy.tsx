@@ -14,7 +14,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "20px",
-    textAlign: "left"
+    textAlign: "left",
   };
 
   const ActiveStyle2 = {
@@ -25,7 +25,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "20px",
-    textAlign: "left"
+    textAlign: "left",
   };
 
   const inActiveStyle = {
@@ -36,7 +36,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "30px",
-    textAlign: "left"
+    textAlign: "left",
   };
 
   const positionsDescription = {
@@ -53,17 +53,17 @@ export const RFAPrivacyPolicy: React.FC = () => {
         title={"Website Privacy Policy"}
         description={"Learn more about Robotics for All's privacy policies!"}
       />
-      <br/><br/>
+      <br />
+      <br />
       <Container>
         <Nav justify fill variant="tabs">
-
           <Nav.Item>
-            <Nav.Link style = {ActiveStyle} disabled>
+            <Nav.Link style={ActiveStyle} disabled>
               Privacy Notice
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link style = {inActiveStyle} disabled></Nav.Link>
+            <Nav.Link style={inActiveStyle} disabled></Nav.Link>
           </Nav.Item>
           <Tab.Pane>
             <RFAWebsiteTOSCard
@@ -229,9 +229,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
             />
           </Tab.Pane>
         </Nav>
-        <Row
-          className= "justify-content-center align-items-center"
-        >
+        <Row className="justify-content-center align-items-center">
           <p
             style={positionsDescription}
             className="text-center header-description-size"

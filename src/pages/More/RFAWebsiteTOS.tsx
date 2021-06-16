@@ -18,7 +18,7 @@ export const RFAWebsiteTOS: React.FC = () => {
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "20px",
-    textAlign: "left"
+    textAlign: "left",
   };
   /*light orange
   #fcaf62
@@ -33,7 +33,7 @@ export const RFAWebsiteTOS: React.FC = () => {
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "20px",
-    textAlign: "left"
+    textAlign: "left",
   };
 
   /*right side with no styling, inactive*/
@@ -45,7 +45,7 @@ export const RFAWebsiteTOS: React.FC = () => {
     fontFamily: "Oswald-Medium",
     fontSize: "10vmax",
     padding: "20px",
-    textAlign: "left"
+    textAlign: "left",
   };
 
   return (
@@ -56,11 +56,12 @@ export const RFAWebsiteTOS: React.FC = () => {
         title={"Website Terms of Use"}
         description={"Learn more about Robotics for All's terms of use!"}
       />
-      <br/><br/>
+      <br />
+      <br />
       <Container>
         <Nav justify fill variant="tabs">
           <Nav.Item>
-            <Nav.Link style = {ActiveStyle} disabled>
+            <Nav.Link style={ActiveStyle} disabled>
               1. Introduction
             </Nav.Link>
           </Nav.Item>
