@@ -11,9 +11,10 @@ export const RFAPrivacyPolicy: React.FC = () => {
     background: "rgb(255, 204, 0, 0.5)",
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-bold",
-    fontSize: "36px",
+    fontFamily: "Oswald-Medium",
+    fontSize: "3vmax",
     padding: "20px",
+    textAlign: "left"
   };
 
   const ActiveStyle2 = {
@@ -21,9 +22,10 @@ export const RFAPrivacyPolicy: React.FC = () => {
     background: "rgb(252, 175, 98, 0.5)",
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-bold",
-    fontSize: "36px",
+    fontFamily: "Oswald-Medium",
+    fontSize: "3vmax",
     padding: "20px",
+    textAlign: "left"
   };
 
   const inActiveStyle = {
@@ -31,9 +33,10 @@ export const RFAPrivacyPolicy: React.FC = () => {
     background: "#fff",
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-extrabold",
-    fontSize: "36px",
+    fontFamily: "Oswald-Medium",
+    fontSize: "3vmax",
     padding: "30px",
+    textAlign: "left"
   };
 
   const positionsDescription = {
@@ -42,12 +45,6 @@ export const RFAPrivacyPolicy: React.FC = () => {
     color: "black",
   };
 
-  const positions: React.CSSProperties = {
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "120vh",
-    textAlign: "center",
-  };
   return (
     <div>
       <RFAHeader
@@ -56,15 +53,17 @@ export const RFAPrivacyPolicy: React.FC = () => {
         title={"Website Privacy Policy"}
         description={"Learn more about Robotics for All's privacy policies!"}
       />
+      <br/><br/>
       <Container>
         <Nav justify fill variant="tabs">
+
           <Nav.Item>
-            <Nav.Link style={ActiveStyle} disabled>
+            <Nav.Link style = {ActiveStyle} disabled>
               Privacy Notice
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link style={inActiveStyle} disabled></Nav.Link>
+            <Nav.Link style = {inActiveStyle} disabled></Nav.Link>
           </Nav.Item>
           <Tab.Pane>
             <RFAWebsiteTOSCard
@@ -231,8 +230,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
           </Tab.Pane>
         </Nav>
         <Row
-          style={positions}
-          className="justify-content-center align-items-center"
+          className= "justify-content-center align-items-center"
         >
           <p
             style={positionsDescription}

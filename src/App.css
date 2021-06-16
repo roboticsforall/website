@@ -101,7 +101,7 @@ textarea:hover {
 }
 
 .long-button {
-  border-radius: 1em;
+  border-radius: 0.5em;
   border: none;
   transition: 200ms;
   background-color: #ffcc00;
@@ -242,6 +242,9 @@ a {
 .pos-container-button:hover {
   background-color: #ffcc00 !important;
   transition: 200ms !important;
+}
+.nav-tabs {
+  border: none;
 }
 /*#endregion*/
 

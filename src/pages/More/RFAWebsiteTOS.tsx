@@ -15,9 +15,10 @@ export const RFAWebsiteTOS: React.FC = () => {
     background: "rgb(255, 204, 0, 0.5)",
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-bold",
-    fontSize: "36px",
+    fontFamily: "Oswald-Medium",
+    fontSize: "3vmax",
     padding: "20px",
+    textAlign: "left"
   };
   /*light orange
   #fcaf62
@@ -29,9 +30,10 @@ export const RFAWebsiteTOS: React.FC = () => {
     background: "rgb(252, 175, 98, 0.5)",
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-bold",
-    fontSize: "36px",
+    fontFamily: "Oswald-Medium",
+    fontSize: "3vmax",
     padding: "20px",
+    textAlign: "left"
   };
 
   /*right side with no styling, inactive*/
@@ -40,9 +42,10 @@ export const RFAWebsiteTOS: React.FC = () => {
     background: "#fff",
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-extrabold",
-    fontSize: "x-large",
+    fontFamily: "Oswald-Medium",
+    fontSize: "10vmax",
     padding: "20px",
+    textAlign: "left"
   };
 
   return (
@@ -53,10 +56,11 @@ export const RFAWebsiteTOS: React.FC = () => {
         title={"Website Terms of Use"}
         description={"Learn more about Robotics for All's terms of use!"}
       />
+      <br/><br/>
       <Container>
         <Nav justify fill variant="tabs">
           <Nav.Item>
-            <Nav.Link style={ActiveStyle} disabled>
+            <Nav.Link style = {ActiveStyle} disabled>
               1. Introduction
             </Nav.Link>
           </Nav.Item>

@@ -6,9 +6,9 @@ export const RFAWebsiteTOSCard2: React.FC<{
   posDescription: JSX.Element;
 }> = (props) => {
   const posHeader: React.CSSProperties = {
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "Oswald-Medium",
     letterSpacing: "0.25em",
-    textAlign: "center",
+    // textAlign: "center",
   };
 
   const posDescription: React.CSSProperties = {
