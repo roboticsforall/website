@@ -18,6 +18,9 @@ import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
 import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
 import { RFAAbtOverview } from "./pages/About/RFAAbtOverview";
+import { RFANewsletter } from "./pages/About/RFANewsletter";
+
+//Contact
 import { RFAContact } from "./pages/Contact/RFAContact";
 //News
 import { RFANews } from "./pages/News/RFANews";
@@ -40,6 +43,8 @@ export const App: React.FC = () => {
               <Switch location={location}>
                 <Route exact path="/" component={RFAHomePage} />
                 <Route path="/about-overview" component={RFAAbtOverview} />
+                <Route path="/about-newsletter" component={RFANewsletter} />
+                
                 <Route path="/enroll-classfaq" component={RFAClassFAQ} />
                 <Route path="/enroll-register" component={RFARegister} />
                 <Route path="/volunteer-overview" component={RFAVolOverview} />

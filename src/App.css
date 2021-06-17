@@ -111,6 +111,18 @@ textarea:hover {
   transition: 200ms;
   background-color: #ffcc00ca;
 }
+
+.newsletter-card {
+  border-radius: 1em;
+  transition: 200ms;
+  background-color: #ffcc0080;
+  font-family: "Oswald";
+}
+
+.newsletter-card:hover{
+  transition: 200ms;
+  background-color: #ffcc00;
+}
 /* .container{
   max-width: 980px;
 } */
