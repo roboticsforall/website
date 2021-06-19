@@ -7,9 +7,9 @@ import { RFATextArea } from "@/components/RFATextArea";
 import { RFASubmitButton } from "@/components/RFASubmitButton";
 
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
-import facebookIcon from "@/media/Social Media Logos/facebook.png";
-import instagramIcon from "@/media/Social Media Logos/instagram.png";
-import linkedin from "@/media/Social Media Logos/linkedin.png";
+import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
+import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
+import linkedin from "@/media/SocialMediaLogos/linkedin.png";
 
 export const RFAContact: React.FC<{
   address: string;

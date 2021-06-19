@@ -1,21 +1,30 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
 import { RFACourseCard } from "@/components/RFACourseCard";
 import { RFALongButton } from "@/components/RFALongButton";
-
 
 import americaFlag from "@/media/Flags/america.png"
 import chineseFlag from "@/media/Flags/chinese.png"
 import frenchFlag from "@/media/Flags/french.png"
 import spainFlag from "@/media/Flags/spain.png"
 
+import cadImg from "@/media/CourseLogos/cad.png";
+import codeImg from "@/media/CourseLogos/code.org.png"; 
+import lego from "@/media/CourseLogos/lego.png"; 
+import python from "@/media/CourseLogos/python.png"; 
+import scratch from "@/media/CourseLogos/scratch.png"; 
+import snapCircuits from "@/media/CourseLogos/snap_circuits.png"; 
+
+
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
 export const RFAIndLearners: React.FC<{
+  title: string,
   link: string,
-  title: string
+  cardTitle: string
+  image: string,
 }> = (props) => {
 
   const positionsTitle: React.CSSProperties = {
@@ -38,6 +47,12 @@ export const RFAIndLearners: React.FC<{
   const blueRow = {
     backgroundColor: "#3399ff4D"
   }
+  const imageSize: React.CSSProperties = {
+    height: "18vh"
+  };
+    const text: React.CSSProperties = {
+        fontFamily: "Oswald-Medium"
+    }
   return (
     <>
       <RFAHeader
@@ -46,6 +61,8 @@ export const RFAIndLearners: React.FC<{
         title={"Take a Class with us Today!"}
         description={"Learn from any of our 12 levels of curriculum and join the community of 1027 students we've taught!"}
       />
+      <br/>
+      <br/>
       <Container>
         <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
         <br/>
@@ -72,12 +89,34 @@ export const RFAIndLearners: React.FC<{
           View our detailed syllabi below:
         </h5>
         <br></br>
-        <div className = "d-flex flex-wrap justify-content-between">
-          <RFAFlagCard link = {""} image = {americaFlag} title = "ENGLISH"></RFAFlagCard>
-          <RFAFlagCard link = {""} image = {spainFlag} title = "ESPAÑOL"></RFAFlagCard>
-          <RFAFlagCard link = {""} image = {frenchFlag} title = "FRANÇAIS"></RFAFlagCard>
-          <RFAFlagCard link = {""} image = {chineseFlag} title = "中文"></RFAFlagCard>
-        </div>
+          <Row className = "justify-content-between">
+            {[
+              {
+                image: americaFlag,
+                link: "",
+                title: "ENGLISH"
+              },
+              {
+                image: spainFlag,
+                link: "",
+                title: "ESPAÑOL"
+              },
+              {
+                image: frenchFlag,
+                link: "",
+                title: "FRANÇAIS"
+              },
+              {
+                image: chineseFlag,
+                link: "",
+                title: "中文"
+              }
+            ].map((flagInfo, i) => (
+              <Col className = "flag-course-card border" md = {"auto"}>
+                <RFAFlagCard image = {flagInfo.image} title = {flagInfo.title} link = {flagInfo.link}/>
+              </Col>
+            ))}
+          </Row>
         <br></br>
         <a className = "hyperlink">
             <Row className = "enroll-button p-2 justify-content-center align-items-center">
@@ -86,8 +125,10 @@ export const RFAIndLearners: React.FC<{
         </a>
       </Container>
       <br></br>
+      <br></br>
       <Container fluid style = {blueRow}>
         <Container>
+            <br></br>
             <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
             <br></br>
             <h5 style = {bodyText}>
@@ -97,22 +138,60 @@ export const RFAIndLearners: React.FC<{
               View our selection of courses below:
             </h5>
             <br></br>
-            <div className = "d-flex flex-wrap justify-content-between">
-              <RFACourseCard link = {""} image = {americaFlag} title = "ENGLISH"></RFACourseCard>
-              <RFACourseCard link = {""} image = {spainFlag} title = "ESPAÑOL"></RFACourseCard>
-              <RFACourseCard link = {""} image = {frenchFlag} title = "FRANÇAIS"></RFACourseCard>
-              <RFACourseCard link = {""} image = {chineseFlag} title = "中文"></RFACourseCard>
-              <RFACourseCard link = {""} image = {americaFlag} title = "ENGLISH"></RFACourseCard>
-              <RFACourseCard link = {""} image = {spainFlag} title = "ESPAÑOL"></RFACourseCard>
-              <RFACourseCard link = {""} image = {frenchFlag} title = "FRANÇAIS"></RFACourseCard>
-              <RFACourseCard link = {""} image = {chineseFlag} title = "中文"></RFACourseCard>
-            </div>
+            <Row className = "justify-content">
+            {[
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+              {
+                image: cadImg,
+                link: "",
+                title: "Lego Explorers (K-1st)",
+              },
+            ].map((courseInfo, i) => (
+              <Col className = "flag-course-card border" md = "auto">
+                <RFACourseCard link = {""} image = {courseInfo.image} title = {courseInfo.title}></RFACourseCard>
+              </Col>
+            ))}
+            </Row>
             <br></br>
-            <a className = "hyperlink">
-                <Row className = "enroll-button p-2 justify-content-center align-items-center">
-                    <h3 style = {enrollButtonTitle}>Enroll in a Course Today!</h3>
-                </Row>
-            </a>
             <br></br>
         </Container>
       </Container>

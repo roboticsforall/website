@@ -15,8 +15,8 @@ export const RFAFlagCard: React.FC<{
     }
     
   return (
-    <a className = "mb-2 flag-course-card hyperlink" target = "_blank" href = {props.link}>
-        <div className = "m-3">
+    <a className = "mb-2 hyperlink" target = "_blank" href = {props.link}>
+        <div className = "m-3 text-center">
             <Image style = {imageSize} src = {props.image}/>
             <h3 style = {text} className = "mb-4 text-center">{props.title}</h3>
         </div>

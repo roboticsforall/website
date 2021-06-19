@@ -126,9 +126,13 @@ export const RFAHomePage: React.FC = () => {
         </Container>
       </Row>
       <Container>
+          <br></br>
+          <br></br>
         <Row className="justify-content-center">
           <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
+          
         </Row>
+        <br></br>
         {[
           {
             label: "tutoring for all",

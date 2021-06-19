@@ -77,9 +77,6 @@ export const App: React.FC = () => {
           </TransitionGroup>
         )}
       />
-      <br />
-      <br />
-      <br />
       <RFAFooter />
     </Router>
   );
