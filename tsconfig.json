@@ -17,7 +17,9 @@
     "noUnusedParameters": true,
     "jsx": "preserve",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "react": ["node_modules/@types/react"],
+      "react-dom": ["node_modules/preact/compat"],
     },
     "types": ["vite/client"]
   },

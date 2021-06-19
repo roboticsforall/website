@@ -5,7 +5,7 @@ import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
 import mercurynews from "@/media/News/Mercury-News.png";
 import houseofreps from "@/media/News/House-of-Representatives.png";
-import Carousel from "react-multi-carousel";
+import Carousel from "react-multi-carousel/lib/Carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const photosImport = Array.from(
