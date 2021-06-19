@@ -248,6 +248,30 @@ a {
 }
 /*#endregion*/
 
+/* #region indlearners and for schools */
+.flag-course-card {
+  border-radius: 1em;
+  transition: 200ms;
+  background-color: #3399ff99;
+}
+
+.flag-course-card:hover{
+  transition: 200ms;
+  background-color: #ffdb4d;
+}
+.enroll-button {
+  border-radius: 1em;
+  border: none;
+  transition: 200ms;
+  background-color: #3399ff;
+}
+
+.enroll-button:hover {
+  transition: 200ms;
+  background-color: #ffdb4d;
+}
+/* #endregion */
+
 /* #region homepage styling */
 .home-aff-org-card-link {
   font-family: "BeVietnam-ExtraBold", sans-serif;
