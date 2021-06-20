@@ -56,60 +56,60 @@ export const RFANewsletter: React.FC = (props) => {
 
           <div id="mc_embed_signup">
 
-<form action="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
-    
-<div id="mc_embed_signup_scroll">
+          <form action="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+              
+          <div id="mc_embed_signup_scroll">
 
-	<h2>Subscribe</h2>
+            <h2 style = "font-family: Oswald-Medium; font-size: 46px; color: #554400">Subscribe for Updates!</h2>
 
-<div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
+          <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
 
-<div className="mc-field-group">
+          <div className="mc-field-group">
 
-	<label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span></label>
-	
-  <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL"/>
+            <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
+            
+            <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
 
-</div>
+          </div>
 
-<div className="mc-field-group">
+          <div className="mc-field-group">
 
-	<label htmlFor="mce-FNAME">Name  <span className="asterisk">*</span></label>
+            <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
 
-	<input type="text" value="" name="FNAME" className="required" id="mce-FNAME"/>
+            <input type="text" value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
 
-</div>
+          </div>
 
-<div className="mc-field-group input-group">
+          <div className="mc-field-group input-group">
 
-    <strong>Which of the following best describes you? </strong>
+              <strong style = "font-family: Oswald-Medium; font-size: 25px; color: #638f00">I am a... </strong>
 
-    <ul>
-      <li><input type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteers</label></li>
-      <li><input type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donors and Mentors</label></li>
-      <li><input type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parents and Students</label></li>
-    </ul>
+              <ul>
+                <li><input type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteers</label></li>
+                <li><input type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donors and Mentors</label></li>
+                <li><input type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parents and Students</label></li>
+              </ul>
 
-</div>
+          </div>
 
-	<div id="mce-responses" className="clear"> {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
+            <div id="mce-responses" className="clear"> {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
 
-		<div className = "response" id="mce-error-response" style = {{display: "none"}}></div>
+              <div className = "response" id="mce-error-response" style = {{display: "none"}}></div>
 
-		<div className = "response" id="mce-success-response" style= {{display: "none"}}></div>
+              <div className = "response" id="mce-success-response" style= {{display: "none"}}></div>
 
-	</div>  
-    
-    <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex="-1" value=""/></div>
-    
-    <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
-    
-</div>
+            </div>  
+              
+              <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex="-1" value=""/></div>
+              
+              <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
+              
+          </div>
 
-</form>
+          </form>
 
-</div>
-{/* End mc_embed_signup */}
+          </div>
+          {/* End mc_embed_signup */}
           </Row>
           
         </Container>
