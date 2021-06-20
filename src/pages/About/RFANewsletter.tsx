@@ -62,49 +62,52 @@ export const RFANewsletter: React.FC = (props) => {
         
             <h2 style = "font-family: Oswald-Light; font-size: 46px; color: #554400; text-align: center;" >Subscribe for Updates!</h2>
 
-          <div className="mc-field-group">
+          <div className = "justify-content-between">
+            <div className="mc-field-group ">
 
-            <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
-            
-            <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
+              <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
+              
+              <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
+
+            </div>
+
+            <div className="mc-field-group">
+
+              <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
+
+              <input type="text" value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
+
+            </div>
 
             <style>
-              input {
-                background-color: #ffcc00;
-                opacity: 0.3;
-                font-family: BeVietnam-ExtraBold;
-                color: #000000;
-                font-size: 20px;
-              }
-              input::placeholder {
-                color: #638f00;
-              }
-              input:placeholder-shown {
-                border: 2px red;
-                background-color: #ff4040;
-              }
-              input::selection {
-                background-color: #ffffff;
-              }
-            </style>
+                input {
+                  background-color: #ffcc00;
+                  opacity: 0.3;
+                  font-family: BeVietnam-ExtraBold;
+                  color: #000000;
+                  font-size: 20px;
+                }
+                input::placeholder {
+                  color: #638f00;
+                }
+                input:placeholder-shown {
+                  border: 2px red;
+                  background-color: #ff4040;
+                }
+                input::selection {
+                  background-color: #ffffff;
+                }
+              </style>
           </div>
 
-          <div className="mc-field-group">
-
-            <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
-
-            <input type="text" value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
-
-          </div>
-
-          <div className="mc-field-group input-group">
+          <div className="mc-field-group input-group justify-content-end" >
 
               <strong style = "font-family: Oswald-Medium; font-size: 25px; color: #638f00">I am a... </strong>
 
               <ul>
-                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Volunteer</label></li>
-                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Donor/Mentor</label></li>
-                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Parent/Student</label></li>
+                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Volunteer</label></li>
+                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Donor/Mentor</label></li>
+                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Parent/Student</label></li>
               </ul>
 
               <style>
