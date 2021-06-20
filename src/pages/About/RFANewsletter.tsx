@@ -80,7 +80,7 @@ export const RFANewsletter: React.FC = (props) => {
                 color: #638f00;
               }
               input:placeholder-shown {
-                outline: 2px red;
+                border: 2px red;
                 background-color: #ff4040;
               }
               input::selection {
