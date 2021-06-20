@@ -102,9 +102,9 @@ export const RFANewsletter: React.FC = (props) => {
               <strong style = "font-family: Oswald-Medium; font-size: 25px; color: #638f00">I am a... </strong>
 
               <ul>
-                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Volunteers</label></li>
-                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Donors and Mentors</label></li>
-                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Parents and Students</label></li>
+                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Volunteer</label></li>
+                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Donor/Mentor</label></li>
+                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Parent/Student</label></li>
               </ul>
 
               <style>
