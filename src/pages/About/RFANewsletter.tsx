@@ -60,7 +60,7 @@ export const RFANewsletter: React.FC = (props) => {
               
           <div id="mc_embed_signup_scroll">
 
-            <h2 style = "font-family: Oswald-Light; font-size: 46px; color: #554400; align: center;" >Subscribe for Updates!</h2>
+            <h2 style = "font-family: Oswald-Light; font-size: 46px; color: #554400; text-align: center;" >Subscribe for Updates!</h2>
 
           <div className="indicates-required"><span className="asterisk"></span></div>
 
