@@ -59,10 +59,8 @@ export const RFANewsletter: React.FC = (props) => {
           <form action="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
               
           <div id="mc_embed_signup_scroll">
-
+        
             <h2 style = "font-family: Oswald-Light; font-size: 46px; color: #554400; text-align: center;" >Subscribe for Updates!</h2>
-
-          <div className="indicates-required"><span className="asterisk"></span></div>
 
           <div className="mc-field-group">
 
@@ -81,7 +79,7 @@ export const RFANewsletter: React.FC = (props) => {
               input::placeholder {
                 color: #638f00;
               }
-              input:invalid {
+              input:placeholder-shown {
                 outline: 2px red;
                 background-color: #ff4040;
               }
@@ -104,9 +102,9 @@ export const RFANewsletter: React.FC = (props) => {
               <strong style = "font-family: Oswald-Medium; font-size: 25px; color: #638f00">I am a... </strong>
 
               <ul>
-                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Volunteers</label></li>
-                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Donors and Mentors</label></li>
-                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Parents and Students</label></li>
+                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Volunteers</label></li>
+                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Donors and Mentors</label></li>
+                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "fontFamily = BeVietnam-ExtraBold; font-size:18px" >Parents and Students</label></li>
               </ul>
 
               <style>
