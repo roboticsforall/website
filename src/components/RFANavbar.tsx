@@ -46,6 +46,9 @@ export const RFANavbar: React.FC = () => {
                 Enroll
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <Link to="/enroll-individlearners" className="dropdown-item" href="#">
+                  Individual Learners
+                </Link>
                 <Link to="/enroll-classfaq" className="dropdown-item" href="#">
                   Class FAQ's
                 </Link>

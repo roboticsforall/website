@@ -77,28 +77,10 @@ export const RFAHomePage: React.FC = () => {
       <Row className="p-5 yellow-row">
         <Container>
           <Row>
-            {/* {[
-              {
-                label: "STUDENTS & PARENTS",
-                logo: TFALogo,
-                color: "#3399ff",
-              },
-              {
-                label: "SCHOOLS",
-                logo: TFALogo,
-                color: "#33cc66",
-              },
-              {
-                label: "VOLUNTEERS",
-                logo: TFALogo,
-                color: "#fa8d1f",
-              },
-            ].map((buttons, i) => ( */}
             <Col md={4} className="text-center">
               <Link to="/individlearners" className="hyperlink">
                 <Image
                   className="mb-3 home-page-house-img"
-                  // src = {house1}
                 />
                 <h1
                   style={{
@@ -114,7 +96,6 @@ export const RFAHomePage: React.FC = () => {
               <Link to="/forschools" className="hyperlink">
                 <Image
                   className="mb-3 home-page-apple-img"
-                  // src = {house1}
                 />
                 <h1
                   style={{
@@ -130,7 +111,6 @@ export const RFAHomePage: React.FC = () => {
               <Link to="/volunteer-overview" className="hyperlink">
                 <Image
                   className="mb-3 home-page-world-img"
-                  // src = {house1}
                 />
                 <h1
                   style={{
@@ -142,14 +122,17 @@ export const RFAHomePage: React.FC = () => {
                 </h1>
               </Link>
             </Col>
-            {/* ))} */}
           </Row>
         </Container>
       </Row>
       <Container>
+          <br></br>
+          <br></br>
         <Row className="justify-content-center">
           <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
+          
         </Row>
+        <br></br>
         {[
           {
             label: "tutoring for all",
