@@ -76,6 +76,7 @@ export const RFANewsletter: React.FC = (props) => {
                 opacity: 0.3;
                 font-family: BeVietnam-ExtraBold;
                 color: #000000;
+                font-size: 20px;
               }
               input::placeholder {
                 color: #638f00;
@@ -103,11 +104,27 @@ export const RFANewsletter: React.FC = (props) => {
               <strong style = "font-family: Oswald-Medium; font-size: 25px; color: #638f00">I am a... </strong>
 
               <ul>
-                <li><input type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Volunteers</label></li>
-                <li><input type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Donors and Mentors</label></li>
-                <li><input type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Parents and Students</label></li>
+                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Volunteers</label></li>
+                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Donors and Mentors</label></li>
+                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Parents and Students</label></li>
               </ul>
 
+              <style>
+                .checkbox {
+                  radius: 5px;
+                  background-color: #ffdb4d;
+                  opacity: 1;
+                  color: #ffffff;
+                }
+                .checkbox::hover {
+                  background-color: #ffdb4d;
+                  opacity: 0.5;
+                }
+
+                .checkbox::selection {
+                  background-color: #ffcc00;
+                }
+              </style>
           </div>
 
             <div id="mce-responses" className="clear"> {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
