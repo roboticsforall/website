@@ -140,4 +140,7 @@ collections:
         name: "register_form"
         file: "src/posts/register_form.json"
         fields:
-          - {label: "Google Form Embed Code", name: "register_form_code", widget: code}
+          - label: "Google Form Embed Code"
+            name: "register_form_code"
+            widget: code
+            output_code_only: true
