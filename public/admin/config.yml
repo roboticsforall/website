@@ -143,4 +143,4 @@ collections:
           - label: "Google Form Embed Code"
             name: "register_form_code"
             widget: code
-            output_code_only: true
+            output_code_only: "true"
