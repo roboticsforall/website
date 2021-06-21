@@ -98,12 +98,12 @@ collections:
         name: "courses"
         file: "src/posts/courses.json"
         fields:
-          - label: "courses"
+          - label: "Courses"
             name: "courses_list"
             widget: list
             fields:
               - {label: Course Name, name: course_name, widget: string}
-              - label: file
+              - label: Image
                 name: "file_path"
-                widget: file
+                widget: image
                 media_folder: '/public/uploads/coursesimg'
