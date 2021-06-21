@@ -17,6 +17,7 @@ import python from "@/media/CourseLogos/python.png";
 import scratch from "@/media/CourseLogos/scratch.png"; 
 import snapCircuits from "@/media/CourseLogos/snap_circuits.png"; 
 
+import coursesImgJSON from "@/posts/courses.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
@@ -139,55 +140,9 @@ export const RFAIndLearners: React.FC<{
             </h5>
             <br></br>
             <Row className = "justify-content">
-            {[
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-              {
-                image: cadImg,
-                link: "",
-                title: "Lego Explorers (K-1st)",
-              },
-            ].map((courseInfo, i) => (
+            {coursesImgJSON.courses_list.map((courseInfo, i) => (
               <Col className = "flag-course-card border" md = "auto">
-                <RFACourseCard link = {""} image = {courseInfo.image} title = {courseInfo.title}></RFACourseCard>
+                <RFACourseCard link = {""} image = {courseInfo.file_path} title = {courseInfo.course_name}></RFACourseCard>
               </Col>
             ))}
             </Row>

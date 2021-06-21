@@ -94,8 +94,8 @@ collections:
   - label: "Courses" # used in UI
     name: "courses" # used in routes
     files:
-      - label: "courses"
-        name: "courses"
+      - label: "Courses"
+        name: "curses"
         file: "src/posts/courses.json"
         fields:
           - label: "Courses"
@@ -107,3 +107,20 @@ collections:
                 name: "file_path"
                 widget: image
                 media_folder: '/public/uploads/coursesimg'
+  - label: "Syllabi" # used in UI
+    name: "syllabi" # used in routes
+    files:
+      - label: "Syllabi"
+        name: "syllabi"
+        file: "src/posts/syllabi.json"
+        fields:
+          - label: "Syllabi"
+            name: "syllabi_list"
+            widget: list
+            fields:
+              - {label: Language (Add language in native tongue. Ex: If Chinese => 中文; If French => FRANÇAIS), name: language, widget: string}
+              - {label: Link to Syllabi Document, name: link, widget: string}
+              - label: Flag Image
+                name: "file_path"
+                widget: image
+                media_folder: '/public/uploads/flagimg'
