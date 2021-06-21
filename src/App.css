@@ -249,24 +249,34 @@ a {
 /*#endregion*/
 
 /* #region indlearners and for schools */
-.flag-course-card {
+.ind-learners-flag-course-card {
   border-radius: 1em;
   transition: 200ms;
   background-color: #3399ff99;
 }
+.school-flag-course-card {
+  border-radius: 1em;
+  transition: 200ms;
+  background-color: #33cc6699;
+}
 
-.flag-course-card:hover{
+.ind-learners-flag-course-card:hover, .school-flag-course-card:hover{
   transition: 200ms;
   background-color: #ffdb4d;
 }
-.enroll-button {
+.ind-learners-enroll-button {
   border-radius: 1em;
   border: none;
   transition: 200ms;
   background-color: #3399ff;
 }
-
-.enroll-button:hover {
+.school-enroll-button {
+  border-radius: 1em;
+  border: none;
+  transition: 200ms;
+  background-color: #33cc66;
+}
+.ind-learners-enroll-button:hover, .school-enroll-button:hover{
   transition: 200ms;
   background-color: #ffdb4d;
 }

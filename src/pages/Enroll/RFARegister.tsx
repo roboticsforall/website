@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png"; // add correct image and filepath here
+// import registerLinkJSON from "@/posts/register_link.json";
 
 export const RFARegister: React.FC = () => {
   return (
