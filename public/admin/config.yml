@@ -118,7 +118,7 @@ collections:
             name: "syllabi_list"
             widget: list
             fields:
-              - {label: Language (Add language in native tongue. Ex: If Chinese => 中文; If French => FRANÇAIS), name: language, widget: string}
+              - {label: Language (Add language in native tongue. Ex. If Chinese => 中文; If French => FRANÇAIS), name: language, widget: string}
               - {label: Link to Syllabi Document, name: link, widget: string}
               - label: Flag Image
                 name: "file_path"
