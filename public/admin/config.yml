@@ -133,3 +133,11 @@ collections:
         fields:
           - {label: "Course Overview Bold Text", name: "indlearners_bold_text", widget: string}
           - {label: "Course Overview Body Text", name: "indlearners_body_text", widget: markdown}
+  - label: "Register Link" # used in UI
+    name: "register_link" # used in routes
+    files:
+      - label: "Register Link"
+        name: "register_link"
+        file: "src/posts/register_link.json"
+        fields:
+          - {label: "Register Link", name: "register_link", widget: string}

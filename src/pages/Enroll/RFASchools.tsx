@@ -48,8 +48,8 @@ export const RFASchools: React.FC<{
     fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center"
   }
-  const blueRow = {
-    backgroundColor: "#3399ff4D"
+  const greenRow = {
+    backgroundColor: "#33cc664D"
   }
   const imageSize: React.CSSProperties = {
     height: "18vh"
@@ -97,7 +97,7 @@ export const RFASchools: React.FC<{
       </Container>
       <br></br>
       <br></br>
-      <Container fluid style = {blueRow}>
+      <Container fluid style = {greenRow}>
         <Container>
             <br></br>
             <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
