@@ -1,0 +1,24 @@
+{
+  "syllabi_list": [
+    {
+      "language": "English",
+      "link": "https://docs.google.com/document/d/1p0jUF8jZx4Hc_Abg66NHaEfWTH-g-SxbutZl_8XDQdg/edit?usp=sharing ",
+      "file_path": "/public/uploads/flagimg/america.png"
+    },
+    {
+      "language": "ESPAÑOL",
+      "link": "https://docs.google.com/document/d/1p0jUF8jZx4Hc_Abg66NHaEfWTH-g-SxbutZl_8XDQdg/edit?usp=sharing ",
+      "file_path": "/public/uploads/flagimg/spain.png"
+    },
+    {
+      "language": "FRANÇAIS",
+      "link": "https://docs.google.com/document/d/1p0jUF8jZx4Hc_Abg66NHaEfWTH-g-SxbutZl_8XDQdg/edit?usp=sharing ",
+      "file_path": "/public/uploads/flagimg/french.png"
+    },
+    {
+      "language": "中文",
+      "link": "https://docs.google.com/document/d/1p0jUF8jZx4Hc_Abg66NHaEfWTH-g-SxbutZl_8XDQdg/edit?usp=sharing ",
+      "file_path": "/public/uploads/flagimg/chinese.png"
+    }
+  ]
+}
