@@ -124,3 +124,13 @@ collections:
                 name: "file_path"
                 widget: image
                 media_folder: '/public/uploads/flagimg'
+  - label: "Editable Texts" # used in UI
+    name: "editable_texts" # used in routes
+    files:
+      - label: "Editable Texts"
+        name: "editable_texts"
+        file: "src/posts/editable_texts.json"
+        fields:
+          - label: "Individual Learners Course Overview Text"
+            name: "indlearners_text"
+            widget: markdown
