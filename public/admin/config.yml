@@ -131,6 +131,5 @@ collections:
         name: "ind_learners_and_schools"
         file: "src/posts/ind_learners_and_schools.json"
         fields:
-          - label: "Individual Learners Course Overview Text"
-            name: "indlearners_text"
-            widget: markdown
+          - {label: "Course Overview Bold Text", name: "indlearners_bold_text", widget: markdown}
+          - {label: "Course Overview Body Text", name: "indlearners_body_text", widget: markdown}
