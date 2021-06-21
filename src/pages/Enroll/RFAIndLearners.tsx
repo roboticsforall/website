@@ -18,6 +18,7 @@ import scratch from "@/media/CourseLogos/scratch.png";
 import snapCircuits from "@/media/CourseLogos/snap_circuits.png"; 
 
 import coursesImgJSON from "@/posts/courses.json";
+import syllabiJSON from "@/posts/syllabi.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
@@ -91,30 +92,9 @@ export const RFAIndLearners: React.FC<{
         </h5>
         <br></br>
           <Row className = "justify-content-between">
-            {[
-              {
-                image: americaFlag,
-                link: "",
-                title: "ENGLISH"
-              },
-              {
-                image: spainFlag,
-                link: "",
-                title: "ESPAÑOL"
-              },
-              {
-                image: frenchFlag,
-                link: "",
-                title: "FRANÇAIS"
-              },
-              {
-                image: chineseFlag,
-                link: "",
-                title: "中文"
-              }
-            ].map((flagInfo, i) => (
+            {syllabiJSON.syllabi_list.map((flagInfo, i) => (
               <Col className = "flag-course-card border" md = {"auto"}>
-                <RFAFlagCard image = {flagInfo.image} title = {flagInfo.title} link = {flagInfo.link}/>
+                <RFAFlagCard image = {flagInfo.file_path} title = {flagInfo.language} link = {flagInfo.link}/>
               </Col>
             ))}
           </Row>
