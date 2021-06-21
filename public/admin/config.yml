@@ -91,3 +91,19 @@ collections:
                 name: "file_path"
                 widget: file
                 media_folder: '/public/uploads/newsletters'
+  - label: "Courses" # used in UI
+    name: "courses" # used in routes
+    files:
+      - label: "courses"
+        name: "courses"
+        file: "src/posts/courses.json"
+        fields:
+          - label: "courses"
+            name: "courses_list"
+            widget: list
+            fields:
+              - {label: Course Name, name: course_name, widget: string}
+              - label: file
+                name: "file_path"
+                widget: file
+                media_folder: '/public/uploads/coursesimg'
