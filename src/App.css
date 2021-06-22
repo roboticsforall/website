@@ -100,6 +100,22 @@ textarea:hover {
   background-color: white;
 }
 
+
+.checkbox {
+  radius: 5px;
+  background-color: #ffdb4d;
+  opacity: 1;
+  color: #ffffff;
+}
+.checkbox::hover {
+  background-color: #ffdb4d;
+  opacity: 0.5;
+}
+
+.checkbox::selection {
+  background-color: #ffcc00;
+}
+
 .long-button {
   border-radius: 0.5em;
   border: none;
