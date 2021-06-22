@@ -84,7 +84,7 @@ export const RFASchools: React.FC<{
           <Row className = "justify-content-between">
             {syllabiJSON.syllabi_list.map((flagInfo, i) => (
               <Col className = "school-flag-course-card border" md = {"auto"}>
-                <RFAFlagCard image = {flagInfo.file_path} title = {flagInfo.language} link = {flagInfo.link}/>
+                <RFAFlagCard image = {flagInfo.file_path.replace("/public", "")} title = {flagInfo.language} link = {flagInfo.link}/>
               </Col>
             ))}
           </Row>
@@ -112,7 +112,7 @@ export const RFASchools: React.FC<{
             <Row className = "justify-content">
             {coursesImgJSON.courses_list.map((courseInfo, i) => (
               <Col className = "school-flag-course-card border" md = "auto">
-                <RFACourseCard link = {""} image = {courseInfo.file_path} title = {courseInfo.course_name}></RFACourseCard>
+                <RFACourseCard link = {""} image = {courseInfo.file_path.replace("/public", "")} title = {courseInfo.course_name}></RFACourseCard>
               </Col>
             ))}
             </Row>
