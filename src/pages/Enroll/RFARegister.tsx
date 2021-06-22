@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png"; // add correct image and filepath here
-// import registerLinkJSON from "@/posts/register_link.json";
+import registerFormJSON from "@/posts/register_form.json";
+import Markdown from "markdown-to-jsx";
 
 export const RFARegister: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ export const RFARegister: React.FC = () => {
       <Container>
         <Row>
           <Col className="d-flex justify-content-center">
-            <iframe
+            {/* <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true"
               width="640"
               height="975"
@@ -31,7 +32,8 @@ export const RFARegister: React.FC = () => {
               marginWidth={0}
             >
               Loading…
-            </iframe>
+            </iframe> */}
+            <Markdown>{registerFormJSON.register_form_code.code}</Markdown>
           </Col>
         </Row>
       </Container>

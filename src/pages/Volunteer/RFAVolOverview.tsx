@@ -5,7 +5,7 @@ import InternToby from "@/media/TobyImages/publicity intern.webp";
 import TAToby from "@/media/TobyImages/TA.webp";
 import { RFAVolOverviewImg } from "@/components/RFAVolOverviewImg";
 import { RFAVolOverviewCard } from "@/components/RFAVolOverviewCard";
-import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAVolOverviewHeader } from "@/components/RFAVolOverviewHeader";
 
 export const RFAVolOverview: React.FC = () => {
@@ -26,7 +26,7 @@ export const RFAVolOverview: React.FC = () => {
     <>
       <RFAVolOverviewHeader
         headerTextColor={"#fa8d1f"}
-        image={headerBlobYellow}
+        image={headerBlobOrange}
         title={"Volunteer with Robotics for All"}
         description={
           "Volunteer with us to teach or develop your skills as a business development intern!"

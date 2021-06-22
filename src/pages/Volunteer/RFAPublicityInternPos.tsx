@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
-import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
 import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
 import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
@@ -41,7 +41,7 @@ export const RFAPublicityInternPos: React.FC = () => {
     <div>
       <RFAHeader
         headerTextColor={"#FA8D1F"}
-        image={headerBlobYellow}
+        image={headerBlobOrange}
         title={"Volunteer to Build Our Outreach!"}
         description={
           "Volunteer to help with graphic design, illustrations, and much much more!"

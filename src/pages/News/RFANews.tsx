@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
-import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
+import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
 import mercurynews from "@/media/News/Mercury-News.png";
 import houseofreps from "@/media/News/House-of-Representatives.png";
@@ -77,7 +77,7 @@ export const RFANews: React.FC = () => {
     <div>
       <RFAHeader
         headerTextColor="#ffcc00"
-        image={headerBlobOrange}
+        image={headerBlobYellow}
         title="See us in the news!"
         description="Learn more about our progress and community outreach."
       />

@@ -35,7 +35,7 @@ export const RFANavbar: React.FC = () => {
           <ul className="navbar-nav w-100 d-flex justify-content-around">
             <li className="nav-item dropdown">
               <Link
-                to="/enroll"
+                to="/enroll-individlearners"
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
@@ -62,7 +62,7 @@ export const RFANavbar: React.FC = () => {
             </li>
             <li className="nav-item dropdown">
               <Link
-                to="/enroll"
+                to="/volunteer-overview"
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"

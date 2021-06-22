@@ -14,7 +14,7 @@ export const RFAVolunteerFAQ: React.FC = () => {
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={"#fa8d1f"}
         image={headerBlobOrange}
         title={"Questions?"}
         description={

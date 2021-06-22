@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
-import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
+import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
 
 export const RFAVolunteerApp: React.FC = () => {
@@ -29,7 +29,7 @@ export const RFAVolunteerApp: React.FC = () => {
     <div>
       <RFAHeader
         headerTextColor={"#FA8D1F"}
-        image={headerBlobYellow}
+        image={headerBlobOrange}
         title={"Join us to help students in STEM!"}
         description={
           "Fill out the form below to sign up for our classes today!"
