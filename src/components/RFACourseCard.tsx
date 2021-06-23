@@ -13,7 +13,7 @@ export const RFACourseCard: React.FC<{
     fontFamily: "Oswald-Medium",
   };
   return (
-    <a className="mb-2 hyperlink" target="_blank" href={props.link}>
+    <a className="mb-2 hyperlink" target="_blank" href={props.link} rel="noreferrer">
       <div className="m-3 text-center">
         <Image style={imageSize} src={props.image} />
         <h3 style={text} className="mb-4 text-center">

@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 
 export const RFALongButton: React.FC<{
@@ -7,7 +6,7 @@ export const RFALongButton: React.FC<{
   link: string;
   title: string;
 }> = (props) => {
-  const title = {
+  const title: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
   };

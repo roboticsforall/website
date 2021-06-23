@@ -17,7 +17,6 @@ import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
 import YMCA from "@/media/Sponsors/ymca.png";
 
-import house from "@/media/HoverImages/apple_1.png";
 import transparentImage from "@/media/transparentImage.png";
 
 import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
