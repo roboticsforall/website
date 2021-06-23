@@ -85,7 +85,6 @@ export const RFAHomePage: React.FC = () => {
                   className="mb-3 home-page-house-img"
                   src={transparentImage}
                 />
-                <Image className="mb-3 home-page-house-img" />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -102,7 +101,6 @@ export const RFAHomePage: React.FC = () => {
                   className="mb-3 home-page-apple-img"
                   src={transparentImage}
                 />
-                <Image className="mb-3 home-page-apple-img" />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
