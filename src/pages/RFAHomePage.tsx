@@ -79,9 +79,7 @@ export const RFAHomePage: React.FC = () => {
           <Row>
             <Col md={4} className="text-center">
               <Link to="/individlearners" className="hyperlink">
-                <Image
-                  className="mb-3 home-page-house-img"
-                />
+                <Image className="mb-3 home-page-house-img" />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -94,9 +92,7 @@ export const RFAHomePage: React.FC = () => {
             </Col>
             <Col md={4} className="text-center">
               <Link to="/forschools" className="hyperlink">
-                <Image
-                  className="mb-3 home-page-apple-img"
-                />
+                <Image className="mb-3 home-page-apple-img" />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -109,9 +105,7 @@ export const RFAHomePage: React.FC = () => {
             </Col>
             <Col md={4} className="text-center">
               <Link to="/volunteer-overview" className="hyperlink">
-                <Image
-                  className="mb-3 home-page-world-img"
-                />
+                <Image className="mb-3 home-page-world-img" />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -126,11 +120,10 @@ export const RFAHomePage: React.FC = () => {
         </Container>
       </Row>
       <Container>
-          <br></br>
-          <br></br>
+        <br></br>
+        <br></br>
         <Row className="justify-content-center">
           <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
-          
         </Row>
         <br></br>
         {[

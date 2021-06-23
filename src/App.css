@@ -263,7 +263,8 @@ a {
   background-color: #33cc6699;
 }
 
-.ind-learners-flag-course-card:hover, .school-flag-course-card:hover{
+.ind-learners-flag-course-card:hover,
+.school-flag-course-card:hover {
   transition: 200ms;
   background-color: #ffdb4d;
 }
@@ -279,7 +280,8 @@ a {
   transition: 200ms;
   background-color: #33cc66;
 }
-.ind-learners-enroll-button:hover, .school-enroll-button:hover{
+.ind-learners-enroll-button:hover,
+.school-enroll-button:hover {
   transition: 200ms;
   background-color: #ffdb4d;
 }
