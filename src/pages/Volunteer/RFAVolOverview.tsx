@@ -32,8 +32,8 @@ export const RFAVolOverview: React.FC = () => {
           "Volunteer with us to teach or develop your skills as a business development intern!"
         }
       ></RFAVolOverviewHeader>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Container>
         <Row>
           <h2 style={positionsTitle}>VOLUNTEER POSTIONS</h2>

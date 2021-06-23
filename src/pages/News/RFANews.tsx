@@ -56,7 +56,7 @@ export const RFANews: React.FC = () => {
   useEffect(() => {
     Promise.all(photosImport).then(setPhotos);
   }, []);
-  const buttonStyles = {
+  const buttonStyles: React.CSSProperties = {
     width: "272px",
     height: "81px",
     background: "#FA8D1F",
@@ -66,13 +66,21 @@ export const RFANews: React.FC = () => {
     fontFamily: "BeVietnam-Medium",
     color: "black",
   };
-  const linkStyles = {
+  const linkStyles: React.CSSProperties = {
     textDecoration: "none",
     color: "black",
     fontFamily: "Mazzard-H-Extrabold",
     fontSize: "30px",
+    textAlign: "center",
   };
+  const cardStyles: React.CSSProperties = {
+    background: "#9be6b2",
+    border: "none",
+  };
+<<<<<<< HEAD
   const cardStyles = { background: "#9be6b2", border: "none", borderRadius: "15px"};
+=======
+>>>>>>> dfcaa11152918d5d3d5bd9088565b5eecc21af06
   return (
     <div>
       <RFAHeader
@@ -104,10 +112,13 @@ export const RFANews: React.FC = () => {
                 </h1>
               </Col>
               <Col>
-                <p style={{ fontSize: "20px" }}>
+                <p style={{ fontSize: "20px", fontFamily: "BeVietnam-Medium" }}>
                   Find all of our press information here! This includes photos,
                   statistics, stories, and more details. Contact us at{" "}
-                  <a href="mailto:info@roboticsforall.net">
+                  <a
+                    href="mailto:info@roboticsforall.net"
+                    style={{ color: "black" }}
+                  >
                     info@roboticsforall.net
                   </a>{" "}
                   for press inquiries.
@@ -184,7 +195,7 @@ export const RFANews: React.FC = () => {
                 <Card className="h-100" style={cardStyles}>
                   <Card.Img
                     src={houseofreps}
-                    style={{ height: "150px", width: "150px" }}
+                    style={{ height: "150px", width: "150px", margin: "auto" }}
                   />
                   <Card.Body>
                     <Card.Text>
@@ -216,26 +227,24 @@ export const RFANews: React.FC = () => {
           >
             <Carousel responsive={responsive}>
               {images.map((x) => (
-                <div key={x.id}>
-                  <a href={x.permalink}>
-                    {x.media_type === "VIDEO" ? (
-                      <video
-                        key={x.key}
-                        style={{ width: "100%", display: "block" }}
-                        controls
-                      >
-                        <source src={x.media_url} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <img
-                        src={x.media_url}
-                        key={x.key}
-                        style={{ width: "100%", display: "block" }}
-                        alt=""
-                      />
-                    )}
-                  </a>
-                </div>
+                <a href={x.permalink} key={x.id}>
+                  {x.media_type === "VIDEO" ? (
+                    <video
+                      key={x.key}
+                      style={{ width: "100%", display: "block" }}
+                      controls
+                    >
+                      <source src={x.media_url} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img
+                      src={x.media_url}
+                      key={x.key}
+                      style={{ width: "100%", display: "block" }}
+                      alt=""
+                    />
+                  )}
+                </a>
               ))}
             </Carousel>
           </Container>
@@ -258,46 +267,37 @@ export const RFANews: React.FC = () => {
             }}
           >
             <Carousel responsive={responsive}>
-              <div>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/xK1wg0mwJP8"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/IqgSK39czO0"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/aYSU-1hKHiY"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/jHhpK_vlJcQ"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <iframe
+                style={{ width: "100%", height: "315px" }}
+                src="https://www.youtube.com/embed/xK1wg0mwJP8"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+
+              <iframe
+                style={{ width: "100%", height: "315px" }}
+                src="https://www.youtube.com/embed/IqgSK39czO0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+
+              <iframe
+                style={{ width: "100%", height: "315px" }}
+                src="https://www.youtube.com/embed/aYSU-1hKHiY"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+
+              <iframe
+                style={{ width: "100%", height: "315px" }}
+                src="https://www.youtube.com/embed/jHhpK_vlJcQ"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </Carousel>
           </Container>
         </Row>
