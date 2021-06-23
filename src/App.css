@@ -137,6 +137,9 @@ a {
   letter-spacing: 0.1em;
   transition: 0.2s;
 }
+.react-multi-carousel-item {
+  margin: 10px;
+}
 
 /* #region Overrided Bootstrap styles for navbar */
 .navbar .nav-link {
