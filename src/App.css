@@ -67,7 +67,6 @@
 /* a:focus{
   text-decoration: none;
 } */
-
 .C06202 {
   color: #c06202;
 }
@@ -296,6 +295,7 @@ a {
   width: 25vmax;
   height: 17vmax; /* Height of new image */
   transition: 200ms;
+  border: none !important;
 }
 .home-page-house-img:hover {
   background-image: url("media/HoverImages/house_2.png") !important;
@@ -317,6 +317,7 @@ a {
   width: 15vmax;
   height: 17vmax; /* Height of new image */
   transition: 200ms;
+  border: none !important;
 }
 .home-page-apple-img:hover {
   background-image: url("media/HoverImages/apple_2.png");
@@ -338,6 +339,7 @@ a {
   width: 17vmax;
   height: 17vmax; /* Height of new image */
   transition: 200ms;
+  border: none !important;
 }
 .home-page-world-img:hover {
   background-image: url("media/HoverImages/world_2.png");

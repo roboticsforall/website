@@ -17,6 +17,9 @@ import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
 import YMCA from "@/media/Sponsors/ymca.png";
 
+import house from "@/media/HoverImages/apple_1.png"
+import transparentImage from "@/media/transparentImage.png"
+
 import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
 
 export const RFAHomePage: React.FC = () => {
@@ -81,6 +84,7 @@ export const RFAHomePage: React.FC = () => {
               <Link to="/individlearners" className="hyperlink">
                 <Image
                   className="mb-3 home-page-house-img"
+                  src = {transparentImage}
                 />
                 <h1
                   style={{
@@ -96,6 +100,7 @@ export const RFAHomePage: React.FC = () => {
               <Link to="/forschools" className="hyperlink">
                 <Image
                   className="mb-3 home-page-apple-img"
+                  src = {transparentImage}
                 />
                 <h1
                   style={{
@@ -111,6 +116,7 @@ export const RFAHomePage: React.FC = () => {
               <Link to="/volunteer-overview" className="hyperlink">
                 <Image
                   className="mb-3 home-page-world-img"
+                  src = {transparentImage}
                 />
                 <h1
                   style={{

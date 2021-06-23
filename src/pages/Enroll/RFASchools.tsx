@@ -81,7 +81,7 @@ export const RFASchools: React.FC<{
           View our detailed syllabi below:
         </h5>
         <br></br>
-          <Row className = "justify-content-between">
+          <Row className = "mx-2 justify-content-between">
             {syllabiJSON.syllabi_list.map((flagInfo, i) => (
               <Col className = "school-flag-course-card border" md = {"auto"}>
                 <RFAFlagCard image = {flagInfo.file_path.replace("/public", "")} title = {flagInfo.language} link = {flagInfo.link}/>
