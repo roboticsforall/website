@@ -79,13 +79,17 @@ export const RFAIndLearners: React.FC<{
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
         <br></br>
-          <Row className = "mx-2 justify-content-between">
-            {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-              <Col className = "ind-learners-flag-course-card border" md = {"auto"}>
-                <RFAFlagCard image = {flagInfo.file_path.replace("/public", "")} title = {flagInfo.language} link = {flagInfo.link}/>
-              </Col>
-            ))}
-          </Row>
+        <Row className="justify-content-between">
+          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+            <Col className="ind-learners-flag-course-card border" md={"auto"}>
+              <RFAFlagCard
+                image={flagInfo.file_path.replace("/public", "")}
+                title={flagInfo.language}
+                link={flagInfo.link}
+              />
+            </Col>
+          ))}
+        </Row>
         <br></br>
         <a className="hyperlink">
           <Row className="ind-learners-enroll-button p-2 justify-content-center align-items-center">

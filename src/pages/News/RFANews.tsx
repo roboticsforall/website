@@ -5,7 +5,7 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
 import mercurynews from "@/media/News/Mercury-News.png";
 import houseofreps from "@/media/News/House-of-Representatives.png";
-import Carousel from "react-multi-carousel";
+import Carousel from "react-multi-carousel/lib/Carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const photosImport = Array.from(
@@ -76,11 +76,8 @@ export const RFANews: React.FC = () => {
   const cardStyles: React.CSSProperties = {
     background: "#9be6b2",
     border: "none",
+    borderRadius: "15px",
   };
-<<<<<<< HEAD
-  const cardStyles = { background: "#9be6b2", border: "none", borderRadius: "15px"};
-=======
->>>>>>> dfcaa11152918d5d3d5bd9088565b5eecc21af06
   return (
     <div>
       <RFAHeader

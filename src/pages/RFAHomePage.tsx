@@ -17,8 +17,8 @@ import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
 import YMCA from "@/media/Sponsors/ymca.png";
 
-import house from "@/media/HoverImages/apple_1.png"
-import transparentImage from "@/media/transparentImage.png"
+import house from "@/media/HoverImages/apple_1.png";
+import transparentImage from "@/media/transparentImage.png";
 
 import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
 
@@ -82,14 +82,11 @@ export const RFAHomePage: React.FC = () => {
           <Row>
             <Col md={4} className="text-center">
               <Link to="/individlearners" className="hyperlink">
-<<<<<<< HEAD
                 <Image
                   className="mb-3 home-page-house-img"
-                  src = {transparentImage}
+                  src={transparentImage}
                 />
-=======
                 <Image className="mb-3 home-page-house-img" />
->>>>>>> dfcaa11152918d5d3d5bd9088565b5eecc21af06
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -102,14 +99,11 @@ export const RFAHomePage: React.FC = () => {
             </Col>
             <Col md={4} className="text-center">
               <Link to="/forschools" className="hyperlink">
-<<<<<<< HEAD
                 <Image
                   className="mb-3 home-page-apple-img"
-                  src = {transparentImage}
+                  src={transparentImage}
                 />
-=======
                 <Image className="mb-3 home-page-apple-img" />
->>>>>>> dfcaa11152918d5d3d5bd9088565b5eecc21af06
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -122,14 +116,10 @@ export const RFAHomePage: React.FC = () => {
             </Col>
             <Col md={4} className="text-center">
               <Link to="/volunteer-overview" className="hyperlink">
-<<<<<<< HEAD
                 <Image
                   className="mb-3 home-page-world-img"
-                  src = {transparentImage}
+                  src={transparentImage}
                 />
-=======
-                <Image className="mb-3 home-page-world-img" />
->>>>>>> dfcaa11152918d5d3d5bd9088565b5eecc21af06
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
