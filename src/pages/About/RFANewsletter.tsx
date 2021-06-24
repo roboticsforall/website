@@ -10,6 +10,20 @@ export const RFANewsletter: React.FC = (props) => {
     const heading3 = {
       fontFamily: "BeVietnam-ExtraBold"
     }
+
+    const subscribe = {
+      fontFamily: "Oswald-Medium", 
+      fontSize: "46px", 
+      color: "#554400",
+      textAlign: "center"
+    }
+
+    const ofsubscriber = {
+      fontFamily: "Oswald-Medium", 
+      fontSize: "25px", 
+      color: "#638f00"
+    }
+
     return (
       <>
         <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Read more about our work!"} description = {"Read through our monthly newsletter to learn more about our work!"}/>
@@ -56,11 +70,11 @@ export const RFANewsletter: React.FC = (props) => {
 
           <div id="mc_embed_signup">
 
-          <form action="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+          <form action="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               
           <div id="mc_embed_signup_scroll">
         
-            <h2 style = "font-family: Oswald-Light; font-size: 46px; color: #554400; text-align: center;" >Subscribe for Updates!</h2>
+            <h2 style = {subscribe}> Subscribe for Updates!</h2>
 
           <div className = "justify-content-between">
             <div className="mc-field-group ">
@@ -79,53 +93,18 @@ export const RFANewsletter: React.FC = (props) => {
 
             </div>
 
-            <style>
-                input {
-                  background-color: #ffcc00;
-                  opacity: 0.3;
-                  font-family: BeVietnam-ExtraBold;
-                  color: #000000;
-                  font-size: 20px;
-                }
-                input::placeholder {
-                  color: #638f00;
-                }
-                input:placeholder-shown {
-                  border: 2px red;
-                  background-color: #ff4040;
-                }
-                input::selection {
-                  background-color: #ffffff;
-                }
-              </style>
           </div>
 
           <div className="mc-field-group input-group justify-content-end" >
 
-              <strong style = "font-family: Oswald-Medium; font-size: 25px; color: #638f00">I am a... </strong>
+              <strong style = {ofsubscriber}>I am a... </strong>
 
               <ul>
-                <li><input class="checkbox" type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Volunteer</label></li>
-                <li><input class="checkbox" type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Donor/Mentor</label></li>
-                <li><input class="checkbox" type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2" style = "font-family = BeVietnam-ExtraBold; font-size:18px" >Parent/Student</label></li>
+                <li><input type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteer</label></li>
+                <li><input type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donor/Mentor</label></li>
+                <li><input type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parent/Student</label></li>
               </ul>
 
-              <style>
-                .checkbox {
-                  radius: 5px;
-                  background-color: #ffdb4d;
-                  opacity: 1;
-                  color: #ffffff;
-                }
-                .checkbox::hover {
-                  background-color: #ffdb4d;
-                  opacity: 0.5;
-                }
-
-                .checkbox::selection {
-                  background-color: #ffcc00;
-                }
-              </style>
           </div>
 
             <div id="mce-responses" className="clear"> {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}

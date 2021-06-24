@@ -101,21 +101,27 @@ textarea:hover {
 }
 
 
-.checkbox {
-  radius: 5px;
+checkbox {
+  width: 10px;
   background-color: #ffdb4d;
   opacity: 1;
   color: #ffffff;
 }
-.checkbox::hover {
+checkbox:hover {
   background-color: #ffdb4d;
   opacity: 0.5;
 }
 
-.checkbox::selection {
+checkbox::selection {
   background-color: #ffcc00;
 }
 
+.subscribe {
+  font-family: "Oswald-Light"; 
+  font-size: 46px; 
+  color: #554400; 
+  text-align: center;
+}
 .long-button {
   border-radius: 0.5em;
   border: none;
