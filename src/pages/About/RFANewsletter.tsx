@@ -4,7 +4,7 @@ import { RFAHeader } from "@/components/RFAHeader";
 import { RFANewsCard } from '@/components/RFANewsCard';
 import { RFALongButton } from '@/components/RFALongButton';
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
-
+import { RFASubmitButton} from "@/components/RFASubmitButton";
 export const RFANewsletter: React.FC = (props) => {
 
     const heading3 = {
@@ -21,7 +21,7 @@ export const RFANewsletter: React.FC = (props) => {
     const ofsubscriber = {
       fontFamily: "Oswald-Medium", 
       fontSize: "25px", 
-      color: "#638f00"
+      color: "#b38f00"
     }
 
     return (
@@ -76,7 +76,7 @@ export const RFANewsletter: React.FC = (props) => {
         
             <h2 style = {subscribe}> Subscribe for Updates!</h2>
 
-          <div className = "justify-content-between">
+          <div className = "justify-content-start">
             <div className="mc-field-group ">
 
               <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
@@ -98,12 +98,12 @@ export const RFANewsletter: React.FC = (props) => {
           <div className="mc-field-group input-group justify-content-end" >
 
               <strong style = {ofsubscriber}>I am a... </strong>
-
-              <ul>
-                <li><input type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteer</label></li>
-                <li><input type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donor/Mentor</label></li>
-                <li><input type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parent/Student</label></li>
-              </ul>
+              <br></br>
+                <ul>
+                  <li><input type="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteer</label></li>
+                  <li><input type="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donor/Mentor</label></li>
+                  <li><input type="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parent/Student</label></li>
+                </ul>
 
           </div>
 
@@ -117,7 +117,7 @@ export const RFANewsletter: React.FC = (props) => {
               
               <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex="-1" value=""/></div>
               
-              <div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
+              <RFASubmitButton className="clear" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
               
           </div>
 
