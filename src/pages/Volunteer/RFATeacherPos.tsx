@@ -277,7 +277,7 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard2
+              <RFAPositionCard1
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
@@ -291,7 +291,7 @@ export const RFATeacherPos: React.FC = () => {
                   </ul>
                 }
               />
-              <RFAPositionCard1
+              <RFAPositionCard2
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
@@ -379,7 +379,7 @@ export const RFATeacherPos: React.FC = () => {
                   </ul>
                 }
               />
-              <RFAPositionCard2
+              <RFAPositionCard1
                 posHeader={"QUESTIONS"}
                 posImage={QuestionMark}
                 posDescription={

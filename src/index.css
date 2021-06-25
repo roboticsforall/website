@@ -225,16 +225,16 @@ a {
   border: 15px solid;
   border-radius: 0 0 15px 15px;
   margin: 0 0 40px 0;
-  color: rgb(255, 204, 0, 0.5);
-  border-color: rgb(255, 204, 0, 0.5);
+  color: rgb(255, 204, 0);
+  border-color: rgb(255, 204, 0);
 }
 
 .pos-container2 {
   border: 15px solid;
   border-radius: 0 0 15px 15px;
   margin: 0 0 40px 0;
-  color: rgb(252, 175, 98, 0.5);
-  border-color: rgb(252, 175, 98, 0.5);
+  color: #fa8d1f;
+  border-color: #fa8d1f;
 }
 
 .pos-container-button {

@@ -62,7 +62,7 @@ export const RFASchools: React.FC = () => {
         <br></br>
         <Row className="justify-content-between">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <Col className="school-flag-course-card border" md={"auto"} key={i}>
+            <Col className="school-flag-course-card mb-2 mx-2" md={"auto"} key={i}>
               <RFAFlagCard
                 image={flagInfo.file_path.replace("/public", "")}
                 title={flagInfo.language}
@@ -73,7 +73,7 @@ export const RFASchools: React.FC = () => {
         </Row>
         <br></br>
         <a className="hyperlink">
-          <Row className="school-enroll-button p-2 justify-content-center align-items-center">
+          <Row className="school-enroll-button mx-2 p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
         </a>
@@ -95,7 +95,7 @@ export const RFASchools: React.FC = () => {
           <br></br>
           <Row className="justify-content">
             {coursesImgJSON.courses_list.map((courseInfo, i) => (
-              <Col className="school-flag-course-card border" md="auto" key={i}>
+              <Col className="school-flag-course-card" md="auto" key={i}>
                 <RFACourseCard
                   link={""}
                   image={courseInfo.file_path.replace("/public", "")}

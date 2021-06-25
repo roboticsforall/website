@@ -30,7 +30,7 @@ export const RFAHomeAffOrgsCard: React.FC<{
     <>
       <Row
         style={{ backgroundColor: props.bgColor, ...borderRadius }}
-        className="justify-content-center align-items-center"
+        className="justify-content-center align-items-center mx-2"
       >
         <Col
           className="d-flex justify-content-center"

@@ -36,6 +36,8 @@ export const RFARegister: React.FC = () => {
             <Markdown>{registerFormJSON.register_form_code.code}</Markdown>
           </Col>
         </Row>
+        <br></br>
+        <br></br>
       </Container>
     </>
   );

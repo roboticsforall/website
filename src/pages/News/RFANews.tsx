@@ -157,7 +157,7 @@ export const RFANews: React.FC = () => {
                 style={linkStyles}
                 href="https://paloaltoonline.com/news/2018/07/04/gunn-underclassmen-aim-to-change-educational-outcomes-through-robotics"
               >
-                <Card className="h-100" style={cardStyles}>
+                <Card className="h-100 p-2" style={cardStyles}>
                   <Card.Img src={paloaltoonline} />
                   <Card.Body>
                     <Card.Text>
@@ -173,7 +173,7 @@ export const RFANews: React.FC = () => {
                 href="https://www.mercurynews.com/2019/05/06/palo-alto-teens-turn-school-project-into-national-nonprofit-that-tackles-achievement-gap/"
                 style={linkStyles}
               >
-                <Card className="h-100" style={cardStyles}>
+                <Card className="h-100 p-2" style={cardStyles}>
                   <Card.Img src={mercurynews} />
                   <Card.Body>
                     <Card.Text>
@@ -189,7 +189,7 @@ export const RFANews: React.FC = () => {
                 href="https://www.roboticsforall.net/uploads/1/1/5/4/115434321/scan0001_1.jpg"
                 style={linkStyles}
               >
-                <Card className="h-100" style={cardStyles}>
+                <Card className="h-100 p-2" style={cardStyles}>
                   <Card.Img
                     src={houseofreps}
                     style={{ height: "150px", width: "150px", margin: "auto" }}
@@ -328,6 +328,8 @@ export const RFANews: React.FC = () => {
           </Container>
         </Row>
       </Container>
+      <br/>
+      <br/>
     </div>
   );
 };

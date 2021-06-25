@@ -58,7 +58,7 @@ export const RFAIndLearners: React.FC = () => {
         <Row className="justify-content-between">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
             <Col
-              className="ind-learners-flag-course-card border"
+              className="ind-learners-flag-course-card mb-2 mx-2"
               md={"auto"}
               key={i}
             >
@@ -72,7 +72,7 @@ export const RFAIndLearners: React.FC = () => {
         </Row>
         <br></br>
         <a className="hyperlink">
-          <Row className="ind-learners-enroll-button p-2 justify-content-center align-items-center">
+          <Row className="ind-learners-enroll-button mx-2 p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
         </a>

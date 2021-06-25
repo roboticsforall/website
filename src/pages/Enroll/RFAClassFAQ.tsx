@@ -30,29 +30,7 @@ export const RFAClassFAQ: React.FC = () => {
           question={classFAQJSON.upcoming_courses_question}
           answer={<Markdown children={classFAQJSON.upcoming_courses_answer} />}
         />
-
-        {/* {[
-              {
-                question: "When will more courses be offered?",
-                answer: "We are planning on launching more courses including:",
-                season: 'Summer',
-                year: 2021,
-                date: '*insert date',
-                typeOfQuestion: "courses",
-                coursesList: [
-                  "Basic Scratch (K-3) Part 2", 
-                  "Project-Based Learning Scratch (3rd-8th)", 
-                  "Advanced Python (6th-8th)",
-                  "Advanced CAD with Fusion 360 (6th-8th)",
-                  "HTML/CSS (5th-8th)",
-                  "Java (6th - 8th)"
-                ]
-              },
-
-            ].map(QAPair => (
-              <RFAFAQDropdowns key = {1} coursesList = {QAPair.coursesList} typeOfQuestion = {QAPair.typeOfQuestion} question = {QAPair.question} answer = {QAPair.answer}
-                season = {QAPair.season} year = {QAPair.year} date = {QAPair.date}/>
-            ))} */}
+        <br/>
       </Container>
     </div>
   );

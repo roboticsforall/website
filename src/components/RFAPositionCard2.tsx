@@ -22,7 +22,7 @@ export const RFAPositionCard2: React.FC<{
   };
 
   return (
-    <Container className="pos-container">
+    <Container className="pos-container2">
       <div>
         <h1 className="header-size" style={posHeader}>
           {props.posHeader}
