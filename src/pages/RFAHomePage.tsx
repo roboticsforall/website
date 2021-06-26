@@ -143,21 +143,21 @@ export const RFAHomePage: React.FC = () => {
             logo: TFALogo,
             linkColor: "#C06204",
             bgColor: "#FCAF62",
-            link: "https://www.tutoringforall.org/",
+            link: "https://www.tutoringforall.org/about",
           },
           {
             label: "mentoring for all",
             logo: MFALogo,
             linkColor: "#248F47",
             bgColor: "#70DB94",
-            link: "https://www.mentoringforall.org/",
+            link: "https://www.mentoringforall.org/mission-vision-values",
           },
           {
             label: "crafts for charity",
             logo: CFCLogo,
             linkColor: "#006BD6",
             bgColor: "#70BAFF",
-            link: "https://craftsforcharity.com/",
+            link: "https://craftsforcharity.com/about-us/",
           },
         ].map((afforgs, i) => (
           <RFAHomeAffOrgsCard
