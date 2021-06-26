@@ -15,6 +15,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
     fontSize: "3vmax",
     padding: "20px",
     textAlign: "left",
+    width: "auto"
   };
 
   const ActiveStyle2: React.CSSProperties = {

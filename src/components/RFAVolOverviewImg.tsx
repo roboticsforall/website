@@ -2,9 +2,9 @@ import React from "react";
 import { Image } from "react-bootstrap";
 
 export const RFAVolOverviewImg: React.FC<{
-  color: string;
-  title: string;
-  image: string;
+  color: string,
+  title: string,
+  image: string,
 }> = (props) => {
   const cardTitle = {
     fontFamily: "Oswald-Medium",
@@ -16,13 +16,7 @@ export const RFAVolOverviewImg: React.FC<{
   };
   return (
     <div>
-      <a
-        target="_blank"
-        href="https://www.bonfire.com/store/rfa/"
-        rel="noreferrer"
-      >
-        <Image style={overviewImgSize} src={props.image} />
-      </a>
+      <Image style={overviewImgSize} src={props.image} />
       <p className="text-center" style={cardTitle}>
         {props.title}
       </p>

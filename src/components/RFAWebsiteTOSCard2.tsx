@@ -5,31 +5,24 @@ export const RFAWebsiteTOSCard2: React.FC<{
   posHeader?: string;
   posDescription: JSX.Element;
 }> = (props) => {
-  const posHeader: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    letterSpacing: "0.25em",
-    // textAlign: "center",
-  };
 
   const posDescription: React.CSSProperties = {
     color: "#000000",
     fontFamily: "BeVietnam-Medium",
   };
+  const borderColor: React.CSSProperties = {
+    borderColor: "#fcaf6280"
+  }
 
   return (
-    <Container className="pos-container2">
-      <div>
+    <Container style = {borderColor} className="pos-container2">
         <Row>
           <Col>
-            <h1 className="header-size" style={posHeader}>
-              {props.posHeader}
-            </h1>
             <p className="header-description-size" style={posDescription}>
               {props.posDescription}
             </p>
           </Col>
         </Row>
-      </div>
     </Container>
   );
 };

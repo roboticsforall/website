@@ -41,9 +41,9 @@ export const RFAVolOverviewCard: React.FC<{
   return (
     <Container>
       <Row>
-        <div style={{ paddingLeft: props.arrowLocation }}>
+        {/* <div style={{ paddingLeft: props.arrowLocation }}>
           <div style={arrow}></div>
-        </div>
+        </div> */}
       </Row>
       <Row>
         <Col className="border center-align me-3 px-4" md={8} style={card}>

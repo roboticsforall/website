@@ -67,6 +67,7 @@ export const RFAVolOverview: React.FC = () => {
             />
           </Col>
         </Row>
+        <br></br>
         <Col>
           <RFAVolOverviewCard
             applyLink="/volunteer-volunteerapp"
@@ -81,6 +82,7 @@ export const RFAVolOverview: React.FC = () => {
             cardfloat={"left"}
             arrowLocation={"4.6vmax"}
           ></RFAVolOverviewCard>
+          <br></br>
           <RFAVolOverviewCard
             applyLink="/volunteer-volunteerapp"
             learnMoreLink="/volunteer-teacherpos"
@@ -94,6 +96,7 @@ export const RFAVolOverview: React.FC = () => {
             cardfloat={"left"}
             arrowLocation={"26vmax"}
           ></RFAVolOverviewCard>
+          <br></br>
           <RFAVolOverviewCard
             applyLink="/volunteer-volunteerapp"
             learnMoreLink="/volunteer-publicitypos"

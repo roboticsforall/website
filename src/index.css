@@ -247,7 +247,7 @@ a {
   transition: 200ms !important;
 }
 .nav-tabs {
-  border: none;
+  border: none !important;
 }
 /*#endregion*/
 

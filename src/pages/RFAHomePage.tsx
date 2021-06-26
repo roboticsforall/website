@@ -80,7 +80,7 @@ export const RFAHomePage: React.FC = () => {
         <Container>
           <Row>
             <Col md={4} className="text-center">
-              <Link to="/individlearners" className="hyperlink">
+              <Link to="/enroll-individlearners" className="hyperlink">
                 <Image
                   className="mb-3 home-page-house-img"
                   src={transparentImage}
@@ -96,7 +96,7 @@ export const RFAHomePage: React.FC = () => {
               </Link>
             </Col>
             <Col md={4} className="text-center">
-              <Link to="/forschools" className="hyperlink">
+              <Link to="/enroll-schools" className="hyperlink">
                 <Image
                   className="mb-3 home-page-apple-img"
                   src={transparentImage}
