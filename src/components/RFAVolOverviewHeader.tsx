@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { RFAVolOverviewCircle } from "./RFAVolOverviewCircle";
 
 export const RFAVolOverviewHeader: React.FC<{
@@ -9,97 +9,91 @@ export const RFAVolOverviewHeader: React.FC<{
   headerTextColor: string;
 }> = (props) => {
   const headerText: React.CSSProperties = {
-    position: "relative",
+    marginBottom: "4.5%",
     textAlign: "center",
-    bottom: "3vw",
+    width: "100%",
+    height: "24%",
   };
   const pageHeader: React.CSSProperties = {
     fontFamily: "Mazzard-H-Bold",
+    fontSize: "5vw",
     transform: "rotate(358deg)",
     color: props.headerTextColor,
   };
   const headerBlob: React.CSSProperties = {
+    paddingTop: "2vh",
     backgroundSize: "100% 100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "center",
     height: "45vw",
     width: "100vw",
     backgroundImage: `url(${props.image})`,
   };
   const pageHeaderDescription: React.CSSProperties = {
+    fontSize: "1.6vw",
     fontFamily: "BeVietnam-SemiBold",
   };
   const statCircles: React.CSSProperties = {
-    paddingLeft: "5vmax",
+    justifySelf: "stretch",
+    display: "flex",
+    justifyContent: "space-around",
+    width: "74%",
+    height: "70%",
   };
 
   return (
-    <Row style={headerBlob}>
-      <Container className="align-self-end">
-        <Col>
-          <Row style={statCircles}>
-            <Col>
-              <div>
-                <RFAVolOverviewCircle
-                  paddingtop={"3.3vmax"}
-                  width={"16vmax"}
-                  height={"16vmax"}
-                  top={"-20vmax"}
-                  title={"Work With:"}
-                  subtext={"Levels of Curriculum"}
-                  end={12}
-                  subtextSize={"1.3vmax"}
-                  titleSize={"2.1vmax"}
-                ></RFAVolOverviewCircle>
-              </div>
-            </Col>
-            <Col>
-              <div>
-                <RFAVolOverviewCircle
-                  paddingtop={"3.3vmax"}
-                  width={"16vmax"}
-                  height={"16vmax"}
-                  top={"-32vmax"}
-                  title={"Join our:"}
-                  subtext={"Active Volunteers"}
-                  end={221}
-                  subtextSize={"1.3vmax"}
-                  titleSize={"2.1vmax"}
-                ></RFAVolOverviewCircle>
-              </div>
-            </Col>
-            <Col>
-              <div>
-                <RFAVolOverviewCircle
-                  paddingtop={"3.8vmax"}
-                  width={"18vmax"}
-                  height={"17vmax"}
-                  top={"-23vmax"}
-                  title={"Support our:"}
-                  subtext={"Students Taught"}
-                  end={1296}
-                  subtextSize={"1.6vmax"}
-                  titleSize={"2.4vmax"}
-                ></RFAVolOverviewCircle>
-              </div>
-            </Col>
-          </Row>
+    <div style={headerBlob}>
+      <div style={statCircles}>
+        <RFAVolOverviewCircle
+          align={"flex-end"}
+          width={"16vw"}
+          height={"16vw"}
+          title={"Work With:"}
+          subtext={"Levels of Curriculum"}
+          end={12}
+          subtextSize={"0.63em"}
+          titleSize={"1em"}
+        ></RFAVolOverviewCircle>
+        <RFAVolOverviewCircle
+          align={"flex-start"}
+          width={"16vw"}
+          height={"16vw"}
+          title={"Join our:"}
+          subtext={"Active Volunteers"}
+          end={240}
+          subtextSize={"0.65em"}
+          titleSize={"1em"}
+        ></RFAVolOverviewCircle>
+        <RFAVolOverviewCircle
+          align={"center"}
+          width={"18vw"}
+          height={"17vw"}
+          title={"Support our:"}
+          subtext={"Students Taught"}
+          end={1296}
+          subtextSize={"0.8em"}
+          titleSize={"1.1em"}
+        ></RFAVolOverviewCircle>
+      </div>
 
-          <div className="mb-5" style={headerText}>
-            <Row className="justify-content-center">
-              <h1 style={pageHeader} className="text-center header-size">
-                {props.title}
-              </h1>
-            </Row>
-            <Row className="justify-content-center">
-              <p
-                style={pageHeaderDescription}
-                className="text-center header-description-size"
-              >
-                {props.description}
-              </p>
-            </Row>
-          </div>
-        </Col>
-      </Container>
-    </Row>
+      <div style={headerText}>
+        <Row className="justify-content-center">
+          <h1 style={pageHeader} className="text-center header-size">
+            {props.title}
+          </h1>
+        </Row>
+        <Row className="justify-content-center">
+          <p
+            style={pageHeaderDescription}
+            className="text-center header-description-size"
+          >
+            {props.description}
+          </p>
+        </Row>
+      </div>
+    </div>
+
   );
 };
