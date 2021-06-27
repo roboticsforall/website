@@ -64,6 +64,26 @@
     url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
     url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
+/* .container{
+  max-width: 980px;
+} */
+
+html,
+body {
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  letter-spacing: 1.4px;
+}
+
 /* a:focus{
   text-decoration: none;
 } */
@@ -110,25 +130,6 @@ textarea:hover {
 .long-button:hover {
   transition: 200ms;
   background-color: #ffcc00ca;
-}
-/* .container{
-  max-width: 980px;
-} */
-
-html,
-body {
-  height: 100%;
-  /* overflow-x: hidden; */
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  letter-spacing: 1.4px;
 }
 
 .aff-org-card-link {

@@ -6,6 +6,7 @@ import { RFACourseCard } from "@/components/RFACourseCard";
 
 import coursesImgJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
+import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
 
@@ -72,7 +73,7 @@ export const RFASchools: React.FC = () => {
           ))}
         </Row>
         <br></br>
-        <a className="hyperlink">
+        <a target = "_blank" href = {enroll_links.link} className="hyperlink">
           <Row className="school-enroll-button mx-2 p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>

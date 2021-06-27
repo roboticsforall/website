@@ -96,7 +96,7 @@ export const RFAFooter: React.FC = () => {
                 P.O. Box 56, Palo Alto, CA 94302
               </a>
             </div>
-            <div className="d-flex align-items-baseline">
+            <div className="d-flex align-items-end">
               <a
                 target="_blank"
                 href="https://www.facebook.com/roboticsforalleducation/"
