@@ -43,35 +43,35 @@ export const App: React.FC = () => {
 
 {/* Enroll Pages */}
 
-                <Route path="/enroll-classfaq" component={RFAClassFAQ} />
+                <Route path="/enroll/classfaq" component={RFAClassFAQ} />
                 <Route
-                  path="/enroll-individlearners"
+                  path="/enroll/individlearners"
                   component={RFAIndLearners}
                 />
-                <Route path="/enroll-schools" component={RFASchools} />
-                <Route path="/enroll-register" component={RFARegister} />
+                <Route path="/enroll/schools" component={RFASchools} />
+                <Route path="/enroll/register" component={RFARegister} />
 
 {/* Volunteer Pages */}
-                <Route path="/volunteer-overview" component={RFAVolOverview} />
+                <Route path="/volunteer/overview" component={RFAVolOverview} />
 
                 <Route
-                  path="/volunteer-volunteerfaq"
+                  path="/volunteer/volunteerfaq"
                   component={RFAVolunteerFAQ}
                 />
-                <Route path="/volunteer-teacherpos" component={RFATeacherPos} />
+                <Route path="/volunteer/teacherpos" component={RFATeacherPos} />
                 <Route
-                  path="/volunteer-publicitypos"
+                  path="/volunteer/publicitypos"
                   component={RFAPublicityInternPos}
                 />
                 <Route
-                  path="/volunteer-volunteerapp"
+                  path="/volunteer/volunteerapp"
                   component={RFAVolunteerApp}
                 />
 
 {/* About Pages */}
 
-                <Route path="/about-overview" component={RFAAbtOverview} />
-                <Route path="/about-afforgs" component={RFAAffOrgs} />
+                <Route path="/about/overview" component={RFAAbtOverview} />
+                <Route path="/about/afforgs" component={RFAAffOrgs} />
 
 {/* Contact Page */}
 
