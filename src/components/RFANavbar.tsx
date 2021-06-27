@@ -35,7 +35,7 @@ export const RFANavbar: React.FC = () => {
           <ul className="navbar-nav w-100 d-flex justify-content-around">
             <li className="nav-item dropdown">
               <Link
-                to="/enroll-individlearners"
+                to="/enroll/individlearners"
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
@@ -66,7 +66,7 @@ export const RFANavbar: React.FC = () => {
             </li>
             <li className="nav-item dropdown">
               <Link
-                to="/volunteer-overview"
+                to="/volunteer/overview"
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
@@ -77,26 +77,26 @@ export const RFANavbar: React.FC = () => {
                 Volunteer
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link to="/volunteer-overview" className="dropdown-item">
+                <Link to="/volunteer/overview" className="dropdown-item">
                   Volunteer Overview
                 </Link>
-                <Link to="/volunteer-teacherpos" className="dropdown-item">
+                <Link to="/volunteer/teacherpos" className="dropdown-item">
                   Teacher Positions
                 </Link>
-                <Link to="/volunteer-publicitypos" className="dropdown-item">
+                <Link to="/volunteer/publicitypos" className="dropdown-item">
                   Publicity Positions
                 </Link>
-                <Link to="/volunteer-volunteerapp" className="dropdown-item">
+                <Link to="/volunteer/volunteerapp" className="dropdown-item">
                   Volunteer Application
                 </Link>
-                <Link to="/volunteer-volunteerfaq" className="dropdown-item">
+                <Link to="/volunteer/volunteerfaq" className="dropdown-item">
                   Volunteer FAQ's
                 </Link>
               </div>
             </li>
             <li className="nav-item dropdown">
               <Link
-                to="/about-overview"
+                to="/about/overview"
                 className="nav-link dropdown-toggle"
                 id="navbarDropdown"
                 role="button"
@@ -107,10 +107,10 @@ export const RFANavbar: React.FC = () => {
                 About
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link to="/about-overview" className="dropdown-item">
+                <Link to="/about/overview" className="dropdown-item">
                   Overview
                 </Link>
-                <Link to="/about-afforgs" className="dropdown-item">
+                <Link to="/about/afforgs" className="dropdown-item">
                   Affiliated Organizations
                 </Link>
               </div>
