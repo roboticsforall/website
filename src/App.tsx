@@ -43,17 +43,17 @@ export const App: React.FC = () => {
 
 {/* Enroll Pages */}
 
+                <Route path="/enroll-classfaq" component={RFAClassFAQ} />
                 <Route
-                  path="/enroll/individlearners"
+                  path="/enroll-individlearners"
                   component={RFAIndLearners}
                 />
-                <Route path="/enroll/schools" component={RFASchools} />
-                <Route path="/enroll/register" component={RFARegister} />
-                <Route path="/enroll/classfaq" component={RFAClassFAQ} />
+                <Route path="/enroll-schools" component={RFASchools} />
+                <Route path="/enroll-register" component={RFARegister} />
 
 {/* Volunteer Pages */}
-
                 <Route path="/volunteer-overview" component={RFAVolOverview} />
+
                 <Route
                   path="/volunteer-volunteerfaq"
                   component={RFAVolunteerFAQ}
