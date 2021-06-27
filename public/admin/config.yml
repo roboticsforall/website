@@ -143,4 +143,13 @@ collections:
           - label: "Google Form Embed Code"
             name: "register_form_code"
             widget: code
-            # output_code_only: true
+  - label: "Enroll Links" # used in UI
+    name: "enroll_links" # used in routes
+    files:
+      - label: "Enroll Links"
+        name: "enroll_links"
+        file: "src/posts/enroll_links.json"
+        fields:
+          - label: "Enroll Link for Ind Learners and Schools"
+            name: "link"
+            widget: string
