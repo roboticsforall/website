@@ -40,7 +40,9 @@ export const App: React.FC = () => {
             <CSSTransition key={location.key} classNames="fade" timeout={300}>
               <Switch location={location}>
                 <Route exact path="/" component={RFAHomePage} />
-                <Route path="/about-overview" component={RFAAbtOverview} />
+
+{/* Enroll Pages */}
+
                 <Route path="/enroll-classfaq" component={RFAClassFAQ} />
                 <Route
                   path="/enroll-individlearners"
@@ -49,6 +51,9 @@ export const App: React.FC = () => {
                 <Route path="/enroll-schools" component={RFASchools} />
                 <Route path="/enroll-register" component={RFARegister} />
                 <Route path="/volunteer-overview" component={RFAVolOverview} />
+
+{/* Volunteer Pages */}
+
                 <Route
                   path="/volunteer-volunteerfaq"
                   component={RFAVolunteerFAQ}
@@ -62,9 +67,22 @@ export const App: React.FC = () => {
                   path="/volunteer-volunteerapp"
                   component={RFAVolunteerApp}
                 />
+
+{/* About Pages */}
+
+                <Route path="/about-overview" component={RFAAbtOverview} />
                 <Route path="/about-afforgs" component={RFAAffOrgs} />
+
+{/* Contact Page */}
+
                 <Route path="/contact" component={RFAContact} />
+
+{/* News Page */}
+
                 <Route path="/news" component={RFANews} />
+
+{/* More Pages */}
+
                 <Route
                   path="/more-privacypolicy"
                   component={RFAPrivacyPolicy}
@@ -75,7 +93,11 @@ export const App: React.FC = () => {
                   path="/more-meetingrecords"
                   component={RFAMeetingRecords}
                 />
+
+{/* Donate Pages */}
+
                 <Route path="/donate" component={RFADonate} />
+
               </Switch>
             </CSSTransition>
           </TransitionGroup>
