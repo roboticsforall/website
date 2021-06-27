@@ -11,14 +11,7 @@ import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
 import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
 import linkedin from "@/media/SocialMediaLogos/linkedin.png";
 
-export const RFAContact: React.FC<{
-  address: string;
-  telephone: string;
-  email: string;
-  // facebookLink: "https://www.facebook.com/roboticsforalleducation/";
-  // instagramLink: "https://www.instagram.com/roboticsforall/";
-  // linkedin: "https://www.linkedin.com/company/robotics-for-all"
-}> = () => {
+export const RFAContact: React.FC = () => {
   const [state, handleSubmit] = useForm("mzbybwgz");
 
   const checkFormState = () => {
@@ -97,7 +90,15 @@ export const RFAContact: React.FC<{
               <br></br>
               <h3>
                 ADDRESS |{" "}
-                <p style={linkStyle}>P.O. Box 56, Palo Alto, CA 94302</p>
+                <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Palo+Alto,+CA+94302/@37.4400162,-122.1487548,15z/data=!3m1!4b1!4m8!1m2!2m1!1sP.O.+Box+56,+Palo+Alto,+CA+94302!3m4!1s0x808fbb1b431541ef:0x2d06ff09a989536f!8m2!3d37.44!4d-122.14"
+                className="C06202 hyperlink"
+                rel="noreferrer"
+                style = {linkStyle}
+              >
+                P.O. Box 56, Palo Alto, CA 94302
+              </a>
               </h3>
             </Row>
             <div className="d-flex">
