@@ -77,32 +77,35 @@ export const RFANewsletter: React.FC = (props) => {
         
             <h2 style = {subscribe}> Subscribe for Updates!</h2>
 
-          <Col md ={8} className = "justify-content-start">
-
-          <div className="mc-field-group">
-            <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
-            <input type="text" value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
-          </div>
+            <br></br>
             
-            <div className="mc-field-group ">
-              <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
-              <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
+          <Row>
+            <Col md = {8}>
+
+            <div className="mc-field-group">
+              <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
+              <input type="text" value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
             </div>
+              
+              <div className="mc-field-group ">
+                <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
+                <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
+              </div>
 
-          </Col>
+            </Col>
+            
+            <Col md = {4}>
+              <div style = {{display: "initial"}} className="mc-field-group input-group">
 
-          <div className="mc-field-group input-group justify-content-end" >
-
-              <strong style = {ofsubscriber}>I am a... </strong>
-              <br></br>
-              <Row>
-                <ul>
-                <li><input type="checkbox" className="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parent/Student</label></li>
-                  <li><input type="checkbox" className="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteer</label></li>
-                  <li><input type="checkbox" className="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donor/Mentor</label></li>
-                </ul>
-              </Row>
-          </div>
+                  <strong style = {ofsubscriber}>I am a... </strong>
+                  <ul>
+                  <li><input type="checkbox" className="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parent/Student</label></li>
+                    <li><input type="checkbox" className="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteer</label></li>
+                    <li><input type="checkbox" className="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donor/Mentor</label></li>
+                  </ul>
+              </div>
+            </Col>
+          </Row>
 
             <div id="mce-responses" className="clear"> {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
 
@@ -111,6 +114,10 @@ export const RFANewsletter: React.FC = (props) => {
               <div className = "response" id="mce-success-response" style= {{display: "none"}}></div>
 
             </div>  
+            
+            <br></br>
+            <br></br>
+            <br></br>
               
               <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex="-1" value=""/></div>
               
