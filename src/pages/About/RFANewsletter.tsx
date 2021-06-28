@@ -76,7 +76,7 @@ export const RFANewsletter: React.FC = (props) => {
         
             <h2 style = {subscribe}> Subscribe for Updates!</h2>
 
-          <div className = "justify-content-start">
+          <Col md ={8} className = "justify-content-start">
 
           <div className="mc-field-group">
             <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
@@ -88,18 +88,19 @@ export const RFANewsletter: React.FC = (props) => {
               <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
             </div>
 
-          </div>
+          </Col>
 
           <div className="mc-field-group input-group justify-content-end" >
 
               <strong style = {ofsubscriber}>I am a... </strong>
               <br></br>
+              <Row>
                 <ul>
                 <li><input type="checkbox" className="checkbox" value="4" name="group[24981][4]" id="mce-group[24981]-24981-2"/><label htmlFor="mce-group[24981]-24981-2">Parent/Student</label></li>
                   <li><input type="checkbox" className="checkbox" value="1" name="group[24981][1]" id="mce-group[24981]-24981-0"/><label htmlFor="mce-group[24981]-24981-0">Volunteer</label></li>
                   <li><input type="checkbox" className="checkbox" value="2" name="group[24981][2]" id="mce-group[24981]-24981-1"/><label htmlFor="mce-group[24981]-24981-1">Donor/Mentor</label></li>
                 </ul>
-
+              </Row>
           </div>
 
             <div id="mce-responses" className="clear"> {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
