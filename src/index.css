@@ -132,6 +132,18 @@ textarea:hover {
   background-color: #ffcc00ca;
 }
 
+.newsletter-card {
+  border-radius: 1em;
+  transition: 200ms;
+  background-color: #ffcc0080;
+  font-family: "Oswald-Medium";
+}
+
+.newsletter-card:hover{
+  transition: 200ms;
+  background-color: #ffcc00;
+}
+
 .aff-org-card-link {
   font-family: "BeVietnam-ExtraBold", sans-serif;
   font-size: 2.5em;
