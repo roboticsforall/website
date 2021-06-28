@@ -5,6 +5,7 @@ import { RFANewsCard } from '@/components/RFANewsCard';
 import { RFALongButton } from '@/components/RFALongButton';
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import { RFASubmitButton} from "@/components/RFASubmitButton";
+
 export const RFANewsletter: React.FC = (props) => {
 
     const heading3 = {

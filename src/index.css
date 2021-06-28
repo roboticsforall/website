@@ -521,3 +521,83 @@ textarea:hover {
   }
 }
 /*#endregion*/
+/* input::placeholder,
+textarea::placeholder {
+  color: #b38f00;
+  font-family: "BeVietnam-ExtraBold";
+  font-size: 20px;
+}
+
+button,
+input,
+textarea {
+  outline: none !important;
+}
+input,
+textarea {
+  background-color: #ffcc004d;
+  outline: none;
+}
+input:invalid:focus,
+textarea:invalid:focus {
+  border: 2px solid red;
+  background-color: white;
+}
+input:valid {
+  border: 1px solid black;
+}
+
+input:hover,
+textarea:hover {
+  background-color: white;
+}
+
+label {
+  font-family: "BeVietnam-Bold";
+  font-size: 18px;
+}
+
+.checkbox {
+  display: inline-flex !important;
+  cursor: pointer ;
+  position: relative;
+}
+
+.checkbox > span {
+  color: #34495E !important;
+  padding: 0.5rem 0.25rem !important;
+}
+
+.checkbox {
+  height: 25px !important; 
+  width: 25px !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -o-appearance: none;
+  appearance: none !important;
+  border: 1px solid #34495E !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  transition-duration: 0.3s !important;
+  background-color: #41B883 !important;
+  cursor: pointer !important;
+}
+
+.checkbox > input:checked {
+  border: 1px solid #41B883 !important;
+  background-color: #34495E !important;
+}
+
+.checkbox > input:checked + span::before {
+  content: '\2713' !important;
+  display: block !important;
+  text-align: center !important; 
+  color: #41B883 !important;
+  position: absolute !important;
+  left: 0.7rem !important;
+  top: 0.2rem !important;
+}
+
+.checkbox > input:active {
+  border: 2px solid #34495E !important;
+} */
