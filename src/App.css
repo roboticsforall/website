@@ -108,19 +108,19 @@ label {
   font-size: 18px;
 }
 
-.checkbox {
-  width: 10px;
-  background-color: #ffdb4d;
-  opacity: 1;
-  color: #ffffff;
+input[type="checkbox"] {
+  width: 10px !important;
+  background-color: #ffdb4d !important;
+  opacity: 1 !important;
+  color: #ffffff !important;
 }
-.checkbox:hover {
-  background-color: #ffdb4d;
-  opacity: 0.5;
+input[type="checkbox"]:hover {
+  background-color: #ffdb4d !important;
+  opacity: 0.5 !important;
 }
 
-.checkbox::selection {
-  background-color: #ffcc00;
+input[type="checkbox"]::selection {
+  background-color: #ffcc00 !important;
 }
 
 .long-button {
