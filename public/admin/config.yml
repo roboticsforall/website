@@ -166,24 +166,86 @@ collections:
           - label: "Scheduling"
             name: "Scheduling"
             widget: markdown
-          - label: "Tasks"
+          - label: "Tasks (Add Bulleted List)"
             name: "Tasks"
             widget: markdown
-          - label: "Curriculum"
+          - label: "Curriculum (Add Bulleted List)"
             name: "Curriculum"
             widget: markdown
-          - label: "Time Commitment"
+          - label: "Time Commitment (Add Bulleted List)"
             name: "Time Commitment"
             widget: markdown
-          - label: "Benefits"
+          - label: "Benefits (Add Bulleted List)"
             name: "Benefits"
             widget: markdown
-          - label: "Requirments"
+          - label: "Requirments (Add Bulleted List)"
             name: "Requirments"
             widget: markdown
-          - label: "Beneficial Qualifications"
+          - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "Beneficial Qualifications"
             widget: markdown
-          - label: "questions"
+          - label: "Questions (Add Bulleted List)"
+            name: "questions"
+            widget: markdown
+      - label: "TA Overview"
+        name: "ta_overview"
+        file: "src/posts/ta_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Scheduling"
+            name: "Scheduling"
+            widget: markdown
+          - label: "Tasks (Add Bulleted List)"
+            name: "Tasks"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "Curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "Time Commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "Benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "Requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "Beneficial Qualifications"
+            widget: markdown
+          - label: "Questions (Add Bulleted List)"
+            name: "questions"
+            widget: markdown
+      - label: "Intern Overview"
+        name: "intern_overview"
+        file: "src/posts/intern_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Scheduling"
+            name: "Scheduling"
+            widget: markdown
+          - label: "Tasks (Add Bulleted List)"
+            name: "Tasks"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "Curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "Time Commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "Benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "Requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "Beneficial Qualifications"
+            widget: markdown
+          - label: "Questions (Add Bulleted List)"
             name: "questions"
             widget: markdown
