@@ -218,9 +218,9 @@ collections:
           - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "beneficial_qualifications"
             widget: markdown
-      - label: "Intern Overview"
-        name: "intern_overview"
-        file: "src/posts/intern_overview.json"
+      - label: "Pub Intern Overview"
+        name: "pub_intern_overview"
+        file: "src/posts/pub_intern_overview.json"
         fields:
           - label: "Overview"
             name: "overview"
