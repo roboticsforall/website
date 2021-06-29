@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 
@@ -48,14 +48,20 @@ export const RFADonate: React.FC = () => {
             donations are fully tax-deductible.
           </p>
         </Row>
+        <br/>
         <Row className="justify-content-center align-items-center">
-          <a
-            href="#"
-            style={buttonText}
-            className="hyperlink long-button w-25 header-size text-center"
-          >
-            Donate
-          </a>
+          <Col md = "auto">
+            <a
+              href="https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"
+              target = "_blank"
+              style={buttonText}
+              className="hyperlink"
+            >
+              <h1 className = "m-0 p-3 long-button header-size border text-center">
+                Donate
+              </h1>
+            </a>
+          </Col>
         </Row>
       </Container>
       <br />

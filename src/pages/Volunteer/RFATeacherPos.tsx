@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
@@ -54,7 +55,7 @@ export const RFATeacherPos: React.FC = () => {
       <br></br>
       <br></br>
       <Container>
-        <RFAPosButton title={"Apply Now!"} link="volunteer-volunteerapp" />
+        <RFAPosButton title={"Apply Now!"} link="/volunteer/volunteerapp" />
         <br></br>
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
@@ -225,9 +226,9 @@ export const RFATeacherPos: React.FC = () => {
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <a href="#" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style={black}>
                         teacher FAQ's
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}
@@ -386,9 +387,9 @@ export const RFATeacherPos: React.FC = () => {
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <a href="#" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style={black}>
                         teacher FAQ's
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}

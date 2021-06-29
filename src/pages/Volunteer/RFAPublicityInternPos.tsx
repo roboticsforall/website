@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
@@ -50,7 +51,7 @@ export const RFAPublicityInternPos: React.FC = () => {
       <Container>
         <br></br>
         <br></br>
-        <RFAPosButton title={"Apply Now!"} link="volunteer-volunteerapp" />
+        <RFAPosButton title={"Apply Now!"} link="/volunteer/volunteerapp" />
         <br></br>
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
@@ -86,7 +87,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard1
+              <RFAPositionCard2
                 posHeader={"TASKS"}
                 posImage={TasksYellow}
                 posDescription={
@@ -119,7 +120,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard2
+              <RFAPositionCard1
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
@@ -136,7 +137,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </ul>
                 }
               />
-              <RFAPositionCard1
+              <RFAPositionCard2
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
@@ -164,7 +165,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </ul>
                 }
               />
-              <RFAPositionCard2
+              <RFAPositionCard1
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
@@ -182,7 +183,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </ul>
                 }
               />
-              <RFAPositionCard1
+              <RFAPositionCard2
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
@@ -194,16 +195,16 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </ul>
                 }
               />
-              <RFAPositionCard2
+              <RFAPositionCard1
                 posHeader={"QUESTIONS"}
                 posImage={QuestionMark}
                 posDescription={
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <a href="#" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style={black}>
                         intern FAQ's
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}

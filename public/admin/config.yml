@@ -133,15 +133,21 @@ collections:
         fields:
           - {label: "Course Overview Bold Text", name: "indlearners_bold_text", widget: string}
           - {label: "Course Overview Body Text", name: "indlearners_body_text", widget: markdown}
-  - label: "Register Form" # used in UI
-    name: "register_form" # used in routes
+  - label: "Google Forms" # used in UI
+    name: "google_forms" # used in routes
     files:
-      - label: "Register Form"
-        name: "register_form"
-        file: "src/posts/register_form.json"
+      - label: "Google Form"
+        name: "google_forms"
+        file: "src/posts/google_form.json"
         fields:
-          - label: "Google Form Embed Code"
+          - label: "Register Google Form Embed Code"
             name: "register_form_code"
+            widget: code
+          - label: "Teacher App Google Form Embed Code"
+            name: "teacher_app_form_code"
+            widget: code
+          - label: "Publicity App Google Form Embed Code"
+            name: "publicity_app_form_code"
             widget: code
   - label: "Enroll Links" # used in UI
     name: "enroll_links" # used in routes
@@ -224,9 +230,6 @@ collections:
         fields:
           - label: "Overview"
             name: "overview"
-            widget: markdown
-          - label: "Scheduling"
-            name: "Scheduling"
             widget: markdown
           - label: "Tasks (Add Bulleted List)"
             name: "Tasks"

@@ -41,7 +41,6 @@ export const RFAVolOverview: React.FC = () => {
             Robotics for All is run through the support of volunteers like you!
             Apply today to become a volunteer teacher or business development
             intern. Volunteer with us virtually from anywhere in the world!
-            Click on the icons below to learn about our positions:
           </p>
         </Row>
         <Row>
@@ -70,8 +69,8 @@ export const RFAVolOverview: React.FC = () => {
         <br></br>
         <Col>
           <RFAVolOverviewCard
-            applyLink="/volunteer-volunteerapp"
-            learnMoreLink="/volunteer-teacherpos"
+            applyLink="/volunteer/volunteerapp"
+            learnMoreLink="/volunteer/teacherpos"
             backgroundcolor={"#70db9480"}
             buttonColor={"#248F47"}
             title={"Lead Instructor"}
@@ -84,8 +83,8 @@ export const RFAVolOverview: React.FC = () => {
           ></RFAVolOverviewCard>
           <br></br>
           <RFAVolOverviewCard
-            applyLink="/volunteer-volunteerapp"
-            learnMoreLink="/volunteer-teacherpos"
+            applyLink="/volunteer/volunteerapp"
+            learnMoreLink="/volunteer/teacherpos"
             backgroundcolor={"#fcaf6280"}
             buttonColor={"#c06204"}
             title={"Teacher Assistant"}
@@ -98,8 +97,8 @@ export const RFAVolOverview: React.FC = () => {
           ></RFAVolOverviewCard>
           <br></br>
           <RFAVolOverviewCard
-            applyLink="/volunteer-volunteerapp"
-            learnMoreLink="/volunteer-publicitypos"
+            applyLink="/volunteer/volunteerapp"
+            learnMoreLink="/volunteer/publicitypos"
             backgroundcolor={"#70b8ff80"}
             buttonColor={"#006bd6"}
             title={"Publicity Intern"}
