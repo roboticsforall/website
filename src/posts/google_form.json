@@ -6,6 +6,6 @@
     "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLSdYi6eUvSdgRQ6Yw2EsF_bdhCuKEskR-draKjd7FoNk_8jrbw/viewform?embedded=true\"\n  width=\"100%\"\n  height=\"800vmax\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
   },
   "register_form_code": {
-    "code": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true"
+    "code": "            <iframe\n              src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n              width=\"640\"\n              height=\"975\"\n              frameBorder=\"0\"\n              marginHeight={0}\n              marginWidth={0}\n            >\n              Loading…\n            </iframe>"
   }
 }
