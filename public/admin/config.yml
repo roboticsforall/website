@@ -170,25 +170,25 @@ collections:
             name: "overview"
             widget: markdown
           - label: "Scheduling"
-            name: "Scheduling"
+            name: "scheduling"
             widget: markdown
           - label: "Tasks (Add Bulleted List)"
-            name: "Tasks"
+            name: "tasks"
             widget: markdown
           - label: "Curriculum (Add Bulleted List)"
-            name: "Curriculum"
+            name: "curriculum"
             widget: markdown
           - label: "Time Commitment (Add Bulleted List)"
-            name: "Time Commitment"
+            name: "time_commitment"
             widget: markdown
           - label: "Benefits (Add Bulleted List)"
-            name: "Benefits"
+            name: "benefits"
             widget: markdown
           - label: "Requirments (Add Bulleted List)"
-            name: "Requirments"
+            name: "requirments"
             widget: markdown
           - label: "Beneficial Qualifications (Add Bulleted List)"
-            name: "Beneficial Qualifications"
+            name: "beneficial_qualifications"
             widget: markdown
           - label: "Questions (Add Bulleted List)"
             name: "questions"
@@ -201,25 +201,25 @@ collections:
             name: "overview"
             widget: markdown
           - label: "Scheduling"
-            name: "Scheduling"
+            name: "scheduling"
             widget: markdown
           - label: "Tasks (Add Bulleted List)"
-            name: "Tasks"
+            name: "tasks"
             widget: markdown
           - label: "Curriculum (Add Bulleted List)"
-            name: "Curriculum"
+            name: "curriculum"
             widget: markdown
           - label: "Time Commitment (Add Bulleted List)"
-            name: "Time Commitment"
+            name: "time_commitment"
             widget: markdown
           - label: "Benefits (Add Bulleted List)"
-            name: "Benefits"
+            name: "benefits"
             widget: markdown
           - label: "Requirments (Add Bulleted List)"
-            name: "Requirments"
+            name: "requirments"
             widget: markdown
           - label: "Beneficial Qualifications (Add Bulleted List)"
-            name: "Beneficial Qualifications"
+            name: "beneficial_qualifications"
             widget: markdown
           - label: "Questions (Add Bulleted List)"
             name: "questions"
@@ -232,22 +232,22 @@ collections:
             name: "overview"
             widget: markdown
           - label: "Tasks (Add Bulleted List)"
-            name: "Tasks"
+            name: "tasks"
             widget: markdown
           - label: "Curriculum (Add Bulleted List)"
-            name: "Curriculum"
+            name: "curriculum"
             widget: markdown
           - label: "Time Commitment (Add Bulleted List)"
-            name: "Time Commitment"
+            name: "time_commitment"
             widget: markdown
           - label: "Benefits (Add Bulleted List)"
-            name: "Benefits"
+            name: "benefits"
             widget: markdown
           - label: "Requirments (Add Bulleted List)"
-            name: "Requirments"
+            name: "requirments"
             widget: markdown
           - label: "Beneficial Qualifications (Add Bulleted List)"
-            name: "Beneficial Qualifications"
+            name: "beneficial_qualifications"
             widget: markdown
           - label: "Questions (Add Bulleted List)"
             name: "questions"
