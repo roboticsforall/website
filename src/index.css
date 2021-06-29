@@ -101,11 +101,21 @@ button,
 input,
 textarea {
   outline: none !important;
+  border: none !important;
 }
 input,
 textarea {
   background-color: #ffcc004d;
+  font-family: "BeVietnam-ExtraBold" !important;
+  font-size: 20px;
+  color: #000000;
 }
+
+input::placeholder {
+  color: #b38f00;
+  font-family: "BeVietnam-ExtraBold";
+}
+
 input:invalid:focus,
 textarea:invalid:focus {
   border: 2px solid red;
