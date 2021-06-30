@@ -1,9 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import {Row, Col, Image } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
-import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import Markdown from "markdown-to-jsx";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -11,10 +9,6 @@ import bmInfoJSON from "@/posts/board_members.json"
 import ccInfoJSON from "@/posts/curriculum_committee.json"
 import adInfoJSON from "@/posts/assistant_directors.json"
 import pcInfoJSON from "@/posts/pub_committee.json"
-
-
-import maxImg from "@/media/LeadershipTeam/max.png";
-import Markdown from "markdown-to-jsx";
 
 
 
