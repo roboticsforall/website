@@ -78,10 +78,10 @@ export const RFAMeetTheTeam: React.FC = () => {
       <br />
         <h1 style={{color: "#fa8d1f", ...header}}>BOARD OF DIRECTORS</h1>
         <Row style = {yellowRow}>
-            <Carousel
+            {/* <Carousel
                 responsive={responsive}
             >
-                {/* {bmInfoJSON.board_members_list.map((info,i) => (
+                {bmInfoJSON.board_members_list.map((info,i) => (
                     <div key = {i} style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
@@ -93,10 +93,10 @@ export const RFAMeetTheTeam: React.FC = () => {
                         </Col> 
                     </div>
                 ))}
-                 */}
-                 <h1>Hello</h1>
+                
 
-            </Carousel>
+
+            </Carousel> */}
         </Row>
         {/* <br/>
         <br/>
