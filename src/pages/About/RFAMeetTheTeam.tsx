@@ -85,7 +85,19 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite = {true}
             >
-                <h1>Hello</h1>
+                {bmInfoJSON.board_members_list.map((info,i) => (
+                    <div key = {i} style = {imgSize} className = "d-flex">
+                        <Col md = {"auto"}>
+                            <Image style = {imgSize} src = {info.image.replace("/public","")} />
+                        </Col>
+                        <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
+                            <h1 style = {nameHeader}>{info.name}</h1>
+                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1> 
+                            <Markdown style = {bodyText}>{info.description}</Markdown>
+                        </Col> 
+                    </div>
+                ))}
+                
 
             </Carousel>
         </Row>
