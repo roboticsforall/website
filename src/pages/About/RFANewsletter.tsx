@@ -84,12 +84,12 @@ export const RFANewsletter: React.FC = (props) => {
 
             <div className="mc-field-group">
               <label htmlFor="mce-FNAME"><span className="asterisk"></span></label>
-              <input type="text" value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
+              <input type="text" required value="" name="FNAME" className="required" id="mce-FNAME" placeholder = "Name"/>
             </div>
               
               <div className="mc-field-group ">
                 <label htmlFor="mce-EMAIL"><span className="asterisk"></span></label>
-                <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
+                <input type="email" value="" required name="EMAIL" className="required email" id="mce-EMAIL" placeholder = "Email"/>
               </div>
 
             </Col>
@@ -121,8 +121,7 @@ export const RFANewsletter: React.FC = (props) => {
               
               <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex="-1" value=""/></div>
               
-              <RFASubmitButton className="clear" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
-              
+              <RFASubmitButton className="clear button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"/>
           </div>
 
           </form>

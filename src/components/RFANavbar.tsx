@@ -113,8 +113,9 @@ export const RFANavbar: React.FC = () => {
                 <Link to="/about/afforgs" className="dropdown-item">
                   Affiliated Organizations
                 </Link>
-                <Link to="/about-newsletter" className="dropdown-item">
+                <Link to="/about/newsletter" className="dropdown-item">
                   Newsletter
+                </Link>
                 <Link to="/about/meettheteam" className="dropdown-item">
                   Meet The Team
                 </Link>
