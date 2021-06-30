@@ -243,3 +243,57 @@ collections:
           - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "beneficial_qualifications"
             widget: markdown
+  - label: "Leadership Team Info" # used in UI
+    name: "leadership_team_info" # used in routes
+    files:
+      - label: "Board Members"
+        name: "board_members"
+        file: "src/posts/board_members.json"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: string
+          - label: "Title/Pronouns"
+            name: "title_pronouns"
+            widget: string
+          - label: "Description"
+            name: "description"
+            widget: markdown  
+          - label: "Image"
+            name: "image"
+            widget: image 
+            media_folder: '/public/uploads/leadershipteamimg/boardmembers'
+      - label: "Assistant Directors"
+        name: "assistant_directors"
+        file: "src/posts/assistant_directors.json"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: string
+          - label: "Title/Pronouns"
+            name: "title_pronouns"
+            widget: string
+          - label: "Description"
+            name: "description"
+            widget: markdown  
+          - label: "Image"
+            name: "image"
+            widget: image 
+            media_folder: '/public/uploads/leadershipteamimg/assistantdirectors'
+      - label: "Curriculum Committee"
+        name: "curriculum_committee"
+        file: "src/posts/curriculum_committee.json"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: string
+          - label: "Title/Pronouns"
+            name: "title_pronouns"
+            widget: string
+          - label: "Description"
+            name: "description"
+            widget: markdown  
+          - label: "Image"
+            name: "image"
+            widget: image
+            media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
