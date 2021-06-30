@@ -150,9 +150,9 @@ export const RFANavbar: React.FC = () => {
                 </a>
               </div>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <div id="google_translate_element"></div>
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>

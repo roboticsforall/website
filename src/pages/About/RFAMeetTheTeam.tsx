@@ -79,24 +79,13 @@ export const RFAMeetTheTeam: React.FC = () => {
         <h1 style={{color: "#fa8d1f", ...header}}>BOARD OF DIRECTORS</h1>
         <Row style = {yellowRow}>
             <Carousel
-                // swipeable={false}
-                // draggable={false}
+                swipeable={false}
+                draggable={false}
                 responsive={responsive}
-                // transitionDuration={500}
-                // infinite = {true}
+                transitionDuration={500}
+                infinite = {true}
             >
-                {/* {bmInfoJSON.board_members_list.map((info, i) => (
-                    <div key = {i} style = {imgSize} className = "d-flex">
-                        <Col md = {"auto"}>
-                            <Image style = {imgSize} src = {info.image.replace("/public","")} />
-                        </Col>
-                        <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
-                            <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
-                            <Markdown style = {bodyText}>{info.description}</Markdown>
-                        </Col>
-                    </div>
-                ))} */}
+
 
             </Carousel>
         </Row>
