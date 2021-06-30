@@ -108,11 +108,21 @@ button,
 input,
 textarea {
   outline: none !important;
+  border: none !important;
 }
 input,
 textarea {
   background-color: #ffcc004d;
+  font-family: "BeVietnam-ExtraBold" !important;
+  font-size: 20px;
+  color: #000000;
 }
+
+input::placeholder {
+  color: #b38f00;
+  font-family: "BeVietnam-ExtraBold";
+}
+
 input:invalid:focus,
 textarea:invalid:focus {
   border: 2px solid red;
@@ -127,6 +137,26 @@ textarea:hover {
   background-color: white;
 }
 
+label {
+  font-family: "BeVietnam-Bold";
+  font-size: 18px;
+}
+
+.checkbox {
+  width: 40px !important;
+  background-color: #ffdb4d;
+  opacity: 1;
+  color: #ffffff;
+}
+.checkbox:hover {
+  background-color: #ffdb4d;
+  opacity: 0.5;
+}
+ 
+.checkbox::selection {
+  background-color: #ffcc00;
+}
+
 .long-button {
   border-radius: 0.5em;
   border: none;
@@ -137,6 +167,18 @@ textarea:hover {
 .long-button:hover {
   transition: 200ms;
   background-color: #ffcc00ca;
+}
+
+.newsletter-card {
+  border-radius: 1em;
+  transition: 200ms;
+  background-color: #ffcc0080;
+  font-family: "Oswald-Medium";
+}
+
+.newsletter-card:hover{
+  transition: 200ms;
+  background-color: #ffcc00;
 }
 
 .aff-org-card-link {
@@ -515,4 +557,3 @@ textarea:hover {
     color: white;
   }
 }
-/*#endregion*/
