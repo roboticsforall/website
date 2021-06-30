@@ -7,7 +7,12 @@ import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import Markdown from "markdown-to-jsx";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import bmInfo from "@/posts/board_members.json"
+import ccInfo from "@/posts/curriculum_committee"
+import adInfo from "@/posts/assistant_directors"
+
 import maxImg from "@/media/LeadershipTeam/max.png";
+import Markdown from "markdown-to-jsx";
 
 
 
@@ -84,15 +89,15 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {[1, 2, 3].map(number => (
+                {bmInfo.board_members_list.map(info => (
                     <div style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
-                            <Image style = {imgSize} src = {maxImg} />
+                            <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
-                        <Col style = {{overflowY: "scroll"}}md = {7} className = "ms-2">
-                            <h1 style = {nameHeader}>Maximillian Goetz</h1>
-                            <h1 style = {{color: "#c06204", ...titleHeader}}>President & CEO (he/him)</h1>
-                            <p style = {bodyText}>​Maximilian Goetz is a first year student at Georgetown University's McDonough School of Business. In April 2017, he founded Robotics for All when he was a high school freshman at Henry. M Gunn High School in Palo Alto, CA. While volunteering for Reading Partners at Mariano Castro Elementary, Maximilian realized the lack of after school enrichment programs at the school, particularly in the fields of STEM. From there, he built Robotics for All from ground up, teaching its first classes and eventually expanding it into a national 501(c)(3) nonprofit organization. In addition to Robotics for All, Maximilian is a student advisor to Congresswoman Anna Eshoo, a lead legislative aide to Councilman Greg Tanaka, and an online English teacher to students in China. In the past, Maximilian has volunteered at the YMCA, Wizbots, and was a member of the Palo Alto Youth Council. Maximilian has served over 3,000 community service hours since his freshman year of high school, and is honored to be a two time President's Gold Community Service Award recipient. In his free time, Maximilian is an avid aviation geek, enjoys photography and recreational biking. www.maximiliangoetz.com</p>
+                        <Col style = {{overflowY: "scroll"}} md = {7} className = "ms-2">
+                            <h1 style = {nameHeader}>{info.name}</h1>
+                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col>
                     </div>
                 ))}
@@ -110,15 +115,15 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {[1, 2, 3].map(number => (
+                {adInfo.board_members_list.map(info => (
                     <div style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
-                            <Image style = {imgSize} src = {maxImg} />
+                            <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
-                        <Col style = {{overflowY: "scroll"}}md = {7} className = "ms-2">
-                            <h1 style = {nameHeader}>Maximillian Goetz</h1>
-                            <h1 style = {{color: "#248f47", ...titleHeader}}>President & CEO (he/him)</h1>
-                            <p style = {bodyText}>​Maximilian Goetz is a first year student at Georgetown University's McDonough School of Business. In April 2017, he founded Robotics for All when he was a high school freshman at Henry. M Gunn High School in Palo Alto, CA. While volunteering for Reading Partners at Mariano Castro Elementary, Maximilian realized the lack of after school enrichment programs at the school, particularly in the fields of STEM. From there, he built Robotics for All from ground up, teaching its first classes and eventually expanding it into a national 501(c)(3) nonprofit organization. In addition to Robotics for All, Maximilian is a student advisor to Congresswoman Anna Eshoo, a lead legislative aide to Councilman Greg Tanaka, and an online English teacher to students in China. In the past, Maximilian has volunteered at the YMCA, Wizbots, and was a member of the Palo Alto Youth Council. Maximilian has served over 3,000 community service hours since his freshman year of high school, and is honored to be a two time President's Gold Community Service Award recipient. In his free time, Maximilian is an avid aviation geek, enjoys photography and recreational biking. www.maximiliangoetz.com</p>
+                        <Col style = {{overflowY: "scroll"}} md = {7} className = "ms-2">
+                            <h1 style = {nameHeader}>{info.name}</h1>
+                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col>
                     </div>
                 ))}
@@ -129,13 +134,53 @@ export const RFAMeetTheTeam: React.FC = () => {
         <br/>
         <h1 style={header}>CURRICULUM COMMITTEE</h1>
         <Row style = {blueRow}>
-        <p>Add some text</p>
+            <Carousel
+                swipeable={false}
+                draggable={false}
+                responsive={responsive}
+                transitionDuration={500}
+                infinite
+            >
+                {ccInfo.board_members_list.map(info => (
+                    <div style = {imgSize} className = "d-flex">
+                        <Col md = {"auto"}>
+                            <Image style = {imgSize} src = {info.image.replace("/public","")} />
+                        </Col>
+                        <Col style = {{overflowY: "scroll"}} md = {7} className = "ms-2">
+                            <h1 style = {nameHeader}>{info.name}</h1>
+                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <Markdown style = {bodyText}>{info.description}</Markdown>
+                        </Col>
+                    </div>
+                ))}
+
+            </Carousel>
         </Row>
         <br/>
         <br/>
         <h1 style={header}>PUBLICITY COMMITTEE</h1>
         <Row style={orangeRow}>
-        <p>Add some text</p>
+            <Carousel
+                swipeable={false}
+                draggable={false}
+                responsive={responsive}
+                transitionDuration={500}
+                infinite
+            >
+                {bmInfo.board_members_list.map(info => (
+                    <div style = {imgSize} className = "d-flex">
+                        <Col md = {"auto"}>
+                            <Image style = {imgSize} src = {info.image.replace("/public","")} />
+                        </Col>
+                        <Col style = {{overflowY: "scroll"}} md = {7} className = "ms-2">
+                            <h1 style = {nameHeader}>{info.name}</h1>
+                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <Markdown style = {bodyText}>{info.description}</Markdown>
+                        </Col>
+                    </div>
+                ))}
+
+            </Carousel>
         </Row>
         <br/>
     </div>

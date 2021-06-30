@@ -250,50 +250,83 @@ collections:
         name: "board_members"
         file: "src/posts/board_members.json"
         fields:
-          - label: "Name"
-            name: "name"
-            widget: string
-          - label: "Title/Pronouns"
-            name: "title_pronouns"
-            widget: string
-          - label: "Description"
-            name: "description"
-            widget: markdown  
-          - label: "Image"
-            name: "image"
-            widget: image 
-            media_folder: '/public/uploads/leadershipteamimg/boardmembers'
+          - label: "Board Members List"
+            name: "board_members_list"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image 
+                media_folder: '/public/uploads/leadershipteamimg/boardmembers'
       - label: "Assistant Directors"
         name: "assistant_directors"
         file: "src/posts/assistant_directors.json"
         fields:
-          - label: "Name"
-            name: "name"
-            widget: string
-          - label: "Title/Pronouns"
-            name: "title_pronouns"
-            widget: string
-          - label: "Description"
-            name: "description"
-            widget: markdown  
-          - label: "Image"
-            name: "image"
-            widget: image 
-            media_folder: '/public/uploads/leadershipteamimg/assistantdirectors'
+          - label: "Assistant Directors List"
+            name: "assistant_directors_list"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image 
+                media_folder: '/public/uploads/leadershipteamimg/assistantdirectors'
       - label: "Curriculum Committee"
         name: "curriculum_committee"
         file: "src/posts/curriculum_committee.json"
         fields:
-          - label: "Name"
-            name: "name"
-            widget: string
-          - label: "Title/Pronouns"
-            name: "title_pronouns"
-            widget: string
-          - label: "Description"
-            name: "description"
-            widget: markdown  
-          - label: "Image"
-            name: "image"
-            widget: image
-            media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
+          - label: "Curriculum Committee List"
+            name: "curriculum_committee_list"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
+      - label: "Publicity Committee"
+        name: "pub_committee"
+        file: "src/posts/pub_committee.json"
+        fields:
+          - label: "Publicity Committee List"
+            name: "pub_committee"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/pubcommittee'
