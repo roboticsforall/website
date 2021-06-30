@@ -83,7 +83,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 draggable={false}
                 responsive={responsive}
                 transitionDuration={500}
-                infinite
+                infinite = {true}
             >
                 {/* {bmInfoJSON.board_members_list.map((info, i) => (
                     <div key = {i} style = {imgSize} className = "d-flex">
