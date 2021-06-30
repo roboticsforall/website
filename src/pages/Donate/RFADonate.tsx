@@ -56,6 +56,7 @@ export const RFADonate: React.FC = () => {
               target = "_blank"
               style={buttonText}
               className="hyperlink"
+              rel="noreferrer"
             >
               <h1 className = "m-0 p-3 long-button header-size border text-center">
                 Donate

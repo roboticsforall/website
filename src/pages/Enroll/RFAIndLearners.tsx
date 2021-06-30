@@ -72,7 +72,7 @@ export const RFAIndLearners: React.FC = () => {
           ))}
         </Row>
         <br></br>
-        <a target = "_blank" href = {enroll_links.link} className="hyperlink">
+        <a target = "_blank" rel="noreferrer" href = {enroll_links.link} className="hyperlink">
           <Row className="ind-learners-enroll-button mx-2 p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
