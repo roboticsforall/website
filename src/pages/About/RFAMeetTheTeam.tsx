@@ -76,7 +76,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         }
       />
       <br />
-        <h1 style={header}>BOARD OF DIRECTORS</h1>
+        <h1 style={{color: "#fa8d1f", ...header}}>BOARD OF DIRECTORS</h1>
         <Row style = {yellowRow}>
             <Carousel
                 swipeable={false}
@@ -102,7 +102,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         </Row>
         <br/>
         <br/>
-        <h1 style={header}>EXECUTIVE ASSISTANT DIRECTOR</h1>
+        <h1 style={{color: "#33cc66", ...header}}>EXECUTIVE ASSISTANT DIRECTOR</h1>
         <Row style = {greenRow}>
             <Carousel
                 swipeable={false}
@@ -118,7 +118,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                         </Col>
                         <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
                             <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1> 
+                            <h1 style = {{color: "#248f47", ...titleHeader}}>{info.title_pronouns}</h1> 
                             <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col> 
                     </div>
@@ -128,7 +128,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         </Row>
         <br/>
         <br/>
-        <h1 style={header}>CURRICULUM COMMITTEE</h1>
+        <h1 style={{color: "#3399ff", ...header}}>CURRICULUM COMMITTEE</h1>
         <Row style = {blueRow}>
             <Carousel
                 swipeable={false}
@@ -144,7 +144,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                         </Col>
                         <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
                             <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <h1 style = {{color: "#006bd6", ...titleHeader}}>{info.title_pronouns}</h1>
                             <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col>
                     </div>
@@ -154,7 +154,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         </Row>
         <br/>
         <br/>
-        <h1 style={header}>PUBLICITY COMMITTEE</h1>
+        <h1 style={{color: "#ffcc00", ...header}}>PUBLICITY COMMITTEE</h1>
         <Row style={orangeRow}>
             <Carousel
                 swipeable={false}
@@ -170,7 +170,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                         </Col>
                         <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
                             <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <h1 style = {{color: "#b38f00", ...titleHeader}}>{info.title_pronouns}</h1>
                             <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col>
                     </div>
