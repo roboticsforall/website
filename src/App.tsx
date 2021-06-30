@@ -19,8 +19,8 @@ import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
 import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
 import { RFAAbtOverview } from "./pages/About/RFAAbtOverview";
+import { RFAMeetTheTeam } from "./pages/About/RFAMeetTheTeam";
 import { RFANewsletter } from "./pages/About/RFANewsletter";
-
 //Contact
 import { RFAContact } from "./pages/Contact/RFAContact";
 //News
@@ -30,6 +30,8 @@ import { RFACorpBylaws } from "./pages/More/RFACorpBylaws";
 import { RFAMeetingRecords } from "./pages/More/RFAMeetingRecords";
 import { RFAWebsiteTOS } from "./pages/More/RFAWebsiteTOS";
 import { RFAPrivacyPolicy } from "./pages/More/RFAPrivacyPolicy";
+//Contact
+import { RFAContact } from "./pages/Contact/RFAContact";
 //Donate
 import { RFADonate } from "./pages/Donate/RFADonate";
 
@@ -76,6 +78,7 @@ export const App: React.FC = () => {
                 <Route path="/about-newsletter" component={RFANewsletter} />
                 <Route path="/about/overview" component={RFAAbtOverview} />
                 <Route path="/about/afforgs" component={RFAAffOrgs} />
+                <Route path="/about/meettheteam" component={RFAMeetTheTeam} />
 
 {/* Contact Page */}
 

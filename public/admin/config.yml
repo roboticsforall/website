@@ -133,15 +133,21 @@ collections:
         fields:
           - {label: "Course Overview Bold Text", name: "indlearners_bold_text", widget: string}
           - {label: "Course Overview Body Text", name: "indlearners_body_text", widget: markdown}
-  - label: "Register Form" # used in UI
-    name: "register_form" # used in routes
+  - label: "Google Forms" # used in UI
+    name: "google_forms" # used in routes
     files:
-      - label: "Register Form"
-        name: "register_form"
-        file: "src/posts/register_form.json"
+      - label: "Google Form"
+        name: "google_forms"
+        file: "src/posts/google_form.json"
         fields:
-          - label: "Google Form Embed Code"
+          - label: "Register Google Form Embed Code"
             name: "register_form_code"
+            widget: code
+          - label: "Teacher App Google Form Embed Code"
+            name: "teacher_app_form_code"
+            widget: code
+          - label: "Publicity App Google Form Embed Code"
+            name: "publicity_app_form_code"
             widget: code
   - label: "Enroll Links" # used in UI
     name: "enroll_links" # used in routes
@@ -153,3 +159,174 @@ collections:
           - label: "Enroll Link for Ind Learners and Schools"
             name: "link"
             widget: string
+  - label: "Teacher/TA/Intern Overviews" # used in UI
+    name: "teacher_ta_intern_overviews" # used in routes
+    files:
+      - label: "Teacher Overview"
+        name: "teacher_overview"
+        file: "src/posts/teacher_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Scheduling"
+            name: "scheduling"
+            widget: markdown
+          - label: "Tasks (Add Bulleted List)"
+            name: "tasks"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "time_commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "beneficial_qualifications"
+            widget: markdown
+      - label: "TA Overview"
+        name: "ta_overview"
+        file: "src/posts/ta_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Scheduling"
+            name: "scheduling"
+            widget: markdown
+          - label: "Tasks (Add Bulleted List)"
+            name: "tasks"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "time_commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "beneficial_qualifications"
+            widget: markdown
+      - label: "Pub Intern Overview"
+        name: "pub_intern_overview"
+        file: "src/posts/pub_intern_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Tasks (Add Bulleted List)"
+            name: "tasks"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "time_commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "beneficial_qualifications"
+            widget: markdown
+  - label: "Leadership Team Info" # used in UI
+    name: "leadership_team_info" # used in routes
+    files:
+      - label: "Board Members"
+        name: "board_members"
+        file: "src/posts/board_members.json"
+        fields:
+          - label: "Board Members List"
+            name: "board_members_list"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image 
+                media_folder: '/public/uploads/leadershipteamimg/boardmembers'
+      - label: "Assistant Directors"
+        name: "assistant_directors"
+        file: "src/posts/assistant_directors.json"
+        fields:
+          - label: "Assistant Directors List"
+            name: "assistant_directors_list"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image 
+                media_folder: '/public/uploads/leadershipteamimg/assistantdirectors'
+      - label: "Curriculum Committee"
+        name: "curriculum_committee"
+        file: "src/posts/curriculum_committee.json"
+        fields:
+          - label: "Curriculum Committee List"
+            name: "curriculum_committee_list"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
+      - label: "Publicity Committee"
+        name: "pub_committee"
+        file: "src/posts/pub_committee.json"
+        fields:
+          - label: "Publicity Committee List"
+            name: "pub_committee"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/pubcommittee'

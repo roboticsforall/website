@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAPositionCard } from "@/components/RFAPositionCard";
@@ -14,6 +15,10 @@ import Presentation from "@/media/Graphics/presentation.png";
 import TasksOrange from "@/media/Graphics/tasksOrange.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import QuestionMark from "@/media/Graphics/questionMark.png";
+
+import Markdown from "markdown-to-jsx";
+import teacherOverviewJSON from "@/posts/teacher_overview.json";
+import taOverviewJSON from "@/posts/ta_overview.json";
 
 export const RFATeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -54,7 +59,7 @@ export const RFATeacherPos: React.FC = () => {
       <br></br>
       <br></br>
       <Container>
-        <RFAPosButton title={"Apply Now!"} link="volunteer-volunteerapp" />
+        <RFAPosButton title={"Apply Now!"} link="/volunteer/volunteerapp" />
         <br></br>
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
@@ -83,13 +88,7 @@ export const RFATeacherPos: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      Lead Instructors are responsible for running Robotics for
-                      All classes, managing Teacher Assistants, and checking
-                      student homework. They also must ensure that classes run
-                      smoothly by helping students with debugging, and
-                      addressing any issues with student behavior. Lead
-                      Instructors are the highest authority in the class, so
-                      they must possess strong leadership and independence.
+                      <Markdown>{teacherOverviewJSON.overview}</Markdown>
                     </p>
                   </div>
                 }
@@ -100,19 +99,7 @@ export const RFATeacherPos: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      We start class sessions periodically (usually every few
-                      months). At the start of each session, accepted teachers
-                      may choose to volunteer in the class session. Although we
-                      do our best to administer classes efficiently, they are
-                      given based on teacher availability, position, and class
-                      interest. For that reason, it can take some time to get a
-                      class.
-                    </p>
-                    <p>
-                      Classes run on either a Monday/Thursday or Tuesday/Friday
-                      schedule, with times ranging from roughly 2:00 pm Pacific
-                      Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00
-                      pm Eastern Time).
+                      <Markdown>{teacherOverviewJSON.scheduling}</Markdown>
                     </p>
                   </div>
                 }
@@ -121,101 +108,42 @@ export const RFATeacherPos: React.FC = () => {
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
-                  <ul>
-                    <li>Teach students in synchronous classes</li>
-                    <li>Manage any Teacher Assistants</li>
-                    <li>Post and review homework assignments</li>
-                    <li>Email and respond to emails from parents</li>
-                    <li>Answer student questions in a timely manner</li>
-                  </ul>
+                  <Markdown>{teacherOverviewJSON.tasks}</Markdown>
                 }
               />
               <RFAPositionCard2
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
-                  <ul>
-                    <li>
-                      Our current curricula for online classes include the
-                      Code.org Curriculum (for K-3rd graders), Basic Scratch
-                      Curriculum (for K-3rd graders), Scratch Curriculum (for
-                      4th-6th graders), Python Curriculum (for 6th-8th graders),
-                      and TinkerCAD Curriculum (for 5th-8th graders).
-                    </li>
-                    <li>
-                      Please note that we are not currently accepting
-                      applications from people who only are interested in
-                      teaching Python.
-                    </li>
-                  </ul>
+                  <Markdown>{teacherOverviewJSON.curriculum}</Markdown>
                 }
               />
               <RFAPositionCard1
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
-                  <ul>
-                    <li>
-                      The total time commitment is 3 - 4 hours per week (or more
-                      if you choose to take on more than one class)
-                    </li>
-                    <li>
-                      There are two, hour-long, synchronous classes per week
-                    </li>
-                    <li>
-                      The rest of the time goes to checking homework and writing
-                      emails
-                    </li>
-                  </ul>
+                  <Markdown>{teacherOverviewJSON.time_commitment}</Markdown>
                 }
               />
               <RFAPositionCard2
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
-                  <ul>
-                    <li>We award community service hours</li>
-                    <li>
-                      Leading a Robotics for All class will look good on any
-                      resume, whether applying for a future internship, job, or
-                      college
-                    </li>
-                    <li>
-                      Potential future leadership opportunities (Robotics for
-                      All board, etc.) may be offered.
-                    </li>
-                    <li>Become part of a fun, welcoming community</li>
-                    <li>Practical and fulfilling teaching experience</li>
-                  </ul>
+                  <Markdown>{teacherOverviewJSON.benefits}</Markdown>
                 }
               />
               <RFAPositionCard1
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
-                  <ul>
-                    <li>
-                      Be in 10th grade or above (exceptions may be made to 9th
-                      graders with a strong background in teaching)
-                    </li>
-                    <li>
-                      Mastery of one or more of the platforms that Robotics for
-                      All has curricula in (You can find a list of our curricula
-                      here)
-                    </li>
-                  </ul>
+                  <Markdown>{teacherOverviewJSON.requirments}</Markdown>
                 }
               />
               <RFAPositionCard2
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
-                  <ul>
-                    <li>Strong communication skills</li>
-                    <li>Good at working with teams</li>
-                    <li>Prior teaching experience</li>
-                    <li>Leadership or classroom management experience</li>
-                  </ul>
+                  <Markdown>{teacherOverviewJSON.beneficial_qualifications}</Markdown>
                 }
               />
               <RFAPositionCard1
@@ -225,9 +153,9 @@ export const RFATeacherPos: React.FC = () => {
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <a href="#" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style={black}>
                         teacher FAQ's
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}
@@ -245,11 +173,8 @@ export const RFATeacherPos: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      The teacher's assistant position is the perfect entry
-                      level position to teaching. As a teacher’s assistant, you
-                      will assist the lead instructor in classes by answering
-                      student questions, leading breakout rooms of 3 - 5
-                      students, and reviewing homework.
+                      <Markdown>{taOverviewJSON.overview}</Markdown>
+
                     </p>
                   </div>
                 }
@@ -260,19 +185,8 @@ export const RFATeacherPos: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      We start class sessions periodically (usually every few
-                      months). At the start of each session, accepted teachers
-                      may choose to volunteer in the class session. Although we
-                      do our best to administer classes efficiently, they are
-                      given based on teacher availability, position, and class
-                      interest. For that reason, it can take some time to get a
-                      class.
-                    </p>
-                    <p>
-                      Classes run on either a Monday/Thursday or Tuesday/Friday
-                      schedule, with times ranging from roughly 2:00 pm Pacific
-                      Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00
-                      pm Eastern Time).
+                      <Markdown>{taOverviewJSON.scheduling}</Markdown>
+
                     </p>
                   </div>
                 }
@@ -281,102 +195,46 @@ export const RFATeacherPos: React.FC = () => {
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
-                  <ul>
-                    <li>
-                      Teach small groups students in synchronous classes using
-                      breakout rooms
-                    </li>
-                    <li>Review homework assignments</li>
-                    <li>Answer student questions in a timely manner</li>
-                  </ul>
+                  <Markdown>{taOverviewJSON.tasks}</Markdown>
                 }
               />
               <RFAPositionCard2
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
-                  <ul>
-                    <li>
-                      Our current curricula for online classes include the
-                      Code.org Curriculum (for K-3rd graders), Basic Scratch
-                      Curriculum (for K-3rd graders), Scratch Curriculum (for
-                      4th-6th graders), Python Curriculum (for 6th-8th graders),
-                      and TinkerCAD Curriculum (for 5th-8th graders).
-                    </li>
-                    <li>
-                      Please note that we are not currently accepting
-                      applications from people who only are interested in
-                      teaching Python.
-                    </li>
-                  </ul>
+                  <Markdown>{taOverviewJSON.curriculum}</Markdown>
+
                 }
               />
               <RFAPositionCard1
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
-                  <ul>
-                    <li>
-                      The total time commitment is 3 - 4 hours per week (or more
-                      if you choose to take on more than one class)
-                    </li>
-                    <li>
-                      There are two, hour-long, synchronous classes per week
-                    </li>
-                    <li>
-                      The rest of the time goes to checking homework and writing
-                      emails
-                    </li>
-                  </ul>
+                  <Markdown>{taOverviewJSON.time_commitment}</Markdown>
+
                 }
               />
               <RFAPositionCard2
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
-                  <ul>
-                    <li>We award community service hours</li>
-                    <li>
-                      Leading a Robotics for All class will look good on any
-                      resume, whether applying for a future internship, job, or
-                      college
-                    </li>
-                    <li>
-                      Potential future leadership opportunities (Robotics for
-                      All board, etc.) may be offered.
-                    </li>
-                    <li>Become part of a fun, welcoming community</li>
-                    <li>Practical and fulfilling teaching experience</li>
-                  </ul>
+                  <Markdown>{taOverviewJSON.benefits}</Markdown>
+
                 }
               />
               <RFAPositionCard1
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
-                  <ul>
-                    <li>
-                      Be in 10th grade or above (exceptions may be made to 9th
-                      graders with a strong background in teaching)
-                    </li>
-                    <li>
-                      Mastery of one or more of the platforms that Robotics for
-                      All has curricula in (You can find a list of our curricula
-                      here)
-                    </li>
-                  </ul>
+                  <Markdown>{taOverviewJSON.requirments}</Markdown>
+
                 }
               />
               <RFAPositionCard2
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
-                  <ul>
-                    <li>Strong communication skills</li>
-                    <li>Good at working with teams</li>
-                    <li>Prior teaching experience</li>
-                    <li>Leadership or classroom management experience</li>
-                  </ul>
+                  <Markdown>{taOverviewJSON.beneficial_qualifications}</Markdown>
                 }
               />
               <RFAPositionCard1
@@ -386,9 +244,9 @@ export const RFATeacherPos: React.FC = () => {
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <a href="#" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style={black}>
                         teacher FAQ's
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}

@@ -42,21 +42,21 @@ export const RFAFooter: React.FC = () => {
             <Link
               style={linkStyle}
               className="hyperlink C06202"
-              to="/individlearners"
+              to="/enroll/individlearners"
             >
               <p>Enroll</p>
             </Link>
             <Link
               style={linkStyle}
               className="hyperlink C06202"
-              to="/volunteer-overview"
+              to="/volunteer/overview"
             >
               <p>Volunteer</p>
             </Link>
             <Link
               style={linkStyle}
               className="hyperlink C06202"
-              to="/about-overview"
+              to="/about/overview"
             >
               <p>About</p>
             </Link>
