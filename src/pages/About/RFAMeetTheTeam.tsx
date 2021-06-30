@@ -85,8 +85,8 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {bmInfoJSON.board_members_list.map(info => (
-                    <div style = {imgSize} className = "d-flex">
+                {bmInfoJSON.board_members_list.map((info, i) => (
+                    <div key = {i} style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
@@ -100,7 +100,7 @@ export const RFAMeetTheTeam: React.FC = () => {
 
             </Carousel>
         </Row>
-        <br/>
+        {/* <br/>
         <br/>
         <h1 style={{color: "#33cc66", ...header}}>EXECUTIVE ASSISTANT DIRECTOR</h1>
         <Row style = {greenRow}>
@@ -111,8 +111,8 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {adInfoJSON.assistant_directors_list.map(info => (
-                    <div style = {imgSize} className = "d-flex">
+                {adInfoJSON.assistant_directors_list.map((info,i) => (
+                    <div key = {i} style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
@@ -137,8 +137,8 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {ccInfoJSON.curriculum_committee_list.map(info => (
-                    <div style = {imgSize} className = "d-flex">
+                {ccInfoJSON.curriculum_committee_list.map((info,i) => (
+                    <div key = {i} style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
@@ -163,8 +163,8 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {pcInfoJSON.pub_committee.map(info => (
-                    <div style = {imgSize} className = "d-flex">
+                {pcInfoJSON.pub_committee.map((info,i) => (
+                    <div key = {i} style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
@@ -177,7 +177,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 ))}
 
             </Carousel>
-        </Row>
+        </Row> */}
         <br/>
     </div>
   );

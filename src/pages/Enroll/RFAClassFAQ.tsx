@@ -28,7 +28,7 @@ export const RFAClassFAQ: React.FC = () => {
         ))}
         <RFAFAQDropdowns
           question={classFAQJSON.upcoming_courses_question}
-          answer={<Markdown children={classFAQJSON.upcoming_courses_answer} />}
+          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
         />
         <br/>
       </Container>

@@ -53,13 +53,13 @@ export const RFANavbar: React.FC = () => {
                 >
                   For Individual Learners
                 </Link>
-                <Link to="/enroll/schools" className="dropdown-item" href="#">
+                <Link to="/enroll/schools" className="dropdown-item">
                   For Schools
                 </Link>
-                <Link to="/enroll/classfaq" className="dropdown-item" href="#">
+                <Link to="/enroll/classfaq" className="dropdown-item">
                   Class FAQ's
                 </Link>
-                <Link to="/enroll/register" className="dropdown-item" href="#">
+                <Link to="/enroll/register" className="dropdown-item">
                   Register
                 </Link>
               </div>
@@ -119,12 +119,12 @@ export const RFANavbar: React.FC = () => {
               </div>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" href="#">
+              <Link to="/contact" className="nav-link">
                 Contact
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/news" className="nav-link" href="#">
+              <Link to="/news" className="nav-link">
                 News
               </Link>
             </li>
