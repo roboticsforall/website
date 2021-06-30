@@ -3,7 +3,7 @@ import {Row, Col, Image } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import Markdown from "markdown-to-jsx";
-import Carousel from "react-multi-carousel";
+import Carousel from "react-multi-carousel/lib/Carousel";
 import "react-multi-carousel/lib/styles.css";
 import bmInfoJSON from "@/posts/board_members.json"
 import ccInfoJSON from "@/posts/curriculum_committee.json"
