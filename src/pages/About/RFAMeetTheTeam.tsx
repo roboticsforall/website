@@ -80,6 +80,11 @@ export const RFAMeetTheTeam: React.FC = () => {
         <Row style = {yellowRow}>
             <Carousel
                 responsive={responsive}
+                swipeable={false}
+                draggable={false}
+                responsive={responsive}
+                transitionDuration={500}
+                infinite
             >
                 {bmInfoJSON.board_members_list.map((info,i) => (
                     <div key = {i} style = {imgSize} className = "d-flex">
