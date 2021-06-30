@@ -292,7 +292,7 @@ collections:
         name: "curriculum_committee"
         file: "src/posts/curriculum_committee.json"
         fields:
-          - label: "Curriculum Committee"
+          - label: "Curriculum Committee List"
             name: "curriculum_committee_list"
             widget: list
             fields:
@@ -309,3 +309,24 @@ collections:
                 name: "image"
                 widget: image
                 media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
+      - label: "Publicity Committee"
+        name: "pub_committee"
+        file: "src/posts/pub_committee.json"
+        fields:
+          - label: "Publicity Committee List"
+            name: "pub_committee"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+              - label: "Title/Pronouns"
+                name: "title_pronouns"
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown  
+              - label: "Image"
+                name: "image"
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/pubcommittee'
