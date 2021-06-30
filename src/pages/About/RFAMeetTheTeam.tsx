@@ -7,9 +7,11 @@ import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import Markdown from "markdown-to-jsx";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import bmInfo from "@/posts/board_members.json"
-import ccInfo from "@/posts/curriculum_committee"
-import adInfo from "@/posts/assistant_directors"
+import bmInfoJSON from "@/posts/board_members.json"
+import ccInfoJSON from "@/posts/curriculum_committee.json"
+import adInfoJSON from "@/posts/assistant_directors.json"
+import pcInfoJSON from "@/posts/pub_committee.json"
+
 
 import maxImg from "@/media/LeadershipTeam/max.png";
 import Markdown from "markdown-to-jsx";
@@ -89,7 +91,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {bmInfo.board_members_list.map(info => (
+                {bmInfoJSON.board_members_list.map(info => (
                     <div style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
@@ -115,7 +117,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {adInfo.board_members_list.map(info => (
+                {adInfoJSON.assistant_directors_list.map(info => (
                     <div style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
@@ -141,7 +143,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {ccInfo.board_members_list.map(info => (
+                {ccInfoJSON.curriculum_committee_list.map(info => (
                     <div style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
@@ -167,7 +169,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 transitionDuration={500}
                 infinite
             >
-                {bmInfo.board_members_list.map(info => (
+                {pcInfoJSON.pub_committee.map(info => (
                     <div style = {imgSize} className = "d-flex">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
