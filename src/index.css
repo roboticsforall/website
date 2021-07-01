@@ -338,13 +338,18 @@ label {
 }
 .course-dropdown-card {
   display: none;
+  transition: 200ms !important;
 }
 .course-dropdown-card:hover {
   display: flex;
+  transition: 200ms !important;
+
 }
 .ind-learners-flag-course-card:hover + .course-dropdown-card,
 .school-flag-course-card:hover + .course-dropdown-card{
   display: flex;
+  transition: 200ms !important;
+
 }
 /* #endregion */
 

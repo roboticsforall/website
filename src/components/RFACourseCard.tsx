@@ -11,7 +11,7 @@ export const RFACourseCard: React.FC<{
   dropdownCourseImage: string;
 }> = (props) => {
   const courseImageSize: React.CSSProperties = {
-    height: "11vmax",
+    height: "9vmax",
   };
   const tobyImageSize: React.CSSProperties = {
     height: "20vmax",
@@ -45,7 +45,7 @@ export const RFACourseCard: React.FC<{
       </Col>
     ) : (
       <Col
-        className="school-flag-course-card border"
+        className="mb-2 me-2 school-flag-course-card border"
         md="auto"
       >
         <a className="mb-2 hyperlink" target="_blank" href={props.link} rel="noreferrer">
