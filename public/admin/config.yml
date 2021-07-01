@@ -107,7 +107,7 @@ collections:
                 name: "file_path"
                 widget: image
                 media_folder: '/public/uploads/coursesimg'
-              - {label: Dropdown Course Description, name: dropdown_course_description, widget: string}
+              - {label: Dropdown Course Description, name: dropdown_course_description, widget: Markdown}
               - label: Image
                 name: "dropdown_file_path"
                 widget: image
