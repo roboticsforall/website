@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export const RFALongButton: React.FC<{
   location: string;
   title: string;
-  location: string;
 }> = (props) => {
   const title: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",

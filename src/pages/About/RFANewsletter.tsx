@@ -9,18 +9,18 @@ import newsletterJSON from "@/posts/newsletters.json";
 
 export const RFANewsletter: React.FC = (props) => {
 
-    const heading3 = {
+    const heading3: React.CSSProperties = {
       fontFamily: "BeVietnam-ExtraBold"
     }
 
-    const subscribe = {
+    const subscribe: React.CSSProperties = {
       fontFamily: "Oswald-Medium", 
       fontSize: "46px", 
       color: "#554400",
       textAlign: "center"
     }
 
-    const ofsubscriber = {
+    const ofsubscriber: React.CSSProperties = {
       fontFamily: "Oswald-Medium", 
       fontSize: "25px", 
       color: "#b38f00"

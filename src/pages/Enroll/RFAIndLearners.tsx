@@ -11,7 +11,6 @@ import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
-import toby from "@/media/TobyImages/studentToby.png"
 
 export const RFAIndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -97,13 +96,13 @@ export const RFAIndLearners: React.FC = () => {
           <Row>
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <RFACourseCard
+                key = {i}
                 link={""}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
-                tobyImage = {toby}
-                type = "ind"
+                type = {"ind"}
                 dropdownCourseDescription = {courseInfo.dropdown_course_description}
-                dropdownCourseImg = {courseInfo.dropdown_file_path}
+                dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
               ></RFACourseCard>
             ))}
           </Row>

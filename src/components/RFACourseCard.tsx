@@ -6,7 +6,6 @@ export const RFACourseCard: React.FC<{
   link: string;
   title: string;
   courseImage: string;
-  tobyImage: string;
   type: string;
   dropdownCourseDescription: string;
   dropdownCourseImage: string;
@@ -68,7 +67,7 @@ export const RFACourseCard: React.FC<{
               <h4 style = {dropdownText}><Markdown>{props.dropdownCourseDescription}</Markdown></h4>
             </Col>
             <Col className = "d-flex flex-column align-items-center justify-content-between">
-              <Image className = "p-2" style = {{borderRadius: "15px", backgroundColor: "white", ...tobyImageSize}} src = {props.tobyImage}></Image>
+              <Image className = "p-2" style = {{borderRadius: "15px", backgroundColor: "white", ...tobyImageSize}} src = {props.dropdownCourseImage}></Image>
               <a
                 style={{ color: "#006bd6", fontFamily: "BeVietnam-ExtraBold" }}
                 rel="noopener noreferrer"

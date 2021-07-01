@@ -103,6 +103,7 @@ collections:
             widget: list
             fields:
               - {label: Course Name, name: course_name, widget: string}
+              - {label: Link to Class Description, name: class_description_link, widget: string}
               - label: Image
                 name: "file_path"
                 widget: image
