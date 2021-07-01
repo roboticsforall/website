@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, Row, Col, Container } from "react-bootstrap";
+import Markdown from "markdown-to-jsx";
 
 export const RFACourseCard: React.FC<{
   link: string;
@@ -62,9 +63,9 @@ export const RFACourseCard: React.FC<{
 
       <div className = "course-dropdown-card my-5 justify-content-center">
           <Row className = "w-75 p-3" style = {{backgroundColor: "#ffdb4d", borderRadius: "15px"}}>
-            <h1 style = {dropdownHeader}>BASIC SCRATCH (2-3) PART 1</h1>
+            <h1 style = {dropdownHeader}>{props.title.toUpperCase()}</h1>
             <Col md = {7}>
-              <h4 style = {dropdownText}>Basic Scratch (K-3) Part 1 is designed for K-3rd grade students who have prior experience with computer programming.<br></br> <br></br> Students will learn how to code a basic program in Scratch, a block-programming program, using looks, motion, sound, and loop blocks. After completing this course, students will be prepared to take our Basic Scratch (K-3) Part 2 course which will be offered in the Summer of 2021.</h4>
+              <h4 style = {dropdownText}><Markdown>{props.dropdownCourseDescription}</Markdown></h4>
             </Col>
             <Col className = "d-flex flex-column align-items-center justify-content-between">
               <Image className = "p-2" style = {{borderRadius: "15px", backgroundColor: "white", ...tobyImageSize}} src = {props.tobyImage}></Image>

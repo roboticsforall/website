@@ -4,7 +4,7 @@ import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
 import { RFACourseCard } from "@/components/RFACourseCard";
 
-import coursesImgJSON from "@/posts/courses.json";
+import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
 
@@ -97,7 +97,7 @@ export const RFASchools: React.FC = () => {
           </h5>
           <br></br>
           <Row>
-            {coursesImgJSON.courses_list.map((courseInfo, i) => (
+            {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <RFACourseCard
                 link={""}
                 courseImage={courseInfo.file_path.replace("/public", "")}
