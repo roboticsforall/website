@@ -110,14 +110,14 @@ export const RFANavbar: React.FC = () => {
                 <Link to="/about/overview" className="dropdown-item">
                   Overview
                 </Link>
+                <Link to="/about/meettheteam" className="dropdown-item">
+                  Meet The Team
+                </Link>
                 <Link to="/about/afforgs" className="dropdown-item">
                   Affiliated Organizations
                 </Link>
                 <Link to="/about/newsletter" className="dropdown-item">
                   Newsletter
-                </Link>
-                <Link to="/about/meettheteam" className="dropdown-item">
-                  Meet The Team
                 </Link>
               </div>
             </li>

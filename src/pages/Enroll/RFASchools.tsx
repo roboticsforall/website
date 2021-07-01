@@ -92,21 +92,21 @@ export const RFASchools: React.FC = () => {
             design courses for students in K-8th grade!
             <br></br>
             <br></br>
-            View our selection of courses below:
+            View our selection of courses below and click on the boxes to learn more
           </h5>
           <br></br>
           <Row>
           {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <RFACourseCard
                 key = {i}
-                link={""}
+                link={courseInfo.class_description_link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 type = "school"
                 dropdownCourseDescription = {courseInfo.dropdown_course_description}
                 dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
               ></RFACourseCard>
-            ))}
+          ))}
           </Row>
           <br></br>
           <br></br>

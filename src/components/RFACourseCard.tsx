@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Row, Col, Container } from "react-bootstrap";
+import { Image, Row, Col } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 
 export const RFACourseCard: React.FC<{
@@ -32,15 +32,17 @@ export const RFACourseCard: React.FC<{
     {(props.type == "ind") ? (
       <Col
         className="ind-learners-flag-course-card border"
-        md="auto"
+        md={3}
       >
           <a className="mb-2 hyperlink" target="_blank" href={props.link} rel="noreferrer">
-          <div className="m-3 text-center">
-            <Image style={courseImageSize} src={props.courseImage} />
-            <h3 style={text} className="mb-4 text-center">
+          <Row className="m-3 h-100 align-items-between">
+            <Col className = "d-flex justify-content-center">
+              <Image style={courseImageSize} src={props.courseImage} />
+            </Col>
+            <h3 style={text} className = "text-center ">
               {props.title}
             </h3>
-          </div>
+          </Row>
         </a>
       </Col>
     ) : (
@@ -73,7 +75,7 @@ export const RFACourseCard: React.FC<{
                 rel="noopener noreferrer"
                 target="_blank"
                 className="text-center hyperlink aff-org-card-link"
-                // href={props.website}
+                href={props.link}
               >
                 Learn More
               </a>
