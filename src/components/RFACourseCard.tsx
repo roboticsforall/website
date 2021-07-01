@@ -62,7 +62,7 @@ export const RFACourseCard: React.FC<{
     )}
 
 
-      <div className = "course-dropdown-card my-5 justify-content-center">
+      <div className = "course-dropdown-card justify-content-center">
           <Row className = "w-75 p-3" style = {{backgroundColor: "#ffdb4d", borderRadius: "15px"}}>
             <h1 style = {dropdownHeader}>{props.title.toUpperCase()}</h1>
             <Col md = {7}>
