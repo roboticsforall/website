@@ -86,7 +86,7 @@ collections:
             name: "newsletters_list"
             widget: list
             fields:
-              - {label: Date, name: date, widget: date, default: "", format: "MMMM YYYY"}
+              - {label: Date of Newsletter (Add month and year of newsletter. Ignore date), name: date, widget: date, default: "", format: "MMMM YYYY"}
               - label: file
                 name: "file_path"
                 widget: file

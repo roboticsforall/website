@@ -11,6 +11,7 @@ import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
+import toby from "@/media/TobyImages/studentToby.png"
 
 export const RFAIndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -95,17 +96,12 @@ export const RFAIndLearners: React.FC = () => {
           <br></br>
           <Row className="justify-content">
             {coursesImgJSON.courses_list.map((courseInfo, i) => (
-              <Col
-                className="ind-learners-flag-course-card border"
-                md="auto"
-                key={i}
-              >
-                <RFACourseCard
-                  link={""}
-                  image={courseInfo.file_path.replace("/public", "")}
-                  title={courseInfo.course_name}
-                ></RFACourseCard>
-              </Col>
+              <RFACourseCard
+                link={""}
+                courseImage={courseInfo.file_path.replace("/public", "")}
+                title={courseInfo.course_name}
+                tobyImage = {toby}
+              ></RFACourseCard>
             ))}
           </Row>
           <br></br>

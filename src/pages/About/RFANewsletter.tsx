@@ -5,6 +5,7 @@ import { RFANewsCard } from '@/components/RFANewsCard';
 import { RFALongButton } from '@/components/RFALongButton';
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import { RFASubmitButton} from "@/components/RFASubmitButton";
+import newsletterJSON from "@/posts/newsletters.json";
 
 export const RFANewsletter: React.FC = (props) => {
 
@@ -34,34 +35,16 @@ export const RFANewsletter: React.FC = (props) => {
           </Row>
           <br/>
           <Row>
-            {[
-              {
-                date: "November 2020",
-                pdfLink: "https://www.urbandictionary.com/define.php?term=dodo%20head",
-              },
-              {
-                date: "December 2020",
-                pdfLink: "https://www.urbandictionary.com/define.php?term=dodo%20head",
-              },
-              {
-                date: "January 2021",
-                pdfLink: "https://www.urbandictionary.com/define.php?term=dodo%20head",
-              },
-              {
-                date: "February 2021",
-                pdfLink: "https://www.urbandictionary.com/define.php?term=dodo%20head",
-              }
-
-            ].map(newsletter => (
-              <Col key = {newsletter.date} md>
-                <RFANewsCard key = {newsletter.pdfLink} title = {newsletter.date} link = {newsletter.pdfLink}/>
+            {newsletterJSON.newsletters_list.slice(0,4).map((newsletter, i) => (
+              <Col key = {i} md>
+                <RFANewsCard title = {newsletter.date} file = {newsletter.file_path.replace("/public", "")}/>
                 <br/>
               </Col>
             ))}
           </Row>
 
           {/* Read Previous News Button */}
-          <RFALongButton title = {"Read Previous Newsletters"} backgroundColor = {"#ffcc00"} link = "https://www.google.com/"/>
+          <RFALongButton title = {"Read Previous Newsletters"} location = "/about/pastnewsletter"/>
           <br></br>
           <br></br>
           <Row>
@@ -129,7 +112,9 @@ export const RFANewsletter: React.FC = (props) => {
           </div>
           {/* End mc_embed_signup */}
           </Row>
-          
+          <br></br>
+          <br></br>
+
         </Container>
       </>
     );  

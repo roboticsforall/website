@@ -186,6 +186,7 @@ label {
   font-size: 2.5em;
   letter-spacing: 0.1em;
   transition: 0.2s;
+  text-align: center;
 }
 .react-multi-carousel-item {
   margin: 10px;
@@ -527,6 +528,7 @@ label {
     transition: 0.2s;
     letter-spacing: 0.25em;
     text-decoration: none;
+    text-align: center;
   }
   .video-width {
     width: 75% !important;

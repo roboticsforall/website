@@ -94,7 +94,7 @@ export const RFASchools: React.FC = () => {
             View our selection of courses below:
           </h5>
           <br></br>
-          <Row className="justify-content">
+          <Row>
             {coursesImgJSON.courses_list.map((courseInfo, i) => (
               <Col className="school-flag-course-card" md="auto" key={i}>
                 <RFACourseCard

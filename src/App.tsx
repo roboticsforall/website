@@ -21,6 +21,8 @@ import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
 import { RFAAbtOverview } from "./pages/About/RFAAbtOverview";
 import { RFAMeetTheTeam } from "./pages/About/RFAMeetTheTeam";
 import { RFANewsletter } from "./pages/About/RFANewsletter";
+import { RFAPastNewsletter } from "./pages/About/RFAPastNewsletter";
+
 //News
 import { RFANews } from "./pages/News/RFANews";
 //More
@@ -73,9 +75,10 @@ export const App: React.FC = () => {
 
 {/* About Pages */}
 
-                <Route path="/about/newsletter" component={RFANewsletter} />
                 <Route path="/about/overview" component={RFAAbtOverview} />
                 <Route path="/about/afforgs" component={RFAAffOrgs} />
+                <Route path="/about/newsletter" component={RFANewsletter} />
+                <Route path="/about/pastnewsletter" component={RFAPastNewsletter} />
                 <Route path="/about/meettheteam" component={RFAMeetTheTeam} />
 
 {/* Contact Page */}
