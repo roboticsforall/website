@@ -107,6 +107,11 @@ collections:
                 name: "file_path"
                 widget: image
                 media_folder: '/public/uploads/coursesimg'
+              - {label: Dropdown Course Description, name: dropdown_course_description, widget: string}
+              - label: Image
+                name: "dropdown_file_path"
+                widget: image
+                media_folder: '/public/uploads/coursesimg/dropdownImg'
   - label: "Syllabi" # used in UI
     name: "syllabi" # used in routes
     files:

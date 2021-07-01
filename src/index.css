@@ -336,6 +336,16 @@ label {
   transition: 200ms;
   background-color: #ffdb4d;
 }
+.course-dropdown-card {
+  display: none;
+}
+.course-dropdown-card:hover {
+  display: flex;
+}
+.ind-learners-flag-course-card:hover + .course-dropdown-card,
+.school-flag-course-card:hover + .course-dropdown-card{
+  display: flex;
+}
 /* #endregion */
 
 /* #region homepage styling */

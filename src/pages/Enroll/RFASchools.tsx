@@ -9,6 +9,7 @@ import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
+import toby from "@/media/TobyImages/studentToby.png"
 
 export const RFASchools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -31,6 +32,7 @@ export const RFASchools: React.FC = () => {
   const greenRow = {
     backgroundColor: "#33cc664D",
   };
+  
 
   return (
     <>
@@ -96,13 +98,13 @@ export const RFASchools: React.FC = () => {
           <br></br>
           <Row>
             {coursesImgJSON.courses_list.map((courseInfo, i) => (
-              <Col className="school-flag-course-card" md="auto" key={i}>
-                <RFACourseCard
-                  link={""}
-                  image={courseInfo.file_path.replace("/public", "")}
-                  title={courseInfo.course_name}
-                ></RFACourseCard>
-              </Col>
+              <RFACourseCard
+                link={""}
+                courseImage={courseInfo.file_path.replace("/public", "")}
+                title={courseInfo.course_name}
+                tobyImage = {toby}
+                type = "school"
+              ></RFACourseCard>
             ))}
           </Row>
           <br></br>

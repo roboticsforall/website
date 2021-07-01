@@ -6,12 +6,15 @@ export const RFACourseCard: React.FC<{
   title: string;
   courseImage: string;
   tobyImage: string;
+  type: string;
+  dropdownCourseDescription: string;
+  dropdownCourseImage: string;
 }> = (props) => {
   const courseImageSize: React.CSSProperties = {
     height: "11vmax",
   };
   const tobyImageSize: React.CSSProperties = {
-    width: "13vmax",
+    height: "20vmax",
   };
   const text: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
@@ -21,12 +24,28 @@ export const RFACourseCard: React.FC<{
     fontSize: "4vmax",
   }
   const dropdownText = {
-    fontFamily: "BeVietnam-Medium"
+    fontFamily: "BeVietnam-Medium",
+    fontSize: "1.6vmax"
   }
   return (
     <>
+    {(props.type == "ind") ? (
       <Col
         className="ind-learners-flag-course-card border"
+        md="auto"
+      >
+          <a className="mb-2 hyperlink" target="_blank" href={props.link} rel="noreferrer">
+          <div className="m-3 text-center">
+            <Image style={courseImageSize} src={props.courseImage} />
+            <h3 style={text} className="mb-4 text-center">
+              {props.title}
+            </h3>
+          </div>
+        </a>
+      </Col>
+    ) : (
+      <Col
+        className="school-flag-course-card border"
         md="auto"
       >
         <a className="mb-2 hyperlink" target="_blank" href={props.link} rel="noreferrer">
@@ -38,8 +57,10 @@ export const RFACourseCard: React.FC<{
           </div>
         </a>
       </Col>
+    )}
 
-      <div className = "my-5 d-flex justify-content-center">
+
+      <div className = "course-dropdown-card my-5 justify-content-center">
           <Row className = "w-75 p-3" style = {{backgroundColor: "#ffdb4d", borderRadius: "15px"}}>
             <h1 style = {dropdownHeader}>BASIC SCRATCH (2-3) PART 1</h1>
             <Col md = {7}>
@@ -59,6 +80,6 @@ export const RFACourseCard: React.FC<{
             </Col>
           </Row>
       </div>
-      </>
+    </>
   );
 };

@@ -94,13 +94,14 @@ export const RFAIndLearners: React.FC = () => {
             View our selection of courses below:
           </h5>
           <br></br>
-          <Row className="justify-content">
+          <Row>
             {coursesImgJSON.courses_list.map((courseInfo, i) => (
               <RFACourseCard
                 link={""}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 tobyImage = {toby}
+                type = "ind"
               ></RFACourseCard>
             ))}
           </Row>
