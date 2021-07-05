@@ -9,8 +9,6 @@ assignees: ''
 
 **Add the feature or webpage to add here.**
 
-# Name of Feature:
-
 # Description of Feature
 
 # Specific page it belongs to
