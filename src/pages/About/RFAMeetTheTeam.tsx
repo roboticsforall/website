@@ -86,19 +86,21 @@ export const RFAMeetTheTeam: React.FC = () => {
                 swipeable={false}
                 draggable={false}
                 transitionDuration={500}
+                centerMode
                 infinite
             >
                     {bmInfoJSON.board_members_list.map((info,i) => (
-                        <div key = {i} style = {{backgroundColor: "#fa8d1f", borderRadius: "15px"}} className = "d-flex my-3 w-75 p-3">
-                            <Col md = {"auto"}>
+                        <div key = {i} style = {{backgroundColor: "#fa8d1f", borderRadius: "15px"}} className = "d-flex my-3 p-3">
+                            <Col>
                                 <Image style = {imgSize} src = {info.image.replace("/public","")} />
                             </Col>
-                            <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
+                            <Col style = {{overflowY: "auto"}} className = "ms-2">
                                 <h1 style = {nameHeader}>{info.name}</h1>
                                 <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1> 
                                 <Markdown style = {bodyText}>{info.description}</Markdown>
                             </Col> 
                         </div>
+
                     ))}
             </Carousel>
         </Row>
@@ -111,10 +113,11 @@ export const RFAMeetTheTeam: React.FC = () => {
                 draggable={false}
                 responsive={responsive}
                 transitionDuration={500}
+                centerMode
                 infinite
             >
                 {adInfoJSON.assistant_directors_list.map((info,i) => (
-                    <div key = {i} style = {{backgroundColor: "#33cc66", borderRadius: "15px"}} className = "d-flex my-3 w-75 p-3">
+                    <div key = {i} style = {{backgroundColor: "#33cc66", borderRadius: "15px"}} className = "d-flex my-3 p-3">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
@@ -137,10 +140,11 @@ export const RFAMeetTheTeam: React.FC = () => {
                 draggable={false}
                 responsive={responsive}
                 transitionDuration={500}
+                centerMode
                 infinite
             >
                 {ccInfoJSON.curriculum_committee_list.map((info,i) => (
-                    <div key = {i} style = {{backgroundColor: "#3399ff", borderRadius: "15px"}} className = "d-flex my-3 w-75 p-3">
+                    <div key = {i} style = {{backgroundColor: "#3399ff", borderRadius: "15px"}} className = "d-flex my-3 p-3">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
@@ -163,10 +167,11 @@ export const RFAMeetTheTeam: React.FC = () => {
                 draggable={false}
                 responsive={responsive}
                 transitionDuration={500}
+                centerMode
                 infinite
             >
                 {pcInfoJSON.pub_committee.map((info,i) => (
-                    <div key = {i} style = {{backgroundColor: "#ffcc00", borderRadius: "15px"}} className = "d-flex my-3 w-75 p-3">
+                    <div key = {i} style = {{backgroundColor: "#ffcc00", borderRadius: "15px"}} className = "d-flex my-3 p-3">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
