@@ -11,6 +11,12 @@
       "title_pronouns": "BEO",
       "description": "BAXY MAX who is BEO",
       "image": "/public/uploads/leadershipteamimg/boardmembers/elementary-toby.webp"
+    },
+    {
+      "name": "Drax",
+      "title_pronouns": "Unknown species of Max",
+      "description": "From the planet Lax",
+      "image": "/public/uploads/leadershipteamimg/boardmembers/student-toby.png"
     }
   ]
 }
