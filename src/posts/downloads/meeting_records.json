@@ -84,6 +84,12 @@
       "item_name": "Meeting 30 (special)",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes30.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda30.pdf"
+    },
+    {
+      "date": "November 15th, 2020",
+      "item_name": "Meeting 29",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes29.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda29.pdf"
     }
   ]
 }
