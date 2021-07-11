@@ -150,6 +150,18 @@
       "item_name": "Meeting 17",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda17.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda17.pdf"
+    },
+    {
+      "date": "February 29th, 2020",
+      "item_name": "Meeting 16 (special)",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda16.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda16.pdf"
+    },
+    {
+      "date": "February 13th, 2020",
+      "item_name": "Meeting 15",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda15.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda15.pdf"
     }
   ]
 }
