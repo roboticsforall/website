@@ -72,6 +72,12 @@
       "item_name": "Meeting 32",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes32.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda32.pdf"
+    },
+    {
+      "date": "December 6th, 2020",
+      "item_name": "Meeting 31",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes31.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda31.pdf"
     }
   ]
 }
