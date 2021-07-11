@@ -170,10 +170,22 @@
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda14.pdf"
     },
     {
-      "date": "November 10th, 2020",
+      "date": "November 10th, 2019",
       "item_name": "Meeting 12",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda12.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda12.pdf"
+    },
+    {
+      "date": "October 12th, 2019",
+      "item_name": "Meeting 11",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda11.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda11.pdf"
+    },
+    {
+      "date": "June 2nd, 2019",
+      "item_name": "Meeting 8",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda8.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda8.pdf"
     }
   ]
 }
