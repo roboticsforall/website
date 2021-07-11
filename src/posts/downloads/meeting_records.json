@@ -102,6 +102,18 @@
       "item_name": "Meeting 27 (special)",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes27.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda27.pdf"
+    },
+    {
+      "date": "October 18th, 2020",
+      "item_name": "Meeting 26",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes26.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda26.pdf"
+    },
+    {
+      "date": "October 4th, 2020",
+      "item_name": "Meeting 25",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes25.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda25.pdf"
     }
   ]
 }
