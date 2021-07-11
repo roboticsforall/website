@@ -114,6 +114,12 @@
       "item_name": "Meeting 25",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes25.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda25.pdf"
+    },
+    {
+      "date": "September 16th, 2020",
+      "item_name": "Meeting 24",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda24.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda24.pdf"
     }
   ]
 }
