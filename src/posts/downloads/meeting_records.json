@@ -198,6 +198,18 @@
       "item_name": "Meeting 5",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda5.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda5.pdf"
+    },
+    {
+      "date": "February 17th, 2019",
+      "item_name": "Meeting 4",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda4.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda4.pdf"
+    },
+    {
+      "date": "January 20th, 2019",
+      "item_name": "Meeting 3",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda3.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda3.pdf"
     }
   ]
 }
