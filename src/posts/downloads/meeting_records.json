@@ -144,6 +144,12 @@
       "item_name": "Meeting 18",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda18.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda18.pdf"
+    },
+    {
+      "date": "March 15th, 2020",
+      "item_name": "Meeting 17",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda17.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda17.pdf"
     }
   ]
 }
