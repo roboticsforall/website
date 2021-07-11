@@ -210,6 +210,18 @@
       "item_name": "Meeting 3",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda3.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda3.pdf"
+    },
+    {
+      "date": "December 8th, 2018",
+      "item_name": "Meeting 2 (special)",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda2.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda2.pdf"
+    },
+    {
+      "date": "December 1st, 2018",
+      "item_name": "Meeting 1",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda1.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda1.pdf"
     }
   ]
 }
