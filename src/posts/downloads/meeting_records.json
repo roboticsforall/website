@@ -162,6 +162,12 @@
       "item_name": "Meeting 15",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda15.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda15.pdf"
+    },
+    {
+      "date": "January 24th, 2020",
+      "item_name": "Meeting 14",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda14.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda14.pdf"
     }
   ]
 }
