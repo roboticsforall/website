@@ -126,6 +126,12 @@
       "item_name": "Meeting 23 (special)",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda23.pdf",
       "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda23.pdf"
+    },
+    {
+      "date": "July 28th, 2020",
+      "item_name": "Meeting 21 (special)",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/agenda21.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/agenda21.pdf"
     }
   ]
 }
