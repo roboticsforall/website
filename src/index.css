@@ -192,22 +192,37 @@ label {
   margin: 10px;
 }
 
-/* #region Overrided Bootstrap styles for navbar */
-.navbar .nav-link {
+/* #region Custom styles for navbar */
+.nav-item {
+  position: relative;
+}
+.nav-item-header {
   color: #ffcc00 !important; /* nav headers font style */
   font-family: "BeVietnam-ExtraBold" !important;
   font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
-.navbar .nav-link:hover {
+.nav-item-header:hover {
   transition: 0.2s;
   color: #fa8d1f !important;
 }
-.navbar .nav-link:active {
+.nav-item-header:active {
   transition: 0.2s;
   color: black !important;
 }
-.nav-link::after {
-  content: none !important;
+.nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
+  display: block !important;
+}
+.dropdown-container {
+  display: none;
+  position: absolute;
+  border-radius: 30px !important;
+  background-color: #ffdb4d;
+  z-index: 100;
+  min-width: max-content;
 }
 
 /* for donate button specifically */
@@ -240,33 +255,29 @@ label {
   content: none !important;
 }
 
-.navbar-collapse {
-  text-align: center;
-}
-
 /* for dropdowns */
-.dropdown-item {
-  color: #fa8d1f !important; /* font styling for dropdown text */
+.dropdown-container li {
+  color: #fa8d1f; /* font styling for dropdown text */
   font-family: "BeVietnam-ExtraBold";
-  background-color: #ffdb4d !important;
-  font-size: 1.2em;
+  background-color: #ffdb4d;
+  font-size: 1.5em;
+  padding: 0.5em;
 }
-.dropdown-item:hover {
+.dropdown-container li:first-child{
+  border-radius: 15px 15px 0 0;
+}
+.dropdown-container li:last-child{
+  border-radius: 0 0 15px 15px;
+}
+.dropdown-container li:hover {
   transition: 0.2s;
   background-color: #ffcc00 !important;
   color: #c06204 !important;
 }
-.dropdown-item:active {
+.dropdown-container li:active {
   transition: 0.2s;
   background-color: #ffcc00 !important;
   color: black !important;
-}
-.dropdown:hover .dropdown-menu {
-  display: block !important;
-}
-.dropdown-menu {
-  border-radius: 15px !important;
-  background-color: #ffdb4d !important;
 }
 /*#endregion*/
 
