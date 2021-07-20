@@ -197,15 +197,19 @@ label {
   position: relative;
 }
 .nav-item-header {
-  color: #ffcc00 !important; /* nav headers font style */
-  font-family: "BeVietnam-ExtraBold" !important;
-  font-size: 1.5em;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
 }
-.nav-item-header:hover {
+.nav-item-header a {
+  font-size: 1.5em;
+  margin: 0;
+  color: #ffcc00;
+  font-family: "BeVietnam-ExtraBold";
+}
+
+.nav-item-header a:hover {
   transition: 0.2s;
   color: #fa8d1f !important;
 }
@@ -222,7 +226,7 @@ label {
   border-radius: 30px !important;
   background-color: #ffdb4d;
   z-index: 100;
-  min-width: max-content;
+  white-space: nowrap;
 }
 
 /* for donate button specifically */
@@ -231,9 +235,6 @@ label {
   font-family: "BeVietnam-ExtraBold" !important;
   font-size: 1.5em;
   padding: 0 !important;
-  display: flex !important;
-  align-self: center !important;
-  justify-self: center !important;
 }
 .navbar .donate-nav-link:hover {
   transition: 0.2s;
@@ -251,33 +252,41 @@ label {
 .donate-nav-item:hover {
   background-color: #70b8ff;
 }
-.donate-nav-link::after {
-  content: none !important;
-}
 
 /* for dropdowns */
 .dropdown-container li {
-  color: #fa8d1f; /* font styling for dropdown text */
-  font-family: "BeVietnam-ExtraBold";
   background-color: #ffdb4d;
-  font-size: 1.5em;
   padding: 0.5em;
 }
-.dropdown-container li:first-child{
-  border-radius: 15px 15px 0 0;
+.dropdown-container a {
+  font-size: 1.5em;
+  font-family: "BeVietnam-ExtraBold";
+  color: #fa8d1f;
 }
-.dropdown-container li:last-child{
-  border-radius: 0 0 15px 15px;
+.dropdown-container a:first-child li{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.dropdown-container a:last-child li{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .dropdown-container li:hover {
   transition: 0.2s;
-  background-color: #ffcc00 !important;
-  color: #c06204 !important;
+  background-color: #ffcc00;
+}
+.dropdown-container a:hover {
+  transition: 0.2s;
+  color: #c06204;
 }
 .dropdown-container li:active {
   transition: 0.2s;
   background-color: #ffcc00 !important;
   color: black !important;
+}
+.dropdown-container a:active {
+  transition: 0.2s;
+  color: black;
 }
 /*#endregion*/
 

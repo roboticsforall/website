@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import { Row, Container, Col, Image } from "react-bootstrap";
+import React from "react";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 
@@ -18,7 +17,6 @@ export const RFANavbar: React.FC = () => {
   }
   const navContainer:React.CSSProperties = {
     display: "flex",
-    border: "2px solid black",
   }
   const list:React.CSSProperties = {
     textDecoration: "none",
@@ -29,16 +27,16 @@ export const RFANavbar: React.FC = () => {
   const navItemsList:React.CSSProperties = {
     display: "flex",
     alignItems: 'stretch',
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     flexGrow: 100,
   }
   // const navItem:
 
   return (
-    <nav className = "h-75" style = {navContainer}>
+    <nav className = "py-5" style = {navContainer}>
       <header style = {navHeader}>
         <Link to = "/"><img className = "mx-2" src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
-        <h1 style = {navHeading}>Robotics For All</h1>
+        <Link className = "hyperlink" to = "/"><h2 style = {navHeading}>Robotics For All</h2></Link>
       </header>
       <ul className = "ms-2" style = {{...navItemsList, ...list}}>
         {[
@@ -48,45 +46,19 @@ export const RFANavbar: React.FC = () => {
             subPages: [
               {
                 subPageName: "For Individual Learners",
-                to: "enroll/individlearners",
+                to: "/enroll/individlearners",
               },
               {
                 subPageName: "For Schools",
-                to: "enroll/schools",
+                to: "/enroll/schools",
               },
               {
                 subPageName: "Register",
-                to: "enroll/register",
+                to: "/enroll/register",
               },
               {
                 subPageName: "Class FAQs",
-                to: "enroll/classfaq",
-              },
-            ]
-          },
-          {
-            headerName: "Volunteer",
-            to: "/volunteer",
-            subPages: [
-              {
-                subPageName: "Overview",
-                to: "volunteer/overview",
-              },
-              {
-                subPageName: "Teachers Positions",
-                to: "volunteer/teacherpos",
-              },
-              {
-                subPageName: "Publicity Positions",
-                to: "volunteer/publicitypos",
-              },
-              {
-                subPageName: "Volunteer Application",
-                to: "volunteer/volunteerapp",
-              },
-              {
-                subPageName: "Volunteer FAQs",
-                to: "volunteer/volunteerfaq",
+                to: "/enroll/classfaq",
               },
             ]
           },
@@ -129,7 +101,7 @@ export const RFANavbar: React.FC = () => {
                 to: "/about/meettheteam",
               },
               {
-                subPageName: "Affiliated Organization",
+                subPageName: "Affiliated Organizations",
                 to: "/about/afforgs",
               },
               {
@@ -141,15 +113,38 @@ export const RFANavbar: React.FC = () => {
         ].map((navItem, i) => (
           <React.Fragment>
             <li className = "nav-item" key = {i}>
-              <h1 className = "h-100 nav-item-header">{navItem.headerName}</h1>
+              <div className = "h-100 nav-item-header">
+                <Link to = "#" className = "hyperlink">{navItem.headerName}</Link>
+              </div>
               <ul className = "dropdown-container" style = {list}>
                 {navItem.subPages.map((subPageInfo, i) => (
-                  <li>{subPageInfo.subPageName}</li>
+                  <Link className = "hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
                 ))}
               </ul>
             </li>
           </React.Fragment>
         ))}
+          <li className = "nav-item">
+            <div className = "h-100 m-0 nav-item-header">
+              <Link className = "hyperlink" to = "/contact">Contact</Link>
+            </div>
+          </li>
+          <li className = "nav-item">
+            <div className = "h-100 nav-item-header">
+              <Link className = "hyperlink" to = "/news">News</Link>
+            </div>
+          </li>
+          <li className = "nav-item">
+            <div className = "h-100 nav-item-header">
+              <Link className = "hyperlink" to = "/donate">Donate</Link>
+            </div>
+            <ul className = "dropdown-container" style = {list}>
+            <a rel="noopener" target = "_blank" href = "https://www.bonfire.com/store/rfa/" className = "hyperlink"><li>Merch</li></a>
+            </ul>
+          </li>
+          <li>
+            <div id="google_translate_element"></div> 
+          </li>
       </ul>
     </nav>
   );
