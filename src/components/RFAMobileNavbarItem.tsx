@@ -7,7 +7,7 @@ export const RFAMobileNavbarItem: React.FC<{
         to: string,
         subPageName: string,
     }[],
-    displayNav: () => void
+    setNavHeight: () => void
 }> = (props) => {
     const [buttonState, setButtonState] = useState("+");
     const [dropdownDisplay, setDropdownDisplay] = useState("none");
@@ -45,14 +45,14 @@ export const RFAMobileNavbarItem: React.FC<{
     
     return (
         <React.Fragment>
-            <li onClick = {onClick} className="mobile-nav-item-header" style={navHeader}>
+            <li onClick = {onClick} style={navHeader}>
                 {props.headerName} <button>{buttonState}</button>
             </li>
             <hr />
             <ul style={{display: dropdownDisplay, ...list}}>
                 {props.subPages.map((subPageInfo, i) => (
                     <React.Fragment>
-                        <Link onClick = {props.displayNav} style = {dropdownItemText} className="hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
+                        <Link onClick = {props.setNavHeight} style = {dropdownItemText} className="hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
                         <hr />
                     </React.Fragment>
                 ))}

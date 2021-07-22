@@ -2,12 +2,12 @@ import React, {useState} from "react";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 import dropdownIcon from "../media/Icons/dropdownIcon.svg";
+import exitIcon from "../media/Icons/exitIcon.svg";
 import { RFAMobileNavbarItem } from "./RFAMobileNavbarItem";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 export const RFANavbarMobile: React.FC = () => {
 
-  const [dropdownDisplay, setDropdownDisplay] = useState("none");
+  const [dropdownHeight, setDropdownHeight] = useState("0");
 
   const logoImageSize = {
     height: "7vh",
@@ -25,46 +25,34 @@ export const RFANavbarMobile: React.FC = () => {
     listStyleType: "none",
   }
   const screenCover:React.CSSProperties = {
+    backgroundColor: "#ffcc00",
+    height: dropdownHeight,
+    width: "100%",
     position: "fixed",
+    zIndex: 1,
     top: 0,
     left: 0,
-    width: "100%",
-    height: "100%",
-    backgroundColor: "#ffcc00",
-    display: dropdownDisplay,
-  }
-  const screenCoverCenterContainer:React.CSSProperties = {
-    position: "absolute",
-    top: "20%",
-    width: "90%",
-    left: "50%",
-    height: "70%",
-    transform: "translate(-50%, 0%)",
     overflowY: "auto",
+    transition: "0.5s ease-out",
   }
-  const exitButton = {
-    display: 'flex',
-    justifyContent: "flex-end",
-    fontFamily: "BeVietnam-Bold",
-    fontSize: "1.5em",
-  };
-  const displayNav = () => {
-    dropdownDisplay === "none"
-      ? setDropdownDisplay("block")
-      : setDropdownDisplay("none");
+  const setNavHeight = () => {
+    dropdownHeight === "0"
+      ? setDropdownHeight("100%")
+      : setDropdownHeight("0");
   };
 
   return (
     <nav className = "py-5" style = {navContainer}>
-      <header className = "mx-md-3"style = {navHeader}>
+      <header className = "mx-md-3" style = {navHeader}>
         <Link to = "/"><img src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
-        <button onClick = {displayNav}><img width = "50" src = {dropdownIcon}/></button>
+        <button onClick = {setNavHeight}><img width = "50" src = {dropdownIcon}/></button>
       </header>
       <div style = {screenCover}>
-        <header style = {exitButton}>
-          <button onClick = {displayNav} className = "me-5">&#10006;</button>
+        <header className = "py-5 px-3" style = {navHeader}>
+          <Link to = "/"><img src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
+          <button onClick = {setNavHeight}><img width = "50" src = {exitIcon}/></button>
         </header>
-        <ul className = "mx-3 p-0" style = {{...screenCoverCenterContainer, ...list}}>
+        <ul className = "mx-3 p-0" style = {{...list}}>
         {[
           {
             headerName: "Enroll",
@@ -174,7 +162,7 @@ export const RFANavbarMobile: React.FC = () => {
           <RFAMobileNavbarItem 
             headerName = {navItem.headerName}
             subPages = {navItem.subPages}
-            displayNav = {displayNav}
+            setNavHeight = {setNavHeight}
           />
         ))}
         </ul>
