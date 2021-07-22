@@ -35,7 +35,7 @@ export const RFANavbar: React.FC = () => {
   return (
     <nav className = "py-5" style = {navContainer}>
       <header style = {navHeader}>
-        <Link to = "/"><img className = "mx-2" src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
+        <Link to = "/"><img className = "mx-md-2" src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
         <Link className = "hyperlink" to = "/"><h2 style = {navHeading}>Robotics For All</h2></Link>
       </header>
       <ul className = "ms-2" style = {{...navItemsList, ...list}}>
@@ -135,11 +135,11 @@ export const RFANavbar: React.FC = () => {
             </div>
           </li>
           <li className = "nav-item">
-            <div className = "h-100 nav-item-header">
-              <Link className = "hyperlink" to = "/donate">Donate</Link>
+            <div className = "h-100 donate-nav-item-header">
+              <Link className = "donate-nav-background hyperlink" to = "/donate">Donate</Link>
             </div>
             <ul className = "dropdown-container" style = {list}>
-            <a rel="noopener" target = "_blank" href = "https://www.bonfire.com/store/rfa/" className = "hyperlink"><li>Merch</li></a>
+              <a rel="noopener" target = "_blank" href = "https://www.bonfire.com/store/rfa/" className = "hyperlink"><li>Merch</li></a>
             </ul>
           </li>
           <li>

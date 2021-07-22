@@ -2,6 +2,7 @@ import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { RFANavbar } from "./components/RFANavbar";
+import { RFANavbarMobile } from "./components/RFANavbarMobile";
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
 import { RFAFooter } from "./components/RFAFooter";
@@ -38,7 +39,7 @@ import { RFADonate } from "./pages/Donate/RFADonate";
 export const App: React.FC = () => {
   return (
     <Router>
-      <RFANavbar />
+      <RFANavbarMobile />
       <Route
         render={({ location }) => (
           <TransitionGroup>

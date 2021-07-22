@@ -201,6 +201,7 @@ label {
   padding: 0;
   display: flex;
   align-items: center;
+
 }
 .nav-item-header a {
   font-size: 1.5em;
@@ -220,37 +221,44 @@ label {
 .nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
   display: block !important;
 }
+.donate-nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
+  display: block !important;
+}
 .dropdown-container {
   display: none;
   position: absolute;
-  border-radius: 30px !important;
+  border-radius: 15px;
   background-color: #ffdb4d;
   z-index: 100;
   white-space: nowrap;
+  min-width: 100%;
 }
 
 /* for donate button specifically */
-.navbar .donate-nav-link {
-  color: #ffffff !important; /* nav headers font style */
-  font-family: "BeVietnam-ExtraBold" !important;
-  font-size: 1.5em;
-  padding: 0 !important;
+.donate-nav-item-header{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
-.navbar .donate-nav-link:hover {
+.donate-nav-item-header a{
+  color: #ffffff; /* nav headers font style */
+  font-family: "BeVietnam-ExtraBold";
+  font-size: 1.5em;
+}
+.donate-nav-background {
+  border-radius: 15px;
+  background-color: #3399ff;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+}
+.donate-nav-background:hover  {
+  background-color: #70b8ff;
   transition: 0.2s;
   color: #3399ff !important;
 }
-.navbar .donate-nav-link:active {
+.donate-nav-background:active {
   transition: 0.2s;
   color: #006bd6 !important;
-}
-.donate-nav-item {
-  border-radius: 1em;
-  background-color: #3399ff;
-  padding: 0em 2rem !important;
-}
-.donate-nav-item:hover {
-  background-color: #70b8ff;
 }
 
 /* for dropdowns */
