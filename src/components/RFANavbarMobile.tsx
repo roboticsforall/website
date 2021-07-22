@@ -37,7 +37,7 @@ export const RFANavbarMobile: React.FC = () => {
   }
   const setNavHeight = () => {
     dropdownHeight === "0"
-      ? setDropdownHeight("100%")
+      ? setDropdownHeight("130vh")
       : setDropdownHeight("0");
   };
 
