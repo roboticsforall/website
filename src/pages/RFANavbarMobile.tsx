@@ -32,8 +32,8 @@ export const RFANavbarMobile: React.FC = () => {
     zIndex: 1,
     top: 0,
     left: 0,
-    overflowY: "auto",
     transition: "0.5s",
+    overflowY: "auto",
   }
   const setNavHeight = () => {
     dropdownHeight === "0"
@@ -52,7 +52,7 @@ export const RFANavbarMobile: React.FC = () => {
           <Link to = "/"><img src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
           <button onClick = {setNavHeight}><img width = "50" src = {exitIcon}/></button>
         </header>
-        <ul className = "mx-3 p-0" style = {{...list}}>
+        <ul className = "mx-3 p-0" style = {{height: "50%", overflowY: "auto", ...list}}>
         {[
           {
             headerName: "Enroll",
