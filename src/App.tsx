@@ -1,10 +1,10 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { RFANavbar } from "./components/RFANavbar";
+import { RFANavbar } from "./pages/RFANavbar";
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
-import { RFAFooter } from "./components/RFAFooter";
+import { RFAFooter } from "./pages/RFAFooter";
 //Enroll
 import { RFAIndLearners } from "./pages/Enroll/RFAIndLearners";
 import { RFASchools } from "./pages/Enroll/RFASchools";

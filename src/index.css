@@ -73,6 +73,12 @@ body {
   height: 100%;
   /* overflow-x: hidden; */
 }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 h1,
 h2,
 h3,
@@ -192,81 +198,109 @@ label {
   margin: 10px;
 }
 
-/* #region Overrided Bootstrap styles for navbar */
-.navbar .nav-link {
-  color: #ffcc00 !important; /* nav headers font style */
-  font-family: "BeVietnam-ExtraBold" !important;
-  font-size: 1.5em;
+/* #region Custom styles for navbar */
+.nav-item {
+  position: relative;
 }
-.navbar .nav-link:hover {
+.nav-item-header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+}
+.nav-item-header a {
+  font-size: 1.5em;
+  margin: 0;
+  color: #ffcc00;
+  font-family: "BeVietnam-ExtraBold";
+}
+
+.nav-item-header a:hover {
   transition: 0.2s;
   color: #fa8d1f !important;
 }
-.navbar .nav-link:active {
+.nav-item-header:active {
   transition: 0.2s;
   color: black !important;
 }
-.nav-link::after {
-  content: none !important;
+.nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
+  display: block !important;
+}
+.donate-nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
+  display: block !important;
+}
+.dropdown-container {
+  display: none;
+  position: absolute;
+  border-radius: 15px;
+  background-color: #ffdb4d;
+  z-index: 100;
+  white-space: nowrap;
+  min-width: 100%;
 }
 
 /* for donate button specifically */
-.navbar .donate-nav-link {
-  color: #ffffff !important; /* nav headers font style */
-  font-family: "BeVietnam-ExtraBold" !important;
-  font-size: 1.5em;
-  padding: 0 !important;
-  display: flex !important;
-  align-self: center !important;
-  justify-self: center !important;
+.donate-nav-item-header{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
-.navbar .donate-nav-link:hover {
+.donate-nav-item-header a{
+  color: #ffffff; /* nav headers font style */
+  font-family: "BeVietnam-ExtraBold";
+  font-size: 1.5em;
+}
+.donate-nav-background {
+  border-radius: 15px;
+  background-color: #3399ff;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+}
+.donate-nav-background:hover  {
+  background-color: #70b8ff;
   transition: 0.2s;
   color: #3399ff !important;
 }
-.navbar .donate-nav-link:active {
+.donate-nav-background:active {
   transition: 0.2s;
   color: #006bd6 !important;
 }
-.donate-nav-item {
-  border-radius: 1em;
-  background-color: #3399ff;
-  padding: 0em 2rem !important;
-}
-.donate-nav-item:hover {
-  background-color: #70b8ff;
-}
-.donate-nav-link::after {
-  content: none !important;
-}
-
-.navbar-collapse {
-  text-align: center;
-}
 
 /* for dropdowns */
-.dropdown-item {
-  color: #fa8d1f !important; /* font styling for dropdown text */
+.dropdown-container li {
+  background-color: #ffdb4d;
+  padding: 0.5em;
+}
+.dropdown-container a {
+  font-size: 1.5em;
   font-family: "BeVietnam-ExtraBold";
-  background-color: #ffdb4d !important;
-  font-size: 1.2em;
+  color: #fa8d1f;
 }
-.dropdown-item:hover {
+.dropdown-container a:first-child li{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.dropdown-container a:last-child li{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.dropdown-container li:hover {
   transition: 0.2s;
-  background-color: #ffcc00 !important;
-  color: #c06204 !important;
+  background-color: #ffcc00;
 }
-.dropdown-item:active {
+.dropdown-container a:hover {
+  transition: 0.2s;
+  color: #c06204;
+}
+.dropdown-container li:active {
   transition: 0.2s;
   background-color: #ffcc00 !important;
   color: black !important;
 }
-.dropdown:hover .dropdown-menu {
-  display: block !important;
-}
-.dropdown-menu {
-  border-radius: 15px !important;
-  background-color: #ffdb4d !important;
+.dropdown-container a:active {
+  transition: 0.2s;
+  color: black;
 }
 /*#endregion*/
 
