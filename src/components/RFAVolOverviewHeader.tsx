@@ -28,7 +28,6 @@ export const RFAVolOverviewHeader: React.FC<{
     justifyContent: "space-between",
     alignItems: "center",
     height: "45vw",
-    width: "100vw",
     backgroundImage: `url(${props.image})`,
   };
   const pageHeaderDescription: React.CSSProperties = {
@@ -79,19 +78,19 @@ export const RFAVolOverviewHeader: React.FC<{
       </div>
 
       <div style={headerText}>
-        <Row className="justify-content-center">
+        <div className="d-flex justify-content-center">
           <h1 style={pageHeader} className="text-center header-size">
             {props.title}
           </h1>
-        </Row>
-        <Row className="justify-content-center">
+        </div>
+        <div className="d-flex justify-content-center">
           <p
             style={pageHeaderDescription}
             className="text-center header-description-size"
           >
             {props.description}
           </p>
-        </Row>
+        </div>
       </div>
     </div>
 
