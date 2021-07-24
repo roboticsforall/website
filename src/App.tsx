@@ -1,11 +1,10 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { RFANavbar } from "./components/RFANavbar";
-import { RFANavbarMobile } from "./components/RFANavbarMobile";
+import { RFANavbar } from "./pages/RFANavbar";
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
-import { RFAFooter } from "./components/RFAFooter";
+import { RFAFooter } from "./pages/RFAFooter";
 //Enroll
 import { RFAIndLearners } from "./pages/Enroll/RFAIndLearners";
 import { RFASchools } from "./pages/Enroll/RFASchools";
@@ -39,7 +38,7 @@ import { RFADonate } from "./pages/Donate/RFADonate";
 export const App: React.FC = () => {
   return (
     <Router>
-      <RFANavbarMobile />
+      <RFANavbar />
       <Route
         render={({ location }) => (
           <TransitionGroup>

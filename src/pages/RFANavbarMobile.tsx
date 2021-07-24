@@ -3,7 +3,7 @@ import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 import dropdownIcon from "../media/Icons/dropdownIcon.svg";
 import exitIcon from "../media/Icons/exitIcon.svg";
-import { RFAMobileNavbarItem } from "./RFAMobileNavbarItem";
+import { RFAMobileNavbarItem } from "../components/RFAMobileNavbarItem";
 
 export const RFANavbarMobile: React.FC = () => {
 
@@ -33,7 +33,7 @@ export const RFANavbarMobile: React.FC = () => {
     top: 0,
     left: 0,
     overflowY: "auto",
-    transition: "0.5s ease-out",
+    transition: "0.5s",
   }
   const setNavHeight = () => {
     dropdownHeight === "0"

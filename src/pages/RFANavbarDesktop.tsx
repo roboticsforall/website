@@ -2,7 +2,7 @@ import React from "react";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 
-export const RFANavbar: React.FC = () => {
+export const RFANavbarDesktop: React.FC = () => {
 
   const logoImageSize = {
     height: "7vh",
