@@ -53,7 +53,7 @@ export const RFAHomePage: React.FC = () => {
 
   return (
     <>
-      <Row style={videoRow} className="justify-content-center">
+      <div style={videoRow} className="d-flex justify-content-center">
         <video
           className="video-width"
           autoPlay
@@ -61,7 +61,7 @@ export const RFAHomePage: React.FC = () => {
           muted
           src={homePageVideo}
         />
-      </Row>
+      </div>
 
       <Container>
         <Row className="justify-content-center">
@@ -76,7 +76,7 @@ export const RFAHomePage: React.FC = () => {
         </Row>
       </Container>
 
-      <Row className="p-5 yellow-row">
+      <div className="d-flex justify-content-center p-5 yellow-row">
         <Container>
           <Row>
             <Col md={4} className="text-center">
@@ -129,7 +129,7 @@ export const RFAHomePage: React.FC = () => {
             </Col>
           </Row>
         </Container>
-      </Row>
+      </div>
       <Container>
         <br></br>
         <br></br>

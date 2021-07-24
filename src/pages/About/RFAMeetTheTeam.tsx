@@ -80,7 +80,7 @@ export const RFAMeetTheTeam: React.FC = () => {
       />
       <br />
         <h1 style={{color: "#fa8d1f", ...header}}>BOARD OF DIRECTORS</h1>
-        <Row style = {yellowRow}>
+        <div style = {yellowRow}>
             <Carousel
                 responsive={responsive}
                 swipeable={false}
@@ -103,11 +103,11 @@ export const RFAMeetTheTeam: React.FC = () => {
 
                     ))}
             </Carousel>
-        </Row>
+        </div>
         <br/>
         <br/>
         <h1 style={{color: "#33cc66", ...header}}>EXECUTIVE ASSISTANT DIRECTOR</h1>
-        <Row style = {greenRow}>
+        <div style = {greenRow}>
             <Carousel
                 swipeable={false}
                 draggable={false}
@@ -130,11 +130,11 @@ export const RFAMeetTheTeam: React.FC = () => {
                 ))}
 
             </Carousel>
-        </Row>
+        </div>
         <br/>
         <br/>
         <h1 style={{color: "#3399ff", ...header}}>CURRICULUM COMMITTEE</h1>
-        <Row style = {blueRow}>
+        <div style = {blueRow}>
             <Carousel
                 swipeable={false}
                 draggable={false}
@@ -157,11 +157,11 @@ export const RFAMeetTheTeam: React.FC = () => {
                 ))}
 
             </Carousel>
-        </Row>
+        </div>
         <br/>
         <br/>
         <h1 style={{color: "#ffcc00", ...header}}>PUBLICITY COMMITTEE</h1>
-        <Row style={orangeRow}>
+        <div style={orangeRow}>
             <Carousel
                 swipeable={false}
                 draggable={false}
@@ -184,7 +184,7 @@ export const RFAMeetTheTeam: React.FC = () => {
                 ))}
 
             </Carousel>
-        </Row>
+        </div>
         <br/>
     </div>
   );

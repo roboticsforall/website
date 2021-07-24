@@ -30,7 +30,7 @@ export const RFAFooter: React.FC = () => {
   };
 
   return (
-    <Row className="yellow-row">
+    <div className="center-align yellow-row">
       <Container className = "mx-2">
         <br />
         <Row className="justify-content-center">
@@ -190,6 +190,6 @@ export const RFAFooter: React.FC = () => {
           </p>
         </Container>
       </Container>
-    </Row>
+    </div>
   );
 };
