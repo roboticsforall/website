@@ -43,7 +43,7 @@ export const RFAHomePage: React.FC = () => {
   };
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "8vh",
+    fontSize: "7vh",
     color: "#ffcc00",
     textAlign: "center",
   };
