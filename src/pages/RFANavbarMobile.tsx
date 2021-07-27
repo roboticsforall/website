@@ -25,7 +25,7 @@ export const RFANavbarMobile: React.FC = () => {
     listStyleType: "none",
   }
   const screenCover:React.CSSProperties = {
-    backgroundColor: "#ffcc00",
+    backgroundColor: "#FFF0B2",
     height: dropdownHeight,
     width: "100%",
     position: "fixed",
