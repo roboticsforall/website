@@ -90,6 +90,10 @@ a {
   letter-spacing: 1.4px;
 }
 
+button {
+  background: none;
+}
+
 /* a:focus{
   text-decoration: none;
 } */
