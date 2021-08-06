@@ -5,10 +5,12 @@ import dropdownIcon from "@/media/Shapes/brownarrow.png"; // add correct image h
 export const RFAFAQDropdowns: React.FC<{
   question: string;
   answer: JSX.Element | string;
+  webpage: string;
+  colors: {main: string, light: string, dark: string}
 }> = (props) => {
   const [dropdownAnswerDisplay, setdropdownAnswerDisplay] = useState("none");
-  const [dropdownBGColor, setdropdownBGColor] = useState("#ffcc0080");
-  const [dropdownTextColor, setdropdownTextColor] = useState("#c06204");
+  const [dropdownBGColor, setdropdownBGColor] = useState(props.colors.light);
+  const [dropdownTextColor, setdropdownTextColor] = useState(props.colors.main);
 
   const dropdownQuestion = {
     borderRadius: "1em",
@@ -19,7 +21,7 @@ export const RFAFAQDropdowns: React.FC<{
 
   const dropdownAnswer = {
     borderRadius: "1em",
-    backgroundColor: "#ffcc00",
+    backgroundColor: props.colors.main,
     fontFamily: "BeVietnam-SemiBold",
   };
   const dropdownDisplay = {
@@ -33,19 +35,19 @@ export const RFAFAQDropdowns: React.FC<{
     dropdownAnswerDisplay === "none"
       ? setdropdownAnswerDisplay("block")
       : setdropdownAnswerDisplay("none");
-    dropdownBGColor === "#ffcc0080"
-      ? setdropdownBGColor("#ffcc00")
-      : setdropdownBGColor("#ffcc0080");
-    dropdownTextColor === "#c06204"
-      ? setdropdownTextColor("#532f04")
-      : setdropdownTextColor("#c06204");
+    dropdownBGColor === props.colors.light
+      ? setdropdownBGColor(props.colors.main)
+      : setdropdownBGColor(props.colors.light);
+    dropdownTextColor === props.colors.main
+      ? setdropdownTextColor("#fff")
+      : setdropdownTextColor(props.colors.main);
   };
 
   return (
     <div>
       <Row
         style={dropdownQuestion}
-        className="faq-dropdown p-2 justify-content-between align-items-center"
+        className = {`${props.webpage}-faq-dropdown p-2 justify-content-between align-items-center`}
       >
         <Col md={11}>
           <h3 className="w-75">{props.question}</h3>

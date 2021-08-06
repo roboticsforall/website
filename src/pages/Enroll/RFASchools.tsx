@@ -3,7 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
 import { RFACourseCard } from "@/components/RFACourseCard";
+import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
+import Markdown from "markdown-to-jsx";
+
+import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
@@ -36,7 +40,7 @@ export const RFASchools: React.FC = () => {
   return (
     <>
       <RFAHeader
-        headerTextColor={"#33cc66 "}
+        headerTextColor={"#33cc66"}
         image={headerBlobGreen}
         title={"Partner with us Today for After-School STEM Programs!"}
         description={
@@ -112,6 +116,27 @@ export const RFASchools: React.FC = () => {
           <br></br>
         </Container>
       </Container>
+        <h2 style={positionsTitle}>FAQs</h2>
+        <Container>
+          {classFAQJSON.class_faq_list.map((QAPair:any) => (
+            <RFAFAQDropdowns
+              key={QAPair.question}
+              question={QAPair.question}
+              answer={QAPair.answer}
+              webpage = "schools"
+              colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47"}}
+
+            />
+          ))}
+          <RFAFAQDropdowns
+            question={classFAQJSON.upcoming_courses_question}
+            answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
+            webpage = "schools"
+            colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47"}}
+
+          />
+          <br/>
+        </Container>
     </>
   );
 };

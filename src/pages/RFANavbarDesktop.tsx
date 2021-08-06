@@ -56,10 +56,6 @@ export const RFANavbarDesktop: React.FC = () => {
                 subPageName: "Register",
                 to: "/enroll/register",
               },
-              {
-                subPageName: "Class FAQs",
-                to: "/enroll/classfaq",
-              },
             ]
           },
           {

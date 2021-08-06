@@ -470,14 +470,24 @@ label {
 /* #endregion */
 
 /* #region faq hover styling */
-.faq-dropdown {
+.ind-learners-faq-dropdown {
   background-color: #ffcc0080;
-  color: #c06204;
+  color: #3399ff;
   transition: 200ms;
 }
-.faq-dropdown:hover {
+.ind-learners-faq-dropdown:hover {
   background-color: #ffdb4d !important;
-  color: #532f04 !important;
+  color: #3399ff !important;
+  transition: 200ms;
+}
+.schools-faq-dropdown {
+  background-color: #ffcc0080;
+  color: #33cc66;
+  transition: 200ms;
+}
+.schools-faq-dropdown:hover {
+  background-color: #ffdb4d !important;
+  color: #33cc66 !important;
   transition: 200ms;
 }
 /*#endregion*/

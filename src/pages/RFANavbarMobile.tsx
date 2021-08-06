@@ -70,10 +70,6 @@ export const RFANavbarMobile: React.FC = () => {
                 subPageName: "Register",
                 to: "/enroll/register",
               },
-              {
-                subPageName: "Class FAQs",
-                to: "/enroll/classfaq",
-              },
             ]
           },
           {

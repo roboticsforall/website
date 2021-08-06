@@ -8,7 +8,6 @@ import { RFAFooter } from "./pages/RFAFooter";
 //Enroll
 import { RFAIndLearners } from "./pages/Enroll/RFAIndLearners";
 import { RFASchools } from "./pages/Enroll/RFASchools";
-import { RFAClassFAQ } from "./pages/Enroll/RFAClassFAQ";
 import { RFARegister } from "./pages/Enroll/RFARegister";
 //Volunteer
 import { RFAVolOverview } from "./pages/Volunteer/RFAVolOverview";
@@ -47,8 +46,6 @@ export const App: React.FC = () => {
                 <Route exact path="/" component={RFAHomePage} />
 
 {/* Enroll Pages */}
-
-                <Route path="/enroll/classfaq" component={RFAClassFAQ} />
                 <Route
                   path="/enroll/individlearners"
                   component={RFAIndLearners}

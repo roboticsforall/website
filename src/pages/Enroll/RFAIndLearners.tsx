@@ -3,8 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
 import { RFACourseCard } from "@/components/RFACourseCard";
+import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+
 import Markdown from "markdown-to-jsx";
 
+import classFAQJSON from "@/posts/faqs/class_faqs.json";
 import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
 import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
@@ -109,6 +112,25 @@ export const RFAIndLearners: React.FC = () => {
           <br></br>
           <br></br>
         </Container>
+      </Container>
+      <h2 style={positionsTitle}>FAQs</h2>
+      <Container>
+        {classFAQJSON.class_faq_list.map((QAPair) => (
+          <RFAFAQDropdowns
+            key={QAPair.question}
+            question={QAPair.question}
+            answer={QAPair.answer}
+            webpage = "ind-learners"
+            colors = {{main: "#3399ff", light: "#70b8ff", dark: "#006bd6"}}
+          />
+        ))}
+        <RFAFAQDropdowns
+          question={classFAQJSON.upcoming_courses_question}
+          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
+          webpage = "schools"
+          colors = {{main: "#3399ff", light: "#70b8ff", dark: "#006bd6"}}
+        />
+        <br/>
       </Container>
     </>
   );
