@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
 import { RFACourseCard } from "@/components/RFACourseCard";
@@ -35,6 +35,10 @@ export const RFAIndLearners: React.FC = () => {
   };
   const blueRow = {
     backgroundColor: "#3399ff4D",
+  };
+  const courseGrid:React.CSSProperties = {
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr"
   };
   return (
     <>
@@ -103,7 +107,7 @@ export const RFAIndLearners: React.FC = () => {
                 link={courseInfo.class_description_link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
-                type = {"ind"}
+                webpage = {"ind-learners"}
                 dropdownCourseDescription = {courseInfo.dropdown_course_description}
                 dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
               ></RFACourseCard>
