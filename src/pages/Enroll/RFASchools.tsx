@@ -106,7 +106,7 @@ export const RFASchools: React.FC = () => {
                 link={courseInfo.class_description_link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
-                type = "school"
+                webpage = "school"
                 dropdownCourseDescription = {courseInfo.dropdown_course_description}
                 dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
               ></RFACourseCard>
