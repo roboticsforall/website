@@ -58,53 +58,45 @@ export const RFACourseCard: React.FC<{
   return (
     <>
       <Col
-        className = {`${props.webpage}-flag-course-card m-2`}
+        className = {`${props.webpage}-flag-course-card`}
         md={3}
       >
         <button onClick = {() => {setDropdownDisplay("flex")}} className="w-100 m-0">
-          <Container>
-            <Row className = "justify-content-center">
-              <Row className = "justify-content-center">
-                <Col>
-                  <Image style={courseImageSize} src={props.courseImage} />
-                </Col>
-              </Row>
-              <Row>
-                <Col className = "d-flex justify-content-center">
-                  <h3 style={text}>
+            <div className = "d-flex justify-content-center">
+              <Image style={courseImageSize} src={props.courseImage} />
+            </div>
+            <div className = "text-center">
+                <h3 style={text}>
                     {props.title}
-                  </h3>
+                </h3>
+            </div>
+        </button>
+        <div style = {dropdownControl}>
+          <div style = {dropdownContainer} className = "d-flex justify-content-center">
+              <Row className = "w-75" style = {{backgroundColor: "#ffdb4d", borderRadius: "15px", boxShadow: "-1px 8px 15px 1px rgba(0,0,0,0.57)"}}>
+                <header style = {dropdownHeader}>
+                  <h1 style = {dropdownHeaderText}>{props.title.toUpperCase()}</h1>
+                  <button onClick = {() => {setDropdownDisplay("none")}}><img width = "50" src = {exitIcon}/></button>
+                </header>
+                <Col md = {7}>
+                  <h4 style = {dropdownText}><Markdown>{props.dropdownCourseDescription}</Markdown></h4>
+                </Col>
+                <Col className = "d-flex flex-column align-items-center justify-content-between">
+                  <Image className = "p-2" style = {{borderRadius: "15px", backgroundColor: "white", ...tobyImageSize}} src = {props.dropdownCourseImage}></Image>
+                  <a
+                    style={{ color: "#006bd6", fontFamily: "BeVietnam-ExtraBold" }}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="text-center hyperlink aff-org-card-link"
+                    href={props.link}
+                  >
+                    Learn More
+                  </a>
                 </Col>
               </Row>
-            </Row>
-          </Container>
-        </button>
-      </Col>
-      <div style = {dropdownControl}>
-        <div style = {dropdownContainer} className = "d-flex justify-content-center">
-            <Row className = "w-75" style = {{backgroundColor: "#ffdb4d", borderRadius: "15px", boxShadow: "-1px 8px 15px 1px rgba(0,0,0,0.57)"}}>
-              <header style = {dropdownHeader}>
-                <h1 style = {dropdownHeaderText}>{props.title.toUpperCase()}</h1>
-                <button onClick = {() => {setDropdownDisplay("none")}}><img width = "50" src = {exitIcon}/></button>
-              </header>
-              <Col md = {7}>
-                <h4 style = {dropdownText}><Markdown>{props.dropdownCourseDescription}</Markdown></h4>
-              </Col>
-              <Col className = "d-flex flex-column align-items-center justify-content-between">
-                <Image className = "p-2" style = {{borderRadius: "15px", backgroundColor: "white", ...tobyImageSize}} src = {props.dropdownCourseImage}></Image>
-                <a
-                  style={{ color: "#006bd6", fontFamily: "BeVietnam-ExtraBold" }}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-center hyperlink aff-org-card-link"
-                  href={props.link}
-                >
-                  Learn More
-                </a>
-              </Col>
-            </Row>
+          </div>
         </div>
-      </div>
+      </Col>
     </>
   );
 };

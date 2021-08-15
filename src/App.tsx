@@ -1,6 +1,6 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { RFANavbar } from "./pages/RFANavbar";
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
@@ -34,6 +34,9 @@ import { RFAContact } from "./pages/Contact/RFAContact";
 //Donate
 import { RFADonate } from "./pages/Donate/RFADonate";
 
+//Page Redirect
+import { RFAPageNotFound } from "./pages/RFAPageNotFound";
+
 export const App: React.FC = () => {
   return (
     <Router>
@@ -47,62 +50,63 @@ export const App: React.FC = () => {
 
 {/* Enroll Pages */}
                 <Route
+                  exact
                   path="/enroll/individlearners"
                   component={RFAIndLearners}
                 />
-                <Route path="/enroll/schools" component={RFASchools} />
-                <Route path="/enroll/register" component={RFARegister} />
+                <Route exact path="/enroll/schools" component={RFASchools} />
+                <Route exact path="/enroll/register" component={RFARegister} />
 
 {/* Volunteer Pages */}
-                <Route path="/volunteer/overview" component={RFAVolOverview} />
+                <Route exact path="/volunteer/overview" component={RFAVolOverview} />
 
                 <Route
-                  path="/volunteer/volunteerfaq"
+                  exact path="/volunteer/volunteerfaq"
                   component={RFAVolunteerFAQ}
                 />
-                <Route path="/volunteer/teacherpos" component={RFATeacherPos} />
+                <Route exact path="/volunteer/teacherpos" component={RFATeacherPos} />
                 <Route
-                  path="/volunteer/publicitypos"
+                  exact path="/volunteer/publicitypos"
                   component={RFAPublicityInternPos}
                 />
                 <Route
-                  path="/volunteer/volunteerapp"
+                  exact path="/volunteer/volunteerapp"
                   component={RFAVolunteerApp}
                 />
 
 {/* About Pages */}
 
-                <Route path="/about/overview" component={RFAAbtOverview} />
-                <Route path="/about/afforgs" component={RFAAffOrgs} />
-                <Route path="/about/newsletter" component={RFANewsletter} />
-                <Route path="/about/pastnewsletter" component={RFAPastNewsletter} />
-                <Route path="/about/meettheteam" component={RFAMeetTheTeam} />
+                <Route exact path="/about/overview" component={RFAAbtOverview} />
+                <Route exact path="/about/afforgs" component={RFAAffOrgs} />
+                <Route exact path="/about/newsletter" component={RFANewsletter} />
+                <Route exact path="/about/pastnewsletter" component={RFAPastNewsletter} />
+                <Route exact path="/about/meettheteam" component={RFAMeetTheTeam} />
 
 {/* Contact Page */}
 
-                <Route path="/contact" component={RFAContact} />
+                <Route exact path="/contact" component={RFAContact} />
 
 {/* News Page */}
 
-                <Route path="/news" component={RFANews} />
+                <Route exact path="/news" component={RFANews} />
 
 {/* More Pages */}
 
                 <Route
-                  path="/more-privacypolicy"
+                  exact path="/more-privacypolicy"
                   component={RFAPrivacyPolicy}
                 />
-                <Route path="/more-websitetos" component={RFAWebsiteTOS} />
-                <Route path="/more-bylaws" component={RFACorpBylaws} />
+                <Route exact path="/more-websitetos" component={RFAWebsiteTOS} />
+                <Route exact path="/more-bylaws" component={RFACorpBylaws} />
                 <Route
-                  path="/more-meetingrecords"
+                  exact path="/more-meetingrecords"
                   component={RFAMeetingRecords}
                 />
 
 {/* Donate Pages */}
 
-                <Route path="/donate" component={RFADonate} />
-
+                <Route exact path="/donate" component={RFADonate} />
+                <Route component = {RFAPageNotFound}/>
               </Switch>
             </CSSTransition>
           </TransitionGroup>
