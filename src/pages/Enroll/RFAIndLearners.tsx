@@ -14,6 +14,7 @@ import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
+import { RFAWebsiteTOSCard } from "@/components/RFAWebsiteTOSCard";
 
 export const RFAIndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -85,38 +86,40 @@ export const RFAIndLearners: React.FC = () => {
           </Row>
         </a>
       </Container>
-      <br></br>
-      <br></br>
-      <Container fluid style={blueRow}>
-        <Container>
+        <br></br>
+        <br></br>
+        <section style = {blueRow}>
+          <Container>
           <br></br>
-          <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-          <br></br>
-          <h5 style={bodyText}>
-            We offer basic and advanced computer programming and computer-aided
-            design courses for students in K-8th grade!
+          <Container>
+            <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
+            <br></br>
+            <h5 style={bodyText}>
+              We offer basic and advanced computer programming and computer-aided
+              design courses for students in K-8th grade!
+              <br></br>
+              <br></br>
+              View our selection of courses below and click on the boxes to learn more:
+            </h5>
+            </Container>
+            <br></br>
+            <Row>
+                {coursesInfoJSON.courses_list.map((courseInfo, i) => (
+                  <RFACourseCard
+                    key = {i}
+                    link={courseInfo.class_description_link}
+                    courseImage={courseInfo.file_path.replace("/public", "")}
+                    title={courseInfo.course_name}
+                    webpage = {"ind-learners"}
+                    dropdownCourseDescription = {courseInfo.dropdown_course_description}
+                    dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
+                  />
+                ))}
+            </Row>
             <br></br>
             <br></br>
-            View our selection of courses below and click on the boxes to learn more:
-          </h5>
-          <br></br>
-          <Row>
-            {coursesInfoJSON.courses_list.map((courseInfo, i) => (
-              <RFACourseCard
-                key = {i}
-                link={courseInfo.class_description_link}
-                courseImage={courseInfo.file_path.replace("/public", "")}
-                title={courseInfo.course_name}
-                webpage = {"ind-learners"}
-                dropdownCourseDescription = {courseInfo.dropdown_course_description}
-                dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
-              ></RFACourseCard>
-            ))}
-          </Row>
-          <br></br>
-          <br></br>
-        </Container>
-      </Container>
+            </Container>
+          </section>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
         {classFAQJSON.class_faq_list.map((QAPair) => (
