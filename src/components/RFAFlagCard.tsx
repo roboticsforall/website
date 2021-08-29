@@ -1,26 +1,51 @@
 import React from "react";
-import { Image } from "react-bootstrap";
+import { Image, Col } from "react-bootstrap";
+import {createUseStyles} from 'react-jss';
 
-export const RFAFlagCard: React.FC<{
+interface IProps {
   link: string;
   title: string;
   image: string;
-}> = (props) => {
-  const imageSize: React.CSSProperties = {
-    height: "11vmax",
-  };
-  const text: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
-  };
+  backgroundColor: string
+}
+export const RFAFlagCard: React.FunctionComponent<IProps> = (props: IProps) => {
+
+  const useStyles = createUseStyles({
+    imageSize: {
+      height: "11vmax",
+    },
+    text: {
+      composes: 'text-center mb-4',
+      fontFamily: "BeVietnam-Bold",
+    },
+    cardBackground: {
+      composes: 'mb-2 mx-2',
+      borderRadius: "1em",
+      transition: "200ms",
+      backgroundColor: props.backgroundColor,
+      '&:hover': {
+        transition: "200ms",
+        backgroundColor: "#ffdb4d",
+      },
+    }
+  })
+
+  const classes = useStyles();
 
   return (
-    <a className="hyperlink" target="_blank" href={props.link} rel="noreferrer">
-      <div className="m-3 text-center">
-        <Image style={imageSize} src={props.image} />
-        <h3 style={text} className="mb-4 text-center">
-          {props.title}
-        </h3>
-      </div>
-    </a>
+    <Col
+      className = {classes.cardBackground} 
+      md = {"auto"}
+    >
+      <a className="hyperlink" target="_blank" href={props.link} rel="noreferrer">
+        <div className="m-3 text-center">
+          <Image className={classes.imageSize} src={props.image} />
+          <h3 className={classes.text}>
+            {props.title}
+          </h3>
+        </div>
+      </a>
+    </Col>
   );
 };
+

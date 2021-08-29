@@ -68,13 +68,13 @@ export const RFASchools: React.FC = () => {
         <br></br>
         <Row className="justify-content-between">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <Col className="school-flag-course-card mb-2 mx-2" md={"auto"} key={i}>
               <RFAFlagCard
                 image={flagInfo.file_path.replace("/public", "")}
                 title={flagInfo.language}
                 link={flagInfo.link}
+                backgroundColor = "#33cc6699"
+                key = {i}
               />
-            </Col>
           ))}
         </Row>
         <br></br>
