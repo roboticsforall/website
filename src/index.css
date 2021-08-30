@@ -341,22 +341,6 @@ label {
 /*#endregion*/
 
 /* #region indlearners and for schools */
-.ind-learners-flag-course-card {
-  border-radius: 1em;
-  transition: 200ms;
-  background-color: #3399ff99;
-}
-.school-flag-course-card {
-  border-radius: 1em;
-  transition: 200ms;
-  background-color: #33cc6699;
-}
-
-.ind-learners-flag-course-card:hover,
-.school-flag-course-card:hover {
-  transition: 200ms;
-  background-color: #ffdb4d;
-}
 .ind-learners-enroll-button {
   border-radius: 1em;
   border: none;

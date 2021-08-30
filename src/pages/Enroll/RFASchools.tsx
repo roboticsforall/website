@@ -13,6 +13,7 @@ import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
+import { ColorThemes } from "@/colors";
 
 export const RFASchools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -106,7 +107,7 @@ export const RFASchools: React.FC = () => {
                 link={courseInfo.class_description_link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
-                webpage = "school"
+                backgroundColor = {ColorThemes.lightGreen}
                 dropdownCourseDescription = {courseInfo.dropdown_course_description}
                 dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
               ></RFACourseCard>

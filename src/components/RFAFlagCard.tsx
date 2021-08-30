@@ -8,7 +8,7 @@ interface IProps {
   image: string;
   backgroundColor: string
 }
-export const RFAFlagCard: React.FunctionComponent<IProps> = (props: IProps) => {
+export const RFAFlagCard: React.FC<IProps> = (props: IProps) => {
 
   const useStyles = createUseStyles({
     imageSize: {
