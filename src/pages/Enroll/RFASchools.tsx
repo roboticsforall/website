@@ -125,7 +125,7 @@ export const RFASchools: React.FC = () => {
               question={QAPair.question}
               answer={QAPair.answer}
               webpage = "schools"
-              colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47"}}
+              colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47", backgroundHover: ColorThemes.mainYellow}}
 
             />
           ))}
@@ -133,7 +133,7 @@ export const RFASchools: React.FC = () => {
             question={classFAQJSON.upcoming_courses_question}
             answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
             webpage = "schools"
-            colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47"}}
+            colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47", backgroundHover: ColorThemes.mainYellow}}
 
           />
           <br/>

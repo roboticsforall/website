@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import dropdownIcon from "@/media/Shapes/brownarrow.png"; // add correct image here
+import {createUseStyles} from 'react-jss';
 
-export const RFAFAQDropdowns: React.FC<{
+
+interface IProps {
   question: string;
   answer: JSX.Element | string;
-  webpage: string;
-  colors: {main: string, light: string, dark: string}
-}> = (props) => {
+  colors: {backgroundHover: string, main: string, light: string, dark: string};
+}
+
+export const RFAFAQDropdowns: React.FC<IProps> = (props: IProps) => {
   const [dropdownAnswerDisplay, setdropdownAnswerDisplay] = useState("none");
   const [dropdownBGColor, setdropdownBGColor] = useState(props.colors.light);
   const [dropdownTextColor, setdropdownTextColor] = useState(props.colors.main);
-
-  const dropdownQuestion = {
-    borderRadius: "1em",
-    fontFamily: "BeVietnam-ExtraBold",
-    backgroundColor: dropdownBGColor,
-    color: dropdownTextColor,
-  };
 
   const dropdownAnswer = {
     borderRadius: "1em",
@@ -43,14 +39,35 @@ export const RFAFAQDropdowns: React.FC<{
       : setdropdownTextColor(props.colors.main);
   };
 
+  const useStyles = createUseStyles({
+    dropdown: (props:any) =>  ({
+      composes: "p-2 justify-content-between align-items-center",
+      borderRadius: "1em",
+      fontFamily: "BeVietnam-ExtraBold",
+      transition: "200ms",
+      backgroundColor: props.dropdownBGColor,
+      "&:hover": {
+        backgroundColor: props.backgroundHover,
+        transition: "200ms",
+        "& h3": {
+          color: "#fff",
+        },
+      }
+    }),
+  })
+
+  const backgroundHover = props.colors.backgroundHover; //defined new object. Could not add line directly in useStyles object
+  const classes = useStyles({dropdownBGColor, backgroundHover});
+
+  
   return (
     <div>
       <Row
-        style={dropdownQuestion}
-        className = {`${props.webpage}-faq-dropdown p-2 justify-content-between align-items-center`}
+        className = {classes.dropdown}
+        style = {{}}
       >
         <Col md={11}>
-          <h3 className="w-75">{props.question}</h3>
+          <h3 style = {{color: dropdownTextColor}}>{props.question}</h3>
         </Col>
         <Col>
           <button
