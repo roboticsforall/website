@@ -7,6 +7,10 @@ import { RFAPositionCard } from "@/components/RFAPositionCard";
 import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
 import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
 import { RFAPosButton } from "@/components/RFAPosButton";
+import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+
+
+
 import Calendar from "@/media/Graphics/calendar.png";
 import Clock from "@/media/Graphics/clock.png";
 import Curriculum from "@/media/Graphics/curriculum.png";
@@ -19,6 +23,10 @@ import QuestionMark from "@/media/Graphics/questionMark.png";
 import Markdown from "markdown-to-jsx";
 import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
+import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
+
+
+import { ColorThemes } from "../../colors";
 
 export const RFATeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -44,6 +52,12 @@ export const RFATeacherPos: React.FC = () => {
   };
   const black = {
     color: "#000000",
+  };
+  const positionsTitle: React.CSSProperties = {
+    fontFamily: "Oswald-Medium",
+    fontSize: "5.5vmax",
+    color: ColorThemes.mainOrange,
+    textAlign: "center",
   };
 
   return (
@@ -262,6 +276,18 @@ export const RFATeacherPos: React.FC = () => {
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
+      </Container>
+      <h2 style={positionsTitle}>FAQs</h2>
+      <Container>
+        {volunteerFAQJSON.teacher_faq_list.map((QAPair) => (
+          <RFAFAQDropdowns
+            key={QAPair.question}
+            question={QAPair.question}
+            answer={QAPair.answer}
+            colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
+          />
+        ))}
+        <br/>
       </Container>
     </div>
   );

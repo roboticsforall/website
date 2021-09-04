@@ -2,16 +2,18 @@ import React from "react";
 import { Image, Row, Col, Container } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import exitIcon from "../media/Icons/exitIcon.svg";
+import {createUseStyles} from 'react-jss';
 
-
-export const RFACourseCard: React.FC<{
+interface IProps {
   link: string;
   title: string;
   courseImage: string;
-  webpage: string;
+  backgroundColor: string;
   dropdownCourseDescription: string;
   dropdownCourseImage: string;
-}> = (props) => {
+}
+
+export const RFACourseCard: React.FC<IProps> = (props: IProps) => {
 
   const [dropdownDisplay, setDropdownDisplay] = React.useState("none"); 
 
@@ -55,10 +57,25 @@ export const RFACourseCard: React.FC<{
     fontFamily: "BeVietnam-Medium",
     fontSize: "1.6vmax"
   }
+
+  const useStyles = createUseStyles({
+    cardBackground: {
+      borderRadius: "1em",
+      transition: "200ms",
+      backgroundColor: props.backgroundColor,
+      '&:hover': {
+        transition: "200ms",
+        backgroundColor: "#ffdb4d",
+      }
+    },
+  })
+
+  const classes = useStyles();
+
   return (
     <>
       <Col
-        className = {`${props.webpage}-flag-course-card`}
+        className = {classes.cardBackground}
         md={3}
       >
         <button onClick = {() => {setDropdownDisplay("flex")}} className="w-100 m-0">

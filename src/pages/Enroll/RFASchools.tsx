@@ -13,6 +13,7 @@ import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
+import { ColorThemes } from "@/colors";
 
 export const RFASchools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -68,13 +69,13 @@ export const RFASchools: React.FC = () => {
         <br></br>
         <Row className="justify-content-between">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <Col className="school-flag-course-card mb-2 mx-2" md={"auto"} key={i}>
               <RFAFlagCard
                 image={flagInfo.file_path.replace("/public", "")}
                 title={flagInfo.language}
                 link={flagInfo.link}
+                backgroundColor = "#33cc6699"
+                key = {i}
               />
-            </Col>
           ))}
         </Row>
         <br></br>
@@ -106,7 +107,7 @@ export const RFASchools: React.FC = () => {
                 link={courseInfo.class_description_link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
-                webpage = "school"
+                backgroundColor = {ColorThemes.lightGreen}
                 dropdownCourseDescription = {courseInfo.dropdown_course_description}
                 dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
               ></RFACourseCard>
@@ -124,7 +125,7 @@ export const RFASchools: React.FC = () => {
               question={QAPair.question}
               answer={QAPair.answer}
               webpage = "schools"
-              colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47"}}
+              colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47", backgroundHover: ColorThemes.mainYellow}}
 
             />
           ))}
@@ -132,7 +133,7 @@ export const RFASchools: React.FC = () => {
             question={classFAQJSON.upcoming_courses_question}
             answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
             webpage = "schools"
-            colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47"}}
+            colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47", backgroundHover: ColorThemes.mainYellow}}
 
           />
           <br/>

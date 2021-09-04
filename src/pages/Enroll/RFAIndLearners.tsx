@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import { ColorThemes } from "../../colors";
 import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
 import { RFACourseCard } from "@/components/RFACourseCard";
@@ -20,7 +21,7 @@ export const RFAIndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "5.5vmax",
-    color: "#3399ff",
+    color: ColorThemes.mainBlue,
     textAlign: "center",
   };
   const boldNote = {
@@ -37,14 +38,10 @@ export const RFAIndLearners: React.FC = () => {
   const blueRow = {
     backgroundColor: "#3399ff4D",
   };
-  const courseGrid:React.CSSProperties = {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr"
-  };
   return (
     <>
       <RFAHeader
-        headerTextColor={"#3399ff"}
+        headerTextColor={ColorThemes.mainBlue}
         image={headerBlobBlue}
         title={"Take a Class with us Today!"}
         description={
@@ -66,17 +63,15 @@ export const RFAIndLearners: React.FC = () => {
         <br></br>
         <Row className="justify-content-between">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <Col
-              className="ind-learners-flag-course-card mb-2 mx-2"
-              md={"auto"}
-              key={i}
-            >
+
               <RFAFlagCard
                 image={flagInfo.file_path.replace("/public", "")}
                 title={flagInfo.language}
                 link={flagInfo.link}
+                backgroundColor = {ColorThemes.lightBlue}
+                key = {i}
               />
-            </Col>
+
           ))}
         </Row>
         <br></br>
@@ -110,7 +105,7 @@ export const RFAIndLearners: React.FC = () => {
                     link={courseInfo.class_description_link}
                     courseImage={courseInfo.file_path.replace("/public", "")}
                     title={courseInfo.course_name}
-                    webpage = {"ind-learners"}
+                    backgroundColor = {ColorThemes.lightBlue}
                     dropdownCourseDescription = {courseInfo.dropdown_course_description}
                     dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
                   />
@@ -127,15 +122,13 @@ export const RFAIndLearners: React.FC = () => {
             key={QAPair.question}
             question={QAPair.question}
             answer={QAPair.answer}
-            webpage = "ind-learners"
-            colors = {{main: "#3399ff", light: "#70b8ff", dark: "#006bd6"}}
+            colors = {{main: "#3399ff", light: "#70b8ff", dark: "#006bd6", backgroundHover: ColorThemes.mainYellow}}
           />
         ))}
         <RFAFAQDropdowns
           question={classFAQJSON.upcoming_courses_question}
           answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
-          webpage = "schools"
-          colors = {{main: "#3399ff", light: "#70b8ff", dark: "#006bd6"}}
+          colors = {{main: "#3399ff", light: "#70b8ff", dark: "#006bd6", backgroundHover: ColorThemes.mainYellow}}
         />
         <br/>
       </Container>
