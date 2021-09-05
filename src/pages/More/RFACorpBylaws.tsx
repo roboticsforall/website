@@ -5,13 +5,15 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFABylawEntry } from "@/components/RFABylawEntry";
 import bylawsListJSON from "@/posts/downloads/corp_bylaws.json";
 
+import { ColorThemes } from "@/colors";
+
 export const RFACorpBylaws: React.FC = () => {
   const background: React.CSSProperties = {
-    background: "rgba(255, 204, 0, 0.5)",
+    background: ColorThemes.lightYellow,
     borderRadius: "15px",
   };
   const header: React.CSSProperties = {
-    background: "rgba(255, 204, 0, 0.5)",
+    background: ColorThemes.lightYellow,
     borderRadius: "20px",
     border: "10px solid white",
     padding: "5px",
@@ -23,7 +25,7 @@ export const RFACorpBylaws: React.FC = () => {
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Corporate Bylaws"}
         description={"Learn more about Robotics for All's bylaws!"}

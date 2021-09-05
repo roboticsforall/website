@@ -21,14 +21,16 @@ import transparentImage from "@/media/transparentImage.png";
 
 import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
 
+import { ColorThemes } from "../colors";
+
 export const RFAHomePage: React.FC = () => {
   const videoRow: React.CSSProperties = {
-    backgroundColor: "#FFCC00",
+    backgroundColor: ColorThemes.mainYellow,
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "10vh",
-    color: "#ffcc00",
+    color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
@@ -44,7 +46,7 @@ export const RFAHomePage: React.FC = () => {
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "7vh",
-    color: "#ffcc00",
+    color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const sponsorImageSize: React.CSSProperties = {
@@ -141,22 +143,22 @@ export const RFAHomePage: React.FC = () => {
           {
             label: "tutoring for all",
             logo: TFALogo,
-            linkColor: "#C06204",
-            bgColor: "#FCAF62",
+            linkColor: ColorThemes.darkOrange,
+            bgColor: ColorThemes.lightOrange,
             link: "https://www.tutoringforall.org/about",
           },
           {
             label: "mentoring for all",
             logo: MFALogo,
-            linkColor: "#248F47",
-            bgColor: "#70DB94",
+            linkColor: ColorThemes.darkGreen,
+            bgColor: ColorThemes.lightGreen,
             link: "https://www.mentoringforall.org/mission-vision-values",
           },
           {
             label: "crafts for charity",
             logo: CFCLogo,
-            linkColor: "#006BD6",
-            bgColor: "#70BAFF",
+            linkColor: ColorThemes.darkBlue,
+            bgColor: ColorThemes.lightBlue,
             link: "https://craftsforcharity.com/about-us/",
           },
         ].map((afforgs, i) => (

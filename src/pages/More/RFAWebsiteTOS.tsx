@@ -4,30 +4,24 @@ import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAWebsiteTOSCard } from "@/components/RFAWebsiteTOSCard";
 import { RFAWebsiteTOSCard2 } from "@/components/RFAWebsiteTOSCard2";
+import { ColorThemes } from "@/colors";
 
 export const RFAWebsiteTOS: React.FC = () => {
-  /*light yellow
-  #ffcc00
-  rgb(255, 204, 0, 0.5)
-  */
   const ActiveStyle: React.CSSProperties = {
     color: "#000000",
-    background: "rgb(255, 204, 0, 0.5)",
+    background: ColorThemes.lightYellow,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "20px",
     textAlign: "left",
+    width: "auto"
   };
-  /*light orange
-  #fcaf62
-  rgb(252, 175, 98, 0.5)
-  */
 
   const ActiveStyle2: React.CSSProperties = {
     color: "#000000",
-    background: "rgb(252, 175, 98, 0.5)",
+    background: ColorThemes.lightOrange,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
@@ -36,15 +30,14 @@ export const RFAWebsiteTOS: React.FC = () => {
     textAlign: "left",
   };
 
-  /*right side with no styling, inactive*/
   const inActiveStyle: React.CSSProperties = {
     color: "#000000",
-    background: "#fff",
+    background: ColorThemes.white,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
-    fontSize: "10vmax",
-    padding: "20px",
+    fontSize: "3vmax",
+    padding: "30px",
     textAlign: "left",
   };
 

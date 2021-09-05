@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { ColorThemes } from "@/colors";
 
 export const RFAPositionCard: React.FC<{
   posHeader: string;
@@ -15,7 +16,7 @@ export const RFAPositionCard: React.FC<{
 
   const posDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-Medium",
-    color: "#000000",
+    color: ColorThemes.black,
   };
 
   const posContainer: React.CSSProperties = {

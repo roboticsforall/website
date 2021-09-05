@@ -17,25 +17,28 @@ import QuestionMark from "@/media/Graphics/questionMark.png";
 import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import Markdown from "markdown-to-jsx";
 
+import { ColorThemes } from "@/colors";
+
+
 export const RFAPublicityInternPos: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
-    color: "#000000",
-    background: "#FFCC00",
-    border: 0,
+    background: ColorThemes.mainYellow,
+    border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-extrabold",
+    fontFamily: "Mazzard-H-Extrabold",
     fontSize: "x-large",
-    padding: "30px",
+    padding: "20px",
+    height: "100%",
   };
   const inActiveStyle = {
-    color: "#000000",
-    background: "#FA8D1F",
-    border: 0,
+    background: ColorThemes.mainOrange,
+    border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "mazzard-h-extrabold",
+    fontFamily: "Mazzard-H-Extrabold",
     fontSize: "x-large",
-    padding: "30px",
+    padding: "20px",
+    height: "100%",
   };
   const black = {
     color: "#000000",

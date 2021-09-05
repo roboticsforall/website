@@ -1,16 +1,17 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { ColorThemes } from "@/colors";
 
 export const RFAPosButton: React.FC<{ link: string; title: string }> = (
   props
 ) => {
   const button = {
-    color: "#000000",
+    color: ColorThemes.black,
     background: "#FA8D1F",
-    fontFamily: "mazzard-h-extrabold",
+    fontFamily: "Mazzard-H-Extrabold",
     fontSize: "45px",
-    borderColor: "#FA8D1F",
+    borderColor: ColorThemes.mainOrange,
     borderRadius: "15px",
     paddingTop: "20px",
     paddingBottom: "20px",

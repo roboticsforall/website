@@ -25,14 +25,12 @@ import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
 import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
-
-import { ColorThemes } from "../../colors";
+import { ColorThemes } from "@/colors";
 
 export const RFATeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
-    color: "#000000 !important",
-    background: "#FFCC00",
+    background: ColorThemes.mainYellow,
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "Mazzard-H-Extrabold",
@@ -41,8 +39,7 @@ export const RFATeacherPos: React.FC = () => {
     height: "100%",
   };
   const inActiveStyle = {
-    color: "#000000 !important",
-    background: "#FA8D1F",
+    background: ColorThemes.mainOrange,
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "Mazzard-H-Extrabold",
@@ -50,9 +47,9 @@ export const RFATeacherPos: React.FC = () => {
     padding: "20px",
     height: "100%",
   };
-  const black = {
-    color: "#000000",
-  };
+  const blackText = {
+    color: ColorThemes.black
+  }
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "5.5vmax",
@@ -63,7 +60,7 @@ export const RFATeacherPos: React.FC = () => {
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#FA8D1F"}
+        headerTextColor = {ColorThemes.mainOrange}
         image={headerBlobOrange}
         title={"Volunteer to Teach Students STEM!"}
         description={
@@ -83,7 +80,7 @@ export const RFATeacherPos: React.FC = () => {
                 eventKey="one"
                 style={key === "one" ? ActiveStyle : inActiveStyle}
               >
-                <p style={black}>Lead Instructor</p>
+                <p style={blackText}>Lead Instructor</p>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -91,7 +88,7 @@ export const RFATeacherPos: React.FC = () => {
                 eventKey="two"
                 style={key === "two" ? ActiveStyle : inActiveStyle}
               >
-                <p style={black}>Teacher Assistant</p>
+                <p style={blackText}>Teacher Assistant</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -167,13 +164,13 @@ export const RFATeacherPos: React.FC = () => {
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style = {blackText}>
                         teacher FAQ's
                       </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style={black}>
+                      <a href="mailto:info@roboticsforall.net" style = {blackText}>
                         info@roboticsforall.net
                       </a>
                     </li>
@@ -258,13 +255,13 @@ export const RFATeacherPos: React.FC = () => {
                   <ul>
                     <li>
                       If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style={black}>
+                      <Link to = "/volunteer/volunteerfaq" style={blackText}>
                         teacher FAQ's
                       </Link>
                     </li>
                     <li>
                       Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style={black}>
+                      <a href="mailto:info@roboticsforall.net" style={blackText}>
                         info@roboticsforall.net
                       </a>
                     </li>

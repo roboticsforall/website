@@ -1,5 +1,8 @@
 import React from "react";
 import { CountUp } from "use-count-up";
+
+import { ColorThemes } from "../colors";
+
 export const RFAVolOverviewCircle: React.FC<{
   align: string;
   width: string;
@@ -17,7 +20,7 @@ export const RFAVolOverviewCircle: React.FC<{
     justifyContent: "center",
     alignItems: "center",
     borderRadius: "50%",
-    backgroundColor: "#fcaf62",
+    backgroundColor: ColorThemes.lightOrange,
     textAlign: "center",
     fontSize: "2vw",
     height: props.height,

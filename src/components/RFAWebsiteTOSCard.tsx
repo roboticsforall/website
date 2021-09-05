@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { ColorThemes } from "@/colors";
 
 export const RFAWebsiteTOSCard: React.FC<{
   posHeader?: string;
@@ -11,7 +12,7 @@ export const RFAWebsiteTOSCard: React.FC<{
     fontFamily: "BeVietnam-Medium",
   };
   const borderColor: React.CSSProperties = {
-    borderColor: "#ffcc0080"
+    borderColor: ColorThemes.lightYellow
   }
 
   return (
