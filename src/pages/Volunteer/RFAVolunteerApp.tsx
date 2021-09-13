@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFAPositionCard } from "@/components/RFAPositionCard";
+import { RFATabsCardNoImage } from "@/components/RFATabCards";
 import googleForms from "@/posts/google_form.json";
 import Markdown from "markdown-to-jsx";
 
@@ -61,7 +61,7 @@ export const RFAVolunteerApp: React.FC = () => {
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 borderColor="#FFCC00"
                 color={"#ffeb99"}
                 posHeader={""}
@@ -73,7 +73,7 @@ export const RFAVolunteerApp: React.FC = () => {
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 borderColor="#FA8D1F"
                 color={"#FCBB79"}
                 posHeader={""}

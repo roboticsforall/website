@@ -3,7 +3,7 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFAPositionCard } from "@/components/RFAPositionCard";
+import { RFATabsCardNoImage } from "@/components/RFATabCards";
 import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
 import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
 import { RFAPosButton } from "@/components/RFAPosButton";
@@ -94,7 +94,7 @@ export const RFATeacherPos: React.FC = () => {
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
                 posDescription={
                   <div>
@@ -179,7 +179,7 @@ export const RFATeacherPos: React.FC = () => {
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
                 posDescription={
                   <div>

@@ -3,9 +3,10 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFAPositionCard } from "@/components/RFAPositionCard";
+import { RFATabsCardNoImage } from "@/components/RFATabCards";
 import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
 import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
+import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
 import { RFAPosButton } from "@/components/RFAPosButton";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
@@ -74,8 +75,10 @@ export const RFAPublicityInternPos: React.FC = () => {
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
+                borderColor = {ColorThemes.mainYellow}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -84,6 +87,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                   </div>
                 }
               />
+              <RFAInternDescriptionTabs/>
               <RFAPositionCard2
                 posHeader={"TASKS"}
                 posImage={TasksYellow}
