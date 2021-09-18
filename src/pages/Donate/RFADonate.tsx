@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 
+import { ColorThemes } from "@/colors";
+
 export const RFADonate: React.FC = () => {
   const positionsDescription = {
     fontFamily: "BeVietnam-Medium",
@@ -15,7 +17,7 @@ export const RFADonate: React.FC = () => {
   return (
     <>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Donate to Support our Programs!"}
         description={

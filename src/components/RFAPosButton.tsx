@@ -1,30 +1,39 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { ColorThemes } from "@/colors";
+import {createUseStyles} from 'react-jss';
 
-export const RFAPosButton: React.FC<{ link: string; title: string }> = (
+export const RFAPosButton: React.FC<{ link: string; title: string, backgroundColor: string, backgroundHover: string }> = (
   props
 ) => {
-  const button = {
-    color: "#000000",
-    background: "#FA8D1F",
-    fontFamily: "mazzard-h-extrabold",
-    fontSize: "45px",
-    borderColor: "#FA8D1F",
-    borderRadius: "15px",
-    paddingTop: "20px",
-    paddingBottom: "20px",
-    margin: "auto",
-  };
+
+  const useStyles = createUseStyles({
+    button: (props:any) =>  ({
+      composes: "py-3 justify-content-between align-items-center",
+      fontFamily: "BeVietnam-ExtraBold",
+      transition: "200ms",
+      color: ColorThemes.black,
+      borderRadius: "15px",
+      backgroundColor: props.backgroundColor,
+      "&:hover": {
+        backgroundColor: props.backgroundHover,
+        transition: "200ms",
+      }
+    }),
+  })
+  
+  const classes = useStyles({backgroundColor: props.backgroundColor, backgroundHover: props.backgroundHover});
 
   return (
     <Link className="hyperlink" to={props.link}>
       <Row
-        className="pos-container-button justify-content-center align-items-center"
-        style={button}
+        className= {classes.button}
       >
         <h2 className="text-center">{props.title}</h2>
       </Row>
     </Link>
   );
 };
+
+

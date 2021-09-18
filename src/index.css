@@ -310,31 +310,7 @@ label {
 
 /* #region styling for pages like teacher positions */
 /*teacherpos, publicitypos, privacypolicy, websitetos*/
-.pos-container {
-  border: 15px solid;
-  border-radius: 0 0 15px 15px;
-  margin: 0 0 40px 0;
-  color: rgb(255, 204, 0);
-  border-color: rgb(255, 204, 0);
-}
 
-.pos-container2 {
-  border: 15px solid;
-  border-radius: 0 0 15px 15px;
-  margin: 0 0 40px 0;
-  color: #fa8d1f;
-  border-color: #fa8d1f;
-}
-
-.pos-container-button {
-  background-color: #fa8d1f !important;
-  transition: 200ms !important;
-}
-
-.pos-container-button:hover {
-  background-color: #ffcc00 !important;
-  transition: 200ms !important;
-}
 .nav-tabs {
   border: none !important;
 }

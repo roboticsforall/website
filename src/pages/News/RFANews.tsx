@@ -8,6 +8,8 @@ import houseofreps from "@/media/News/House-of-Representatives.png";
 import Carousel from "react-multi-carousel/lib/Carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { ColorThemes } from "@/colors";
+
 const photosImport = Array.from(
   { length: 10 },
   (_, i) => import(`../../media/Photos/${(i + 1).toString()}.jpg`)
@@ -59,7 +61,7 @@ export const RFANews: React.FC = () => {
   const buttonStyles: React.CSSProperties = {
     width: "272px",
     height: "81px",
-    background: "#FA8D1F",
+    background: ColorThemes.mainOrange,
     borderRadius: "15px",
     border: "none",
     fontSize: "28px",
@@ -74,14 +76,14 @@ export const RFANews: React.FC = () => {
     textAlign: "center",
   };
   const cardStyles: React.CSSProperties = {
-    background: "#9be6b2",
+    background: ColorThemes.lightGreen,
     border: "none",
     borderRadius: "15px",
   };
   return (
     <div>
       <RFAHeader
-        headerTextColor="#ffcc00"
+        headerTextColor= {ColorThemes.mainYellow}
         image={headerBlobYellow}
         title="See us in the news!"
         description="Learn more about our progress and community outreach."
@@ -91,7 +93,7 @@ export const RFANews: React.FC = () => {
           <Container
             style={{
               borderRadius: "15px",
-              backgroundColor: "#ffe691",
+              backgroundColor: ColorThemes.lightYellow,
               padding: "20px",
               lineHeight: "24px",
             }}
@@ -102,7 +104,7 @@ export const RFANews: React.FC = () => {
                   style={{
                     fontFamily: "Mazzard-H-Extrabold",
                     fontSize: "59px",
-                    color: "rgb(250, 141, 31)",
+                    color: ColorThemes.mainOrange,
                   }}
                 >
                   Media
@@ -146,7 +148,7 @@ export const RFANews: React.FC = () => {
             style={{
               fontFamily: "Mazzard-H-Extrabold",
               fontSize: "59px",
-              color: "#3c6",
+              color: ColorThemes.mainGreen,
             }}
           >
             In the news
@@ -209,7 +211,7 @@ export const RFANews: React.FC = () => {
             style={{
               fontFamily: "Mazzard-H-Extrabold",
               fontSize: "59px",
-              color: "rgb(51,153,255)",
+              color: ColorThemes.mainBlue,
             }}
           >
             Social Media
@@ -217,7 +219,7 @@ export const RFANews: React.FC = () => {
 
           <Container
             style={{
-              background: "rgb(51,153,255)",
+              background: ColorThemes.lightBlue,
               borderRadius: "15px",
               padding: "15px",
             }}
@@ -251,14 +253,14 @@ export const RFANews: React.FC = () => {
             style={{
               fontFamily: "Mazzard-H-Extrabold",
               fontSize: "59px",
-              color: "rgb(255,204,0)",
+              color: ColorThemes.mainYellow,
             }}
           >
             Invited Talks and Fundraising
           </h1>
           <Container
             style={{
-              background: "#ffe691",
+              background: ColorThemes.lightYellow,
               borderRadius: "15px",
               padding: "15px",
             }}
@@ -303,14 +305,14 @@ export const RFANews: React.FC = () => {
             style={{
               fontFamily: "Mazzard-H-Extrabold",
               fontSize: "59px",
-              color: "rgb(250,141,31)",
+              color: ColorThemes.mainOrange,
             }}
           >
             Photos
           </h1>
           <Container
             style={{
-              background: "#fdc694",
+              background: ColorThemes.lightOrange,
               borderRadius: "15px",
               padding: "15px",
             }}

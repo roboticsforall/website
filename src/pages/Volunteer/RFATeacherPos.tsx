@@ -3,9 +3,7 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFAPositionCard } from "@/components/RFAPositionCard";
-import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
-import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
+import { RFATabsCardNoImage, RFATabsCardLeftImage, RFATabsCardRightImage } from "@/components/RFATabCards";
 import { RFAPosButton } from "@/components/RFAPosButton";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
@@ -25,45 +23,42 @@ import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
 import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
-
-import { ColorThemes } from "../../colors";
+import { ColorThemes } from "@/colors";
 
 export const RFATeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
-    color: "#000000 !important",
-    background: "#FFCC00",
+    background: ColorThemes.mainYellow,
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
   const inActiveStyle = {
-    color: "#000000 !important",
-    background: "#FA8D1F",
+    background: ColorThemes.mainOrange,
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
-  const black = {
-    color: "#000000",
-  };
+  const blackText = {
+    color: ColorThemes.black
+  }
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    fontSize: "5.5vmax",
+    fontFamily: "BeVietnam-ExtraBold",
+    letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
   };
-
+  
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#FA8D1F"}
+        headerTextColor = {ColorThemes.mainOrange}
         image={headerBlobOrange}
         title={"Volunteer to Teach Students STEM!"}
         description={
@@ -73,7 +68,8 @@ export const RFATeacherPos: React.FC = () => {
       <br></br>
       <br></br>
       <Container>
-        <RFAPosButton title={"Apply Now!"} link="/volunteer/volunteerapp" />
+        <RFAPosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
+              <br/>
         <br></br>
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
@@ -83,7 +79,7 @@ export const RFATeacherPos: React.FC = () => {
                 eventKey="one"
                 style={key === "one" ? ActiveStyle : inActiveStyle}
               >
-                <p style={black}>Lead Instructor</p>
+                <p style={blackText}>Lead Instructor</p>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -91,14 +87,16 @@ export const RFATeacherPos: React.FC = () => {
                 eventKey="two"
                 style={key === "two" ? ActiveStyle : inActiveStyle}
               >
-                <p style={black}>Teacher Assistant</p>
+                <p style={blackText}>Teacher Assistant</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
+                borderColor = {ColorThemes.mainYellow}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -107,7 +105,7 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"SCHEDULING"}
                 posImage={Calendar}
                 posDescription={
@@ -118,72 +116,54 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.tasks}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.curriculum}</Markdown>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.time_commitment}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.benefits}</Markdown>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.requirments}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.beneficial_qualifications}</Markdown>
                 }
               />
-              <RFAPositionCard1
-                posHeader={"QUESTIONS"}
-                posImage={QuestionMark}
-                posDescription={
-                  <ul>
-                    <li>
-                      If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style={black}>
-                        teacher FAQ's
-                      </Link>
-                    </li>
-                    <li>
-                      Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style={black}>
-                        info@roboticsforall.net
-                      </a>
-                    </li>
-                  </ul>
-                }
-              />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
-              <RFAPositionCard
+              <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
+                borderColor = {ColorThemes.mainYellow}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -193,7 +173,7 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"SCHEDULING"}
                 posImage={Calendar}
                 posDescription={
@@ -205,14 +185,14 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
                   <Markdown>{taOverviewJSON.tasks}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
@@ -220,7 +200,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
@@ -228,7 +208,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
@@ -236,7 +216,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
@@ -244,31 +224,11 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
                   <Markdown>{taOverviewJSON.beneficial_qualifications}</Markdown>
-                }
-              />
-              <RFAPositionCard1
-                posHeader={"QUESTIONS"}
-                posImage={QuestionMark}
-                posDescription={
-                  <ul>
-                    <li>
-                      If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style={black}>
-                        teacher FAQ's
-                      </Link>
-                    </li>
-                    <li>
-                      Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style={black}>
-                        info@roboticsforall.net
-                      </a>
-                    </li>
-                  </ul>
                 }
               />
               <br></br>
@@ -277,7 +237,7 @@ export const RFATeacherPos: React.FC = () => {
           </Tab.Content>
         </Tab.Container>
       </Container>
-      <h2 style={positionsTitle}>FAQs</h2>
+      <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
       <Container>
         {volunteerFAQJSON.teacher_faq_list.map((QAPair) => (
           <RFAFAQDropdowns

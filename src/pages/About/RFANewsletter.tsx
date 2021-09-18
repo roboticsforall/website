@@ -7,7 +7,9 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct im
 import { RFASubmitButton} from "@/components/RFASubmitButton";
 import newsletterJSON from "@/posts/newsletters.json";
 
-export const RFANewsletter: React.FC = (props) => {
+import { ColorThemes } from '@/colors';
+
+export const RFANewsletter: React.FC = () => {
 
     const heading3: React.CSSProperties = {
       fontFamily: "BeVietnam-ExtraBold"
@@ -28,7 +30,7 @@ export const RFANewsletter: React.FC = (props) => {
 
     return (
       <>
-        <RFAHeader headerTextColor = {"#ffcc00"} image = {headerBlobYellow} title = {"Read more about our work!"} description = {"Read through our monthly newsletter to learn more about our work!"}/>
+        <RFAHeader headerTextColor = {ColorThemes.mainYellow} image = {headerBlobYellow} title = {"Read more about our work!"} description = {"Read through our monthly newsletter to learn more about our work!"}/>
         <Container>
           <Row>
             <h3 style = {heading3} className = "mt-4">Read through our newsletters month by month down below.</h3>

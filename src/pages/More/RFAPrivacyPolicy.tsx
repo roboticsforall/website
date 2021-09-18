@@ -4,11 +4,12 @@ import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import { RFAWebsiteTOSCard } from "@/components/RFAWebsiteTOSCard";
 import { RFAWebsiteTOSCard2 } from "@/components/RFAWebsiteTOSCard2";
+import { ColorThemes } from "@/colors";
 
 export const RFAPrivacyPolicy: React.FC = () => {
   const ActiveStyle: React.CSSProperties = {
     color: "#000000",
-    background: "rgb(255, 204, 0, 0.5)",
+    background: ColorThemes.lightYellow,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
@@ -20,7 +21,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
 
   const ActiveStyle2: React.CSSProperties = {
     color: "#000000",
-    background: "rgb(252, 175, 98, 0.5)",
+    background: ColorThemes.lightOrange,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
@@ -31,7 +32,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
 
   const inActiveStyle: React.CSSProperties = {
     color: "#000000",
-    background: "#fff",
+    background: ColorThemes.white,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
@@ -49,7 +50,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Website Privacy Policy"}
         description={"Learn more about Robotics for All's privacy policies!"}

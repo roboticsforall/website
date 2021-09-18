@@ -224,15 +224,18 @@ collections:
           - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "beneficial_qualifications"
             widget: markdown
-      - label: "Pub Intern Overview"
-        name: "pub_intern_overview"
-        file: "src/posts/pub_intern_overview.json"
+      - label: "Intern Overview"
+        name: "intern_overview"
+        file: "src/posts/intern_overview.json"
         fields:
           - label: "Overview"
             name: "overview"
             widget: markdown
-          - label: "Tasks (Add Bulleted List)"
-            name: "tasks"
+          - label: "Intern Path"
+            name: "internpath"
+            widget: markdown
+          - label: "Scheduling"
+            name: "scheduling"
             widget: markdown
           - label: "Curriculum (Add Bulleted List)"
             name: "curriculum"
@@ -248,7 +251,6 @@ collections:
             widget: markdown
           - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "beneficial_qualifications"
-            widget: markdown
   - label: "Leadership Team Info" # used in UI
     name: "leadership_team_info" # used in routes
     files:

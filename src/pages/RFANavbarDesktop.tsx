@@ -1,6 +1,7 @@
 import React from "react";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
+import { enrollvolunteerabout } from "@/navbarroutes";
 
 export const RFANavbarDesktop: React.FC = () => {
 
@@ -39,74 +40,7 @@ export const RFANavbarDesktop: React.FC = () => {
         <Link className = "hyperlink" to = "/"><h2 style = {navHeading}>Robotics For All</h2></Link>
       </header>
       <ul className = "ms-2" style = {{...navItemsList, ...list}}>
-        {[
-          {
-            headerName: "Enroll",
-            to: "/enroll",
-            subPages: [
-              {
-                subPageName: "For Individual Learners",
-                to: "/enroll/individlearners",
-              },
-              {
-                subPageName: "For Schools",
-                to: "/enroll/schools",
-              },
-              {
-                subPageName: "Register",
-                to: "/enroll/register",
-              },
-            ]
-          },
-          {
-            headerName: "Volunteer",
-            to: "/volunteer",
-            subPages: [
-              {
-                subPageName: "Overview",
-                to: "/volunteer/overview",
-              },
-              {
-                subPageName: "Teachers Positions",
-                to: "/volunteer/teacherpos",
-              },
-              {
-                subPageName: "Publicity Positions",
-                to: "/volunteer/publicitypos",
-              },
-              {
-                subPageName: "Volunteer Application",
-                to: "/volunteer/volunteerapp",
-              },
-              {
-                subPageName: "Volunteer FAQs",
-                to: "/volunteer/volunteerfaq",
-              },
-            ]
-          },
-          {
-            headerName: "About",
-            to: "/about",
-            subPages: [
-              {
-                subPageName: "Overview",
-                to: "/about/overview",
-              },
-              {
-                subPageName: "Meet The Team",
-                to: "/about/meettheteam",
-              },
-              {
-                subPageName: "Affiliated Organizations",
-                to: "/about/afforgs",
-              },
-              {
-                subPageName: "Newsletter",
-                to: "/about/newsletter",
-              },
-            ]
-          }
-        ].map((navItem, i) => (
+        {enrollvolunteerabout.map((navItem, i) => (
           <React.Fragment>
             <li className = "nav-item" key = {i}>
               <div className = "h-100 nav-item-header">

@@ -4,6 +4,7 @@ import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAMeetingEntry } from "@/components/RFAMeetingEntry";
 import meetingRecordsListJSON from "@/posts/downloads/meeting_records.json";
+import { ColorThemes } from "@/colors";
 
 export const RFAMeetingRecords: React.FC = () => {
   const background: React.CSSProperties = {
@@ -24,7 +25,7 @@ export const RFAMeetingRecords: React.FC = () => {
     <div>
       <div>
         <RFAHeader
-          headerTextColor={"#ffcc00"}
+          headerTextColor={ColorThemes.mainYellow}
           image={headerBlobYellow}
           title={"Meeting Records"}
           description={

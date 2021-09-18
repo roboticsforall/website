@@ -124,17 +124,14 @@ export const RFASchools: React.FC = () => {
               key={QAPair.question}
               question={QAPair.question}
               answer={QAPair.answer}
-              webpage = "schools"
-              colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47", backgroundHover: ColorThemes.mainYellow}}
+              colors = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen, dark: ColorThemes.darkGreen, backgroundHover: ColorThemes.mainYellow}}
 
             />
           ))}
           <RFAFAQDropdowns
             question={classFAQJSON.upcoming_courses_question}
             answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
-            webpage = "schools"
-            colors = {{main: "#33cc66", light: "#70db94", dark: "#248f47", backgroundHover: ColorThemes.mainYellow}}
-
+            colors = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen, dark: ColorThemes.darkGreen, backgroundHover: ColorThemes.mainYellow}}
           />
           <br/>
         </Container>

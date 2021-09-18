@@ -10,21 +10,21 @@ import ccInfoJSON from "@/posts/curriculum_committee.json"
 import adInfoJSON from "@/posts/assistant_directors.json"
 import pcInfoJSON from "@/posts/pub_committee.json"
 
-
+import { ColorThemes } from "@/colors";
 
 export const RFAMeetTheTeam: React.FC = () => {
 
     const yellowRow = {
-        backgroundColor: "#ffcc004d"
+        backgroundColor: ColorThemes.lightYellow
     }
     const greenRow = {
-        backgroundColor: "#33cc664d"
+        backgroundColor: ColorThemes.lightGreen
     }
     const blueRow = {
-        backgroundColor: "#3399ff80"
+        backgroundColor: ColorThemes.lightBlue
     }
     const orangeRow = {
-        backgroundColor: "#ffcc0080"
+        backgroundColor: ColorThemes.lightOrange
     }
     const header: React.CSSProperties = {
         fontFamily: "Oswald-Medium",
@@ -71,7 +71,7 @@ export const RFAMeetTheTeam: React.FC = () => {
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Get to Know our Team!"}
         description={
@@ -79,7 +79,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         }
       />
       <br />
-        <h1 style={{color: "#fa8d1f", ...header}}>BOARD OF DIRECTORS</h1>
+        <h1 style={{color: ColorThemes.mainOrange, ...header}}>BOARD OF DIRECTORS</h1>
         <div style = {yellowRow}>
             <Carousel
                 responsive={responsive}
@@ -90,13 +90,13 @@ export const RFAMeetTheTeam: React.FC = () => {
                 infinite
             >
                     {bmInfoJSON.board_members_list.map((info,i) => (
-                        <div key = {i} style = {{backgroundColor: "#fa8d1f", borderRadius: "15px"}} className = "d-flex my-3 p-3">
+                        <div key = {i} style = {{backgroundColor: ColorThemes.mainYellow, borderRadius: "15px"}} className = "d-flex my-3 p-3">
                             <Col>
                                 <Image style = {imgSize} src = {info.image.replace("/public","")} />
                             </Col>
                             <Col style = {{overflowY: "auto"}} className = "ms-2">
                                 <h1 style = {nameHeader}>{info.name}</h1>
-                                <h1 style = {{color: "#c06204", ...titleHeader}}>{info.title_pronouns}</h1> 
+                                <h1 style = {{color: ColorThemes.darkYellow, ...titleHeader}}>{info.title_pronouns}</h1> 
                                 <Markdown style = {bodyText}>{info.description}</Markdown>
                             </Col> 
                         </div>
@@ -106,7 +106,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         </div>
         <br/>
         <br/>
-        <h1 style={{color: "#33cc66", ...header}}>EXECUTIVE ASSISTANT DIRECTOR</h1>
+        <h1 style={{color: ColorThemes.mainGreen, ...header}}>EXECUTIVE ASSISTANT DIRECTOR</h1>
         <div style = {greenRow}>
             <Carousel
                 swipeable={false}
@@ -117,13 +117,13 @@ export const RFAMeetTheTeam: React.FC = () => {
                 infinite
             >
                 {adInfoJSON.assistant_directors_list.map((info,i) => (
-                    <div key = {i} style = {{backgroundColor: "#33cc66", borderRadius: "15px"}} className = "d-flex my-3 p-3">
+                    <div key = {i} style = {{backgroundColor: ColorThemes.mainGreen, borderRadius: "15px"}} className = "d-flex my-3 p-3">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
                         <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
                             <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#248f47", ...titleHeader}}>{info.title_pronouns}</h1> 
+                            <h1 style = {{color: ColorThemes.darkGreen, ...titleHeader}}>{info.title_pronouns}</h1> 
                             <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col> 
                     </div>
@@ -133,7 +133,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         </div>
         <br/>
         <br/>
-        <h1 style={{color: "#3399ff", ...header}}>CURRICULUM COMMITTEE</h1>
+        <h1 style={{color: ColorThemes.mainBlue, ...header}}>CURRICULUM COMMITTEE</h1>
         <div style = {blueRow}>
             <Carousel
                 swipeable={false}
@@ -144,13 +144,13 @@ export const RFAMeetTheTeam: React.FC = () => {
                 infinite
             >
                 {ccInfoJSON.curriculum_committee_list.map((info,i) => (
-                    <div key = {i} style = {{backgroundColor: "#3399ff", borderRadius: "15px"}} className = "d-flex my-3 p-3">
+                    <div key = {i} style = {{backgroundColor: ColorThemes.mainBlue, borderRadius: "15px"}} className = "d-flex my-3 p-3">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
                         <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
                             <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#006bd6", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <h1 style = {{color: ColorThemes.darkBlue, ...titleHeader}}>{info.title_pronouns}</h1>
                             <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col>
                     </div>
@@ -160,7 +160,7 @@ export const RFAMeetTheTeam: React.FC = () => {
         </div>
         <br/>
         <br/>
-        <h1 style={{color: "#ffcc00", ...header}}>PUBLICITY COMMITTEE</h1>
+        <h1 style={{color: ColorThemes.mainYellow, ...header}}>PUBLICITY COMMITTEE</h1>
         <div style={orangeRow}>
             <Carousel
                 swipeable={false}
@@ -171,13 +171,13 @@ export const RFAMeetTheTeam: React.FC = () => {
                 infinite
             >
                 {pcInfoJSON.pub_committee.map((info,i) => (
-                    <div key = {i} style = {{backgroundColor: "#ffcc00", borderRadius: "15px"}} className = "d-flex my-3 p-3">
+                    <div key = {i} style = {{backgroundColor: ColorThemes.mainOrange, borderRadius: "15px"}} className = "d-flex my-3 p-3">
                         <Col md = {"auto"}>
                             <Image style = {imgSize} src = {info.image.replace("/public","")} />
                         </Col>
                         <Col style = {{overflowY: "auto"}} md = {7} className = "ms-2">
                             <h1 style = {nameHeader}>{info.name}</h1>
-                            <h1 style = {{color: "#b38f00", ...titleHeader}}>{info.title_pronouns}</h1>
+                            <h1 style = {{color: ColorThemes.darkOrange, ...titleHeader}}>{info.title_pronouns}</h1>
                             <Markdown style = {bodyText}>{info.description}</Markdown>
                         </Col>
                     </div>

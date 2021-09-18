@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { RFAHeader } from "@/components/RFAHeader";
 
+import { ColorThemes } from "@/colors";
+
 export const RFAAbtOverview: React.FC = () => {
   const title: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
@@ -15,21 +17,21 @@ export const RFAAbtOverview: React.FC = () => {
     color: "black",
   };
   const missionColor: React.CSSProperties = {
-    color: "#fa8d1f",
+    color: ColorThemes.mainOrange,
   };
 
   const visionColor: React.CSSProperties = {
-    color: "#33cc66",
+    color: ColorThemes.mainGreen,
   };
 
   const valuesColor: React.CSSProperties = {
-    color: "#3399ff",
+    color: ColorThemes.mainBlue,
   };
 
   return (
     <div>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Welcome to Robotics for All!"}
         description={"Learn more about Robotics for All and what we do!"}
@@ -46,7 +48,7 @@ export const RFAAbtOverview: React.FC = () => {
         </Container>
         <br />
       </Container>
-      <Container fluid style={{ backgroundColor: "#B7EDC9" }}>
+      <Container fluid style={{ backgroundColor: ColorThemes.lightGreen }}>
         <br />
         <Container>
           <h2 style={{ ...title, ...visionColor }}>OUR VISION</h2>
@@ -64,7 +66,7 @@ export const RFAAbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: "#fa8d1f" }}
+              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainOrange }}
             >
               motivated
             </span>
@@ -75,7 +77,7 @@ export const RFAAbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: "#ffcc00" }}
+              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainYellow }}
             >
               inclusive
             </span>
@@ -85,7 +87,7 @@ export const RFAAbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: "#33cc66" }}
+              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainGreen }}
             >
               accountable
             </span>
@@ -95,7 +97,7 @@ export const RFAAbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: "#70b8ff" }}
+              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.lightBlue }}
             >
               collaborative
             </span>
@@ -106,7 +108,7 @@ export const RFAAbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: "#006bd6" }}
+              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainBlue }}
             >
               compassionate
             </span>

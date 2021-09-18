@@ -4,12 +4,13 @@ import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png"; // add correct image and filepath here
 import googleForms from "@/posts/google_form.json";
 import Markdown from "markdown-to-jsx";
+import { ColorThemes } from "../../colors";
 
 export const RFARegister: React.FC = () => {
   return (
     <>
       <RFAHeader
-        headerTextColor={"#3399ff"}
+        headerTextColor={ColorThemes.mainBlue}
         image={headerBlobBlue}
         title={"Sign up for the next session of classes!"}
         description={

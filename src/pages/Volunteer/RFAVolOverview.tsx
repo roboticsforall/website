@@ -8,24 +8,26 @@ import { RFAVolOverviewCard } from "@/components/RFAVolOverviewCard";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAVolOverviewHeader } from "@/components/RFAVolOverviewHeader";
 
+import { ColorThemes } from "../../colors";
+
 export const RFAVolOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "5.5vmax",
-    color: "#fa8d1f",
+    color: ColorThemes.mainOrange,
     textAlign: "center",
     letterSpacing: "0.1em",
   };
   const positionsDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-SemiBold",
     fontSize: "1.3vmax",
-    color: "black",
+    color: ColorThemes.black,
   };
 
   return (
     <>
       <RFAVolOverviewHeader
-        headerTextColor={"#fa8d1f"}
+        headerTextColor={ColorThemes.mainOrange}
         image={headerBlobOrange}
         title={"Volunteer with Robotics for All"}
         description={
@@ -47,21 +49,21 @@ export const RFAVolOverview: React.FC = () => {
           <Col sm className="d-flex justify-content-center">
             <RFAVolOverviewImg
               image={TeacherToby}
-              color={"#248F47"}
+              color={ColorThemes.darkGreen}
               title={"Lead Instructor"}
             />
           </Col>
           <Col sm className="d-flex justify-content-center">
             <RFAVolOverviewImg
               image={TAToby}
-              color={"#c06204"}
+              color={ColorThemes.darkOrange}
               title={"Teacher Assistant"}
             />
           </Col>
           <Col sm className="d-flex justify-content-center">
             <RFAVolOverviewImg
               image={InternToby}
-              color={"#006bd6"}
+              color = {ColorThemes.darkBlue}
               title={"Publicity Volunteer"}
             />
           </Col>
@@ -71,8 +73,8 @@ export const RFAVolOverview: React.FC = () => {
           <RFAVolOverviewCard
             applyLink="/volunteer/volunteerapp"
             learnMoreLink="/volunteer/teacherpos"
-            backgroundcolor={"#70db9480"}
-            buttonColor={"#248F47"}
+            backgroundcolor={ColorThemes.lightGreen}
+            buttonColor = {ColorThemes.darkGreen}
             title={"Lead Instructor"}
             description={
               "Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."
@@ -85,8 +87,8 @@ export const RFAVolOverview: React.FC = () => {
           <RFAVolOverviewCard
             applyLink="/volunteer/volunteerapp"
             learnMoreLink="/volunteer/teacherpos"
-            backgroundcolor={"#fcaf6280"}
-            buttonColor={"#c06204"}
+            backgroundcolor={ColorThemes.lightOrange}
+            buttonColor={ColorThemes.mainOrange}
             title={"Teacher Assistant"}
             description={
               "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."
@@ -99,8 +101,8 @@ export const RFAVolOverview: React.FC = () => {
           <RFAVolOverviewCard
             applyLink="/volunteer/volunteerapp"
             learnMoreLink="/volunteer/publicitypos"
-            backgroundcolor={"#70b8ff80"}
-            buttonColor={"#006bd6"}
+            backgroundcolor={ColorThemes.lightBlue}
+            buttonColor={ColorThemes.darkBlue}
             title={"Publicity Intern"}
             description={
               "Publicity Interns help our publicity team to make awesome new visuals, giving you the great branding on this website!"

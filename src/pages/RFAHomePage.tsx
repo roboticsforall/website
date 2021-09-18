@@ -19,16 +19,16 @@ import YMCA from "@/media/Sponsors/ymca.png";
 
 import transparentImage from "@/media/transparentImage.png";
 
-import { RFAHomeAffOrgsCard } from "@/components/RFAHomeAffOrgsCard";
+import { ColorThemes } from "../colors";
 
 export const RFAHomePage: React.FC = () => {
   const videoRow: React.CSSProperties = {
-    backgroundColor: "#FFCC00",
+    backgroundColor: ColorThemes.mainYellow,
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "10vh",
-    color: "#ffcc00",
+    color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
@@ -44,7 +44,7 @@ export const RFAHomePage: React.FC = () => {
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "7vh",
-    color: "#ffcc00",
+    color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const sponsorImageSize: React.CSSProperties = {
@@ -141,22 +141,22 @@ export const RFAHomePage: React.FC = () => {
           {
             label: "tutoring for all",
             logo: TFALogo,
-            linkColor: "#C06204",
-            bgColor: "#FCAF62",
+            linkColor: ColorThemes.darkOrange,
+            bgColor: ColorThemes.lightOrange,
             link: "https://www.tutoringforall.org/about",
           },
           {
             label: "mentoring for all",
             logo: MFALogo,
-            linkColor: "#248F47",
-            bgColor: "#70DB94",
+            linkColor: ColorThemes.darkGreen,
+            bgColor: ColorThemes.lightGreen,
             link: "https://www.mentoringforall.org/mission-vision-values",
           },
           {
             label: "crafts for charity",
             logo: CFCLogo,
-            linkColor: "#006BD6",
-            bgColor: "#70BAFF",
+            linkColor: ColorThemes.darkBlue,
+            bgColor: ColorThemes.lightBlue,
             link: "https://craftsforcharity.com/about-us/",
           },
         ].map((afforgs, i) => (
@@ -207,6 +207,68 @@ export const RFAHomePage: React.FC = () => {
         <br/>
         <br/>
       </Container>
+    </>
+  );
+};
+
+const RFAHomeAffOrgsCard: React.FC<{
+  linkColor: string;
+  bgColor: string;
+  link: string;
+  org: string;
+  logo: string;
+}> = (props) => {
+  const affOrgsTitle: React.CSSProperties = {
+    fontFamily: "Mazzard-H-ExtraBold",
+    color: "white",
+    textAlign: "center",
+  };
+  const imageSize: React.CSSProperties = {
+    height: "12vmax",
+  };
+  const borderRadius = {
+    borderTopLeftRadius: 15,
+    borderBottomLeftRadius: 15,
+    borderTopRightRadius: 15,
+    borderBottomRightRadius: 15,
+  };
+  const linkColor: React.CSSProperties = {
+    color: props.linkColor,
+  };
+
+  return (
+    <>
+      <Row
+        style={{ backgroundColor: props.bgColor, ...borderRadius }}
+        className="justify-content-center align-items-center mx-2"
+      >
+        <Col
+          className="d-flex justify-content-center"
+          sm={3}
+          md={3}
+          lg={3}
+          xl={3}
+        >
+          <Image style={imageSize} src={props.logo} />
+        </Col>
+        <Col md={6} lg={6} xl={6}>
+          <h1 className="header-size" style={affOrgsTitle}>
+            {props.org}
+          </h1>
+        </Col>
+        <Col className="text-center" md={3} lg={3} xl={3}>
+          <a
+            href={props.link}
+            target="_blank"
+            className="home-aff-org-card-link"
+            style={linkColor}
+            rel="noreferrer"
+          >
+            LEARN MORE
+          </a>
+        </Col>
+      </Row>
+      <br />
     </>
   );
 };

@@ -11,6 +11,8 @@ import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
 import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
 import linkedin from "@/media/SocialMediaLogos/linkedin.png";
 
+import { ColorThemes } from "@/colors";
+
 export const RFAContact: React.FC = () => {
   const [state, handleSubmit] = useForm("mzbybwgz");
 
@@ -41,7 +43,7 @@ export const RFAContact: React.FC = () => {
   };
 
   const linkStyle = {
-    color: "#C06202",
+    color: ColorThemes.darkOrange,
   };
 
   const iconSize = {
@@ -53,7 +55,7 @@ export const RFAContact: React.FC = () => {
   return (
     <>
       <RFAHeader
-        headerTextColor={"#ffcc00"}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Want to know more?"}
         description={
