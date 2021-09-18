@@ -106,31 +106,3 @@ export const RFATabsCardRightImage: React.FC<IProps> = (props: IProps) => {
     </Container>
   );
 };
-
-// export const RFATabsCardRightImage: React.FC<IProps> = (props: IProps) => {
-
-//   return (
-//     <Container className="pos-container2">
-      // <div>
-      //   <h1 className="header-size" style={styles.posHeader}>
-      //     {props.posHeader}
-      //   </h1>
-      //   <Row>
-      //     <Col>
-      //       <div className="header-description-size" style={styles.posDescription}>
-      //         {props.posDescription}
-      //       </div>
-      //     </Col>
-      //     <Col xs={3}>
-      //       <Image
-      //         className="center-align"
-      //         src={props.posImage}
-      //         style={styles.img}
-      //         fluid
-      //       />
-      //     </Col>
-      //   </Row>
-      // </div>
-//     </Container>
-//   );
-// };

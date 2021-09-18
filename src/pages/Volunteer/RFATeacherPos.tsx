@@ -3,9 +3,7 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
-import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
-import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
+import { RFATabsCardNoImage, RFATabsCardLeftImage, RFATabsCardRightImage } from "@/components/RFATabCards";
 import { RFAPosButton } from "@/components/RFAPosButton";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
@@ -106,7 +104,7 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"SCHEDULING"}
                 posImage={Calendar}
                 posDescription={
@@ -117,42 +115,42 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.tasks}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.curriculum}</Markdown>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.time_commitment}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.benefits}</Markdown>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.requirments}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
@@ -174,7 +172,7 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"SCHEDULING"}
                 posImage={Calendar}
                 posDescription={
@@ -186,14 +184,14 @@ export const RFATeacherPos: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
                 posDescription={
                   <Markdown>{taOverviewJSON.tasks}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
                 posDescription={
@@ -201,7 +199,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
                 posDescription={
@@ -209,7 +207,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
                 posDescription={
@@ -217,7 +215,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
                 posDescription={
@@ -225,7 +223,7 @@ export const RFATeacherPos: React.FC = () => {
 
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
                 posDescription={
