@@ -49,12 +49,12 @@ export const RFATeacherPos: React.FC = () => {
     color: ColorThemes.black
   }
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    fontSize: "5.5vmax",
+    fontFamily: "BeVietnam-ExtraBold",
+    letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
   };
-
+  
   return (
     <div>
       <RFAHeader
@@ -68,7 +68,8 @@ export const RFATeacherPos: React.FC = () => {
       <br></br>
       <br></br>
       <Container>
-        <RFAPosButton title={"Apply Now!"} link="/volunteer/volunteerapp" />
+        <RFAPosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
+              <br/>
         <br></br>
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
@@ -236,7 +237,7 @@ export const RFATeacherPos: React.FC = () => {
           </Tab.Content>
         </Tab.Container>
       </Container>
-      <h2 style={positionsTitle}>FAQs</h2>
+      <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
       <Container>
         {volunteerFAQJSON.teacher_faq_list.map((QAPair) => (
           <RFAFAQDropdowns

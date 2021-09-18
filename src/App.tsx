@@ -14,7 +14,10 @@ import { RFARegister } from "./pages/Enroll/RFARegister";
 //Volunteer
 import { RFAVolOverview } from "./pages/Volunteer/RFAVolOverview";
 import { RFATeacherPos } from "./pages/Volunteer/RFATeacherPos";
-import { RFAPublicityInternPos } from "./pages/Volunteer/RFAPublicityInternPos";
+import { InternOverview } from "./pages/Volunteer/InternOverview";
+import { PublicityPositions } from "./pages/Volunteer/PublicityPositions";
+import { TechnicalPositions } from "./pages/Volunteer/TechnicalPositions";
+import { BusinessPositions } from "./pages/Volunteer/BusinessPositions";
 import { RFAVolunteerFAQ } from "./pages/Volunteer/RFAVolunteerFAQ";
 import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
@@ -68,8 +71,20 @@ export const App: React.FC = () => {
                 />
                 <Route exact path="/volunteer/teacherpos" component={RFATeacherPos} />
                 <Route
-                  exact path="/volunteer/publicitypos"
-                  component={RFAPublicityInternPos}
+                  exact path="/volunteer/internoverview"
+                  component={InternOverview}
+                />
+                <Route
+                  exact path="/volunteer/publicitypositions"
+                  component={PublicityPositions}
+                />
+                <Route
+                  exact path="/volunteer/technicalpositions"
+                  component={TechnicalPositions}
+                />
+                <Route
+                  exact path="/volunteer/businesspositions"
+                  component={BusinessPositions}
                 />
                 <Route
                   exact path="/volunteer/volunteerapp"

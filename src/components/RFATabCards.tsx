@@ -4,7 +4,7 @@ import {createUseStyles} from 'react-jss';
 import { ColorThemes } from "@/colors";
 
 
-const styles = {
+const styles : any = {
   posHeader: {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",

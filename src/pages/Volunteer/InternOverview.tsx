@@ -21,14 +21,14 @@ import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
 
-export const RFAPublicityInternPos: React.FC = () => {
+export const InternOverview: React.FC = () => {
   const black = {
     color: "#000000",
   };
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    fontSize: "5.5vmax",
-    color: ColorThemes.mainOrange,
+    fontFamily: "BeVietnam-ExtraBold",
+    letterSpacing: "0.25em",
+    color: ColorThemes.mainYellow,
     textAlign: "center",
   };
 
@@ -37,15 +37,13 @@ export const RFAPublicityInternPos: React.FC = () => {
       <RFAHeader
         headerTextColor={"#FA8D1F"}
         image={headerBlobOrange}
-        title={"Volunteer to Build Our Outreach!"}
+        title={"Intern at Robotics for All in 20+ groups."}
         description={
-          "Volunteer to help with graphic design, illustrations, and much much more!"
+          "Interns work on anything from graphic design to curriculum development!"
         }
       />
       <Container>
         <br></br>
-        <br></br>
-        <RFAPosButton title={"Apply Now!"} link="/volunteer/volunteerapp" />
         <br></br>
         <br></br>
         <Tab.Container>
@@ -105,7 +103,7 @@ export const RFAPublicityInternPos: React.FC = () => {
                 <Markdown>{pubInternOverviewJSON.beneficial_qualifications}</Markdown>
               }
             />
-            <h2 style={positionsTitle}>FAQs</h2>
+            <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
             <Container>
               {volunteerFAQJSON.publicity_faq_list.map((QAPair) => (
                 <RFAFAQDropdowns

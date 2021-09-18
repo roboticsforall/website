@@ -3,7 +3,8 @@ import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { Link } from "react-router-dom";
 import dropdownIcon from "../media/Icons/dropdownIcon.svg";
 import exitIcon from "../media/Icons/exitIcon.svg";
-import { RFAMobileNavbarItem } from "../components/RFAMobileNavbarItem";
+import { enrollvolunteerabout, contactaboutdonate } from "@/navbarroutes";
+
 
 export const RFANavbarMobile: React.FC = () => {
 
@@ -53,108 +54,7 @@ export const RFANavbarMobile: React.FC = () => {
           <button onClick = {setNavHeight}><img width = "50" src = {exitIcon}/></button>
         </header>
         <ul className = "mx-3 p-0" style = {{height: "50%", overflowY: "auto", ...list}}>
-        {[
-          {
-            headerName: "Enroll",
-            to: "/enroll",
-            subPages: [
-              {
-                subPageName: "For Individual Learners",
-                to: "/enroll/individlearners",
-              },
-              {
-                subPageName: "For Schools",
-                to: "/enroll/schools",
-              },
-              {
-                subPageName: "Register",
-                to: "/enroll/register",
-              },
-            ]
-          },
-          {
-            headerName: "Volunteer",
-            to: "/volunteer",
-            subPages: [
-              {
-                subPageName: "Overview",
-                to: "/volunteer/overview",
-              },
-              {
-                subPageName: "Teachers Positions",
-                to: "/volunteer/teacherpos",
-              },
-              {
-                subPageName: "Publicity Positions",
-                to: "/volunteer/publicitypos",
-              },
-              {
-                subPageName: "Volunteer Application",
-                to: "/volunteer/volunteerapp",
-              },
-              {
-                subPageName: "Volunteer FAQs",
-                to: "/volunteer/volunteerfaq",
-              },
-            ]
-          },
-          {
-            headerName: "About",
-            to: "/about",
-            subPages: [
-              {
-                subPageName: "Overview",
-                to: "/about/overview",
-              },
-              {
-                subPageName: "Meet The Team",
-                to: "/about/meettheteam",
-              },
-              {
-                subPageName: "Affiliated Organizations",
-                to: "/about/afforgs",
-              },
-              {
-                subPageName: "Newsletter",
-                to: "/about/newsletter",
-              },
-            ]
-          },
-          {
-            headerName: "Contact",
-            to: "/contact",
-            subPages: [
-              {
-                subPageName: "Contact",
-                to: "/contact",
-              },
-            ]
-          },
-          {
-            headerName: "News",
-            to: "/news",
-            subPages: [
-              {
-                subPageName: "News",
-                to: "/news",
-              },
-            ]
-          },
-          {
-            headerName: "Donate",
-            to: "/donate",
-            subPages: [
-              {
-                subPageName: "Donate",
-                to: "/donate",
-              },
-              {
-                subPageName: "Merch",
-                to: "https://www.bonfire.com/store/rfa/ ",
-              },
-            ]
-          },
-        ].map((navItem, i) => (
+        {[...enrollvolunteerabout, ...contactaboutdonate].map((navItem, i) => (
           <RFAMobileNavbarItem 
             headerName = {navItem.headerName}
             subPages = {navItem.subPages}
@@ -164,5 +64,65 @@ export const RFANavbarMobile: React.FC = () => {
         </ul>
       </div>
     </nav>
+  );
+};
+
+const RFAMobileNavbarItem: React.FC<{
+  headerName: string,
+  subPages: {
+      to: string,
+      subPageName: string,
+  }[],
+  setNavHeight: () => void
+}> = (props) => {
+  const [buttonState, setButtonState] = useState("+");
+  const [dropdownDisplay, setDropdownDisplay] = useState("none");
+  const onClick = () => {
+      switchButtonIcon();
+      displayDiv();
+  }
+  const switchButtonIcon = () => {
+      if(buttonState == "+") {
+          setButtonState("-");
+      }
+      else {
+          setButtonState("+");
+      }
+  }
+  const displayDiv = () => {
+      dropdownDisplay === "none"
+        ? setDropdownDisplay("block")
+        : setDropdownDisplay("none");
+  };
+  
+  const navHeader = {
+      display: 'flex',
+      justifyContent: "space-between",
+      fontFamily: "BeVietnam-Bold",
+      fontSize: "1.5em",
+  };
+  const list: React.CSSProperties = {
+      textDecoration: "none",
+      listStyleType: "none",
+  }
+  const dropdownItemText = {
+      fontFamily: "BeVietnam-Regular",
+  }
+  
+  return (
+      <React.Fragment>
+          <li onClick = {onClick} style={navHeader}>
+              {props.headerName} <button>{buttonState}</button>
+          </li>
+          <hr />
+          <ul style={{display: dropdownDisplay, ...list}}>
+              {props.subPages.map((subPageInfo, i) => (
+                  <React.Fragment>
+                      <Link onClick = {props.setNavHeight} style = {dropdownItemText} className="hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
+                      <hr />
+                  </React.Fragment>
+              ))}
+          </ul>
+      </React.Fragment>
   );
 };
