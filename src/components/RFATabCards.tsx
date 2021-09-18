@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import {createUseStyles} from 'react-jss';
 import { ColorThemes } from "@/colors";
 
 
 const styles = {
   posHeader: {
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     textAlign: "center",
   },
@@ -63,9 +63,8 @@ export const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
           {props.posHeader}
         </h1>
         <Row>
-          <Col xs={3}>
+          <Col className="center-align" xs={3}>
             <Image
-              className="center-align"
               src={props.posImage}
               style={styles.img}
               fluid
@@ -82,30 +81,56 @@ export const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
   );
 };
 
+export const RFATabsCardRightImage: React.FC<IProps> = (props: IProps) => {
+  return (
+    <Container style={styles.posContainer({borderColor: props.borderColor, color: props.color})}>
+      <div>
+        <h1 className="header-size" style={styles.posHeader}>
+          {props.posHeader}
+        </h1>
+        <Row>
+          <Col>
+            <div className="header-description-size" style={styles.posDescription}>
+              {props.posDescription}
+            </div>
+          </Col>
+          <Col className = "center-align" xs={3}>
+            <Image
+              src={props.posImage}
+              style={styles.img}
+              fluid
+            />
+          </Col>
+        </Row>
+      </div>
+    </Container>
+  );
+};
+
 // export const RFATabsCardRightImage: React.FC<IProps> = (props: IProps) => {
 
 //   return (
 //     <Container className="pos-container2">
-//       <div>
-//         <h1 className="header-size" style={styles.posHeader}>
-//           {props.posHeader}
-//         </h1>
-//         <Row>
-//           <Col>
-//             <div className="header-description-size" style={styles.posDescription}>
-//               {props.posDescription}
-//             </div>
-//           </Col>
-//           <Col xs={3}>
-//             <Image
-//               className="center-align"
-//               src={props.posImage}
-//               style={styles.img}
-//               fluid
-//             />
-//           </Col>
-//         </Row>
-//       </div>
+      // <div>
+      //   <h1 className="header-size" style={styles.posHeader}>
+      //     {props.posHeader}
+      //   </h1>
+      //   <Row>
+      //     <Col>
+      //       <div className="header-description-size" style={styles.posDescription}>
+      //         {props.posDescription}
+      //       </div>
+      //     </Col>
+      //     <Col xs={3}>
+      //       <Image
+      //         className="center-align"
+      //         src={props.posImage}
+      //         style={styles.img}
+      //         fluid
+      //       />
+      //     </Col>
+      //   </Row>
+      // </div>
 //     </Container>
 //   );
 // };

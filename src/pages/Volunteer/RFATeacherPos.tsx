@@ -33,7 +33,7 @@ export const RFATeacherPos: React.FC = () => {
     background: ColorThemes.mainYellow,
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "20px",
     height: "100%",
@@ -42,7 +42,7 @@ export const RFATeacherPos: React.FC = () => {
     background: ColorThemes.mainOrange,
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "20px",
     height: "100%",
@@ -96,6 +96,8 @@ export const RFATeacherPos: React.FC = () => {
             <Tab.Pane eventKey="one">
               <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
+                borderColor = {ColorThemes.mainYellow}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -157,30 +159,12 @@ export const RFATeacherPos: React.FC = () => {
                   <Markdown>{teacherOverviewJSON.beneficial_qualifications}</Markdown>
                 }
               />
-              <RFAPositionCard1
-                posHeader={"QUESTIONS"}
-                posImage={QuestionMark}
-                posDescription={
-                  <ul>
-                    <li>
-                      If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style = {blackText}>
-                        teacher FAQ's
-                      </Link>
-                    </li>
-                    <li>
-                      Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style = {blackText}>
-                        info@roboticsforall.net
-                      </a>
-                    </li>
-                  </ul>
-                }
-              />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
+                borderColor = {ColorThemes.mainYellow}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -246,26 +230,6 @@ export const RFATeacherPos: React.FC = () => {
                 posImage={Presentation}
                 posDescription={
                   <Markdown>{taOverviewJSON.beneficial_qualifications}</Markdown>
-                }
-              />
-              <RFAPositionCard1
-                posHeader={"QUESTIONS"}
-                posImage={QuestionMark}
-                posDescription={
-                  <ul>
-                    <li>
-                      If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style={blackText}>
-                        teacher FAQ's
-                      </Link>
-                    </li>
-                    <li>
-                      Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style={blackText}>
-                        info@roboticsforall.net
-                      </a>
-                    </li>
-                  </ul>
                 }
               />
               <br></br>

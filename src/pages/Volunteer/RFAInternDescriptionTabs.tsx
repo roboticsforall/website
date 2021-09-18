@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Container, Tab, Nav } from "react-bootstrap";
+import { Container, Tab, Nav, Image, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFAPosButton } from "@/components/RFAPosButton";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
+import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import Presentation from "@/media/Graphics/presentation.png";
 import TasksYellow from "@/media/Graphics/tasksYellow.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
@@ -18,6 +19,99 @@ import {createUseStyles} from 'react-jss';
 
 import { ColorThemes } from "@/colors";
 
+interface IProps {
+  posHeader: string;
+  posDescription: JSX.Element;
+  color: {main: String, light: String};
+  borderColor?: string;
+  posImage?: string;
+}
+
+
+const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
+  const styles = {
+    posHeader: {
+      fontFamily: "BeVietnam-ExtraBold",
+      letterSpacing: "0.25em",
+      textAlign: "center",
+    },
+    posDescription: {
+      fontFamily: "BeVietnam-Medium",
+      color: ColorThemes.black,
+    },
+    posContainer: (props: any) => ({
+      border: "15px solid",
+      borderRadius: "0 0 15px 15px",
+      margin: "0 0 40px 0",
+      color: props.color,
+      borderColor: props.borderColor
+    }),
+    buttonHeader: {
+      fontFamily: "BeVietnam-ExtraBold",
+      textAlign: "center",
+      color: ColorThemes.black
+    },
+    img: {
+      marginBottom: "10px",
+      width: "auto",
+      maxHeight: "250px",
+    },
+  }
+  const useStyles = createUseStyles({
+    buttonContainer: (props: any) => ({
+      border: "solid",
+      backgroundColor: props.backgroundColor,
+      transition: "200ms",
+      "&:hover": {
+        backgroundColor: ColorThemes.mainYellow,
+        transition: "200ms",
+      }
+    }),
+  })
+
+  const classes = useStyles({backgroundColor: props.color.light});
+
+  return (
+    <Container style={styles.posContainer({borderColor: props.borderColor, color: props.color.main})}>
+      <div>
+        <h1 className="header-size" style={styles.posHeader}>
+          {props.posHeader}
+        </h1>
+        <Row>
+          <Col className="center-align" xs={3}>
+            <Image
+              src={props.posImage}
+              style={styles.img}
+              fluid
+            />
+          </Col>
+          <Col>
+            <div className="header-description-size" style={styles.posDescription}>
+              {props.posDescription}
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 7.5px 0px 0px"}}>
+            <Link to = "" className = "hyperlink">
+              <h1 className="header-size" style={styles.buttonHeader}>
+                Learn More
+              </h1>
+            </Link>
+          </Col>
+          <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 0px 0px 7.5px"}}>
+            <Link to = "" className = "hyperlink">
+              <h1 className="header-size" style={styles.buttonHeader}>
+                Apply Now!
+              </h1>
+            </Link>
+          </Col>
+        </Row>
+      </div>
+
+    </Container>
+  );
+};
 
 export const RFAInternDescriptionTabs: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -27,29 +121,11 @@ export const RFAInternDescriptionTabs: React.FC = () => {
       background: props.backgroundColor,
       border: "none",
       borderRadius: "15px 15px 0 0",
-      fontFamily: "Mazzard-H-Extrabold",
+      fontFamily: "BeVietnam-ExtraBold",
       fontSize: "x-large",
       padding: "20px",
       height: "100%",
     }),
-    technical: {
-      background: ColorThemes.mainGreen,
-      border: "none",
-      borderRadius: "15px 15px 0 0",
-      fontFamily: "Mazzard-H-Extrabold",
-      fontSize: "x-large",
-      padding: "20px",
-      height: "100%",
-    },
-    publicity: {
-      background: ColorThemes.mainOrange,
-      border: "none",
-      borderRadius: "15px 15px 0 0",
-      fontFamily: "Mazzard-H-Extrabold",
-      fontSize: "x-large",
-      padding: "20px",
-      height: "100%",
-    },
     blackText: {
       color: "#000000",
     }
@@ -89,19 +165,34 @@ export const RFAInternDescriptionTabs: React.FC = () => {
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
-              <h1>Hello</h1>
-              <br></br>
-              <br></br>
+              <RFATabsCardLeftImage
+                posHeader={"GENERAL BUSINESS PATH"}
+                posImage={TobyHeaderLogo}
+                color = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue}}
+                posDescription={
+                  <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                }
+              />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
-              <h1>bdfg</h1>
-              <br></br>
-              <br></br>
+              <RFATabsCardLeftImage
+                posHeader={"TECHNICAL PATH"}
+                posImage={TobyHeaderLogo}
+                color = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen}}
+                posDescription={
+                  <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                }
+              />
             </Tab.Pane>
             <Tab.Pane eventKey="three">
-              <h1>df</h1>
-              <br></br>
-              <br></br>
+              <RFATabsCardLeftImage
+                posHeader={"PUBLICITY PATH"}
+                posImage={TobyHeaderLogo}
+                color = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange}}
+                posDescription={
+                  <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                }
+              />
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>

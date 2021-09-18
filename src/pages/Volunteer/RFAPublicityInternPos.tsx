@@ -3,22 +3,22 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
-import { RFAPositionCard1 } from "@/components/RFAPositionCard1";
-import { RFAPositionCard2 } from "@/components/RFAPositionCard2";
+import { RFATabsCardLeftImage, RFATabsCardNoImage, RFATabsCardRightImage } from "@/components/RFATabCards";
 import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
 import { RFAPosButton } from "@/components/RFAPosButton";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";
-import TasksYellow from "@/media/Graphics/tasksYellow.png";
+import Calendar from "@/media/Graphics/calendar.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
-import QuestionMark from "@/media/Graphics/questionMark.png";
 
 import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import Markdown from "markdown-to-jsx";
 
+import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
+
 import { ColorThemes } from "@/colors";
+import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
 
 export const RFAPublicityInternPos: React.FC = () => {
@@ -27,7 +27,7 @@ export const RFAPublicityInternPos: React.FC = () => {
     background: ColorThemes.mainYellow,
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "20px",
     height: "100%",
@@ -36,13 +36,19 @@ export const RFAPublicityInternPos: React.FC = () => {
     background: ColorThemes.mainOrange,
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
   const black = {
     color: "#000000",
+  };
+  const positionsTitle: React.CSSProperties = {
+    fontFamily: "Oswald-Medium",
+    fontSize: "5.5vmax",
+    color: ColorThemes.mainOrange,
+    textAlign: "center",
   };
 
   return (
@@ -88,63 +94,60 @@ export const RFAPublicityInternPos: React.FC = () => {
                 }
               />
               <RFAInternDescriptionTabs/>
-              <RFAPositionCard2
-                posHeader={"TASKS"}
-                posImage={TasksYellow}
+              <RFATabsCardRightImage
+                posHeader={"SCHEDULING"}
+                posImage={Calendar}
+                color = {ColorThemes.lightYellow}
                 posDescription={
                   <div>
                       <Markdown>{pubInternOverviewJSON.tasks}</Markdown>
                   </div>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
                 posImage={Clock}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <Markdown>{pubInternOverviewJSON.time_commitment}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
                 posImage={ThumbsUp}
+                color = {ColorThemes.lightYellow}
                 posDescription={
                   <Markdown>{pubInternOverviewJSON.benefits}</Markdown>
                 }
               />
-              <RFAPositionCard1
+              <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
                 posImage={Laptop}
+                color = {ColorThemes.mainYellow}
                 posDescription={
                   <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
                 }
               />
-              <RFAPositionCard2
+              <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
                 posImage={Presentation}
+                color = {ColorThemes.lightYellow}
                 posDescription={
                   <Markdown>{pubInternOverviewJSON.beneficial_qualifications}</Markdown>
                 }
               />
-              <RFAPositionCard1
-                posHeader={"QUESTIONS"}
-                posImage={QuestionMark}
-                posDescription={
-                  <ul>
-                    <li>
-                      If you have any other questions, please visit our{" "}
-                      <Link to = "/volunteer/volunteerfaq" style={black}>
-                        intern FAQ's
-                      </Link>
-                    </li>
-                    <li>
-                      Please direct additional questions to{" "}
-                      <a href="mailto:info@roboticsforall.net" style={black}>
-                        info@roboticsforall.net
-                      </a>
-                    </li>
-                  </ul>
-                }
-              />
+              <h2 style={positionsTitle}>FAQs</h2>
+              <Container>
+                {volunteerFAQJSON.publicity_faq_list.map((QAPair) => (
+                  <RFAFAQDropdowns
+                    key={QAPair.question}
+                    question={QAPair.question}
+                    answer={QAPair.answer}
+                    colors = {{main: ColorThemes.mainYellow, light: ColorThemes.lightYellow, dark: ColorThemes.lightYellow, backgroundHover: ColorThemes.black}}
+                  />
+                ))}
+                <br/>
+              </Container>
               <br></br>
               <br></br>
             </Tab.Pane>

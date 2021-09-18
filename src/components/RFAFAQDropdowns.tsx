@@ -64,7 +64,6 @@ export const RFAFAQDropdowns: React.FC<IProps> = (props: IProps) => {
     <div>
       <Row
         className = {classes.dropdown}
-        style = {{}}
       >
         <Col md={11}>
           <h3 style = {{color: dropdownTextColor}}>{props.question}</h3>
