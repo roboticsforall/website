@@ -178,7 +178,7 @@ const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
             </Link>
           </Col>
           <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 0px 0px 7.5px"}}>
-            <Link to = "" className = "hyperlink">
+            <Link to = "/volunteer/volunteerapp" className = "hyperlink">
               <h1 className="header-size" style={styles.buttonHeader}>
                 Apply Now!
               </h1>
