@@ -66,8 +66,7 @@ export const BusinessPositions: React.FC = () => {
           <Tab.Content>
               <RFATabsCardNoImage
                 posHeader={"DETAILS"}
-                borderColor = {ColorThemes.mainBlue}
-                color = {ColorThemes.mainBlue}
+                generalColor = {ColorThemes.mainBlue}
                 posDescription={
                   <div>
                     <p>

@@ -5,6 +5,11 @@ import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFATabsCardNoImage } from "@/components/RFATabCards";
 import googleForms from "@/posts/google_form.json";
 import Markdown from "markdown-to-jsx";
+import { ColorThemes } from "@/colors";
+
+import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
+import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
+
 
 export const RFAVolunteerApp: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -62,8 +67,8 @@ export const RFAVolunteerApp: React.FC = () => {
           <Tab.Content>
             <Tab.Pane eventKey="one">
               <RFATabsCardNoImage
-                borderColor="#FFCC00"
-                color={"#ffeb99"}
+                generalColor = {ColorThemes.mainYellow}
+                backgroundColor = {ColorThemes.lightYellow}
                 posHeader={""}
                 posDescription={
                   <div className="center-align">
@@ -74,8 +79,8 @@ export const RFAVolunteerApp: React.FC = () => {
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <RFATabsCardNoImage
-                borderColor="#FA8D1F"
-                color={"#FCBB79"}
+                generalColor = {ColorThemes.mainOrange}
+                backgroundColor = {ColorThemes.lightOrange}
                 posHeader={""}
                 posDescription={
                   <div className="center-align">
@@ -86,6 +91,17 @@ export const RFAVolunteerApp: React.FC = () => {
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
+        <RFAInternDescriptionTabs
+              publicityDescription = {
+                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+              }
+              technicalDescription = {
+                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+              }
+              businessDescription = {
+                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+              }
+        />
       </Container>
     </div>
   );

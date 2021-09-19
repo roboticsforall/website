@@ -19,7 +19,8 @@ const styles : any = {
     borderRadius: "0 0 15px 15px",
     margin: "0 0 40px 0",
     color: props.color,
-    borderColor: props.borderColor
+    borderColor: props.borderColor,
+    backgroundColor: props.backgroundColor
   }),
   img: {
     marginBottom: "10px",
@@ -31,14 +32,14 @@ const styles : any = {
 interface IProps {
   posHeader: string;
   posDescription: JSX.Element;
-  color?: string;
-  borderColor?: string;
+  generalColor?: string;
+  backgroundColor?: string;
   posImage?: string;
 }
 
 export const RFATabsCardNoImage: React.FC<IProps> = (props: IProps) => {
   return (
-    <Container style={styles.posContainer({borderColor: props.borderColor, color: props.color})}>
+    <Container style={styles.posContainer({borderColor: props.generalColor, color: props.generalColor, backgroundColor: props.backgroundColor})}>
       <div>
         <Row>
           <Col>
@@ -57,7 +58,7 @@ export const RFATabsCardNoImage: React.FC<IProps> = (props: IProps) => {
 
 export const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
   return (
-    <Container style={styles.posContainer({borderColor: props.borderColor, color: props.color})}>
+    <Container style={styles.posContainer({borderColor: props.generalColor, color: props.generalColor, backgroundColor: props.backgroundColor})}>
       <div>
         <h1 className="header-size" style={styles.posHeader}>
           {props.posHeader}
@@ -83,7 +84,7 @@ export const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
 
 export const RFATabsCardRightImage: React.FC<IProps> = (props: IProps) => {
   return (
-    <Container style={styles.posContainer({borderColor: props.borderColor, color: props.color})}>
+    <Container style={styles.posContainer({borderColor: props.generalColor, color: props.generalColor, backgroundColor: props.backgroundColor})}>
       <div>
         <h1 className="header-size" style={styles.posHeader}>
           {props.posHeader}

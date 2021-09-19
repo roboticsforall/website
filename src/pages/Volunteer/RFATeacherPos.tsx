@@ -68,8 +68,6 @@ export const RFATeacherPos: React.FC = () => {
       <br></br>
       <br></br>
       <Container>
-        <RFAPosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
-              <br/>
         <br></br>
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
@@ -95,8 +93,7 @@ export const RFATeacherPos: React.FC = () => {
             <Tab.Pane eventKey="one">
               <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
-                borderColor = {ColorThemes.mainYellow}
-                color = {ColorThemes.mainYellow}
+                generalColor = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -107,6 +104,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardRightImage
                 posHeader={"SCHEDULING"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={Calendar}
                 posDescription={
                   <div>
@@ -119,12 +117,14 @@ export const RFATeacherPos: React.FC = () => {
               <RFATabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
+                generalColor = {ColorThemes.mainYellow}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.tasks}</Markdown>
                 }
               />
               <RFATabsCardRightImage
                 posHeader={"CURRICULA"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={Curriculum}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.curriculum}</Markdown>
@@ -132,6 +132,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
+                generalColor = {ColorThemes.mainYellow}
                 posImage={Clock}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.time_commitment}</Markdown>
@@ -139,6 +140,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={ThumbsUp}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.benefits}</Markdown>
@@ -146,6 +148,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
+                generalColor = {ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.requirments}</Markdown>
@@ -153,6 +156,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={Presentation}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.beneficial_qualifications}</Markdown>
@@ -162,8 +166,7 @@ export const RFATeacherPos: React.FC = () => {
             <Tab.Pane eventKey="two">
               <RFATabsCardNoImage
                 posHeader={"OVERVIEW"}
-                borderColor = {ColorThemes.mainYellow}
-                color = {ColorThemes.mainYellow}
+                generalColor = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -175,6 +178,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardRightImage
                 posHeader={"SCHEDULING"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={Calendar}
                 posDescription={
                   <div>
@@ -188,6 +192,7 @@ export const RFATeacherPos: React.FC = () => {
               <RFATabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
+                generalColor = {ColorThemes.mainYellow}
                 posDescription={
                   <Markdown>{taOverviewJSON.tasks}</Markdown>
                 }
@@ -195,6 +200,7 @@ export const RFATeacherPos: React.FC = () => {
               <RFATabsCardRightImage
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
+                generalColor = {ColorThemes.mainOrange}
                 posDescription={
                   <Markdown>{taOverviewJSON.curriculum}</Markdown>
 
@@ -202,14 +208,15 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
+                generalColor = {ColorThemes.mainYellow}
                 posImage={Clock}
                 posDescription={
                   <Markdown>{taOverviewJSON.time_commitment}</Markdown>
-
                 }
               />
               <RFATabsCardRightImage
                 posHeader={"BENEFITS"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={ThumbsUp}
                 posDescription={
                   <Markdown>{taOverviewJSON.benefits}</Markdown>
@@ -218,6 +225,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
+                generalColor = {ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={
                   <Markdown>{taOverviewJSON.requirments}</Markdown>
@@ -226,6 +234,7 @@ export const RFATeacherPos: React.FC = () => {
               />
               <RFATabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
+                generalColor = {ColorThemes.mainOrange}
                 posImage={Presentation}
                 posDescription={
                   <Markdown>{taOverviewJSON.beneficial_qualifications}</Markdown>
@@ -236,7 +245,10 @@ export const RFATeacherPos: React.FC = () => {
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
+        <RFAPosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
       </Container>
+      <br/>
+
       <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
       <Container>
         {volunteerFAQJSON.teacher_faq_list.map((QAPair) => (

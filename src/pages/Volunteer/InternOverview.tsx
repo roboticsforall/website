@@ -5,7 +5,6 @@ import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFATabsCardLeftImage, RFATabsCardNoImage, RFATabsCardRightImage } from "@/components/RFATabCards";
 import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
-import { RFAPosButton } from "@/components/RFAPosButton";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";
@@ -50,8 +49,7 @@ export const InternOverview: React.FC = () => {
           <Tab.Content>
             <RFATabsCardNoImage
               posHeader={"OVERVIEW"}
-              borderColor = {ColorThemes.mainYellow}
-              color = {ColorThemes.mainYellow}
+              generalColor = {ColorThemes.mainYellow}
               posDescription={
                 <div>
                   <p>
@@ -60,11 +58,21 @@ export const InternOverview: React.FC = () => {
                 </div>
               }
             />
-            <RFAInternDescriptionTabs/>
+            <RFAInternDescriptionTabs
+              publicityDescription = {
+                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+              }
+              technicalDescription = {
+                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+              }
+              businessDescription = {
+                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+              }
+            />
             <RFATabsCardRightImage
               posHeader={"SCHEDULING"}
               posImage={Calendar}
-              color = {ColorThemes.lightYellow}
+              generalColor = {ColorThemes.lightYellow}
               posDescription={
                 <div>
                     <Markdown>{pubInternOverviewJSON.tasks}</Markdown>
@@ -74,7 +82,7 @@ export const InternOverview: React.FC = () => {
             <RFATabsCardLeftImage
               posHeader={"TIME COMMITMENT"}
               posImage={Clock}
-              color = {ColorThemes.mainYellow}
+              generalColor = {ColorThemes.mainYellow}
               posDescription={
                 <Markdown>{pubInternOverviewJSON.time_commitment}</Markdown>
               }
@@ -82,7 +90,7 @@ export const InternOverview: React.FC = () => {
             <RFATabsCardRightImage
               posHeader={"BENEFITS"}
               posImage={ThumbsUp}
-              color = {ColorThemes.lightYellow}
+              generalColor = {ColorThemes.lightYellow}
               posDescription={
                 <Markdown>{pubInternOverviewJSON.benefits}</Markdown>
               }
@@ -90,7 +98,7 @@ export const InternOverview: React.FC = () => {
             <RFATabsCardLeftImage
               posHeader={"REQUIREMENTS"}
               posImage={Laptop}
-              color = {ColorThemes.mainYellow}
+              generalColor = {ColorThemes.mainYellow}
               posDescription={
                 <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
               }
@@ -98,7 +106,7 @@ export const InternOverview: React.FC = () => {
             <RFATabsCardRightImage
               posHeader={"BENEFICIAL QUALIFICATIONS"}
               posImage={Presentation}
-              color = {ColorThemes.lightYellow}
+              generalColor = {ColorThemes.lightYellow}
               posDescription={
                 <Markdown>{pubInternOverviewJSON.beneficial_qualifications}</Markdown>
               }

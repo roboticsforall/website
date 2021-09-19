@@ -66,8 +66,7 @@ export const PublicityPositions: React.FC = () => {
           <Tab.Content>
               <RFATabsCardNoImage
                 posHeader={"DETAILS"}
-                borderColor = {ColorThemes.mainOrange}
-                color = {ColorThemes.mainOrange}
+                generalColor = {ColorThemes.mainOrange}
                 posDescription={
                   <div>
                     <p>

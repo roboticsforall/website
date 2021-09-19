@@ -66,8 +66,7 @@ export const TechnicalPositions: React.FC = () => {
           <Tab.Content>
               <RFATabsCardNoImage
                 posHeader={"DETAILS"}
-                borderColor = {ColorThemes.mainGreen}
-                color = {ColorThemes.mainGreen}
+                generalColor = {ColorThemes.mainGreen}
                 posDescription={
                   <div>
                     <p>

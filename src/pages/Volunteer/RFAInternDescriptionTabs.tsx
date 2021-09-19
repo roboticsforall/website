@@ -3,22 +3,27 @@ import { Container, Tab, Nav, Image, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 
-import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
-import Markdown from "markdown-to-jsx";
+
 
 import {createUseStyles} from 'react-jss';
 
 import { ColorThemes } from "@/colors";
+import { propTypes } from "react-bootstrap/esm/Image";
 
 interface IProps {
   posHeader: string;
   posDescription: JSX.Element;
-  color: {main: String, light: String};
-  borderColor?: string;
+  generalColor: {main: String, light: String};
+  backgroundColor?: string;
   posImage?: string;
 }
+interface IProps2 {
+  publicityDescription: JSX.Element;
+  technicalDescription: JSX.Element;
+  businessDescription: JSX.Element;
+}
 
-export const RFAInternDescriptionTabs: React.FC = () => {
+export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
   const [key, setKey] = useState("one");
 
   const styles = {
@@ -73,30 +78,24 @@ export const RFAInternDescriptionTabs: React.FC = () => {
               <RFATabsCardLeftImage
                 posHeader={"GENERAL BUSINESS PATH"}
                 posImage={TobyHeaderLogo}
-                color = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue}}
-                posDescription={
-                  <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
-                }
+                generalColor = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue}}
+                posDescription = {props.businessDescription}
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <RFATabsCardLeftImage
                 posHeader={"TECHNICAL PATH"}
                 posImage={TobyHeaderLogo}
-                color = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen}}
-                posDescription={
-                  <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
-                }
+                generalColor = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen}}
+                posDescription={props.technicalDescription}
               />
             </Tab.Pane>
             <Tab.Pane eventKey="three">
               <RFATabsCardLeftImage
                 posHeader={"PUBLICITY PATH"}
                 posImage={TobyHeaderLogo}
-                color = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange}}
-                posDescription={
-                  <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
-                }
+                generalColor = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange}}
+                posDescription={props.publicityDescription}
               />
             </Tab.Pane>
           </Tab.Content>
@@ -122,7 +121,8 @@ const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       borderRadius: "0 0 15px 15px",
       margin: "0 0 40px 0",
       color: props.color,
-      borderColor: props.borderColor
+      borderColor: props.borderColor,
+      backgroundColor: props.backgroundColor,
     }),
     buttonHeader: {
       fontFamily: "BeVietnam-ExtraBold",
@@ -147,10 +147,10 @@ const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
     }),
   })
 
-  const classes = useStyles({backgroundColor: props.color.light});
+  const classes = useStyles({backgroundColor: props.generalColor.light});
 
   return (
-    <Container style={styles.posContainer({borderColor: props.borderColor, color: props.color.main})}>
+    <Container style={styles.posContainer({borderColor: props.generalColor.main, color: props.generalColor.main, backgroundColor: props.backgroundColor})}>
       <div>
         <h1 className="header-size" style={styles.posHeader}>
           {props.posHeader}
