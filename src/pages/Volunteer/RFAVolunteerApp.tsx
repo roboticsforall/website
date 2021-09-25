@@ -18,16 +18,7 @@ export const RFAVolunteerApp: React.FC = () => {
     background: "#FFCC00",
     border: "none",
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
-    fontSize: "x-large",
-    padding: "30px",
-  };
-  const ActiveStyle2: React.CSSProperties = {
-    color: "#000000",
-    background: "#FA8D1F",
-    border: "none",
-    borderRadius: "15px 15px 0 0",
-    fontFamily: "Mazzard-H-Extrabold",
+    fontFamily: "BeVietnam-ExtraBold",
     fontSize: "x-large",
     padding: "30px",
   };
@@ -52,15 +43,7 @@ export const RFAVolunteerApp: React.FC = () => {
                 eventKey="one"
                 style={key === "one" ? ActiveStyle : ActiveStyle}
               >
-                Teacher Application
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                eventKey="two"
-                style={key === "two" ? ActiveStyle2 : ActiveStyle2}
-              >
-                Publicity Application
+                Teacher/TA
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -101,6 +84,7 @@ export const RFAVolunteerApp: React.FC = () => {
               businessDescription = {
                 <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
               }
+              addButtons = {false}
         />
       </Container>
     </div>

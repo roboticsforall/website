@@ -68,6 +68,7 @@ export const InternOverview: React.FC = () => {
               businessDescription = {
                 <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
               }
+              addButtons = {true}
             />
             <RFATabsCardRightImage
               posHeader={"SCHEDULING"}

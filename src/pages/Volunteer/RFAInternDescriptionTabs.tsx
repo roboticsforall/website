@@ -14,6 +14,7 @@ interface IProps {
   posHeader: string;
   posDescription: JSX.Element;
   generalColor: {main: String, light: String};
+  addButtons : boolean;
   backgroundColor?: string;
   posImage?: string;
 }
@@ -21,6 +22,7 @@ interface IProps2 {
   publicityDescription: JSX.Element;
   technicalDescription: JSX.Element;
   businessDescription: JSX.Element;
+  addButtons : boolean;
 }
 
 export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
@@ -80,6 +82,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                 posImage={TobyHeaderLogo}
                 generalColor = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue}}
                 posDescription = {props.businessDescription}
+                addButtons = {props.addButtons}
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
@@ -88,6 +91,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                 posImage={TobyHeaderLogo}
                 generalColor = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen}}
                 posDescription={props.technicalDescription}
+                addButtons = {props.addButtons}
               />
             </Tab.Pane>
             <Tab.Pane eventKey="three">
@@ -96,6 +100,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                 posImage={TobyHeaderLogo}
                 generalColor = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange}}
                 posDescription={props.publicityDescription}
+                addButtons = {props.addButtons}
               />
             </Tab.Pane>
           </Tab.Content>
@@ -169,6 +174,7 @@ const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
             </div>
           </Col>
         </Row>
+        {props.addButtons ? (
         <Row>
           <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 7.5px 0px 0px"}}>
             <Link to = "" className = "hyperlink">
@@ -185,6 +191,8 @@ const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
             </Link>
           </Col>
         </Row>
+        ) : (<></>)}
+
       </div>
 
     </Container>

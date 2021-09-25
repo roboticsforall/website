@@ -149,11 +149,17 @@ collections:
           - label: "Register Google Form Embed Code"
             name: "register_form_code"
             widget: code
-          - label: "Teacher App Google Form Embed Code"
-            name: "teacher_app_form_code"
+          - label: "Teacher/TA Google Form Embed Code"
+            name: "teaching_app_form_code"
             widget: code
-          - label: "Publicity App Google Form Embed Code"
-            name: "publicity_app_form_code"
+          - label: "General Intern Google Form Embed Code"
+            name: "general_intern_app_form_code"
+            widget: code
+          - label: "Publicity Intern Google Form Embed Code"
+            name: "publicity_intern_app_form_code"
+            widget: code
+          - label: "Technical Intern Google Form Embed Code"
+            name: "technical_intern_app_form_code"
             widget: code
   - label: "Enroll Links" # used in UI
     name: "enroll_links" # used in routes
