@@ -6,10 +6,7 @@ import headerBlob from "@/media/HeaderBlobs/yellow.png";
 import { RFATabsCardNoImage } from "@/components/RFATabCards";
 import { RFAPosButton } from "@/components/RFAPosButton";
 
-import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import Markdown from "markdown-to-jsx";
-
-import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";

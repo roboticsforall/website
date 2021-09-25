@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Container, Tab, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Container, Tab } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFATabsCardLeftImage, RFATabsCardNoImage, RFATabsCardRightImage } from "@/components/RFATabCards";
@@ -21,9 +20,6 @@ import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
 
 export const InternOverview: React.FC = () => {
-  const black = {
-    color: "#000000",
-  };
   const positionsTitle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",

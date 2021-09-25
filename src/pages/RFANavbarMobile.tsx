@@ -56,6 +56,7 @@ export const RFANavbarMobile: React.FC = () => {
         <ul className = "mx-3 p-0" style = {{height: "50%", overflowY: "auto", ...list}}>
         {[...enrollvolunteerabout, ...contactaboutdonate].map((navItem, i) => (
           <RFAMobileNavbarItem 
+            key = {i}
             headerName = {navItem.headerName}
             subPages = {navItem.subPages}
             setNavHeight = {setNavHeight}
@@ -117,10 +118,10 @@ const RFAMobileNavbarItem: React.FC<{
           <hr />
           <ul style={{display: dropdownDisplay, ...list}}>
               {props.subPages.map((subPageInfo, i) => (
-                  <React.Fragment>
-                      <Link onClick = {props.setNavHeight} style = {dropdownItemText} className="hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
+                  <>
+                      <Link key = {i} onClick = {props.setNavHeight} style = {dropdownItemText} className="hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
                       <hr />
-                  </React.Fragment>
+                  </>
               ))}
           </ul>
       </React.Fragment>

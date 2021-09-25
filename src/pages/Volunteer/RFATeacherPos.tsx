@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFATabsCardNoImage, RFATabsCardLeftImage, RFATabsCardRightImage } from "@/components/RFATabCards";
@@ -16,7 +15,6 @@ import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";
 import TasksOrange from "@/media/Graphics/tasksOrange.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
-import QuestionMark from "@/media/Graphics/questionMark.png";
 
 import Markdown from "markdown-to-jsx";
 import teacherOverviewJSON from "@/posts/teacher_overview.json";

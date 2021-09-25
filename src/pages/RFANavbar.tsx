@@ -1,5 +1,4 @@
 import React from "react";
-import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 import { RFANavbarDesktop } from "./RFANavbarDesktop";
 import { RFANavbarMobile } from "./RFANavbarMobile";
 

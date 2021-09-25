@@ -48,7 +48,7 @@ export const RFANavbarDesktop: React.FC = () => {
               </div>
               <ul className = "dropdown-container" style = {list}>
                 {navItem.subPages.map((subPageInfo, i) => (
-                  <Link className = "hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
+                  <Link key = {i} className = "hyperlink" to = {subPageInfo.to}><li>{subPageInfo.subPageName}</li></Link>
                 ))}
               </ul>
             </li>

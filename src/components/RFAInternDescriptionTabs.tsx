@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { Container, Tab, Nav, Image, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
-import googleForms from "@/posts/google_form.json";
 
 
 
 import {createUseStyles} from 'react-jss';
 
 import { ColorThemes } from "@/colors";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 interface IProps {
   posHeader: string;

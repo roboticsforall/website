@@ -23,9 +23,6 @@ export const RFAFAQDropdowns: React.FC<IProps> = (props: IProps) => {
   const dropdownDisplay = {
     display: dropdownAnswerDisplay,
   };
-  const button = {
-    background: "none",
-  };
 
   const displayDiv = () => {
     dropdownAnswerDisplay === "none"

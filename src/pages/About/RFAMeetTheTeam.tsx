@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Col, Image } from "react-bootstrap";
+import {Col, Image } from "react-bootstrap";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import Markdown from "markdown-to-jsx";

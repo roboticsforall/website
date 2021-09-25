@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import {createUseStyles} from 'react-jss';
 import { ColorThemes } from "@/colors";
 
 
