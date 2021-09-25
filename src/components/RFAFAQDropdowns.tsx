@@ -61,7 +61,7 @@ export const RFAFAQDropdowns: React.FC<IProps> = (props: IProps) => {
 
   
   return (
-    <div>
+    <div onClick={displayDiv}>
       <Row
         className = {classes.dropdown}
       >
@@ -69,18 +69,13 @@ export const RFAFAQDropdowns: React.FC<IProps> = (props: IProps) => {
           <h3 style = {{color: dropdownTextColor}}>{props.question}</h3>
         </Col>
         <Col>
-          <button
-            style={button}
-            onClick={displayDiv}
-            className="background-none border-0"
-          >
             <img
               alt="dropdownArrow"
               width="70"
               height="40"
               src={dropdownIcon}
+              style = {dropdownAnswerDisplay == "block" ? {transform: "rotate(180deg)"} : {transform: "rotate(0deg)"}}
             />
-          </button>
         </Col>
       </Row>
       <br />
