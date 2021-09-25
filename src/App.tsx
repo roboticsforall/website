@@ -18,7 +18,6 @@ import { InternOverview } from "./pages/Volunteer/InternOverview";
 import { PublicityPositions } from "./pages/Volunteer/PublicityPositions";
 import { TechnicalPositions } from "./pages/Volunteer/TechnicalPositions";
 import { BusinessPositions } from "./pages/Volunteer/BusinessPositions";
-import { RFAVolunteerFAQ } from "./pages/Volunteer/RFAVolunteerFAQ";
 import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
 import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
@@ -64,11 +63,7 @@ export const App: React.FC = () => {
 
 {/* Volunteer Pages */}
                 <Route exact path="/volunteer/overview" component={RFAVolOverview} />
-
-                <Route
-                  exact path="/volunteer/volunteerfaq"
-                  component={RFAVolunteerFAQ}
-                />
+                
                 <Route exact path="/volunteer/teacherpos" component={RFATeacherPos} />
                 <Route
                   exact path="/volunteer/internoverview"

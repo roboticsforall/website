@@ -260,6 +260,76 @@ collections:
             widget: markdown
           - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "beneficial_qualifications"
+  - label: "Intern Positions Decriptions" # used in UI
+    name: "intern_positions_descriptions" # used in routes
+    files:
+      - label: "General Intern"
+        name: "general_intern"
+        file: "src/posts/general_intern.json"
+        fields:
+          - label: "General Intern Details"
+            name: "overview"
+            widget: markdown
+          - label: "Positions"
+            widget: list
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: string}
+      - label: "TA Overview"
+        name: "ta_overview"
+        file: "src/posts/ta_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Scheduling"
+            name: "scheduling"
+            widget: markdown
+          - label: "Tasks (Add Bulleted List)"
+            name: "tasks"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "time_commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "beneficial_qualifications"
+            widget: markdown
+      - label: "Intern Overview"
+        name: "intern_overview"
+        file: "src/posts/intern_overview.json"
+        fields:
+          - label: "Overview"
+            name: "overview"
+            widget: markdown
+          - label: "Intern Path"
+            name: "internpath"
+            widget: markdown
+          - label: "Scheduling"
+            name: "scheduling"
+            widget: markdown
+          - label: "Curriculum (Add Bulleted List)"
+            name: "curriculum"
+            widget: markdown
+          - label: "Time Commitment (Add Bulleted List)"
+            name: "time_commitment"
+            widget: markdown
+          - label: "Benefits (Add Bulleted List)"
+            name: "benefits"
+            widget: markdown
+          - label: "Requirments (Add Bulleted List)"
+            name: "requirments"
+            widget: markdown
+          - label: "Beneficial Qualifications (Add Bulleted List)"
+            name: "beneficial_qualifications"
   - label: "Leadership Team Info" # used in UI
     name: "leadership_team_info" # used in routes
     files:

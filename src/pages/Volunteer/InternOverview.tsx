@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { RFATabsCardLeftImage, RFATabsCardNoImage, RFATabsCardRightImage } from "@/components/RFATabCards";
-import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
+import { RFAInternDescriptionTabs } from "../../components/RFAInternDescriptionTabs";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";

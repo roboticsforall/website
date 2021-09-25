@@ -7,14 +7,23 @@ import googleForms from "@/posts/google_form.json";
 import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 
-import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
+import { RFAInternDescriptionTabs } from "../../components/RFAInternDescriptionTabs";
 
 
 export const RFAVolunteerApp: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle: React.CSSProperties = {
-    color: "#000000",
-    background: "#FFCC00",
+    color: ColorThemes.black,
+    background: ColorThemes.mainYellow,
+    border: "none",
+    borderRadius: "15px 15px 0 0",
+    fontFamily: "BeVietnam-ExtraBold",
+    fontSize: "x-large",
+    padding: "30px",
+  };
+  const InActiveStyle: React.CSSProperties = {
+    color: ColorThemes.black,
+    background: ColorThemes.mainOrange,
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
@@ -40,9 +49,17 @@ export const RFAVolunteerApp: React.FC = () => {
             <Nav.Item>
               <Nav.Link
                 eventKey="one"
-                style={key === "one" ? ActiveStyle : ActiveStyle}
+                style={key === "one" ? ActiveStyle : InActiveStyle}
               >
-                Teacher/TA
+                Teacher
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                eventKey="two"
+                style={key === "two" ? ActiveStyle : InActiveStyle}
+              >
+                TA
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -61,8 +78,8 @@ export const RFAVolunteerApp: React.FC = () => {
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <RFATabsCardNoImage
-                generalColor = {ColorThemes.mainOrange}
-                backgroundColor = {ColorThemes.lightOrange}
+                generalColor = {ColorThemes.mainYellow}
+                backgroundColor = {ColorThemes.lightYellow}
                 posHeader={""}
                 posDescription={
                   <div className="center-align">
