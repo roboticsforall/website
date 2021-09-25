@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
 import headerBlob from "@/media/HeaderBlobs/yellow.png";
 import { RFATabsCardNoImage } from "@/components/RFATabCards";
@@ -11,7 +10,7 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
-import publicityInternJSON from "@/posts/publicity_intern.json"
+import curricdevpositionsJSON from "@/posts/curriculum_developer.json";
 
 
 export const CurricDevPositions: React.FC = () => {
@@ -69,7 +68,7 @@ export const CurricDevPositions: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      <Markdown>{publicityInternJSON.publicity_intern_details}</Markdown>
+                      <Markdown>{curricdevpositionsJSON.curriculum_developer_details}</Markdown>
                     </p>
                   </div>
                 }
@@ -78,7 +77,7 @@ export const CurricDevPositions: React.FC = () => {
               <br/>
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
-                {publicityInternJSON.positions.map((pair, i) => (
+                {curricdevpositionsJSON.positions.map((pair, i) => (
                   <RFAFAQDropdowns
                     key={i}
                     question={pair.name}

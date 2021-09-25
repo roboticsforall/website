@@ -16,6 +16,7 @@ interface IProps {
   addButtons : boolean;
   backgroundColor?: string;
   posImage?: string;
+  learnMoreLocation: string;
 }
 interface IProps2 {
   publicityDescription: JSX.Element;
@@ -54,7 +55,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                   eventKey="one"
                   style={key === "one" ? styles.general({backgroundColor: ColorThemes.mainBlue}) : styles.general({backgroundColor: ColorThemes.lightBlue})}
                  >
-                  <p style={styles.blackText}>General</p>
+                  <p style={styles.blackText}>General Business</p>
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
@@ -82,6 +83,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                 generalColor = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue}}
                 posDescription = {props.businessDescription}
                 addButtons = {props.addButtons}
+                learnMoreLocation = "/volunteer/businesspositions"
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
@@ -91,6 +93,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                 generalColor = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen}}
                 posDescription={props.technicalDescription}
                 addButtons = {props.addButtons}
+                learnMoreLocation = "/volunteer/technicalpositions"
               />
             </Tab.Pane>
             <Tab.Pane eventKey="three">
@@ -100,6 +103,7 @@ export const RFAInternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
                 generalColor = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange}}
                 posDescription={props.publicityDescription}
                 addButtons = {props.addButtons}
+                learnMoreLocation = "/volunteer/publicitypositions"
               />
             </Tab.Pane>
           </Tab.Content>
@@ -176,7 +180,7 @@ const RFATabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
         {props.addButtons ? (
         <Row>
           <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 7.5px 0px 0px"}}>
-            <Link to = "" className = "hyperlink">
+            <Link to = {props.learnMoreLocation} className = "hyperlink">
               <h1 className="header-size" style={styles.buttonHeader}>
                 Learn More
               </h1>

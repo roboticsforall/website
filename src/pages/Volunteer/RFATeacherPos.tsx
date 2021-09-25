@@ -6,8 +6,6 @@ import { RFATabsCardNoImage, RFATabsCardLeftImage, RFATabsCardRightImage } from 
 import { RFAPosButton } from "@/components/RFAPosButton";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
-
-
 import Calendar from "@/media/Graphics/calendar.png";
 import Clock from "@/media/Graphics/clock.png";
 import Curriculum from "@/media/Graphics/curriculum.png";

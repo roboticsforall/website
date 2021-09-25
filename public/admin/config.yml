@@ -241,6 +241,15 @@ collections:
         name: "intern_overview"
         file: "src/posts/intern_overview.json"
         fields:
+          - label: "General Business Path"
+            name: "general_business_path"
+            widget: markdown
+          - label: "Technical Path"
+            name: "technical_path"
+            widget: markdown
+          - label: "Publicity Path"
+            name: "publicity_path"
+            widget: markdown
           - label: "Overview"
             name: "overview"
             widget: markdown
