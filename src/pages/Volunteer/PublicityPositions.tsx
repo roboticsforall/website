@@ -14,7 +14,7 @@ import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
-import {publicity_intern} from "@/posts/publicity_intern.json"
+import publicityInternJSON from "@/posts/publicity_intern.json"
 
 
 export const PublicityPositions: React.FC = () => {
@@ -72,7 +72,7 @@ export const PublicityPositions: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      <Markdown>{pubInternOverviewJSON.overview}</Markdown>
+                      <Markdown>{publicityInternJSON.publicity_intern_details}</Markdown>
                     </p>
                   </div>
                 }
@@ -81,11 +81,11 @@ export const PublicityPositions: React.FC = () => {
               <br/>
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
-                {volunteerFAQJSON.publicity_faq_list.map((QAPair) => (
+                {publicityInternJSON.positions.map((pair, i) => (
                   <RFAFAQDropdowns
-                    key={QAPair.question}
-                    question={QAPair.question}
-                    answer={QAPair.answer}
+                    key={i}
+                    question={pair.name}
+                    answer={pair.description}
                     colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
                   />
                 ))}

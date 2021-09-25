@@ -13,7 +13,7 @@ import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
-import {technical_intern} from "@/posts/technical_intern.json"
+import technicalInternJSON from "@/posts/technical_intern.json"
 
 
 
@@ -72,7 +72,7 @@ export const TechnicalPositions: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      <Markdown>{pubInternOverviewJSON.overview}</Markdown>
+                      <Markdown>{technicalInternJSON.technical_intern_details}</Markdown>
                     </p>
                   </div>
                 }
@@ -81,11 +81,11 @@ export const TechnicalPositions: React.FC = () => {
               <br/>
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
-                {volunteerFAQJSON.publicity_faq_list.map((QAPair) => (
+                {technicalInternJSON.positions.map((pair, i) => (
                   <RFAFAQDropdowns
-                    key={QAPair.question}
-                    question={QAPair.question}
-                    answer={QAPair.answer}
+                    key={i}
+                    question={pair.name}
+                    answer={pair.description}
                     colors = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen, dark: ColorThemes.darkGreen, backgroundHover: ColorThemes.mainYellow}}
                   />
                 ))}

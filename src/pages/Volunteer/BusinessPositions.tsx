@@ -13,7 +13,7 @@ import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
-import {business_intern} from "@/posts/general_intern.json"
+import generalInternJSON from "@/posts/general_intern.json"
 
 
 export const BusinessPositions: React.FC = () => {
@@ -71,18 +71,18 @@ export const BusinessPositions: React.FC = () => {
                 posDescription={
                   <div>
                     <p>
-                      <Markdown>{pubInternOverviewJSON.overview}</Markdown>
+                      <Markdown>{generalInternJSON.general_intern_details}</Markdown>
                     </p>
                   </div>
                 }
               />
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
-                {volunteerFAQJSON.publicity_faq_list.map((QAPair) => (
+                {generalInternJSON.positions.map((pair, i) => (
                   <RFAFAQDropdowns
-                    key={QAPair.question}
-                    question={QAPair.question}
-                    answer={QAPair.answer}
+                    key={i}
+                    question={pair.name}
+                    answer={pair.description}
                     colors = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue, dark: ColorThemes.darkBlue, backgroundHover: ColorThemes.mainYellow}}
                   />
                 ))}
