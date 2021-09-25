@@ -21,7 +21,8 @@ import QuestionMark from "@/media/Graphics/questionMark.png";
 import Markdown from "markdown-to-jsx";
 import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
-import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
+import teachingfaqsJSON from "@/posts/faqs/teaching_faqs.json";
+
 
 import { ColorThemes } from "@/colors";
 
@@ -251,7 +252,7 @@ export const RFATeacherPos: React.FC = () => {
 
       <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
       <Container>
-        {volunteerFAQJSON.teacher_faq_list.map((QAPair) => (
+        {teachingfaqsJSON.teaching_faq_list.map((QAPair) => (
           <RFAFAQDropdowns
             key={QAPair.question}
             question={QAPair.question}

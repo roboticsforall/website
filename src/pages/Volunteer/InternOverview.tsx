@@ -14,7 +14,7 @@ import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import Markdown from "markdown-to-jsx";
 
-import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
+import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
@@ -114,7 +114,7 @@ export const InternOverview: React.FC = () => {
             />
             <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
             <Container>
-              {volunteerFAQJSON.publicity_faq_list.map((QAPair) => (
+              {internfaqsJSON.intern_faqs_list.map((QAPair) => (
                 <RFAFAQDropdowns
                   key={QAPair.question}
                   question={QAPair.question}
