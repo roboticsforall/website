@@ -58,16 +58,6 @@ export const RFANews: React.FC = () => {
   useEffect(() => {
     Promise.all(photosImport).then(setPhotos);
   }, []);
-  const buttonStyles: React.CSSProperties = {
-    width: "272px",
-    height: "81px",
-    background: ColorThemes.mainOrange,
-    borderRadius: "15px",
-    border: "none",
-    fontSize: "28px",
-    fontFamily: "BeVietnam-Medium",
-    color: "black",
-  };
   const linkStyles: React.CSSProperties = {
     textDecoration: "none",
     color: "black",
@@ -122,23 +112,6 @@ export const RFANews: React.FC = () => {
                   </a>{" "}
                   for press inquiries.
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <Button block size="lg" style={buttonStyles}>
-                  Info Packet
-                </Button>
-              </Col>
-              <Col>
-                <Button block size="lg" style={buttonStyles}>
-                  Stories
-                </Button>
-              </Col>
-              <Col>
-                <Button block size="lg" style={buttonStyles}>
-                  Photos
-                </Button>
               </Col>
             </Row>
           </Container>
