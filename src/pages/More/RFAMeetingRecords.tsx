@@ -23,16 +23,14 @@ export const RFAMeetingRecords: React.FC = () => {
   };
   return (
     <div>
-      <div>
-        <RFAHeader
-          headerTextColor={ColorThemes.mainYellow}
-          image={headerBlobYellow}
-          title={"Meeting Records"}
-          description={
-            "Learn more about Robotics for All's meeting agenda and minutes!"
-          }
-        />
-      </div>
+      <RFAHeader
+        headerTextColor={ColorThemes.mainYellow}
+        image={headerBlobYellow}
+        title={"Meeting Records"}
+        description={
+          "Learn more about Robotics for All's meeting agenda and minutes!"
+        }
+      />
       <br></br>
       <br></br>
       <Container>
@@ -66,6 +64,8 @@ export const RFAMeetingRecords: React.FC = () => {
           )
         )}
       </Container>
+      <br/>
+      <br/>
     </div>
   );
 };

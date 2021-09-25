@@ -55,6 +55,8 @@ export const RFACorpBylaws: React.FC = () => {
           />
         ))}
       </Container>
+      <br/>
+      <br/>
     </div>
   );
 };
