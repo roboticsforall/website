@@ -278,7 +278,7 @@ collections:
               - {label: Position Description, name: description, widget: markdown}
       - label: "Technical Intern"
         name: "technical_intern"
-        file: "src/posts/general_intern.json"
+        file: "src/posts/technical_intern.json"
         fields:
           - label: "Technical Intern Details"
             name: "technical_intern_details"
@@ -291,7 +291,7 @@ collections:
               - {label: Position Description, name: description, widget: markdown}
       - label: "Publicity Intern"
         name: "publicity_intern"
-        file: "src/posts/general_intern.json"
+        file: "src/posts/publicity_intern.json"
         fields:
           - label: "Publicity Intern Details"
             name: "publicity_intern_details"
