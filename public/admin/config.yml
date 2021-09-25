@@ -150,7 +150,7 @@ collections:
             name: "register_form_code"
             widget: code
           - label: "Teacher Google Form Embed Code"
-            name: "teaching_app_form_code"
+            name: "teacher_app_form_code"
             widget: code
           - label: "TA Google Form Embed Code"
             name: "ta_app_form_code"
