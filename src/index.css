@@ -218,6 +218,7 @@ label {
   margin: 0;
   color: #ffcc00;
   font-family: "BeVietnam-ExtraBold";
+  text-transform: uppercase;
 }
 
 .nav-item-header a:hover {
@@ -255,6 +256,7 @@ label {
   color: #ffffff; /* nav headers font style */
   font-family: "BeVietnam-ExtraBold";
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 .donate-nav-background {
   border-radius: 15px;

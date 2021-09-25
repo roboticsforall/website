@@ -72,9 +72,6 @@ export const RFANavbarDesktop: React.FC = () => {
               <a rel="noopener" target = "_blank" href = "https://www.bonfire.com/store/rfa/" className = "hyperlink"><li>Merch</li></a>
             </ul>
           </li>
-          <li>
-            <div id="google_translate_element"></div> 
-          </li>
       </ul>
     </nav>
   );
