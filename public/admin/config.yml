@@ -274,63 +274,35 @@ collections:
             name: "positions"
             widget: list
             fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: string}
-      - label: "TA Overview"
-        name: "ta_overview"
-        file: "src/posts/ta_overview.json"
+              - {label: Position Name, name: name, widget: string}
+              - {label: Position Description, name: description, widget: markdown}
+      - label: "Technical Intern"
+        name: "technical_intern"
+        file: "src/posts/general_intern.json"
         fields:
-          - label: "Overview"
-            name: "overview"
+          - label: "Technical Intern Details"
+            name: "technical_intern_details"
             widget: markdown
-          - label: "Scheduling"
-            name: "scheduling"
-            widget: markdown
-          - label: "Tasks (Add Bulleted List)"
-            name: "tasks"
-            widget: markdown
-          - label: "Curriculum (Add Bulleted List)"
-            name: "curriculum"
-            widget: markdown
-          - label: "Time Commitment (Add Bulleted List)"
-            name: "time_commitment"
-            widget: markdown
-          - label: "Benefits (Add Bulleted List)"
-            name: "benefits"
-            widget: markdown
-          - label: "Requirments (Add Bulleted List)"
-            name: "requirments"
-            widget: markdown
-          - label: "Beneficial Qualifications (Add Bulleted List)"
-            name: "beneficial_qualifications"
-            widget: markdown
-      - label: "Intern Overview"
-        name: "intern_overview"
-        file: "src/posts/intern_overview.json"
+          - label: "Positions"
+            name: "positions"
+            widget: list
+            fields:
+              - {label: Position Name, name: name, widget: string}
+              - {label: Position Description, name: description, widget: markdown}
+      - label: "Publicity Intern"
+        name: "publicity_intern"
+        file: "src/posts/general_intern.json"
         fields:
-          - label: "Overview"
-            name: "overview"
+          - label: "Publicity Intern Details"
+            name: "publicity_intern_details"
             widget: markdown
-          - label: "Intern Path"
-            name: "internpath"
-            widget: markdown
-          - label: "Scheduling"
-            name: "scheduling"
-            widget: markdown
-          - label: "Curriculum (Add Bulleted List)"
-            name: "curriculum"
-            widget: markdown
-          - label: "Time Commitment (Add Bulleted List)"
-            name: "time_commitment"
-            widget: markdown
-          - label: "Benefits (Add Bulleted List)"
-            name: "benefits"
-            widget: markdown
-          - label: "Requirments (Add Bulleted List)"
-            name: "requirments"
-            widget: markdown
-          - label: "Beneficial Qualifications (Add Bulleted List)"
-            name: "beneficial_qualifications"
+          - label: "Positions"
+            name: "positions"
+            widget: list
+            fields:
+              - {label: Position Name, name: name, widget: string}
+              - {label: Position Description, name: description, widget: markdown}
+              
   - label: "Leadership Team Info" # used in UI
     name: "leadership_team_info" # used in routes
     files:
