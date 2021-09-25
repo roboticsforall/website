@@ -268,9 +268,10 @@ collections:
         file: "src/posts/general_intern.json"
         fields:
           - label: "General Intern Details"
-            name: "overview"
+            name: "general_intern_details"
             widget: markdown
           - label: "Positions"
+            name: "positions"
             widget: list
             fields:
               - {label: Question, name: question, widget: string}
