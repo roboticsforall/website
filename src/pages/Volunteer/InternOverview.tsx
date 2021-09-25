@@ -17,6 +17,7 @@ import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import internOverviewJSON from "@/posts/intern_overview.json";
 
 
 export const InternOverview: React.FC = () => {
@@ -49,20 +50,20 @@ export const InternOverview: React.FC = () => {
               posDescription={
                 <div>
                   <p>
-                    <Markdown>{pubInternOverviewJSON.overview}</Markdown>
+                    <Markdown>{internOverviewJSON.overview}</Markdown>
                   </p>
                 </div>
               }
             />
             <RFAInternDescriptionTabs
               publicityDescription = {
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
               technicalDescription = {
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
               businessDescription = {
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
               addButtons = {true}
             />
@@ -72,7 +73,7 @@ export const InternOverview: React.FC = () => {
               generalColor = {ColorThemes.lightYellow}
               posDescription={
                 <div>
-                    <Markdown>{pubInternOverviewJSON.tasks}</Markdown>
+                    <Markdown>{internOverviewJSON.scheduling}</Markdown>
                 </div>
               }
             />
@@ -81,7 +82,7 @@ export const InternOverview: React.FC = () => {
               posImage={Clock}
               generalColor = {ColorThemes.mainYellow}
               posDescription={
-                <Markdown>{pubInternOverviewJSON.time_commitment}</Markdown>
+                <Markdown>{internOverviewJSON.time_commitment}</Markdown>
               }
             />
             <RFATabsCardRightImage
@@ -89,7 +90,7 @@ export const InternOverview: React.FC = () => {
               posImage={ThumbsUp}
               generalColor = {ColorThemes.lightYellow}
               posDescription={
-                <Markdown>{pubInternOverviewJSON.benefits}</Markdown>
+                <Markdown>{internOverviewJSON.benefits}</Markdown>
               }
             />
             <RFATabsCardLeftImage
@@ -97,7 +98,7 @@ export const InternOverview: React.FC = () => {
               posImage={Laptop}
               generalColor = {ColorThemes.mainYellow}
               posDescription={
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
             />
             <RFATabsCardRightImage
@@ -105,7 +106,7 @@ export const InternOverview: React.FC = () => {
               posImage={Presentation}
               generalColor = {ColorThemes.lightYellow}
               posDescription={
-                <Markdown>{pubInternOverviewJSON.beneficial_qualifications}</Markdown>
+                <Markdown>{internOverviewJSON.beneficial_qualifications}</Markdown>
               }
             />
             <h2 className = "header-size" style={positionsTitle}>FAQs</h2>

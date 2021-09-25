@@ -273,6 +273,7 @@ collections:
             widget: markdown
           - label: "Beneficial Qualifications (Add Bulleted List)"
             name: "beneficial_qualifications"
+            widget: markdown
   - label: "Intern Positions Decriptions" # used in UI
     name: "intern_positions_descriptions" # used in routes
     files:
