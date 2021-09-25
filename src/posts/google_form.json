@@ -1,10 +1,4 @@
 {
-  "teacher_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLSdxQe6sYXbPoLQ5MpFnptT6e5ptCQYFXq5U2fwcAaBBONrP8g/viewform?embedded=true\"\n  width=\"100%\"\n  height=\"400vmax\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
-  "publicity_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLSdYi6eUvSdgRQ6Yw2EsF_bdhCuKEskR-draKjd7FoNk_8jrbw/viewform?embedded=true\"\n  width=\"100%\"\n  height=\"400vmax\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
   "register_form_code": {
     "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
   },

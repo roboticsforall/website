@@ -7,7 +7,6 @@ import googleForms from "@/posts/google_form.json";
 import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 
-import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import { RFAInternDescriptionTabs } from "./RFAInternDescriptionTabs";
 
 
@@ -67,7 +66,7 @@ export const RFAVolunteerApp: React.FC = () => {
                 posHeader={""}
                 posDescription={
                   <div className="center-align">
-                    <Markdown>{googleForms.publicity_app_form_code.code}</Markdown>
+                    <Markdown>{googleForms.ta_app_form_code.code}</Markdown>
                   </div>
                 }
               />
@@ -76,13 +75,13 @@ export const RFAVolunteerApp: React.FC = () => {
         </Tab.Container>
         <RFAInternDescriptionTabs
               publicityDescription = {
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{googleForms.publicity_intern_app_form_code.code}</Markdown>
               }
               technicalDescription = {
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{googleForms.technical_intern_app_form_code.code}</Markdown>
               }
               businessDescription = {
-                <Markdown>{pubInternOverviewJSON.requirments}</Markdown>
+                <Markdown>{googleForms.general_intern_app_form_code.code}</Markdown>
               }
               addButtons = {false}
         />
