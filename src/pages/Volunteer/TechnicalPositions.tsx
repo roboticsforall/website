@@ -13,6 +13,8 @@ import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import {technical_intern} from "@/posts/technical_intern.json"
+
 
 
 export const TechnicalPositions: React.FC = () => {

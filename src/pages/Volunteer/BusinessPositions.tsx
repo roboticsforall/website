@@ -13,6 +13,7 @@ import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import {business_intern} from "@/posts/general_intern.json"
 
 
 export const BusinessPositions: React.FC = () => {

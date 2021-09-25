@@ -14,6 +14,8 @@ import volunteerFAQJSON from "@/posts/faqs/volunteer_faqs.json";
 import { ColorThemes } from "@/colors";
 import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 
+import {publicity_intern} from "@/posts/publicity_intern.json"
+
 
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
