@@ -1,9 +1,8 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
-
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { RFANavbar } from "./pages/RFANavbar";
+import ScrollToTop from "@/pages/ScrollToTop"; 
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
 import { RFAFooter } from "./pages/RFAFooter";
@@ -18,6 +17,7 @@ import { InternOverview } from "./pages/Volunteer/InternOverview";
 import { PublicityPositions } from "./pages/Volunteer/PublicityPositions";
 import { TechnicalPositions } from "./pages/Volunteer/TechnicalPositions";
 import { BusinessPositions } from "./pages/Volunteer/BusinessPositions";
+import { CurricDevPositions } from "./pages/Volunteer/CurricDevPositions";
 import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
 //About
 import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
@@ -45,6 +45,7 @@ export const App: React.FC = () => {
   return (
     <Router>
       <RFANavbar />
+      <ScrollToTop/>
       <Route
         render={({ location }) => (
           <TransitionGroup>
@@ -80,6 +81,10 @@ export const App: React.FC = () => {
                 <Route
                   exact path="/volunteer/businesspositions"
                   component={BusinessPositions}
+                />
+                <Route
+                  exact path="/volunteer/curricdevpositions"
+                  component={CurricDevPositions}
                 />
                 <Route
                   exact path="/volunteer/volunteerapp"

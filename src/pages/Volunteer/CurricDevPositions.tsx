@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { RFAHeader } from "@/components/RFAHeader";
-import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
+import headerBlob from "@/media/HeaderBlobs/yellow.png";
 import { RFATabsCardNoImage } from "@/components/RFATabCards";
 import { RFAPosButton } from "@/components/RFAPosButton";
 
@@ -17,10 +17,10 @@ import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
 import publicityInternJSON from "@/posts/publicity_intern.json"
 
 
-export const PublicityPositions: React.FC = () => {
+export const CurricDevPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
-    background: ColorThemes.mainOrange,
+    background: ColorThemes.mainYellow,
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
@@ -34,7 +34,7 @@ export const PublicityPositions: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
-    color: ColorThemes.mainOrange,
+    color: ColorThemes.mainYellow,
     textAlign: "center",
     textTransform: "uppercase",
   };
@@ -42,11 +42,11 @@ export const PublicityPositions: React.FC = () => {
   return (
     <div>
       <RFAHeader
-        headerTextColor = {ColorThemes.mainOrange}
-        image={headerBlobOrange}
-        title={"Volunteer to Build Our Outreach!"}
+        headerTextColor = {ColorThemes.mainYellow}
+        image={headerBlob}
+        title={"Help develop curriculum!"}
         description={
-          "Volunteer to help with graphic design, illustrations, and much much more!"
+          "Curriculum developers construct the diverse set of curriculum at RFA"
         }
       />
       <Container>
@@ -61,14 +61,14 @@ export const PublicityPositions: React.FC = () => {
                 className="pos"
                 style={ActiveStyle}
               >
-                <p style={black}>Publicity Intern Positions</p>
+                <p style={black}>Curriculum Developer Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
               <RFATabsCardNoImage
                 posHeader={"DETAILS"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor = {ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -77,7 +77,7 @@ export const PublicityPositions: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
+              <RFAPosButton backgroundColor = {ColorThemes.mainYellow} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
               <br/>
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>

@@ -119,7 +119,7 @@ export const InternOverview: React.FC = () => {
                   key={QAPair.question}
                   question={QAPair.question}
                   answer={QAPair.answer}
-                  colors = {{main: ColorThemes.mainYellow, light: ColorThemes.lightYellow, dark: ColorThemes.lightYellow, backgroundHover: ColorThemes.black}}
+                  colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
                 />
               ))}
               <br/>

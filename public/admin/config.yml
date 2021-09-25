@@ -302,6 +302,19 @@ collections:
             fields:
               - {label: Position Name, name: name, widget: string}
               - {label: Position Description, name: description, widget: markdown}
+      - label: "Curriculum Developer"
+        name: "curriculum_developer"
+        file: "src/posts/curriculum_developer.json"
+        fields:
+          - label: "Curriculum Developer Details"
+            name: "curriculum_developer_details"
+            widget: markdown
+          - label: "Positions"
+            name: "positions"
+            widget: list
+            fields:
+              - {label: Position Name, name: name, widget: string}
+              - {label: Position Description, name: description, widget: markdown}
               
   - label: "Leadership Team Info" # used in UI
     name: "leadership_team_info" # used in routes

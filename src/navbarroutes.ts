@@ -26,7 +26,7 @@ export const enrollvolunteerabout = [
           to: "/volunteer/overview",
         },
         {
-          subPageName: "Teachers Positions",
+          subPageName: "Teaching Overview and Positions",
           to: "/volunteer/teacherpos",
         },
         {
@@ -44,6 +44,10 @@ export const enrollvolunteerabout = [
         {
           subPageName: "Business Positions",
           to: "/volunteer/businesspositions",
+        },
+        {
+          subPageName: "Curriculum Development Positions",
+          to: "/volunteer/curricdevpositions",
         },
         {
           subPageName: "Volunteer Application",
