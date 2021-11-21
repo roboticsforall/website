@@ -3,7 +3,6 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "/public" # Media files will be stored in the repo under images/uploads
 public_folder: "/public" # The src attribute for uploaded media will begin with /images/uploads
-
 collections:
   - label: "FAQ's" # used in UI
     name: "faqs" # used in routes
@@ -177,6 +176,16 @@ collections:
         fields:
           - label: "Enroll Link for Ind Learners and Schools"
             name: "link"
+            widget: string
+  - label: "Updates" # used in UI
+    name: "updates" # used in routes
+    files:
+      - label: "Updates"
+        name: "updates"
+        file: "src/posts/updates.json"
+        fields:
+          - label: "General Website Updates"
+            name: "updates"
             widget: string
   - label: "Teacher/TA/Intern Overviews" # used in UI
     name: "teacher_ta_intern_overviews" # used in routes
