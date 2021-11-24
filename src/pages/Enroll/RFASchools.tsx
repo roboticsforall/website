@@ -87,7 +87,7 @@ export const RFASchools: React.FC = () => {
       </Container>
       <br></br>
       <br></br>
-      <Container fluid style={greenRow}>
+      <div style={greenRow}>
         <Container>
           <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
@@ -102,21 +102,21 @@ export const RFASchools: React.FC = () => {
           <br></br>
           <Row>
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
-                <RFACourseCard
-                  key = {i}
+              <RFACourseCard
+              key = {i}
                   link={courseInfo.class_description_link}
                   courseImage={courseInfo.file_path.replace("/public", "")}
                   title={courseInfo.course_name}
                   backgroundColor = {ColorThemes.lightGreen}
                   dropdownCourseDescription = {courseInfo.dropdown_course_description}
                   dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
-                ></RFACourseCard>
-            ))}
+                />
+                ))}
           </Row>
           <br></br>
           <br></br>
-        </Container>
-      </Container>
+          </Container>
+      </div>
         <h2 style={positionsTitle}>FAQs</h2>
         <Container>
           {classFAQJSON.class_faq_list.map((QAPair:any) => (

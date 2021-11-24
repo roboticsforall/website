@@ -82,10 +82,9 @@ export const RFAIndLearners: React.FC = () => {
       </Container>
         <br></br>
         <br></br>
-        <section style = {blueRow}>
+      <div style = {blueRow}>
           <Container>
           <br></br>
-          <Container>
             <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
             <br></br>
             <h5 style={bodyText}>
@@ -95,25 +94,24 @@ export const RFAIndLearners: React.FC = () => {
               <br></br>
               View our selection of courses below and click on the boxes to learn more:
             </h5>
-            </Container>
             <br></br>
             <Row>
                 {coursesInfoJSON.courses_list.map((courseInfo, i) => (
                   <RFACourseCard
-                    key = {i}
-                    link={courseInfo.class_description_link}
-                    courseImage={courseInfo.file_path.replace("/public", "")}
-                    title={courseInfo.course_name}
-                    backgroundColor = {ColorThemes.lightBlue}
-                    dropdownCourseDescription = {courseInfo.dropdown_course_description}
-                    dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
+                  key = {i}
+                  link={courseInfo.class_description_link}
+                  courseImage={courseInfo.file_path.replace("/public", "")}
+                  title={courseInfo.course_name}
+                  backgroundColor = {ColorThemes.lightBlue}
+                  dropdownCourseDescription = {courseInfo.dropdown_course_description}
+                  dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
                   />
-                ))}
+                  ))}
             </Row>
             <br></br>
             <br></br>
             </Container>
-          </section>
+        </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
         {classFAQJSON.class_faq_list.map((QAPair) => (
