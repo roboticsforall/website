@@ -55,8 +55,8 @@ export const CorpBylaws: React.FC = () => {
           />
         ))}
       </Container>
-      <br/>
-      <br/>
+      <br />
+      <br />
     </div>
   );
 };

@@ -50,17 +50,17 @@ export const Donate: React.FC = () => {
             donations are fully tax-deductible.
           </p>
         </Row>
-        <br/>
+        <br />
         <Row className="justify-content-center align-items-center">
-          <Col md = "auto">
+          <Col md="auto">
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"
-              target = "_blank"
+              target="_blank"
               style={buttonText}
               className="hyperlink"
               rel="noreferrer"
             >
-              <h1 className = "m-0 p-3 long-button header-size border text-center">
+              <h1 className="m-0 p-3 long-button header-size border text-center">
                 Donate
               </h1>
             </a>

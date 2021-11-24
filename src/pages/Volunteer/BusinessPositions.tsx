@@ -5,11 +5,9 @@ import headerBlob from "@/media/HeaderBlobs/blue.png";
 import { TabsCardNoImage } from "@/components/TabCards";
 import Markdown from "markdown-to-jsx";
 
-
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import generalInternJSON from "@/posts/general_intern.json"
-
+import generalInternJSON from "@/posts/general_intern.json";
 
 export const BusinessPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -50,41 +48,46 @@ export const BusinessPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link
-                eventKey="one"
-                className="pos"
-                style={ActiveStyle}
-              >
+              <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
                 <p style={black}>Business Intern Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <TabsCardNoImage
-                posHeader={"DETAILS"}
-                generalColor = {ColorThemes.mainBlue}
-                posDescription={
-                  <div>
-                    <p>
-                      <Markdown>{generalInternJSON.general_intern_details}</Markdown>
-                    </p>
-                  </div>
-                }
-              />
-              <h2 className = "header-size" style={positionsTitle}>Positions</h2>
-              <Container>
-                {generalInternJSON.positions.map((pair, i) => (
-                  <FAQDropdowns
-                    key={i}
-                    question={pair.name}
-                    answer={pair.description}
-                    colors = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue, dark: ColorThemes.darkBlue, backgroundHover: ColorThemes.mainYellow}}
-                  />
-                ))}
-                <br/>
-              </Container>
-              <br></br>
-              <br></br>
+            <TabsCardNoImage
+              posHeader={"DETAILS"}
+              generalColor={ColorThemes.mainBlue}
+              posDescription={
+                <div>
+                  <p>
+                    <Markdown>
+                      {generalInternJSON.general_intern_details}
+                    </Markdown>
+                  </p>
+                </div>
+              }
+            />
+            <h2 className="header-size" style={positionsTitle}>
+              Positions
+            </h2>
+            <Container>
+              {generalInternJSON.positions.map((pair, i) => (
+                <FAQDropdowns
+                  key={i}
+                  question={pair.name}
+                  answer={pair.description}
+                  colors={{
+                    main: ColorThemes.mainBlue,
+                    light: ColorThemes.lightBlue,
+                    dark: ColorThemes.darkBlue,
+                    backgroundHover: ColorThemes.mainYellow,
+                  }}
+                />
+              ))}
+              <br />
+            </Container>
+            <br></br>
+            <br></br>
           </Tab.Content>
         </Tab.Container>
       </Container>

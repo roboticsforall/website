@@ -2,9 +2,9 @@ import React from "react";
 import { Image } from "react-bootstrap";
 
 export const VolOverviewImg: React.FC<{
-  color: string,
-  title: string,
-  image: string,
+  color: string;
+  title: string;
+  image: string;
 }> = (props) => {
   const cardTitle = {
     fontFamily: "Oswald-Medium",

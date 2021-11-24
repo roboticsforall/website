@@ -12,7 +12,6 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import curricdevpositionsJSON from "@/posts/curriculum_developer.json";
 
-
 export const CurricDevPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
@@ -38,7 +37,7 @@ export const CurricDevPositions: React.FC = () => {
   return (
     <div>
       <Header
-        headerTextColor = {ColorThemes.mainYellow}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlob}
         title={"Help develop curriculum!"}
         description={
@@ -52,43 +51,53 @@ export const CurricDevPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link
-                eventKey="one"
-                className="pos"
-                style={ActiveStyle}
-              >
+              <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
                 <p style={black}>Curriculum Developer Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <TabsCardNoImage
-                posHeader={"DETAILS"}
-                generalColor = {ColorThemes.mainYellow}
-                posDescription={
-                  <div>
-                    <p>
-                      <Markdown>{curricdevpositionsJSON.curriculum_developer_details}</Markdown>
-                    </p>
-                  </div>
-                }
-              />
-              <PosButton backgroundColor = {ColorThemes.mainYellow} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
-              <br/>
-              <h2 className = "header-size" style={positionsTitle}>Positions</h2>
-              <Container>
-                {curricdevpositionsJSON.positions.map((pair, i) => (
-                  <FAQDropdowns
-                    key={i}
-                    question={pair.name}
-                    answer={pair.description}
-                    colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
-                  />
-                ))}
-                <br/>
-              </Container>
-              <br></br>
-              <br></br>
+            <TabsCardNoImage
+              posHeader={"DETAILS"}
+              generalColor={ColorThemes.mainYellow}
+              posDescription={
+                <div>
+                  <p>
+                    <Markdown>
+                      {curricdevpositionsJSON.curriculum_developer_details}
+                    </Markdown>
+                  </p>
+                </div>
+              }
+            />
+            <PosButton
+              backgroundColor={ColorThemes.mainYellow}
+              backgroundHover={ColorThemes.mainYellow}
+              title={"Apply Now!"}
+              link="/volunteer/volunteerapp"
+            />
+            <br />
+            <h2 className="header-size" style={positionsTitle}>
+              Positions
+            </h2>
+            <Container>
+              {curricdevpositionsJSON.positions.map((pair, i) => (
+                <FAQDropdowns
+                  key={i}
+                  question={pair.name}
+                  answer={pair.description}
+                  colors={{
+                    main: ColorThemes.mainOrange,
+                    light: ColorThemes.lightOrange,
+                    dark: ColorThemes.darkOrange,
+                    backgroundHover: ColorThemes.mainYellow,
+                  }}
+                />
+              ))}
+              <br />
+            </Container>
+            <br></br>
+            <br></br>
           </Tab.Content>
         </Tab.Container>
       </Container>

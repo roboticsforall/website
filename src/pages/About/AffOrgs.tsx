@@ -61,9 +61,8 @@ export const AffOrgs: React.FC = () => {
           }
         />
       </Container>
-      <br/>
-      <br/>
-
+      <br />
+      <br />
     </div>
   );
 };

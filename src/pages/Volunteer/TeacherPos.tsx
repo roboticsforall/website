@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { TabsCardNoImage, TabsCardLeftImage, TabsCardRightImage } from "@/components/TabCards";
+import {
+  TabsCardNoImage,
+  TabsCardLeftImage,
+  TabsCardRightImage,
+} from "@/components/TabCards";
 import { PosButton } from "@/components/PosButton";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
@@ -18,7 +22,6 @@ import Markdown from "markdown-to-jsx";
 import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
 import teachingfaqsJSON from "@/posts/faqs/teaching_faqs.json";
-
 
 import { ColorThemes } from "@/colors";
 
@@ -43,19 +46,19 @@ export const TeacherPos: React.FC = () => {
     height: "100%",
   };
   const blackText = {
-    color: ColorThemes.black
-  }
+    color: ColorThemes.black,
+  };
   const positionsTitle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
   };
-  
+
   return (
     <div>
       <Header
-        headerTextColor = {ColorThemes.mainOrange}
+        headerTextColor={ColorThemes.mainOrange}
         image={headerBlobOrange}
         title={"Volunteer to Teach Students STEM!"}
         description={
@@ -90,7 +93,7 @@ export const TeacherPos: React.FC = () => {
             <Tab.Pane eventKey="one">
               <TabsCardNoImage
                 posHeader={"OVERVIEW"}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
@@ -101,7 +104,7 @@ export const TeacherPos: React.FC = () => {
               />
               <TabsCardRightImage
                 posHeader={"SCHEDULING"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={Calendar}
                 posDescription={
                   <div>
@@ -114,14 +117,14 @@ export const TeacherPos: React.FC = () => {
               <TabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.tasks}</Markdown>
                 }
               />
               <TabsCardRightImage
                 posHeader={"CURRICULA"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={Curriculum}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.curriculum}</Markdown>
@@ -129,7 +132,7 @@ export const TeacherPos: React.FC = () => {
               />
               <TabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posImage={Clock}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.time_commitment}</Markdown>
@@ -137,7 +140,7 @@ export const TeacherPos: React.FC = () => {
               />
               <TabsCardRightImage
                 posHeader={"BENEFITS"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={ThumbsUp}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.benefits}</Markdown>
@@ -145,7 +148,7 @@ export const TeacherPos: React.FC = () => {
               />
               <TabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={
                   <Markdown>{teacherOverviewJSON.requirments}</Markdown>
@@ -153,35 +156,35 @@ export const TeacherPos: React.FC = () => {
               />
               <TabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={Presentation}
                 posDescription={
-                  <Markdown>{teacherOverviewJSON.beneficial_qualifications}</Markdown>
+                  <Markdown>
+                    {teacherOverviewJSON.beneficial_qualifications}
+                  </Markdown>
                 }
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <TabsCardNoImage
                 posHeader={"OVERVIEW"}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posDescription={
                   <div>
                     <p>
                       <Markdown>{taOverviewJSON.overview}</Markdown>
-
                     </p>
                   </div>
                 }
               />
               <TabsCardRightImage
                 posHeader={"SCHEDULING"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={Calendar}
                 posDescription={
                   <div>
                     <p>
                       <Markdown>{taOverviewJSON.scheduling}</Markdown>
-
                     </p>
                   </div>
                 }
@@ -189,23 +192,20 @@ export const TeacherPos: React.FC = () => {
               <TabsCardLeftImage
                 posHeader={"TASKS"}
                 posImage={TasksOrange}
-                generalColor = {ColorThemes.mainYellow}
-                posDescription={
-                  <Markdown>{taOverviewJSON.tasks}</Markdown>
-                }
+                generalColor={ColorThemes.mainYellow}
+                posDescription={<Markdown>{taOverviewJSON.tasks}</Markdown>}
               />
               <TabsCardRightImage
                 posHeader={"CURRICULA"}
                 posImage={Curriculum}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posDescription={
                   <Markdown>{taOverviewJSON.curriculum}</Markdown>
-
                 }
               />
               <TabsCardLeftImage
                 posHeader={"TIME COMMITMENT"}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posImage={Clock}
                 posDescription={
                   <Markdown>{taOverviewJSON.time_commitment}</Markdown>
@@ -213,28 +213,26 @@ export const TeacherPos: React.FC = () => {
               />
               <TabsCardRightImage
                 posHeader={"BENEFITS"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={ThumbsUp}
-                posDescription={
-                  <Markdown>{taOverviewJSON.benefits}</Markdown>
-
-                }
+                posDescription={<Markdown>{taOverviewJSON.benefits}</Markdown>}
               />
               <TabsCardLeftImage
                 posHeader={"REQUIREMENTS"}
-                generalColor = {ColorThemes.mainYellow}
+                generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={
                   <Markdown>{taOverviewJSON.requirments}</Markdown>
-
                 }
               />
               <TabsCardRightImage
                 posHeader={"BENEFICIAL QUALIFICATIONS"}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 posImage={Presentation}
                 posDescription={
-                  <Markdown>{taOverviewJSON.beneficial_qualifications}</Markdown>
+                  <Markdown>
+                    {taOverviewJSON.beneficial_qualifications}
+                  </Markdown>
                 }
               />
               <br></br>
@@ -242,21 +240,33 @@ export const TeacherPos: React.FC = () => {
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
-        <PosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
+        <PosButton
+          backgroundColor={ColorThemes.mainOrange}
+          backgroundHover={ColorThemes.mainYellow}
+          title={"Apply Now!"}
+          link="/volunteer/volunteerapp"
+        />
       </Container>
-      <br/>
+      <br />
 
-      <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
+      <h2 className="header-size" style={positionsTitle}>
+        FAQs
+      </h2>
       <Container>
         {teachingfaqsJSON.teaching_faq_list.map((QAPair) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
             answer={QAPair.answer}
-            colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
+            colors={{
+              main: ColorThemes.mainOrange,
+              light: ColorThemes.lightOrange,
+              dark: ColorThemes.darkOrange,
+              backgroundHover: ColorThemes.mainYellow,
+            }}
           />
         ))}
-        <br/>
+        <br />
       </Container>
     </div>
   );

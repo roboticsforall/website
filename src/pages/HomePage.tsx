@@ -204,8 +204,8 @@ export const HomePage: React.FC = () => {
             />
           ))}
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
       </Container>
     </>
   );

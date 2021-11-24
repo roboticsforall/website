@@ -3,17 +3,15 @@ import { Container, Tab, Nav, Image, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
 
-
-
-import {createUseStyles} from 'react-jss';
+import { createUseStyles } from "react-jss";
 
 import { ColorThemes } from "@/colors";
 
 interface IProps {
   posHeader: string;
   posDescription: JSX.Element;
-  generalColor: {main: String, light: String};
-  addButtons : boolean;
+  generalColor: { main: String; light: String };
+  addButtons: boolean;
   backgroundColor?: string;
   posImage?: string;
   learnMoreLocation: string;
@@ -22,7 +20,7 @@ interface IProps2 {
   publicityDescription: JSX.Element;
   technicalDescription: JSX.Element;
   businessDescription: JSX.Element;
-  addButtons : boolean;
+  addButtons: boolean;
 }
 
 export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
@@ -40,8 +38,8 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
     }),
     blackText: {
       color: "#000000",
-    }
-  }
+    },
+  };
 
   return (
     <div>
@@ -50,60 +48,87 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
         <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
-              <Nav.Item>
-                <Nav.Link
-                  eventKey="one"
-                  style={key === "one" ? styles.general({backgroundColor: ColorThemes.mainBlue}) : styles.general({backgroundColor: ColorThemes.lightBlue})}
-                 >
-                  <p style={styles.blackText}>General Business</p>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  eventKey="two"
-                  style={key === "two" ? styles.general({backgroundColor: ColorThemes.mainGreen}) : styles.general({backgroundColor: ColorThemes.lightGreen})}
-                 >
-                  <p style={styles.blackText}>Technical</p>
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  eventKey="three"
-                  style={key === "three" ? styles.general({backgroundColor: ColorThemes.mainOrange}) : styles.general({backgroundColor: ColorThemes.lightOrange})}
-                 >
-                  <p style={styles.blackText}>Publicity</p>
-                </Nav.Link>
-              </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                eventKey="one"
+                style={
+                  key === "one"
+                    ? styles.general({ backgroundColor: ColorThemes.mainBlue })
+                    : styles.general({ backgroundColor: ColorThemes.lightBlue })
+                }
+              >
+                <p style={styles.blackText}>General Business</p>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                eventKey="two"
+                style={
+                  key === "two"
+                    ? styles.general({ backgroundColor: ColorThemes.mainGreen })
+                    : styles.general({
+                        backgroundColor: ColorThemes.lightGreen,
+                      })
+                }
+              >
+                <p style={styles.blackText}>Technical</p>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                eventKey="three"
+                style={
+                  key === "three"
+                    ? styles.general({
+                        backgroundColor: ColorThemes.mainOrange,
+                      })
+                    : styles.general({
+                        backgroundColor: ColorThemes.lightOrange,
+                      })
+                }
+              >
+                <p style={styles.blackText}>Publicity</p>
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
               <TabsCardLeftImage
                 posHeader={"GENERAL BUSINESS PATH"}
                 posImage={TobyHeaderLogo}
-                generalColor = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue}}
-                posDescription = {props.businessDescription}
-                addButtons = {props.addButtons}
-                learnMoreLocation = "/volunteer/businesspositions"
+                generalColor={{
+                  main: ColorThemes.mainBlue,
+                  light: ColorThemes.lightBlue,
+                }}
+                posDescription={props.businessDescription}
+                addButtons={props.addButtons}
+                learnMoreLocation="/volunteer/businesspositions"
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <TabsCardLeftImage
                 posHeader={"TECHNICAL PATH"}
                 posImage={TobyHeaderLogo}
-                generalColor = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen}}
+                generalColor={{
+                  main: ColorThemes.mainGreen,
+                  light: ColorThemes.lightGreen,
+                }}
                 posDescription={props.technicalDescription}
-                addButtons = {props.addButtons}
-                learnMoreLocation = "/volunteer/technicalpositions"
+                addButtons={props.addButtons}
+                learnMoreLocation="/volunteer/technicalpositions"
               />
             </Tab.Pane>
             <Tab.Pane eventKey="three">
               <TabsCardLeftImage
                 posHeader={"PUBLICITY PATH"}
                 posImage={TobyHeaderLogo}
-                generalColor = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange}}
+                generalColor={{
+                  main: ColorThemes.mainOrange,
+                  light: ColorThemes.lightOrange,
+                }}
                 posDescription={props.publicityDescription}
-                addButtons = {props.addButtons}
-                learnMoreLocation = "/volunteer/publicitypositions"
+                addButtons={props.addButtons}
+                learnMoreLocation="/volunteer/publicitypositions"
               />
             </Tab.Pane>
           </Tab.Content>
@@ -114,7 +139,7 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
 };
 
 const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
-  const styles : any = {
+  const styles: any = {
     posHeader: {
       fontFamily: "BeVietnam-ExtraBold",
       letterSpacing: "0.25em",
@@ -135,14 +160,14 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
     buttonHeader: {
       fontFamily: "BeVietnam-ExtraBold",
       textAlign: "center",
-      color: ColorThemes.black
+      color: ColorThemes.black,
     },
     img: {
       marginBottom: "10px",
       width: "auto",
       maxHeight: "250px",
     },
-  }
+  };
   const useStyles = createUseStyles({
     buttonContainer: (props: any) => ({
       border: "solid",
@@ -151,53 +176,64 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       "&:hover": {
         backgroundColor: ColorThemes.mainYellow,
         transition: "200ms",
-      }
+      },
     }),
-  })
+  });
 
-  const classes = useStyles({backgroundColor: props.generalColor.light});
+  const classes = useStyles({ backgroundColor: props.generalColor.light });
 
   return (
-    <Container style={styles.posContainer({borderColor: props.generalColor.main, color: props.generalColor.main, backgroundColor: props.backgroundColor})}>
+    <Container
+      style={styles.posContainer({
+        borderColor: props.generalColor.main,
+        color: props.generalColor.main,
+        backgroundColor: props.backgroundColor,
+      })}
+    >
       <div>
         <h1 className="header-size" style={styles.posHeader}>
           {props.posHeader}
         </h1>
         <Row>
           <Col className="center-align" xs={3}>
-            <Image
-              src={props.posImage}
-              style={styles.img}
-              fluid
-            />
+            <Image src={props.posImage} style={styles.img} fluid />
           </Col>
           <Col>
-            <div className="header-description-size" style={styles.posDescription}>
+            <div
+              className="header-description-size"
+              style={styles.posDescription}
+            >
               {props.posDescription}
             </div>
           </Col>
         </Row>
         {props.addButtons ? (
-        <Row>
-          <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 7.5px 0px 0px"}}>
-            <Link to = {props.learnMoreLocation} className = "hyperlink">
-              <h1 className="header-size" style={styles.buttonHeader}>
-                Learn More
-              </h1>
-            </Link>
-          </Col>
-          <Col className = {classes.buttonContainer} style = {{borderWidth: "15px 0px 0px 7.5px"}}>
-            <Link to = "/volunteer/volunteerapp" className = "hyperlink">
-              <h1 className="header-size" style={styles.buttonHeader}>
-                Apply Now!
-              </h1>
-            </Link>
-          </Col>
-        </Row>
-        ) : (<></>)}
-
+          <Row>
+            <Col
+              className={classes.buttonContainer}
+              style={{ borderWidth: "15px 7.5px 0px 0px" }}
+            >
+              <Link to={props.learnMoreLocation} className="hyperlink">
+                <h1 className="header-size" style={styles.buttonHeader}>
+                  Learn More
+                </h1>
+              </Link>
+            </Col>
+            <Col
+              className={classes.buttonContainer}
+              style={{ borderWidth: "15px 0px 0px 7.5px" }}
+            >
+              <Link to="/volunteer/volunteerapp" className="hyperlink">
+                <h1 className="header-size" style={styles.buttonHeader}>
+                  Apply Now!
+                </h1>
+              </Link>
+            </Col>
+          </Row>
+        ) : (
+          <></>
+        )}
       </div>
-
     </Container>
   );
 };

@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import dropdownIcon from "@/media/Shapes/brownarrow.png"; // add correct image here
-import {createUseStyles} from 'react-jss';
-
+import { createUseStyles } from "react-jss";
 
 interface IProps {
   question: string;
   answer: JSX.Element | string;
-  colors: {backgroundHover: string, main: string, light: string, dark: string};
+  colors: {
+    backgroundHover: string;
+    main: string;
+    light: string;
+    dark: string;
+  };
 }
 
 export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
@@ -37,7 +41,7 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
   };
 
   const useStyles = createUseStyles({
-    dropdown: (props:any) =>  ({
+    dropdown: (props: any) => ({
       composes: "p-2 justify-content-between align-items-center",
       borderRadius: "1em",
       fontFamily: "BeVietnam-ExtraBold",
@@ -49,30 +53,31 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
         "& h3": {
           color: "#fff",
         },
-      }
+      },
     }),
-  })
+  });
 
   const backgroundHover = props.colors.backgroundHover; //defined new object. Could not add line directly in useStyles object
-  const classes = useStyles({dropdownBGColor, backgroundHover});
+  const classes = useStyles({ dropdownBGColor, backgroundHover });
 
-  
   return (
     <div onClick={displayDiv}>
-      <Row
-        className = {classes.dropdown}
-      >
+      <Row className={classes.dropdown}>
         <Col md={11}>
-          <h3 style = {{color: dropdownTextColor}}>{props.question}</h3>
+          <h3 style={{ color: dropdownTextColor }}>{props.question}</h3>
         </Col>
         <Col>
-            <img
-              alt="dropdownArrow"
-              width="70"
-              height="40"
-              src={dropdownIcon}
-              style = {dropdownAnswerDisplay == "block" ? {transform: "rotate(180deg)"} : {transform: "rotate(0deg)"}}
-            />
+          <img
+            alt="dropdownArrow"
+            width="70"
+            height="40"
+            src={dropdownIcon}
+            style={
+              dropdownAnswerDisplay == "block"
+                ? { transform: "rotate(180deg)" }
+                : { transform: "rotate(0deg)" }
+            }
+          />
         </Col>
       </Row>
       <br />

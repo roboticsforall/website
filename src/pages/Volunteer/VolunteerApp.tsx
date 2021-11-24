@@ -9,7 +9,6 @@ import { ColorThemes } from "@/colors";
 
 import { InternDescriptionTabs } from "../../components/InternDescriptionTabs";
 
-
 export const VolunteerApp: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle: React.CSSProperties = {
@@ -66,20 +65,22 @@ export const VolunteerApp: React.FC = () => {
           <Tab.Content>
             <Tab.Pane eventKey="one">
               <TabsCardNoImage
-                generalColor = {ColorThemes.mainYellow}
-                backgroundColor = {ColorThemes.lightYellow}
+                generalColor={ColorThemes.mainYellow}
+                backgroundColor={ColorThemes.lightYellow}
                 posHeader={""}
                 posDescription={
                   <div className="center-align">
-                    <Markdown>{googleForms.teacher_app_form_code.code}</Markdown>
+                    <Markdown>
+                      {googleForms.teacher_app_form_code.code}
+                    </Markdown>
                   </div>
                 }
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <TabsCardNoImage
-                generalColor = {ColorThemes.mainYellow}
-                backgroundColor = {ColorThemes.lightYellow}
+                generalColor={ColorThemes.mainYellow}
+                backgroundColor={ColorThemes.lightYellow}
                 posHeader={""}
                 posDescription={
                   <div className="center-align">
@@ -91,16 +92,20 @@ export const VolunteerApp: React.FC = () => {
           </Tab.Content>
         </Tab.Container>
         <InternDescriptionTabs
-              publicityDescription = {
-                <Markdown>{googleForms.publicity_intern_app_form_code.code}</Markdown>
-              }
-              technicalDescription = {
-                <Markdown>{googleForms.technical_intern_app_form_code.code}</Markdown>
-              }
-              businessDescription = {
-                <Markdown>{googleForms.general_intern_app_form_code.code}</Markdown>
-              }
-              addButtons = {false}
+          publicityDescription={
+            <Markdown>
+              {googleForms.publicity_intern_app_form_code.code}
+            </Markdown>
+          }
+          technicalDescription={
+            <Markdown>
+              {googleForms.technical_intern_app_form_code.code}
+            </Markdown>
+          }
+          businessDescription={
+            <Markdown>{googleForms.general_intern_app_form_code.code}</Markdown>
+          }
+          addButtons={false}
         />
       </Container>
     </div>

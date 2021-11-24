@@ -66,7 +66,10 @@ export const AbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainOrange }}
+              style={{
+                fontFamily: "BeVietnam-Semibold",
+                color: ColorThemes.mainOrange,
+              }}
             >
               motivated
             </span>
@@ -77,7 +80,10 @@ export const AbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainYellow }}
+              style={{
+                fontFamily: "BeVietnam-Semibold",
+                color: ColorThemes.mainYellow,
+              }}
             >
               inclusive
             </span>
@@ -87,7 +93,10 @@ export const AbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainGreen }}
+              style={{
+                fontFamily: "BeVietnam-Semibold",
+                color: ColorThemes.mainGreen,
+              }}
             >
               accountable
             </span>
@@ -97,7 +106,10 @@ export const AbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.lightBlue }}
+              style={{
+                fontFamily: "BeVietnam-Semibold",
+                color: ColorThemes.lightBlue,
+              }}
             >
               collaborative
             </span>
@@ -108,7 +120,10 @@ export const AbtOverview: React.FC = () => {
           <p style={description}>
             We are{" "}
             <span
-              style={{ fontFamily: "BeVietnam-Semibold", color: ColorThemes.mainBlue }}
+              style={{
+                fontFamily: "BeVietnam-Semibold",
+                color: ColorThemes.mainBlue,
+              }}
             >
               compassionate
             </span>

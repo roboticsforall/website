@@ -3,7 +3,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "@/pages/Navbar";
 import { Update } from "@/pages/Update";
-import ScrollToTop from "@/pages/ScrollToTop"; 
+import ScrollToTop from "@/pages/ScrollToTop";
 // Base Pages
 import { HomePage } from "@/pages/HomePage";
 import { Footer } from "@/pages/Footer";
@@ -46,8 +46,8 @@ export const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <ScrollToTop/>
-      <Update/>
+      <ScrollToTop />
+      <Update />
       <Route
         render={({ location }) => (
           <TransitionGroup>
@@ -55,7 +55,7 @@ export const App: React.FC = () => {
               <Switch location={location}>
                 <Route exact path="/" component={HomePage} />
 
-{/* Enroll Pages */}
+                {/* Enroll Pages */}
                 <Route
                   exact
                   path="/enroll/individlearners"
@@ -64,68 +64,92 @@ export const App: React.FC = () => {
                 <Route exact path="/enroll/schools" component={Schools} />
                 <Route exact path="/enroll/register" component={Register} />
 
-{/* Volunteer Pages */}
-                <Route exact path="/volunteer/overview" component={VolOverview} />
-                
-                <Route exact path="/volunteer/teacherpos" component={TeacherPos} />
+                {/* Volunteer Pages */}
                 <Route
-                  exact path="/volunteer/internoverview"
+                  exact
+                  path="/volunteer/overview"
+                  component={VolOverview}
+                />
+
+                <Route
+                  exact
+                  path="/volunteer/teacherpos"
+                  component={TeacherPos}
+                />
+                <Route
+                  exact
+                  path="/volunteer/internoverview"
                   component={InternOverview}
                 />
                 <Route
-                  exact path="/volunteer/publicitypositions"
+                  exact
+                  path="/volunteer/publicitypositions"
                   component={PublicityPositions}
                 />
                 <Route
-                  exact path="/volunteer/technicalpositions"
+                  exact
+                  path="/volunteer/technicalpositions"
                   component={TechnicalPositions}
                 />
                 <Route
-                  exact path="/volunteer/businesspositions"
+                  exact
+                  path="/volunteer/businesspositions"
                   component={BusinessPositions}
                 />
                 <Route
-                  exact path="/volunteer/curricdevpositions"
+                  exact
+                  path="/volunteer/curricdevpositions"
                   component={CurricDevPositions}
                 />
                 <Route
-                  exact path="/volunteer/volunteerapp"
+                  exact
+                  path="/volunteer/volunteerapp"
                   component={VolunteerApp}
                 />
 
-{/* About Pages */}
+                {/* About Pages */}
 
                 <Route exact path="/about/overview" component={AbtOverview} />
                 <Route exact path="/about/afforgs" component={AffOrgs} />
                 <Route exact path="/about/newsletter" component={Newsletter} />
-                <Route exact path="/about/pastnewsletter" component={PastNewsletter} />
-                <Route exact path="/about/meettheteam" component={MeetTheTeam} />
+                <Route
+                  exact
+                  path="/about/pastnewsletter"
+                  component={PastNewsletter}
+                />
+                <Route
+                  exact
+                  path="/about/meettheteam"
+                  component={MeetTheTeam}
+                />
 
-{/* Contact Page */}
+                {/* Contact Page */}
 
                 <Route exact path="/contact" component={Contact} />
 
-{/* News Page */}
+                {/* News Page */}
 
                 <Route exact path="/news" component={News} />
 
-{/* More Pages */}
+                {/* More Pages */}
 
                 <Route
-                  exact path="/more-privacypolicy"
+                  exact
+                  path="/more-privacypolicy"
                   component={PrivacyPolicy}
                 />
                 <Route exact path="/more-websitetos" component={WebsiteTOS} />
                 <Route exact path="/more-bylaws" component={CorpBylaws} />
                 <Route
-                  exact path="/more-meetingrecords"
+                  exact
+                  path="/more-meetingrecords"
                   component={MeetingRecords}
                 />
 
-{/* Donate Pages */}
+                {/* Donate Pages */}
 
                 <Route exact path="/donate" component={Donate} />
-                <Route component = {PageNotFound}/>
+                <Route component={PageNotFound} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>

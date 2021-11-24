@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
 
-
-const styles : any = {
+const styles: any = {
   posHeader: {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
@@ -19,14 +18,14 @@ const styles : any = {
     margin: "0 0 40px 0",
     color: props.color,
     borderColor: props.borderColor,
-    backgroundColor: props.backgroundColor
+    backgroundColor: props.backgroundColor,
   }),
   img: {
     marginBottom: "10px",
     width: "auto",
     maxHeight: "250px",
   },
-}
+};
 
 interface IProps {
   posHeader: string;
@@ -38,14 +37,23 @@ interface IProps {
 
 export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
   return (
-    <Container style={styles.posContainer({borderColor: props.generalColor, color: props.generalColor, backgroundColor: props.backgroundColor})}>
+    <Container
+      style={styles.posContainer({
+        borderColor: props.generalColor,
+        color: props.generalColor,
+        backgroundColor: props.backgroundColor,
+      })}
+    >
       <div>
         <Row>
           <Col>
             <h1 className="header-size" style={styles.posHeader}>
               {props.posHeader}
             </h1>
-            <div className="header-description-size" style={styles.posDescription}>
+            <div
+              className="header-description-size"
+              style={styles.posDescription}
+            >
               {props.posDescription}
             </div>
           </Col>
@@ -57,21 +65,26 @@ export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
 
 export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
   return (
-    <Container style={styles.posContainer({borderColor: props.generalColor, color: props.generalColor, backgroundColor: props.backgroundColor})}>
+    <Container
+      style={styles.posContainer({
+        borderColor: props.generalColor,
+        color: props.generalColor,
+        backgroundColor: props.backgroundColor,
+      })}
+    >
       <div>
         <h1 className="header-size" style={styles.posHeader}>
           {props.posHeader}
         </h1>
         <Row>
           <Col className="center-align" xs={3}>
-            <Image
-              src={props.posImage}
-              style={styles.img}
-              fluid
-            />
+            <Image src={props.posImage} style={styles.img} fluid />
           </Col>
           <Col>
-            <div className="header-description-size" style={styles.posDescription}>
+            <div
+              className="header-description-size"
+              style={styles.posDescription}
+            >
               {props.posDescription}
             </div>
           </Col>
@@ -83,23 +96,28 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
 
 export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
   return (
-    <Container style={styles.posContainer({borderColor: props.generalColor, color: props.generalColor, backgroundColor: props.backgroundColor})}>
+    <Container
+      style={styles.posContainer({
+        borderColor: props.generalColor,
+        color: props.generalColor,
+        backgroundColor: props.backgroundColor,
+      })}
+    >
       <div>
         <h1 className="header-size" style={styles.posHeader}>
           {props.posHeader}
         </h1>
         <Row>
           <Col>
-            <div className="header-description-size" style={styles.posDescription}>
+            <div
+              className="header-description-size"
+              style={styles.posDescription}
+            >
               {props.posDescription}
             </div>
           </Col>
-          <Col className = "center-align" xs={3}>
-            <Image
-              src={props.posImage}
-              style={styles.img}
-              fluid
-            />
+          <Col className="center-align" xs={3}>
+            <Image src={props.posImage} style={styles.img} fluid />
           </Col>
         </Row>
       </div>

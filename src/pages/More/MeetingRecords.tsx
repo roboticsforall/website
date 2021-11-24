@@ -20,7 +20,7 @@ export const MeetingRecords: React.FC = () => {
     fontSize: "xx-large",
     textAlign: "center",
     color: "black",
-    wordWrap: "break-word"
+    wordWrap: "break-word",
   };
   return (
     <div>
@@ -65,8 +65,8 @@ export const MeetingRecords: React.FC = () => {
           )
         )}
       </Container>
-      <br/>
-      <br/>
+      <br />
+      <br />
     </div>
   );
 };

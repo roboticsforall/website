@@ -8,9 +8,7 @@ import { VolOverviewCard } from "@/components/VolOverviewCard";
 import { VolOverviewCircle } from "@/components/VolOverviewCircle";
 import headerBlob from "@/media/HeaderBlobs/orange.png";
 
-
 import { Header } from "@/components/Header";
-
 
 import { ColorThemes } from "../../colors";
 
@@ -28,7 +26,6 @@ export const VolOverview: React.FC = () => {
     color: ColorThemes.black,
   };
 
-
   return (
     <>
       <Header
@@ -42,7 +39,7 @@ export const VolOverview: React.FC = () => {
       <br />
       <br />
       <Container>
-        <Row className = "justify-content-around">
+        <Row className="justify-content-around">
           <VolOverviewCircle
             width={"16vw"}
             height={"16vw"}
@@ -97,7 +94,7 @@ export const VolOverview: React.FC = () => {
           <Col sm className="d-flex justify-content-center">
             <VolOverviewImg
               image={InternToby}
-              color = {ColorThemes.darkBlue}
+              color={ColorThemes.darkBlue}
               title={"Publicity Volunteer"}
             />
           </Col>
@@ -108,7 +105,7 @@ export const VolOverview: React.FC = () => {
             applyLink="/volunteer/volunteerapp"
             learnMoreLink="/volunteer/teacherpos"
             backgroundcolor={ColorThemes.lightGreen}
-            buttonColor = {ColorThemes.darkGreen}
+            buttonColor={ColorThemes.darkGreen}
             title={"Lead Instructor"}
             description={
               "Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."
@@ -146,9 +143,8 @@ export const VolOverview: React.FC = () => {
             arrowLocation={"47vmax"}
           ></VolOverviewCard>
         </Col>
-        <br/>
-        <br/>
-
+        <br />
+        <br />
       </Container>
     </>
   );

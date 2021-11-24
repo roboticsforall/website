@@ -10,14 +10,15 @@ import Markdown from "markdown-to-jsx";
 export const PrivacyPolicy: React.FC = () => {
   const ActiveStyle = (props: any) => ({
     color: "#000000",
-    backgroundColor: (props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange),
+    backgroundColor:
+      props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange,
     border: 0,
     borderRadius: "15px 15px 0 0",
     fontFamily: "Oswald-Medium",
     fontSize: "3vmax",
     padding: "20px",
     textAlign: "left",
-    width: "auto"
+    width: "auto",
   });
 
   const positionsDescription: React.CSSProperties = {
@@ -26,8 +27,8 @@ export const PrivacyPolicy: React.FC = () => {
     color: "black",
   };
   const blackText = {
-    color: ColorThemes.black
-  }
+    color: ColorThemes.black,
+  };
 
   return (
     <div>
@@ -44,10 +45,7 @@ export const PrivacyPolicy: React.FC = () => {
           <Tab.Container>
             <Nav justify fill variant="tabs">
               <Nav.Item>
-                <Nav.Link
-                  eventKey="one"
-                  style = {ActiveStyle({i: i})}
-                >
+                <Nav.Link eventKey="one" style={ActiveStyle({ i: i })}>
                   <p style={blackText}>{sections.header}</p>
                 </Nav.Link>
               </Nav.Item>
@@ -55,7 +53,9 @@ export const PrivacyPolicy: React.FC = () => {
             <Tab.Content>
               <TabsCardNoImage
                 posHeader={""}
-                generalColor = {(i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange)}
+                generalColor={
+                  i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange
+                }
                 posDescription={
                   <div>
                     <p>
@@ -66,7 +66,7 @@ export const PrivacyPolicy: React.FC = () => {
               />
             </Tab.Content>
           </Tab.Container>
-          ))}
+        ))}
 
         <Row className="justify-content-center align-items-center">
           <p

@@ -62,56 +62,65 @@ export const IndLearners: React.FC = () => {
         <br></br>
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-
-              <FlagCard
-                image={flagInfo.file_path.replace("/public", "")}
-                title={flagInfo.language}
-                link={flagInfo.link}
-                backgroundColor = {ColorThemes.lightBlue}
-                key = {i}
-              />
-
+            <FlagCard
+              image={flagInfo.file_path.replace("/public", "")}
+              title={flagInfo.language}
+              link={flagInfo.link}
+              backgroundColor={ColorThemes.lightBlue}
+              key={i}
+            />
           ))}
         </Row>
         <br></br>
-        <a target = "_blank" rel="noreferrer" href = {enroll_links.link} className="hyperlink">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={enroll_links.link}
+          className="hyperlink"
+        >
           <Row className="ind-learners-enroll-button mx-2 p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
         </a>
       </Container>
-        <br></br>
-        <br></br>
-      <div style = {blueRow}>
-          <Container>
+      <br></br>
+      <br></br>
+      <div style={blueRow}>
+        <Container>
           <br></br>
-            <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-            <br></br>
-            <h5 style={bodyText}>
-              We offer basic and advanced computer programming and computer-aided
-              design courses for students in K-8th grade!
-              <br></br>
-              <br></br>
-              View our selection of courses below and click on the boxes to learn more:
-            </h5>
-            <br></br>
-            <Row>
-                {coursesInfoJSON.courses_list.map((courseInfo, i) => (
-                  <CourseCard
-                  key = {i}
-                  link={courseInfo.class_description_link}
-                  courseImage={courseInfo.file_path.replace("/public", "")}
-                  title={courseInfo.course_name}
-                  backgroundColor = {ColorThemes.lightBlue}
-                  dropdownCourseDescription = {courseInfo.dropdown_course_description}
-                  dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
-                  />
-                  ))}
-            </Row>
+          <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
+          <br></br>
+          <h5 style={bodyText}>
+            We offer basic and advanced computer programming and computer-aided
+            design courses for students in K-8th grade!
             <br></br>
             <br></br>
-            </Container>
-        </div>
+            View our selection of courses below and click on the boxes to learn
+            more:
+          </h5>
+          <br></br>
+          <Row>
+            {coursesInfoJSON.courses_list.map((courseInfo, i) => (
+              <CourseCard
+                key={i}
+                link={courseInfo.class_description_link}
+                courseImage={courseInfo.file_path.replace("/public", "")}
+                title={courseInfo.course_name}
+                backgroundColor={ColorThemes.lightBlue}
+                dropdownCourseDescription={
+                  courseInfo.dropdown_course_description
+                }
+                dropdownCourseImage={courseInfo.dropdown_file_path.replace(
+                  "/public",
+                  ""
+                )}
+              />
+            ))}
+          </Row>
+          <br></br>
+          <br></br>
+        </Container>
+      </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
         {classFAQJSON.class_faq_list.map((QAPair) => (
@@ -119,15 +128,25 @@ export const IndLearners: React.FC = () => {
             key={QAPair.question}
             question={QAPair.question}
             answer={QAPair.answer}
-            colors = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue, dark: ColorThemes.darkBlue, backgroundHover: ColorThemes.mainYellow}}
+            colors={{
+              main: ColorThemes.mainBlue,
+              light: ColorThemes.lightBlue,
+              dark: ColorThemes.darkBlue,
+              backgroundHover: ColorThemes.mainYellow,
+            }}
           />
         ))}
         <FAQDropdowns
           question={classFAQJSON.upcoming_courses_question}
           answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
-          colors = {{main: ColorThemes.mainBlue, light: ColorThemes.lightBlue, dark: ColorThemes.darkBlue, backgroundHover: ColorThemes.mainYellow}}
+          colors={{
+            main: ColorThemes.mainBlue,
+            light: ColorThemes.lightBlue,
+            dark: ColorThemes.darkBlue,
+            backgroundHover: ColorThemes.mainYellow,
+          }}
         />
-        <br/>
+        <br />
       </Container>
     </>
   );

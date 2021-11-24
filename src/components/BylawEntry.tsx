@@ -17,7 +17,7 @@ export const BylawEntry: React.FC<{
   };
   return (
     <Row>
-      <Col xs={3} className = "" style={background}>
+      <Col xs={3} className="" style={background}>
         <p>{props.date}</p>
       </Col>
       <Col xs={6} style={background}>

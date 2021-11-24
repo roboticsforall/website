@@ -76,7 +76,9 @@ body {
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 h1,
@@ -162,7 +164,7 @@ label {
   background-color: #ffdb4d;
   opacity: 0.5;
 }
- 
+
 .checkbox::selection {
   background-color: #ffcc00;
 }
@@ -186,7 +188,7 @@ label {
   font-family: "Oswald-Medium";
 }
 
-.newsletter-card:hover{
+.newsletter-card:hover {
   transition: 200ms;
   background-color: #ffcc00;
 }
@@ -211,7 +213,6 @@ label {
   padding: 0;
   display: flex;
   align-items: center;
-
 }
 .nav-item-header a {
   font-size: 1.5em;
@@ -229,10 +230,12 @@ label {
   transition: 0.2s;
   color: black !important;
 }
-.nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
+.nav-item-header:hover + .dropdown-container,
+.dropdown-container:hover {
   display: block !important;
 }
-.donate-nav-item-header:hover + .dropdown-container, .dropdown-container:hover  {
+.donate-nav-item-header:hover + .dropdown-container,
+.dropdown-container:hover {
   display: block !important;
 }
 .dropdown-container {
@@ -246,13 +249,13 @@ label {
 }
 
 /* for donate button specifically */
-.donate-nav-item-header{
+.donate-nav-item-header {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
 }
-.donate-nav-item-header a{
+.donate-nav-item-header a {
   color: #ffffff; /* nav headers font style */
   font-family: "BeVietnam-ExtraBold";
   font-size: 1.5em;
@@ -263,7 +266,7 @@ label {
   background-color: #3399ff;
   padding: 0.2em 0.5em 0.2em 0.5em;
 }
-.donate-nav-background:hover  {
+.donate-nav-background:hover {
   background-color: #70b8ff;
   transition: 0.2s;
   color: #3399ff !important;
@@ -283,11 +286,11 @@ label {
   font-family: "BeVietnam-ExtraBold";
   color: #fa8d1f;
 }
-.dropdown-container a:first-child li{
+.dropdown-container a:first-child li {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.dropdown-container a:last-child li{
+.dropdown-container a:last-child li {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -343,7 +346,7 @@ label {
   display: flex;
 }
 .ind-learners-flag-course-card:hover + .course-dropdown-card,
-.school-flag-course-card:hover + .course-dropdown-card{
+.school-flag-course-card:hover + .course-dropdown-card {
   display: flex;
 }
 /* #endregion */

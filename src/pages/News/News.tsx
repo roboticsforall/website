@@ -73,7 +73,7 @@ export const News: React.FC = () => {
   return (
     <div>
       <Header
-        headerTextColor= {ColorThemes.mainYellow}
+        headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title="See us in the news!"
         description="Learn more about our progress and community outreach."
@@ -303,8 +303,8 @@ export const News: React.FC = () => {
           </Container>
         </Row>
       </Container>
-      <br/>
-      <br/>
+      <br />
+      <br />
     </div>
   );
 };

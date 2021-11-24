@@ -2,7 +2,11 @@ import React from "react";
 import { Container, Tab } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { TabsCardLeftImage, TabsCardNoImage, TabsCardRightImage } from "@/components/TabCards";
+import {
+  TabsCardLeftImage,
+  TabsCardNoImage,
+  TabsCardRightImage,
+} from "@/components/TabCards";
 import { InternDescriptionTabs } from "../../components/InternDescriptionTabs";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
@@ -17,7 +21,6 @@ import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 import internOverviewJSON from "@/posts/intern_overview.json";
-
 
 export const InternOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -45,7 +48,7 @@ export const InternOverview: React.FC = () => {
           <Tab.Content>
             <TabsCardNoImage
               posHeader={"OVERVIEW"}
-              generalColor = {ColorThemes.mainYellow}
+              generalColor={ColorThemes.mainYellow}
               posDescription={
                 <div>
                   <p>
@@ -55,31 +58,31 @@ export const InternOverview: React.FC = () => {
               }
             />
             <InternDescriptionTabs
-              publicityDescription = {
+              publicityDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
-              technicalDescription = {
+              technicalDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
-              businessDescription = {
+              businessDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
-              addButtons = {true}
+              addButtons={true}
             />
             <TabsCardRightImage
               posHeader={"SCHEDULING"}
               posImage={Calendar}
-              generalColor = {ColorThemes.lightYellow}
+              generalColor={ColorThemes.lightYellow}
               posDescription={
                 <div>
-                    <Markdown>{internOverviewJSON.scheduling}</Markdown>
+                  <Markdown>{internOverviewJSON.scheduling}</Markdown>
                 </div>
               }
             />
             <TabsCardLeftImage
               posHeader={"TIME COMMITMENT"}
               posImage={Clock}
-              generalColor = {ColorThemes.mainYellow}
+              generalColor={ColorThemes.mainYellow}
               posDescription={
                 <Markdown>{internOverviewJSON.time_commitment}</Markdown>
               }
@@ -87,7 +90,7 @@ export const InternOverview: React.FC = () => {
             <TabsCardRightImage
               posHeader={"BENEFITS"}
               posImage={ThumbsUp}
-              generalColor = {ColorThemes.lightYellow}
+              generalColor={ColorThemes.lightYellow}
               posDescription={
                 <Markdown>{internOverviewJSON.benefits}</Markdown>
               }
@@ -95,7 +98,7 @@ export const InternOverview: React.FC = () => {
             <TabsCardLeftImage
               posHeader={"REQUIREMENTS"}
               posImage={Laptop}
-              generalColor = {ColorThemes.mainYellow}
+              generalColor={ColorThemes.mainYellow}
               posDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
@@ -103,22 +106,31 @@ export const InternOverview: React.FC = () => {
             <TabsCardRightImage
               posHeader={"BENEFICIAL QUALIFICATIONS"}
               posImage={Presentation}
-              generalColor = {ColorThemes.lightYellow}
+              generalColor={ColorThemes.lightYellow}
               posDescription={
-                <Markdown>{internOverviewJSON.beneficial_qualifications}</Markdown>
+                <Markdown>
+                  {internOverviewJSON.beneficial_qualifications}
+                </Markdown>
               }
             />
-            <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
+            <h2 className="header-size" style={positionsTitle}>
+              FAQs
+            </h2>
             <Container>
               {internfaqsJSON.intern_faqs_list.map((QAPair) => (
                 <FAQDropdowns
                   key={QAPair.question}
                   question={QAPair.question}
                   answer={QAPair.answer}
-                  colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
+                  colors={{
+                    main: ColorThemes.mainOrange,
+                    light: ColorThemes.lightOrange,
+                    dark: ColorThemes.darkOrange,
+                    backgroundHover: ColorThemes.mainYellow,
+                  }}
                 />
               ))}
-              <br/>
+              <br />
             </Container>
             <br></br>
             <br></br>

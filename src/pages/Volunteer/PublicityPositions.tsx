@@ -10,8 +10,7 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
-import publicityInternJSON from "@/posts/publicity_intern.json"
-
+import publicityInternJSON from "@/posts/publicity_intern.json";
 
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -38,7 +37,7 @@ export const PublicityPositions: React.FC = () => {
   return (
     <div>
       <Header
-        headerTextColor = {ColorThemes.mainOrange}
+        headerTextColor={ColorThemes.mainOrange}
         image={headerBlobOrange}
         title={"Volunteer to Build Our Outreach!"}
         description={
@@ -52,43 +51,53 @@ export const PublicityPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link
-                eventKey="one"
-                className="pos"
-                style={ActiveStyle}
-              >
+              <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
                 <p style={black}>Publicity Intern Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <TabsCardNoImage
-                posHeader={"DETAILS"}
-                generalColor = {ColorThemes.mainOrange}
-                posDescription={
-                  <div>
-                    <p>
-                      <Markdown>{publicityInternJSON.publicity_intern_details}</Markdown>
-                    </p>
-                  </div>
-                }
-              />
-              <PosButton backgroundColor = {ColorThemes.mainOrange} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
-              <br/>
-              <h2 className = "header-size" style={positionsTitle}>Positions</h2>
-              <Container>
-                {publicityInternJSON.positions.map((pair, i) => (
-                  <FAQDropdowns
-                    key={i}
-                    question={pair.name}
-                    answer={pair.description}
-                    colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
-                  />
-                ))}
-                <br/>
-              </Container>
-              <br></br>
-              <br></br>
+            <TabsCardNoImage
+              posHeader={"DETAILS"}
+              generalColor={ColorThemes.mainOrange}
+              posDescription={
+                <div>
+                  <p>
+                    <Markdown>
+                      {publicityInternJSON.publicity_intern_details}
+                    </Markdown>
+                  </p>
+                </div>
+              }
+            />
+            <PosButton
+              backgroundColor={ColorThemes.mainOrange}
+              backgroundHover={ColorThemes.mainYellow}
+              title={"Apply Now!"}
+              link="/volunteer/volunteerapp"
+            />
+            <br />
+            <h2 className="header-size" style={positionsTitle}>
+              Positions
+            </h2>
+            <Container>
+              {publicityInternJSON.positions.map((pair, i) => (
+                <FAQDropdowns
+                  key={i}
+                  question={pair.name}
+                  answer={pair.description}
+                  colors={{
+                    main: ColorThemes.mainOrange,
+                    light: ColorThemes.lightOrange,
+                    dark: ColorThemes.darkOrange,
+                    backgroundHover: ColorThemes.mainYellow,
+                  }}
+                />
+              ))}
+              <br />
+            </Container>
+            <br></br>
+            <br></br>
           </Tab.Content>
         </Tab.Container>
       </Container>
