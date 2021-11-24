@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/blue.png";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
+import { TabsCardNoImage } from "@/components/TabCards";
 import Markdown from "markdown-to-jsx";
 
 
 import { ColorThemes } from "@/colors";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import { FAQDropdowns } from "@/components/FAQDropdowns";
 import generalInternJSON from "@/posts/general_intern.json"
 
 
@@ -35,7 +35,7 @@ export const BusinessPositions: React.FC = () => {
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={ColorThemes.mainBlue}
         image={headerBlob}
         title={"Become a General Business Intern!"}
@@ -60,7 +60,7 @@ export const BusinessPositions: React.FC = () => {
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <RFATabsCardNoImage
+              <TabsCardNoImage
                 posHeader={"DETAILS"}
                 generalColor = {ColorThemes.mainBlue}
                 posDescription={
@@ -74,7 +74,7 @@ export const BusinessPositions: React.FC = () => {
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
                 {generalInternJSON.positions.map((pair, i) => (
-                  <RFAFAQDropdowns
+                  <FAQDropdowns
                     key={i}
                     question={pair.name}
                     answer={pair.description}

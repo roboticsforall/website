@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Tab } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFATabsCardLeftImage, RFATabsCardNoImage, RFATabsCardRightImage } from "@/components/RFATabCards";
-import { RFAInternDescriptionTabs } from "../../components/RFAInternDescriptionTabs";
+import { TabsCardLeftImage, TabsCardNoImage, TabsCardRightImage } from "@/components/TabCards";
+import { InternDescriptionTabs } from "../../components/InternDescriptionTabs";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";
@@ -15,7 +15,7 @@ import Markdown from "markdown-to-jsx";
 import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
 
 import { ColorThemes } from "@/colors";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import { FAQDropdowns } from "@/components/FAQDropdowns";
 import internOverviewJSON from "@/posts/intern_overview.json";
 
 
@@ -29,7 +29,7 @@ export const InternOverview: React.FC = () => {
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={"#FA8D1F"}
         image={headerBlobOrange}
         title={"Intern at Robotics for All in 20+ groups."}
@@ -43,7 +43,7 @@ export const InternOverview: React.FC = () => {
         <br></br>
         <Tab.Container>
           <Tab.Content>
-            <RFATabsCardNoImage
+            <TabsCardNoImage
               posHeader={"OVERVIEW"}
               generalColor = {ColorThemes.mainYellow}
               posDescription={
@@ -54,7 +54,7 @@ export const InternOverview: React.FC = () => {
                 </div>
               }
             />
-            <RFAInternDescriptionTabs
+            <InternDescriptionTabs
               publicityDescription = {
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
@@ -66,7 +66,7 @@ export const InternOverview: React.FC = () => {
               }
               addButtons = {true}
             />
-            <RFATabsCardRightImage
+            <TabsCardRightImage
               posHeader={"SCHEDULING"}
               posImage={Calendar}
               generalColor = {ColorThemes.lightYellow}
@@ -76,7 +76,7 @@ export const InternOverview: React.FC = () => {
                 </div>
               }
             />
-            <RFATabsCardLeftImage
+            <TabsCardLeftImage
               posHeader={"TIME COMMITMENT"}
               posImage={Clock}
               generalColor = {ColorThemes.mainYellow}
@@ -84,7 +84,7 @@ export const InternOverview: React.FC = () => {
                 <Markdown>{internOverviewJSON.time_commitment}</Markdown>
               }
             />
-            <RFATabsCardRightImage
+            <TabsCardRightImage
               posHeader={"BENEFITS"}
               posImage={ThumbsUp}
               generalColor = {ColorThemes.lightYellow}
@@ -92,7 +92,7 @@ export const InternOverview: React.FC = () => {
                 <Markdown>{internOverviewJSON.benefits}</Markdown>
               }
             />
-            <RFATabsCardLeftImage
+            <TabsCardLeftImage
               posHeader={"REQUIREMENTS"}
               posImage={Laptop}
               generalColor = {ColorThemes.mainYellow}
@@ -100,7 +100,7 @@ export const InternOverview: React.FC = () => {
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
             />
-            <RFATabsCardRightImage
+            <TabsCardRightImage
               posHeader={"BENEFICIAL QUALIFICATIONS"}
               posImage={Presentation}
               generalColor = {ColorThemes.lightYellow}
@@ -111,7 +111,7 @@ export const InternOverview: React.FC = () => {
             <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
             <Container>
               {internfaqsJSON.intern_faqs_list.map((QAPair) => (
-                <RFAFAQDropdowns
+                <FAQDropdowns
                   key={QAPair.question}
                   question={QAPair.question}
                   answer={QAPair.answer}

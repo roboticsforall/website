@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/green.png";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
-import { RFAPosButton } from "@/components/RFAPosButton";
+import { TabsCardNoImage } from "@/components/TabCards";
+import { PosButton } from "@/components/PosButton";
 
 import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import { FAQDropdowns } from "@/components/FAQDropdowns";
 import technicalInternJSON from "@/posts/technical_intern.json"
 
 
@@ -37,7 +37,7 @@ export const TechnicalPositions: React.FC = () => {
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={ColorThemes.mainGreen}
         image={headerBlob}
         title={"Help develop curriculum and software!"}
@@ -62,7 +62,7 @@ export const TechnicalPositions: React.FC = () => {
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <RFATabsCardNoImage
+              <TabsCardNoImage
                 posHeader={"DETAILS"}
                 generalColor = {ColorThemes.mainGreen}
                 posDescription={
@@ -73,12 +73,12 @@ export const TechnicalPositions: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPosButton backgroundColor = {ColorThemes.mainGreen} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
+              <PosButton backgroundColor = {ColorThemes.mainGreen} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
               <br/>
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
                 {technicalInternJSON.positions.map((pair, i) => (
-                  <RFAFAQDropdowns
+                  <FAQDropdowns
                     key={i}
                     question={pair.name}
                     answer={pair.description}

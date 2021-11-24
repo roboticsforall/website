@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/yellow.png";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
-import { RFAPosButton } from "@/components/RFAPosButton";
+import { TabsCardNoImage } from "@/components/TabCards";
+import { PosButton } from "@/components/PosButton";
 
 import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import curricdevpositionsJSON from "@/posts/curriculum_developer.json";
 
@@ -37,12 +37,12 @@ export const CurricDevPositions: React.FC = () => {
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor = {ColorThemes.mainYellow}
         image={headerBlob}
         title={"Help develop curriculum!"}
         description={
-          "Curriculum developers construct the diverse set of curriculum at RFA"
+          "Curriculum developers construct the diverse set of curriculum at "
         }
       />
       <Container>
@@ -62,7 +62,7 @@ export const CurricDevPositions: React.FC = () => {
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <RFATabsCardNoImage
+              <TabsCardNoImage
                 posHeader={"DETAILS"}
                 generalColor = {ColorThemes.mainYellow}
                 posDescription={
@@ -73,12 +73,12 @@ export const CurricDevPositions: React.FC = () => {
                   </div>
                 }
               />
-              <RFAPosButton backgroundColor = {ColorThemes.mainYellow} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
+              <PosButton backgroundColor = {ColorThemes.mainYellow} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
               <br/>
               <h2 className = "header-size" style={positionsTitle}>Positions</h2>
               <Container>
                 {curricdevpositionsJSON.positions.map((pair, i) => (
-                  <RFAFAQDropdowns
+                  <FAQDropdowns
                     key={i}
                     question={pair.name}
                     answer={pair.description}
