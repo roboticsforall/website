@@ -62,7 +62,6 @@ export const VolOverview: React.FC = () => {
             titleSize={"1em"}
           ></VolOverviewCircle>
           <VolOverviewCircle
-            align={"center"}
             width={"18vw"}
             height={"17vw"}
             title={"Support our:"}
