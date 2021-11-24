@@ -36,7 +36,7 @@ export const RFANavbarDesktop: React.FC = () => {
   return (
     <nav className = "py-5" style = {navContainer}>
       <header style = {navHeader}>
-        <Link to = "/"><img className = "mx-md-2" src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
+        <Link to = "/"><img src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
         <Link className = "hyperlink" to = "/"><h2 style = {navHeading}>Robotics For All</h2></Link>
       </header>
       <ul className = "ms-2" style = {{...navItemsList, ...list}}>

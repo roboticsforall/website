@@ -44,14 +44,14 @@ export const RFANavbarMobile: React.FC = () => {
 
   return (
     <nav className = "py-5" style = {navContainer}>
-      <header className = "mx-md-3" style = {navHeader}>
+      <header style = {navHeader}>
         <Link to = "/"><img src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
-        <button onClick = {setNavHeight}><img width = "50" src = {dropdownIcon}/></button>
+        <img onClick = {setNavHeight} width = "50" src = {dropdownIcon}/>
       </header>
       <div style = {screenCover}>
-        <header className = "py-5 px-3" style = {navHeader}>
+        <header className = "py-5" style = {navHeader}>
           <Link to = "/"><img src = {TobyHeaderLogo} style = {logoImageSize}/></Link>
-          <button onClick = {setNavHeight}><img width = "50" src = {exitIcon}/></button>
+          <img onClick = {setNavHeight} width = "50" src = {exitIcon}/>
         </header>
         <ul className = "mx-3 p-0" style = {{height: "50%", overflowY: "auto", ...list}}>
         {[...enrollvolunteerabout, ...contactaboutdonate].map((navItem, i) => (
