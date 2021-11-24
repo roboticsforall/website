@@ -2,6 +2,7 @@ import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { RFANavbar } from "./pages/RFANavbar";
+import { Update } from "./pages/Update";
 import ScrollToTop from "@/pages/ScrollToTop"; 
 // Base Pages
 import { RFAHomePage } from "./pages/RFAHomePage";
@@ -46,6 +47,7 @@ export const App: React.FC = () => {
     <Router>
       <RFANavbar />
       <ScrollToTop/>
+      <Update/>
       <Route
         render={({ location }) => (
           <TransitionGroup>

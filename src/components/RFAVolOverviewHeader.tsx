@@ -1,5 +1,4 @@
 import React from "react";
-import { Row } from "react-bootstrap";
 import { RFAVolOverviewCircle } from "./RFAVolOverviewCircle";
 
 export const RFAVolOverviewHeader: React.FC<{

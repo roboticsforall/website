@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { ColorThemes } from "../../colors";
 import { RFAHeader } from "@/components/RFAHeader";
 import { RFAFlagCard } from "@/components/RFAFlagCard";
@@ -15,7 +15,6 @@ import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
-import { RFAWebsiteTOSCard } from "@/components/RFAWebsiteTOSCard";
 
 export const RFAIndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {

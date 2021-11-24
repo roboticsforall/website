@@ -12,5 +12,6 @@ export const ColorThemes = {
     lightOrange: "#fcaf62",
     darkOrange: "#c06204",
     white: "#fff",
-    black: "#000"
+    black: "#000",
+    gray: "#C0C0C0",
 }

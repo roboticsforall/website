@@ -10,7 +10,6 @@ import Presentation from "@/media/Graphics/presentation.png";
 import Calendar from "@/media/Graphics/calendar.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 
-import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import Markdown from "markdown-to-jsx";
 
 import internfaqsJSON from "@/posts/faqs/intern_faqs.json";

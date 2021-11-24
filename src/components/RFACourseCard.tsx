@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Row, Col, Container } from "react-bootstrap";
+import { Image, Row, Col } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import exitIcon from "../media/Icons/exitIcon.svg";
 import {createUseStyles} from 'react-jss';
