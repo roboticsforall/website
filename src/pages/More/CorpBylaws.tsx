@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import { RFABylawEntry } from "@/components/RFABylawEntry";
+import { BylawEntry } from "@/components/BylawEntry";
 import bylawsListJSON from "@/posts/downloads/corp_bylaws.json";
 
 import { ColorThemes } from "@/colors";
 
-export const RFACorpBylaws: React.FC = () => {
+export const CorpBylaws: React.FC = () => {
   const background: React.CSSProperties = {
     background: "rgba(255, 204, 0, 0.5)",
     borderRadius: "15px",
@@ -24,7 +24,7 @@ export const RFACorpBylaws: React.FC = () => {
   };
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Corporate Bylaws"}
@@ -47,7 +47,7 @@ export const RFACorpBylaws: React.FC = () => {
       </Container>
       <Container style={background}>
         {bylawsListJSON.corp_bylaws_list.map((bylawEntry, i) => (
-          <RFABylawEntry
+          <BylawEntry
             key={i}
             date={bylawEntry.date}
             bylawName={bylawEntry.item_name}

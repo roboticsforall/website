@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Tab, Nav } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
 import privacypolicyJSON from "@/posts/privacy_policy.json";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
+import { TabsCardNoImage } from "@/components/TabCards";
 import Markdown from "markdown-to-jsx";
 
-export const RFAPrivacyPolicy: React.FC = () => {
+export const PrivacyPolicy: React.FC = () => {
   const ActiveStyle = (props: any) => ({
     color: "#000000",
     backgroundColor: (props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange),
@@ -31,7 +31,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Website Privacy Policy"}
@@ -53,7 +53,7 @@ export const RFAPrivacyPolicy: React.FC = () => {
               </Nav.Item>
             </Nav>
             <Tab.Content>
-              <RFATabsCardNoImage
+              <TabsCardNoImage
                 posHeader={""}
                 generalColor = {(i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange)}
                 posDescription={

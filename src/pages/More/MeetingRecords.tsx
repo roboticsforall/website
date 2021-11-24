@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import { RFAMeetingEntry } from "@/components/RFAMeetingEntry";
+import { MeetingEntry } from "@/components/MeetingEntry";
 import meetingRecordsListJSON from "@/posts/downloads/meeting_records.json";
 import { ColorThemes } from "@/colors";
 
-export const RFAMeetingRecords: React.FC = () => {
+export const MeetingRecords: React.FC = () => {
   const background: React.CSSProperties = {
     background: "rgba(255, 204, 0, 0.5)",
     borderRadius: "15px",
@@ -24,7 +24,7 @@ export const RFAMeetingRecords: React.FC = () => {
   };
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={ColorThemes.mainYellow}
         image={headerBlobYellow}
         title={"Meeting Records"}
@@ -50,7 +50,7 @@ export const RFAMeetingRecords: React.FC = () => {
       <Container style={background}>
         {meetingRecordsListJSON.meeting_records_list.map(
           (meeting_record_entry, i) => (
-            <RFAMeetingEntry
+            <MeetingEntry
               key={i}
               date={meeting_record_entry.date}
               agendaDownload={meeting_record_entry.agenda_file_path.replace(

@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
 import websitetosJSON from "@/posts/website_tos.json";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
+import { TabsCardNoImage } from "@/components/TabCards";
 import Markdown from "markdown-to-jsx";
 
-export const RFAWebsiteTOS: React.FC = () => {
+export const WebsiteTOS: React.FC = () => {
   const ActiveStyle = (props: any) => ({
     color: "#000000",
     backgroundColor: (props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange),
@@ -25,7 +25,7 @@ export const RFAWebsiteTOS: React.FC = () => {
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={"#ffcc00"}
         image={headerBlobYellow}
         title={"Website Terms of Use"}
@@ -47,7 +47,7 @@ export const RFAWebsiteTOS: React.FC = () => {
               </Nav.Item>
             </Nav>
             <Tab.Content>
-              <RFATabsCardNoImage
+              <TabsCardNoImage
                 posHeader={""}
                 generalColor = {(i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange)}
                 posDescription={
