@@ -5,8 +5,12 @@ import InternToby from "@/media/TobyImages/publicity intern.webp";
 import TAToby from "@/media/TobyImages/TA.webp";
 import { VolOverviewImg } from "@/components/VolOverviewImg";
 import { VolOverviewCard } from "@/components/VolOverviewCard";
-import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { VolOverviewHeader } from "@/components/VolOverviewHeader";
+import { VolOverviewCircle } from "@/components/VolOverviewCircle";
+import headerBlob from "@/media/HeaderBlobs/orange.png";
+
+
+import { Header } from "@/components/Header";
+
 
 import { ColorThemes } from "../../colors";
 
@@ -24,11 +28,12 @@ export const VolOverview: React.FC = () => {
     color: ColorThemes.black,
   };
 
+
   return (
     <>
-      <VolOverviewHeader
+      <Header
         headerTextColor={ColorThemes.mainOrange}
-        image={headerBlobOrange}
+        image={headerBlob}
         title={"Volunteer with Robotics for All"}
         description={
           "Volunteer with us to teach or develop your skills as a business development intern!"
@@ -37,6 +42,36 @@ export const VolOverview: React.FC = () => {
       <br />
       <br />
       <Container>
+        <Row className = "justify-content-around">
+          <VolOverviewCircle
+            width={"16vw"}
+            height={"16vw"}
+            title={"Work With:"}
+            subtext={"Levels of Curriculum"}
+            end={12}
+            subtextSize={"0.63em"}
+            titleSize={"1em"}
+          ></VolOverviewCircle>
+          <VolOverviewCircle
+            width={"16vw"}
+            height={"16vw"}
+            title={"Join our:"}
+            subtext={"Active Volunteers"}
+            end={240}
+            subtextSize={"0.65em"}
+            titleSize={"1em"}
+          ></VolOverviewCircle>
+          <VolOverviewCircle
+            align={"center"}
+            width={"18vw"}
+            height={"17vw"}
+            title={"Support our:"}
+            subtext={"Students Taught"}
+            end={1296}
+            subtextSize={"0.8em"}
+            titleSize={"1.1em"}
+          ></VolOverviewCircle>
+        </Row>
         <Row>
           <h2 style={positionsTitle}>VOLUNTEER POSTIONS</h2>
           <p style={positionsDescription}>
