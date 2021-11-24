@@ -19,7 +19,7 @@ export const RFAFlagCard: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-Bold",
     },
     cardBackground: {
-      composes: 'mb-2 mx-2',
+      composes: 'mb-2',
       borderRadius: "1em",
       transition: "200ms",
       backgroundColor: props.backgroundColor,

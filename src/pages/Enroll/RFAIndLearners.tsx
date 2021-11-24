@@ -60,7 +60,7 @@ export const RFAIndLearners: React.FC = () => {
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
         <br></br>
-        <Row className="justify-content-between">
+        <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
 
               <RFAFlagCard
