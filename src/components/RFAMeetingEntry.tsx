@@ -12,8 +12,8 @@ export const RFAMeetingEntry: React.FC<{
     border: "10px solid rgba(255, 204, 0, 0.5)",
     padding: "5px",
     fontFamily: "BeVietnam-Bold",
-    fontSize: "large",
     textAlign: "center",
+    wordWrap: "break-word",
   };
 
   return (

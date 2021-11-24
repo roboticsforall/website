@@ -20,6 +20,7 @@ export const RFAMeetingRecords: React.FC = () => {
     fontSize: "xx-large",
     textAlign: "center",
     color: "black",
+    wordWrap: "break-word"
   };
   return (
     <div>
@@ -36,13 +37,13 @@ export const RFAMeetingRecords: React.FC = () => {
       <Container>
         <Row className="center-align">
           <Col xs={6} style={header}>
-            Meeting Date and Time
+            <h3>Meeting Date and Time</h3>
           </Col>
           <Col xs={3} style={header}>
-            Agenda
+            <h3>Agenda</h3>
           </Col>
           <Col xs={3} style={header}>
-            Minutes
+            <h3>Minutes</h3>
           </Col>
         </Row>
       </Container>

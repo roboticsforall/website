@@ -9,11 +9,11 @@ import { ColorThemes } from "@/colors";
 
 export const RFACorpBylaws: React.FC = () => {
   const background: React.CSSProperties = {
-    background: ColorThemes.lightYellow,
+    background: "rgba(255, 204, 0, 0.5)",
     borderRadius: "15px",
   };
   const header: React.CSSProperties = {
-    background: ColorThemes.lightYellow,
+    background: "rgba(255, 204, 0, 0.5)",
     borderRadius: "20px",
     border: "10px solid white",
     padding: "5px",
@@ -35,13 +35,13 @@ export const RFACorpBylaws: React.FC = () => {
       <Container>
         <Row className="center-align">
           <Col xs={3} style={header}>
-            Date
+            <h3>Date</h3>
           </Col>
-          <Col xs={7} style={header}>
-            Item
+          <Col xs={6} style={header}>
+            <h3>Item</h3>
           </Col>
-          <Col xs={2} style={header}>
-            File
+          <Col xs={3} style={header}>
+            <h3>File</h3>
           </Col>
         </Row>
       </Container>
