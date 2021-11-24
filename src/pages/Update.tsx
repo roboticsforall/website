@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Container, Row } from "react-bootstrap";
 import updatesJSON from "@/posts/updates.json";
 import { ColorThemes } from "@/colors";
-import { createUseStyles } from "react-jss";
 
 
 export const Update: React.FC = () => {

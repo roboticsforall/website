@@ -104,9 +104,9 @@ export const RFANewsletter: React.FC = () => {
             <br></br>
             <br></br>
               
-              <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex="-1" value=""/></div>
+              <div style = {{position: "absolute", left: "-5000px"}} aria-hidden="true"><input type="text" name="b_3ef87e40741b0c3fadf90e578_0ec3a22201" tabIndex = {-1} value=""/></div>
               
-              <RFASubmitButton className="clear button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"/>
+              <RFASubmitButton className = "clear button" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"/>
           </div>
 
           </form>
