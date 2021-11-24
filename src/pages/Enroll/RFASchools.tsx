@@ -67,7 +67,7 @@ export const RFASchools: React.FC = () => {
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
         <br></br>
-        <Row className="justify-content-between">
+        <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
               <RFAFlagCard
                 image={flagInfo.file_path.replace("/public", "")}
@@ -101,17 +101,17 @@ export const RFASchools: React.FC = () => {
           </h5>
           <br></br>
           <Row>
-          {coursesInfoJSON.courses_list.map((courseInfo, i) => (
-              <RFACourseCard
-                key = {i}
-                link={courseInfo.class_description_link}
-                courseImage={courseInfo.file_path.replace("/public", "")}
-                title={courseInfo.course_name}
-                backgroundColor = {ColorThemes.lightGreen}
-                dropdownCourseDescription = {courseInfo.dropdown_course_description}
-                dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
-              ></RFACourseCard>
-          ))}
+            {coursesInfoJSON.courses_list.map((courseInfo, i) => (
+                <RFACourseCard
+                  key = {i}
+                  link={courseInfo.class_description_link}
+                  courseImage={courseInfo.file_path.replace("/public", "")}
+                  title={courseInfo.course_name}
+                  backgroundColor = {ColorThemes.lightGreen}
+                  dropdownCourseDescription = {courseInfo.dropdown_course_description}
+                  dropdownCourseImage = {courseInfo.dropdown_file_path.replace("/public", "")}
+                ></RFACourseCard>
+            ))}
           </Row>
           <br></br>
           <br></br>
