@@ -1,10 +1,10 @@
 import React from "react";
+import { Col } from "react-bootstrap";
 import { CountUp } from "use-count-up";
 
 import { ColorThemes } from "../colors";
 
 export const VolOverviewCircle: React.FC<{
-  align: string;
   width: string;
   height: string;
   subtextSize: string;
@@ -14,7 +14,6 @@ export const VolOverviewCircle: React.FC<{
   end: number;
 }> = (props) => {
   const circleText: React.CSSProperties = {
-    alignSelf: props.align,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
