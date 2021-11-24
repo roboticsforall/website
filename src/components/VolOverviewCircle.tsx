@@ -1,5 +1,4 @@
 import React from "react";
-import { Col } from "react-bootstrap";
 import { CountUp } from "use-count-up";
 
 import { ColorThemes } from "../colors";
