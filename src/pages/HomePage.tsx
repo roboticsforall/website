@@ -34,12 +34,12 @@ export const HomePage: React.FC = () => {
   const headerDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
     textAlign: "center",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
   };
   const sponsorsLabel: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
     textAlign: "center",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
   };
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
