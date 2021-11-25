@@ -42,35 +42,23 @@ export const VolOverview: React.FC = () => {
         <Row className="justify-content-around">
           <Col md>
             <VolOverviewCircle
-              width={"16vw"}
-              height={"16vw"}
               title={"Work With:"}
               subtext={"Levels of Curriculum"}
               end={12}
-              subtextSize={"0.63em"}
-              titleSize={"1em"}
             ></VolOverviewCircle>
           </Col>
           <Col md>
             <VolOverviewCircle
-              width={"16vw"}
-              height={"16vw"}
               title={"Join our:"}
               subtext={"Active Volunteers"}
               end={240}
-              subtextSize={"0.65em"}
-              titleSize={"1em"}
             ></VolOverviewCircle>
           </Col>
           <Col md>
             <VolOverviewCircle
-              width={"18vw"}
-              height={"17vw"}
               title={"Support our:"}
               subtext={"Students Taught"}
               end={1296}
-              subtextSize={"0.8em"}
-              titleSize={"1.1em"}
             ></VolOverviewCircle>
           </Col>
         </Row>
@@ -123,7 +111,6 @@ export const VolOverview: React.FC = () => {
             }
             buttonfloat={"right"}
             cardfloat={"left"}
-            arrowLocation={"4.6vmax"}
           ></VolOverviewCard>
           <br></br>
           <VolOverviewCard
@@ -135,9 +122,6 @@ export const VolOverview: React.FC = () => {
             description={
               "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."
             }
-            buttonfloat={"right"}
-            cardfloat={"left"}
-            arrowLocation={"26vmax"}
           ></VolOverviewCard>
           <br></br>
           <VolOverviewCard
@@ -149,9 +133,6 @@ export const VolOverview: React.FC = () => {
             description={
               "Publicity Interns help our publicity team to make awesome new visuals, giving you the great branding on this website!"
             }
-            buttonfloat={"left"}
-            cardfloat={"right"}
-            arrowLocation={"47vmax"}
           ></VolOverviewCard>
         </Col>
         <br />

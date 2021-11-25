@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
 
   return (
     <div className="center-align yellow-row">
-      <Container className="mx-2">
+      <Container fluid className="mx-2">
         <br />
         <Row className="justify-content-center">
           <Col lg={3}>

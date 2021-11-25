@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { CountUp } from "use-count-up";
 
 import { ColorThemes } from "@/colors";
@@ -14,7 +13,7 @@ export const VolOverviewCircle: React.FC<{
   end: number;
 }> = (props) => {
   const circleContainer: React.CSSProperties = {
-    // borderRadius: "50%",
+    borderRadius: "15px",
     backgroundColor: ColorThemes.lightOrange,
     textAlign: "center",
   };
@@ -26,15 +25,14 @@ export const VolOverviewCircle: React.FC<{
   };
   const statNumbers: React.CSSProperties = {
     fontFamily: "Mazzard-H-Bold",
-    fontSize: "2.5em",
     color: "black",
   };
   return (
     <div className = "border p-2" style={circleContainer}>
       <h3 style={circleTitle}>{props.title}</h3>
-      <div style={statNumbers}>
+      <h1 style={statNumbers}>
         <CountUp end={props.end} start={1} isCounting />
-      </div>
+      </h1>
       <h4 style={circleSubtext}>{props.subtext}</h4>
     </div>
   );

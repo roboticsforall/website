@@ -42,7 +42,7 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
 
   const useStyles = createUseStyles({
     dropdown: (props: any) => ({
-      composes: "p-2 justify-content-between align-items-center",
+      composes: "p-2 d-flex justify-content-between",
       borderRadius: "1em",
       fontFamily: "BeVietnam-ExtraBold",
       transition: "200ms",
@@ -62,32 +62,28 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
 
   return (
     <div onClick={displayDiv}>
-      <Row className={classes.dropdown}>
-        <Col md={11}>
-          <h3 style={{ color: dropdownTextColor }}>{props.question}</h3>
-        </Col>
-        <Col>
-          <img
-            alt="dropdownArrow"
-            width="70"
-            height="40"
-            src={dropdownIcon}
-            style={
-              dropdownAnswerDisplay == "block"
-                ? { transform: "rotate(180deg)" }
-                : { transform: "rotate(0deg)" }
-            }
-          />
-        </Col>
-      </Row>
+      <div className={classes.dropdown}>
+        <h3 style={{ color: dropdownTextColor }}>{props.question}</h3>
+        <img
+          alt="dropdownArrow"
+          width="70"
+          height="40"
+          src={dropdownIcon}
+          style={
+            dropdownAnswerDisplay == "block"
+              ? { transform: "rotate(180deg)" }
+              : { transform: "rotate(0deg)" }
+          }
+        />
+      </div>
       <br />
       <div style={dropdownDisplay}>
-        <Row
+        <div
           style={dropdownAnswer}
           className="p-2 justify-content-between align-items-center"
         >
           <h3>{props.answer}</h3>
-        </Row>
+        </div>
         <br />
       </div>
     </div>

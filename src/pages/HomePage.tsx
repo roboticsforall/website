@@ -27,23 +27,23 @@ export const HomePage: React.FC = () => {
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "10vh",
+    fontSize: "5em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
     textAlign: "center",
-    fontSize: "4vh",
+    fontSize: "2em",
   };
   const sponsorsLabel: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
     textAlign: "center",
-    fontSize: "4vh",
+    fontSize: "2em",
   };
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "7vh",
+    fontSize: "5em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
@@ -80,9 +80,9 @@ export const HomePage: React.FC = () => {
         <Container>
           <Row>
             <Col md={4} className="text-center">
-              <Link to="/enroll-individlearners" className="hyperlink">
+              <Link to="/enroll/individlearners" className="hyperlink">
                 <Image
-                  className="mb-3 home-page-house-img"
+                  className="home-page-house-img"
                   src={transparentImage}
                 />
                 <h1
@@ -96,9 +96,9 @@ export const HomePage: React.FC = () => {
               </Link>
             </Col>
             <Col md={4} className="text-center">
-              <Link to="/enroll-schools" className="hyperlink">
+              <Link to="/enroll/schools" className="hyperlink">
                 <Image
-                  className="mb-3 home-page-apple-img"
+                  className="home-page-apple-img"
                   src={transparentImage}
                 />
                 <h1
@@ -112,9 +112,9 @@ export const HomePage: React.FC = () => {
               </Link>
             </Col>
             <Col md={4} className="text-center">
-              <Link to="/volunteer-overview" className="hyperlink">
+              <Link to="/volunteer/overview" className="hyperlink">
                 <Image
-                  className="mb-3 home-page-world-img"
+                  className="home-page-world-img"
                   src={transparentImage}
                 />
                 <h1
