@@ -6,8 +6,8 @@ import {
   TabsCardLeftImage,
   TabsCardNoImage,
   TabsCardRightImage,
-} from "@/components/TabCards";
-import { InternDescriptionTabs } from "../../components/InternDescriptionTabs";
+} from "@/components/Volunteer/TabCards";
+import { InternDescriptionTabs } from "../../components/Volunteer/InternDescriptionTabs";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";

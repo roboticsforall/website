@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { TabsCardNoImage } from "@/components/TabCards";
+import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
 import googleForms from "@/posts/google_form.json";
 import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 
-import { InternDescriptionTabs } from "../../components/InternDescriptionTabs";
+import { InternDescriptionTabs } from "../../components/Volunteer/InternDescriptionTabs";
 
 export const VolunteerApp: React.FC = () => {
   const [key, setKey] = useState("one");

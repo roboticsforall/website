@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import { MeetingEntry } from "@/components/MeetingEntry";
+import { MeetingEntry } from "@/components/More/MeetingEntry";
 import meetingRecordsListJSON from "@/posts/downloads/meeting_records.json";
 import { ColorThemes } from "@/colors";
 

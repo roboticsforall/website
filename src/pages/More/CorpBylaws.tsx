@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import { BylawEntry } from "@/components/BylawEntry";
+import { BylawEntry } from "@/components/More/BylawEntry";
 import bylawsListJSON from "@/posts/downloads/corp_bylaws.json";
 
 import { ColorThemes } from "@/colors";

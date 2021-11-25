@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Header } from "@/components/Header";
-import { NewsCard } from "@/components/NewsCard";
+import { NewsCard } from "@/components/About/NewsCard";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import newsletterJSON from "@/posts/newsletters.json";
 

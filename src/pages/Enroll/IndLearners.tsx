@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { ColorThemes } from "../../colors";
 import { Header } from "@/components/Header";
-import { FlagCard } from "@/components/FlagCard";
-import { CourseCard } from "@/components/CourseCard";
+import { FlagCard } from "@/components/Enroll/FlagCard";
+import { CourseCard } from "@/components/Enroll/CourseCard";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";

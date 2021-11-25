@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { TabsCardNoImage } from "@/components/TabCards";
-import { PosButton } from "@/components/PosButton";
+import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
+import { PosButton } from "@/components/Volunteer/PosButton";
 
 import Markdown from "markdown-to-jsx";
 

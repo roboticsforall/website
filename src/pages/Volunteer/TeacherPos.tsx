@@ -6,8 +6,8 @@ import {
   TabsCardNoImage,
   TabsCardLeftImage,
   TabsCardRightImage,
-} from "@/components/TabCards";
-import { PosButton } from "@/components/PosButton";
+} from "@/components/Volunteer/TabCards";
+import { PosButton } from "@/components/Volunteer/PosButton";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Calendar from "@/media/Graphics/calendar.png";

@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
 import websitetosJSON from "@/posts/website_tos.json";
-import { TabsCardNoImage } from "@/components/TabCards";
+import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
 export const WebsiteTOS: React.FC = () => {

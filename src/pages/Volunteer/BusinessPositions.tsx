@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/blue.png";
-import { TabsCardNoImage } from "@/components/TabCards";
+import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";

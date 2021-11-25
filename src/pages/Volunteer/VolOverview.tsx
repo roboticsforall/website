@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import TeacherToby from "@/media/TobyImages/teacher toby.webp";
 import InternToby from "@/media/TobyImages/publicity intern.webp";
 import TAToby from "@/media/TobyImages/TA.webp";
-import { VolOverviewImg } from "@/components/VolOverviewImg";
-import { VolOverviewCard } from "@/components/VolOverviewCard";
-import { VolOverviewCircle } from "@/components/VolOverviewCircle";
+import { VolOverviewImg } from "@/components/Volunteer/VolOverviewImg";
+import { VolOverviewCard } from "@/components/Volunteer/VolOverviewCard";
+import { VolOverviewCircle } from "@/components/Volunteer/VolOverviewCircle";
 import headerBlob from "@/media/HeaderBlobs/orange.png";
 
 import { Header } from "@/components/Header";
@@ -40,34 +40,45 @@ export const VolOverview: React.FC = () => {
       <br />
       <Container>
         <Row className="justify-content-around">
-          <VolOverviewCircle
-            width={"16vw"}
-            height={"16vw"}
-            title={"Work With:"}
-            subtext={"Levels of Curriculum"}
-            end={12}
-            subtextSize={"0.63em"}
-            titleSize={"1em"}
-          ></VolOverviewCircle>
-          <VolOverviewCircle
-            width={"16vw"}
-            height={"16vw"}
-            title={"Join our:"}
-            subtext={"Active Volunteers"}
-            end={240}
-            subtextSize={"0.65em"}
-            titleSize={"1em"}
-          ></VolOverviewCircle>
-          <VolOverviewCircle
-            width={"18vw"}
-            height={"17vw"}
-            title={"Support our:"}
-            subtext={"Students Taught"}
-            end={1296}
-            subtextSize={"0.8em"}
-            titleSize={"1.1em"}
-          ></VolOverviewCircle>
+          <Col md>
+            <VolOverviewCircle
+              width={"16vw"}
+              height={"16vw"}
+              title={"Work With:"}
+              subtext={"Levels of Curriculum"}
+              end={12}
+              subtextSize={"0.63em"}
+              titleSize={"1em"}
+            ></VolOverviewCircle>
+          </Col>
+          <Col md>
+            <VolOverviewCircle
+              width={"16vw"}
+              height={"16vw"}
+              title={"Join our:"}
+              subtext={"Active Volunteers"}
+              end={240}
+              subtextSize={"0.65em"}
+              titleSize={"1em"}
+            ></VolOverviewCircle>
+          </Col>
+          <Col md>
+            <VolOverviewCircle
+              width={"18vw"}
+              height={"17vw"}
+              title={"Support our:"}
+              subtext={"Students Taught"}
+              end={1296}
+              subtextSize={"0.8em"}
+              titleSize={"1.1em"}
+            ></VolOverviewCircle>
+          </Col>
         </Row>
+
+        <br/>
+        <br/>
+        <br/>
+
         <Row>
           <h2 style={positionsTitle}>VOLUNTEER POSTIONS</h2>
           <p style={positionsDescription}>
