@@ -215,7 +215,7 @@ label {
   align-items: center;
 }
 .nav-item-header a {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
   color: #ffcc00;
   font-family: "BeVietnam-ExtraBold";
@@ -258,7 +258,7 @@ label {
 .donate-nav-item-header a {
   color: #ffffff; /* nav headers font style */
   font-family: "BeVietnam-ExtraBold";
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
 }
 .donate-nav-background {
@@ -364,6 +364,8 @@ label {
   background-size: cover;
   width: 25vmax;
   height: 17vmax; /* Height of new image */
+  object-fit: cover;
+  object-position: bottom;
   transition: 200ms;
   border: none !important;
 }
@@ -559,5 +561,30 @@ label {
     transition: 0.2s;
     text-decoration: none;
     color: white;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2500px) {
+  .header-description-size {
+    font-size: 30px;
+  }
+  .header-size {
+    font-size: 90px;
+  }
+  .video-width {
+    width: 75% !important;
+    height: 60vh;
+  }
+  .home-aff-org-card-link:hover {
+    transition: 0.2s;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+  * {
+    zoom: 4;
   }
 }

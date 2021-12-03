@@ -46,6 +46,7 @@ export const HomePage: React.FC = () => {
     fontSize: "4rem",
     color: ColorThemes.mainYellow,
     textAlign: "center",
+    wordWrap: "break-word",
   };
   const sponsorImageSize: React.CSSProperties = {
     height: "7vh",
@@ -133,9 +134,7 @@ export const HomePage: React.FC = () => {
       <Container>
         <br></br>
         <br></br>
-        <Row className="justify-content-center">
-          <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
-        </Row>
+        <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
         <br></br>
         {[
           {

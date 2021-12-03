@@ -5,13 +5,10 @@ import { Link } from "react-router-dom";
 export const VolOverviewCard: React.FC<{
   backgroundcolor: string;
   buttonColor: string;
-  arrowLocation: string;
   learnMoreLink: string;
   title: string;
   description: string;
   applyLink: string;
-  buttonfloat: string;
-  cardfloat: string;
 }> = (props) => {
   const positionsTitle = {
     fontFamily: "Oswald-Medium",

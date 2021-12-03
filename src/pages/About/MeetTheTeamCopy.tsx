@@ -10,8 +10,6 @@ import ccInfoJSON from "@/posts/curriculum_committee.json";
 import adInfoJSON from "@/posts/assistant_directors.json";
 import pcInfoJSON from "@/posts/pub_committee.json";
 
-import image from "@/media/LeadershipTeam/1.png"
-
 import { ColorThemes } from "@/colors";
 
 export const MeetTheTeam: React.FC = () => {
@@ -53,7 +51,7 @@ export const MeetTheTeam: React.FC = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 1,
       slidesToSlide: 1,
     },
     tablet: {
@@ -86,11 +84,33 @@ export const MeetTheTeam: React.FC = () => {
           swipeable={false}
           draggable={false}
           transitionDuration={500}
+          centerMode
+          infinite
         >
-          <img src = {image}></img>
-          <img src = {image}></img>
-          <img src = {image}></img>
-          <img src = {image}></img>
+          {bmInfoJSON.board_members_list.map((info, i) => (
+            <div
+              key={i}
+              style={{
+                backgroundColor: ColorThemes.mainYellow,
+                borderRadius: "15px",
+              }}
+              className="d-flex my-3 p-3"
+            >
+              <Col>
+                <Image
+                  style={imgSize}
+                  src={info.image.replace("/public", "")}
+                />
+              </Col>
+              <Col style={{ overflowY: "auto" }} className="ms-2">
+                <h1 style={nameHeader}>{info.name}</h1>
+                <h1 style={{ color: ColorThemes.darkYellow, ...titleHeader }}>
+                  {info.title_pronouns}
+                </h1>
+                <Markdown style={bodyText}>{info.description}</Markdown>
+              </Col>
+            </div>
+          ))}
         </Carousel>
       </div>
       <br />
