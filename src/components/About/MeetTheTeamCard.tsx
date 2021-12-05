@@ -121,8 +121,8 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
   return (
     <>
     <Carousel
-        swipeable={false}
-        draggable={false}
+        swipeable={true}
+        draggable={true}
         responsive={responsive}
         transitionDuration={500}
     >
@@ -143,13 +143,15 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             src={info.image.replace("/public", "")}
           />
         </Col>
-        <Col style={{ overflowY: "auto" }} md={7} className="ms-2">
+        {(window.innerWidth <= 600) ? (<></>) : (
+            <Col style={{ overflowY: "auto" }} md={7} className="ms-2">
           <h1 style={nameHeader}>{info.name}</h1>
           <h1 style={{ color: props.color, ...titleHeader }}>
             {info.title_pronouns}
           </h1>
           <Markdown style={bodyText}>{info.description}</Markdown>
         </Col>
+        )}
         </div>
         ))}
     </Carousel>
