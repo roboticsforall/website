@@ -87,6 +87,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
             <h3 style={text}>{props.title}</h3>
           </div>
         </button>
+
         <div style={dropdownControl}>
           <div
             style={dropdownContainer}

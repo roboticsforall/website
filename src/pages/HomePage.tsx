@@ -82,10 +82,7 @@ export const HomePage: React.FC = () => {
           <Row>
             <Col md={4} className="text-center">
               <Link to="/enroll/individlearners" className="hyperlink">
-                <Image
-                  className="home-page-house-img"
-                  src={transparentImage}
-                />
+                <Image className="home-page-house-img" src={transparentImage} />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -98,10 +95,7 @@ export const HomePage: React.FC = () => {
             </Col>
             <Col md={4} className="text-center">
               <Link to="/enroll/schools" className="hyperlink">
-                <Image
-                  className="home-page-apple-img"
-                  src={transparentImage}
-                />
+                <Image className="home-page-apple-img" src={transparentImage} />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
@@ -114,10 +108,7 @@ export const HomePage: React.FC = () => {
             </Col>
             <Col md={4} className="text-center">
               <Link to="/volunteer/overview" className="hyperlink">
-                <Image
-                  className="home-page-world-img"
-                  src={transparentImage}
-                />
+                <Image className="home-page-world-img" src={transparentImage} />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",

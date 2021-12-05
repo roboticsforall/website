@@ -63,9 +63,9 @@ export const VolOverview: React.FC = () => {
           </Col>
         </Row>
 
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
 
         <Row>
           <h2 style={positionsTitle}>VOLUNTEER POSTIONS</h2>

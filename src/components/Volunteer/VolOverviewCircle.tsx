@@ -28,7 +28,7 @@ export const VolOverviewCircle: React.FC<{
     color: "black",
   };
   return (
-    <div className = "border p-2" style={circleContainer}>
+    <div className="border p-2" style={circleContainer}>
       <h3 style={circleTitle}>{props.title}</h3>
       <h1 style={statNumbers}>
         <CountUp end={props.end} start={1} isCounting />
