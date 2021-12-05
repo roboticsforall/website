@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Row, Col } from "react-bootstrap";
+import { Image, Row, Col, Container } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import exitIcon from "@/media/Icons/exitIcon.svg";
 import { createUseStyles } from "react-jss";
@@ -59,6 +59,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   const useStyles = createUseStyles({
     cardBackground: {
+      composes: "d-flex flex-column justify-content-center",
       borderRadius: "1em",
       transition: "200ms",
       backgroundColor: props.backgroundColor,
@@ -73,22 +74,22 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   return (
     <>
-      <Col className={classes.cardBackground} md={3}>
-        <button
-          onClick={() => {
-            setDropdownDisplay("flex");
-          }}
-          className="w-100 m-0"
-        >
+      <Col 
+      className={classes.cardBackground} 
+      md = {4}
+      lg = {3}
+      onClick={() => {
+        setDropdownDisplay("flex");
+      }}
+      >
           <div className="d-flex justify-content-center">
-            <Image style={courseImageSize} src={props.courseImage} />
+            <Image fluid src={props.courseImage} />
           </div>
           <div className="text-center">
             <h3 style={text}>{props.title}</h3>
           </div>
-        </button>
-
-        <div style={dropdownControl}>
+      </Col>
+      <div style={dropdownControl}>
           <div
             style={dropdownContainer}
             className="d-flex justify-content-center"
@@ -142,7 +143,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
             </Row>
           </div>
         </div>
-      </Col>
     </>
   );
 };

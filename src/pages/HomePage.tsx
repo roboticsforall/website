@@ -19,6 +19,10 @@ import YMCA from "@/media/Sponsors/ymca.png";
 
 import transparentImage from "@/media/transparentImage.png";
 
+import home from "@/media/HoverImages/house_1.png";
+import apple from "@/media/HoverImages/apple_1.png";
+import world from "@/media/HoverImages/world_1.png";
+
 import { ColorThemes } from "../colors";
 
 export const HomePage: React.FC = () => {
@@ -49,7 +53,7 @@ export const HomePage: React.FC = () => {
     wordWrap: "break-word",
   };
   const sponsorImageSize: React.CSSProperties = {
-    height: "7vh",
+    maxHeight: "7vh",
   };
 
   return (
@@ -80,45 +84,38 @@ export const HomePage: React.FC = () => {
       <div className="d-flex justify-content-center p-5 yellow-row">
         <Container>
           <Row>
+
+            {[
+              {
+                to: "/enroll/individlearners",
+                src: home,
+                label: "Students and Parents"
+              },
+                           {
+                to: "/enroll/schools",
+                src: apple,
+                label: "School"
+              },
+                           {
+                to: "/volunteer/overview",
+                src: world,
+                label: "Volunteers"
+              },
+            ].map((info, i) => (
             <Col md={4} className="text-center">
-              <Link to="/enroll/individlearners" className="hyperlink">
-                <Image className="home-page-house-img" src={transparentImage} />
+              <Link to = {info.to} className="hyperlink">
+                <Image fluid src = {info.src} />
                 <h1
                   style={{
                     fontFamily: "Oswald-Medium",
                     textAlign: "center",
                   }}
                 >
-                  Students and Parents
+                  {info.label}
                 </h1>
               </Link>
             </Col>
-            <Col md={4} className="text-center">
-              <Link to="/enroll/schools" className="hyperlink">
-                <Image className="home-page-apple-img" src={transparentImage} />
-                <h1
-                  style={{
-                    fontFamily: "Oswald-Medium",
-                    textAlign: "center",
-                  }}
-                >
-                  School
-                </h1>
-              </Link>
-            </Col>
-            <Col md={4} className="text-center">
-              <Link to="/volunteer/overview" className="hyperlink">
-                <Image className="home-page-world-img" src={transparentImage} />
-                <h1
-                  style={{
-                    fontFamily: "Oswald-Medium",
-                    textAlign: "center",
-                  }}
-                >
-                  Volunteers
-                </h1>
-              </Link>
-            </Col>
+            ))}
           </Row>
         </Container>
       </div>
@@ -239,7 +236,7 @@ const HomeAffOrgsCard: React.FC<{
           lg={3}
           xl={3}
         >
-          <Image style={imageSize} src={props.logo} />
+          <Image fluid src={props.logo} />
         </Col>
         <Col md={6} lg={6} xl={6}>
           <h1 className="header-size" style={affOrgsTitle}>
