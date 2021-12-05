@@ -164,7 +164,7 @@ export const Newsletter: React.FC = () => {
 
                 <div id="mce-responses" className="clear">
                   {" "}
-                  {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
+                  {/* real people should not fill this in and expect good things - do not emove this or risk form bot signups*/}
                   <div
                     className="response"
                     id="mce-error-response"

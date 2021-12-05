@@ -14,8 +14,6 @@ export const PrivacyPolicy: React.FC = () => {
       props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange,
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Oswald-Medium",
-    fontSize: "3vmax",
     padding: "20px",
     textAlign: "left",
     width: "auto",
@@ -25,9 +23,13 @@ export const PrivacyPolicy: React.FC = () => {
     fontFamily: "BeVietnam-SemiBold",
     fontWeight: 600,
     color: "black",
+    fontSize: "1.5em",
+    textAlign: "center",
   };
-  const blackText = {
+  const headerText = {
     color: ColorThemes.black,
+    fontSize: "4em",
+    fontFamily: "Oswald-Medium",
   };
 
   return (
@@ -46,7 +48,7 @@ export const PrivacyPolicy: React.FC = () => {
             <Nav justify fill variant="tabs">
               <Nav.Item>
                 <Nav.Link eventKey="one" style={ActiveStyle({ i: i })}>
-                  <p style={blackText}>{sections.header}</p>
+                  <h1 style={headerText}>{sections.header}</h1>
                 </Nav.Link>
               </Nav.Item>
             </Nav>
@@ -56,23 +58,14 @@ export const PrivacyPolicy: React.FC = () => {
                 generalColor={
                   i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange
                 }
-                posDescription={
-                  <div>
-                    <p>
-                      <Markdown>{sections.description}</Markdown>
-                    </p>
-                  </div>
-                }
+                posDescription={<Markdown>{sections.description}</Markdown>}
               />
             </Tab.Content>
           </Tab.Container>
         ))}
 
         <Row className="justify-content-center align-items-center">
-          <p
-            style={positionsDescription}
-            className="text-center header-description-size"
-          >
+          <p style={positionsDescription}>
             If you feel that we are not abiding by this privacy policy, you
             should contact us immediately via telephone at (650) 665-9734 or via
             email at info@roboticsforall.net.

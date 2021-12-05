@@ -32,6 +32,7 @@ export const CurricDevPositions: React.FC = () => {
     color: ColorThemes.mainYellow,
     textAlign: "center",
     textTransform: "uppercase",
+    fontSize: "4em",
   };
 
   return (
@@ -77,9 +78,7 @@ export const CurricDevPositions: React.FC = () => {
               link="/volunteer/volunteerapp"
             />
             <br />
-            <h2 className="header-size" style={positionsTitle}>
-              Positions
-            </h2>
+            <h2 style={positionsTitle}>Positions</h2>
             <Container>
               {curricdevpositionsJSON.positions.map((pair, i) => (
                 <FAQDropdowns

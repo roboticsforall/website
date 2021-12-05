@@ -5,7 +5,7 @@ import InternToby from "@/media/TobyImages/publicity intern.webp";
 import TAToby from "@/media/TobyImages/TA.webp";
 import { VolOverviewImg } from "@/components/Volunteer/VolOverviewImg";
 import { VolOverviewCard } from "@/components/Volunteer/VolOverviewCard";
-import { VolOverviewCircle } from "@/components/Volunteer/VolOverviewCircle";
+import { VolOverviewStats } from "@/components/Volunteer/VolOverviewStats";
 import headerBlob from "@/media/HeaderBlobs/orange.png";
 
 import { Header } from "@/components/Header";
@@ -15,14 +15,14 @@ import { ColorThemes } from "../../colors";
 export const VolOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "5.5vmax",
+    fontSize: "4em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
     letterSpacing: "0.1em",
   };
   const positionsDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-SemiBold",
-    fontSize: "1.3vmax",
+    fontSize: "1.5em",
     color: ColorThemes.black,
   };
 
@@ -41,25 +41,25 @@ export const VolOverview: React.FC = () => {
       <Container>
         <Row className="justify-content-around">
           <Col md>
-            <VolOverviewCircle
+            <VolOverviewStats
               title={"Work With:"}
               subtext={"Levels of Curriculum"}
               end={12}
-            ></VolOverviewCircle>
+            />
           </Col>
           <Col md>
-            <VolOverviewCircle
+            <VolOverviewStats
               title={"Join our:"}
               subtext={"Active Volunteers"}
               end={240}
-            ></VolOverviewCircle>
+            />
           </Col>
           <Col md>
-            <VolOverviewCircle
+            <VolOverviewStats
               title={"Support our:"}
               subtext={"Students Taught"}
               end={1296}
-            ></VolOverviewCircle>
+            />
           </Col>
         </Row>
 
@@ -75,6 +75,7 @@ export const VolOverview: React.FC = () => {
             intern. Volunteer with us virtually from anywhere in the world!
           </p>
         </Row>
+        <br></br>
         <Row>
           <Col sm className="d-flex justify-content-center">
             <VolOverviewImg
@@ -109,8 +110,6 @@ export const VolOverview: React.FC = () => {
             description={
               "Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."
             }
-            buttonfloat={"right"}
-            cardfloat={"left"}
           ></VolOverviewCard>
           <br></br>
           <VolOverviewCard

@@ -29,6 +29,7 @@ export const BusinessPositions: React.FC = () => {
     color: ColorThemes.mainBlue,
     textAlign: "center",
     textTransform: "uppercase",
+    fontSize: "4em",
   };
 
   return (
@@ -67,9 +68,7 @@ export const BusinessPositions: React.FC = () => {
                 </div>
               }
             />
-            <h2 className="header-size" style={positionsTitle}>
-              Positions
-            </h2>
+            <h2 style={positionsTitle}>Positions</h2>
             <Container>
               {generalInternJSON.positions.map((pair, i) => (
                 <FAQDropdowns
