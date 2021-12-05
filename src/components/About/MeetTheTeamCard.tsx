@@ -78,7 +78,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
       <div style={dropdownControl}>
         <div
           style={dropdownContainer}
-          className="d-flex justify-content-center"
+          className="d-flex justify-content-center h-50"
         >
           <Row
             className="w-75"
@@ -86,6 +86,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               backgroundColor: props.backgroundColor,
               borderRadius: "15px",
               boxShadow: "-1px 8px 15px 1px rgba(0,0,0,0.57)",
+              overflowY: "auto",
             }}
           >
             <header style={dropdownHeader}>
