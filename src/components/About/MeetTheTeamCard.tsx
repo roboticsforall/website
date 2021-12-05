@@ -40,6 +40,8 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
     fontFamily: "Oswald-Medium",
     fontSize: "4em",
     textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
+    wordBreak: "break-word",
+    width: "75%"
   };
   const titleHeader: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
@@ -89,9 +91,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               overflowY: "auto",
             }}
           >
-            <header style={dropdownHeader}>
-              <h1 style={nameHeader}>{info.name}</h1>
-
+            <header>
               <button
                 onClick={() => {
                   setDropdownDisplay(<></>);
@@ -99,6 +99,8 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               >
                 <img width="50" src={exitIcon} />
               </button>
+              <h1 style={nameHeader}>{info.name}</h1>
+
             </header>
             <h1 style={{ color: props.color, ...titleHeader }}>
               {info.title_pronouns}

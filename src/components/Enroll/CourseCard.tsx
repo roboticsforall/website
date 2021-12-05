@@ -40,10 +40,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
     width: "100vw",
     transform: "translate(-50%, 0%)",
   };
-  const dropdownHeader: React.CSSProperties = {
-    display: "flex",
-    justifyContent: "space-between",
-  };
   const dropdownHeaderText: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     fontSize: "4em",
@@ -100,8 +96,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
               overflowY: "auto",
             }}
           >
-            <header style={dropdownHeader}>
-              <h1 style={dropdownHeaderText}>{props.title.toUpperCase()}</h1>
+            <header>
               <button
                 onClick={() => {
                   setDropdownDisplay("none");
@@ -109,6 +104,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
               >
                 <img width="50" src={exitIcon} />
               </button>
+              <h1 style={dropdownHeaderText}>{props.title.toUpperCase()}</h1>
             </header>
             <Col md={7}>
               <h4 style={dropdownText}>
