@@ -26,7 +26,7 @@ export const MeetTheTeam: React.FC = () => {
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "9vh",
+    fontSize: "4rem",
     textAlign: "center",
   };
 
@@ -44,10 +44,10 @@ export const MeetTheTeam: React.FC = () => {
       </h1>
       <div style={yellowRow}>
         <MeetTheTeamCard
-            infoJSON = {bmInfoJSON.board_members_list}
-            backgroundColor = {ColorThemes.mainYellow}
-            color = {ColorThemes.darkYellow}
-          ></MeetTheTeamCard>
+          infoJSON={bmInfoJSON.board_members_list}
+          backgroundColor={ColorThemes.mainYellow}
+          color={ColorThemes.darkYellow}
+        ></MeetTheTeamCard>
       </div>
       <br />
       <br />
@@ -55,11 +55,11 @@ export const MeetTheTeam: React.FC = () => {
         EXECUTIVE ASSISTANT DIRECTOR
       </h1>
       <div style={greenRow}>
-            <MeetTheTeamCard
-              infoJSON = {adInfoJSON.assistant_directors_list}
-              backgroundColor = {ColorThemes.mainGreen}
-              color = {ColorThemes.darkGreen}
-            ></MeetTheTeamCard>
+        <MeetTheTeamCard
+          infoJSON={adInfoJSON.assistant_directors_list}
+          backgroundColor={ColorThemes.mainGreen}
+          color={ColorThemes.darkGreen}
+        ></MeetTheTeamCard>
       </div>
       <br />
       <br />
@@ -67,11 +67,11 @@ export const MeetTheTeam: React.FC = () => {
         CURRICULUM COMMITTEE
       </h1>
       <div style={blueRow}>
-      <MeetTheTeamCard
-            infoJSON = {ccInfoJSON.curriculum_committee_list}
-            backgroundColor = {ColorThemes.mainBlue}
-            color = {ColorThemes.darkBlue}
-          ></MeetTheTeamCard>
+        <MeetTheTeamCard
+          infoJSON={ccInfoJSON.curriculum_committee_list}
+          backgroundColor={ColorThemes.mainBlue}
+          color={ColorThemes.darkBlue}
+        ></MeetTheTeamCard>
       </div>
 
       <br />
@@ -81,12 +81,12 @@ export const MeetTheTeam: React.FC = () => {
         PUBLICITY COMMITTEE
       </h1>
       <div style={orangeRow}>
-      <MeetTheTeamCard
-            infoJSON = {pcInfoJSON.pub_committee}
-            backgroundColor = {ColorThemes.mainOrange}
-            color = {ColorThemes.darkOrange}
-          ></MeetTheTeamCard>
-    </div>
+        <MeetTheTeamCard
+          infoJSON={pcInfoJSON.pub_committee}
+          backgroundColor={ColorThemes.mainOrange}
+          color={ColorThemes.darkOrange}
+        ></MeetTheTeamCard>
+      </div>
     </>
   );
 };

@@ -8,10 +8,12 @@ import { ColorThemes } from "@/colors";
 export const Donate: React.FC = () => {
   const positionsDescription = {
     fontFamily: "BeVietnam-Medium",
+    fontSize: "1.5rem",
   };
 
   const buttonText = {
     fontFamily: "Mazzard-H-Extrabold",
+    fontSize: "4rem",
   };
 
   return (
@@ -28,10 +30,7 @@ export const Donate: React.FC = () => {
       <br></br>
       <Container>
         <Row className="text-center justify-content-center align-items-center">
-          <p
-            style={positionsDescription}
-            className="text-center header-description-size"
-          >
+          <p style={positionsDescription} className="text-center">
             As a part of our mission, we strive to provide cost-free education
             to students from low-income communities. As with any business, we
             have expenses such as equipment purchases, online software fees and
@@ -56,11 +55,13 @@ export const Donate: React.FC = () => {
             <a
               href="https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"
               target="_blank"
-              style={buttonText}
               className="hyperlink"
               rel="noreferrer"
             >
-              <h1 className="m-0 p-3 long-button header-size border text-center">
+              <h1
+                style={buttonText}
+                className="m-0 p-3 long-button text-center"
+              >
                 Donate
               </h1>
             </a>

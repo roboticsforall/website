@@ -32,7 +32,7 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
   const classes = useStyles();
 
   return (
-    <Col className={classes.cardBackground} md={"auto"} lg = {4}>
+    <Col className={classes.cardBackground} md={"auto"} lg={4}>
       <a
         className="hyperlink"
         target="_blank"

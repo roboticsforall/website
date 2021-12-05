@@ -9,7 +9,7 @@ import exitIcon from "@/media/Icons/exitIcon.svg";
 interface IProps {
   infoJSON: any;
   backgroundColor: string;
-  color: string
+  color: string;
 }
 
 export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
@@ -33,23 +33,23 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
     },
   };
 
-  const imgSize = {
-    height: "21vmax",
+  const imgBoxShadow = {
     boxShadow: "0px 7px 8px -8px #000000",
   };
   const nameHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "7vh",
+    fontSize: "4rem",
     textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
   };
   const titleHeader: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
-    fontSize: "4vh",
+    fontSize: "3rem",
     textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
   };
   const bodyText: React.CSSProperties = {
     fontFamily: "BeVietnam-Medium",
     color: "white",
+    fontSize: "1.5rem",
   };
 
   const dropdownControl: React.CSSProperties = {
@@ -72,18 +72,10 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
     display: "flex",
     justifyContent: "space-between",
   };
-  const dropdownHeaderText: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    fontSize: "4vmax",
-  };
-  const dropdownText: React.CSSProperties = {
-    fontFamily: "BeVietnam-Medium",
-    fontSize: "1.6vmax",
-  };
 
-  const constructModal = (info : any) => {
-      setDropdownDisplay(
-        <div style={dropdownControl}>
+  const constructModal = (info: any) => {
+    setDropdownDisplay(
+      <div style={dropdownControl}>
         <div
           style={dropdownContainer}
           className="d-flex justify-content-center"
@@ -97,8 +89,8 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             }}
           >
             <header style={dropdownHeader}>
-                <h1 style={nameHeader}>{info.name}</h1>
-              
+              <h1 style={nameHeader}>{info.name}</h1>
+
               <button
                 onClick={() => {
                   setDropdownDisplay(<></>);
@@ -108,55 +100,59 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               </button>
             </header>
             <h1 style={{ color: props.color, ...titleHeader }}>
-            {info.title_pronouns}
-          </h1>
-            <p><Markdown style={bodyText}>{info.description}</Markdown></p>
-
+              {info.title_pronouns}
+            </h1>
+            <p>
+              <Markdown style={bodyText}>{info.description}</Markdown>
+            </p>
           </Row>
         </div>
       </div>
-      );
-  }
+    );
+  };
 
   return (
     <>
-    <Carousel
+      <Carousel
         swipeable={true}
         draggable={true}
         responsive={responsive}
         transitionDuration={500}
-    >
-    {props.infoJSON.map((info : any, i : number) => (
-      <div
-        style={{
-          backgroundColor: props.backgroundColor,
-          borderRadius: "15px",
-        }}
-        onClick={() => {
-            constructModal(info);
-          }}
-        className="d-flex my-3 p-3"
-    >
-        <Col md={"auto"}>
-          <Image
-            style={imgSize}
-            src={info.image.replace("/public", "")}
-          />
-        </Col>
-        {(window.innerWidth <= 600) ? (<></>) : (
-            <Col style={{ overflowY: "auto" }} md={7} className="ms-2">
-          <h1 style={nameHeader}>{info.name}</h1>
-          <h1 style={{ color: props.color, ...titleHeader }}>
-            {info.title_pronouns}
-          </h1>
-          <Markdown style={bodyText}>{info.description}</Markdown>
-        </Col>
-        )}
-        </div>
+      >
+        {props.infoJSON.map((info: any, i: number) => (
+          <div
+            style={{
+              backgroundColor: props.backgroundColor,
+              borderRadius: "15px",
+            }}
+            onClick={() => {
+              constructModal(info);
+            }}
+            className="d-flex my-3 p-3"
+          >
+            <Col>
+              <Image
+                fluid
+                src={info.image.replace("/public", "")}
+                style={imgBoxShadow}
+              />
+            </Col>
+            {window.innerWidth <= 600 ? (
+              <></>
+            ) : (
+              <Col style={{ overflowY: "auto" }} md={7} className="ms-2">
+                <h1 style={nameHeader}>{info.name}</h1>
+                <h1 style={{ color: props.color, ...titleHeader }}>
+                  {info.title_pronouns}
+                </h1>
+                <Markdown style={bodyText}>{info.description}</Markdown>
+              </Col>
+            )}
+          </div>
         ))}
-    </Carousel>
+      </Carousel>
 
-    {dropdownDisplay}
+      {dropdownDisplay}
     </>
   );
 };

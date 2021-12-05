@@ -5,12 +5,13 @@ import { ColorThemes } from "@/colors";
 const styles: any = {
   posHeader: {
     fontFamily: "BeVietnam-ExtraBold",
-    letterSpacing: "0.25em",
+    fontSize: "4rem",
     textAlign: "center",
   },
   posDescription: {
     fontFamily: "BeVietnam-Medium",
     color: ColorThemes.black,
+    fontSize: "1.5rem",
   },
   posContainer: (props: any) => ({
     border: "15px solid",
@@ -47,15 +48,8 @@ export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
       <div>
         <Row>
           <Col>
-            <h1 className="header-size" style={styles.posHeader}>
-              {props.posHeader}
-            </h1>
-            <div
-              className="header-description-size"
-              style={styles.posDescription}
-            >
-              {props.posDescription}
-            </div>
+            <h1 style={styles.posHeader}>{props.posHeader}</h1>
+            <p style={styles.posDescription}>{props.posDescription}</p>
           </Col>
         </Row>
       </div>
@@ -73,20 +67,13 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       })}
     >
       <div>
-        <h1 className="header-size" style={styles.posHeader}>
-          {props.posHeader}
-        </h1>
+        <h1 style={styles.posHeader}>{props.posHeader}</h1>
         <Row>
           <Col className="center-align" xs={3}>
             <Image src={props.posImage} style={styles.img} fluid />
           </Col>
           <Col>
-            <div
-              className="header-description-size"
-              style={styles.posDescription}
-            >
-              {props.posDescription}
-            </div>
+            <div style={styles.posDescription}>{props.posDescription}</div>
           </Col>
         </Row>
       </div>
@@ -104,17 +91,10 @@ export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
       })}
     >
       <div>
-        <h1 className="header-size" style={styles.posHeader}>
-          {props.posHeader}
-        </h1>
+        <h1 style={styles.posHeader}>{props.posHeader}</h1>
         <Row>
           <Col>
-            <div
-              className="header-description-size"
-              style={styles.posDescription}
-            >
-              {props.posDescription}
-            </div>
+            <div style={styles.posDescription}>{props.posDescription}</div>
           </Col>
           <Col className="center-align" xs={3}>
             <Image src={props.posImage} style={styles.img} fluid />

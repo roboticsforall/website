@@ -14,14 +14,15 @@ export const WebsiteTOS: React.FC = () => {
       props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange,
     border: 0,
     borderRadius: "15px 15px 0 0",
-    fontFamily: "Oswald-Medium",
-    fontSize: "3vmax",
     padding: "20px",
     textAlign: "left",
     width: "auto",
   });
-  const blackText = {
+
+  const headerText = {
     color: ColorThemes.black,
+    fontSize: "4rem",
+    fontFamily: "Oswald-Medium",
   };
 
   return (
@@ -40,7 +41,7 @@ export const WebsiteTOS: React.FC = () => {
             <Nav justify fill variant="tabs">
               <Nav.Item>
                 <Nav.Link eventKey="one" style={ActiveStyle({ i: i })}>
-                  <p style={blackText}>{sections.header}</p>
+                  <h1 style={headerText}>{sections.header}</h1>
                 </Nav.Link>
               </Nav.Item>
             </Nav>
@@ -50,13 +51,7 @@ export const WebsiteTOS: React.FC = () => {
                 generalColor={
                   i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange
                 }
-                posDescription={
-                  <div>
-                    <p>
-                      <Markdown>{sections.description}</Markdown>
-                    </p>
-                  </div>
-                }
+                posDescription={<Markdown>{sections.description}</Markdown>}
               />
             </Tab.Content>
           </Tab.Container>

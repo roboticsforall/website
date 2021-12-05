@@ -31,6 +31,7 @@ export const TechnicalPositions: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
     textTransform: "uppercase",
+    fontSize: "4rem",
   };
 
   return (
@@ -76,9 +77,7 @@ export const TechnicalPositions: React.FC = () => {
               link="/volunteer/volunteerapp"
             />
             <br />
-            <h2 className="header-size" style={positionsTitle}>
-              Positions
-            </h2>
+            <h2 style={positionsTitle}>Positions</h2>
             <Container>
               {technicalInternJSON.positions.map((pair, i) => (
                 <FAQDropdowns

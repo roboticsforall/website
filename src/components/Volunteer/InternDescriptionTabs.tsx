@@ -144,9 +144,11 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       letterSpacing: "0.25em",
       textAlign: "center",
+      fontSize: "4rem",
     },
     posDescription: {
       fontFamily: "BeVietnam-Medium",
+      fontSize: "1.5rem",
       color: ColorThemes.black,
     },
     posContainer: (props: any) => ({
@@ -161,6 +163,7 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       textAlign: "center",
       color: ColorThemes.black,
+      fontSize: "4rem",
     },
     img: {
       marginBottom: "10px",
@@ -191,20 +194,13 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       })}
     >
       <div>
-        <h1 className="header-size" style={styles.posHeader}>
-          {props.posHeader}
-        </h1>
+        <h1 style={styles.posHeader}>{props.posHeader}</h1>
         <Row>
           <Col className="center-align" xs={3}>
             <Image src={props.posImage} style={styles.img} fluid />
           </Col>
           <Col>
-            <div
-              className="header-description-size"
-              style={styles.posDescription}
-            >
-              {props.posDescription}
-            </div>
+            <div style={styles.posDescription}>{props.posDescription}</div>
           </Col>
         </Row>
         {props.addButtons ? (
@@ -214,9 +210,7 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
               style={{ borderWidth: "15px 7.5px 0px 0px" }}
             >
               <Link to={props.learnMoreLocation} className="hyperlink">
-                <h1 className="header-size" style={styles.buttonHeader}>
-                  Learn More
-                </h1>
+                <h1 style={styles.buttonHeader}>Learn More</h1>
               </Link>
             </Col>
             <Col
@@ -224,9 +218,7 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
               style={{ borderWidth: "15px 0px 0px 7.5px" }}
             >
               <Link to="/volunteer/volunteerapp" className="hyperlink">
-                <h1 className="header-size" style={styles.buttonHeader}>
-                  Apply Now!
-                </h1>
+                <h1 style={styles.buttonHeader}>Apply Now!</h1>
               </Link>
             </Col>
           </Row>

@@ -84,37 +84,40 @@ export const HomePage: React.FC = () => {
       <div className="d-flex justify-content-center p-5 yellow-row">
         <Container>
           <Row>
-
             {[
               {
                 to: "/enroll/individlearners",
                 src: home,
-                label: "Students and Parents"
+                label: "Students and Parents",
+                color: ColorThemes.mainBlue,
               },
-                           {
+              {
                 to: "/enroll/schools",
                 src: apple,
-                label: "School"
+                label: "School",
+                color: ColorThemes.mainGreen,
               },
-                           {
+              {
                 to: "/volunteer/overview",
                 src: world,
-                label: "Volunteers"
+                label: "Volunteers",
+                color: ColorThemes.mainOrange,
               },
             ].map((info, i) => (
-            <Col md={4} className="text-center">
-              <Link to = {info.to} className="hyperlink">
-                <Image fluid src = {info.src} />
-                <h1
-                  style={{
-                    fontFamily: "Oswald-Medium",
-                    textAlign: "center",
-                  }}
-                >
-                  {info.label}
-                </h1>
-              </Link>
-            </Col>
+              <Col md={4} className="text-center">
+                <Link to={info.to} className="hyperlink">
+                  <Image fluid src={info.src} />
+                  <h1
+                    style={{
+                      fontFamily: "Oswald-Medium",
+                      textAlign: "center",
+                      color: info.color,
+                    }}
+                  >
+                    {info.label}
+                  </h1>
+                </Link>
+              </Col>
             ))}
           </Row>
         </Container>

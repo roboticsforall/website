@@ -3,6 +3,7 @@ import { Image, Row, Col, Container } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import exitIcon from "@/media/Icons/exitIcon.svg";
 import { createUseStyles } from "react-jss";
+import { ColorThemes } from "@/colors";
 
 interface IProps {
   link: string;
@@ -16,12 +17,6 @@ interface IProps {
 export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const [dropdownDisplay, setDropdownDisplay] = React.useState("none");
 
-  const courseImageSize: React.CSSProperties = {
-    height: "7vmax",
-  };
-  const tobyImageSize: React.CSSProperties = {
-    height: "20vmax",
-  };
   const text: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     textOverflow: "ellipsis",
@@ -30,6 +25,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   };
   const dropdownControl: React.CSSProperties = {
     display: dropdownDisplay,
+    zIndex: 10000,
     position: "fixed",
     left: 0,
     top: 0,
@@ -50,11 +46,11 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   };
   const dropdownHeaderText: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4vmax",
+    fontSize: "4rem",
   };
   const dropdownText: React.CSSProperties = {
     fontFamily: "BeVietnam-Medium",
-    fontSize: "1.6vmax",
+    fontSize: "1.5rem",
   };
 
   const useStyles = createUseStyles({
@@ -74,75 +70,72 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   return (
     <>
-      <Col 
-      className={classes.cardBackground} 
-      md = {4}
-      lg = {3}
-      onClick={() => {
-        setDropdownDisplay("flex");
-      }}
+      <Col
+        className={classes.cardBackground}
+        md={4}
+        lg={3}
+        onClick={() => {
+          setDropdownDisplay("flex");
+        }}
       >
-          <div className="d-flex justify-content-center">
-            <Image fluid src={props.courseImage} />
-          </div>
-          <div className="text-center">
-            <h3 style={text}>{props.title}</h3>
-          </div>
+        <div className="d-flex justify-content-center">
+          <Image fluid src={props.courseImage} />
+        </div>
+        <div className="text-center">
+          <h3 style={text}>{props.title}</h3>
+        </div>
       </Col>
       <div style={dropdownControl}>
-          <div
-            style={dropdownContainer}
-            className="d-flex justify-content-center"
+        <div
+          style={dropdownContainer}
+          className="d-flex justify-content-center"
+        >
+          <Row
+            className="w-75"
+            style={{
+              backgroundColor: ColorThemes.mainYellow,
+              borderRadius: "15px",
+              boxShadow: "-1px 8px 15px 1px rgba(0,0,0,0.57)",
+            }}
           >
-            <Row
-              className="w-75"
-              style={{
-                backgroundColor: "#ffdb4d",
-                borderRadius: "15px",
-                boxShadow: "-1px 8px 15px 1px rgba(0,0,0,0.57)",
-              }}
-            >
-              <header style={dropdownHeader}>
-                <h1 style={dropdownHeaderText}>{props.title.toUpperCase()}</h1>
-                <button
-                  onClick={() => {
-                    setDropdownDisplay("none");
-                  }}
-                >
-                  <img width="50" src={exitIcon} />
-                </button>
-              </header>
-              <Col md={7}>
-                <h4 style={dropdownText}>
-                  <Markdown>{props.dropdownCourseDescription}</Markdown>
-                </h4>
-              </Col>
-              <Col className="d-flex flex-column align-items-center justify-content-between">
-                <Image
-                  className="p-2"
-                  style={{
-                    borderRadius: "15px",
-                    backgroundColor: "white",
-                    ...tobyImageSize,
-                  }}
-                  src={props.dropdownCourseImage}
-                ></Image>
-                <a
-                  style={{
-                    color: "#006bd6",
-                    fontFamily: "BeVietnam-ExtraBold",
-                  }}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="text-center hyperlink aff-org-card-link"
-                  href={props.link}
-                >
-                  Learn More
-                </a>
-              </Col>
-            </Row>
-          </div>
+            <header style={dropdownHeader}>
+              <h1 style={dropdownHeaderText}>{props.title.toUpperCase()}</h1>
+              <button
+                onClick={() => {
+                  setDropdownDisplay("none");
+                }}
+              >
+                <img width="50" src={exitIcon} />
+              </button>
+            </header>
+            <Col md={7}>
+              <h4 style={dropdownText}>
+                <Markdown>{props.dropdownCourseDescription}</Markdown>
+              </h4>
+            </Col>
+            <Col className="d-flex flex-column align-items-center justify-content-between">
+              <Image
+                className="p-2"
+                style={{
+                  borderRadius: "15px",
+                  backgroundColor: ColorThemes.white,
+                }}
+                fluid
+                src={props.dropdownCourseImage}
+              ></Image>
+              <a
+                style={{ color: props.backgroundColor, fontSize: "4rem" }}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-center hyperlink aff-org-card-link"
+                href={props.link}
+              >
+                Learn More
+              </a>
+            </Col>
+          </Row>
         </div>
+      </div>
     </>
   );
 };

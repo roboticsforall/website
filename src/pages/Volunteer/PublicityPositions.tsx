@@ -32,6 +32,7 @@ export const PublicityPositions: React.FC = () => {
     color: ColorThemes.mainOrange,
     textAlign: "center",
     textTransform: "uppercase",
+    fontSize: "4rem",
   };
 
   return (
@@ -77,9 +78,7 @@ export const PublicityPositions: React.FC = () => {
               link="/volunteer/volunteerapp"
             />
             <br />
-            <h2 className="header-size" style={positionsTitle}>
-              Positions
-            </h2>
+            <h2 style={positionsTitle}>Positions</h2>
             <Container>
               {publicityInternJSON.positions.map((pair, i) => (
                 <FAQDropdowns

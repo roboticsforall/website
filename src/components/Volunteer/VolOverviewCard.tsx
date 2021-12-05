@@ -12,11 +12,11 @@ export const VolOverviewCard: React.FC<{
 }> = (props) => {
   const positionsTitle = {
     fontFamily: "Oswald-Medium",
-    fontSize: "3.2vmax",
+    fontSize: "4rem",
   };
   const description = {
     fontFamily: "BeVietnam-Medium",
-    fontSize: "1.3vmax",
+    fontSize: "1.5rem",
   };
   const card = {
     borderRadius: "15px",
@@ -27,7 +27,7 @@ export const VolOverviewCard: React.FC<{
     backgroundColor: props.backgroundcolor,
     color: props.buttonColor,
     fontFamily: "Oswald-Medium",
-    fontSize: "2.2vmax",
+    fontSize: "4rem",
   };
   // const arrow = {
   //   borderBottom: `70px solid ${props.backgroundcolor}`,
@@ -43,7 +43,7 @@ export const VolOverviewCard: React.FC<{
         </div> */}
       </Row>
       <Row>
-        <Col className="border center-align me-3 px-4" md={8} style={card}>
+        <Col className="center-align me-3 px-4" md={8} style={card}>
           <Row className="align-items-center">
             <h2 style={positionsTitle}>{props.title}</h2>
             <p style={description}>{props.description}</p>

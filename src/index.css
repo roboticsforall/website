@@ -195,7 +195,6 @@ label {
 
 .aff-org-card-link {
   font-family: "BeVietnam-ExtraBold", sans-serif;
-  font-size: 2.5em;
   letter-spacing: 0.1em;
   transition: 0.2s;
   text-align: center;
@@ -358,7 +357,6 @@ label {
   transition: 0.2s;
   text-decoration: none;
 }
-
 
 .yellow-row {
   background-color: #ffcc004d;

@@ -85,9 +85,6 @@ const AboutAffOrgsCard: React.FC<{
     fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
   };
-  const affOrgsLogoSize = {
-    height: "20vh",
-  };
 
   return (
     <Row className="justify-content-center">
@@ -104,13 +101,13 @@ const AboutAffOrgsCard: React.FC<{
         >
           {window.innerWidth >= 768 ? (
             <Col sm={3} md={3} lg={3} xl={3} className="p-3 center-align">
-              <Image style={affOrgsLogoSize} className="" src={props.logo} />
+              <Image fluid className="" src={props.logo} />
             </Col>
           ) : (
             <Col>
               <Row className="p-2">
                 <Col className="center-align">
-                  <Image style={affOrgsLogoSize} src={props.logo} />
+                  <Image fluid src={props.logo} />
                 </Col>
                 <Col className="center-align">
                   <h1 style={affOrgsHeader} className="text-center header-size">

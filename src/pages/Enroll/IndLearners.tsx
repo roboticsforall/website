@@ -19,7 +19,7 @@ import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 export const IndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "5.5vmax",
+    fontSize: "4rem",
     color: ColorThemes.mainBlue,
     textAlign: "center",
   };
