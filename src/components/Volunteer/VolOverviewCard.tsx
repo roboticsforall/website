@@ -12,11 +12,11 @@ export const VolOverviewCard: React.FC<{
 }> = (props) => {
   const positionsTitle = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
   };
   const description = {
     fontFamily: "BeVietnam-Medium",
-    fontSize: "1.5rem",
+    fontSize: "1.5em",
   };
   const card = {
     borderRadius: "15px",
@@ -27,7 +27,7 @@ export const VolOverviewCard: React.FC<{
     backgroundColor: props.backgroundcolor,
     color: props.buttonColor,
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
   };
   // const arrow = {
   //   borderBottom: `70px solid ${props.backgroundcolor}`,

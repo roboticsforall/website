@@ -38,18 +38,18 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
   };
   const nameHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
     textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
   };
   const titleHeader: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
-    fontSize: "3rem",
+    fontSize: "3em",
     textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
   };
   const bodyText: React.CSSProperties = {
     fontFamily: "BeVietnam-Medium",
     color: "white",
-    fontSize: "1.5rem",
+    fontSize: "1.5em",
   };
 
   const dropdownControl: React.CSSProperties = {

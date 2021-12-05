@@ -5,13 +5,13 @@ import { ColorThemes } from "@/colors";
 const styles: any = {
   posHeader: {
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "4rem",
+    fontSize: "4em",
     textAlign: "center",
   },
   posDescription: {
     fontFamily: "BeVietnam-Medium",
     color: ColorThemes.black,
-    fontSize: "1.5rem",
+    fontSize: "1.5em",
   },
   posContainer: (props: any) => ({
     border: "15px solid",

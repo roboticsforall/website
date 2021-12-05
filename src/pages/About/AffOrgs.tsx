@@ -84,7 +84,7 @@ const AboutAffOrgsCard: React.FC<{
   const affOrgsHeader = {
     fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
-    fontSize: "4rem"
+    fontSize: "4em"
   };
 
   return (

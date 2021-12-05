@@ -31,23 +31,23 @@ export const HomePage: React.FC = () => {
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
     textAlign: "center",
-    fontSize: "1.5rem",
+    fontSize: "1.5em",
   };
   const sponsorsLabel: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
     textAlign: "center",
-    fontSize: "1.5rem",
+    fontSize: "1.5em",
   };
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordWrap: "break-word",

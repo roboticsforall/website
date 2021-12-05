@@ -26,7 +26,7 @@ export const MeetTheTeam: React.FC = () => {
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
     textAlign: "center",
   };
 

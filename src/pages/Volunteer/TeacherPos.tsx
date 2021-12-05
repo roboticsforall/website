@@ -147,7 +147,7 @@ export const TeacherPos: React.FC = () => {
                 }
               />
               <TabsCardLeftImage
-                posHeader={"REQUIREMENTS"}
+                posHeader={"REQUIemENTS"}
                 generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={
@@ -218,7 +218,7 @@ export const TeacherPos: React.FC = () => {
                 posDescription={<Markdown>{taOverviewJSON.benefits}</Markdown>}
               />
               <TabsCardLeftImage
-                posHeader={"REQUIREMENTS"}
+                posHeader={"REQUIemENTS"}
                 generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={

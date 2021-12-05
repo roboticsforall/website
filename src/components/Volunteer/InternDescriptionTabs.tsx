@@ -144,11 +144,11 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       letterSpacing: "0.25em",
       textAlign: "center",
-      fontSize: "4rem",
+      fontSize: "4em",
     },
     posDescription: {
       fontFamily: "BeVietnam-Medium",
-      fontSize: "1.5rem",
+      fontSize: "1.5em",
       color: ColorThemes.black,
     },
     posContainer: (props: any) => ({
@@ -163,7 +163,7 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       textAlign: "center",
       color: ColorThemes.black,
-      fontSize: "4rem",
+      fontSize: "4em",
     },
     img: {
       marginBottom: "10px",

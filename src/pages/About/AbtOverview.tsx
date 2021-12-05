@@ -8,12 +8,12 @@ import { ColorThemes } from "@/colors";
 export const AbtOverview: React.FC = () => {
   const title: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4rem",
+    fontSize: "4em",
     textAlign: "center",
   };
   const description: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
-    fontSize: "1.5rem",
+    fontSize: "1.5em",
     color: "black",
   };
   const missionColor: React.CSSProperties = {
@@ -100,7 +100,7 @@ export const AbtOverview: React.FC = () => {
             >
               accountable
             </span>
-            . We remain honest and transparent in everything we do.
+            . We emain honest and transparent in everything we do.
           </p>
           <div></div>
           <p style={description}>
