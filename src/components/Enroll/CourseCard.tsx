@@ -39,6 +39,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
     top: "50%",
     width: "100vw",
     transform: "translate(-50%, -50%)",
+    overflowY: "auto",
   };
   const dropdownHeader: React.CSSProperties = {
     display: "flex",
