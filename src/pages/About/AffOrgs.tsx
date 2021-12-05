@@ -84,6 +84,7 @@ const AboutAffOrgsCard: React.FC<{
   const affOrgsHeader = {
     fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
+    fontSize: "4rem"
   };
 
   return (
@@ -91,7 +92,7 @@ const AboutAffOrgsCard: React.FC<{
       <Col className="" md={11} lg={11} xl={11}>
         {window.innerWidth >= 768 && (
           <Row>
-            <h1 style={affOrgsHeader} className="header-size">
+            <h1 style={affOrgsHeader}>
               {props.affOrgName}
             </h1>
           </Row>
@@ -110,7 +111,7 @@ const AboutAffOrgsCard: React.FC<{
                   <Image fluid src={props.logo} />
                 </Col>
                 <Col className="center-align">
-                  <h1 style={affOrgsHeader} className="text-center header-size">
+                  <h1 style={affOrgsHeader} className="text-center">
                     {props.affOrgName}
                   </h1>
                 </Col>
@@ -130,7 +131,7 @@ const AboutAffOrgsCard: React.FC<{
                   {props.affOrgsDescription}
                 </p>
                 <a
-                  style={{ color: props.linkColor }}
+                  style={{ color: props.linkColor, fontSize: "xx-large" }}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-center hyperlink aff-org-card-link"
