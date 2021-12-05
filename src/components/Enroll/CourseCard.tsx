@@ -36,9 +36,9 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const dropdownContainer: React.CSSProperties = {
     position: "fixed",
     left: "50%",
-    top: "50%",
+    top: "30%",
     width: "100vw",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(-50%, 0%)",
     overflowY: "auto",
   };
   const dropdownHeader: React.CSSProperties = {
@@ -86,10 +86,11 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
           <h3 style={text}>{props.title}</h3>
         </div>
       </Col>
+
       <div style={dropdownControl}>
         <div
           style={dropdownContainer}
-          className="d-flex justify-content-center"
+          className="d-flex justify-content-center h-50"
         >
           <Row
             className="w-75"
