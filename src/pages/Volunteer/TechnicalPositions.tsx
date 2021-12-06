@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/green.png";
-import { RFATabsCardNoImage } from "@/components/RFATabCards";
-import { RFAPosButton } from "@/components/RFAPosButton";
+import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
+import { PosButton } from "@/components/Volunteer/PosButton";
 
 import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
-import technicalInternJSON from "@/posts/technical_intern.json"
-
-
+import { FAQDropdowns } from "@/components/FAQDropdowns";
+import technicalInternJSON from "@/posts/technical_intern.json";
 
 export const TechnicalPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -33,11 +31,13 @@ export const TechnicalPositions: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
     textTransform: "uppercase",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={ColorThemes.mainGreen}
         image={headerBlob}
         title={"Help develop curriculum and software!"}
@@ -52,43 +52,51 @@ export const TechnicalPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link
-                eventKey="one"
-                className="pos"
-                style={ActiveStyle}
-              >
+              <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
                 <p style={black}>Technical Intern Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
-              <RFATabsCardNoImage
-                posHeader={"DETAILS"}
-                generalColor = {ColorThemes.mainGreen}
-                posDescription={
-                  <div>
-                    <p>
-                      <Markdown>{technicalInternJSON.technical_intern_details}</Markdown>
-                    </p>
-                  </div>
-                }
-              />
-              <RFAPosButton backgroundColor = {ColorThemes.mainGreen} backgroundHover = {ColorThemes.mainYellow} title={"Apply Now!"} link="/volunteer/volunteerapp" />
-              <br/>
-              <h2 className = "header-size" style={positionsTitle}>Positions</h2>
-              <Container>
-                {technicalInternJSON.positions.map((pair, i) => (
-                  <RFAFAQDropdowns
-                    key={i}
-                    question={pair.name}
-                    answer={pair.description}
-                    colors = {{main: ColorThemes.mainGreen, light: ColorThemes.lightGreen, dark: ColorThemes.darkGreen, backgroundHover: ColorThemes.mainYellow}}
-                  />
-                ))}
-                <br/>
-              </Container>
-              <br></br>
-              <br></br>
+            <TabsCardNoImage
+              posHeader={"DETAILS"}
+              generalColor={ColorThemes.mainGreen}
+              posDescription={
+                <div>
+                  <p>
+                    <Markdown>
+                      {technicalInternJSON.technical_intern_details}
+                    </Markdown>
+                  </p>
+                </div>
+              }
+            />
+            <PosButton
+              backgroundColor={ColorThemes.mainGreen}
+              backgroundHover={ColorThemes.mainYellow}
+              title={"Apply Now!"}
+              link="/volunteer/volunteerapp"
+            />
+            <br />
+            <h2 style={positionsTitle}>Positions</h2>
+            <Container>
+              {technicalInternJSON.positions.map((pair, i) => (
+                <FAQDropdowns
+                  key={i}
+                  question={pair.name}
+                  answer={pair.description}
+                  colors={{
+                    main: ColorThemes.mainGreen,
+                    light: ColorThemes.lightGreen,
+                    dark: ColorThemes.darkGreen,
+                    backgroundHover: ColorThemes.mainYellow,
+                  }}
+                />
+              ))}
+              <br />
+            </Container>
+            <br></br>
+            <br></br>
           </Tab.Content>
         </Tab.Container>
       </Container>

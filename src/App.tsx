@@ -1,135 +1,161 @@
 import React from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { RFANavbar } from "./pages/RFANavbar";
-import ScrollToTop from "@/pages/ScrollToTop"; 
+import { Navbar } from "@/pages/Navbar";
+import { Update } from "@/pages/Update";
+import ScrollToTop from "@/pages/ScrollToTop";
 // Base Pages
-import { RFAHomePage } from "./pages/RFAHomePage";
-import { RFAFooter } from "./pages/RFAFooter";
+import { HomePage } from "@/pages/HomePage";
+import { Footer } from "@/pages/Footer";
 //Enroll
-import { RFAIndLearners } from "./pages/Enroll/RFAIndLearners";
-import { RFASchools } from "./pages/Enroll/RFASchools";
-import { RFARegister } from "./pages/Enroll/RFARegister";
+import { IndLearners } from "@/pages/Enroll/IndLearners";
+import { Schools } from "@/pages/Enroll/Schools";
+import { Register } from "@/pages/Enroll/Register";
 //Volunteer
-import { RFAVolOverview } from "./pages/Volunteer/RFAVolOverview";
-import { RFATeacherPos } from "./pages/Volunteer/RFATeacherPos";
-import { InternOverview } from "./pages/Volunteer/InternOverview";
-import { PublicityPositions } from "./pages/Volunteer/PublicityPositions";
-import { TechnicalPositions } from "./pages/Volunteer/TechnicalPositions";
-import { BusinessPositions } from "./pages/Volunteer/BusinessPositions";
-import { CurricDevPositions } from "./pages/Volunteer/CurricDevPositions";
-import { RFAVolunteerApp } from "./pages/Volunteer/RFAVolunteerApp";
+import { VolOverview } from "@/pages/Volunteer/VolOverview";
+import { TeacherPos } from "@/pages/Volunteer/TeacherPos";
+import { InternOverview } from "@/pages/Volunteer/InternOverview";
+import { PublicityPositions } from "@/pages/Volunteer/PublicityPositions";
+import { TechnicalPositions } from "@/pages/Volunteer/TechnicalPositions";
+import { BusinessPositions } from "@/pages/Volunteer/BusinessPositions";
+import { CurricDevPositions } from "@/pages/Volunteer/CurricDevPositions";
+import { VolunteerApp } from "@/pages/Volunteer/VolunteerApp";
 //About
-import { RFAAffOrgs } from "./pages/About/RFAAffOrgs";
-import { RFAAbtOverview } from "./pages/About/RFAAbtOverview";
-import { RFAMeetTheTeam } from "./pages/About/RFAMeetTheTeam";
-import { RFANewsletter } from "./pages/About/RFANewsletter";
-import { RFAPastNewsletter } from "./pages/About/RFAPastNewsletter";
+import { AffOrgs } from "@/pages/About/AffOrgs";
+import { AbtOverview } from "@/pages/About/AbtOverview";
+import { MeetTheTeam } from "@/pages/About/MeetTheTeam";
+import { Newsletter } from "@/pages/About/Newsletter";
+import { PastNewsletter } from "@/pages/About/PastNewsletter";
 
 //News
-import { RFANews } from "./pages/News/RFANews";
+import { News } from "@/pages/News/News";
 //More
-import { RFACorpBylaws } from "./pages/More/RFACorpBylaws";
-import { RFAMeetingRecords } from "./pages/More/RFAMeetingRecords";
-import { RFAWebsiteTOS } from "./pages/More/RFAWebsiteTOS";
-import { RFAPrivacyPolicy } from "./pages/More/RFAPrivacyPolicy";
+import { CorpBylaws } from "@/pages/More/CorpBylaws";
+import { MeetingRecords } from "@/pages/More/MeetingRecords";
+import { WebsiteTOS } from "@/pages/More/WebsiteTOS";
+import { PrivacyPolicy } from "@/pages/More/PrivacyPolicy";
 //Contact
-import { RFAContact } from "./pages/Contact/RFAContact";
+import { Contact } from "@/pages/Contact/Contact";
 //Donate
-import { RFADonate } from "./pages/Donate/RFADonate";
+import { Donate } from "@/pages/Donate/Donate";
 
 //Page Redirect
-import { RFAPageNotFound } from "./pages/RFAPageNotFound";
+import { PageNotFound } from "@/pages/PageNotFound";
 
 export const App: React.FC = () => {
   return (
     <Router>
-      <RFANavbar />
-      <ScrollToTop/>
+      <Navbar />
+      <ScrollToTop />
+      <Update />
       <Route
         render={({ location }) => (
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="fade" timeout={300}>
               <Switch location={location}>
-                <Route exact path="/" component={RFAHomePage} />
+                <Route exact path="/" component={HomePage} />
 
-{/* Enroll Pages */}
+                {/* Enroll Pages */}
                 <Route
                   exact
                   path="/enroll/individlearners"
-                  component={RFAIndLearners}
+                  component={IndLearners}
                 />
-                <Route exact path="/enroll/schools" component={RFASchools} />
-                <Route exact path="/enroll/register" component={RFARegister} />
+                <Route exact path="/enroll/schools" component={Schools} />
+                <Route exact path="/enroll/register" component={Register} />
 
-{/* Volunteer Pages */}
-                <Route exact path="/volunteer/overview" component={RFAVolOverview} />
-                
-                <Route exact path="/volunteer/teacherpos" component={RFATeacherPos} />
+                {/* Volunteer Pages */}
                 <Route
-                  exact path="/volunteer/internoverview"
+                  exact
+                  path="/volunteer/overview"
+                  component={VolOverview}
+                />
+
+                <Route
+                  exact
+                  path="/volunteer/teacherpos"
+                  component={TeacherPos}
+                />
+                <Route
+                  exact
+                  path="/volunteer/internoverview"
                   component={InternOverview}
                 />
                 <Route
-                  exact path="/volunteer/publicitypositions"
+                  exact
+                  path="/volunteer/publicitypositions"
                   component={PublicityPositions}
                 />
                 <Route
-                  exact path="/volunteer/technicalpositions"
+                  exact
+                  path="/volunteer/technicalpositions"
                   component={TechnicalPositions}
                 />
                 <Route
-                  exact path="/volunteer/businesspositions"
+                  exact
+                  path="/volunteer/businesspositions"
                   component={BusinessPositions}
                 />
                 <Route
-                  exact path="/volunteer/curricdevpositions"
+                  exact
+                  path="/volunteer/curricdevpositions"
                   component={CurricDevPositions}
                 />
                 <Route
-                  exact path="/volunteer/volunteerapp"
-                  component={RFAVolunteerApp}
+                  exact
+                  path="/volunteer/volunteerapp"
+                  component={VolunteerApp}
                 />
 
-{/* About Pages */}
+                {/* About Pages */}
 
-                <Route exact path="/about/overview" component={RFAAbtOverview} />
-                <Route exact path="/about/afforgs" component={RFAAffOrgs} />
-                <Route exact path="/about/newsletter" component={RFANewsletter} />
-                <Route exact path="/about/pastnewsletter" component={RFAPastNewsletter} />
-                <Route exact path="/about/meettheteam" component={RFAMeetTheTeam} />
+                <Route exact path="/about/overview" component={AbtOverview} />
+                <Route exact path="/about/afforgs" component={AffOrgs} />
+                <Route exact path="/about/newsletter" component={Newsletter} />
+                <Route
+                  exact
+                  path="/about/pastnewsletter"
+                  component={PastNewsletter}
+                />
+                <Route
+                  exact
+                  path="/about/meettheteam"
+                  component={MeetTheTeam}
+                />
 
-{/* Contact Page */}
+                {/* Contact Page */}
 
-                <Route exact path="/contact" component={RFAContact} />
+                <Route exact path="/contact" component={Contact} />
 
-{/* News Page */}
+                {/* News Page */}
 
-                <Route exact path="/news" component={RFANews} />
+                <Route exact path="/news" component={News} />
 
-{/* More Pages */}
+                {/* More Pages */}
 
                 <Route
-                  exact path="/more-privacypolicy"
-                  component={RFAPrivacyPolicy}
+                  exact
+                  path="/more-privacypolicy"
+                  component={PrivacyPolicy}
                 />
-                <Route exact path="/more-websitetos" component={RFAWebsiteTOS} />
-                <Route exact path="/more-bylaws" component={RFACorpBylaws} />
+                <Route exact path="/more-websitetos" component={WebsiteTOS} />
+                <Route exact path="/more-bylaws" component={CorpBylaws} />
                 <Route
-                  exact path="/more-meetingrecords"
-                  component={RFAMeetingRecords}
+                  exact
+                  path="/more-meetingrecords"
+                  component={MeetingRecords}
                 />
 
-{/* Donate Pages */}
+                {/* Donate Pages */}
 
-                <Route exact path="/donate" component={RFADonate} />
-                <Route component = {RFAPageNotFound}/>
+                <Route exact path="/donate" component={Donate} />
+                <Route component={PageNotFound} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
         )}
       />
-      <RFAFooter />
+      <Footer />
     </Router>
   );
 };

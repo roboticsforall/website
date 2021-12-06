@@ -1,24 +1,26 @@
 import React from "react";
 import { Container, Tab } from "react-bootstrap";
-import { RFAHeader } from "@/components/RFAHeader";
+import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { RFATabsCardLeftImage, RFATabsCardNoImage, RFATabsCardRightImage } from "@/components/RFATabCards";
-import { RFAInternDescriptionTabs } from "../../components/RFAInternDescriptionTabs";
+import {
+  TabsCardLeftImage,
+  TabsCardNoImage,
+  TabsCardRightImage,
+} from "@/components/Volunteer/TabCards";
+import { InternDescriptionTabs } from "../../components/Volunteer/InternDescriptionTabs";
 import Clock from "@/media/Graphics/clock.png";
 import Laptop from "@/media/Graphics/laptop.png";
 import Presentation from "@/media/Graphics/presentation.png";
 import Calendar from "@/media/Graphics/calendar.png";
 import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 
-import pubInternOverviewJSON from "@/posts/pub_intern_overview.json";
 import Markdown from "markdown-to-jsx";
 
 import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
 
 import { ColorThemes } from "@/colors";
-import { RFAFAQDropdowns } from "@/components/RFAFAQDropdowns";
+import { FAQDropdowns } from "@/components/FAQDropdowns";
 import internOverviewJSON from "@/posts/intern_overview.json";
-
 
 export const InternOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
@@ -26,11 +28,13 @@ export const InternOverview: React.FC = () => {
     letterSpacing: "0.25em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (
     <div>
-      <RFAHeader
+      <Header
         headerTextColor={"#FA8D1F"}
         image={headerBlobOrange}
         title={"Intern at Robotics for All in 20+ groups."}
@@ -44,9 +48,9 @@ export const InternOverview: React.FC = () => {
         <br></br>
         <Tab.Container>
           <Tab.Content>
-            <RFATabsCardNoImage
+            <TabsCardNoImage
               posHeader={"OVERVIEW"}
-              generalColor = {ColorThemes.mainYellow}
+              generalColor={ColorThemes.mainYellow}
               posDescription={
                 <div>
                   <p>
@@ -55,71 +59,80 @@ export const InternOverview: React.FC = () => {
                 </div>
               }
             />
-            <RFAInternDescriptionTabs
-              publicityDescription = {
+            <InternDescriptionTabs
+              publicityDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
-              technicalDescription = {
+              technicalDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
-              businessDescription = {
+              businessDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
-              addButtons = {true}
+              addButtons={true}
             />
-            <RFATabsCardRightImage
+            <TabsCardRightImage
               posHeader={"SCHEDULING"}
               posImage={Calendar}
-              generalColor = {ColorThemes.lightYellow}
+              generalColor={ColorThemes.lightYellow}
               posDescription={
                 <div>
-                    <Markdown>{internOverviewJSON.scheduling}</Markdown>
+                  <Markdown>{internOverviewJSON.scheduling}</Markdown>
                 </div>
               }
             />
-            <RFATabsCardLeftImage
+            <TabsCardLeftImage
               posHeader={"TIME COMMITMENT"}
               posImage={Clock}
-              generalColor = {ColorThemes.mainYellow}
+              generalColor={ColorThemes.mainYellow}
               posDescription={
                 <Markdown>{internOverviewJSON.time_commitment}</Markdown>
               }
             />
-            <RFATabsCardRightImage
+            <TabsCardRightImage
               posHeader={"BENEFITS"}
               posImage={ThumbsUp}
-              generalColor = {ColorThemes.lightYellow}
+              generalColor={ColorThemes.lightYellow}
               posDescription={
                 <Markdown>{internOverviewJSON.benefits}</Markdown>
               }
             />
-            <RFATabsCardLeftImage
-              posHeader={"REQUIREMENTS"}
+            <TabsCardLeftImage
+              posHeader={"REQUIemENTS"}
               posImage={Laptop}
-              generalColor = {ColorThemes.mainYellow}
+              generalColor={ColorThemes.mainYellow}
               posDescription={
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
             />
-            <RFATabsCardRightImage
+            <TabsCardRightImage
               posHeader={"BENEFICIAL QUALIFICATIONS"}
               posImage={Presentation}
-              generalColor = {ColorThemes.lightYellow}
+              generalColor={ColorThemes.lightYellow}
               posDescription={
-                <Markdown>{internOverviewJSON.beneficial_qualifications}</Markdown>
+                <Markdown>
+                  {internOverviewJSON.beneficial_qualifications}
+                </Markdown>
               }
             />
-            <h2 className = "header-size" style={positionsTitle}>FAQs</h2>
+            <h2 style={positionsTitle}>
+              FAQs
+            </h2>
             <Container>
               {internfaqsJSON.intern_faqs_list.map((QAPair) => (
-                <RFAFAQDropdowns
+                <FAQDropdowns
                   key={QAPair.question}
                   question={QAPair.question}
                   answer={QAPair.answer}
-                  colors = {{main: ColorThemes.mainOrange, light: ColorThemes.lightOrange, dark: ColorThemes.darkOrange, backgroundHover: ColorThemes.mainYellow}}
+                  colors={{
+                    main: ColorThemes.mainOrange,
+                    light: ColorThemes.lightOrange,
+                    dark: ColorThemes.darkOrange,
+                    backgroundHover: ColorThemes.mainYellow,
+                  }}
                 />
               ))}
-              <br/>
+              <br />
             </Container>
             <br></br>
             <br></br>
