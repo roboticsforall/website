@@ -31,7 +31,8 @@ export const TechnicalPositions: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "4em",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (

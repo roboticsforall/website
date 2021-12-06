@@ -32,7 +32,8 @@ export const CurricDevPositions: React.FC = () => {
     color: ColorThemes.mainYellow,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "4em",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (

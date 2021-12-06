@@ -29,7 +29,8 @@ export const BusinessPositions: React.FC = () => {
     color: ColorThemes.mainBlue,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "4em",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (

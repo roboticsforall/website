@@ -32,7 +32,8 @@ export const PublicityPositions: React.FC = () => {
     color: ColorThemes.mainOrange,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "4em",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (
