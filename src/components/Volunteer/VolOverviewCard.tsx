@@ -12,7 +12,7 @@ export const VolOverviewCard: React.FC<{
 }> = (props) => {
   const positionsTitle = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
+    fontSize: "3em",
   };
   const description = {
     fontFamily: "BeVietnam-Medium",

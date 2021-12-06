@@ -53,6 +53,7 @@ export const TeacherPos: React.FC = () => {
     letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
+    fontSize: "3em",
   };
 
   return (
@@ -249,7 +250,7 @@ export const TeacherPos: React.FC = () => {
       </Container>
       <br />
 
-      <h2 className="header-size" style={positionsTitle}>
+      <h2 style={positionsTitle}>
         FAQs
       </h2>
       <Container>
