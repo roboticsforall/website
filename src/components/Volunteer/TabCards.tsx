@@ -5,8 +5,9 @@ import { ColorThemes } from "@/colors";
 const styles: any = {
   posHeader: {
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "4em",
+    fontSize: "3em",
     textAlign: "center",
+    wordBreak: "break-word"
   },
   posDescription: {
     fontFamily: "BeVietnam-Medium",

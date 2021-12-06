@@ -84,7 +84,7 @@ const AboutAffOrgsCard: React.FC<{
   const affOrgsHeader = {
     fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
-    fontSize: "4em"
+    fontSize: "3em"
   };
 
   return (
@@ -107,7 +107,7 @@ const AboutAffOrgsCard: React.FC<{
           ) : (
             <Col>
               <Row className="p-2">
-                <Col className="center-align">
+                <Col sm = {3} lg = {3} md = {3}  className="center-align">
                   <Image fluid src={props.logo} />
                 </Col>
                 <Col className="center-align">

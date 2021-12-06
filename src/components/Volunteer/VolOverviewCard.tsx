@@ -27,7 +27,7 @@ export const VolOverviewCard: React.FC<{
     backgroundColor: props.backgroundcolor,
     color: props.buttonColor,
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
+    fontSize: "2em",
   };
   // const arrow = {
   //   borderBottom: `70px solid ${props.backgroundcolor}`,
