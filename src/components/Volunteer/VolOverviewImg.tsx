@@ -8,15 +8,15 @@ export const VolOverviewImg: React.FC<{
 }> = (props) => {
   const cardTitle = {
     fontFamily: "Oswald-Medium",
-    fontSize: "2.5vmax",
+    fontSize: "1.5rem",
     color: props.color,
   };
   return (
     <div>
       <Image fluid src={props.image} />
-      <p className="text-center" style={cardTitle}>
-        {props.title}
-      </p>
+        <p className="text-center" style={cardTitle}>
+          {props.title}
+        </p>
     </div>
   );
 };

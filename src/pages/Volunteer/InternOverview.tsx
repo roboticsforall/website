@@ -28,6 +28,8 @@ export const InternOverview: React.FC = () => {
     letterSpacing: "0.25em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
+    fontSize: "3em",
+    wordBreak: "break-word"
   };
 
   return (
@@ -113,7 +115,7 @@ export const InternOverview: React.FC = () => {
                 </Markdown>
               }
             />
-            <h2 className="header-size" style={positionsTitle}>
+            <h2 style={positionsTitle}>
               FAQs
             </h2>
             <Container>
