@@ -11,6 +11,8 @@ import { MeetTheTeamCard } from "@/components/About/MeetTheTeamCard";
 
 import { ColorThemes } from "@/colors";
 
+import "../../index.css";
+
 export const MeetTheTeam: React.FC = () => {
   const yellowRow = {
     backgroundColor: ColorThemes.lightYellow,
@@ -24,11 +26,6 @@ export const MeetTheTeam: React.FC = () => {
   const orangeRow = {
     backgroundColor: ColorThemes.lightOrange,
   };
-  const header: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    fontSize: "4em",
-    textAlign: "center",
-  };
 
   return (
     <>
@@ -39,7 +36,7 @@ export const MeetTheTeam: React.FC = () => {
         description={"Get to know the faces behind Robotics for All!"}
       />
       <br />
-      <h1 style={{ color: ColorThemes.mainOrange, ...header }}>
+      <h1 className="header" style={{ color: ColorThemes.mainOrange }}>
         BOARD OF DIRECTORS
       </h1>
       <div style={yellowRow}>
@@ -51,7 +48,7 @@ export const MeetTheTeam: React.FC = () => {
       </div>
       <br />
       <br />
-      <h1 style={{ color: ColorThemes.mainGreen, ...header }}>
+      <h1 className="header" style={{ color: ColorThemes.mainGreen }}>
         EXECUTIVE ASSISTANT DIRECTOR
       </h1>
       <div style={greenRow}>
@@ -63,7 +60,7 @@ export const MeetTheTeam: React.FC = () => {
       </div>
       <br />
       <br />
-      <h1 style={{ color: ColorThemes.mainBlue, ...header }}>
+      <h1 className="header" style={{ color: ColorThemes.mainBlue }}>
         CURRICULUM COMMITTEE
       </h1>
       <div style={blueRow}>
@@ -77,7 +74,7 @@ export const MeetTheTeam: React.FC = () => {
       <br />
       <br />
 
-      <h1 style={{ color: ColorThemes.mainYellow, ...header }}>
+      <h1 className="header" style={{ color: ColorThemes.mainYellow }}>
         PUBLICITY COMMITTEE
       </h1>
       <div style={orangeRow}>

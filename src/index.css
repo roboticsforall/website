@@ -92,6 +92,30 @@ a {
   letter-spacing: 1.4px;
 }
 
+.header {
+  font-family: "Oswald-Medium";
+  font-size: 9vh;
+  text-align: "center";
+}
+
+.nameHeader { 
+  font-family: "Oswald-Medium";
+  font-size: "4em";
+  text-Shadow: "0px 1px 3px rgba(0,0,0,0.58)";
+  word-break: "break-word";
+  width: "75%";
+}
+.titleHeader {
+  font-family: "BeVietnam-Bold";
+  font-size: "3em";
+  text-shadow: "0px 1px 3px rgba(0,0,0,0.22)";
+}
+.bodyText {
+  font-family: "BeVietnam-Medium";
+  color: "white";
+  font-size: "1.5em";
+}
+
 button {
   background: none;
 }
