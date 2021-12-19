@@ -99,6 +99,9 @@ a {
   font-size: 9vh;
   text-align: "center";
 }
+.header3 {
+	font-family: "BeVietnam-ExtraBold";
+}
 .title {
 	font-family: "Oswald-Medium";
 	font-size: 4em;
@@ -112,7 +115,7 @@ a {
 .nameHeader { 
   font-family: "Oswald-Medium";
   font-size: "4em";
-  text-Shadow: "0px 1px 3px rgba(0,0,0,0.58)";
+  text-shadow: "0px 1px 3px rgba(0,0,0,0.58)";
   word-break: "break-word";
   width: "75%";
 }
@@ -125,6 +128,10 @@ a {
   font-family: "BeVietnam-Medium";
   color: "white";
   font-size: "1.5em";
+}
+.subscriberText {
+	font-family: "Oswald-Medium";
+	font-size: "1.5em";
 }
 
 /* affiliated cards text */
