@@ -127,6 +127,17 @@ a {
   font-size: "1.5em";
 }
 
+/* affiliated cards text */
+.affOrgsHeader {
+	font-family: "Mazzard-H-ExtraBold";
+	font-size: "3em";
+}
+.affOrgsCardText {
+	font-family: "BeVietnam-Medium";
+	font-size: "1em";
+}
+
+
 button {
   background: none;
 }
