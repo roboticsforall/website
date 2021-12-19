@@ -92,12 +92,23 @@ a {
   letter-spacing: 1.4px;
 }
 
+/* font sizes */
+
 .header {
   font-family: "Oswald-Medium";
   font-size: 9vh;
   text-align: "center";
 }
-
+.title {
+	font-family: "Oswald-Medium";
+	font-size: 4em;
+	text-align: "center";
+}
+.description {
+	font-family: "BeVietnam-Bold";
+	font-size: "1.5em";
+	color: black;
+}
 .nameHeader { 
   font-family: "Oswald-Medium";
   font-size: "4em";
