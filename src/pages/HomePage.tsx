@@ -214,7 +214,7 @@ const HomeAffOrgsCard: React.FC<{
     textAlign: "center",
   };
   const imageSize: React.CSSProperties = {
-    height: "12vmax",
+    objectFit: "scale-down",
   };
   const borderRadius = {
     borderTopLeftRadius: 15,
@@ -239,7 +239,7 @@ const HomeAffOrgsCard: React.FC<{
           lg={3}
           xl={3}
         >
-          <Image fluid src={props.logo} />
+          <Image fluid style = {imageSize} src={props.logo} />
         </Col>
         <Col md={6} lg={6} xl={6}>
           <h1 className="header-size" style={affOrgsTitle}>

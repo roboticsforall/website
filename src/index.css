@@ -432,6 +432,7 @@ label {
 }
 /*#endregion*/
 
+
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -445,6 +446,9 @@ label {
   .video-width {
     width: 100% !important;
     height: auto;
+  }
+  img {
+    max-width: 50% !important;
   }
 }
 
@@ -460,6 +464,9 @@ label {
     width: 100% !important;
     height: auto;
   }
+  img {
+    max-width: 50% !important;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -473,6 +480,9 @@ label {
   .video-width {
     width: 100% !important;
     height: auto;
+  }
+  img {
+    max-width: 100% !important;
   }
 }
 
