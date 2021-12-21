@@ -1,6 +1,12 @@
 {
   "meeting_records_list": [
     {
+      "date": "December 19th, 2021",
+      "item_name": "Meeting 53",
+      "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/board_meeting_minutes_12_19_21_signed.pdf",
+      "agenda_file_path": "/public/uploads/downloads/meetingrecords/board-meeting-agenda-12_19_21.pdf"
+    },
+    {
       "date": "October 24th, 2021",
       "item_name": "Meeting 49",
       "meeting_minute_file_path": "/public/uploads/downloads/meetingrecords/notes49.pdf",
