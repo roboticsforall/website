@@ -17,7 +17,7 @@ export const Header: React.FC<{
   };
   const headerBlob = {
     backgroundSize: "100% 100%",
-    height: "45vmax",
+    height: "30vmax",
     // width: "100vw",
     backgroundImage: `url(${props.image})`,
   };
