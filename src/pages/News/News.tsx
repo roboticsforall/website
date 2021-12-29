@@ -62,7 +62,6 @@ export const News: React.FC = () => {
     textDecoration: "none",
     color: "black",
     fontFamily: "Mazzard-H-Extrabold",
-    fontSize: "30px",
     textAlign: "center",
   };
   const cardStyles: React.CSSProperties = {
@@ -93,7 +92,6 @@ export const News: React.FC = () => {
                 <h1
                   style={{
                     fontFamily: "Mazzard-H-Extrabold",
-                    fontSize: "59px",
                     color: ColorThemes.mainOrange,
                   }}
                 >
@@ -101,7 +99,7 @@ export const News: React.FC = () => {
                 </h1>
               </Col>
               <Col>
-                <p style={{ fontSize: "20px", fontFamily: "BeVietnam-Medium" }}>
+                <p style={{ fontFamily: "BeVietnam-Medium" }}>
                   Find all of our press information here! This includes photos,
                   statistics, stories, and more details. Contact us at{" "}
                   <a
@@ -120,7 +118,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainGreen,
             }}
           >
@@ -183,7 +180,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainBlue,
             }}
           >
@@ -225,7 +221,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainYellow,
             }}
           >
@@ -277,7 +272,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainOrange,
             }}
           >

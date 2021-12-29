@@ -28,7 +28,6 @@ export const InternOverview: React.FC = () => {
     letterSpacing: "0.25em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
-    fontSize: "3em",
     wordBreak: "break-word"
   };
 

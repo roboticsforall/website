@@ -8,12 +8,10 @@ import { ColorThemes } from "@/colors";
 export const AbtOverview: React.FC = () => {
   const title: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     textAlign: "center",
   };
   const description: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
-    fontSize: "1.5em",
     color: "black",
   };
   const missionColor: React.CSSProperties = {

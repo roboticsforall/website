@@ -31,23 +31,20 @@ export const HomePage: React.FC = () => {
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
+
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
     textAlign: "center",
-    fontSize: "1.5em",
   };
   const sponsorsLabel: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
     textAlign: "center",
-    fontSize: "1.5em",
   };
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordWrap: "break-word",
@@ -242,7 +239,7 @@ const HomeAffOrgsCard: React.FC<{
           <Image fluid style = {imageSize} src={props.logo} />
         </Col>
         <Col md={6} lg={6} xl={6}>
-          <h1 className="header-size" style={affOrgsTitle}>
+          <h1 style={affOrgsTitle}>
             {props.org}
           </h1>
         </Col>

@@ -78,13 +78,11 @@ const AboutAffOrgsCard: React.FC<{
 }> = (props) => {
   const affOrgsCardText = {
     fontFamily: "BeVietnam-Medium",
-    fontSize: "large",
   };
 
   const affOrgsHeader = {
     fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
-    fontSize: "3em"
   };
 
   return (
@@ -131,7 +129,7 @@ const AboutAffOrgsCard: React.FC<{
                   {props.affOrgsDescription}
                 </p>
                 <a
-                  style={{ color: props.linkColor, fontSize: "xx-large" }}
+                  style={{ color: props.linkColor }}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-center hyperlink aff-org-card-link"

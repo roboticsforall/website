@@ -19,7 +19,6 @@ export const CurricDevPositions: React.FC = () => {
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
@@ -32,7 +31,6 @@ export const CurricDevPositions: React.FC = () => {
     color: ColorThemes.mainYellow,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "3em",
     wordBreak: "break-word"
   };
 
