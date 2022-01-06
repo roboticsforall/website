@@ -16,14 +16,12 @@ export const Newsletter: React.FC = () => {
 
   const subscribe: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "46px",
     color: "#554400",
     textAlign: "center",
   };
 
   const ofsubscriber: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "25px",
     color: "#b38f00",
   };
 

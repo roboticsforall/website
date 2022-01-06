@@ -26,8 +26,8 @@ export const Update: React.FC = () => {
           <br />
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex">
-              <h4 className="m-0">UPDATE:&nbsp;</h4>
-              <h4 className="m-0">{updatesJSON.updates}</h4>
+              <p className="m-0">UPDATE:&nbsp;</p>
+              <p className="m-0">{updatesJSON.updates}</p>
             </div>
             <button onClick={() => setVisibility("hidden")} style={closeButton}>
               &#215;

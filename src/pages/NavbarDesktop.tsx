@@ -44,41 +44,41 @@ export const NavbarDesktop: React.FC = () => {
       </header>
       <ul className="ms-2" style={{ ...navItemsList, ...list }}>
         {enrollvolunteerabout.map((navItem, i) => (
-          <React.Fragment>
+          <>
             <li className="nav-item" key={i}>
               <div className="h-100 nav-item-header">
                 <Link to="#" className="hyperlink">
-                  {navItem.headerName}
+                  <h5>{navItem.headerName}</h5>
                 </Link>
               </div>
               <ul className="dropdown-container" style={list}>
                 {navItem.subPages.map((subPageInfo, i) => (
                   <Link key={i} className="hyperlink" to={subPageInfo.to}>
-                    <li>{subPageInfo.subPageName}</li>
+                    <h5><li>{subPageInfo.subPageName}</li></h5>
                   </Link>
                 ))}
               </ul>
             </li>
-          </React.Fragment>
+          </>
         ))}
         <li className="nav-item">
           <div className="h-100 m-0 nav-item-header">
             <Link className="hyperlink" to="/contact">
-              Contact
+              <h5>Contact</h5>
             </Link>
           </div>
         </li>
         <li className="nav-item">
           <div className="h-100 nav-item-header">
             <Link className="hyperlink" to="/news">
-              News
+              <h5>News</h5>
             </Link>
           </div>
         </li>
         <li className="nav-item">
           <div className="h-100 donate-nav-item-header">
             <Link className="donate-nav-background hyperlink" to="/donate">
-              Donate
+              <h5>Donate</h5>
             </Link>
           </div>
           <ul className="dropdown-container" style={list}>
@@ -88,7 +88,7 @@ export const NavbarDesktop: React.FC = () => {
               href="https://www.bonfire.com/store//"
               className="hyperlink"
             >
-              <li>Merch</li>
+              <h5><li>Merch</li></h5>
             </a>
           </ul>
         </li>

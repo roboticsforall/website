@@ -1,8 +1,8 @@
 import React from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Image, Row, Container } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
-import Carousel from "react-multi-carousel/lib/Carousel";
+import Carousel from "react-bootstrap/Carousel";
 import "react-multi-carousel/lib/styles.css";
 import exitIcon from "@/media/Icons/exitIcon.svg";
 
@@ -38,20 +38,17 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
   };
   const nameHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
     wordBreak: "break-word",
     width: "75%"
   };
   const titleHeader: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
-    fontSize: "3em",
     textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
   };
   const bodyText: React.CSSProperties = {
     fontFamily: "BeVietnam-Medium",
     color: "white",
-    fontSize: "1.5em",
   };
 
   const dropdownControl: React.CSSProperties = {
@@ -77,12 +74,12 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
 
   const constructModal = (info: any) => {
     setDropdownDisplay(
-      <div style={dropdownControl}>
-        <div
+      <Container fluid style={dropdownControl}>
+        <Row
           style={dropdownContainer}
           className="d-flex justify-content-center h-50"
         >
-          <Row
+          <Container
             className="w-75"
             style={{
               backgroundColor: props.backgroundColor,
@@ -97,7 +94,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
                   setDropdownDisplay(<></>);
                 }}
               >
-                <img width="50" src={exitIcon} />
+                <img width = "50" src={exitIcon} />
               </button>
               <h1 style={nameHeader}>{info.name}</h1>
 
@@ -108,21 +105,18 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             <p>
               <Markdown style={bodyText}>{info.description}</Markdown>
             </p>
-          </Row>
-        </div>
-      </div>
+          </Container>
+        </Row>
+      </Container>
     );
   };
 
   return (
     <>
-      <Carousel
-        swipeable={true}
-        draggable={true}
-        responsive={responsive}
-        transitionDuration={500}
-      >
+      <Carousel>
         {props.infoJSON.map((info: any, i: number) => (
+
+        <Carousel.Item>
           <div
             style={{
               backgroundColor: props.backgroundColor,
@@ -133,7 +127,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             }}
             className="d-flex my-3 p-3"
           >
-            <Col>
+            <Col md = {"auto"}>
               <Image
                 fluid
                 src={info.image.replace("/public", "")}
@@ -143,7 +137,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             {window.innerWidth <= 600 ? (
               <></>
             ) : (
-              <Col style={{ overflowY: "auto" }} md={7} className="ms-2">
+              <Col style={{ overflowY: "auto" }} className="ms-2">
                 <h1 style={nameHeader}>{info.name}</h1>
                 <h1 style={{ color: props.color, ...titleHeader }}>
                   {info.title_pronouns}
@@ -152,6 +146,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               </Col>
             )}
           </div>
+        </Carousel.Item>
         ))}
       </Carousel>
 

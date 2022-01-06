@@ -18,7 +18,6 @@ import { ColorThemes } from "@/colors";
 export const Schools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     color: ColorThemes.mainGreen,
     textAlign: "center",
   };

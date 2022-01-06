@@ -23,12 +23,10 @@ export const PrivacyPolicy: React.FC = () => {
     fontFamily: "BeVietnam-SemiBold",
     fontWeight: 600,
     color: "black",
-    fontSize: "1.5em",
     textAlign: "center",
   };
   const headerText = {
     color: ColorThemes.black,
-    fontSize: "4em",
     fontFamily: "Oswald-Medium",
   };
 

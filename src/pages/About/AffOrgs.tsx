@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "@/components/Header";
 import { Container, Row, Image, Col } from "react-bootstrap";
-import homePageVideo from "@/media/homePageVideo.mp4";
+// import homePageVideo from "@/media/homePageVideo.mp4";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
@@ -78,13 +78,11 @@ const AboutAffOrgsCard: React.FC<{
 }> = (props) => {
   const affOrgsCardText = {
     fontFamily: "BeVietnam-Medium",
-    fontSize: "large",
   };
 
   const affOrgsHeader = {
     fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
-    fontSize: "3em"
   };
 
   return (
@@ -120,8 +118,8 @@ const AboutAffOrgsCard: React.FC<{
           )}
           <Col md={5} lg={5} xl={5} className="p-3 center-align">
             <video className="w-100 h-100" autoPlay muted loop>
-              <source src={homePageVideo} type="video/mp4" />
-              Your browser does not support the video tag.
+              {/* <source src={homePageVideo} type="video/mp4" />
+              Your browser does not support the video tag. */}
             </video>
           </Col>
           <Col md={4} lg={4} xl={4} className="p-3">
@@ -131,7 +129,7 @@ const AboutAffOrgsCard: React.FC<{
                   {props.affOrgsDescription}
                 </p>
                 <a
-                  style={{ color: props.linkColor, fontSize: "xx-large" }}
+                  style={{ color: props.linkColor }}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-center hyperlink aff-org-card-link"

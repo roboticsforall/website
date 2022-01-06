@@ -32,7 +32,6 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
       border: "none",
       borderRadius: "15px 15px 0 0",
       fontFamily: "BeVietnam-ExtraBold",
-      fontSize: "x-large",
       padding: "20px",
       height: "100%",
     }),
@@ -144,11 +143,9 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       letterSpacing: "0.25em",
       textAlign: "center",
-      fontSize: "3em",
     },
     posDescription: {
       fontFamily: "BeVietnam-Medium",
-      fontSize: "1.5em",
       color: ColorThemes.black,
     },
     posContainer: (props: any) => ({
@@ -163,7 +160,6 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       textAlign: "center",
       color: ColorThemes.black,
-      fontSize: "1.5em",
     },
     img: {
       marginBottom: "10px",

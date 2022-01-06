@@ -17,7 +17,6 @@ export const VolunteerApp: React.FC = () => {
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "30px",
   };
   const InActiveStyle: React.CSSProperties = {
@@ -26,7 +25,6 @@ export const VolunteerApp: React.FC = () => {
     border: "none",
     borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "30px",
   };
 
