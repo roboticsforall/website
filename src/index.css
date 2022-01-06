@@ -403,6 +403,10 @@ label {
 /*#endregion*/
 
 
+video {
+  background-color: black;
+}
+
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -431,7 +435,7 @@ label {
     font-size: 35px;
   }
   .video-width {
-    width: 100% !important;
+    width: 100%;
     height: auto;
   }
   img {
@@ -446,10 +450,6 @@ label {
   }
   .header-size {
     font-size: 43px;
-  }
-  .video-width {
-    width: 100% !important;
-    height: auto;
   }
   img {
     max-width: 100% !important;
@@ -471,8 +471,7 @@ label {
     text-align: center;
   }
   .video-width {
-    width: 75% !important;
-    height: 60vh;
+    height: 30vmax;
   }
   .home-aff-org-card-link:hover {
     transition: 0.2s;
@@ -490,8 +489,7 @@ label {
     font-size: 60px;
   }
   .video-width {
-    width: 75% !important;
-    height: 60vh;
+    height: 30vmax;
   }
   .home-aff-org-card-link:hover {
     transition: 0.2s;
@@ -509,8 +507,8 @@ label {
     font-size: 90px;
   }
   .video-width {
-    width: 75% !important;
-    height: 60vh;
+    /* width: 75% !important; */
+    height: 20vmax;
   }
   .home-aff-org-card-link:hover {
     transition: 0.2s;
