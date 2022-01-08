@@ -27,23 +27,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
     overflow: "hidden",
     whiteSpace: "nowrap",
   };
-  const dropdownControl: React.CSSProperties = {
-    display: dropdownDisplay,
-    zIndex: 10000,
-    position: "fixed",
-    left: 0,
-    top: 0,
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "rgba(0,0,0,0.4)" /* Black w/ opacity */,
-  };
-  const dropdownContainer: React.CSSProperties = {
-    position: "fixed",
-    left: "50%",
-    top: "30%",
-    width: "100vw",
-    transform: "translate(-50%, 0%)",
-  };
   const dropdownHeaderText: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
   };
@@ -88,7 +71,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
             {props.title.toUpperCase()}
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className="show-grid">
+        <Modal.Body>
           <Container>
             <Row>
               <Col md={8}>
@@ -97,7 +80,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
               <Col>
                   <Row className="justify-content-center">
                     <Image
-                      // fluid
+                      fluid
                       src={props.dropdownCourseImage}
                     />
                   </Row>
@@ -120,59 +103,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
           <Button onClick={handleClose}>Close</Button>
         </Modal.Footer>
       </Modal>
-
-      <div style={dropdownControl}>
-        <div
-          style={dropdownContainer}
-          className="d-flex justify-content-center h-50"
-        >
-          <Row
-            className="w-75"
-            style={{
-              backgroundColor: ColorThemes.mainYellow,
-              borderRadius: "15px",
-              boxShadow: "-1px 8px 15px 1px rgba(0,0,0,0.57)",
-              overflowY: "auto",
-            }}
-          >
-            <header>
-              <button
-                onClick={() => {
-                  setDropdownDisplay("none");
-                }}
-              >
-                <img width="50" src={exitIcon} />
-              </button>
-              <h1 style={dropdownHeaderText}>{props.title.toUpperCase()}</h1>
-            </header>
-            <Col md={7}>
-              <h4 style={dropdownText}>
-                <Markdown>{props.dropdownCourseDescription}</Markdown>
-              </h4>
-            </Col>
-            <Col className="d-flex flex-column align-items-center justify-content-between">
-              <Image
-                className="p-2"
-                style={{
-                  borderRadius: "15px",
-                  backgroundColor: ColorThemes.white,
-                }}
-                fluid
-                src={props.dropdownCourseImage}
-              ></Image>
-              <a
-                style={{ color: props.backgroundColor }}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-center hyperlink aff-org-card-link"
-                href={props.link}
-              >
-                Learn More
-              </a>
-            </Col>
-          </Row>
-        </div>
-      </div>
     </>
   );
 };
