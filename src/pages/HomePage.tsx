@@ -215,12 +215,6 @@ const HomeAffOrgsCard: React.FC<{
   const imageSize: React.CSSProperties = {
     objectFit: "scale-down",
   };
-  const borderRadius = {
-    borderTopLeftRadius: 15,
-    borderBottomLeftRadius: 15,
-    borderTopRightRadius: 15,
-    borderBottomRightRadius: 15,
-  };
   const linkColor: React.CSSProperties = {
     color: props.linkColor,
   };
@@ -228,8 +222,8 @@ const HomeAffOrgsCard: React.FC<{
   return (
     <>
       <Row
-        style={{ backgroundColor: props.bgColor, ...borderRadius }}
-        className="justify-content-center align-items-center mx-2"
+        style={{ backgroundColor: props.bgColor}}
+        className="justify-content-center rounded align-items-center mx-2"
       >
         <Col
           className="d-flex justify-content-center"

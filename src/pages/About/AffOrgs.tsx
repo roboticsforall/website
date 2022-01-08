@@ -96,7 +96,8 @@ const AboutAffOrgsCard: React.FC<{
           </Row>
         )}
         <Row
-          style={{ backgroundColor: props.mainColor + "80", borderRadius: 15 }}
+          style={{ backgroundColor: props.mainColor + "80"}}
+          className = "rounded"
         >
           {window.innerWidth >= 768 ? (
             <Col sm={3} md={3} lg={3} xl={3} className="p-3 center-align">

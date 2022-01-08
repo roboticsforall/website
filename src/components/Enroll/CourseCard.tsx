@@ -49,8 +49,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   const useStyles = createUseStyles({
     cardBackground: {
-      composes: "d-flex flex-column justify-content-center",
-      borderRadius: "1em",
+      composes: "d-flex flex-column justify-content-center rounded",
       transition: "200ms",
       backgroundColor: props.backgroundColor,
       "&:hover": {
