@@ -30,7 +30,6 @@ export const TeacherPos: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainYellow,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
@@ -38,7 +37,6 @@ export const TeacherPos: React.FC = () => {
   const inActiveStyle = {
     background: ColorThemes.mainOrange,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",

@@ -68,7 +68,6 @@ export const News: React.FC = () => {
   const cardStyles: React.CSSProperties = {
     background: ColorThemes.lightGreen,
     border: "none",
-    borderRadius: "15px",
   };
   return (
     <div>
@@ -82,11 +81,11 @@ export const News: React.FC = () => {
         <Row className="mt-3">
           <Container
             style={{
-              borderRadius: "15px",
               backgroundColor: ColorThemes.lightYellow,
               padding: "20px",
               lineHeight: "24px",
             }}
+            className = "rounded"
           >
             <Row>
               <Col xs="auto">
@@ -190,9 +189,9 @@ export const News: React.FC = () => {
           <Container
             style={{
               background: ColorThemes.lightBlue,
-              borderRadius: "15px",
               padding: "15px",
             }}
+            className = "rounded"
           >
             <Carousel>
               {images.map((x) => (
@@ -230,9 +229,9 @@ export const News: React.FC = () => {
           <Container
             style={{
               background: ColorThemes.lightYellow,
-              borderRadius: "15px",
               padding: "15px",
             }}
+            className = "rounded"
           >
             <Carousel>
               <Carousel.Item>
@@ -290,9 +289,9 @@ export const News: React.FC = () => {
           <Container
             style={{
               background: ColorThemes.lightOrange,
-              borderRadius: "15px",
               padding: "15px",
             }}
+            className = "rounded"
           >
             <Carousel>
               {photos.map((x, i) => (

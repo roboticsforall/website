@@ -12,11 +12,10 @@ export const PosButton: React.FC<{
 }> = (props) => {
   const useStyles = createUseStyles({
     button: (props: any) => ({
-      composes: "py-3 justify-content-between align-items-center",
+      composes: "py-3 justify-content-between align-items-center rounded",
       fontFamily: "BeVietnam-ExtraBold",
       transition: "200ms",
       color: ColorThemes.black,
-      borderRadius: "15px",
       backgroundColor: props.backgroundColor,
       "&:hover": {
         backgroundColor: props.backgroundHover,

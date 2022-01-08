@@ -14,7 +14,6 @@ export const BusinessPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainBlue,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",

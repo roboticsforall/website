@@ -20,7 +20,6 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
   const [dropdownTextColor, setdropdownTextColor] = useState(props.colors.main);
 
   const dropdownAnswer = {
-    borderRadius: "1em",
     backgroundColor: props.colors.main,
     fontFamily: "BeVietnam-SemiBold",
   };
@@ -42,8 +41,7 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
 
   const useStyles = createUseStyles({
     dropdown: (props: any) => ({
-      composes: "p-2 d-flex justify-content-between",
-      borderRadius: "1em",
+      composes: "p-2 d-flex justify-content-between rounded",
       fontFamily: "BeVietnam-ExtraBold",
       transition: "200ms",
       backgroundColor: props.dropdownBGColor,
@@ -80,7 +78,7 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
       <div style={dropdownDisplay}>
         <div
           style={dropdownAnswer}
-          className="p-2 justify-content-between align-items-center"
+          className="p-2 justify-content-between rounded align-items-center"
         >
           <h3>{props.answer}</h3>
         </div>

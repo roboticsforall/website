@@ -168,7 +168,6 @@ label {
 }
 
 .long-button {
-  border-radius: 0.5em;
   border: none;
   transition: 200ms;
   background-color: #ffcc00;
@@ -180,7 +179,6 @@ label {
 }
 
 .newsletter-card {
-  border-radius: 1em;
   transition: 200ms;
   background-color: #ffcc0080;
   font-family: "Oswald-Medium";
@@ -237,7 +235,6 @@ label {
 .dropdown-container {
   display: none;
   position: absolute;
-  border-radius: 15px;
   background-color: #ffdb4d;
   z-index: 100;
   white-space: nowrap;
@@ -257,7 +254,6 @@ label {
   text-transform: uppercase;
 }
 .donate-nav-background {
-  border-radius: 15px;
   background-color: #3399ff;
   padding: 0.2em 0.5em 0.2em 0.5em;
 }
@@ -273,20 +269,11 @@ label {
 
 /* for dropdowns */
 .dropdown-container li {
-  background-color: #ffdb4d;
   padding: 0.5em;
 }
 .dropdown-container a {
   font-family: "BeVietnam-ExtraBold";
   color: #fa8d1f;
-}
-.dropdown-container a:first-child li {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.dropdown-container a:last-child li {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 .dropdown-container li:hover {
   transition: 0.2s;
@@ -317,13 +304,11 @@ label {
 
 /* #region indlearners and for schools */
 .ind-learners-enroll-button {
-  border-radius: 1em;
   border: none;
   transition: 200ms;
   background-color: #3399ff;
 }
 .school-enroll-button {
-  border-radius: 1em;
   border: none;
   transition: 200ms;
   background-color: #33cc66;
@@ -401,7 +386,6 @@ label {
   transition: opacity 200ms;
 }
 /*#endregion*/
-
 
 video {
   background-color: black;

@@ -58,7 +58,7 @@ export const Donate: React.FC = () => {
             >
               <h1
                 style={buttonText}
-                className="m-0 p-3 long-button text-center"
+                className="m-0 p-3 rounded long-button text-center"
               >
                 Donate
               </h1>
