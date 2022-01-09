@@ -6,6 +6,8 @@ import Carousel from "react-multi-carousel/lib/Carousel";
 import "react-multi-carousel/lib/styles.css";
 import exitIcon from "@/media/Icons/exitIcon.svg";
 
+import "../../index.css";
+
 interface IProps {
   infoJSON: any;
   backgroundColor: string;
@@ -35,23 +37,6 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
 
   const imgBoxShadow = {
     boxShadow: "0px 7px 8px -8px #000000",
-  };
-  const nameHeader: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-    fontSize: "4em",
-    textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
-    wordBreak: "break-word",
-    width: "75%"
-  };
-  const titleHeader: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
-    fontSize: "3em",
-    textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
-  };
-  const bodyText: React.CSSProperties = {
-    fontFamily: "BeVietnam-Medium",
-    color: "white",
-    fontSize: "1.5em",
   };
 
   const dropdownControl: React.CSSProperties = {
@@ -99,14 +84,14 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               >
                 <img width="50" src={exitIcon} />
               </button>
-              <h1 style={nameHeader}>{info.name}</h1>
+              <h1 className="nameHeader">{info.name}</h1>
 
             </header>
-            <h1 style={{ color: props.color, ...titleHeader }}>
+            <h1 className="titleHeader" style={{ color: props.color}}>
               {info.title_pronouns}
             </h1>
             <p>
-              <Markdown style={bodyText}>{info.description}</Markdown>
+              <Markdown className="bodyText">{info.description}</Markdown>
             </p>
           </Row>
         </div>
@@ -144,11 +129,11 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
               <></>
             ) : (
               <Col style={{ overflowY: "auto" }} md={7} className="ms-2">
-                <h1 style={nameHeader}>{info.name}</h1>
-                <h1 style={{ color: props.color, ...titleHeader }}>
+                <h1 className="nameHeader">{info.name}</h1>
+                <h1 className="titleHeader" style={{ color: props.color}}>
                   {info.title_pronouns}
                 </h1>
-                <Markdown style={bodyText}>{info.description}</Markdown>
+                <Markdown className="bodyText">{info.description}</Markdown>
               </Col>
             )}
           </div>
