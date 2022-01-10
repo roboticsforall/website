@@ -12,6 +12,8 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import curricdevpositionsJSON from "@/posts/curriculum_developer.json";
 
+import googleForms from "@/posts/google_form.json";
+
 export const CurricDevPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
@@ -76,7 +78,7 @@ export const CurricDevPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainYellow}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link="/volunteer/volunteerapp"
+              link= {googleForms.curriculum_developer_app_link}
             />
             <br />
             <h2 style={positionsTitle}>Positions</h2>

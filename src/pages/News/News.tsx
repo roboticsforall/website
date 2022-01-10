@@ -179,7 +179,7 @@ export const News: React.FC = () => {
             </Col>
           </Row>
         </Row>
-        <Row className="mt-3">
+        {/* <Row className="mt-3">
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
@@ -220,7 +220,7 @@ export const News: React.FC = () => {
               ))}
             </Carousel>
           </Container>
-        </Row>
+        </Row> */}
         <Row className="mt-3">
           <h1
             style={{

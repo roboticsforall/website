@@ -23,6 +23,9 @@ import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
 import teachingfaqsJSON from "@/posts/faqs/teaching_faqs.json";
 
+import googleForms from "@/posts/google_form.json";
+
+
 import { ColorThemes } from "@/colors";
 
 export const TeacherPos: React.FC = () => {
@@ -165,6 +168,12 @@ export const TeacherPos: React.FC = () => {
                   </Markdown>
                 }
               />
+                      <PosButton
+          backgroundColor={ColorThemes.mainOrange}
+          backgroundHover={ColorThemes.mainYellow}
+          title={"Apply Now!"}
+          link= {googleForms.teacher_app_link}
+        />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <TabsCardNoImage
@@ -238,15 +247,15 @@ export const TeacherPos: React.FC = () => {
               />
               <br></br>
               <br></br>
-            </Tab.Pane>
-          </Tab.Content>
-        </Tab.Container>
-        <PosButton
+                      <PosButton
           backgroundColor={ColorThemes.mainOrange}
           backgroundHover={ColorThemes.mainYellow}
           title={"Apply Now!"}
-          link="/volunteer/volunteerapp"
+          link= {googleForms.ta_app_link}
         />
+            </Tab.Pane>
+          </Tab.Content>
+        </Tab.Container>
       </Container>
       <br />
 

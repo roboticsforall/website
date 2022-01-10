@@ -2,28 +2,8 @@
   "technical_intern_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
   "ta_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
   "publicity_intern_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
-  "register_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
-  "teacher_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
   "general_intern_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
-  "general_intern_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
   "teacher_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
   "register_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
-  "publicity_intern_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
-  "ta_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
-  "teaching_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  },
-  "technical_intern_app_form_code": {
-    "code": "<iframe\n  src=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\n  width=\"640\"\n  height=\"975\"\n  frameBorder=\"0\"\n  marginHeight={0}\n  marginWidth={0}\n>\n  Loading…\n</iframe>"
-  }
+  "curriculum_developer_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform"
 }

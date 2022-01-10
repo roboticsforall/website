@@ -19,7 +19,6 @@ import { PublicityPositions } from "@/pages/Volunteer/PublicityPositions";
 import { TechnicalPositions } from "@/pages/Volunteer/TechnicalPositions";
 import { BusinessPositions } from "@/pages/Volunteer/BusinessPositions";
 import { CurricDevPositions } from "@/pages/Volunteer/CurricDevPositions";
-import { VolunteerApp } from "@/pages/Volunteer/VolunteerApp";
 //About
 import { AffOrgs } from "@/pages/About/AffOrgs";
 import { AbtOverview } from "@/pages/About/AbtOverview";
@@ -100,11 +99,6 @@ export const App: React.FC = () => {
                   exact
                   path="/volunteer/curricdevpositions"
                   component={CurricDevPositions}
-                />
-                <Route
-                  exact
-                  path="/volunteer/volunteerapp"
-                  component={VolunteerApp}
                 />
 
                 {/* About Pages */}

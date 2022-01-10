@@ -10,6 +10,7 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 import technicalInternJSON from "@/posts/technical_intern.json";
+import googleForms from "@/posts/google_form.json";
 
 export const TechnicalPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -75,7 +76,7 @@ export const TechnicalPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainGreen}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link="/volunteer/volunteerapp"
+              link= {googleForms.publicity_intern_app_link}
             />
             <br />
             <h2 style={positionsTitle}>Positions</h2>

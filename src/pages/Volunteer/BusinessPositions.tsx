@@ -77,26 +77,8 @@ export const BusinessPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainBlue}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link="/volunteer/volunteerapp"
+              link= {googleForms.general_intern_app_link}
             />
-            <br />
-            <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {generalInternJSON.positions.map((pair, i) => (
-                <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainBlue,
-                    light: ColorThemes.lightBlue,
-                    dark: ColorThemes.darkBlue,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>

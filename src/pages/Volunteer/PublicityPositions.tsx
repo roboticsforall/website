@@ -12,6 +12,9 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import publicityInternJSON from "@/posts/publicity_intern.json";
 
+import googleForms from "@/posts/google_form.json";
+
+
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
@@ -76,26 +79,8 @@ export const PublicityPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainOrange}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link="/volunteer/volunteerapp"
+              link = {googleForms.publicity_intern_app_link}
             />
-            <br />
-            <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {publicityInternJSON.positions.map((pair, i) => (
-                <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainOrange,
-                    light: ColorThemes.lightOrange,
-                    dark: ColorThemes.darkOrange,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>

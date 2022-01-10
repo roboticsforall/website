@@ -177,6 +177,9 @@ collections:
           - label: "Technical Intern Google Form Link"
             name: "technical_intern_app_link"
             widget: string
+          - label: "Curriculum Developer Google Form Link"
+            name: "curriculum_developer_app_link"
+            widget: string
   - label: "Enroll Links" # used in UI
     name: "enroll_links" # used in routes
     files:

@@ -45,7 +45,7 @@ export const AffOrgs: React.FC = () => {
           mainColor={ColorThemes.mainBlue}
           affOrgName={"Crafts For Charity"}
           affOrgsDescription={
-            "Crafts for Charity is a student-led nonprofit providing classes and opportunities for everyone to give back to their communities through crafting! We help donate handmade goods to charities for causes like homelessness."
+            "Crafts for Charity is a student-led nonprofit providing classes and opportunities for everyone to give back to their communities through crafting! They help donate handmade goods to charities for causes like homelessness and we are their primary fiscal sponsor."
           }
         />
       </Container>

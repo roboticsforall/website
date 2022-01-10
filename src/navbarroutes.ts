@@ -49,10 +49,6 @@ export const enrollvolunteerabout = [
           subPageName: "Curriculum Development Positions",
           to: "/volunteer/curricdevpositions",
         },
-        {
-          subPageName: "Volunteer Application",
-          to: "/volunteer/volunteerapp",
-        },
       ]
     },
     {
