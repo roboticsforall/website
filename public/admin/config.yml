@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "/public" # Media files will be stored in the repo under images/uploads
 public_folder: "/public" # The src attribute for uploaded media will begin with /images/uploads
@@ -7,12 +7,28 @@ collections:
   - label: "FAQ's" # used in UI
     name: "faqs" # used in routes
     files:
-      - label: "Class FAQ's"
-        name: "class_faqs"
-        file: "src/posts/faqs/class_faqs.json"
+      - label: "Individual Learners FAQ's"
+        name: "indlearners_faqs"
+        file: "src/posts/faqs/indlearners_faqs.json"
         fields:
-          - label: Class FAQ List
-            name: class_faq_list
+          - label: Individual Learners FAQ List
+            name: ind_learners_list
+            widget: list
+            fields:
+              - {label: Question, name: question, widget: string}
+              - {label: Answer, name: answer, widget: string}
+          - label: Upcoming Courses Question
+            name: upcoming_courses_question
+            widget: string
+          - label:  Upcoming Courses Answer
+            name: upcoming_courses_answer
+            widget: markdown
+      - label: "For Schools FAQ's"
+        name: "forschools_faqs"
+        file: "src/posts/faqs/forschools_faqs.json"
+        fields:
+          - label: For Schools FAQ List
+            name: for_schools_list
             widget: list
             fields:
               - {label: Question, name: question, widget: string}

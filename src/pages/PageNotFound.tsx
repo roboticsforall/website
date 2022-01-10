@@ -22,8 +22,9 @@ export const PageNotFound: React.FC = () => {
       <br />
       <Container>
         <h4 style={redirectText}>
-          Link directed to is incorrect or webpage does not exist.{" "}
-          <Link to="/">Click here to return home</Link>.
+          Sorry, we can’t find the page that you are looking for. 
+          Please ensure that you typed the link in correctly or {" "}
+          <Link to="/"><em>click here to return home</em></Link>.
         </h4>
       </Container>
       <br />

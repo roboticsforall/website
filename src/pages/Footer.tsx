@@ -123,10 +123,7 @@ export const Footer: React.FC = () => {
                 href="https://www.guidestar.org/"
                 rel="noreferrer"
               >
-                <Image
-                  style={{ width: "8vmax", height: "8vmax" }}
-                  src={guidestar}
-                />
+                <Image style={iconSize} src = {guidestar}/>
               </a>
             </div>
           </Col>

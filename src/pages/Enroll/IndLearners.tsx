@@ -8,7 +8,7 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import classFAQJSON from "@/posts/faqs/class_faqs.json";
+import indlearnersFAQJSON from "@/posts/faqs/indlearners_faqs.json";
 import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
 import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
@@ -123,7 +123,7 @@ export const IndLearners: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {classFAQJSON.class_faq_list.map((QAPair) => (
+        {indlearnersFAQJSON.ind_learners_list.map((QAPair) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
@@ -137,8 +137,8 @@ export const IndLearners: React.FC = () => {
           />
         ))}
         <FAQDropdowns
-          question={classFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
+          question={indlearnersFAQJSON.upcoming_courses_question}
+          answer={<Markdown>{indlearnersFAQJSON.upcoming_courses_answer}</Markdown>}
           colors={{
             main: ColorThemes.mainBlue,
             light: ColorThemes.lightBlue,

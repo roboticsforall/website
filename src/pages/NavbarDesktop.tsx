@@ -47,7 +47,7 @@ export const NavbarDesktop: React.FC = () => {
           <React.Fragment>
             <li className="nav-item" key={i}>
               <div className="h-100 nav-item-header">
-                <Link to="#" className="hyperlink">
+                <Link onClick = "return false" className="hyperlink"> 
                   {navItem.headerName}
                 </Link>
               </div>

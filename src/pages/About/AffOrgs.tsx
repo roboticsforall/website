@@ -37,19 +37,6 @@ export const AffOrgs: React.FC = () => {
         <br />
         <br />
         <AboutAffOrgsCard
-          website={"https://www.mentoringforall.org"}
-          logo={MFALogo}
-          linkColor={ColorThemes.darkGreen}
-          orgAbrv={"MFA"}
-          mainColor={ColorThemes.mainGreen}
-          affOrgName={"Mentoring For All"}
-          affOrgsDescription={
-            "Mentoring for All is a branch of the non-profit organization Robotics for All with the goal of providing guidance on the path towards future success for underserved high school students."
-          }
-        />
-        <br />
-        <br />
-        <AboutAffOrgsCard
           website={"https://craftsforcharity.com/"}
           logo={CFCLogo}
           linkColor={ColorThemes.darkBlue}

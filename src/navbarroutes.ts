@@ -12,7 +12,7 @@ export const enrollvolunteerabout = [
           to: "/enroll/schools",
         },
         {
-          subPageName: "Register",
+          subPageName: "Enroll Today",
           to: "/enroll/register",
         },
       ]
@@ -26,7 +26,7 @@ export const enrollvolunteerabout = [
           to: "/volunteer/overview",
         },
         {
-          subPageName: "Teaching Overview and Positions",
+          subPageName: "Teaching Positions",
           to: "/volunteer/teacherpos",
         },
         {
@@ -34,15 +34,15 @@ export const enrollvolunteerabout = [
           to: "/volunteer/internoverview",
         },
         {
-          subPageName: "Publicity Positions",
+          subPageName: "Publicity Internship Details",
           to: "/volunteer/publicitypositions",
         },
         {
-          subPageName: "Technical Positions",
+          subPageName: "Technical Internship Details",
           to: "/volunteer/technicalpositions",
         },
         {
-          subPageName: "Business Positions",
+          subPageName: "Business Internship Details",
           to: "/volunteer/businesspositions",
         },
         {
@@ -109,7 +109,7 @@ export const contactaboutdonate = [
       },
       {
         subPageName: "Merch",
-        to: "https://www.bonfire.com/store/rfa/ ",
+        to: "https://www.bonfire.com/org/robotics-for-all-832012119/",
       },
     ]
   }

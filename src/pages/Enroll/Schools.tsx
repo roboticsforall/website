@@ -7,7 +7,7 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import classFAQJSON from "@/posts/faqs/class_faqs.json";
+import forschoolsFAQJSON from "@/posts/faqs/forschools_faqs.json";
 import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
@@ -129,7 +129,7 @@ export const Schools: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {classFAQJSON.class_faq_list.map((QAPair: any) => (
+        {forschoolsFAQJSON.for_schools_list.map((QAPair: any) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
@@ -143,8 +143,8 @@ export const Schools: React.FC = () => {
           />
         ))}
         <FAQDropdowns
-          question={classFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
+          question={forschoolsFAQJSON.upcoming_courses_question}
+          answer={<Markdown>{forschoolsFAQJSON.upcoming_courses_answer}</Markdown>}
           colors={{
             main: ColorThemes.mainGreen,
             light: ColorThemes.lightGreen,
