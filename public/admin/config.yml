@@ -17,12 +17,6 @@ collections:
             fields:
               - {label: Question, name: question, widget: string}
               - {label: Answer, name: answer, widget: markdown}
-          - label: Upcoming Courses Question
-            name: upcoming_courses_question
-            widget: string
-          - label:  Upcoming Courses Answer
-            name: upcoming_courses_answer
-            widget: markdown
       - label: "For Schools FAQ's"
         name: "forschools_faqs"
         file: "src/posts/faqs/forschools_faqs.json"
