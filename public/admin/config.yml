@@ -159,9 +159,9 @@ collections:
         name: "google_forms"
         file: "src/posts/google_form.json"
         fields:
-          - label: "Register Google Form Link"
-            name: "register_link"
-            widget: string
+          - label: "Register Google Form Embed Code"
+            name: "register_app_code"
+            widget: code
           - label: "Teacher Google Form Link"
             name: "teacher_app_link"
             widget: string

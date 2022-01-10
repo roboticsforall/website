@@ -24,7 +24,7 @@ export const Register: React.FC = () => {
       <Container>
         <Row>
           <Col className="d-flex justify-content-center">
-            <Markdown>{googleForms.register_form_code.code}</Markdown>
+            <Markdown>{googleForms.register_app_code.code}</Markdown>
           </Col>
         </Row>
         <br></br>
