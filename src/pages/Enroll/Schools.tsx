@@ -129,7 +129,7 @@ export const Schools: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {forschoolsFAQJSON.for_schools_list.map((QAPair: any) => (
+        {forschoolsFAQJSON.for_schools_faq_list.map((QAPair: any) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}

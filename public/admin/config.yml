@@ -12,7 +12,7 @@ collections:
         file: "src/posts/faqs/indlearners_faqs.json"
         fields:
           - label: Individual Learners FAQ List
-            name: ind_learners_list
+            name: ind_learners_faq_list
             widget: list
             fields:
               - {label: Question, name: question, widget: string}
@@ -28,7 +28,7 @@ collections:
         file: "src/posts/faqs/forschools_faqs.json"
         fields:
           - label: For Schools FAQ List
-            name: for_schools_list
+            name: for_schools_faq_list
             widget: list
             fields:
               - {label: Question, name: question, widget: string}
