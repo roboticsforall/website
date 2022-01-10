@@ -16,7 +16,7 @@ collections:
             widget: list
             fields:
               - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: string}
+              - {label: Answer, name: answer, widget: markdown}
           - label: Upcoming Courses Question
             name: upcoming_courses_question
             widget: string
@@ -32,13 +32,7 @@ collections:
             widget: list
             fields:
               - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: string}
-          - label: Upcoming Courses Question
-            name: upcoming_courses_question
-            widget: string
-          - label:  Upcoming Courses Answer
-            name: upcoming_courses_answer
-            widget: markdown
+              - {label: Answer, name: answer, widget: markdown}
       - label: "Teaching FAQ's"
         name: "teaching_faqs"
         file: "src/posts/faqs/teaching_faqs.json"

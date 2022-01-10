@@ -133,7 +133,7 @@ export const Schools: React.FC = () => {
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
-            answer={QAPair.answer}
+            answer={<Markdown>QAPair.answer</Markdown>}
             colors={{
               main: ColorThemes.mainGreen,
               light: ColorThemes.lightGreen,
@@ -142,16 +142,6 @@ export const Schools: React.FC = () => {
             }}
           />
         ))}
-        <FAQDropdowns
-          question={forschoolsFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{forschoolsFAQJSON.upcoming_courses_answer}</Markdown>}
-          colors={{
-            main: ColorThemes.mainGreen,
-            light: ColorThemes.lightGreen,
-            dark: ColorThemes.darkGreen,
-            backgroundHover: ColorThemes.mainYellow,
-          }}
-        />
         <br />
       </Container>
     </>

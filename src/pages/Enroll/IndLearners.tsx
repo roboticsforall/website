@@ -127,7 +127,7 @@ export const IndLearners: React.FC = () => {
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
-            answer={QAPair.answer}
+            answer={<Markdown>QAPair.answer</Markdown>}
             colors={{
               main: ColorThemes.mainBlue,
               light: ColorThemes.lightBlue,
@@ -136,16 +136,6 @@ export const IndLearners: React.FC = () => {
             }}
           />
         ))}
-        <FAQDropdowns
-          question={indlearnersFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{indlearnersFAQJSON.upcoming_courses_answer}</Markdown>}
-          colors={{
-            main: ColorThemes.mainBlue,
-            light: ColorThemes.lightBlue,
-            dark: ColorThemes.darkBlue,
-            backgroundHover: ColorThemes.mainYellow,
-          }}
-        />
         <br />
       </Container>
     </>
