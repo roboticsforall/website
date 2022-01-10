@@ -1,8 +1,5 @@
 import React from "react";
 import { Container, Row, Image, Col } from "react-bootstrap";
-import homePageVideo from "@/media/homePageVideo.mp4";
-
-import "../../index.css";
 
 export const AboutAffOrgsCard: React.FC<{
 	mainColor: string;
@@ -50,29 +47,21 @@ export const AboutAffOrgsCard: React.FC<{
 								</Row>
 							</Col>
 						)}
-					<Col md={5} lg={5} xl={5} className="p-3 center-align">
-						<video className="w-100 h-100" autoPlay muted loop>
-							<source src={homePageVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+					<Col md={5} lg={5} xl={5} className="center-align">
+						<p className="text-center affOrgsCardText">
+							{props.affOrgsDescription}
+						</p>
 					</Col>
-					<Col md={4} lg={4} xl={4} className="p-3">
-						<Container>
-							<Row className="justify-content-center">
-								<p className="text-center affOrgsCardText">
-									{props.affOrgsDescription}
-								</p>
-								<a
-									style={{ color: props.linkColor, fontSize: "xx-large" }}
-									rel="noopener noreferrer"
-									target="_blank"
-									className="text-center hyperlink aff-org-card-link"
-									href={props.website}
-								>
-									VISIT {props.orgAbrv}
-								</a>
-							</Row>
-						</Container>
+					<Col md={4} lg={4} xl={4} className="center-align">
+						<a
+							style={{ color: props.linkColor, fontSize: "xx-large" }}
+							rel="noopener noreferrer"
+							target="_blank"
+							className="text-center hyperlink aff-org-card-link"
+							href={props.website}
+						>
+							VISIT {props.orgAbrv}
+						</a>
 					</Col>
 				</Row>
 			</Col>
