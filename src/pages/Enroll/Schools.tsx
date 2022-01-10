@@ -12,6 +12,8 @@ import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
 import enroll_links from "@/posts/enroll_links.json";
 
+import schoolsCourseOverview from "@/posts/schools.json";
+
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
 import { ColorThemes } from "@/colors";
 
@@ -52,16 +54,10 @@ export const Schools: React.FC = () => {
       <Container>
         <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
         <br />
-        <h3 style={boldNote}>
-          Partner with us at any time to offer our wide selection of courses to
-          your students!
-        </h3>
+        <h3 style={boldNote}>{schoolsCourseOverview.schools_bold_text}</h3>
         <br />
         <h5 style={bodyText}>
-          Since July 2020, Robotics for All has provided online courses for
-          students from Kindergarten to 8th grade. All classes run for eight
-          weeks and have virtual hour-long meetings with teachers once or twice
-          a week!
+          <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
@@ -133,7 +129,7 @@ export const Schools: React.FC = () => {
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
-            answer={<Markdown>QAPair.answer</Markdown>}
+            answer={<Markdown>{QAPair.answer}</Markdown>}
             colors={{
               main: ColorThemes.mainGreen,
               light: ColorThemes.lightGreen,

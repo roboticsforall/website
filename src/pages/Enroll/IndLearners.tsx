@@ -11,7 +11,7 @@ import Markdown from "markdown-to-jsx";
 import indlearnersFAQJSON from "@/posts/faqs/indlearners_faqs.json";
 import coursesInfoJSON from "@/posts/courses.json";
 import syllabiJSON from "@/posts/syllabi.json";
-import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
+import indLearnersCourseOverview from "@/posts/ind_learners.json";
 import enroll_links from "@/posts/enroll_links.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
@@ -52,10 +52,10 @@ export const IndLearners: React.FC = () => {
       <Container>
         <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
         <br />
-        <h3 style={boldNote}>{indLearnersAndSchool.indlearners_bold_text}</h3>
+        <h3 style={boldNote}>{indLearnersCourseOverview.indlearners_bold_text}</h3>
         <br />
         <h5 style={bodyText}>
-          <Markdown>{indLearnersAndSchool.indlearners_body_text}</Markdown>
+          <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
         </h5>
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
@@ -123,11 +123,11 @@ export const IndLearners: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {indlearnersFAQJSON.ind_learners_list.map((QAPair) => (
+        {indlearnersFAQJSON.ind_learners_faq_list.map((QAPair) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
-            answer={<Markdown>QAPair.answer</Markdown>}
+            answer={<Markdown>{QAPair.answer}</Markdown>}
             colors={{
               main: ColorThemes.mainBlue,
               light: ColorThemes.lightBlue,

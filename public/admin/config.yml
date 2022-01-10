@@ -140,12 +140,18 @@ collections:
   - label: "Editable Texts" # used in UI
     name: "editable_texts" # used in routes
     files:
-      - label: "Individual Learners and Schools"
-        name: "ind_learners_and_schools"
-        file: "src/posts/ind_learners_and_schools.json"
+      - label: "Individual Learners"
+        name: "ind_learners"
+        file: "src/posts/ind_learners.json"
         fields:
           - {label: "Course Overview Bold Text", name: "indlearners_bold_text", widget: string}
           - {label: "Course Overview Body Text", name: "indlearners_body_text", widget: markdown}
+      - label: "Schools"
+        name: "schools"
+        file: "src/posts/schools.json"
+        fields:
+          - {label: "Course Overview Bold Text", name: "schools_bold_text", widget: string}
+          - {label: "Course Overview Body Text", name: "schools_body_text", widget: markdown}
   - label: "Google Forms" # used in UI
     name: "google_forms" # used in routes
     files:
@@ -153,24 +159,24 @@ collections:
         name: "google_forms"
         file: "src/posts/google_form.json"
         fields:
-          - label: "Register Google Form Embed Code"
-            name: "register_form_code"
-            widget: code
-          - label: "Teacher Google Form Embed Code"
-            name: "teacher_app_form_code"
-            widget: code
-          - label: "TA Google Form Embed Code"
-            name: "ta_app_form_code"
-            widget: code
-          - label: "General Intern Google Form Embed Code"
-            name: "general_intern_app_form_code"
-            widget: code
-          - label: "Publicity Intern Google Form Embed Code"
-            name: "publicity_intern_app_form_code"
-            widget: code
-          - label: "Technical Intern Google Form Embed Code"
-            name: "technical_intern_app_form_code"
-            widget: code
+          - label: "Register Google Form Link"
+            name: "register_link"
+            widget: string
+          - label: "Teacher Google Form Link"
+            name: "teacher_app_link"
+            widget: string
+          - label: "TA Google Form Link"
+            name: "ta_app_link"
+            widget: string
+          - label: "General Intern Google Form Link"
+            name: "general_intern_app_link"
+            widget: string
+          - label: "Publicity Intern Google Form Link"
+            name: "publicity_intern_app_link"
+            widget: string
+          - label: "Technical Intern Google Form Link"
+            name: "technical_intern_app_link"
+            widget: string
   - label: "Enroll Links" # used in UI
     name: "enroll_links" # used in routes
     files:
