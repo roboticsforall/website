@@ -9,12 +9,8 @@
       "answer": "Classes cost a minimum of $100, however, we do offer fee waivers if you are unable to pay the class fees."
     },
     {
-      "question": "Where can I find more information regarding  the class curriculum?",
-      "answer": "You can learn more in our syllabi's."
-    },
-    {
-      "question": " Can I enroll my students in multiple classes? Can I enroll my students in multiple classes?",
-      "answer": "Yes, there is no limit to the amount of classes you may enroll your student in."
+      "question": "Where can I find more information regarding the class curriculum?",
+      "answer": "Some text here\n\n* Some bullet here"
     }
   ]
 }
