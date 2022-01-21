@@ -98,7 +98,7 @@ export const InternOverview: React.FC = () => {
               }
             />
             <TabsCardLeftImage
-              posHeader={"REQUIemENTS"}
+              posHeader={"REQUIREMENTS"}
               posImage={Laptop}
               generalColor={ColorThemes.mainYellow}
               posDescription={
