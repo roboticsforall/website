@@ -137,12 +137,12 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             {window.innerWidth <= 600 ? (
               <></>
             ) : (
-              <Col style={{ overflowY: "auto" }} className="ms-2">
+              <Col style={{ overflowY: "auto" }} className="border ms-2">
                 <h1 style={nameHeader}>{info.name}</h1>
                 <h1 style={{ color: props.color, ...titleHeader }}>
                   {info.title_pronouns}
                 </h1>
-                <Markdown style={bodyText}>{info.description}</Markdown>
+                <Markdown className = "border" style={bodyText}>{info.description}</Markdown>
               </Col>
             )}
           </div>
