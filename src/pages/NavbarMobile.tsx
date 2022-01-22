@@ -105,14 +105,12 @@ const MobileNavbarItem: React.FC<{
   const navHeader = {
     display: "flex",
     justifyContent: "space-between",
-    fontFamily: "BeVietnam-Bold",
   };
   const list: React.CSSProperties = {
     textDecoration: "none",
     listStyleType: "none",
   };
   const dropdownItemText = {
-    fontFamily: "BeVietnam-Regular",
   };
 
   return (

@@ -57,6 +57,9 @@ export const IndLearners: React.FC = () => {
           
           View our detailed syllabi below:
         </section>
+
+        <br/>
+
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
             <FlagCard
@@ -68,7 +71,9 @@ export const IndLearners: React.FC = () => {
             />
           ))}
         </Row>
-        <br></br>
+
+        <br/>
+
         <a
           target="_blank"
           rel="noreferrer"
@@ -76,25 +81,27 @@ export const IndLearners: React.FC = () => {
           className="hyperlink"
         >
           <Row className="ind-learners-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
+            <h4 style={enrollButtonTitle}>Enroll in a Course Today!</h4>
           </Row>
         </a>
       </Container>
+
       <br></br>
       <br></br>
+
       <div style={blueRow}>
         <Container>
           <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
-          <h5 style={bodyText}>
+          <p style={bodyText}>
             We offer basic and advanced computer programming and computer-aided
             design courses for students in K-8th grade!
             <br></br>
             <br></br>
             View our selection of courses below and click on the boxes to learn
             more:
-          </h5>
+          </p>
           <br></br>
           <Row>
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (

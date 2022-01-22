@@ -30,14 +30,12 @@ export const TeacherPos: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainYellow,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
   };
   const inActiveStyle = {
     background: ColorThemes.mainOrange,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
   };
@@ -45,11 +43,9 @@ export const TeacherPos: React.FC = () => {
     color: ColorThemes.black,
   };
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
-    fontSize: "3em",
   };
 
   return (

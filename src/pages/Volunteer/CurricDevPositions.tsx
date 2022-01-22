@@ -17,7 +17,6 @@ export const CurricDevPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainYellow,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
   };
@@ -25,7 +24,6 @@ export const CurricDevPositions: React.FC = () => {
     color: "#000000",
   };
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     color: ColorThemes.mainYellow,
     textAlign: "center",

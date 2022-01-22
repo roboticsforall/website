@@ -39,7 +39,6 @@ export const Contact: React.FC = () => {
   };
 
   const contactInfo = {
-    fontFamily: "BeVietnam-SemiBold",
   };
 
   const linkStyle = {

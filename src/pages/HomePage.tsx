@@ -65,7 +65,7 @@ export const HomePage: React.FC = () => {
       <Container>
         <Row className="justify-content-center">
           <h1 className = "display-1" style={header}>ROBOTICS FOR ALL</h1>
-          <p style={headerDescription}>
+          <p className = "lead" style={headerDescription}>
             Robotics For All provides free STEM education to students of all
             backgrounds, particularly students from underserved communities. We
             aim to inspire children to pursue careers in STEM later in their

@@ -13,7 +13,6 @@ export const PosButton: React.FC<{
   const useStyles = createUseStyles({
     button: (props: any) => ({
       composes: "py-3 justify-content-between align-items-center rounded",
-      fontFamily: "BeVietnam-ExtraBold",
       transition: "200ms",
       color: ColorThemes.black,
       backgroundColor: props.backgroundColor,

@@ -9,10 +9,8 @@ interface IProps {
 export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
   
   const questionText = {
-    fontFamily: "BeVietnam-ExtraBold"
   };
   const answerText = {
-    fontFamily: "BeVietnam-SemiBold",
   }
 
   return (

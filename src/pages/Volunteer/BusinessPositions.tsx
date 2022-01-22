@@ -14,7 +14,6 @@ export const BusinessPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainBlue,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
   };
@@ -22,7 +21,6 @@ export const BusinessPositions: React.FC = () => {
     color: "#000000",
   };
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     color: ColorThemes.mainBlue,
     textAlign: "center",

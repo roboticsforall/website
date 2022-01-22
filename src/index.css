@@ -64,25 +64,28 @@
     url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
     url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("./fonts/Oswald/Oswald-Regular.ttf") format("tff"),
+    url("./fonts/Oswald/Oswald-Regular.ttf") format("opentype"),
+    url("./fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+}
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Oswald"
-} */
+* {
+  letter-spacing: 1.5px;
+}
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-a {
-  letter-spacing: 1.4px;
+h6 {
+  font-family: "Oswald-Medium", sans-serif;
+}
+
+p, li {
+  font-family: "BeVietnam-Regular", sans-serif;
 }
 
 button {
@@ -103,13 +106,11 @@ textarea {
 input,
 textarea {
   background-color: #ffcc004d;
-  font-family: "BeVietnam-ExtraBold" !important;
   color: #000000;
 }
 
 input::placeholder {
   color: #b38f00;
-  font-family: "BeVietnam-ExtraBold";
 }
 
 input:invalid:focus,
@@ -127,7 +128,6 @@ textarea:hover {
 }
 
 label {
-  font-family: "BeVietnam-Bold";
 }
 
 .checkbox {
@@ -159,7 +159,6 @@ label {
 .newsletter-card {
   transition: 200ms;
   background-color: #ffcc0080;
-  font-family: "Oswald-Medium";
 }
 
 .newsletter-card:hover {
@@ -168,7 +167,6 @@ label {
 }
 
 .aff-org-card-link {
-  font-family: "BeVietnam-ExtraBold", sans-serif;
   letter-spacing: 0.1em;
   transition: 0.2s;
 }
@@ -189,7 +187,6 @@ label {
 .nav-item-header a {
   margin: 0;
   color: #ffcc00;
-  font-family: "BeVietnam-ExtraBold";
   text-transform: uppercase;
 }
 
@@ -227,7 +224,6 @@ label {
 }
 .donate-nav-item-header a {
   color: #ffffff; /* nav headers font style */
-  font-family: "BeVietnam-ExtraBold";
   text-transform: uppercase;
 }
 .donate-nav-background {
@@ -249,7 +245,6 @@ label {
   padding: 0.5em;
 }
 .dropdown-container a {
-  font-family: "BeVietnam-ExtraBold";
   color: #fa8d1f;
 }
 .dropdown-container li:hover {
@@ -309,7 +304,6 @@ label {
 
 /* #region homepage styling */
 .home-aff-org-card-link {
-  font-family: "BeVietnam-ExtraBold", sans-serif;
   transition: 0.2s;
   text-decoration: none;
 }

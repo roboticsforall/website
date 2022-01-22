@@ -17,7 +17,6 @@ export const PublicityPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainOrange,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
   };
@@ -25,7 +24,6 @@ export const PublicityPositions: React.FC = () => {
     color: "#000000",
   };
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",

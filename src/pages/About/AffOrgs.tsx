@@ -77,11 +77,9 @@ const AboutAffOrgsCard: React.FC<{
   linkColor: string;
 }> = (props) => {
   const affOrgsCardText = {
-    fontFamily: "BeVietnam-Medium",
   };
 
   const affOrgsHeader = {
-    fontFamily: "Mazzard-H-Extrabold",
     color: props.mainColor,
   };
 

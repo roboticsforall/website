@@ -42,17 +42,15 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
     boxShadow: "0px 7px 8px -8px #000000",
   };
   const nameHeader: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
     wordBreak: "break-word",
     width: "75%"
   };
   const titleHeader: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
     textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
   };
   const bodyText: React.CSSProperties = {
-    fontFamily: "BeVietnam-Medium",
+
     color: "white",
   };
 

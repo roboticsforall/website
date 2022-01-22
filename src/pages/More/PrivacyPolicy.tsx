@@ -20,14 +20,11 @@ export const PrivacyPolicy: React.FC = () => {
   });
 
   const positionsDescription: React.CSSProperties = {
-    fontFamily: "BeVietnam-SemiBold",
-    fontWeight: 600,
     color: "black",
     textAlign: "center",
   };
   const headerText = {
     color: ColorThemes.black,
-    fontFamily: "Oswald-Medium",
   };
 
   return (

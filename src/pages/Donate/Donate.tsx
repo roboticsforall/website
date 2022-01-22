@@ -7,11 +7,9 @@ import { ColorThemes } from "@/colors";
 
 export const Donate: React.FC = () => {
   const positionsDescription = {
-    fontFamily: "BeVietnam-Medium",
   };
 
   const buttonText = {
-    fontFamily: "Mazzard-H-Extrabold",
   };
 
   return (
