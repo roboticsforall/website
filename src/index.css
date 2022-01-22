@@ -64,23 +64,16 @@
     url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
     url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
-/* .container{
-  max-width: 980px;
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald"
 } */
 
-html,
-body {
-  height: 100%;
-  /* overflow-x: hidden; */
-}
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 h1,
 h2,
 h3,

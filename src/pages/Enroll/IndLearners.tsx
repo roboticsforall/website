@@ -18,19 +18,15 @@ import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
 export const IndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainBlue,
     textAlign: "center",
   };
   const boldNote = {
-    fontFamily: "BeVietnam-ExtraBold",
   };
   const bodyText = {
-    fontFamily: "BeVietnam-Medium",
     lineHeight: 1.5,
   };
   const enrollButtonTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
   };
   const blueRow = {
@@ -49,16 +45,18 @@ export const IndLearners: React.FC = () => {
       <br />
       <br />
       <Container>
-        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-        <br />
-        <h3 style={boldNote}>{indLearnersAndSchool.indlearners_bold_text}</h3>
-        <br />
-        <h5 style={bodyText}>
+        <section>
+          <header>
+            <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+          </header>
+          <br/>
+          <p style={boldNote}>
+            <strong>{indLearnersAndSchool.indlearners_bold_text}</strong>
+          </p>
           <Markdown>{indLearnersAndSchool.indlearners_body_text}</Markdown>
-        </h5>
-        <br />
-        <h5 style={bodyText}>View our detailed syllabi below:</h5>
-        <br></br>
+          
+          View our detailed syllabi below:
+        </section>
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
             <FlagCard

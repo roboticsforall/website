@@ -30,20 +30,16 @@ export const HomePage: React.FC = () => {
     backgroundColor: ColorThemes.mainYellow,
   };
   const header: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
-    fontFamily: "BeVietnam-Regular",
     textAlign: "center",
   };
   const sponsorsLabel: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
     textAlign: "center",
   };
   const affOrgsHeader: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordWrap: "break-word",
@@ -68,7 +64,7 @@ export const HomePage: React.FC = () => {
 
       <Container>
         <Row className="justify-content-center">
-          <h1 style={header}>ROBOTICS FOR ALL</h1>
+          <h1 className = "display-1" style={header}>ROBOTICS FOR ALL</h1>
           <p style={headerDescription}>
             Robotics For All provides free STEM education to students of all
             backgrounds, particularly students from underserved communities. We
@@ -105,15 +101,14 @@ export const HomePage: React.FC = () => {
               <Col md={4} className="text-center">
                 <Link to={info.to} className="hyperlink">
                   <Image fluid src={info.src} />
-                  <h2
+                  <h3
                     style={{
-                      fontFamily: "Oswald-Medium",
                       textAlign: "center",
                       color: info.color,
                     }}
                   >
                     {info.label}
-                  </h2>
+                  </h3>
                 </Link>
               </Col>
             ))}
@@ -123,7 +118,7 @@ export const HomePage: React.FC = () => {
       <Container>
         <br></br>
         <br></br>
-        <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
+        <h2 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h2>
         <br></br>
         {[
           {
@@ -208,7 +203,6 @@ const HomeAffOrgsCard: React.FC<{
   logo: string;
 }> = (props) => {
   const affOrgsTitle: React.CSSProperties = {
-    fontFamily: "Mazzard-H-ExtraBold",
     color: "white",
     textAlign: "center",
   };
@@ -235,9 +229,9 @@ const HomeAffOrgsCard: React.FC<{
           <Image fluid style = {imageSize} src={props.logo} />
         </Col>
         <Col md={6} lg={6} xl={6}>
-          <h2 style={affOrgsTitle}>
+          <h3 style={affOrgsTitle}>
             {props.org}
-          </h2>
+          </h3>
         </Col>
         <Col className="text-center" md={3} lg={3} xl={3}>
           <a
@@ -247,7 +241,7 @@ const HomeAffOrgsCard: React.FC<{
             style={linkColor}
             rel="noreferrer"
           >
-            <p>LEARN MORE</p>
+            <h4>LEARN MORE</h4>
           </a>
         </Col>
       </Row>
