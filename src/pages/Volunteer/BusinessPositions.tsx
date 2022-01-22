@@ -14,7 +14,6 @@ export const BusinessPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainBlue,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
@@ -67,23 +66,6 @@ export const BusinessPositions: React.FC = () => {
                 </div>
               }
             />
-            <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {generalInternJSON.positions.map((pair, i) => (
-                <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainBlue,
-                    light: ColorThemes.lightBlue,
-                    dark: ColorThemes.darkBlue,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>

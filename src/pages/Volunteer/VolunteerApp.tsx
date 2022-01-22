@@ -15,7 +15,6 @@ export const VolunteerApp: React.FC = () => {
     color: ColorThemes.black,
     background: ColorThemes.mainYellow,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "30px",
   };
@@ -23,7 +22,6 @@ export const VolunteerApp: React.FC = () => {
     color: ColorThemes.black,
     background: ColorThemes.mainOrange,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "30px",
   };
