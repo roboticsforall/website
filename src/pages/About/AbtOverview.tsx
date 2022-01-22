@@ -7,11 +7,9 @@ import { ColorThemes } from "@/colors";
 
 export const AbtOverview: React.FC = () => {
   const title: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     textAlign: "center",
   };
   const description: React.CSSProperties = {
-    fontFamily: "BeVietnam-Regular",
     color: "black",
   };
   const missionColor: React.CSSProperties = {
@@ -65,7 +63,6 @@ export const AbtOverview: React.FC = () => {
             We are{" "}
             <span
               style={{
-                fontFamily: "BeVietnam-Semibold",
                 color: ColorThemes.mainOrange,
               }}
             >
@@ -79,7 +76,6 @@ export const AbtOverview: React.FC = () => {
             We are{" "}
             <span
               style={{
-                fontFamily: "BeVietnam-Semibold",
                 color: ColorThemes.mainYellow,
               }}
             >
@@ -92,7 +88,6 @@ export const AbtOverview: React.FC = () => {
             We are{" "}
             <span
               style={{
-                fontFamily: "BeVietnam-Semibold",
                 color: ColorThemes.mainGreen,
               }}
             >
@@ -105,7 +100,6 @@ export const AbtOverview: React.FC = () => {
             We are{" "}
             <span
               style={{
-                fontFamily: "BeVietnam-Semibold",
                 color: ColorThemes.lightBlue,
               }}
             >
@@ -119,7 +113,6 @@ export const AbtOverview: React.FC = () => {
             We are{" "}
             <span
               style={{
-                fontFamily: "BeVietnam-Semibold",
                 color: ColorThemes.mainBlue,
               }}
             >

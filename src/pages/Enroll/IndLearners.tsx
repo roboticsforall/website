@@ -18,19 +18,15 @@ import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
 export const IndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainBlue,
     textAlign: "center",
   };
   const boldNote = {
-    fontFamily: "BeVietnam-ExtraBold",
   };
   const bodyText = {
-    fontFamily: "BeVietnam-Medium",
     lineHeight: 1.5,
   };
   const enrollButtonTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
   };
   const blueRow = {
@@ -49,16 +45,21 @@ export const IndLearners: React.FC = () => {
       <br />
       <br />
       <Container>
-        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-        <br />
-        <h3 style={boldNote}>{indLearnersAndSchool.indlearners_bold_text}</h3>
-        <br />
-        <h5 style={bodyText}>
+        <section>
+          <header>
+            <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+          </header>
+          <br/>
+          <p style={boldNote}>
+            <strong>{indLearnersAndSchool.indlearners_bold_text}</strong>
+          </p>
           <Markdown>{indLearnersAndSchool.indlearners_body_text}</Markdown>
-        </h5>
-        <br />
-        <h5 style={bodyText}>View our detailed syllabi below:</h5>
-        <br></br>
+          
+          View our detailed syllabi below:
+        </section>
+
+        <br/>
+
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
             <FlagCard
@@ -70,7 +71,9 @@ export const IndLearners: React.FC = () => {
             />
           ))}
         </Row>
-        <br></br>
+
+        <br/>
+
         <a
           target="_blank"
           rel="noreferrer"
@@ -78,25 +81,27 @@ export const IndLearners: React.FC = () => {
           className="hyperlink"
         >
           <Row className="ind-learners-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
+            <h4 style={enrollButtonTitle}>Enroll in a Course Today!</h4>
           </Row>
         </a>
       </Container>
+
       <br></br>
       <br></br>
+
       <div style={blueRow}>
         <Container>
           <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
-          <h5 style={bodyText}>
+          <p style={bodyText}>
             We offer basic and advanced computer programming and computer-aided
             design courses for students in K-8th grade!
             <br></br>
             <br></br>
             View our selection of courses below and click on the boxes to learn
             more:
-          </h5>
+          </p>
           <br></br>
           <Row>
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (

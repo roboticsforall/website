@@ -8,7 +8,6 @@ import newsletterJSON from "@/posts/newsletters.json";
 import { ColorThemes } from "@/colors";
 export const PastNewsletter: React.FC = () => {
   const heading3 = {
-    fontFamily: "BeVietnam-ExtraBold",
   };
 
   return (

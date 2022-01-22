@@ -8,7 +8,6 @@ export const WebsiteTOSCard2: React.FC<{
 }> = (props) => {
   const posDescription: React.CSSProperties = {
     color: "#000000",
-    fontFamily: "BeVietnam-Medium",
   };
   const borderColor: React.CSSProperties = {
     borderColor: ColorThemes.lightOrange,

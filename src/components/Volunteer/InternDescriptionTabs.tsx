@@ -30,7 +30,6 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
     general: (props: any) => ({
       background: props.backgroundColor,
       border: "none",
-      fontFamily: "BeVietnam-ExtraBold",
       padding: "20px",
       height: "100%",
     }),
@@ -139,12 +138,10 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
 const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
   const styles: any = {
     posHeader: {
-      fontFamily: "BeVietnam-ExtraBold",
       letterSpacing: "0.25em",
       textAlign: "center",
     },
     posDescription: {
-      fontFamily: "BeVietnam-Medium",
       color: ColorThemes.black,
     },
     posContainer: (props: any) => ({
@@ -155,7 +152,6 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       backgroundColor: props.backgroundColor,
     }),
     buttonHeader: {
-      fontFamily: "BeVietnam-ExtraBold",
       textAlign: "center",
       color: ColorThemes.black,
     },

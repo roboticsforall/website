@@ -7,7 +7,6 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 
 export const PageNotFound: React.FC = () => {
   const redirectText = {
-    fontFamily: "BeVietnam-SemiBold",
   };
   return (
     <>

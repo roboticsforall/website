@@ -22,16 +22,13 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const handleShow = () => setShow(true);
 
   const text: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     textOverflow: "ellipsis",
     overflow: "hidden",
     whiteSpace: "nowrap",
   };
   const dropdownHeaderText: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
   };
   const dropdownText: React.CSSProperties = {
-    fontFamily: "BeVietnam-Medium",
   };
 
   const useStyles = createUseStyles({
@@ -82,9 +79,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
                       fluid
                       src={props.dropdownCourseImage}
                     />
-                  </Row>
-                  <Row className="justify-content-center">
-
                   </Row>
               </Col>
             </Row>

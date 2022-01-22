@@ -7,7 +7,6 @@ export const VolOverviewImg: React.FC<{
   image: string;
 }> = (props) => {
   const cardTitle = {
-    fontFamily: "Oswald-Medium",
     color: props.color,
   };
   return (

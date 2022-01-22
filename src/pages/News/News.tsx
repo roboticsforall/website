@@ -220,7 +220,6 @@ export const News: React.FC = () => {
         <Row className="mt-3">
           <h1
             style={{
-              fontFamily: "Mazzard-H-Extrabold",
               color: ColorThemes.mainYellow,
             }}
           >

@@ -12,7 +12,6 @@ export const NavbarDesktop: React.FC = () => {
     alignItems: "center",
   };
   const navHeading = {
-    fontFamily: "Oswald-Medium",
     margin: 0,
   };
   const navContainer: React.CSSProperties = {

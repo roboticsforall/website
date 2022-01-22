@@ -11,7 +11,6 @@ export const BylawEntry: React.FC<{
     borderRadius: "20px",
     border: "10px solid rgba(255, 204, 0, 0.5)",
     padding: "5px",
-    fontFamily: "BeVietnam-Bold",
     textAlign: "center",
     wordWrap: "break-word",
   };

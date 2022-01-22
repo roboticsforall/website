@@ -7,12 +7,10 @@ export const Header: React.FC<{
   description: string;
 }> = (props) => {
   const pageHeaderDescription = {
-    fontFamily: "BeVietnam-SemiBold",
     fontWeight: 600,
     color: "black",
   };
   const pageHeader = {
-    fontFamily: "Mazzard-H-Extrabold",
     color: props.headerTextColor,
   };
   const headerBlob = {

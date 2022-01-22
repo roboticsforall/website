@@ -11,7 +11,6 @@ export const TextArea: React.FC<{
   const inputStyle = {
     borderRadius: 15,
     borderWidth: 1,
-    fontFamily: "BeVietnam-ExtraBold",
     paddingLeft: "0.5em",
     margin: "auto",
   };

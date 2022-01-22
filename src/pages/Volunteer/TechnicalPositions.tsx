@@ -16,7 +16,6 @@ export const TechnicalPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainGreen,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
   };
@@ -24,7 +23,6 @@ export const TechnicalPositions: React.FC = () => {
     color: "#000000",
   };
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
     color: ColorThemes.mainGreen,
     textAlign: "center",

@@ -17,19 +17,15 @@ import { ColorThemes } from "@/colors";
 
 export const Schools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainGreen,
     textAlign: "center",
   };
   const boldNote = {
-    fontFamily: "BeVietnam-ExtraBold",
   };
   const bodyText = {
-    fontFamily: "BeVietnam-Medium",
     lineHeight: 1.5,
   };
   const enrollButtonTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
   };
   const greenRow = {
@@ -49,21 +45,27 @@ export const Schools: React.FC = () => {
       <br />
       <br />
       <Container>
-        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-        <br />
-        <h3 style={boldNote}>
-          Partner with us at any time to offer our wide selection of courses to
-          your students!
-        </h3>
-        <br />
-        <h5 style={bodyText}>
-          Since July 2020, Robotics for All has provided online courses for
-          students from Kindergarten to 8th grade. All classes run for eight
-          weeks and have virtual hour-long meetings with teachers once or twice
-          a week!
-        </h5>
-        <br />
-        <h5 style={bodyText}>View our detailed syllabi below:</h5>
+        <section>
+          <header>
+            <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+          </header>
+
+          <br/>
+
+          <p style={boldNote}>
+            <strong>Partner with us at any time to offer our wide selection of courses to
+          your students!</strong>
+          </p>
+          <p>
+            Since July 2020, Robotics for All has provided online courses for
+            students from Kindergarten to 8th grade. All classes run for eight
+            weeks and have virtual hour-long meetings with teachers once or twice
+            a week!
+          </p>
+          
+          <p>View our detailed syllabi below: </p>
+        </section>
+
         <br></br>
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
@@ -84,7 +86,7 @@ export const Schools: React.FC = () => {
           className="hyperlink"
         >
           <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
+            <h4 style={enrollButtonTitle}>Enroll in a Course Today!</h4>
           </Row>
         </a>
       </Container>
@@ -95,14 +97,14 @@ export const Schools: React.FC = () => {
           <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
-          <h5 style={bodyText}>
+          <p style={bodyText}>
             We offer basic and advanced computer programming and computer-aided
             design courses for students in K-8th grade!
             <br></br>
             <br></br>
             View our selection of courses below and click on the boxes to learn
             more
-          </h5>
+          </p>
           <br></br>
           <Row>
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (

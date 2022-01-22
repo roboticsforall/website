@@ -8,4 +8,6 @@ $container-max-widths: (
 
 $border-radius: 0.5em;
 
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
 @import "../node_modules/bootstrap/scss/bootstrap";

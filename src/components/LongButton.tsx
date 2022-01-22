@@ -7,7 +7,6 @@ export const LongButton: React.FC<{
   title: string;
 }> = (props) => {
   const title: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
   };
 

@@ -11,10 +11,9 @@ export const VolOverviewCard: React.FC<{
   applyLink: string;
 }> = (props) => {
   const positionsTitle = {
-    fontFamily: "Oswald-Medium",
   };
   const description = {
-    fontFamily: "BeVietnam-Medium",
+
   };
   const card = {
     backgroundColor: props.backgroundcolor,
@@ -22,7 +21,6 @@ export const VolOverviewCard: React.FC<{
   const button = {
     backgroundColor: props.backgroundcolor,
     color: props.buttonColor,
-    fontFamily: "Oswald-Medium",
   };
   return (
     <Container>

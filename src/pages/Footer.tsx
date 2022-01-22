@@ -13,13 +13,10 @@ export const Footer: React.FC = () => {
     color: "#532F0A",
   };
   const linkStyle: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
   };
   const headerStyle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
   };
   const copyrightDisclaimer: React.CSSProperties = {
-    fontFamily: "BeVietnam-Light",
     textAlign: "center",
   };
   const iconSize: React.CSSProperties = {
@@ -34,7 +31,7 @@ export const Footer: React.FC = () => {
         <br />
         <Row className="justify-content-center">
           <Col lg={3}>
-            <h1 style={headerStyle}>NAVIGATION</h1>
+            <h2 style={headerStyle}>NAVIGATION</h2>
             <Link style={linkStyle} className="hyperlink C06202" to="/">
               <p>Home</p>
             </Link>
@@ -68,7 +65,7 @@ export const Footer: React.FC = () => {
           </Col>
           <br />
           <Col lg={3}>
-            <h1 style={headerStyle}>FIND US</h1>
+            <h2 style={headerStyle}>FIND US</h2>
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
               <a
@@ -131,7 +128,7 @@ export const Footer: React.FC = () => {
           </Col>
           <br />
           <Col lg={3}>
-            <h1 style={headerStyle}>MORE</h1>
+            <h2 style={headerStyle}>MORE</h2>
             <Link
               style={linkStyle}
               className="hyperlink C06202"
@@ -177,6 +174,7 @@ export const Footer: React.FC = () => {
         <br />
         <Container>
           <p style={copyrightDisclaimer}>
+          <small>
             <strong>
               Robotics For All 2018-2021© Photos of minors were used with
               permission from their parent/guardian.{" "}
@@ -186,6 +184,7 @@ export const Footer: React.FC = () => {
             sexual orientation, religion, nationality, legal status, disability,
             political stances, or any other factor that can be discriminated
             against.
+            </small>
           </p>
         </Container>
       </Container>

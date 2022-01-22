@@ -15,14 +15,12 @@ export const VolunteerApp: React.FC = () => {
     color: ColorThemes.black,
     background: ColorThemes.mainYellow,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "30px",
   };
   const InActiveStyle: React.CSSProperties = {
     color: ColorThemes.black,
     background: ColorThemes.mainOrange,
     border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
     padding: "30px",
   };
 
