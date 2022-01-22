@@ -13,8 +13,8 @@ import Carousel from "react-bootstrap/Carousel";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
-import image from "../../media/download.svg"; 
-import image2 from "../../media/download (1).svg"; 
+import image from "../../media/download.svg";
+import image2 from "../../media/download (1).svg";
 
 import { ColorThemes } from "@/colors";
 
@@ -45,55 +45,89 @@ export const MeetTheTeam: React.FC = () => {
         title={"Get to Know our Team!"}
         description={"Get to know the faces behind Robotics for All!"}
       />
+
       <br />
+
       <h1 style={{ color: ColorThemes.mainOrange, ...header }}>
         BOARD OF DIRECTORS
       </h1>
+
       <div style={yellowRow}>
-        <MeetTheTeamCard
-          infoJSON={bmInfoJSON.board_members_list}
-          backgroundColor={ColorThemes.mainYellow}
-          color={ColorThemes.darkYellow}
-        ></MeetTheTeamCard>
+        <Carousel>
+          {bmInfoJSON.board_members_list.map((info: any, i: number) => (
+            <Carousel.Item>
+              <MeetTheTeamCard
+                info={info}
+                backgroundColor={ColorThemes.mainYellow}
+                color={ColorThemes.darkYellow}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
+
       <br />
       <br />
+
       <h1 style={{ color: ColorThemes.mainGreen, ...header }}>
         EXECUTIVE ASSISTANT DIRECTOR
       </h1>
+
       <div style={greenRow}>
-        <MeetTheTeamCard
-          infoJSON={adInfoJSON.assistant_directors_list}
-          backgroundColor={ColorThemes.mainGreen}
-          color={ColorThemes.darkGreen}
-        ></MeetTheTeamCard>
+        <Carousel>
+          {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
+            <Carousel.Item>
+              <MeetTheTeamCard
+                info={info}
+                backgroundColor={ColorThemes.mainGreen}
+                color={ColorThemes.darkGreen}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
+
       <br />
       <br />
+
       <h1 style={{ color: ColorThemes.mainBlue, ...header }}>
         CURRICULUM COMMITTEE
       </h1>
+
       <div style={blueRow}>
-        <MeetTheTeamCard
-          infoJSON={ccInfoJSON.curriculum_committee_list}
-          backgroundColor={ColorThemes.mainBlue}
-          color={ColorThemes.darkBlue}
-        ></MeetTheTeamCard>
-      </div>
+        <Carousel>
+          {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
+            <Carousel.Item>
+              <MeetTheTeamCard
+                info={info}
+                backgroundColor={ColorThemes.mainBlue}
+                color={ColorThemes.darkBlue}
+              />
+            </Carousel.Item>
+          ))}
+          </Carousel>
+          </div>
 
-      <br />
-      <br />
+          <br />
+          <br />
 
-      <h1 style={{ color: ColorThemes.mainYellow, ...header }}>
-        PUBLICITY COMMITTEE
-      </h1>
-      <div style={orangeRow}>
-        <MeetTheTeamCard
-          infoJSON={pcInfoJSON.pub_committee}
-          backgroundColor={ColorThemes.mainOrange}
-          color={ColorThemes.darkOrange}
-        ></MeetTheTeamCard>
-      </div>
-    </>
-  );
+          <h1 style={{ color: ColorThemes.mainYellow, ...header }}>
+            PUBLICITY COMMITTEE
+          </h1>
+          <div style={orangeRow}>
+
+            <Carousel>
+              {pcInfoJSON.pub_committee.map((info: any, i: number) => (
+                <Carousel.Item>
+                  <MeetTheTeamCard
+                    info={info}
+                    backgroundColor={ColorThemes.mainOrange}
+                    color={ColorThemes.darkOrange}
+                  />
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          </div>
+        </>
+        );
 };
