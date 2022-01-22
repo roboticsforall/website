@@ -117,22 +117,7 @@ export const InternOverview: React.FC = () => {
             <h2 style={positionsTitle}>
               FAQs
             </h2>
-            <Container>
-              {internfaqsJSON.intern_faqs_list.map((QAPair) => (
-                <FAQDropdowns
-                  key={QAPair.question}
-                  question={QAPair.question}
-                  answer={QAPair.answer}
-                  colors={{
-                    main: ColorThemes.mainOrange,
-                    light: ColorThemes.lightOrange,
-                    dark: ColorThemes.darkOrange,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
+                <FAQDropdowns data = {internfaqsJSON.intern_faqs_list}/>
             <br></br>
             <br></br>
           </Tab.Content>

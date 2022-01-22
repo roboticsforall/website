@@ -76,22 +76,9 @@ export const TechnicalPositions: React.FC = () => {
             />
             <br />
             <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {technicalInternJSON.positions.map((pair, i) => (
                 <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainGreen,
-                    light: ColorThemes.lightGreen,
-                    dark: ColorThemes.darkGreen,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
+                  data = {technicalInternJSON.positions}
                 />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>

@@ -121,32 +121,10 @@ export const IndLearners: React.FC = () => {
         </Container>
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
-      <Container>
-        {classFAQJSON.class_faq_list.map((QAPair) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={QAPair.answer}
-            colors={{
-              main: ColorThemes.mainBlue,
-              light: ColorThemes.lightBlue,
-              dark: ColorThemes.darkBlue,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
-          />
-        ))}
         <FAQDropdowns
-          question={classFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
-          colors={{
-            main: ColorThemes.mainBlue,
-            light: ColorThemes.lightBlue,
-            dark: ColorThemes.darkBlue,
-            backgroundHover: ColorThemes.mainYellow,
-          }}
+          data = {classFAQJSON.class_faq_list}
         />
-        <br />
-      </Container>
+      <br/>
     </>
   );
 };

@@ -6,4 +6,6 @@ $container-max-widths: (
   xxl: 1000px,
 );
 
+$border-radius: 0.5em;
+
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -75,24 +75,6 @@ export const PublicityPositions: React.FC = () => {
               title={"Apply Now!"}
               link="/volunteer/volunteerapp"
             />
-            <br />
-            <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {publicityInternJSON.positions.map((pair, i) => (
-                <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainOrange,
-                    light: ColorThemes.lightOrange,
-                    dark: ColorThemes.darkOrange,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>
