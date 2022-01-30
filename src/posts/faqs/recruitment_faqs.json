@@ -1,0 +1,20 @@
+{
+  "teacher_faqs": [
+    {
+      "question": "Add Text",
+      "answer": "Add Text"
+    }
+  ],
+  "ta_faqs": [
+    {
+      "question": "Add Text",
+      "answer": "Add Text"
+    }
+  ],
+  "intern_faqs": [
+    {
+      "question": "Add Text",
+      "answer": "Add Text"
+    }
+  ]
+}
