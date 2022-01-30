@@ -1,10 +1,10 @@
 {
   "courses_list": [
     {
-      "course_name": "Some Course",
-      "link": "https://www.netlifycms.org/docs/collection-types/",
-      "file_path": "/public/uploads/coursesimg/cad.png",
-      "course_description": "Some Description"
+      "course_name": "Scratch (4-6)",
+      "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.6kfg76nfp4vl",
+      "file_path": "/public/uploads/coursesimg/scratchcat3.0.svg",
+      "course_description": "This class introduces students to the basics of block-based programming through creating games in Scratch. It serves as a bridge to learning about text-based programming languages such as Python."
     }
   ]
 }
