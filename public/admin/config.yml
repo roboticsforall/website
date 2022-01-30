@@ -53,7 +53,7 @@ collections:
               - {label: Google Drive Link to Syllabi Google Document, name: link, widget: string}
               - {label: Flag of Country Language Belongs To, name: file_path, widget: image, media_folder: /public/uploads/flagimg}
       - label: Google Drive Link to Enrollment Signup Document
-        name: enrollment_form_document_linkenrollment_form_document_link
+        name: enrollment_form_document_link
         file: src/posts/.json
         fields:
           - {label: link, name: link link, widget: string}
