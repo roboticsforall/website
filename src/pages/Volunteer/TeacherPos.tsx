@@ -274,7 +274,15 @@ export const TeacherPos: React.FC = () => {
       <Container>
         {teachingfaqsJSON.ta_faqs.map((QAPair) => (
           <FAQDropdowns
-            data = {teachingfaqsJSON.teaching_faq_list}
+            key={QAPair.question}
+            question={QAPair.question}
+            answer={QAPair.answer}
+            colors={{
+              main: ColorThemes.mainOrange,
+              light: ColorThemes.lightOrange,
+              dark: ColorThemes.darkOrange,
+              backgroundHover: ColorThemes.mainYellow,
+            }}
           />
         ))}
         <br />
