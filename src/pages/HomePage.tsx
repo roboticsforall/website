@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Container, Col, Image, Ratio, Placeholder } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import homePageVideo from "@/media/homePageVideo.mp4";
+// import homePageVideo from "@/media/homePageVideo.mp4";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
@@ -60,7 +60,7 @@ export const HomePage: React.FC = () => {
         autoPlay
         loop
         muted
-        src={homePageVideo}
+        // src={homePageVideo}
       />
   </div>
 
