@@ -1,11 +1,8 @@
 import React from "react";
 import { Container, Row, Image, Col } from "react-bootstrap";
-<<<<<<< HEAD
-=======
 import homePageVideo from "@/media/homePageVideo.mp4";
 
 import "../../index.css";
->>>>>>> da79234cfbe2bded300d6246a102ba699a09f83c
 
 export const AboutAffOrgsCard: React.FC<{
 	mainColor: string;
