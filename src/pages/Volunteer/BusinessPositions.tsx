@@ -9,18 +9,15 @@ import Markdown from "markdown-to-jsx";
 
 
 import { ColorThemes } from "@/colors";
-import { FAQDropdowns } from "@/components/FAQDropdowns";
-import generalInternJSON from "@/posts/general_intern.json";
-import googleForms from "@/posts/google_form.json";
+import generalInternJSON from "@/posts/general_intern_position_description.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const BusinessPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
     background: ColorThemes.mainBlue,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
@@ -33,7 +30,6 @@ export const BusinessPositions: React.FC = () => {
     color: ColorThemes.mainBlue,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "3em",
     wordBreak: "break-word"
   };
 

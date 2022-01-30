@@ -16,7 +16,7 @@ import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 
 import Markdown from "markdown-to-jsx";
 
-import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
+import internfaqsJSON from "@/posts/faqs/recruitment_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
@@ -28,7 +28,6 @@ export const InternOverview: React.FC = () => {
     letterSpacing: "0.25em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
-    fontSize: "3em",
     wordBreak: "break-word"
   };
 
@@ -119,19 +118,9 @@ export const InternOverview: React.FC = () => {
               FAQs
             </h2>
             <Container>
-              {internfaqsJSON.intern_faqs_list.map((QAPair) => (
-                <FAQDropdowns
-                  key={QAPair.question}
-                  question={QAPair.question}
-                  answer={QAPair.answer}
-                  colors={{
-                    main: ColorThemes.mainOrange,
-                    light: ColorThemes.lightOrange,
-                    dark: ColorThemes.darkOrange,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
+                  <FAQDropdowns
+                data = {internfaqsJSON.intern_faqs}
+              />
               <br />
             </Container>
             <br></br>

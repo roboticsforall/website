@@ -30,9 +30,7 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
     general: (props: any) => ({
       background: props.backgroundColor,
       border: "none",
-      borderRadius: "15px 15px 0 0",
       fontFamily: "BeVietnam-ExtraBold",
-      fontSize: "x-large",
       padding: "20px",
       height: "100%",
     }),
@@ -144,16 +142,13 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       letterSpacing: "0.25em",
       textAlign: "center",
-      fontSize: "3em",
     },
     posDescription: {
       fontFamily: "BeVietnam-Medium",
-      fontSize: "1.5em",
       color: ColorThemes.black,
     },
     posContainer: (props: any) => ({
       border: "15px solid",
-      borderRadius: "0 0 15px 15px",
       margin: "0 0 40px 0",
       color: props.color,
       borderColor: props.borderColor,
@@ -163,7 +158,6 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       fontFamily: "BeVietnam-ExtraBold",
       textAlign: "center",
       color: ColorThemes.black,
-      fontSize: "1.5em",
     },
     img: {
       marginBottom: "10px",
@@ -192,6 +186,7 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor.main,
         backgroundColor: props.backgroundColor,
       })}
+      className = "rounded-bottom"
     >
       <div>
         <h1 style={styles.posHeader}>{props.posHeader}</h1>

@@ -10,7 +10,6 @@ import { Footer } from "@/pages/Footer";
 //Enroll
 import { IndLearners } from "@/pages/Enroll/IndLearners";
 import { Schools } from "@/pages/Enroll/Schools";
-import { Register } from "@/pages/Enroll/Register";
 //Volunteer
 import { VolOverview } from "@/pages/Volunteer/VolOverview";
 import { TeacherPos } from "@/pages/Volunteer/TeacherPos";
@@ -61,7 +60,6 @@ export const App: React.FC = () => {
                   component={IndLearners}
                 />
                 <Route exact path="/enroll/schools" component={Schools} />
-                <Route exact path="/enroll/register" component={Register} />
 
                 {/* Volunteer Pages */}
                 <Route

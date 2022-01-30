@@ -5,8 +5,6 @@ import { Header } from "@/components/Header";
 
 import { ColorThemes } from "@/colors";
 
-import "../../index.css";
-
 export const AbtOverview: React.FC = () => {
   const missionColor: React.CSSProperties = {
     color: ColorThemes.mainOrange,

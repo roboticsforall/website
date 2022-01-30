@@ -7,8 +7,6 @@ import newsletterJSON from "@/posts/newsletters.json";
 
 import { ColorThemes } from "@/colors";
 
-import "../../index.css";
-
 export const PastNewsletter: React.FC = () => {
 
 	return (

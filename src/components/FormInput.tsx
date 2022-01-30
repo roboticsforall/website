@@ -15,7 +15,6 @@ export const FormInput: React.FC<{
     height: props.height,
     fontFamily: "BeVietnam-ExtraBold",
     paddingLeft: "0.5em",
-    fontSize: "1.2em",
     marginBottom: "0.5em",
   };
 

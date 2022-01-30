@@ -95,73 +95,58 @@ a {
 /* font sizes */
 
 .header {
-  font-family: "Oswald-Medium";
+  font-family: 'Oswald-Medium';
   font-size: 9vh;
-  text-align: "center";
+  text-align: center;
 }
 .header3 {
-	font-family: "BeVietnam-ExtraBold";
+	font-family: 'BeVietnam-ExtraBold';
 }
 .title {
-	font-family: "Oswald-Medium";
+	font-family: 'Oswald-Medium';
 	font-size: 4em;
-	text-align: "center";
+	text-align: center;
 }
 .description {
-	font-family: "BeVietnam-Bold";
-	font-size: "1.5em";
+	font-family: 'BeVietnam-Bold';
+	font-size: 1.5em;
 	color: black;
 }
 .nameHeader { 
-  font-family: "Oswald-Medium";
-  font-size: "4em";
-  text-shadow: "0px 1px 3px rgba(0,0,0,0.58)";
-  word-break: "break-word";
-  width: "75%";
+  font-family: 'Oswald-Medium';
+  font-size: 4em;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.58);
+  word-break: break-word;
+  width: 75%;
 }
 .titleHeader {
-  font-family: "BeVietnam-Bold";
-  font-size: "3em";
-  text-shadow: "0px 1px 3px rgba(0,0,0,0.22)";
+  font-family: 'BeVietnam-Bold';
+  font-size: 3em;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.22);
 }
 .bodyText {
-  font-family: "BeVietnam-Medium";
-  color: "white";
-  font-size: "1.5em";
+  font-family: 'BeVietnam-Medium';
+  color: white;
+  font-size: 1.5em;
 }
 .subscriberText {
-	font-family: "Oswald-Medium";
-	font-size: "1.5em";
+	font-family: 'Oswald-Medium';
+	font-size: 1.5em;
 }
 
 /* affiliated cards text */
 .affOrgsHeader {
 	font-family: "Mazzard-H-ExtraBold";
-	font-size: "3em";
+	font-size: 3em;
 }
 .affOrgsCardText {
 	font-family: "BeVietnam-Medium";
-	font-size: "1em";
+	font-size: 1em;
 }
 
 
 button {
   background: none;
-}
-
-/* a:focus{
-  text-decoration: none;
-} */
-
-.C06202 {
-  color: #c06202;
-}
-
-.react-multiple-carousel__arrow--right::before {
-  content: "\003E" !important;
-}
-.react-multiple-carousel__arrow--left::before {
-  content: "\003C" !important;
 }
 
 input::placeholder,
@@ -179,7 +164,6 @@ input,
 textarea {
   background-color: #ffcc004d;
   font-family: "BeVietnam-ExtraBold" !important;
-  font-size: 20px;
   color: #000000;
 }
 
@@ -204,7 +188,6 @@ textarea:hover {
 
 label {
   font-family: "BeVietnam-Bold";
-  font-size: 18px;
 }
 
 .checkbox {
@@ -223,7 +206,6 @@ label {
 }
 
 .long-button {
-  border-radius: 0.5em;
   border: none;
   transition: 200ms;
   background-color: #ffcc00;
@@ -235,7 +217,6 @@ label {
 }
 
 .newsletter-card {
-  border-radius: 1em;
   transition: 200ms;
   background-color: #ffcc0080;
   font-family: "Oswald-Medium";
@@ -250,7 +231,6 @@ label {
   font-family: "BeVietnam-ExtraBold", sans-serif;
   letter-spacing: 0.1em;
   transition: 0.2s;
-  text-align: center;
 }
 .react-multi-carousel-item {
   margin: 10px;
@@ -267,7 +247,6 @@ label {
   align-items: center;
 }
 .nav-item-header a {
-  font-size: 2em;
   margin: 0;
   color: #ffcc00;
   font-family: "BeVietnam-ExtraBold";
@@ -293,7 +272,6 @@ label {
 .dropdown-container {
   display: none;
   position: absolute;
-  border-radius: 15px;
   background-color: #ffdb4d;
   z-index: 100;
   white-space: nowrap;
@@ -310,11 +288,9 @@ label {
 .donate-nav-item-header a {
   color: #ffffff; /* nav headers font style */
   font-family: "BeVietnam-ExtraBold";
-  font-size: 2em;
   text-transform: uppercase;
 }
 .donate-nav-background {
-  border-radius: 15px;
   background-color: #3399ff;
   padding: 0.2em 0.5em 0.2em 0.5em;
 }
@@ -330,21 +306,11 @@ label {
 
 /* for dropdowns */
 .dropdown-container li {
-  background-color: #ffdb4d;
   padding: 0.5em;
 }
 .dropdown-container a {
-  font-size: 1.5em;
   font-family: "BeVietnam-ExtraBold";
   color: #fa8d1f;
-}
-.dropdown-container a:first-child li {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.dropdown-container a:last-child li {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 .dropdown-container li:hover {
   transition: 0.2s;
@@ -375,13 +341,11 @@ label {
 
 /* #region indlearners and for schools */
 .ind-learners-enroll-button {
-  border-radius: 1em;
   border: none;
   transition: 200ms;
   background-color: #3399ff;
 }
 .school-enroll-button {
-  border-radius: 1em;
   border: none;
   transition: 200ms;
   background-color: #33cc66;
@@ -406,7 +370,6 @@ label {
 /* #region homepage styling */
 .home-aff-org-card-link {
   font-family: "BeVietnam-ExtraBold", sans-serif;
-  font-size: 2em;
   transition: 0.2s;
   text-decoration: none;
 }
@@ -461,6 +424,9 @@ label {
 }
 /*#endregion*/
 
+video {
+  background-color: black;
+}
 
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
@@ -490,7 +456,7 @@ label {
     font-size: 35px;
   }
   .video-width {
-    width: 100% !important;
+    width: 100%;
     height: auto;
   }
   img {
@@ -505,10 +471,6 @@ label {
   }
   .header-size {
     font-size: 43px;
-  }
-  .video-width {
-    width: 100% !important;
-    height: auto;
   }
   img {
     max-width: 100% !important;
@@ -527,11 +489,9 @@ label {
     transition: 0.2s;
     letter-spacing: 0.25em;
     text-decoration: none;
-    text-align: center;
   }
   .video-width {
-    width: 75% !important;
-    height: 60vh;
+    height: 30vmax;
   }
   .home-aff-org-card-link:hover {
     transition: 0.2s;
@@ -549,8 +509,7 @@ label {
     font-size: 60px;
   }
   .video-width {
-    width: 75% !important;
-    height: 60vh;
+    height: 30vmax;
   }
   .home-aff-org-card-link:hover {
     transition: 0.2s;
@@ -568,8 +527,8 @@ label {
     font-size: 90px;
   }
   .video-width {
-    width: 75% !important;
-    height: 60vh;
+    /* width: 75% !important; */
+    height: 20vmax;
   }
   .home-aff-org-card-link:hover {
     transition: 0.2s;

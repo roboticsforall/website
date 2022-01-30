@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Carousel, Image } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
 import mercurynews from "@/media/News/Mercury-News.png";
 import houseofreps from "@/media/News/House-of-Representatives.png";
-import Carousel from "react-multi-carousel/lib/Carousel";
-import "react-multi-carousel/lib/styles.css";
 
 import { ColorThemes } from "@/colors";
 
@@ -55,20 +53,21 @@ export const News: React.FC = () => {
   }, []);
 
   const [photos, setPhotos] = useState([] as { default: string }[]);
+
   useEffect(() => {
     Promise.all(photosImport).then(setPhotos);
   }, []);
+
+
   const linkStyles: React.CSSProperties = {
     textDecoration: "none",
     color: "black",
     fontFamily: "Mazzard-H-Extrabold",
-    fontSize: "30px",
     textAlign: "center",
   };
   const cardStyles: React.CSSProperties = {
     background: ColorThemes.lightGreen,
     border: "none",
-    borderRadius: "15px",
   };
   return (
     <div>
@@ -82,18 +81,17 @@ export const News: React.FC = () => {
         <Row className="mt-3">
           <Container
             style={{
-              borderRadius: "15px",
               backgroundColor: ColorThemes.lightYellow,
               padding: "20px",
               lineHeight: "24px",
             }}
+            className = "rounded"
           >
             <Row>
               <Col xs="auto">
                 <h1
                   style={{
                     fontFamily: "Mazzard-H-Extrabold",
-                    fontSize: "59px",
                     color: ColorThemes.mainOrange,
                   }}
                 >
@@ -101,7 +99,7 @@ export const News: React.FC = () => {
                 </h1>
               </Col>
               <Col>
-                <p style={{ fontSize: "20px", fontFamily: "BeVietnam-Medium" }}>
+                <p style={{ fontFamily: "BeVietnam-Medium" }}>
                   Find all of our press information here! This includes photos,
                   statistics, stories, and more details. Contact us at{" "}
                   <a
@@ -120,7 +118,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainGreen,
             }}
           >
@@ -183,7 +180,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainBlue,
             }}
           >
@@ -193,11 +189,11 @@ export const News: React.FC = () => {
           <Container
             style={{
               background: ColorThemes.lightBlue,
-              borderRadius: "15px",
               padding: "15px",
             }}
+            className = "rounded"
           >
-            <Carousel responsive={responsive}>
+            <Carousel>
               {images.map((x) => (
                 <a href={x.permalink} key={x.id}>
                   {x.media_type === "VIDEO" ? (
@@ -225,7 +221,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainYellow,
             }}
           >
@@ -234,42 +229,51 @@ export const News: React.FC = () => {
           <Container
             style={{
               background: ColorThemes.lightYellow,
-              borderRadius: "15px",
               padding: "15px",
             }}
+            className = "rounded"
           >
-            <Carousel responsive={responsive}>
-              <iframe
-                style={{ width: "100%", height: "315px" }}
-                src="https://www.youtube.com/embed/xK1wg0mwJP8"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+            <Carousel>
+              <Carousel.Item>
+                <iframe
+                  // style={{ width: "100%", height: "315px" }}
+                  src="https://www.youtube.com/embed/xK1wg0mwJP8"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </Carousel.Item>
 
+              <Carousel.Item>
               <iframe
-                style={{ width: "100%", height: "315px" }}
+                // style={{ width: "100%", height: "315px" }}
                 src="https://www.youtube.com/embed/IqgSK39czO0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+              </Carousel.Item>
 
-              <iframe
-                style={{ width: "100%", height: "315px" }}
-                src="https://www.youtube.com/embed/aYSU-1hKHiY"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <Carousel.Item>
 
-              <iframe
-                style={{ width: "100%", height: "315px" }}
-                src="https://www.youtube.com/embed/jHhpK_vlJcQ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+                <iframe
+                  // style={{ width: "100%", height: "315px" }}
+                  src="https://www.youtube.com/embed/aYSU-1hKHiY"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <iframe
+                  // style={{ width: "100%", height: "315px" }}
+                  src="https://www.youtube.com/embed/jHhpK_vlJcQ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  ></iframe>
+              </Carousel.Item>
             </Carousel>
           </Container>
         </Row>
@@ -277,7 +281,6 @@ export const News: React.FC = () => {
           <h1
             style={{
               fontFamily: "Mazzard-H-Extrabold",
-              fontSize: "59px",
               color: ColorThemes.mainOrange,
             }}
           >
@@ -286,18 +289,15 @@ export const News: React.FC = () => {
           <Container
             style={{
               background: ColorThemes.lightOrange,
-              borderRadius: "15px",
               padding: "15px",
             }}
+            className = "rounded"
           >
-            <Carousel responsive={responsive}>
+            <Carousel>
               {photos.map((x, i) => (
-                <div
-                  style={{ height: "286px", overflow: "hidden" }}
-                  key={"img" + i}
-                >
-                  <img src={x.default} style={{ width: "100%" }} alt="" />
-                </div>
+                <Carousel.Item>
+                  <Image fluid src={x.default} alt="" />
+                </Carousel.Item>
               ))}
             </Carousel>
           </Container>

@@ -9,17 +9,15 @@ import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import technicalInternJSON from "@/posts/technical_intern.json";
-import googleForms from "@/posts/google_form.json";
+import technicalInternJSON from "@/posts/technical_intern_position_description.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const TechnicalPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const ActiveStyle = {
     background: ColorThemes.mainGreen,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
@@ -32,7 +30,6 @@ export const TechnicalPositions: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "3em",
     wordBreak: "break-word"
   };
 
@@ -80,22 +77,9 @@ export const TechnicalPositions: React.FC = () => {
             />
             <br />
             <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {technicalInternJSON.positions.map((pair, i) => (
                 <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainGreen,
-                    light: ColorThemes.lightGreen,
-                    dark: ColorThemes.darkGreen,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
+                  data = {technicalInternJSON.positions}
                 />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>

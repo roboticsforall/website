@@ -11,10 +11,6 @@ export const enrollvolunteerabout = [
           subPageName: "For Schools",
           to: "/enroll/schools",
         },
-        {
-          subPageName: "Enroll Today",
-          to: "/enroll/register",
-        },
       ]
     },
     {

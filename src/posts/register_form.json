@@ -1,6 +1,0 @@
-{
-  "register_form_code": {
-    "lang": "html",
-    "code": "<iframe\nsrc=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\nwidth=\"640\"\nheight=\"975\"\nframeBorder=\"0\"\nmarginHeight={0}\nmarginWidth={0}\n>\nLoading…\n</iframe>"
-  }
-}

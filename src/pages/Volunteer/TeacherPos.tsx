@@ -21,9 +21,9 @@ import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import Markdown from "markdown-to-jsx";
 import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
-import teachingfaqsJSON from "@/posts/faqs/teaching_faqs.json";
+import teachingfaqsJSON from "@/posts/faqs/recruitment_faqs.json";
 
-import googleForms from "@/posts/google_form.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 
 import { ColorThemes } from "@/colors";
@@ -33,18 +33,14 @@ export const TeacherPos: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainYellow,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
   const inActiveStyle = {
     background: ColorThemes.mainOrange,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
@@ -174,6 +170,15 @@ export const TeacherPos: React.FC = () => {
           title={"Apply Now!"}
           link= {googleForms.teacher_app_link}
         />
+              <h2 style={positionsTitle}>
+        FAQs
+      </h2>
+      <Container>
+      <FAQDropdowns
+          data = {teachingfaqsJSON.teacher_faqs}
+        />
+        <br />
+      </Container>
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <TabsCardNoImage
@@ -253,31 +258,21 @@ export const TeacherPos: React.FC = () => {
           title={"Apply Now!"}
           link= {googleForms.ta_app_link}
         />
+              <h2 style={positionsTitle}>
+        FAQs
+      </h2>
+      <Container>
+      <FAQDropdowns
+          data = {teachingfaqsJSON.ta_faqs}
+        />
+        <br />
+      </Container>
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
       </Container>
       <br />
 
-      <h2 style={positionsTitle}>
-        FAQs
-      </h2>
-      <Container>
-        {teachingfaqsJSON.teaching_faq_list.map((QAPair) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={QAPair.answer}
-            colors={{
-              main: ColorThemes.mainOrange,
-              light: ColorThemes.lightOrange,
-              dark: ColorThemes.darkOrange,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
-          />
-        ))}
-        <br />
-      </Container>
     </div>
   );
 };

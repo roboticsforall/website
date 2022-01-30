@@ -13,7 +13,7 @@ export const LongButton: React.FC<{
 
   return (
     <Link className="hyperlink" to={props.location}>
-      <Row className="long-button p-2 justify-content-center align-items-center">
+      <Row className="long-button rounded p-2 justify-content-center align-items-center">
         <h3 style={title}>{props.title}</h3>
       </Row>
     </Link>

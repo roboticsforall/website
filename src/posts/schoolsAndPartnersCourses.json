@@ -1,0 +1,10 @@
+{
+  "courses_list": [
+    {
+      "course_name": "Some School Course",
+      "link": "https://www.netlifycms.org/docs/collection-types/",
+      "file_path": "/public/uploads/coursesimg/lego.png",
+      "course_description": "Some Course Description"
+    }
+  ]
+}

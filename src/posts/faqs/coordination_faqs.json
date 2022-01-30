@@ -1,0 +1,14 @@
+{
+  "ind_learners_faqs": [
+    {
+      "question": "Some question",
+      "answer": "Some Answer"
+    }
+  ],
+  "schools_and_partners_faqs": [
+    {
+      "question": "Some question",
+      "answer": "Some Answer"
+    }
+  ]
+}

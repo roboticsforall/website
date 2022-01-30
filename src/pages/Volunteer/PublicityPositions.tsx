@@ -10,9 +10,10 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
-import publicityInternJSON from "@/posts/publicity_intern.json";
+import publicityInternJSON from "@/posts/publicity_intern_position_description.json";
 
-import googleForms from "@/posts/google_form.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
+
 
 
 export const PublicityPositions: React.FC = () => {
@@ -20,9 +21,7 @@ export const PublicityPositions: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainOrange,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
-    fontSize: "x-large",
     padding: "20px",
     height: "100%",
   };
@@ -35,7 +34,6 @@ export const PublicityPositions: React.FC = () => {
     color: ColorThemes.mainOrange,
     textAlign: "center",
     textTransform: "uppercase",
-    fontSize: "3em",
     wordBreak: "break-word"
   };
 
