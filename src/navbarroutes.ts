@@ -11,10 +11,6 @@ export const enrollvolunteerabout = [
           subPageName: "For Schools",
           to: "/enroll/schools",
         },
-        {
-          subPageName: "Register",
-          to: "/enroll/register",
-        },
       ]
     },
     {
@@ -26,7 +22,7 @@ export const enrollvolunteerabout = [
           to: "/volunteer/overview",
         },
         {
-          subPageName: "Teaching Overview and Positions",
+          subPageName: "Teaching Positions",
           to: "/volunteer/teacherpos",
         },
         {
@@ -34,24 +30,20 @@ export const enrollvolunteerabout = [
           to: "/volunteer/internoverview",
         },
         {
-          subPageName: "Publicity Positions",
+          subPageName: "Publicity Internship Details",
           to: "/volunteer/publicitypositions",
         },
         {
-          subPageName: "Technical Positions",
+          subPageName: "Technical Internship Details",
           to: "/volunteer/technicalpositions",
         },
         {
-          subPageName: "Business Positions",
+          subPageName: "Business Internship Details",
           to: "/volunteer/businesspositions",
         },
         {
           subPageName: "Curriculum Development Positions",
           to: "/volunteer/curricdevpositions",
-        },
-        {
-          subPageName: "Volunteer Application",
-          to: "/volunteer/volunteerapp",
         },
       ]
     },
@@ -109,7 +101,7 @@ export const contactaboutdonate = [
       },
       {
         subPageName: "Merch",
-        to: "https://www.bonfire.com/store/rfa/ ",
+        to: "https://www.bonfire.com/org/robotics-for-all-832012119/",
       },
     ]
   }

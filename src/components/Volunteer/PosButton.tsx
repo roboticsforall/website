@@ -31,10 +31,10 @@ export const PosButton: React.FC<{
   });
 
   return (
-    <Link className="hyperlink" to={props.link}>
+    <a className="hyperlink" rel="noopener noreferrer" target="_blank" href = {props.link}>
       <Row className={classes.button}>
         <h2 className="text-center">{props.title}</h2>
       </Row>
-    </Link>
+    </a>
   );
 };

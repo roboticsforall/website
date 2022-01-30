@@ -3,11 +3,15 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/blue.png";
 import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
+import { PosButton } from "@/components/Volunteer/PosButton";
+
 import Markdown from "markdown-to-jsx";
+
 
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import generalInternJSON from "@/posts/general_intern.json";
+import generalInternJSON from "@/posts/general_intern_position_description.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const BusinessPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -67,23 +71,12 @@ export const BusinessPositions: React.FC = () => {
                 </div>
               }
             />
-            <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {generalInternJSON.positions.map((pair, i) => (
-                <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainBlue,
-                    light: ColorThemes.lightBlue,
-                    dark: ColorThemes.darkBlue,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
+            <PosButton
+              backgroundColor={ColorThemes.mainBlue}
+              backgroundHover={ColorThemes.mainYellow}
+              title={"Apply Now!"}
+              link= {googleForms.general_intern_app_link}
+            />
             <br></br>
             <br></br>
           </Tab.Content>

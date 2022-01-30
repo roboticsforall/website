@@ -8,11 +8,11 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import classFAQJSON from "@/posts/faqs/class_faqs.json";
-import coursesInfoJSON from "@/posts/courses.json";
-import syllabiJSON from "@/posts/syllabi.json";
-import indLearnersAndSchool from "@/posts/ind_learners_and_schools.json";
-import enroll_links from "@/posts/enroll_links.json";
+import indlearnersFAQJSON from "@/posts/faqs/coordination_faqs.json";
+import coursesInfoJSON from "@/posts/individualLearnersCourses.json";
+import syllabiJSON from "@/posts/course_syllabi.json";
+import indLearnersCourseOverview from "@/posts/editable_texts.json";
+import enroll_links from "@/posts/enrollment_form_document_link.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
@@ -51,10 +51,10 @@ export const IndLearners: React.FC = () => {
       <Container>
         <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
         <br />
-        <h3 style={boldNote}>{indLearnersAndSchool.indlearners_bold_text}</h3>
+        <h3 style={boldNote}>{indLearnersCourseOverview.indlearners_bold_text}</h3>
         <br />
         <h5 style={bodyText}>
-          <Markdown>{indLearnersAndSchool.indlearners_body_text}</Markdown>
+          <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
         </h5>
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
@@ -102,14 +102,14 @@ export const IndLearners: React.FC = () => {
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
-                link={courseInfo.class_description_link}
+                link={courseInfo.link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightBlue}
                 dropdownCourseDescription={
-                  courseInfo.dropdown_course_description
+                  courseInfo.course_description=""
                 }
-                dropdownCourseImage={courseInfo.dropdown_file_path.replace(
+                dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
                 )}
@@ -122,11 +122,11 @@ export const IndLearners: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {classFAQJSON.class_faq_list.map((QAPair) => (
+        {indlearnersFAQJSON.ind_learners_faqs.map((QAPair) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
-            answer={QAPair.answer}
+            answer={<Markdown>{QAPair.answer}</Markdown>}
             colors={{
               main: ColorThemes.mainBlue,
               light: ColorThemes.lightBlue,
@@ -135,16 +135,6 @@ export const IndLearners: React.FC = () => {
             }}
           />
         ))}
-        <FAQDropdowns
-          question={classFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
-          colors={{
-            main: ColorThemes.mainBlue,
-            light: ColorThemes.lightBlue,
-            dark: ColorThemes.darkBlue,
-            backgroundHover: ColorThemes.mainYellow,
-          }}
-        />
         <br />
       </Container>
     </>

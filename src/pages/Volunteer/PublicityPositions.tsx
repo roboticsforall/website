@@ -10,7 +10,11 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
-import publicityInternJSON from "@/posts/publicity_intern.json";
+import publicityInternJSON from "@/posts/publicity_intern_position_description.json";
+
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
+
+
 
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -74,26 +78,8 @@ export const PublicityPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainOrange}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link="/volunteer/volunteerapp"
+              link = {googleForms.publicity_intern_app_link}
             />
-            <br />
-            <h2 style={positionsTitle}>Positions</h2>
-            <Container>
-              {publicityInternJSON.positions.map((pair, i) => (
-                <FAQDropdowns
-                  key={i}
-                  question={pair.name}
-                  answer={pair.description}
-                  colors={{
-                    main: ColorThemes.mainOrange,
-                    light: ColorThemes.lightOrange,
-                    dark: ColorThemes.darkOrange,
-                    backgroundHover: ColorThemes.mainYellow,
-                  }}
-                />
-              ))}
-              <br />
-            </Container>
             <br></br>
             <br></br>
           </Tab.Content>

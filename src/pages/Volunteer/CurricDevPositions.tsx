@@ -10,7 +10,9 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
-import curricdevpositionsJSON from "@/posts/curriculum_developer.json";
+import curricdevpositionsJSON from "@/posts/curriculum_developer_position_description.json";
+
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const CurricDevPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -74,7 +76,7 @@ export const CurricDevPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainYellow}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link="/volunteer/volunteerapp"
+              link= {googleForms.curriculum_developer_app_link}
             />
             <br />
             <h2 style={positionsTitle}>Positions</h2>

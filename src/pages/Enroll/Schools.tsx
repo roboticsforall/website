@@ -7,12 +7,15 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import classFAQJSON from "@/posts/faqs/class_faqs.json";
-import coursesInfoJSON from "@/posts/courses.json";
-import syllabiJSON from "@/posts/syllabi.json";
-import enroll_links from "@/posts/enroll_links.json";
+import forschoolsFAQJSON from "@/posts/faqs/coordination_faqs.json";
+import coursesInfoJSON from "@/posts/schoolsAndPartnersCourses.json";
+import syllabiJSON from "@/posts/course_syllabi.json";
+import enroll_links from "@/posts/enrollment_form_document_link.json";
+
+import schoolsCourseOverview from "@/posts/editable_texts.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
+
 import { ColorThemes } from "@/colors";
 
 export const Schools: React.FC = () => {
@@ -51,16 +54,10 @@ export const Schools: React.FC = () => {
       <Container>
         <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
         <br />
-        <h3 style={boldNote}>
-          Partner with us at any time to offer our wide selection of courses to
-          your students!
-        </h3>
+        <h3 style={boldNote}>{schoolsCourseOverview.schools_bold_text}</h3>
         <br />
         <h5 style={bodyText}>
-          Since July 2020, Robotics for All has provided online courses for
-          students from Kindergarten to 8th grade. All classes run for eight
-          weeks and have virtual hour-long meetings with teachers once or twice
-          a week!
+          <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
         <h5 style={bodyText}>View our detailed syllabi below:</h5>
@@ -108,14 +105,14 @@ export const Schools: React.FC = () => {
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
-                link={courseInfo.class_description_link}
+                link={courseInfo.link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightGreen}
                 dropdownCourseDescription={
-                  courseInfo.dropdown_course_description
+                  courseInfo.course_description
                 }
-                dropdownCourseImage={courseInfo.dropdown_file_path.replace(
+                dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
                 )}
@@ -128,11 +125,11 @@ export const Schools: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {classFAQJSON.class_faq_list.map((QAPair: any) => (
+        {forschoolsFAQJSON.schools_and_partners_faqs.map((QAPair: any) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
-            answer={QAPair.answer}
+            answer={<Markdown>{QAPair.answer}</Markdown>}
             colors={{
               main: ColorThemes.mainGreen,
               light: ColorThemes.lightGreen,
@@ -141,16 +138,6 @@ export const Schools: React.FC = () => {
             }}
           />
         ))}
-        <FAQDropdowns
-          question={classFAQJSON.upcoming_courses_question}
-          answer={<Markdown>{classFAQJSON.upcoming_courses_answer}</Markdown>}
-          colors={{
-            main: ColorThemes.mainGreen,
-            light: ColorThemes.lightGreen,
-            dark: ColorThemes.darkGreen,
-            backgroundHover: ColorThemes.mainYellow,
-          }}
-        />
         <br />
       </Container>
     </>

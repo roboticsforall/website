@@ -10,7 +10,6 @@ import { Footer } from "@/pages/Footer";
 //Enroll
 import { IndLearners } from "@/pages/Enroll/IndLearners";
 import { Schools } from "@/pages/Enroll/Schools";
-import { Register } from "@/pages/Enroll/Register";
 //Volunteer
 import { VolOverview } from "@/pages/Volunteer/VolOverview";
 import { TeacherPos } from "@/pages/Volunteer/TeacherPos";
@@ -19,7 +18,6 @@ import { PublicityPositions } from "@/pages/Volunteer/PublicityPositions";
 import { TechnicalPositions } from "@/pages/Volunteer/TechnicalPositions";
 import { BusinessPositions } from "@/pages/Volunteer/BusinessPositions";
 import { CurricDevPositions } from "@/pages/Volunteer/CurricDevPositions";
-import { VolunteerApp } from "@/pages/Volunteer/VolunteerApp";
 //About
 import { AffOrgs } from "@/pages/About/AffOrgs";
 import { AbtOverview } from "@/pages/About/AbtOverview";
@@ -62,7 +60,6 @@ export const App: React.FC = () => {
                   component={IndLearners}
                 />
                 <Route exact path="/enroll/schools" component={Schools} />
-                <Route exact path="/enroll/register" component={Register} />
 
                 {/* Volunteer Pages */}
                 <Route
@@ -100,11 +97,6 @@ export const App: React.FC = () => {
                   exact
                   path="/volunteer/curricdevpositions"
                   component={CurricDevPositions}
-                />
-                <Route
-                  exact
-                  path="/volunteer/volunteerapp"
-                  component={VolunteerApp}
                 />
 
                 {/* About Pages */}

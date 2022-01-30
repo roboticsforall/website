@@ -18,6 +18,8 @@ import image2 from "../../media/download (1).svg";
 
 import { ColorThemes } from "@/colors";
 
+import "../../index.css";
+
 export const MeetTheTeam: React.FC = () => {
 
   const yellowRow = {

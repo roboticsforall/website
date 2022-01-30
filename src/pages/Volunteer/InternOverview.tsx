@@ -16,7 +16,7 @@ import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 
 import Markdown from "markdown-to-jsx";
 
-import internfaqsJSON from "@/posts/faqs/intern_faqs.json";
+import internfaqsJSON from "@/posts/faqs/recruitment_faqs.json";
 
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
@@ -97,7 +97,7 @@ export const InternOverview: React.FC = () => {
               }
             />
             <TabsCardLeftImage
-              posHeader={"REQUIemENTS"}
+              posHeader={"REQUIREMENTS"}
               posImage={Laptop}
               generalColor={ColorThemes.mainYellow}
               posDescription={
@@ -118,7 +118,7 @@ export const InternOverview: React.FC = () => {
               FAQs
             </h2>
             <Container>
-              {internfaqsJSON.intern_faqs_list.map((QAPair) => (
+              {internfaqsJSON.intern_faqs.map((QAPair) => (
                 <FAQDropdowns
                   key={QAPair.question}
                   question={QAPair.question}

@@ -209,14 +209,6 @@ const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
                 <h1 style={styles.buttonHeader}>Learn More</h1>
               </Link>
             </Col>
-            <Col
-              className={classes.buttonContainer}
-              style={{ borderWidth: "15px 0px 0px 7.5px" }}
-            >
-              <Link to="/volunteer/volunteerapp" className="hyperlink">
-                <h1 style={styles.buttonHeader}>Apply Now!</h1>
-              </Link>
-            </Col>
           </Row>
         ) : (
           <></>

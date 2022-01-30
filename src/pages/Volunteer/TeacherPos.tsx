@@ -21,7 +21,10 @@ import ThumbsUp from "@/media/Graphics/thumbsUp.png";
 import Markdown from "markdown-to-jsx";
 import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
-import teachingfaqsJSON from "@/posts/faqs/teaching_faqs.json";
+import teachingfaqsJSON from "@/posts/faqs/recruitment_faqs.json";
+
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
+
 
 import { ColorThemes } from "@/colors";
 
@@ -163,6 +166,31 @@ export const TeacherPos: React.FC = () => {
                   </Markdown>
                 }
               />
+                      <PosButton
+          backgroundColor={ColorThemes.mainOrange}
+          backgroundHover={ColorThemes.mainYellow}
+          title={"Apply Now!"}
+          link= {googleForms.teacher_app_link}
+        />
+              <h2 style={positionsTitle}>
+        FAQs
+      </h2>
+      <Container>
+        {teachingfaqsJSON.teacher_faqs.map((QAPair) => (
+          <FAQDropdowns
+            key={QAPair.question}
+            question={QAPair.question}
+            answer={QAPair.answer}
+            colors={{
+              main: ColorThemes.mainOrange,
+              light: ColorThemes.lightOrange,
+              dark: ColorThemes.darkOrange,
+              backgroundHover: ColorThemes.mainYellow,
+            }}
+          />
+        ))}
+        <br />
+      </Container>
             </Tab.Pane>
             <Tab.Pane eventKey="two">
               <TabsCardNoImage
@@ -236,23 +264,17 @@ export const TeacherPos: React.FC = () => {
               />
               <br></br>
               <br></br>
-            </Tab.Pane>
-          </Tab.Content>
-        </Tab.Container>
-        <PosButton
+                      <PosButton
           backgroundColor={ColorThemes.mainOrange}
           backgroundHover={ColorThemes.mainYellow}
           title={"Apply Now!"}
-          link="/volunteer/volunteerapp"
+          link= {googleForms.ta_app_link}
         />
-      </Container>
-      <br />
-
-      <h2 style={positionsTitle}>
+              <h2 style={positionsTitle}>
         FAQs
       </h2>
       <Container>
-        {teachingfaqsJSON.teaching_faq_list.map((QAPair) => (
+        {teachingfaqsJSON.ta_faqs.map((QAPair) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}
@@ -267,6 +289,12 @@ export const TeacherPos: React.FC = () => {
         ))}
         <br />
       </Container>
+            </Tab.Pane>
+          </Tab.Content>
+        </Tab.Container>
+      </Container>
+      <br />
+
     </div>
   );
 };

@@ -92,7 +92,7 @@ export const HomePage: React.FC = () => {
               {
                 to: "/enroll/schools",
                 src: apple,
-                label: "School",
+                label: "Schools and Partners",
                 color: ColorThemes.mainGreen,
               },
               {
@@ -132,13 +132,6 @@ export const HomePage: React.FC = () => {
             linkColor: ColorThemes.darkOrange,
             bgColor: ColorThemes.lightOrange,
             link: "https://www.tutoringforall.org/about",
-          },
-          {
-            label: "mentoring for all",
-            logo: MFALogo,
-            linkColor: ColorThemes.darkGreen,
-            bgColor: ColorThemes.lightGreen,
-            link: "https://www.mentoringforall.org/mission-vision-values",
           },
           {
             label: "crafts for charity",

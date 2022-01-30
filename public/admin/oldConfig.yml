@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "/public" # Media files will be stored in the repo under images/uploads
+public_folder: "/public" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - label: "Bylaws and Minutes" # used in UI
+    name: "bylaws_minutes" # used in routes
+    files:
+      - label: "Corporation Bylaws"
+        name: "corp_bylaws"
+        file: "src/posts/downloads/corp_bylaws.json"
+        fields:
+          - label: "Corporation Bylaws"
+            name: "corp_bylaws_list"
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+              - {label: Item Name, name: item_name, widget: string}
+              - label: file
+                name: "file_path"
+                widget: file
+                media_folder: '/public/uploads/downloads/corpsbylaws'
+      - label: "Meeting Minutes and Agendas"
+        name: "meeting_records"
+        file: "src/posts/downloads/meeting_records.json"
+        fields:
+          - label: "Meeting Minutes and Agendas"
+            name: "meeting_records_list"
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+              - {label: Item Name, name: item_name, widget: string}
+              - label: Meeting Minute File
+                name: "meeting_minute_file_path"
+                widget: file
+                media_folder: '/public/uploads/downloads/meetingrecords'
+              - label: Agenda File
+                name: "agenda_file_path"
+                widget: file
+                media_folder: '/public/uploads/downloads/meetingrecords'
+  - label: "Newsletters" # used in UI
+    name: "newsletters" # used in routes
+    files:
+      - label: "Newsletters"
+        name: "newsletters"
+        file: "src/posts/newsletters.json"
+        fields:
+          - label: "Newsletters"
+            name: "newsletters_list"
+            widget: list
+            fields:
+              - {label: Date of Newsletter (Add month and year of newsletter. Ignore date), name: date, widget: date, default: "", format: "MMMM YYYY"}
+              - label: file
+                name: "file_path"
+                widget: file
+                media_folder: '/public/uploads/newsletters'
+  - label: "Updates" # used in UI
+    name: "updates" # used in routes
+    files:
+      - label: "Updates"
+        name: "updates"
+        file: "src/posts/updates.json"
+        fields:
+          - label: "General Website Updates"
+            name: "updates"
+            widget: string
