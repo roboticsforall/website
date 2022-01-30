@@ -1,0 +1,11 @@
+{
+  "teacher_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
+  "ta_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
+  "general_intern_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
+  "publicity_intern_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
+  "technical_intern_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
+  "curriculum_developer_app_link": "https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform",
+  "register_app_code": {
+    "code": "<iframe\nsrc=\"https://docs.google.com/forms/d/e/1FAIpQLScZ-YvhK6guV9n7M8wn31TYpGBtSC9QpyOSzjQPoM_Db683NA/viewform?embedded=true\"\nwidth=\"640\"\nheight=\"975\"\nframeBorder=\"0\"\nmarginHeight={0}\nmarginWidth={0}\n>\nLoading…\n</iframe>"
+  }
+}
