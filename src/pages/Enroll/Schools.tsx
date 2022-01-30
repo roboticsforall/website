@@ -80,7 +80,7 @@ export const Schools: React.FC = () => {
           href={enroll_links.link}
           className="hyperlink"
         >
-          <Row className="school-enroll-button mx-2 p-2 justify-content-center align-items-center">
+          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
         </a>

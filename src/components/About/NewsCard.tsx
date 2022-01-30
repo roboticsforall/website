@@ -7,7 +7,7 @@ export const NewsCard: React.FC<{
 }> = (props) => {
   return (
     <a className="hyperlink" href={props.file} download>
-      <div className="newsletter-card">
+      <div className="newsletter-card rounded">
         <br />
         <br />
         <br />

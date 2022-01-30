@@ -33,7 +33,6 @@ export const TeacherPos: React.FC = () => {
   const ActiveStyle = {
     background: ColorThemes.mainYellow,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
@@ -41,7 +40,6 @@ export const TeacherPos: React.FC = () => {
   const inActiveStyle = {
     background: ColorThemes.mainOrange,
     border: "none",
-    borderRadius: "15px 15px 0 0",
     fontFamily: "BeVietnam-ExtraBold",
     padding: "20px",
     height: "100%",
@@ -276,15 +274,7 @@ export const TeacherPos: React.FC = () => {
       <Container>
         {teachingfaqsJSON.ta_faqs.map((QAPair) => (
           <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={QAPair.answer}
-            colors={{
-              main: ColorThemes.mainOrange,
-              light: ColorThemes.lightOrange,
-              dark: ColorThemes.darkOrange,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
+            data = {teachingfaqsJSON.teaching_faq_list}
           />
         ))}
         <br />

@@ -51,10 +51,10 @@ export const NavbarDesktop: React.FC = () => {
                   {navItem.headerName}
                 </Link>
               </div>
-              <ul className="dropdown-container" style={list}>
+              <ul className="rounded dropdown-container" style={list}>
                 {navItem.subPages.map((subPageInfo, i) => (
-                  <Link key={i} className="hyperlink" to={subPageInfo.to}>
-                    <h5><li>{subPageInfo.subPageName}</li></h5>
+                  <Link key={i} className="hyperlink rounded" to={subPageInfo.to}>
+                    <li className = "rounded"><h5>{subPageInfo.subPageName}</h5></li>
                   </Link>
                 ))}
               </ul>
@@ -77,18 +77,18 @@ export const NavbarDesktop: React.FC = () => {
         </li>
         <li className="nav-item">
           <div className="h-100 donate-nav-item-header">
-            <Link className="donate-nav-background hyperlink" to="/donate">
+            <Link className="donate-nav-background rounded hyperlink" to="/donate">
               <h5>Donate</h5>
             </Link>
           </div>
-          <ul className="dropdown-container" style={list}>
+          <ul className="rounded dropdown-container" style={list}>
             <a
               rel="noopener"
               target="_blank"
               href="https://www.bonfire.com/store//"
               className="hyperlink"
             >
-              <h5><li>Merch</li></h5>
+              <li className = "rounded"><h5>Merch</h5></li>
             </a>
           </ul>
         </li>

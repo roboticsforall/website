@@ -14,7 +14,6 @@ const styles: any = {
   },
   posContainer: (props: any) => ({
     border: "15px solid",
-    borderRadius: "0 0 15px 15px",
     margin: "0 0 40px 0",
     color: props.color,
     borderColor: props.borderColor,
@@ -43,6 +42,7 @@ export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor,
         backgroundColor: props.backgroundColor,
       })}
+      className = "rounded"
     >
       <div>
         <Row>
@@ -64,6 +64,7 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor,
         backgroundColor: props.backgroundColor,
       })}
+      className = "rounded"
     >
       <div>
         <h1 style={styles.posHeader}>{props.posHeader}</h1>
@@ -88,6 +89,7 @@ export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor,
         backgroundColor: props.backgroundColor,
       })}
+      className = "rounded"
     >
       <div>
         <h1 style={styles.posHeader}>{props.posHeader}</h1>
