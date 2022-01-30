@@ -8,11 +8,11 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import indlearnersFAQJSON from "@/posts/faqs/indlearners_faqs.json";
-import coursesInfoJSON from "@/posts/courses.json";
-import syllabiJSON from "@/posts/syllabi.json";
-import indLearnersCourseOverview from "@/posts/ind_learners.json";
-import enroll_links from "@/posts/enroll_links.json";
+import indlearnersFAQJSON from "@/posts/faqs/coordination_faq.json";
+import courseInfoJSON from "@/posts/individualLearnersCourses.json";
+import syllabiJSON from "@/posts/course_syllabi.json";
+import indLearnersCourseOverview from "@/posts/editable_texts.json";
+import enroll_links from "@/posts/enrollment_form_document_link.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
