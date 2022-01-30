@@ -50,7 +50,6 @@ export const AboutAffOrgsCard: React.FC<{
 								</Row>
 							</Col>
 						)}
-<<<<<<< HEAD
 					<Col md={5} lg={5} xl={5} className="center-align">
 						<p className="text-center affOrgsCardText">
 							{props.affOrgsDescription}
@@ -66,31 +65,6 @@ export const AboutAffOrgsCard: React.FC<{
 						>
 							VISIT {props.orgAbrv}
 						</a>
-=======
-					<Col md={5} lg={5} xl={5} className="p-3 center-align">
-						<video className="w-100 h-100" autoPlay muted loop>
-							<source src={homePageVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-					</Col>
-					<Col md={4} lg={4} xl={4} className="p-3">
-						<Container>
-							<Row className="justify-content-center">
-								<p className="text-center affOrgsCardText">
-									{props.affOrgsDescription}
-								</p>
-								<a
-									style={{ color: props.linkColor, fontSize: "xx-large" }}
-									rel="noopener noreferrer"
-									target="_blank"
-									className="text-center hyperlink aff-org-card-link"
-									href={props.website}
-								>
-									VISIT {props.orgAbrv}
-								</a>
-							</Row>
-						</Container>
->>>>>>> da79234cfbe2bded300d6246a102ba699a09f83c
 					</Col>
 				</Row>
 			</Col>

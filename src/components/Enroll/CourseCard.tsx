@@ -83,23 +83,26 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
                       src={props.dropdownCourseImage}
                     />
                   </Row>
-                  <Row className="justify-content-center">
-                      <a
-                        style={{ color: props.backgroundColor }}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="hyperlink text-center aff-org-card-link"
-                        href={props.link}
-                      >
-                        Learn More
-                      </a>
-                  </Row>
               </Col>
             </Row>
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={handleClose}>Close</Button>
+          <Container>          
+            <Row>
+                <h4 className = "text-center">
+                  <a
+                    style={{ color: props.backgroundColor }}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="hyperlink aff-org-card-link"
+                    href={props.link}
+                  >
+                    Learn More
+                  </a>
+                </h4>
+              </Row>
+            </Container>
         </Modal.Footer>
       </Modal>
     </>

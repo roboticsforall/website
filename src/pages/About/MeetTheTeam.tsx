@@ -10,11 +10,6 @@ import pcInfoJSON from "@/posts/pub_committee.json";
 import { MeetTheTeamCard } from "@/components/About/MeetTheTeamCard";
 
 import Carousel from "react-bootstrap/Carousel";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-
-import image from "../../media/download.svg";
-import image2 from "../../media/download (1).svg";
 
 import { ColorThemes } from "@/colors";
 
@@ -56,7 +51,7 @@ export const MeetTheTeam: React.FC = () => {
 
       <div style={yellowRow}>
         <Carousel>
-          {bmInfoJSON.board_members_list.map((info: any, i: number) => (
+          {bmInfoJSON.board_members_list.map((info: any) => (
             <Carousel.Item>
               <MeetTheTeamCard
                 info={info}

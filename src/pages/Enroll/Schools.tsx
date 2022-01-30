@@ -125,19 +125,9 @@ export const Schools: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {forschoolsFAQJSON.schools_and_partners_faqs.map((QAPair: any) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={<Markdown>{QAPair.answer}</Markdown>}
-            colors={{
-              main: ColorThemes.mainGreen,
-              light: ColorThemes.lightGreen,
-              dark: ColorThemes.darkGreen,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
+        <FAQDropdowns
+            data = {forschoolsFAQJSON.schools_and_partners_faqs}
           />
-        ))}
         <br />
       </Container>
     </>

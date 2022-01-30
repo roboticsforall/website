@@ -48,7 +48,7 @@ export const NavbarDesktop: React.FC = () => {
             <li className="nav-item" key={i}>
               <div className="h-100 nav-item-header">
                 <Link onClick = "return false" className="hyperlink"> 
-                  {navItem.headerName}
+                  <h5>{navItem.headerName}</h5>
                 </Link>
               </div>
               <ul className="rounded dropdown-container" style={list}>

@@ -174,19 +174,9 @@ export const TeacherPos: React.FC = () => {
         FAQs
       </h2>
       <Container>
-        {teachingfaqsJSON.teacher_faqs.map((QAPair) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={QAPair.answer}
-            colors={{
-              main: ColorThemes.mainOrange,
-              light: ColorThemes.lightOrange,
-              dark: ColorThemes.darkOrange,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
-          />
-        ))}
+      <FAQDropdowns
+          data = {teachingfaqsJSON.teacher_faqs}
+        />
         <br />
       </Container>
             </Tab.Pane>
@@ -272,19 +262,9 @@ export const TeacherPos: React.FC = () => {
         FAQs
       </h2>
       <Container>
-        {teachingfaqsJSON.ta_faqs.map((QAPair) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={QAPair.answer}
-            colors={{
-              main: ColorThemes.mainOrange,
-              light: ColorThemes.lightOrange,
-              dark: ColorThemes.darkOrange,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
-          />
-        ))}
+      <FAQDropdowns
+          data = {teachingfaqsJSON.ta_faqs}
+        />
         <br />
       </Container>
             </Tab.Pane>

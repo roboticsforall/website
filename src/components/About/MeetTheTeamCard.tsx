@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Col, Image, Row, Container, Modal, Button } from "react-bootstrap";
+import { Col, Image, Modal, Button } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
-import { ColorThemes } from "@/colors";
-import Carousel from "react-bootstrap/Carousel";
 
 import "../../index.css";
 
@@ -22,49 +20,21 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2,
-      slidesToSlide: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-    mobile: {
-      breakpoint: { max: 600, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-    },
+  const nameHeader: React.CSSProperties = {
+    textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
+    wordBreak: "break-word",
+    width: "75%"
   };
+  const titleHeader: React.CSSProperties = {
+    textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
+  };
+  const bodyText: React.CSSProperties = {
 
+    color: "white",
+  };
   const imgBoxShadow = {
     boxShadow: "0px 7px 8px -8px #000000",
   };
-
-  const dropdownControl: React.CSSProperties = {
-    zIndex: 10000,
-    position: "fixed",
-    left: 0,
-    top: 0,
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "rgba(0,0,0,0.4)" /* Black w/ opacity */,
-  };
-  const dropdownContainer: React.CSSProperties = {
-    position: "fixed",
-    left: "50%",
-    top: "50%",
-    width: "100vw",
-    transform: "translate(-50%, -50%)",
-  };
-  const dropdownHeader: React.CSSProperties = {
-    display: "flex",
-    justifyContent: "space-between",
-  };
-
   return (
     <>
       <div
@@ -87,7 +57,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
           <></>
         ) : (
           <Col style={{ overflowY: "auto" }} className="ms-2">
-            <h1 style={nameHeader}>{props.info.name}</h1>
+            <h1  style={nameHeader}>{props.info.name}</h1>
             <h1 style={{ color: props.color, ...titleHeader }}>
               {props.info.title_pronouns}
             </h1>
