@@ -24,10 +24,10 @@ export const Header: React.FC<{
 
   return (
     <div
-      className="d-flex justify-content-center align-items-end order"
+      className="d-flex justify-content-center align-items-center"
       style={headerBlob}
     >
-      <div className="w-75 mb-6">
+      <div>
         <h1 style={pageHeader} className="text-center">
           {props.title}
         </h1>

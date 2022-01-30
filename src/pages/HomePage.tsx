@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Container, Col, Image, Ratio, Placeholder } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import homePageVideo from "@/media/homePageVideo.mp4";
+import homePageVideo from "@/media/homePageVideo.mp4";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
@@ -53,18 +53,16 @@ export const HomePage: React.FC = () => {
   };
 
   return (
-    <>
-      <div style={videoRow} className="d-flex justify-content-center">
-        {/* <video
-            className="video-width"
-            autoPlay
-            loop
-            muted
-            controls
-          src={homePageVideo}
-        /> */}
-        <img src = {LM}/>
-      </div>
+<>
+    <div style={videoRow} className="d-flex justify-content-center">
+      <video
+        className="video-width"
+        autoPlay
+        loop
+        muted
+        src={homePageVideo}
+      />
+  </div>
 
       <Container>
         <Row className="justify-content-center">
