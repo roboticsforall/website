@@ -47,7 +47,7 @@ export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
       <div>
         <Row>
           <Col>
-            <h1 style={styles.posHeader}>{props.posHeader}</h1>
+            <h2 style={styles.posHeader}>{props.posHeader}</h2>
             <p style={styles.posDescription}>{props.posDescription}</p>
           </Col>
         </Row>
@@ -67,7 +67,7 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       className = "rounded"
     >
       <div>
-        <h1 style={styles.posHeader}>{props.posHeader}</h1>
+        <h2 style={styles.posHeader}>{props.posHeader}</h2>
         <Row>
           <Col className="center-align" xs={3}>
             <Image src={props.posImage} style={styles.img} fluid />
@@ -92,7 +92,7 @@ export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
       className = "rounded"
     >
       <div>
-        <h1 style={styles.posHeader}>{props.posHeader}</h1>
+        <h2 style={styles.posHeader}>{props.posHeader}</h2>
         <Row>
           <Col>
             <div style={styles.posDescription}>{props.posDescription}</div>
