@@ -21,7 +21,6 @@ import { ColorThemes } from "@/colors";
 export const Schools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     color: ColorThemes.mainGreen,
     textAlign: "center",
   };
@@ -81,7 +80,7 @@ export const Schools: React.FC = () => {
           href={enroll_links.link}
           className="hyperlink"
         >
-          <Row className="school-enroll-button mx-2 p-2 justify-content-center align-items-center">
+          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
         </a>
@@ -126,19 +125,9 @@ export const Schools: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {forschoolsFAQJSON.schools_and_partners_faqs.map((QAPair: any) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={<Markdown>{QAPair.answer}</Markdown>}
-            colors={{
-              main: ColorThemes.mainGreen,
-              light: ColorThemes.lightGreen,
-              dark: ColorThemes.darkGreen,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
+        <FAQDropdowns
+            data = {forschoolsFAQJSON.schools_and_partners_faqs}
           />
-        ))}
         <br />
       </Container>
     </>

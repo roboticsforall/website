@@ -1,7 +1,7 @@
 import React from "react";
-import { Row, Container, Col, Image } from "react-bootstrap";
+import { Row, Container, Col, Image, Ratio, Placeholder } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import homePageVideo from "@/media/homePageVideo.mp4";
+// import homePageVideo from "@/media/homePageVideo.mp4";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
@@ -31,23 +31,19 @@ export const HomePage: React.FC = () => {
   };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-Regular",
     textAlign: "center",
-    fontSize: "1.5em",
   };
   const sponsorsLabel: React.CSSProperties = {
     fontFamily: "BeVietnam-Bold",
     textAlign: "center",
-    fontSize: "1.5em",
   };
   const affOrgsHeader: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordWrap: "break-word",
@@ -59,13 +55,15 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <div style={videoRow} className="d-flex justify-content-center">
-        <video
-          className="video-width"
-          autoPlay
-          loop
-          muted
+        {/* <video
+            className="video-width"
+            autoPlay
+            loop
+            muted
+            controls
           src={homePageVideo}
-        />
+        /> */}
+        <img src = {LM}/>
       </div>
 
       <Container>
@@ -107,7 +105,7 @@ export const HomePage: React.FC = () => {
               <Col md={4} className="text-center">
                 <Link to={info.to} className="hyperlink">
                   <Image fluid src={info.src} />
-                  <h1
+                  <h2
                     style={{
                       fontFamily: "Oswald-Medium",
                       textAlign: "center",
@@ -115,7 +113,7 @@ export const HomePage: React.FC = () => {
                     }}
                   >
                     {info.label}
-                  </h1>
+                  </h2>
                 </Link>
               </Col>
             ))}
@@ -172,6 +170,7 @@ export const HomePage: React.FC = () => {
         </div>
         <br />
         <br />
+
         <h3 style={sponsorsLabel}>
           Proud partners of the following organizations:
         </h3>
@@ -209,12 +208,6 @@ const HomeAffOrgsCard: React.FC<{
   const imageSize: React.CSSProperties = {
     objectFit: "scale-down",
   };
-  const borderRadius = {
-    borderTopLeftRadius: 15,
-    borderBottomLeftRadius: 15,
-    borderTopRightRadius: 15,
-    borderBottomRightRadius: 15,
-  };
   const linkColor: React.CSSProperties = {
     color: props.linkColor,
   };
@@ -222,8 +215,8 @@ const HomeAffOrgsCard: React.FC<{
   return (
     <>
       <Row
-        style={{ backgroundColor: props.bgColor, ...borderRadius }}
-        className="justify-content-center align-items-center mx-2"
+        style={{ backgroundColor: props.bgColor}}
+        className="justify-content-center rounded align-items-center mx-2"
       >
         <Col
           className="d-flex justify-content-center"
@@ -235,9 +228,9 @@ const HomeAffOrgsCard: React.FC<{
           <Image fluid style = {imageSize} src={props.logo} />
         </Col>
         <Col md={6} lg={6} xl={6}>
-          <h1 className="header-size" style={affOrgsTitle}>
+          <h2 style={affOrgsTitle}>
             {props.org}
-          </h1>
+          </h2>
         </Col>
         <Col className="text-center" md={3} lg={3} xl={3}>
           <a
@@ -247,7 +240,7 @@ const HomeAffOrgsCard: React.FC<{
             style={linkColor}
             rel="noreferrer"
           >
-            LEARN MORE
+            <p>LEARN MORE</p>
           </a>
         </Col>
       </Row>

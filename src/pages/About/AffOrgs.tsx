@@ -2,7 +2,6 @@ import React from "react";
 import { Header } from "@/components/Header";
 import { Container } from "react-bootstrap";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 

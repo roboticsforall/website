@@ -19,7 +19,6 @@ import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 export const IndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    fontSize: "4em",
     color: ColorThemes.mainBlue,
     textAlign: "center",
   };
@@ -108,7 +107,7 @@ export const IndLearners: React.FC = () => {
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightBlue}
                 dropdownCourseDescription={
-                  courseInfo.course_description=""
+                  courseInfo.course_description
                 }
                 dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
@@ -123,20 +122,10 @@ export const IndLearners: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {indlearnersFAQJSON.ind_learners_faqs.map((QAPair) => (
-          <FAQDropdowns
-            key={QAPair.question}
-            question={QAPair.question}
-            answer={<Markdown>{QAPair.answer}</Markdown>}
-            colors={{
-              main: ColorThemes.mainBlue,
-              light: ColorThemes.lightBlue,
-              dark: ColorThemes.darkBlue,
-              backgroundHover: ColorThemes.mainYellow,
-            }}
+        <FAQDropdowns
+            data = {indlearnersFAQJSON.ind_learners_faqs}
           />
-        ))}
-        <br />
+          <br />
       </Container>
     </>
   );

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import updatesJSON from "@/posts/updates.json";
-import { ColorThemes } from "@/colors";
-import { Alert, Fade } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 
 export const Update: React.FC = () => {
   const [show, setShow] = useState(true);
