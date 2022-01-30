@@ -10,8 +10,8 @@ import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import generalInternJSON from "@/posts/general_intern.json";
-import googleForms from "@/posts/google_form.json";
+import generalInternJSON from "@/posts/general_intern_position_description.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const BusinessPositions: React.FC = () => {
   const [key, setKey] = useState("one");

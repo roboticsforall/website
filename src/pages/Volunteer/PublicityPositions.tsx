@@ -10,9 +10,10 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
-import publicityInternJSON from "@/posts/publicity_intern.json";
+import publicityInternJSON from "@/posts/publicity_intern_position_description.json";
 
-import googleForms from "@/posts/google_form.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
+
 
 
 export const PublicityPositions: React.FC = () => {

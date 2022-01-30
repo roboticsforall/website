@@ -7,14 +7,15 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import forschoolsFAQJSON from "@/posts/faqs/forschools_faqs.json";
-import coursesInfoJSON from "@/posts/courses.json";
-import syllabiJSON from "@/posts/syllabi.json";
-import enroll_links from "@/posts/enroll_links.json";
+import forschoolsFAQJSON from "@/posts/faqs/coordination_faqs.json";
+import coursesInfoJSON from "@/posts/schoolsAndPartnersCourses.json";
+import syllabiJSON from "@/posts/course_syllabi.json";
+import enroll_links from "@/posts/enrollment_form_document_link.json";
 
-import schoolsCourseOverview from "@/posts/schools.json";
+import schoolsCourseOverview from "@/posts/editable_texts.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
+
 import { ColorThemes } from "@/colors";
 
 export const Schools: React.FC = () => {
@@ -105,14 +106,14 @@ export const Schools: React.FC = () => {
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
-                link={courseInfo.class_description_link}
+                link={courseInfo.link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightGreen}
                 dropdownCourseDescription={
-                  courseInfo.dropdown_course_description
+                  courseInfo.course_description
                 }
-                dropdownCourseImage={courseInfo.dropdown_file_path.replace(
+                dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
                 )}
@@ -125,7 +126,7 @@ export const Schools: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {forschoolsFAQJSON.for_schools_faq_list.map((QAPair: any) => (
+        {forschoolsFAQJSON.schools_and_partners_faqs.map((QAPair: any) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}

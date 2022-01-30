@@ -9,8 +9,8 @@ import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import technicalInternJSON from "@/posts/technical_intern.json";
-import googleForms from "@/posts/google_form.json";
+import technicalInternJSON from "@/posts/technical_intern_position_description.json";
+import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const TechnicalPositions: React.FC = () => {
   const [key, setKey] = useState("one");

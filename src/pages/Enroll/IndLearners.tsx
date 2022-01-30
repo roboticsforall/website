@@ -8,8 +8,8 @@ import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Markdown from "markdown-to-jsx";
 
-import indlearnersFAQJSON from "@/posts/faqs/coordination_faq.json";
-import courseInfoJSON from "@/posts/individualLearnersCourses.json";
+import indlearnersFAQJSON from "@/posts/faqs/coordination_faqs.json";
+import coursesInfoJSON from "@/posts/individualLearnersCourses.json";
 import syllabiJSON from "@/posts/course_syllabi.json";
 import indLearnersCourseOverview from "@/posts/editable_texts.json";
 import enroll_links from "@/posts/enrollment_form_document_link.json";
@@ -103,14 +103,14 @@ export const IndLearners: React.FC = () => {
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
-                link={courseInfo.class_description_link}
+                link={courseInfo.link}
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightBlue}
                 dropdownCourseDescription={
-                  courseInfo.dropdown_course_description
+                  courseInfo.course_description=""
                 }
-                dropdownCourseImage={courseInfo.dropdown_file_path.replace(
+                dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
                 )}
@@ -123,7 +123,7 @@ export const IndLearners: React.FC = () => {
       </div>
       <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        {indlearnersFAQJSON.ind_learners_faq_list.map((QAPair) => (
+        {indlearnersFAQJSON.ind_learners_faqs.map((QAPair) => (
           <FAQDropdowns
             key={QAPair.question}
             question={QAPair.question}

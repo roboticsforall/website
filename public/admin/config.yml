@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: cmsRefactor # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
 media_folder: /public # Media files will be stored in the repo under images/uploads
 public_folder: /public # The src attribute for uploaded media will begin with /images/uploads
 collections:
@@ -54,9 +54,9 @@ collections:
               - {label: Flag of Country Language Belongs To, name: file_path, widget: image, media_folder: /public/uploads/flagimg}
       - label: Google Drive Link to Enrollment Signup Document
         name: enrollment_form_document_link
-        file: src/posts/.json
+        file: src/posts/enrollment_form_document_link.json
         fields:
-          - {label: link, name: link link, widget: string}
+          - {label: link, name: link, widget: string}
       - label: Editable Texts # used in UI
         name: editable_texts # used in routes
         file: src/posts/editable_texts.json
@@ -233,9 +233,6 @@ collections:
         name: volunteer_sign_up_forms # used in routes
         file: src/posts/volunteer_sign_up_forms.json
         fields:
-          - label: Register Google Form Embed Code
-            name: register_app_code
-            widget: code
           - label: Teacher Google Form Link
             name: teacher_app_link
             widget: string
