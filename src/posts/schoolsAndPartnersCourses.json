@@ -1,10 +1,10 @@
 {
   "courses_list": [
     {
-      "course_name": "Some School Course",
-      "link": "https://www.netlifycms.org/docs/collection-types/",
+      "course_name": "Snap Circuits (2-3)",
+      "link": "https://docs.google.com/document/d/1mBUvRSysTZnPwCtJDZi9pXS61KWR2fKkCwlck6tEKCo/edit?usp=sharing",
       "file_path": "/public/uploads/coursesimg/lego.png",
-      "course_description": "Some Course Description"
+      "course_description": "Introduces students to the basics of electricity and circuits through projects using the Snap Circuits Jr. kit. Class may be administered online or in-person."
     }
   ]
 }
