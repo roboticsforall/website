@@ -1,20 +1,44 @@
 {
   "teacher_faqs": [
     {
-      "question": "Add Text",
-      "answer": "Add Text"
+      "question": "How will the community service hours be documented? Will I receive official records of service hours from this? ",
+      "answer": "<!--StartFragment-->\n\n**If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!**\n\n<!--EndFragment-->"
+    },
+    {
+      "question": "Are there training programs available to the teachers?",
+      "answer": "<!--StartFragment-->\n\n**If you are accepted as a teacher we will give you some basic training, although it’s primary purpose is to explain our software and policies. We can offer additional support as needed.**\n\n<!--EndFragment-->"
+    },
+    {
+      "question": "How many students are there per class? ",
+      "answer": "<!--StartFragment-->\n\n**There are 3 to 15 students per class with a 1:5 student to teacher ratio.**  \n\n\n\n<!--EndFragment-->"
     }
   ],
   "ta_faqs": [
     {
-      "question": "Add Text",
-      "answer": "Add Text"
+      "question": "How many leading opportunities will there be?",
+      "answer": "<!--StartFragment-->\n\n**Feel free to ask the lead instructor for opportunities to lead the class when you feel comfortable. You will also have the opportunity to become a lead instructor after being a TA for 8 weeks.** \n\n\n\n<!--EndFragment-->"
+    },
+    {
+      "question": "How soon will you be able to start teaching classes? ",
+      "answer": "<!--StartFragment-->\n\n**Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details.** \n\n\n\n<!--EndFragment-->"
+    },
+    {
+      "question": "What software will we be using to teach? ",
+      "answer": "<!--StartFragment-->\n\n**We will be using Zoom and Google Classroom to teach. There are a few school specific exceptions to this.**\n\n\n\n<!--EndFragment-->"
     }
   ],
   "intern_faqs": [
     {
-      "question": "Add Text",
-      "answer": "Add Text"
+      "question": "What specific tasks would I be doing for this position?",
+      "answer": "<!--StartFragment-->\n\n**Tasks will vary depending on area, but some common ones include outreach, curriculum development, publicity planning, and software development.**\n\n\n\n<!--EndFragment-->"
+    },
+    {
+      "question": "When would I start?",
+      "answer": "<!--StartFragment-->\n\n**The internship runs in 8 week cycles year round.  The next session will be the Spring 2022 session. Candidates are usually accepted before the start of an internship. If accepted, a Robotics For All representative will contact you with details about the orientation.**\n\n\n\n<!--EndFragment-->"
+    },
+    {
+      "question": "I do not live in the United States of America. Am I still eligible to apply?",
+      "answer": "<!--StartFragment-->\n\n**Yes, you may apply! However, please keep in mind that all meetings are optimized for the US Pacific and Eastern time zones.** \n\n\n\n<!--EndFragment-->"
     }
   ]
 }
