@@ -57,10 +57,10 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
           <></>
         ) : (
           <Col style={{ overflowY: "auto" }} className="ms-2">
-            <h1  style={nameHeader}>{props.info.name}</h1>
-            <h1 style={{ color: props.color, ...titleHeader }}>
+            <h2 style={nameHeader}>{props.info.name}</h2>
+            <h3 style={{ color: props.color, ...titleHeader }}>
               {props.info.title_pronouns}
-            </h1>
+            </h3>
             <Markdown style={bodyText}>{props.info.description}</Markdown>
           </Col>
         )}
@@ -69,8 +69,8 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
       <Modal centered fullscreen={"md-down"} size={"lg"} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <h1>{props.info.name}</h1>
-            <h2>{props.info.title_pronouns}</h2>
+            <h2>{props.info.name}</h2>
+            <h3>{props.info.title_pronouns}</h3>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

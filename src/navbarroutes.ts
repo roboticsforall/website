@@ -8,7 +8,7 @@ export const enrollvolunteerabout = [
           to: "/enroll/individlearners",
         },
         {
-          subPageName: "For Schools",
+          subPageName: "For Schools and Partners",
           to: "/enroll/schools",
         },
       ]

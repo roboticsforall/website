@@ -23,8 +23,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   const text: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    textOverflow: "ellipsis",
-    overflow: "hidden",
     whiteSpace: "nowrap",
   };
   const dropdownHeaderText: React.CSSProperties = {

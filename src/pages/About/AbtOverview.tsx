@@ -53,43 +53,43 @@ export const AbtOverview: React.FC = () => {
         <br />
         <Container>
           <h2 className="title" style={{...valuesColor }}>OUR VALUES</h2>
-          <p className="description">
+          <p >
             We are{" "}
-            <span className="description" style={{color: ColorThemes.mainOrange}}>
+            <span  style={{color: ColorThemes.mainOrange}}>
               motivated
             </span>
             . Each and every day, we strive to be a positive force in this world
             and create social change.
           </p>
           <div></div>
-          <p className="description">
+          <p >
             We are{" "}
-            <span className="description" style={{color: ColorThemes.mainYellow}}>
+            <span  style={{color: ColorThemes.mainYellow}}>
               inclusive
             </span>
             . We celebrate the diversity of our students and volunteers alike.
           </p>
           <div></div>
-          <p className="description">
+          <p >
             We are{" "}
-            <span className="description" style={{color: ColorThemes.mainGreen}}>
+            <span  style={{color: ColorThemes.mainGreen}}>
               accountable
             </span>
             . We emain honest and transparent in everything we do.
           </p>
           <div></div>
-          <p className="description">
+          <p >
             We are{" "}
-            <span className="description" style={{color: ColorThemes.lightBlue}}>
+            <span  style={{color: ColorThemes.lightBlue}}>
               collaborative
             </span>
             . Through the strength of teamwork, we are able to generate stronger
             ideas and do more.
           </p>
           <div></div>
-          <p className="description">
+          <p >
             We are{" "}
-            <span className="description" style={{color: ColorThemes.mainBlue}}>
+            <span  style={{color: ColorThemes.mainBlue}}>
               compassionate
             </span>
             . We care deeply about all of our students, volunteers, and our

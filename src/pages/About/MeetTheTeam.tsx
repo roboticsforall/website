@@ -125,6 +125,9 @@ export const MeetTheTeam: React.FC = () => {
               ))}
             </Carousel>
           </div>
+          <br/>
+          <br/>
+          <br/>
         </>
         );
 };

@@ -18,8 +18,7 @@ export const AboutAffOrgsCard: React.FC<{
 			<Col className="" md={11} lg={11} xl={11}>
 				{window.innerWidth >= 768 && (
 					<Row>
-						<h1 
-							className="affOrgsHeader"
+						<h1
 							style={{color: props.mainColor}}
 						>
 							{props.affOrgName}
@@ -41,7 +40,7 @@ export const AboutAffOrgsCard: React.FC<{
 									</Col>
 									<Col className="center-align">
 										<h1
-											className="text-center affOrgsHeader"
+											className="text-center"
 											style={{color: props.mainColor}}
 										>
 											{props.affOrgName}
@@ -51,19 +50,19 @@ export const AboutAffOrgsCard: React.FC<{
 							</Col>
 						)}
 					<Col md={5} lg={5} xl={5} className="center-align">
-						<p className="text-center affOrgsCardText">
+						<p className="text-center">
 							{props.affOrgsDescription}
 						</p>
 					</Col>
 					<Col md={4} lg={4} xl={4} className="center-align">
 						<a
-							style={{ color: props.linkColor, fontSize: "xx-large" }}
+							style={{ color: props.linkColor }}
 							rel="noopener noreferrer"
 							target="_blank"
-							className="text-center hyperlink aff-org-card-link"
+							className="text-center hyperlink"
 							href={props.website}
 						>
-							VISIT {props.orgAbrv}
+							<p className = "aff-org-card-link">VISIT {props.orgAbrv}</p>
 						</a>
 					</Col>
 				</Row>

@@ -37,17 +37,17 @@ export const VolOverviewCard: React.FC<{
           <Row className="h-100 align-items-between">
             <Link
               to={props.learnMoreLink}
-              className="aff-org-card-link rounded center-align hyperlink mb-md-3 p-3"
+              className="rounded center-align hyperlink mb-md-3 p-3"
               style={button}
             >
-              Learn More
+              <p className = "aff-org-card-link">Learn More</p>
             </Link>
             <Link
               to={props.applyLink}
-              className="aff-org-card-link rounded hyperlink center-align p-3"
+              className=" rounded hyperlink center-align p-3"
               style={button}
             >
-              Apply
+              <p className = "aff-org-card-link">Apply</p>
             </Link>
           </Row>
         </Col>

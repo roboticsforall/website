@@ -104,44 +104,37 @@ a {
 }
 .title {
 	font-family: 'Oswald-Medium';
-	font-size: 4em;
 	text-align: center;
 }
-.description {
+/* .description {
 	font-family: 'BeVietnam-Bold';
 	font-size: 1.5em;
 	color: black;
-}
+} */
 .nameHeader { 
   font-family: 'Oswald-Medium';
-  font-size: 4em;
   text-shadow: 0px 1px 3px rgba(0,0,0,0.58);
   word-break: break-word;
   width: 75%;
 }
 .titleHeader {
   font-family: 'BeVietnam-Bold';
-  font-size: 3em;
   text-shadow: 0px 1px 3px rgba(0,0,0,0.22);
 }
 .bodyText {
   font-family: 'BeVietnam-Medium';
   color: white;
-  font-size: 1.5em;
 }
 .subscriberText {
 	font-family: 'Oswald-Medium';
-	font-size: 1.5em;
 }
 
 /* affiliated cards text */
 .affOrgsHeader {
 	font-family: "Mazzard-H-ExtraBold";
-	font-size: 3em;
 }
 .affOrgsCardText {
 	font-family: "BeVietnam-Medium";
-	font-size: 1em;
 }
 
 

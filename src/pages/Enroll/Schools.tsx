@@ -93,8 +93,7 @@ export const Schools: React.FC = () => {
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
           <h5 style={bodyText}>
-            We offer basic and advanced computer programming and computer-aided
-            design courses for students in K-8th grade!
+            We offer basic and advanced classes in a variety of STEM subjects such as computer programming for students in K-8th grade
             <br></br>
             <br></br>
             View our selection of courses below and click on the boxes to learn

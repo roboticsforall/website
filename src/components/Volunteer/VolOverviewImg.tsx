@@ -13,9 +13,9 @@ export const VolOverviewImg: React.FC<{
   return (
     <div>
       <Image fluid src={props.image} />
-        <p className="text-center" style={cardTitle}>
+        <h2 className="text-center" style={cardTitle}>
           {props.title}
-        </p>
+        </h2>
     </div>
   );
 };
