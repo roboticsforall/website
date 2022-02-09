@@ -7,10 +7,10 @@
       "course_description": "This class introduces students to the basics of block-based programming through creating games in Scratch. It serves as a bridge to learning about text-based programming languages such as Python."
     },
     {
-      "course_name": "Test Course",
+      "course_name": "Python",
       "link": "https://example.com",
-      "course_description": "This is a test",
-      "file_path": "/public/uploads/coursesimg/lego.png"
+      "course_description": "Introduces students to Python",
+      "file_path": "/public/uploads/coursesimg/3.png"
     }
   ]
 }
