@@ -7,6 +7,12 @@
       "file_path": "/public/uploads/coursesimg/4.png"
     },
     {
+      "course_name": "Basic Scratch (2-3)",
+      "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.wqexiaeprz3y",
+      "course_description": "The Basic Scratch (2-3) course introduces younger students to block-based programming using the Scratch platform. The curriculum is split into two 8-week courses and students should take both Part 1 and Part 2.",
+      "file_path": "/public/uploads/coursesimg/4.png"
+    },
+    {
       "course_name": "Scratch (4-6)",
       "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.6kfg76nfp4vl",
       "file_path": "/public/uploads/coursesimg/4.png",
@@ -23,12 +29,6 @@
       "link": "https://docs.google.com/document/d/1K9155gpkWAcR1PY60FDdpduVrqfuLlWqI1Qh7uXmV6I/edit?usp=sharing",
       "course_description": "The Snap Circuits curriculum teaches students the basics of electricity and circuits with a safe, child-friendly physical kit shipped to students.",
       "file_path": "/public/uploads/coursesimg/1.png"
-    },
-    {
-      "course_name": "Basic Scratch (2-3)",
-      "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.wqexiaeprz3y",
-      "course_description": "The Basic Scratch (2-3) course introduces younger students to block-based programming using the Scratch platform. The curriculum is split into two 8-week courses and students should take both Part 1 and Part 2.",
-      "file_path": "/public/uploads/coursesimg/4.png"
     }
   ]
 }
