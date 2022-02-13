@@ -1,6 +1,12 @@
 {
   "courses_list": [
     {
+      "course_name": "Code.org (K-1)",
+      "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.vyf4jrjhcci5",
+      "course_description": "The Fundamentals of Programming with Code.org class provides an introduction to block-based programming using Code.org, an easy-to-use educational platform.",
+      "file_path": "/public/uploads/coursesimg/4.png"
+    },
+    {
       "course_name": "Scratch (4-6)",
       "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.6kfg76nfp4vl",
       "file_path": "/public/uploads/coursesimg/4.png",
