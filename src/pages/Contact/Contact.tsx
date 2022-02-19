@@ -84,9 +84,9 @@ export const Contact: React.FC = () => {
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"tel:+(650)-665-9734"}
+                  href={"tel:(234)-564-2057"}
                 >
-                  +(650)-665-9734
+                  +(234)-564-2057
                 </a>
               </h3>
               <br></br>

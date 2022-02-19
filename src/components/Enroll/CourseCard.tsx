@@ -23,7 +23,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   const text: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    whiteSpace: "nowrap",
+    // whiteSpace: "nowrap",
   };
   const dropdownHeaderText: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
@@ -49,17 +49,18 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   return (
     <>
       <Col
-        className={classes.cardBackground}
         md={4}
         lg={3}
         onClick={handleShow}
       >
-        <div className="d-flex justify-content-center">
-          <Image fluid src={props.courseImage} />
-        </div>
-        <div className="text-center">
-          <h3 style={text}>{props.title}</h3>
-        </div>
+        <Container className={classes.cardBackground}>
+          <div className="d-flex justify-content-center">
+            <Image fluid src={props.courseImage} />
+          </div>
+          <div className="text-center">
+            <h3 style={text}>{props.title}</h3>
+          </div>
+        </Container>
       </Col>
 
       <Modal centered fullscreen={"md-down"} size={"lg"} show={show} onHide={handleClose}>

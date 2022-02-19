@@ -147,7 +147,7 @@ export const TeacherPos: React.FC = () => {
                 }
               />
               <TabsCardLeftImage
-                posHeader={"REQUIemENTS"}
+                posHeader={"REQUIRMENTS"}
                 generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={

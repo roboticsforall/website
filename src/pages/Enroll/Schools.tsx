@@ -60,32 +60,7 @@ export const Schools: React.FC = () => {
           <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
-        <h5 style={bodyText}>View our detailed syllabi below:</h5>
-        <br></br>
-        <Row className="justify-content-between m-0">
-          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <FlagCard
-              image={flagInfo.file_path.replace("/public", "")}
-              title={flagInfo.language}
-              link={flagInfo.link}
-              backgroundColor="#33cc6699"
-              key={i}
-            />
-          ))}
-        </Row>
-        <br></br>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={enroll_links.link}
-          className="hyperlink"
-        >
-          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
-          </Row>
-        </a>
       </Container>
-      <br></br>
       <br></br>
       <div style={greenRow}>
         <Container>
@@ -100,7 +75,7 @@ export const Schools: React.FC = () => {
             more
           </h5>
           <br></br>
-          <Row>
+          <Row className = "g-4">
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
@@ -122,13 +97,45 @@ export const Schools: React.FC = () => {
           <br></br>
         </Container>
       </div>
-      <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        <FAQDropdowns
-            data = {forschoolsFAQJSON.schools_and_partners_faqs}
-          />
-        <br />
+        <br/>
+        <h2 style={positionsTitle}>COURSE SYLLABI</h2>
+        <br/>
+        <Row className="justify-content-between m-0">
+          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+            <FlagCard
+              image={flagInfo.file_path.replace("/public", "")}
+              title={flagInfo.language}
+              link={flagInfo.link}
+              backgroundColor= {ColorThemes.lightGreen}
+              key={i}
+            />
+          ))}
+        </Row>
+        <br/>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={enroll_links.link}
+          className="hyperlink"
+        >
+          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
+            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
+          </Row>
+        </a>
+        <br/>
       </Container>
+      <div style={greenRow}>
+        <br/>
+        <h2 style={positionsTitle}>FAQs</h2>
+        <Container>
+          <FAQDropdowns
+              data = {forschoolsFAQJSON.schools_and_partners_faqs}
+            />
+          <br />
+        </Container>
+      </div>
+
     </>
   );
 };

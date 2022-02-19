@@ -165,20 +165,6 @@ input::placeholder {
   font-family: "BeVietnam-ExtraBold";
 }
 
-input:invalid:focus,
-textarea:invalid:focus {
-  border: 2px solid red;
-  background-color: white;
-}
-input:valid {
-  border: 1px solid black;
-}
-
-input:hover,
-textarea:hover {
-  background-color: white;
-}
-
 label {
   font-family: "BeVietnam-Bold";
 }

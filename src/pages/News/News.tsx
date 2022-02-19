@@ -123,13 +123,13 @@ export const News: React.FC = () => {
           >
             In the news
           </h1>
-          <Row className="align-items-stretch">
-            <Col>
+          <Row className = "g-4">
+            <Col md = {4}>
               <a
                 style={linkStyles}
                 href="https://paloaltoonline.com/news/2018/07/04/gunn-underclassmen-aim-to-change-educational-outcomes-through-robotics"
               >
-                <Card className="h-100 p-2" style={cardStyles}>
+                <Card className="h-100" style={cardStyles}>
                   <Card.Img src={paloaltoonline} />
                   <Card.Body>
                     <Card.Text>
@@ -140,7 +140,7 @@ export const News: React.FC = () => {
                 </Card>
               </a>
             </Col>
-            <Col>
+            <Col md = {4}>
               <a
                 href="https://www.mercurynews.com/2019/05/06/palo-alto-teens-turn-school-project-into-national-nonprofit-that-tackles-achievement-gap/"
                 style={linkStyles}
@@ -156,7 +156,7 @@ export const News: React.FC = () => {
                 </Card>
               </a>
             </Col>
-            <Col>
+            <Col md = {4}>
               <a
                 href="https://www.roboticsforall.net/uploads/1/1/5/4/115434321/scan0001_1.jpg"
                 style={linkStyles}
@@ -235,26 +235,33 @@ export const News: React.FC = () => {
           >
             <Carousel>
               <Carousel.Item>
+                <div className = "d-flex justify-content-center">
+                  <iframe
+                    // style={{ width: "100%", height: "315px" }}
+                    src="https://www.youtube.com/embed/xK1wg0mwJP8"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <div className = "d-flex justify-content-center">
+
                 <iframe
                   // style={{ width: "100%", height: "315px" }}
-                  src="https://www.youtube.com/embed/xK1wg0mwJP8"
+                  src="https://www.youtube.com/embed/IqgSK39czO0"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
+                </div>
+
               </Carousel.Item>
 
               <Carousel.Item>
-              <iframe
-                // style={{ width: "100%", height: "315px" }}
-                src="https://www.youtube.com/embed/IqgSK39czO0"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              </Carousel.Item>
-
-              <Carousel.Item>
+              <div className = "d-flex justify-content-center">
 
                 <iframe
                   // style={{ width: "100%", height: "315px" }}
@@ -263,9 +270,13 @@ export const News: React.FC = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
+                </div>
+
               </Carousel.Item>
 
               <Carousel.Item>
+              <div className = "d-flex justify-content-center">
+
                 <iframe
                   // style={{ width: "100%", height: "315px" }}
                   src="https://www.youtube.com/embed/jHhpK_vlJcQ"
@@ -273,6 +284,8 @@ export const News: React.FC = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   ></iframe>
+                </div>
+
               </Carousel.Item>
             </Carousel>
           </Container>
@@ -296,7 +309,9 @@ export const News: React.FC = () => {
             <Carousel>
               {photos.map((x, i) => (
                 <Carousel.Item>
-                  <Image fluid src={x.default} alt="" />
+                  <div className = "d-flex justify-content-center">
+                    <Image fluid src={x.default} alt="" />
+                  </div>
                 </Carousel.Item>
               ))}
             </Carousel>
