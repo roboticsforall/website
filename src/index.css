@@ -406,13 +406,6 @@ video {
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* text style on header blobs */
-  .header-description-size {
-    font-size: 13px;
-  }
-  .header-size {
-    font-size: 27px;
-  }
   .video-width {
     width: 100% !important;
     height: auto;
@@ -424,12 +417,6 @@ video {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .header-description-size {
-    font-size: 13px;
-  }
-  .header-size {
-    font-size: 35px;
-  }
   .video-width {
     width: 100%;
     height: auto;
@@ -441,12 +428,6 @@ video {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .header-description-size {
-    font-size: 15px;
-  }
-  .header-size {
-    font-size: 43px;
-  }
   img {
     max-width: 100% !important;
   }
@@ -454,12 +435,6 @@ video {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .header-description-size {
-    font-size: 20px;
-  }
-  .header-size {
-    font-size: 55px;
-  }
   .aff-org-card-link:hover {
     transition: 0.2s;
     letter-spacing: 0.25em;
@@ -477,12 +452,6 @@ video {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .header-description-size {
-    font-size: 20px;
-  }
-  .header-size {
-    font-size: 60px;
-  }
   .video-width {
     height: 30vmax;
   }
@@ -495,12 +464,6 @@ video {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 2500px) {
-  .header-description-size {
-    font-size: 30px;
-  }
-  .header-size {
-    font-size: 90px;
-  }
   .video-width {
     /* width: 75% !important; */
     height: 20vmax;
