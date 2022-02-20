@@ -60,16 +60,8 @@ export const Schools: React.FC = () => {
           <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={enroll_links.link}
-          className="hyperlink"
-        >
-          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
-          </Row>
-        </a>
+        <LongButtonWithHyperlink title = {"Partner With Us Today!"} location = {enroll_links.link} backgroundColor = {ColorThemes.mainGreen} />
+
       </Container>
       <br></br>
       <div style={greenRow}>

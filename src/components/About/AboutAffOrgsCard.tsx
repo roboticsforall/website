@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Image, Col } from "react-bootstrap";
-import homePageVideo from "@/media/homePageVideo.mp4";
+import { createUseStyles } from "react-jss";
 
 import "../../index.css";
 
@@ -13,6 +13,25 @@ export const AboutAffOrgsCard: React.FC<{
 	orgAbrv: string;
 	linkColor: string;
 }> = (props) => {
+
+	const useStyles = createUseStyles({
+		link: {
+		  composes: "hyperlink text-center",
+		  fontFamily: "BeVietnam-ExtraBold",
+		  transition: "0.2s",
+		  letterSpacing: "0.1em",
+		  color: props.linkColor,
+		  "&:hover": {
+			transition: "0.2s",
+			letterSpacing: "0.25em",
+			color: props.linkColor,
+		  },
+		},
+	  });
+
+
+	  const classes = useStyles();
+
 	return (
 		<Row className="justify-content-center">
 			<Col className="" md={11} lg={11} xl={11}>
@@ -56,13 +75,12 @@ export const AboutAffOrgsCard: React.FC<{
 					</Col>
 					<Col md={4} lg={4} xl={4} className="center-align">
 						<a
-							style={{ color: props.linkColor }}
 							rel="noopener noreferrer"
 							target="_blank"
-							className="text-center hyperlink"
+							className = {classes.link}
 							href={props.website}
 						>
-							<p className = "aff-org-card-link">VISIT {props.orgAbrv}</p>
+							<p>VISIT {props.orgAbrv}</p>
 						</a>
 					</Col>
 				</Row>
