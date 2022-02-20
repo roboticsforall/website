@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Image, Row, Col, Container, Modal, Button, Stack } from "react-bootstrap";
+import { Image, Row, Col, Container, Modal } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
-import exitIcon from "@/media/Icons/exitIcon.svg";
 import { createUseStyles } from "react-jss";
-import { ColorThemes } from "@/colors";
 
 interface IProps {
   link: string;
@@ -15,7 +13,6 @@ interface IProps {
 }
 
 export const CourseCard: React.FC<IProps> = (props: IProps) => {
-  const [dropdownDisplay, setDropdownDisplay] = useState("none");
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -24,12 +21,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const text: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     // whiteSpace: "nowrap",
-  };
-  const dropdownHeaderText: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-  };
-  const dropdownText: React.CSSProperties = {
-    fontFamily: "BeVietnam-Medium",
   };
 
   const useStyles = createUseStyles({

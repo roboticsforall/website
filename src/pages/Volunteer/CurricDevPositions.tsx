@@ -23,9 +23,6 @@ export const CurricDevPositions: React.FC = () => {
     padding: "20px",
     height: "100%",
   };
-  const black = {
-    color: "#000000",
-  };
   const positionsTitle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
@@ -53,7 +50,7 @@ export const CurricDevPositions: React.FC = () => {
           <Nav justify fill variant="tabs">
             <Nav.Item>
               <Nav.Link eventKey="one" style={ActiveStyle}>
-                <p style={black}>Curriculum Developer Positions</p>
+                <p>Curriculum Developer Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>

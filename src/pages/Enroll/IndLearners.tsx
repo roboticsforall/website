@@ -57,6 +57,16 @@ export const IndLearners: React.FC = () => {
           <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
         </h5>
         <br/>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={enroll_links.link}
+          className="hyperlink"
+          >
+          <Row className="ind-learners-enroll-button rounded p-2 justify-content-center align-items-center">
+            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
+          </Row>
+        </a>
       </Container>
       <br></br>
       <br></br>
@@ -87,17 +97,17 @@ export const IndLearners: React.FC = () => {
                 dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
-                )}
-              />
-            ))}
+                  )}
+                  />
+                  ))}
           </Row>
           <br></br>
           <br></br>
         </Container>
-      </div>
       <Container>
+        <hr/>
         <br/>
-        <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
+        <h2 style={positionsTitle}>COURSE SYLLABI</h2>
         <br/>
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
@@ -108,22 +118,13 @@ export const IndLearners: React.FC = () => {
               backgroundColor={ColorThemes.lightBlue}
               key={i}
             />
-          ))}
+            ))}
         </Row>
         <br/>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={enroll_links.link}
-          className="hyperlink"
-        >
-          <Row className="ind-learners-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
-          </Row>
-        </a>
         <br/>
         </Container>
-      <div style={blueRow}>
+        </div>
+      <div>
         <br/>
         <h2 style={positionsTitle}>FAQs</h2>
         <Container>

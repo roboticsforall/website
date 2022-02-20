@@ -112,7 +112,7 @@ export const VolOverview: React.FC = () => {
           <VolOverviewCard
             learnMoreLink="/volunteer/teacherpos"
             backgroundcolor={ColorThemes.lightOrange}
-            buttonColor={ColorThemes.mainOrange}
+            buttonColor={ColorThemes.darkOrange}
             title={"Teacher Assistant"}
             description={
               "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."

@@ -60,11 +60,21 @@ export const Schools: React.FC = () => {
           <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={enroll_links.link}
+          className="hyperlink"
+        >
+          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
+            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
+          </Row>
+        </a>
       </Container>
       <br></br>
       <div style={greenRow}>
-        <Container>
-          <br></br>
+      <Container>
+      <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
           <h5 style={bodyText}>
@@ -90,42 +100,33 @@ export const Schools: React.FC = () => {
                   "/public",
                   ""
                 )}
-              />
-            ))}
+                />
+                ))}
           </Row>
           <br></br>
           <br></br>
-        </Container>
-      </div>
+        <br/>
+      </Container>
       <Container>
+          <hr/>
         <br/>
         <h2 style={positionsTitle}>COURSE SYLLABI</h2>
         <br/>
         <Row className="justify-content-between m-0">
           {syllabiJSON.syllabi_list.map((flagInfo, i) => (
             <FlagCard
-              image={flagInfo.file_path.replace("/public", "")}
+            image={flagInfo.file_path.replace("/public", "")}
               title={flagInfo.language}
               link={flagInfo.link}
               backgroundColor= {ColorThemes.lightGreen}
               key={i}
             />
-          ))}
+            ))}
         </Row>
         <br/>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={enroll_links.link}
-          className="hyperlink"
-        >
-          <Row className="school-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
-          </Row>
-        </a>
-        <br/>
-      </Container>
-      <div style={greenRow}>
+        </Container>
+      </div>
+      <div>
         <br/>
         <h2 style={positionsTitle}>FAQs</h2>
         <Container>

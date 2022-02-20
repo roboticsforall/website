@@ -4,7 +4,6 @@ import { Header } from "@/components/Header";
 import { NewsCard } from "@/components/About/NewsCard";
 import { LongButton } from "@/components/LongButton";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
-import { SubmitButton } from "@/components/SubmitButton";
 import newsletterJSON from "@/posts/newsletters.json";
 
 import { ColorThemes } from "@/colors";

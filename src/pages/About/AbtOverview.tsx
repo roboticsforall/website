@@ -11,7 +11,7 @@ export const AbtOverview: React.FC = () => {
   };
 
   const visionColor: React.CSSProperties = {
-    color: ColorThemes.mainGreen,
+    color: ColorThemes.darkGreen,
   };
 
   const valuesColor: React.CSSProperties = {
@@ -72,7 +72,7 @@ export const AbtOverview: React.FC = () => {
           <div></div>
           <p >
             We are{" "}
-            <span  style={{color: ColorThemes.mainGreen}}>
+            <span style={{color: ColorThemes.mainGreen}}>
               accountable
             </span>
             . We emain honest and transparent in everything we do.

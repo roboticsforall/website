@@ -13,24 +13,6 @@ const photosImport = Array.from(
   (_, i) => import(`../../media/Photos/${(i + 1).toString()}.jpg`)
 );
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-};
-
 export const News: React.FC = () => {
   const [images, setImages] = useState(
     [] as {
