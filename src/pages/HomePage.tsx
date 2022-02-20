@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Container, Col, Image, Ratio, Placeholder } from "react-bootstrap";
+import { Row, Container, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { createUseStyles } from "react-jss";
 // import homePageVideo from "@/media/homePageVideo.mp4";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
@@ -26,9 +27,6 @@ import world from "@/media/HoverImages/world_1.png";
 import { ColorThemes } from "../colors";
 
 export const HomePage: React.FC = () => {
-  const videoRow: React.CSSProperties = {
-    backgroundColor: ColorThemes.mainYellow,
-  };
   const header: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
     color: ColorThemes.mainYellow,
@@ -51,10 +49,13 @@ export const HomePage: React.FC = () => {
   const sponsorImageSize: React.CSSProperties = {
     maxHeight: "7vh",
   };
+  const yellowRow = {
+    backgroundColor: ColorThemes.lightYellow,
+  };
 
   return (
 <>
-    <div style={videoRow} className="d-flex justify-content-center">
+    <div style={yellowRow} className="d-flex justify-content-center">
       <video
         className="video-width"
         autoPlay
@@ -77,7 +78,7 @@ export const HomePage: React.FC = () => {
         </Row>
       </Container>
 
-      <div className="d-flex justify-content-center p-5 yellow-row">
+      <div style = {yellowRow} className="d-flex justify-content-center p-5">
         <Container>
           <Row>
             {[
@@ -101,7 +102,7 @@ export const HomePage: React.FC = () => {
               },
             ].map((info, i) => (
               <Col md={4} className="text-center">
-                <Link to={info.to} className="hyperlink">
+                <Link to = {info.to} className="hyperlink">
                   <Image fluid src={info.src} />
                   <h2
                     style={{
@@ -206,9 +207,21 @@ const HomeAffOrgsCard: React.FC<{
   const imageSize: React.CSSProperties = {
     objectFit: "scale-down",
   };
-  const linkColor: React.CSSProperties = {
-    color: props.linkColor,
-  };
+
+  
+  const useStyles = createUseStyles({
+    link: {
+      composes: "hyperlink",
+      fontFamily: "BeVietnam-ExtraBold",
+      transition: "0.2s",
+      color: props.linkColor,
+      "&:hover": {
+        transition: "0.2s",
+        color: ColorThemes.white,
+      },
+    },
+  });
+  const classes = useStyles();
 
   return (
     <>
@@ -234,8 +247,7 @@ const HomeAffOrgsCard: React.FC<{
           <a
             href={props.link}
             target="_blank"
-            className="home-aff-org-card-link"
-            style={linkColor}
+            className = {classes.link}
             rel="noreferrer"
           >
             <p>LEARN MORE</p>

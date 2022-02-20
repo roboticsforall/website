@@ -81,16 +81,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  letter-spacing: 1.4px;
-}
 
 /* font sizes */
 
@@ -149,6 +139,7 @@ textarea {
   outline: none !important;
   border: none !important;
 }
+
 input,
 textarea {
   background-color: #ffcc004d;
@@ -165,48 +156,6 @@ label {
   font-family: "BeVietnam-Bold";
 }
 
-.checkbox {
-  width: 40px !important;
-  background-color: #ffdb4d;
-  opacity: 1;
-  color: #ffffff;
-}
-.checkbox:hover {
-  background-color: #ffdb4d;
-  opacity: 0.5;
-}
-
-.checkbox::selection {
-  background-color: #ffcc00;
-}
-
-.long-button {
-  border: none;
-  transition: 200ms;
-  background-color: #ffcc00;
-}
-
-.long-button:hover {
-  transition: 200ms;
-  background-color: #ffcc00ca;
-}
-
-.newsletter-card {
-  transition: 200ms;
-  background-color: #ffcc0080;
-  font-family: "Oswald-Medium";
-}
-
-.newsletter-card:hover {
-  transition: 200ms;
-  background-color: #ffcc00;
-}
-
-.aff-org-card-link {
-  font-family: "BeVietnam-ExtraBold", sans-serif;
-  letter-spacing: 0.1em;
-  transition: 0.2s;
-}
 .react-multi-carousel-item {
   margin: 10px;
 }
@@ -314,52 +263,12 @@ label {
 }
 /*#endregion*/
 
-/* #region indlearners and for schools */
-.ind-learners-enroll-button {
-  border: none;
-  transition: 200ms;
-  background-color: #3399ff;
-}
-.school-enroll-button {
-  border: none;
-  transition: 200ms;
-  background-color: #33cc66;
-}
-.ind-learners-enroll-button:hover,
-.school-enroll-button:hover {
-  transition: 200ms;
-  background-color: #ffdb4d;
-}
-.course-dropdown-card {
-  display: none;
-}
-.course-dropdown-card:hover {
-  display: flex;
-}
-.ind-learners-flag-course-card:hover + .course-dropdown-card,
-.school-flag-course-card:hover + .course-dropdown-card {
-  display: flex;
-}
-/* #endregion */
-
 /* #region homepage styling */
-.home-aff-org-card-link {
-  font-family: "BeVietnam-ExtraBold", sans-serif;
-  transition: 0.2s;
-  text-decoration: none;
-}
-
-.yellow-row {
-  background-color: #ffcc004d;
-}
-
 .video-width {
   height: 60vh;
   width: 75% !important;
 }
 /* #endregion */
-
-/*#endregion*/
 
 /* #region helper classes */
 .hyperlink,
@@ -367,16 +276,10 @@ label {
   text-decoration: none;
   color: black;
 }
-.C06202 {
-  color: #c06202;
-}
 .center-align {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.mb-6 {
-  margin-bottom: 6em;
 }
 /*#endregion*/
 
@@ -460,18 +363,8 @@ video {
   .header-size {
     font-size: 55px;
   }
-  .aff-org-card-link:hover {
-    transition: 0.2s;
-    letter-spacing: 0.25em;
-    text-decoration: none;
-  }
   .video-width {
     height: 30vmax;
-  }
-  .home-aff-org-card-link:hover {
-    transition: 0.2s;
-    text-decoration: none;
-    color: white !important;
   }
 }
 
@@ -486,11 +379,6 @@ video {
   .video-width {
     height: 30vmax;
   }
-  .home-aff-org-card-link:hover {
-    transition: 0.2s;
-    text-decoration: none;
-    color: white;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -504,10 +392,5 @@ video {
   .video-width {
     /* width: 75% !important; */
     height: 20vmax;
-  }
-  .home-aff-org-card-link:hover {
-    transition: 0.2s;
-    text-decoration: none;
-    color: white;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import { NewsCard } from "@/components/About/NewsCard";
-import { LongButton } from "@/components/LongButton";
+import { LongButtonWithRouterLink } from "@/components/LongButton";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import newsletterJSON from "@/posts/newsletters.json";
 
@@ -45,7 +45,7 @@ export const Newsletter: React.FC = () => {
 				</Row>
 
 				{/* Read Previous News Button */}
-				<LongButton
+				<LongButtonWithRouterLink
 					title={"Read Previous Newsletters"}
 					location="/about/pastnewsletter"
 				/>

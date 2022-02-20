@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { FlagCard } from "@/components/Enroll/FlagCard";
 import { CourseCard } from "@/components/Enroll/CourseCard";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
+import { LongButtonWithHyperlink } from "@/components/LongButton"
 
 import Markdown from "markdown-to-jsx";
 
@@ -57,16 +58,8 @@ export const IndLearners: React.FC = () => {
           <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
         </h5>
         <br/>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={enroll_links.link}
-          className="hyperlink"
-          >
-          <Row className="ind-learners-enroll-button rounded p-2 justify-content-center align-items-center">
-            <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
-          </Row>
-        </a>
+        <LongButtonWithHyperlink title = {"Enroll in a Course Today!"} location = {enroll_links.link} backgroundColor = {ColorThemes.mainBlue} />
+
       </Container>
       <br></br>
       <br></br>
