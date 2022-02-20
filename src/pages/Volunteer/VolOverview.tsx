@@ -93,14 +93,13 @@ export const VolOverview: React.FC = () => {
             <VolOverviewImg
               image={InternToby}
               color={ColorThemes.darkBlue}
-              title={"Publicity Volunteer"}
+              title={"Intern"}
             />
           </Col>
         </Row>
         <br></br>
         <Col>
           <VolOverviewCard
-            applyLink="/volunteer/volunteerapp"
             learnMoreLink="/volunteer/teacherpos"
             backgroundcolor={ColorThemes.lightGreen}
             buttonColor={ColorThemes.darkGreen}
@@ -111,10 +110,9 @@ export const VolOverview: React.FC = () => {
           ></VolOverviewCard>
           <br></br>
           <VolOverviewCard
-            applyLink="/volunteer/volunteerapp"
             learnMoreLink="/volunteer/teacherpos"
             backgroundcolor={ColorThemes.lightOrange}
-            buttonColor={ColorThemes.mainOrange}
+            buttonColor={ColorThemes.darkOrange}
             title={"Teacher Assistant"}
             description={
               "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."
@@ -122,13 +120,12 @@ export const VolOverview: React.FC = () => {
           ></VolOverviewCard>
           <br></br>
           <VolOverviewCard
-            applyLink="/volunteer/volunteerapp"
-            learnMoreLink="/volunteer/publicitypos"
+            learnMoreLink="/volunteer/internoverview"
             backgroundcolor={ColorThemes.lightBlue}
             buttonColor={ColorThemes.darkBlue}
-            title={"Publicity Intern"}
+            title={"Intern"}
             description={
-              "Publicity Interns help our publicity team to make awesome new visuals, giving you the great branding on this website!"
+              "Interns help across the backend of our organization in many ways and provide a vital service to our nonprofit, while gaining valuable business experiences."
             }
           ></VolOverviewCard>
         </Col>

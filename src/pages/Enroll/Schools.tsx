@@ -60,20 +60,6 @@ export const Schools: React.FC = () => {
           <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
-        <h5 style={bodyText}>View our detailed syllabi below:</h5>
-        <br></br>
-        <Row className="justify-content-between m-0">
-          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <FlagCard
-              image={flagInfo.file_path.replace("/public", "")}
-              title={flagInfo.language}
-              link={flagInfo.link}
-              backgroundColor="#33cc6699"
-              key={i}
-            />
-          ))}
-        </Row>
-        <br></br>
         <a
           target="_blank"
           rel="noreferrer"
@@ -86,10 +72,9 @@ export const Schools: React.FC = () => {
         </a>
       </Container>
       <br></br>
-      <br></br>
       <div style={greenRow}>
-        <Container>
-          <br></br>
+      <Container>
+      <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
           <h5 style={bodyText}>
@@ -100,7 +85,7 @@ export const Schools: React.FC = () => {
             more
           </h5>
           <br></br>
-          <Row>
+          <Row className = "g-4">
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
@@ -115,20 +100,43 @@ export const Schools: React.FC = () => {
                   "/public",
                   ""
                 )}
-              />
-            ))}
+                />
+                ))}
           </Row>
           <br></br>
           <br></br>
+        <br/>
+      </Container>
+      <Container>
+          <hr/>
+        <br/>
+        <h2 style={positionsTitle}>COURSE SYLLABI</h2>
+        <br/>
+        <Row className="justify-content-between m-0">
+          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+            <FlagCard
+            image={flagInfo.file_path.replace("/public", "")}
+              title={flagInfo.language}
+              link={flagInfo.link}
+              backgroundColor= {ColorThemes.lightGreen}
+              key={i}
+            />
+            ))}
+        </Row>
+        <br/>
         </Container>
       </div>
-      <h2 style={positionsTitle}>FAQs</h2>
-      <Container>
-        <FAQDropdowns
-            data = {forschoolsFAQJSON.schools_and_partners_faqs}
-          />
-        <br />
-      </Container>
+      <div>
+        <br/>
+        <h2 style={positionsTitle}>FAQs</h2>
+        <Container>
+          <FAQDropdowns
+              data = {forschoolsFAQJSON.schools_and_partners_faqs}
+            />
+          <br />
+        </Container>
+      </div>
+
     </>
   );
 };

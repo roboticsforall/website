@@ -56,28 +56,14 @@ export const IndLearners: React.FC = () => {
         <h5 style={bodyText}>
           <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
         </h5>
-        <br />
-        <h5 style={bodyText}>View our detailed syllabi below:</h5>
-        <br></br>
-        <Row className="justify-content-between m-0">
-          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <FlagCard
-              image={flagInfo.file_path.replace("/public", "")}
-              title={flagInfo.language}
-              link={flagInfo.link}
-              backgroundColor={ColorThemes.lightBlue}
-              key={i}
-            />
-          ))}
-        </Row>
-        <br></br>
+        <br/>
         <a
           target="_blank"
           rel="noreferrer"
           href={enroll_links.link}
           className="hyperlink"
-        >
-          <Row className="ind-learners-enroll-button mx-2 p-2 justify-content-center align-items-center">
+          >
+          <Row className="ind-learners-enroll-button rounded p-2 justify-content-center align-items-center">
             <h3 style={enrollButtonTitle}>Enroll in a Course Today!</h3>
           </Row>
         </a>
@@ -97,7 +83,7 @@ export const IndLearners: React.FC = () => {
             more:
           </h5>
           <br></br>
-          <Row>
+          <Row className = "g-4">
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
@@ -111,21 +97,43 @@ export const IndLearners: React.FC = () => {
                 dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
-                )}
-              />
-            ))}
+                  )}
+                  />
+                  ))}
           </Row>
           <br></br>
           <br></br>
         </Container>
-      </div>
-      <h2 style={positionsTitle}>FAQs</h2>
       <Container>
-        <FAQDropdowns
-            data = {indlearnersFAQJSON.ind_learners_faqs}
-          />
+        <hr/>
+        <br/>
+        <h2 style={positionsTitle}>COURSE SYLLABI</h2>
+        <br/>
+        <Row className="justify-content-between m-0">
+          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+            <FlagCard
+              image={flagInfo.file_path.replace("/public", "")}
+              title={flagInfo.language}
+              link={flagInfo.link}
+              backgroundColor={ColorThemes.lightBlue}
+              key={i}
+            />
+            ))}
+        </Row>
+        <br/>
+        <br/>
+        </Container>
+        </div>
+      <div>
+        <br/>
+        <h2 style={positionsTitle}>FAQs</h2>
+        <Container>
+          <FAQDropdowns
+              data = {indlearnersFAQJSON.ind_learners_faqs}
+            />
           <br />
-      </Container>
+        </Container>
+      </div>
     </>
   );
 };

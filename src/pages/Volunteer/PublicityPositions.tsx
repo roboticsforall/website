@@ -8,7 +8,6 @@ import { PosButton } from "@/components/Volunteer/PosButton";
 import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
-import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import publicityInternJSON from "@/posts/publicity_intern_position_description.json";
 
@@ -25,18 +24,6 @@ export const PublicityPositions: React.FC = () => {
     padding: "20px",
     height: "100%",
   };
-  const black = {
-    color: "#000000",
-  };
-  const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
-    letterSpacing: "0.25em",
-    color: ColorThemes.mainOrange,
-    textAlign: "center",
-    textTransform: "uppercase",
-    wordBreak: "break-word"
-  };
-
   return (
     <div>
       <Header
@@ -55,7 +42,7 @@ export const PublicityPositions: React.FC = () => {
           <Nav justify fill variant="tabs">
             <Nav.Item>
               <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
-                <p style={black}>Publicity Intern Positions</p>
+                <p>Publicity Intern Positions</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>

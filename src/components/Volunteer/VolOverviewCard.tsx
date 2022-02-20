@@ -8,7 +8,6 @@ export const VolOverviewCard: React.FC<{
   learnMoreLink: string;
   title: string;
   description: string;
-  applyLink: string;
 }> = (props) => {
   const positionsTitle = {
     fontFamily: "Oswald-Medium",
@@ -21,9 +20,11 @@ export const VolOverviewCard: React.FC<{
   };
   const button = {
     backgroundColor: props.backgroundcolor,
+  };
+  const linkText = {
     color: props.buttonColor,
     fontFamily: "Oswald-Medium",
-  };
+  }
   return (
     <Container>
       <Row>
@@ -33,23 +34,14 @@ export const VolOverviewCard: React.FC<{
             <p style={description}>{props.description}</p>
           </Row>
         </Col>
-        <Col>
-          <Row className="h-100 align-items-between">
-            <Link
-              to={props.learnMoreLink}
-              className="rounded center-align hyperlink mb-md-3 p-3"
-              style={button}
-            >
-              <p className = "aff-org-card-link">Learn More</p>
-            </Link>
-            <Link
-              to={props.applyLink}
-              className=" rounded hyperlink center-align p-3"
-              style={button}
-            >
-              <p className = "aff-org-card-link">Apply</p>
-            </Link>
-          </Row>
+        <Col className = "center-align rounded" style={button}>
+          <Link
+            to={props.learnMoreLink}
+            className="rounded hyperlink"
+            style = {linkText}
+          >
+            <p className = "aff-org-card-link">Learn More</p>
+          </Link>
         </Col>
       </Row>
     </Container>

@@ -44,9 +44,6 @@ export const TeacherPos: React.FC = () => {
     padding: "20px",
     height: "100%",
   };
-  const blackText = {
-    color: ColorThemes.black,
-  };
   const positionsTitle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
     letterSpacing: "0.25em",
@@ -77,7 +74,7 @@ export const TeacherPos: React.FC = () => {
                 eventKey="one"
                 style={key === "one" ? ActiveStyle : inActiveStyle}
               >
-                <p style={blackText}>Lead Instructor</p>
+                <p>Lead Instructor</p>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -85,7 +82,7 @@ export const TeacherPos: React.FC = () => {
                 eventKey="two"
                 style={key === "two" ? ActiveStyle : inActiveStyle}
               >
-                <p style={blackText}>Teacher Assistant</p>
+                <p>Teacher Assistant</p>
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -147,7 +144,7 @@ export const TeacherPos: React.FC = () => {
                 }
               />
               <TabsCardLeftImage
-                posHeader={"REQUIemENTS"}
+                posHeader={"REQUIRMENTS"}
                 generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={

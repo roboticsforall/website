@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Image, Row, Col, Container, Modal, Button, Stack } from "react-bootstrap";
+import { Image, Row, Col, Container, Modal } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
-import exitIcon from "@/media/Icons/exitIcon.svg";
 import { createUseStyles } from "react-jss";
-import { ColorThemes } from "@/colors";
 
 interface IProps {
   link: string;
@@ -15,7 +13,6 @@ interface IProps {
 }
 
 export const CourseCard: React.FC<IProps> = (props: IProps) => {
-  const [dropdownDisplay, setDropdownDisplay] = useState("none");
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -23,13 +20,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   const text: React.CSSProperties = {
     fontFamily: "Oswald-Medium",
-    whiteSpace: "nowrap",
-  };
-  const dropdownHeaderText: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
-  };
-  const dropdownText: React.CSSProperties = {
-    fontFamily: "BeVietnam-Medium",
+    // whiteSpace: "nowrap",
   };
 
   const useStyles = createUseStyles({
@@ -49,17 +40,18 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   return (
     <>
       <Col
-        className={classes.cardBackground}
         md={4}
         lg={3}
         onClick={handleShow}
       >
-        <div className="d-flex justify-content-center">
-          <Image fluid src={props.courseImage} />
-        </div>
-        <div className="text-center">
-          <h3 style={text}>{props.title}</h3>
-        </div>
+        <Container className={classes.cardBackground}>
+          <div className="d-flex justify-content-center">
+            <Image fluid src={props.courseImage} />
+          </div>
+          <div className="text-center">
+            <h3 style={text}>{props.title}</h3>
+          </div>
+        </Container>
       </Col>
 
       <Modal centered fullscreen={"md-down"} size={"lg"} show={show} onHide={handleClose}>
