@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { FlagCard } from "@/components/Enroll/FlagCard";
 import { CourseCard } from "@/components/Enroll//CourseCard";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
+import { LongButtonWithHyperlink } from "@/components/LongButton";
 
 import Markdown from "markdown-to-jsx";
 
