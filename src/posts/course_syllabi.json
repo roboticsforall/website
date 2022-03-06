@@ -1,6 +1,11 @@
 {
   "syllabi_list": [
     {
+      "language": "English",
+      "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit?usp=sharing",
+      "file_path": "/public/uploads/flagimg/america.png"
+    },
+    {
       "language": "Chinese",
       "link": "https://docs.google.com/document/d/1Xf4adQvaP19IuL_wRfj5KGwoMeUJHadaFhXkALyI_4g/edit?usp=sharing",
       "file_path": "/public/uploads/flagimg/chinese.png"
