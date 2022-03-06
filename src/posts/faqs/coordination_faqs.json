@@ -7,6 +7,26 @@
     {
       "question": "How much do the classes cost?",
       "answer": "While we charge a $100 fee and recommend a $50 donation (any amount over $100 is tax-deductible), fee waivers are readily available."
+    },
+    {
+      "question": "What materials are needed for the classes?",
+      "answer": "A desktop or laptop computer is recommended for the best experience. Tablets may be used but could lack certain features for some of the platforms used in our classes."
+    },
+    {
+      "question": "What is the format of the class?",
+      "answer": "Classes include two one-hour classes over zoom every week. Most classes have optional homework for enrichment purposes."
+    },
+    {
+      "question": "How long is one session?",
+      "answer": "All of our direct enrollment classes are 8 weeks."
+    },
+    {
+      "question": "Will there be more classes in the future?",
+      "answer": "Robotics for All may offer more classes in a later session. Please check this page in the future for any updates!"
+    },
+    {
+      "question": "What is the cancellation policy?",
+      "answer": "All registrations cancelled two weeks before the course starts will receive a full refund, minus a 3% payment processing fee. All registrations cancelled one week before the course starts will receive a 50% refund, minus a 3% payment processing fee. Registrations cancelled less than one week prior to the course start date will receive no refund."
     }
   ],
   "schools_and_partners_faqs": [
