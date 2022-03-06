@@ -31,8 +31,12 @@
   ],
   "schools_and_partners_faqs": [
     {
-      "question": "Some question",
-      "answer": "Some Answer"
+      "question": "How much does the program cost?",
+      "answer": "Robotics for All provides its classes free of cost to schools and partner organizations."
+    },
+    {
+      "question": "What materials are needed for the classes?",
+      "answer": "Some classes require a laptop computer or a tablet. Most classes require store-bought kits. Please contact us to discuss options for acquiring the kits."
     }
   ]
 }
