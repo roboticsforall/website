@@ -61,7 +61,7 @@ export const Schools: React.FC = () => {
           <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
-        <LongButtonWithHyperlink title = {"Partner With Us Today!"} location = {enroll_links.link} backgroundColor = {ColorThemes.mainGreen} />
+        <LongButtonWithHyperlink title = {"Partner With Us Today!"} location = {enroll_links.schools_and_partners_link} backgroundColor = {ColorThemes.mainGreen} />
 
       </Container>
       <br></br>

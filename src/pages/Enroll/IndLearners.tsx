@@ -58,7 +58,7 @@ export const IndLearners: React.FC = () => {
           <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
         </h5>
         <br/>
-        <LongButtonWithHyperlink title = {"Enroll in a Course Today!"} location = {enroll_links.link} backgroundColor = {ColorThemes.mainBlue} />
+        <LongButtonWithHyperlink title = {"Enroll in a Course Today!"} location = {enroll_links.ind_learners_link} backgroundColor = {ColorThemes.mainBlue} />
 
       </Container>
       <br></br>
