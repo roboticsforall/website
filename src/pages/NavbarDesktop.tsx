@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import { enrollvolunteerabout } from "@/navbarroutes";
 
 export const NavbarDesktop: React.FC = () => {
+
   const logoImageSize = {
     height: "7vh",
   };
+
   const navHeader = {
     display: "flex",
     alignItems: "center",
@@ -36,7 +38,7 @@ export const NavbarDesktop: React.FC = () => {
     <nav className="py-5" style={navContainer}>
       <header style={navHeader}>
         <Link to="/">
-          <img src={TobyHeaderLogo} style={logoImageSize} />
+          <img className = "imageSize" src={TobyHeaderLogo} style={logoImageSize} />
         </Link>
         <Link className="hyperlink" to="/">
           <h2 style={navHeading}>Robotics For All</h2>

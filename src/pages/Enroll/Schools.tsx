@@ -47,7 +47,7 @@ export const Schools: React.FC = () => {
         image={headerBlobGreen}
         title={"Partner with us Today for After-School STEM Programs!"}
         description={
-          "Choose from any of our 5 levels of curriculum offered to schools and join the community of schools we partner with to offer classes!"
+          ""
         }
       />
       <br />

@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
               <a className="hyperlink " href={"tel:+6506659734"}>
-                (650)-665-9734
+              (234) 564-2057
               </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
@@ -107,28 +107,28 @@ export const Footer: React.FC = () => {
                 href="https://www.facebook.com/roboticsforalleducation/"
                 rel="noreferrer"
               >
-                <Image style={iconSize} src={facebookIcon} />
+                <Image className = "imageSize" style={iconSize} src={facebookIcon} />
               </a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/roboticsforall/"
                 rel="noreferrer"
               >
-                <Image style={iconSize} src={instagramIcon} />
+                <Image className = "imageSize" style={iconSize} src={instagramIcon} />
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/company/robotics-for-all"
                 rel="noreferrer"
               >
-                <Image style={iconSize} src={linkedin} />
+                <Image className = "imageSize" style={iconSize} src={linkedin} />
               </a>
               <a
                 target="_blank"
                 href="https://www.guidestar.org/"
                 rel="noreferrer"
               >
-                <Image style={iconSize} src = {guidestar}/>
+                <Image className = "imageSize" style={iconSize} src = {guidestar}/>
               </a>
             </div>
           </Col>

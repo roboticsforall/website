@@ -6,7 +6,6 @@ import { createUseStyles } from "react-jss";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
-import MFALogo from "@/media/AffiliatedOrgs/MFA_Logo.png";
 
 import LM from "@/media/Sponsors/lm.png";
 import TF from "@/media/Sponsors/tf.png";

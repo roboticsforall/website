@@ -44,7 +44,7 @@ export const IndLearners: React.FC = () => {
         image={headerBlobBlue}
         title={"Take a Class with us Today!"}
         description={
-          "Learn from any of our 12 levels of curriculum and join the community of 1027 students we've taught!"
+          ""
         }
       />
       <br />

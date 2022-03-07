@@ -305,6 +305,9 @@ label {
 video {
   background-color: black;
 }
+.imageSize {
+  max-width: 100% !important;
+}
 
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
