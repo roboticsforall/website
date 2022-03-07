@@ -52,11 +52,12 @@ collections:
               - {label: Language of Syllabi Google Document, name: language, widget: string}
               - {label: Google Drive Link to Syllabi Google Document, name: link, widget: string}
               - {label: Flag of Country Language Belongs To, name: file_path, widget: image, media_folder: /public/uploads/flagimg}
-      - label: Google Drive Link to Enrollment Signup Document
+      - label: Google Drive Links to Enrollment Signup Document
         name: enrollment_form_document_link
         file: src/posts/enrollment_form_document_link.json
         fields:
-          - {label: link, name: link, widget: string}
+          - {label: Individual Learners link, name: ind_learners_link, widget: string}
+          - {label: Schools and Partners Link, name: schools_and_partners_link, widget: string}
       - label: Editable Texts # used in UI
         name: editable_texts # used in routes
         file: src/posts/editable_texts.json
