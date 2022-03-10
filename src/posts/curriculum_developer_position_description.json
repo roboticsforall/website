@@ -1,9 +1,9 @@
 {
-  "curriculum_developer_details": "Add Text",
+  "curriculum_developer_details": "Curriculum Development Interns at Robotics For All are in charge of developing new curricula for our classes. They allow our organization run classes on standardized curriculum, maximizing the class quality and greatly assisting teachers. Interns are assigned to either create or improve a specific curriculum. This is the perfect opportunity for anyone who is interested in computer science or education! High school and college students are welcome to apply.",
   "positions": [
     {
-      "name": "Add Text",
-      "description": "Add Text"
+      "name": "OnShape Curriculum Developer",
+      "description": "Onshape curriculum developers will create the new 8-week CAD with Onshape curriculum to teach students new to CAD how to use the software. This curriculum will be targeted at 6th-8th graders and will be taught by Robotics For All’s volunteer teachers. It may include curriculum summaries, enrichment activities, and/or video lessons. Applicants must have a strong background with Computer-aided Design (CAD). They must also have substantial experience with Onshape. We will ask for a past project created in Onshape if you are moved to the interview phase of our process (a team or small project is fully acceptable; we just want to see that you have used the software before)."
     }
   ]
 }
