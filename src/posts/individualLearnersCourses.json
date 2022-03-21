@@ -35,6 +35,12 @@
       "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.bs3rj0uc5m65",
       "file_path": "/public/uploads/coursesimg/java.png",
       "course_description": "The Java (6-8) class introduces students to the basics of Java, a popular programming language. Students do not need experience with Java or programming to take this course."
+    },
+    {
+      "course_name": "New Course",
+      "link": "Some Link",
+      "file_path": "https://ucarecdn.com/cc90df48-d748-49c6-b2a7-8ceebd631a7f/",
+      "course_description": "Some Description"
     }
   ]
 }
