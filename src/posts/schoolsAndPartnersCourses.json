@@ -2,20 +2,20 @@
   "courses_list": [
     {
       "course_name": "Lego Explorers (K-1)",
-      "file_path": "/public/uploads/coursesimg/lego.png",
+      "file_path": "https://ucarecdn.com/f4634de2-886d-4b58-8ae7-b15a172bdc6a/",
       "link": "https://docs.google.com/document/d/177ToKgQabE7PQ2h3uOFwvSZ8KLRKgBkR5IlVU4Qz44w/edit?usp=sharing",
       "course_description": "The Lego Explorers course allows students to build creatively with LEGO bricks, preparing them for more complex builds and robotics. Class may be administered online or in-person."
     },
     {
       "course_name": "Snap Circuits (2-3)",
       "link": "https://docs.google.com/document/d/1mBUvRSysTZnPwCtJDZi9pXS61KWR2fKkCwlck6tEKCo/edit?usp=sharing",
-      "file_path": "/public/uploads/coursesimg/1.png",
+      "file_path": "https://ucarecdn.com/87b6a0f2-063b-4f83-9aef-1b50cb72cb3b/",
       "course_description": "Introduces students to the basics of electricity and circuits through projects using the Snap Circuits Jr. kit. Class may be administered online or in-person."
     },
     {
       "course_name": "VEX GO (3-5)",
       "link": "https://docs.google.com/document/d/1m04QCFIJ3D-K3PDlNP7k1sfHL5vfdPhJcWrlQ20KlJI/edit?usp=sharing",
-      "file_path": "/public/uploads/coursesimg/vex.png",
+      "file_path": "https://ucarecdn.com/2d9067be-babc-453b-b4f2-d9d01d2bb456/",
       "course_description": "The in-person Mechanics and Robotics with VEX GO course teaches students the basics of building and programming robots using the VEX GO kit and Scratch-powered VEXcode blocks. Students do not need experience with robotics or programming to enroll in this class. The course is split into 1A and 1B classes, which can be taken in any order."
     }
   ]
