@@ -17,7 +17,6 @@ export const AboutAffOrgsCard: React.FC<{
 	const useStyles = createUseStyles({
 		link: {
 		  composes: "hyperlink text-center",
-		  fontFamily: "BeVietnam-ExtraBold",
 		  transition: "0.2s",
 		  letterSpacing: "0.1em",
 		  color: props.linkColor,

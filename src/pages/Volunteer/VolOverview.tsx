@@ -14,12 +14,10 @@ import { ColorThemes } from "../../colors";
 
 export const VolOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainOrange,
     textAlign: "center",
   };
   const positionsDescription: React.CSSProperties = {
-    fontFamily: "BeVietnam-SemiBold",
     color: ColorThemes.black,
   };
 

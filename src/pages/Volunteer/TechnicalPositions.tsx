@@ -17,7 +17,6 @@ import googleForms from "@/posts/volunteer_sign_up_forms.json";
 export const TechnicalPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     color: ColorThemes.mainGreen,
     textAlign: "center",
     textTransform: "uppercase",

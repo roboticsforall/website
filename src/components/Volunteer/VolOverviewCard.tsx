@@ -12,10 +12,8 @@ export const VolOverviewCard: React.FC<{
   description: string;
 }> = (props) => {
   const positionsTitle = {
-    fontFamily: "Oswald-Medium",
   };
   const description = {
-    fontFamily: "BeVietnam-Medium",
   };
   const card = {
     backgroundColor: props.backgroundcolor,
@@ -26,7 +24,6 @@ export const VolOverviewCard: React.FC<{
   const useStyles = createUseStyles({
     link: {
       composes: "hyperlink",
-      fontFamily: "Oswald-Medium",
       transition: "0.2s",
       color: props.buttonColor,
       "&:hover": {

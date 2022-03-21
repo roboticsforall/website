@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { createUseStyles } from "react-jss";
 
 const title: React.CSSProperties = {
-  fontFamily: "BeVietnam-ExtraBold",
   textAlign: "center",
 };
 

@@ -21,15 +21,12 @@ import { ColorThemes } from "@/colors";
 
 export const Schools: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainGreen,
     textAlign: "center",
   };
   const boldNote = {
-    fontFamily: "BeVietnam-ExtraBold",
   };
   const bodyText = {
-    fontFamily: "BeVietnam-Medium",
     lineHeight: 1.5,
   };
   const greenRow = {

@@ -24,7 +24,6 @@ import internOverviewJSON from "@/posts/intern_overview.json";
 
 export const InternOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordBreak: "break-word"
