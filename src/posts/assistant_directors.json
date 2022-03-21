@@ -1,16 +1,3 @@
 {
-  "assistant_directors_list": [
-    {
-      "name": "Max",
-      "title_pronouns": "Title",
-      "description": "hello",
-      "image": "/public/uploads/leadershipteamimg/assistantdirectors/max.png"
-    },
-    {
-      "name": "Wrath",
-      "title_pronouns": "A Ferocious Ben Ten Alien",
-      "description": "Roar",
-      "image": "/public/uploads/leadershipteamimg/assistantdirectors/max.png"
-    }
-  ]
+  "assistant_directors_list": []
 }
