@@ -59,70 +59,17 @@
     url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
 }
 @font-face {
+  font-family: "Oswald-Regular";
+  src: url("./fonts/Oswald/Oswald-Regular.ttf") format("tff"),
+    url("./fonts/Oswald/Oswald-Regular.ttf") format("opentype"),
+    url("./fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Oswald-Bold";
   src: url("./fonts/Oswald/Oswald-Bold.ttf") format("tff"),
     url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
     url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }
-/* .container{
-  max-width: 980px;
-} */
-
-html,
-body {
-  height: 100%;
-  /* overflow-x: hidden; */
-}
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* font sizes */
-
-.header {
-  font-family: 'Oswald-Medium';
-  font-size: 9vh;
-  text-align: center;
-}
-.header3 {
-	font-family: 'BeVietnam-ExtraBold';
-}
-.title {
-	font-family: 'Oswald-Medium';
-	text-align: center;
-}
-
-.nameHeader { 
-  font-family: 'Oswald-Medium';
-  text-shadow: 0px 1px 3px rgba(0,0,0,0.58);
-  word-break: break-word;
-  width: 75%;
-}
-.titleHeader {
-  font-family: 'BeVietnam-Bold';
-  text-shadow: 0px 1px 3px rgba(0,0,0,0.22);
-}
-.bodyText {
-  font-family: 'BeVietnam-Medium';
-  color: white;
-}
-.subscriberText {
-	font-family: 'Oswald-Medium';
-}
-
-/* affiliated cards text */
-.affOrgsHeader {
-	font-family: "Mazzard-H-ExtraBold";
-}
-.affOrgsCardText {
-	font-family: "BeVietnam-Medium";
-}
-
 
 input::placeholder,
 textarea::placeholder {
@@ -141,15 +88,6 @@ textarea {
   background-color: #ffcc004d;
   font-family: "BeVietnam-ExtraBold" !important;
   color: #000000;
-}
-
-input::placeholder {
-  color: #b38f00;
-  font-family: "BeVietnam-ExtraBold";
-}
-
-label {
-  font-family: "BeVietnam-Bold";
 }
 
 /* #region Custom styles for navbar */
