@@ -17,8 +17,6 @@ import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
 import YMCA from "@/media/Sponsors/ymca.png";
 
-import transparentImage from "@/media/transparentImage.png";
-
 import home from "@/media/HoverImages/house_1.png";
 import apple from "@/media/HoverImages/apple_1.png";
 import world from "@/media/HoverImages/world_1.png";
@@ -249,7 +247,7 @@ const HomeAffOrgsCard: React.FC<{
             className = {classes.link}
             rel="noreferrer"
           >
-            <p>LEARN MORE</p>
+            <h5>LEARN MORE</h5>
           </a>
         </Col>
       </Row>

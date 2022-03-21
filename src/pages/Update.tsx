@@ -8,12 +8,8 @@ export const Update: React.FC = () => {
     return (
       <>
         {(show && updatesJSON.updates) ? (
-          <Alert variant="dark" onClose={() => setShow(false)} dismissible>
-            <Alert.Heading>Important Update!</Alert.Heading>
-            <hr/>
-            <p>
+          <Alert variant="info" onClose={() => setShow(false)} dismissible>
               {updatesJSON.updates}
-            </p>
           </Alert>
         ) : (<></>)}
       </>

@@ -17,7 +17,6 @@ export const VolOverview: React.FC = () => {
     fontFamily: "Oswald-Medium",
     color: ColorThemes.mainOrange,
     textAlign: "center",
-    letterSpacing: "0.1em",
   };
   const positionsDescription: React.CSSProperties = {
     fontFamily: "BeVietnam-SemiBold",

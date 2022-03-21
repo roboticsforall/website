@@ -5,6 +5,8 @@ import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
 import { PosButton } from "@/components/Volunteer/PosButton";
 
+import { activeStyles } from "@/components/Volunteer/TabCards";
+
 import Markdown from "markdown-to-jsx";
 
 import { ColorThemes } from "@/colors";
@@ -17,13 +19,6 @@ import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
-  const ActiveStyle = {
-    background: ColorThemes.mainOrange,
-    border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
-    padding: "20px",
-    height: "100%",
-  };
   return (
     <div>
       <Header
@@ -41,8 +36,8 @@ export const PublicityPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
-                <p>Publicity Intern Positions</p>
+              <Nav.Link eventKey="one" className="pos" style={activeStyles.activeStyle(ColorThemes.mainOrange)}>
+                Publicity Intern Positions
               </Nav.Link>
             </Nav.Item>
           </Nav>

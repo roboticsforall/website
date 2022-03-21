@@ -43,9 +43,9 @@ import { PageNotFound } from "@/pages/PageNotFound";
 export const App: React.FC = () => {
   return (
     <Router>
+      <Update />
       <Navbar />
       <ScrollToTop />
-      <Update />
       <Route
         render={({ location }) => (
           <TransitionGroup>

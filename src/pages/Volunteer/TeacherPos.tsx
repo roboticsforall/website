@@ -7,6 +7,8 @@ import {
   TabsCardLeftImage,
   TabsCardRightImage,
 } from "@/components/Volunteer/TabCards";
+import { activeStyles } from "@/components/Volunteer/TabCards";
+
 import { PosButton } from "@/components/Volunteer/PosButton";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
@@ -30,26 +32,10 @@ import { ColorThemes } from "@/colors";
 
 export const TeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
-  const ActiveStyle = {
-    background: ColorThemes.mainYellow,
-    border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
-    padding: "20px",
-    height: "100%",
-  };
-  const inActiveStyle = {
-    background: ColorThemes.mainOrange,
-    border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
-    padding: "20px",
-    height: "100%",
-  };
   const positionsTitle: React.CSSProperties = {
     fontFamily: "BeVietnam-ExtraBold",
-    letterSpacing: "0.25em",
     color: ColorThemes.mainOrange,
     textAlign: "center",
-    fontSize: "3em",
   };
 
   return (
@@ -72,17 +58,17 @@ export const TeacherPos: React.FC = () => {
             <Nav.Item>
               <Nav.Link
                 eventKey="one"
-                style={key === "one" ? ActiveStyle : inActiveStyle}
+                style={key === "one" ? activeStyles.activeStyle(ColorThemes.mainYellow) : activeStyles.activeStyle("none")}
               >
-                <p>Lead Instructor</p>
+                Lead Instructor
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 eventKey="two"
-                style={key === "two" ? ActiveStyle : inActiveStyle}
+                style={key === "two" ? activeStyles.activeStyle(ColorThemes.mainYellow) : activeStyles.activeStyle("none")}
               >
-                <p>Teacher Assistant</p>
+                Teacher Assistant
               </Nav.Link>
             </Nav.Item>
           </Nav>
@@ -144,7 +130,7 @@ export const TeacherPos: React.FC = () => {
                 }
               />
               <TabsCardLeftImage
-                posHeader={"REQUIRMENTS"}
+                posHeader={"REQUIREMENTS"}
                 generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={
@@ -230,7 +216,7 @@ export const TeacherPos: React.FC = () => {
                 posDescription={<Markdown>{taOverviewJSON.benefits}</Markdown>}
               />
               <TabsCardLeftImage
-                posHeader={"REQUIemENTS"}
+                posHeader={"REQUIREMENTS"}
                 generalColor={ColorThemes.mainYellow}
                 posImage={Laptop}
                 posDescription={

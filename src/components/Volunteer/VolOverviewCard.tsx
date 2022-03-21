@@ -1,5 +1,7 @@
+import { ColorThemes } from "@/colors";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 
 export const VolOverviewCard: React.FC<{
@@ -21,10 +23,20 @@ export const VolOverviewCard: React.FC<{
   const button = {
     backgroundColor: props.backgroundcolor,
   };
-  const linkText = {
-    color: props.buttonColor,
-    fontFamily: "Oswald-Medium",
-  }
+  const useStyles = createUseStyles({
+    link: {
+      composes: "hyperlink",
+      fontFamily: "Oswald-Medium",
+      transition: "0.2s",
+      color: props.buttonColor,
+      "&:hover": {
+        transition: "0.2s",
+        color: ColorThemes.white,
+      },
+    },
+  });
+  const classes = useStyles();
+
   return (
     <Container>
       <Row>
@@ -37,10 +49,9 @@ export const VolOverviewCard: React.FC<{
         <Col className = "center-align rounded" style={button}>
           <Link
             to={props.learnMoreLink}
-            className="rounded hyperlink"
-            style = {linkText}
+            className = {classes.link}
           >
-            <p className = "aff-org-card-link">Learn More</p>
+            <h5>Learn More</h5>
           </Link>
         </Col>
       </Row>

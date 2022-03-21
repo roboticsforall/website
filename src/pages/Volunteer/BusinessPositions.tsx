@@ -4,6 +4,8 @@ import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/blue.png";
 import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
 import { PosButton } from "@/components/Volunteer/PosButton";
+import { activeStyles } from "@/components/Volunteer/TabCards";
+
 
 import Markdown from "markdown-to-jsx";
 
@@ -14,22 +16,7 @@ import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 export const BusinessPositions: React.FC = () => {
   const [key, setKey] = useState("one");
-  const ActiveStyle = {
-    background: ColorThemes.mainBlue,
-    border: "none",
-    fontFamily: "BeVietnam-ExtraBold",
-    padding: "20px",
-    height: "100%",
-  };
-  const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
-    letterSpacing: "0.25em",
-    color: ColorThemes.mainBlue,
-    textAlign: "center",
-    textTransform: "uppercase",
-    wordBreak: "break-word"
-  };
-
+  
   return (
     <div>
       <Header
@@ -47,8 +34,8 @@ export const BusinessPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link eventKey="one" className="pos" style={ActiveStyle}>
-                <p>Business Intern Positions</p>
+              <Nav.Link eventKey="one" className="pos" style={activeStyles.activeStyle(ColorThemes.mainBlue)}>
+                Business Intern Positions
               </Nav.Link>
             </Nav.Item>
           </Nav>

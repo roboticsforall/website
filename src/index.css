@@ -124,10 +124,6 @@ html {
 }
 
 
-button {
-  background: none;
-}
-
 input::placeholder,
 textarea::placeholder {
   color: #b38f00;
@@ -154,10 +150,6 @@ input::placeholder {
 
 label {
   font-family: "BeVietnam-Bold";
-}
-
-.react-multi-carousel-item {
-  margin: 10px;
 }
 
 /* #region Custom styles for navbar */
@@ -255,12 +247,6 @@ label {
 }
 /*#endregion*/
 
-/* #region styling for pages like teacher positions */
-/*teacherpos, publicitypos, privacypolicy, websitetos*/
-
-.nav-tabs {
-  border: none !important;
-}
 /*#endregion*/
 
 /* #region homepage styling */

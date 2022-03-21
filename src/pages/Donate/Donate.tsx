@@ -5,6 +5,8 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct im
 
 import { ColorThemes } from "@/colors";
 
+import { PosButton } from "@/components/Volunteer/PosButton";
+
 export const Donate: React.FC = () => {
   const positionsDescription = {
     fontFamily: "BeVietnam-Medium",
@@ -48,23 +50,12 @@ export const Donate: React.FC = () => {
           </p>
         </Row>
         <br />
-        <Row className="justify-content-center align-items-center">
-          <Col md="auto">
-            <a
-              href="https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"
-              target="_blank"
-              className="hyperlink"
-              rel="noreferrer"
-            >
-              <h1
-                style={buttonText}
-                className="m-0 p-3 rounded long-button text-center"
-              >
-                Donate
-              </h1>
-            </a>
-          </Col>
-        </Row>
+        <PosButton
+          backgroundColor={ColorThemes.mainYellow}
+          backgroundHover={ColorThemes.mainYellow}
+          title={"Donate"}
+          link= {"https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"}
+        />
       </Container>
       <br />
     </>

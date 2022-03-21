@@ -1,6 +1,16 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
+import { createUseStyles } from "react-jss";
+
+export const activeStyles : any = {
+  activeStyle: (backgroundColor: string) => ({
+    background: backgroundColor,
+    fontFamily: "BeVietnam-ExtraBold",
+    color: ColorThemes.black,
+    padding: "20px"
+  })
+}
 
 const styles: any = {
   posHeader: {
@@ -25,6 +35,7 @@ const styles: any = {
     maxHeight: "250px",
   },
 };
+
 
 interface IProps {
   posHeader: string;
@@ -69,9 +80,11 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
       <div>
         <h2 style={styles.posHeader}>{props.posHeader}</h2>
         <Row>
-          <Col className="center-align" xs={3}>
-            <Image src={props.posImage} style={styles.img} fluid />
-          </Col>
+          {(window.innerWidth > 768) ? (
+            <Col className="center-align" xs={3}>
+              <Image src={props.posImage} style={styles.img} fluid />
+            </Col>
+          ) : (<></>)}
           <Col>
             <div style={styles.posDescription}>{props.posDescription}</div>
           </Col>
@@ -97,9 +110,11 @@ export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
           <Col>
             <div style={styles.posDescription}>{props.posDescription}</div>
           </Col>
-          <Col className="center-align" xs={3}>
-            <Image src={props.posImage} style={styles.img} fluid />
-          </Col>
+          {(window.innerWidth > 768) ? (
+            <Col className="center-align" xs={3}>
+              <Image src={props.posImage} style={styles.img} fluid />
+            </Col>
+          ) : (<></>)}
         </Row>
       </div>
     </Container>

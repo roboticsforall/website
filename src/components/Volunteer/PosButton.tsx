@@ -1,6 +1,5 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { ColorThemes } from "@/colors";
 import { createUseStyles } from "react-jss";
 
@@ -32,7 +31,7 @@ export const PosButton: React.FC<{
   return (
     <a className="hyperlink" rel="noopener noreferrer" target="_blank" href = {props.link}>
       <Row className={classes.button}>
-        <h2 className="text-center">{props.title}</h2>
+        <h4 className="text-center">{props.title}</h4>
       </Row>
     </a>
   );

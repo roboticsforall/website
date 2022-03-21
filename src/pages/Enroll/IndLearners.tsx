@@ -30,10 +30,6 @@ export const IndLearners: React.FC = () => {
     fontFamily: "BeVietnam-Medium",
     lineHeight: 1.5,
   };
-  const enrollButtonTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
-    textAlign: "center",
-  };
   const blueRow = {
     backgroundColor: "#3399ff4D",
   };
@@ -69,11 +65,7 @@ export const IndLearners: React.FC = () => {
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
           <h5 style={bodyText}>
-              We offer basic and advanced classes in a variety of STEM subjects such as computer programming for students in K-8th grade
-            <br></br>
-            <br></br>
-            View our selection of courses below and click on the boxes to learn
-            more:
+            View our selection of courses below and click on the boxes to learn more.
           </h5>
           <br></br>
           <Row className = "g-4">
