@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Image, Col } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 
-import "../../index.css";
 
 export const AboutAffOrgsCard: React.FC<{
 	mainColor: string;
