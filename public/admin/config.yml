@@ -1,7 +1,12 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: /public # Media files will be stored in the repo under images/uploads
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 39d4c131575846254cf8
+  settings:
+    defaultOperations: '-/scale_crop/400x400/smart/'
 public_folder: /public # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - label: Site Settings # Collection 1

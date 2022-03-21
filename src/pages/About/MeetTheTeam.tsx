@@ -1,7 +1,6 @@
 import React from "react";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
-import "react-multi-carousel/lib/styles.css";
 import bmInfoJSON from "@/posts/board_members.json";
 import ccInfoJSON from "@/posts/curriculum_committee.json";
 import adInfoJSON from "@/posts/assistant_directors.json";
