@@ -1,5 +1,4 @@
 import React from "react";
-import { Row } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
 import { createUseStyles } from "react-jss";
 
@@ -18,11 +17,7 @@ export const SubmitButton: React.FC<{ state?: boolean }> = (props) => {
   const classes = useStyles();
 
   return (
-    <button
-      disabled={props.state}
-      className = {classes.button}
-      type="submit"
-    >
+    <button disabled={props.state} className={classes.button} type="submit">
       <h4 style={textStyle}>Submit</h4>
     </button>
   );

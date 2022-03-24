@@ -29,8 +29,8 @@ export const AbtOverview: React.FC = () => {
       <Container fluid>
         <br />
         <Container>
-          <h2 className="title" style={{...missionColor }}>OUR MISSION</h2>
-          <p className="text-center description">
+          <h2 style={{ ...missionColor }}>OUR MISSION</h2>
+          <p>
             Robotics for All aims to inspire the next generation of students and
             volunteers to achieve their full potential, regardless of their
             background.
@@ -41,8 +41,8 @@ export const AbtOverview: React.FC = () => {
       <Container fluid style={{ backgroundColor: ColorThemes.lightGreen }}>
         <br />
         <Container>
-          <h2 className="title" style={{...visionColor }}>OUR VISION</h2>
-          <p className="text-center description">
+          <h2 style={{ ...visionColor }}>OUR VISION</h2>
+          <p>
             A world where all students are able to access equitable educational
             opportunities to create their futures.
           </p>
@@ -52,47 +52,33 @@ export const AbtOverview: React.FC = () => {
       <Container fluid>
         <br />
         <Container>
-          <h2 className="title" style={{...valuesColor }}>OUR VALUES</h2>
-          <p >
+          <h2 style={{ ...valuesColor }}>OUR VALUES</h2>
+          <p>
             We are{" "}
-            <span  style={{color: ColorThemes.mainOrange}}>
-              motivated
-            </span>
-            . Each and every day, we strive to be a positive force in this world
+            <span style={{ color: ColorThemes.mainOrange }}>motivated</span>.
+            Each and every day, we strive to be a positive force in this world
             and create social change.
           </p>
-          <div></div>
-          <p >
+          <p>
             We are{" "}
-            <span  style={{color: ColorThemes.mainYellow}}>
-              inclusive
-            </span>
-            . We celebrate the diversity of our students and volunteers alike.
+            <span style={{ color: ColorThemes.mainYellow }}>inclusive</span>. We
+            celebrate the diversity of our students and volunteers alike.
           </p>
-          <div></div>
-          <p >
+          <p>
             We are{" "}
-            <span style={{color: ColorThemes.mainGreen}}>
-              accountable
-            </span>
-            . We emain honest and transparent in everything we do.
+            <span style={{ color: ColorThemes.mainGreen }}>accountable</span>.
+            We emain honest and transparent in everything we do.
           </p>
-          <div></div>
-          <p >
+          <p>
             We are{" "}
-            <span  style={{color: ColorThemes.lightBlue}}>
-              collaborative
-            </span>
-            . Through the strength of teamwork, we are able to generate stronger
+            <span style={{ color: ColorThemes.lightBlue }}>collaborative</span>.
+            Through the strength of teamwork, we are able to generate stronger
             ideas and do more.
           </p>
-          <div></div>
-          <p >
+          <p>
             We are{" "}
-            <span  style={{color: ColorThemes.mainBlue}}>
-              compassionate
-            </span>
-            . We care deeply about all of our students, volunteers, and our
+            <span style={{ color: ColorThemes.mainBlue }}>compassionate</span>.
+            We care deeply about all of our students, volunteers, and our
             community.
           </p>
         </Container>

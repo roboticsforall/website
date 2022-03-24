@@ -3,30 +3,28 @@ import { Row } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { ColorThemes } from "@/colors";
 
-
 export const NewsCard: React.FC<{
   file: string;
   title: string;
 }> = (props) => {
-
   const useStyles = createUseStyles({
-		card: {
+    card: {
       composes: "rounded",
       border: "none",
       transition: "200ms",
       backgroundColor: ColorThemes.lightYellow,
-		  "&:hover": {
+      "&:hover": {
         transition: "200ms",
         backgroundColor: ColorThemes.mainYellow,
-		  },
-		},
-	});
+      },
+    },
+  });
 
-	  const classes = useStyles();
+  const classes = useStyles();
 
   return (
     <a className="hyperlink" href={props.file} download>
-      <div className = {classes.card}>
+      <div className={classes.card}>
         <br />
         <br />
         <br />

@@ -15,7 +15,6 @@ import { ColorThemes } from "@/colors";
 import "../../index.css";
 
 export const MeetTheTeam: React.FC = () => {
-
   const yellowRow = {
     backgroundColor: ColorThemes.lightYellow,
   };
@@ -43,14 +42,14 @@ export const MeetTheTeam: React.FC = () => {
 
       <br />
 
-      <h1 style={{ color: ColorThemes.mainOrange, ...header }}>
+      <h2 style={{ color: ColorThemes.mainOrange, ...header }}>
         BOARD OF DIRECTORS
-      </h1>
+      </h2>
 
       <div style={yellowRow}>
         <Carousel>
-          {bmInfoJSON.board_members_list.map((info: any) => (
-            <Carousel.Item>
+          {bmInfoJSON.board_members_list.map((info: any, i: number) => (
+            <Carousel.Item key = {i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainYellow}
@@ -64,14 +63,14 @@ export const MeetTheTeam: React.FC = () => {
       <br />
       <br />
 
-      <h1 style={{ color: ColorThemes.mainGreen, ...header }}>
+      <h2 style={{ color: ColorThemes.mainGreen, ...header }}>
         EXECUTIVE ASSISTANT DIRECTOR
-      </h1>
+      </h2>
 
       <div style={greenRow}>
         <Carousel>
           {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
-            <Carousel.Item>
+            <Carousel.Item key = {i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainGreen}
@@ -85,14 +84,14 @@ export const MeetTheTeam: React.FC = () => {
       <br />
       <br />
 
-      <h1 style={{ color: ColorThemes.mainBlue, ...header }}>
+      <h2 style={{ color: ColorThemes.mainBlue, ...header }}>
         CURRICULUM COMMITTEE
-      </h1>
+      </h2>
 
       <div style={blueRow}>
         <Carousel>
           {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
-            <Carousel.Item>
+            <Carousel.Item key = {i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainBlue}
@@ -100,32 +99,31 @@ export const MeetTheTeam: React.FC = () => {
               />
             </Carousel.Item>
           ))}
-          </Carousel>
-          </div>
+        </Carousel>
+      </div>
 
-          <br />
-          <br />
+      <br />
+      <br />
 
-          <h1 style={{ color: ColorThemes.mainYellow, ...header }}>
-            PUBLICITY COMMITTEE
-          </h1>
-          <div style={orangeRow}>
-
-            <Carousel>
-              {pcInfoJSON.pub_committee.map((info: any, i: number) => (
-                <Carousel.Item>
-                  <MeetTheTeamCard
-                    info={info}
-                    backgroundColor={ColorThemes.mainOrange}
-                    color={ColorThemes.darkOrange}
-                  />
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          </div>
-          <br/>
-          <br/>
-          <br/>
-        </>
-        );
+      <h2 style={{ color: ColorThemes.mainYellow, ...header }}>
+        PUBLICITY COMMITTEE
+      </h2>
+      <div style={orangeRow}>
+        <Carousel>
+          {pcInfoJSON.pub_committee.map((info: any, i: number) => (
+            <Carousel.Item key = {i}>
+              <MeetTheTeamCard
+                info={info}
+                backgroundColor={ColorThemes.mainOrange}
+                color={ColorThemes.darkOrange}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+      <br />
+      <br />
+      <br />
+    </>
+  );
 };

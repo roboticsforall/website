@@ -3,28 +3,25 @@ import Accordion from "react-bootstrap/Accordion";
 import Markdown from "markdown-to-jsx";
 
 interface IProps {
-  data: {}[]
-};
+  data: {}[];
+}
 
 export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
-  
-  const questionText = {
-  };
-  const answerText = {
-  }
+
+
 
   return (
     <Accordion alwaysOpen>
-      {
-        props.data.map((QAPair : Object, key) => (
-          <Accordion.Item eventKey = {key.toString()}>
-            <Accordion.Header style = {questionText}>{Object.values(QAPair)[0]}</Accordion.Header>
-              <Accordion.Body style = {answerText}>
-                <Markdown>{Object.values(QAPair)[1]}</Markdown>
-              </Accordion.Body>
-          </Accordion.Item>
-        ))
-      }
+      {props.data.map((QAPair: Object, i) => (
+        <Accordion.Item key = {i} eventKey={i.toString()}>
+          <Accordion.Header>
+            {Object.values(QAPair)[0]}
+          </Accordion.Header>
+          <Accordion.Body>
+            <Markdown>{Object.values(QAPair)[1]}</Markdown>
+          </Accordion.Body>
+        </Accordion.Item>
+      ))}
     </Accordion>
   );
 };

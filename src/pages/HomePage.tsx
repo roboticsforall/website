@@ -47,16 +47,16 @@ export const HomePage: React.FC = () => {
   };
 
   return (
-<>
-    <div style={yellowRow} className="d-flex justify-content-center">
-      <video
-        className="video-width"
-        autoPlay
-        loop
-        muted
-        // src={homePageVideo}
-      />
-  </div>
+    <>
+      <div style={yellowRow} className="d-flex justify-content-center">
+        <video
+          className="video-width"
+          autoPlay
+          loop
+          muted
+          // src={homePageVideo}
+        />
+      </div>
 
       <Container>
         <Row className="justify-content-center">
@@ -71,7 +71,7 @@ export const HomePage: React.FC = () => {
         </Row>
       </Container>
 
-      <div style = {yellowRow} className="d-flex justify-content-center p-5">
+      <div style={yellowRow} className="d-flex justify-content-center p-5">
         <Container>
           <Row>
             {[
@@ -94,12 +94,11 @@ export const HomePage: React.FC = () => {
                 color: ColorThemes.mainOrange,
               },
             ].map((info, i) => (
-              <Col md={4} className="text-center">
-                <Link to = {info.to} className="hyperlink">
-                  <Image fluid src={info.src} />
+              <Col key = {i} md={4} className="text-center">
+                <Link to={info.to} className="hyperlink">
+                  <Image width = "100" src={info.src} />
                   <h2
                     style={{
-  
                       textAlign: "center",
                       color: info.color,
                     }}
@@ -200,7 +199,6 @@ const HomeAffOrgsCard: React.FC<{
     objectFit: "scale-down",
   };
 
-  
   const useStyles = createUseStyles({
     link: {
       composes: "hyperlink",
@@ -217,7 +215,7 @@ const HomeAffOrgsCard: React.FC<{
   return (
     <>
       <Row
-        style={{ backgroundColor: props.bgColor}}
+        style={{ backgroundColor: props.bgColor }}
         className="justify-content-center rounded align-items-center mx-2"
       >
         <Col
@@ -227,18 +225,16 @@ const HomeAffOrgsCard: React.FC<{
           lg={3}
           xl={3}
         >
-          <Image fluid style = {imageSize} src={props.logo} />
+          <Image fluid style={imageSize} src={props.logo} />
         </Col>
         <Col md={6} lg={6} xl={6}>
-          <h2 style={affOrgsTitle}>
-            {props.org}
-          </h2>
+          <h2 style={affOrgsTitle}>{props.org}</h2>
         </Col>
         <Col className="text-center" md={3} lg={3} xl={3}>
           <a
             href={props.link}
             target="_blank"
-            className = {classes.link}
+            className={classes.link}
             rel="noreferrer"
           >
             <h5>LEARN MORE</h5>

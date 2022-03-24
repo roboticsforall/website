@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 
 export const PageNotFound: React.FC = () => {
-  const redirectText = {
-  };
+  const redirectText = {};
   return (
     <>
       <Header
@@ -21,9 +20,12 @@ export const PageNotFound: React.FC = () => {
       <br />
       <Container>
         <h4 style={redirectText}>
-          Sorry, we can’t find the page that you are looking for. 
-          Please ensure that you typed the link in correctly or {" "}
-          <Link to="/"><em>click here to return home</em></Link>.
+          Sorry, we can’t find the page that you are looking for. Please ensure
+          that you typed the link in correctly or{" "}
+          <Link to="/">
+            <em>click here to return home</em>
+          </Link>
+          .
         </h4>
       </Container>
       <br />

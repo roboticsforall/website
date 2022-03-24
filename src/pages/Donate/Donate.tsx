@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 
@@ -8,12 +8,7 @@ import { ColorThemes } from "@/colors";
 import { PosButton } from "@/components/Volunteer/PosButton";
 
 export const Donate: React.FC = () => {
-  const positionsDescription = {
-  };
-
-  const buttonText = {
-  };
-
+  
   return (
     <>
       <Header
@@ -39,10 +34,7 @@ export const Donate: React.FC = () => {
             PayPal by clicking the button below. You also might be able to get
             your donation matched through your employer.
           </p>
-          <p
-            style={positionsDescription}
-            className="text-center"
-          >
+          <p style={positionsDescription} className="text-center">
             Robotics for All is a 501(c)(3) non-profit organization. All
             donations are fully tax-deductible.
           </p>
@@ -52,7 +44,7 @@ export const Donate: React.FC = () => {
           backgroundColor={ColorThemes.mainYellow}
           backgroundHover={ColorThemes.mainYellow}
           title={"Donate"}
-          link= {"https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"}
+          link={"https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"}
         />
       </Container>
       <br />

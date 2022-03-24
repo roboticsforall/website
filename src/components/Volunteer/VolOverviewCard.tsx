@@ -11,10 +11,8 @@ export const VolOverviewCard: React.FC<{
   title: string;
   description: string;
 }> = (props) => {
-  const positionsTitle = {
-  };
-  const description = {
-  };
+  const positionsTitle = {};
+  const description = {};
   const card = {
     backgroundColor: props.backgroundcolor,
   };
@@ -43,11 +41,8 @@ export const VolOverviewCard: React.FC<{
             <p style={description}>{props.description}</p>
           </Row>
         </Col>
-        <Col className = "center-align rounded" style={button}>
-          <Link
-            to={props.learnMoreLink}
-            className = {classes.link}
-          >
+        <Col className="center-align rounded" style={button}>
+          <Link to={props.learnMoreLink} className={classes.link}>
             <h5>Learn More</h5>
           </Link>
         </Col>

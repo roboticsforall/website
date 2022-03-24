@@ -1,20 +1,20 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
-import { createUseStyles } from "react-jss";
+import { PosButton } from "./PosButton";
 
-export const activeStyles : any = {
+export const activeStyles: any = {
   activeStyle: (backgroundColor: string) => ({
     background: backgroundColor,
     color: ColorThemes.black,
-    padding: "20px"
-  })
-}
+    padding: "20px",
+  }),
+};
 
-const styles: any = {
+const styles = {
   posHeader: {
     textAlign: "center",
-    wordBreak: "break-word"
+    wordBreak: "break-word",
   },
   posDescription: {
     color: ColorThemes.black,
@@ -33,16 +33,21 @@ const styles: any = {
   },
 };
 
-
 interface IProps {
   posHeader: string;
   posDescription: JSX.Element;
   generalColor?: string;
   backgroundColor?: string;
   posImage?: string;
+  button?: {
+    link: string;
+    title: string;
+    backgroundColor: string;
+    backgroundHover: string;
+  };
 }
 
-export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
+export const TabCardsNoImage: React.FC<IProps> = (props: IProps) => {
   return (
     <Container
       style={styles.posContainer({
@@ -50,7 +55,7 @@ export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor,
         backgroundColor: props.backgroundColor,
       })}
-      className = "rounded"
+      className="rounded"
     >
       <div>
         <Row>
@@ -64,7 +69,7 @@ export const TabsCardNoImage: React.FC<IProps> = (props: IProps) => {
   );
 };
 
-export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
+export const TabCardsLeftImage: React.FC<IProps> = (props: IProps) => {
   return (
     <Container
       style={styles.posContainer({
@@ -72,18 +77,30 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor,
         backgroundColor: props.backgroundColor,
       })}
-      className = "rounded"
+      className="rounded"
     >
       <div>
         <h2 style={styles.posHeader}>{props.posHeader}</h2>
         <Row>
-          {(window.innerWidth > 768) ? (
+          {window.innerWidth > 768 ? (
             <Col className="center-align" xs={3}>
               <Image src={props.posImage} style={styles.img} fluid />
             </Col>
-          ) : (<></>)}
+          ) : (
+            <></>
+          )}
           <Col>
             <div style={styles.posDescription}>{props.posDescription}</div>
+            {props.button ? (
+              <PosButton
+                link={props.button.link}
+                title={props.button.title}
+                backgroundColor={props.button.backgroundColor}
+                backgroundHover={props.button.backgroundHover}
+              />
+            ) : (
+              <></>
+            )}
           </Col>
         </Row>
       </div>
@@ -91,7 +108,7 @@ export const TabsCardLeftImage: React.FC<IProps> = (props: IProps) => {
   );
 };
 
-export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
+export const TabCardsRightImage: React.FC<IProps> = (props: IProps) => {
   return (
     <Container
       style={styles.posContainer({
@@ -99,19 +116,31 @@ export const TabsCardRightImage: React.FC<IProps> = (props: IProps) => {
         color: props.generalColor,
         backgroundColor: props.backgroundColor,
       })}
-      className = "rounded"
+      className="rounded"
     >
       <div>
         <h2 style={styles.posHeader}>{props.posHeader}</h2>
         <Row>
           <Col>
-            <div style={styles.posDescription}>{props.posDescription}</div>
+            <div style={styles.posDescription}>{props.posDescription}</div>{" "}
+            {props.button ? (
+              <PosButton
+                link={props.button.link}
+                title={props.button.title}
+                backgroundColor={props.button.backgroundColor}
+                backgroundHover={props.button.backgroundHover}
+              />
+            ) : (
+              <></>
+            )}
           </Col>
-          {(window.innerWidth > 768) ? (
+          {window.innerWidth > 768 ? (
             <Col className="center-align" xs={3}>
               <Image src={props.posImage} style={styles.img} fluid />
             </Col>
-          ) : (<></>)}
+          ) : (
+            <></>
+          )}
         </Row>
       </div>
     </Container>

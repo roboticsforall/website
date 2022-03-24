@@ -38,9 +38,7 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const contactInfo = {
-
-  };
+  const contactInfo = {};
 
   const linkStyle = {
     color: ColorThemes.darkOrange,

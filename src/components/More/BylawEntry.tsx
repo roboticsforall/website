@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import { ColorThemes } from "@/colors";
+
 
 export const BylawEntry: React.FC<{
   date: string;
@@ -7,9 +9,9 @@ export const BylawEntry: React.FC<{
   download: string;
 }> = (props) => {
   const background: React.CSSProperties = {
-    backgroundColor: "white",
+    backgroundColor: ColorThemes.white,
     borderRadius: "20px",
-    border: "10px solid rgba(255, 204, 0, 0.5)",
+    border: `10px solid ${ColorThemes.lightYellow}`,
     padding: "5px",
     textAlign: "center",
     wordWrap: "break-word",

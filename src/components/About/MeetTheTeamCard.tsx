@@ -5,11 +5,11 @@ import { ColorThemes } from "../../colors";
 
 interface IProps {
   info: {
-    name: string,
-    title_pronouns: string,
-    description: string,
-    image: string
-  }
+    name: string;
+    title_pronouns: string;
+    description: string;
+    image: string;
+  };
   backgroundColor: string;
   color: string;
 }
@@ -22,7 +22,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
   const nameHeader: React.CSSProperties = {
     textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
     wordBreak: "break-word",
-    width: "75%"
+    width: "75%",
   };
   const titleHeader: React.CSSProperties = {
     textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
@@ -41,7 +41,9 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
           borderRadius: "15px",
         }}
         onClick={handleShow}
+        onKeyDown={handleShow}
         className="d-flex my-3 p-3"
+        role = "button"
       >
         <Col md={"auto"}>
           <Image
@@ -64,16 +66,20 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         )}
       </div>
 
-      <Modal centered fullscreen={"md-down"} size={"lg"} show={show} onHide={handleClose}>
+      <Modal
+        centered
+        fullscreen={"md-down"}
+        size={"lg"}
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Header closeButton>
           <Modal.Title>
             <h2>{props.info.name}</h2>
             <h3>{props.info.title_pronouns}</h3>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          {props.info.description}
-        </Modal.Body>
+        <Modal.Body>{props.info.description}</Modal.Body>
         <Modal.Footer>
           <Button onClick={handleClose}>Close</Button>
         </Modal.Footer>

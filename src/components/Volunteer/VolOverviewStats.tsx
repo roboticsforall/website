@@ -12,10 +12,8 @@ export const VolOverviewStats: React.FC<{
     backgroundColor: ColorThemes.lightOrange,
     textAlign: "center",
   };
-  const circleTitle: React.CSSProperties = {
-  };
-  const circleSubtext: React.CSSProperties = {
-  };
+  const circleTitle: React.CSSProperties = {};
+  const circleSubtext: React.CSSProperties = {};
   const statNumbers: React.CSSProperties = {
     color: "black",
   };

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { enrollvolunteerabout } from "@/navbarroutes";
 
 export const NavbarDesktop: React.FC = () => {
-
   const logoImageSize = {
     height: "7vh",
   };
@@ -37,7 +36,11 @@ export const NavbarDesktop: React.FC = () => {
     <nav className="py-5" style={navContainer}>
       <header style={navHeader}>
         <Link to="/">
-          <img className = "imageSize" src={TobyHeaderLogo} style={logoImageSize} />
+          <img
+            className="imageSize"
+            src={TobyHeaderLogo}
+            style={logoImageSize}
+          />
         </Link>
         <Link className="hyperlink" to="/">
           <h2 style={navHeading}>Robotics For All</h2>
@@ -48,14 +51,20 @@ export const NavbarDesktop: React.FC = () => {
           <>
             <li className="nav-item" key={i}>
               <div className="h-100 nav-item-header">
-                <Link onClick = "return false" className="hyperlink"> 
+                <Link onClick="return false" className="hyperlink">
                   <h5>{navItem.headerName}</h5>
                 </Link>
               </div>
               <ul className="rounded dropdown-container" style={list}>
                 {navItem.subPages.map((subPageInfo, i) => (
-                  <Link key={i} className="hyperlink rounded" to={subPageInfo.to}>
-                    <li className = "rounded"><h5>{subPageInfo.subPageName}</h5></li>
+                  <Link
+                    key={i}
+                    className="hyperlink rounded"
+                    to={subPageInfo.to}
+                  >
+                    <li className="rounded">
+                      <h5>{subPageInfo.subPageName}</h5>
+                    </li>
                   </Link>
                 ))}
               </ul>
@@ -78,18 +87,23 @@ export const NavbarDesktop: React.FC = () => {
         </li>
         <li className="nav-item">
           <div className="h-100 donate-nav-item-header">
-            <Link className="donate-nav-background rounded hyperlink" to="/donate">
+            <Link
+              className="donate-nav-background rounded hyperlink"
+              to="/donate"
+            >
               <h5>Donate</h5>
             </Link>
           </div>
           <ul className="rounded dropdown-container" style={list}>
             <a
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
               href="https://www.bonfire.com/store//"
               className="hyperlink"
             >
-              <li className = "rounded"><h5>Merch</h5></li>
+              <li className="rounded">
+                <h5>Merch</h5>
+              </li>
             </a>
           </ul>
         </li>

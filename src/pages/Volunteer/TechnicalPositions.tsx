@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/green.png";
-import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
+import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import { PosButton } from "@/components/Volunteer/PosButton";
 import { activeStyles } from "@/components/Volunteer/TabCards";
-
 
 import Markdown from "markdown-to-jsx";
 
@@ -20,7 +19,7 @@ export const TechnicalPositions: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
     textTransform: "uppercase",
-    wordBreak: "break-word"
+    wordBreak: "break-word",
   };
 
   return (
@@ -40,13 +39,17 @@ export const TechnicalPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link eventKey="one" className="pos" style={activeStyles.activeStyle(ColorThemes.mainGreen)}>
+              <Nav.Link
+                eventKey="one"
+                className="pos"
+                style={activeStyles.activeStyle(ColorThemes.mainGreen)}
+              >
                 Technical Intern Positions
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
-            <TabsCardNoImage
+            <TabCardsNoImage
               posHeader={"DETAILS"}
               generalColor={ColorThemes.mainGreen}
               posDescription={
@@ -63,13 +66,11 @@ export const TechnicalPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainGreen}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link= {googleForms.publicity_intern_app_link}
+              link={googleForms.publicity_intern_app_link}
             />
             <br />
             <h2 style={positionsTitle}>Positions</h2>
-                <FAQDropdowns
-                  data = {technicalInternJSON.positions}
-                />
+            <FAQDropdowns data={technicalInternJSON.positions} />
             <br></br>
             <br></br>
           </Tab.Content>

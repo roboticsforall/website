@@ -3,9 +3,9 @@ import { Container, Tab } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import {
-  TabsCardLeftImage,
-  TabsCardNoImage,
-  TabsCardRightImage,
+  TabCardsLeftImage,
+  TabCardsNoImage,
+  TabCardsRightImage,
 } from "@/components/Volunteer/TabCards";
 import { InternDescriptionTabs } from "../../components/Volunteer/InternDescriptionTabs";
 import Clock from "@/media/Graphics/clock.png";
@@ -26,7 +26,7 @@ export const InternOverview: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
     color: ColorThemes.mainYellow,
     textAlign: "center",
-    wordBreak: "break-word"
+    wordBreak: "break-word",
   };
 
   return (
@@ -45,7 +45,7 @@ export const InternOverview: React.FC = () => {
         <br></br>
         <Tab.Container>
           <Tab.Content>
-            <TabsCardNoImage
+            <TabCardsNoImage
               posHeader={"OVERVIEW"}
               generalColor={ColorThemes.mainYellow}
               posDescription={
@@ -68,7 +68,7 @@ export const InternOverview: React.FC = () => {
               }
               addButtons={true}
             />
-            <TabsCardRightImage
+            <TabCardsRightImage
               posHeader={"SCHEDULING"}
               posImage={Calendar}
               generalColor={ColorThemes.lightYellow}
@@ -78,7 +78,7 @@ export const InternOverview: React.FC = () => {
                 </div>
               }
             />
-            <TabsCardLeftImage
+            <TabCardsLeftImage
               posHeader={"TIME COMMITMENT"}
               posImage={Clock}
               generalColor={ColorThemes.mainYellow}
@@ -86,7 +86,7 @@ export const InternOverview: React.FC = () => {
                 <Markdown>{internOverviewJSON.time_commitment}</Markdown>
               }
             />
-            <TabsCardRightImage
+            <TabCardsRightImage
               posHeader={"BENEFITS"}
               posImage={ThumbsUp}
               generalColor={ColorThemes.lightYellow}
@@ -94,7 +94,7 @@ export const InternOverview: React.FC = () => {
                 <Markdown>{internOverviewJSON.benefits}</Markdown>
               }
             />
-            <TabsCardLeftImage
+            <TabCardsLeftImage
               posHeader={"REQUIREMENTS"}
               posImage={Laptop}
               generalColor={ColorThemes.mainYellow}
@@ -102,7 +102,7 @@ export const InternOverview: React.FC = () => {
                 <Markdown>{internOverviewJSON.requirments}</Markdown>
               }
             />
-            <TabsCardRightImage
+            <TabCardsRightImage
               posHeader={"BENEFICIAL QUALIFICATIONS"}
               posImage={Presentation}
               generalColor={ColorThemes.lightYellow}
@@ -112,13 +112,9 @@ export const InternOverview: React.FC = () => {
                 </Markdown>
               }
             />
-            <h2 style={positionsTitle}>
-              FAQs
-            </h2>
+            <h2 style={positionsTitle}>FAQs</h2>
             <Container>
-                  <FAQDropdowns
-                data = {internfaqsJSON.intern_faqs}
-              />
+              <FAQDropdowns data={internfaqsJSON.intern_faqs} />
               <br />
             </Container>
             <br></br>

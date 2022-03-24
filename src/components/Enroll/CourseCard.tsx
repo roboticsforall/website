@@ -18,10 +18,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const text: React.CSSProperties = {
-    // whiteSpace: "nowrap",
-  };
-
   const useStyles = createUseStyles({
     cardBackground: {
       composes: "d-flex flex-column justify-content-center rounded",
@@ -38,26 +34,26 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   return (
     <>
-      <Col
-        md={4}
-        lg={3}
-        onClick={handleShow}
-      >
+      <Col md={4} lg={3} onClick={handleShow}>
         <Container className={classes.cardBackground}>
           <div className="d-flex justify-content-center">
-            <Image fluid src={props.courseImage} />
+            <img src={props.courseImage} />
           </div>
           <div className="text-center">
-            <h3 style={text}>{props.title}</h3>
+            <h4>{props.title}</h4>
           </div>
         </Container>
       </Col>
 
-      <Modal centered fullscreen={"md-down"} size={"lg"} show={show} onHide={handleClose}>
+      <Modal
+        centered
+        fullscreen={"md-down"}
+        size={"lg"}
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Header closeButton>
-          <Modal.Title>
-            {props.title.toUpperCase()}
-          </Modal.Title>
+          <Modal.Title>{props.title.toUpperCase()}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Container>
@@ -66,32 +62,29 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
                 <Markdown>{props.dropdownCourseDescription}</Markdown>
               </Col>
               <Col>
-                  <Row className="justify-content-center">
-                    <Image
-                      fluid
-                      src={props.dropdownCourseImage}
-                    />
-                  </Row>
+                <Row className="justify-content-center">
+                  <Image fluid src={props.dropdownCourseImage} />
+                </Row>
               </Col>
             </Row>
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Container>          
+          <Container>
             <Row>
-                <h4 className = "text-center">
-                  <a
-                    style={{ color: props.backgroundColor }}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="hyperlink aff-org-card-link"
-                    href={props.link}
-                  >
-                    Learn More
-                  </a>
-                </h4>
-              </Row>
-            </Container>
+              <h4 className="text-center">
+                <a
+                  style={{ color: props.backgroundColor }}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hyperlink aff-org-card-link"
+                  href={props.link}
+                >
+                  Learn More
+                </a>
+              </h4>
+            </Row>
+          </Container>
         </Modal.Footer>
       </Modal>
     </>

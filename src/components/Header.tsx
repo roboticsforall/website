@@ -28,10 +28,7 @@ export const Header: React.FC<{
         <h1 style={pageHeader} className="text-center">
           {props.title}
         </h1>
-        <p
-          style={pageHeaderDescription}
-          className="text-center"
-        >
+        <p style={pageHeaderDescription} className="text-center">
           {props.description}
         </p>
       </div>

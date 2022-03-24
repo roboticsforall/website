@@ -15,10 +15,9 @@ export const Footer: React.FC = () => {
     color: "#532F0A",
   };
   const linkStyle: React.CSSProperties = {
-    color: "#C06202"
+    color: "#C06202",
   };
-  const headerStyle: React.CSSProperties = {
-  };
+  const headerStyle: React.CSSProperties = {};
   const copyrightDisclaimer: React.CSSProperties = {
     textAlign: "center",
   };
@@ -32,7 +31,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <div style = {yellowRow} className="center-align">
+    <div style={yellowRow} className="center-align">
       <Container fluid className="mx-2">
         <br />
         <Row className="justify-content-center">
@@ -55,11 +54,7 @@ export const Footer: React.FC = () => {
             >
               <p>Volunteer</p>
             </Link>
-            <Link
-              style={linkStyle}
-              className="hyperlink "
-              to="/about/overview"
-            >
+            <Link style={linkStyle} className="hyperlink " to="/about/overview">
               <p>About</p>
             </Link>
             <Link style={linkStyle} className="hyperlink " to="/contact">
@@ -74,17 +69,14 @@ export const Footer: React.FC = () => {
             <h1 style={headerStyle}>FIND US</h1>
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
-              <a
-                className="hyperlink "
-                href={"mailto:info@roboticsforall.net"}
-              >
+              <a className="hyperlink " href={"mailto:info@roboticsforall.net"}>
                 info@roboticsforall.net
               </a>
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
               <a className="hyperlink " href={"tel:+6506659734"}>
-              (234) 564-2057
+                (234) 564-2057
               </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
@@ -104,28 +96,36 @@ export const Footer: React.FC = () => {
                 href="https://www.facebook.com/roboticsforalleducation/"
                 rel="noreferrer"
               >
-                <Image className = "imageSize" style={iconSize} src={facebookIcon} />
+                <Image
+                  className="imageSize"
+                  style={iconSize}
+                  src={facebookIcon}
+                />
               </a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/roboticsforall/"
                 rel="noreferrer"
               >
-                <Image className = "imageSize" style={iconSize} src={instagramIcon} />
+                <Image
+                  className="imageSize"
+                  style={iconSize}
+                  src={instagramIcon}
+                />
               </a>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/company/robotics-for-all"
                 rel="noreferrer"
               >
-                <Image className = "imageSize" style={iconSize} src={linkedin} />
+                <Image className="imageSize" style={iconSize} src={linkedin} />
               </a>
               <a
                 target="_blank"
                 href="https://www.guidestar.org/"
                 rel="noreferrer"
               >
-                <Image className = "imageSize" style={iconSize} src = {guidestar}/>
+                <Image className="imageSize" style={iconSize} src={guidestar} />
               </a>
             </div>
           </Col>
@@ -146,11 +146,7 @@ export const Footer: React.FC = () => {
             >
               <p>Website Terms of Use</p>
             </Link>
-            <Link
-              to="/more-bylaws"
-              style={linkStyle}
-              className="hyperlink "
-            >
+            <Link to="/more-bylaws" style={linkStyle} className="hyperlink ">
               <p>Robotics For All Bylaws</p>
             </Link>
             <Link

@@ -10,7 +10,7 @@ export const PosButton: React.FC<{
   backgroundHover: string;
 }> = (props) => {
   const useStyles = createUseStyles({
-    button: (props: any) => ({
+    button: (props: { backgroundColor: string, backgroundHover: string}) => ({
       composes: "py-3 justify-content-between align-items-center rounded",
       transition: "200ms",
       color: ColorThemes.black,
@@ -28,7 +28,12 @@ export const PosButton: React.FC<{
   });
 
   return (
-    <a className="hyperlink" rel="noopener noreferrer" target="_blank" href = {props.link}>
+    <a
+      className="hyperlink"
+      rel="noopener noreferrer"
+      target="_blank"
+      href={props.link}
+    >
       <Row className={classes.button}>
         <h4 className="text-center">{props.title}</h4>
       </Row>

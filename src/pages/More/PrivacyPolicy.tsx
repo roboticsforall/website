@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
 import privacypolicyJSON from "@/posts/privacy_policy.json";
-import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
+import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
 export const PrivacyPolicy: React.FC = () => {
@@ -49,7 +49,7 @@ export const PrivacyPolicy: React.FC = () => {
               </Nav.Item>
             </Nav>
             <Tab.Content>
-              <TabsCardNoImage
+              <TabCardsNoImage
                 posHeader={""}
                 generalColor={
                   i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange

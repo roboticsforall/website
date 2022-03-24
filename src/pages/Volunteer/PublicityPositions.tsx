@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
-import { TabsCardNoImage } from "@/components/Volunteer/TabCards";
+import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import { PosButton } from "@/components/Volunteer/PosButton";
 
 import { activeStyles } from "@/components/Volunteer/TabCards";
@@ -14,8 +14,6 @@ import { ColorThemes } from "@/colors";
 import publicityInternJSON from "@/posts/publicity_intern_position_description.json";
 
 import googleForms from "@/posts/volunteer_sign_up_forms.json";
-
-
 
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -36,13 +34,17 @@ export const PublicityPositions: React.FC = () => {
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
-              <Nav.Link eventKey="one" className="pos" style={activeStyles.activeStyle(ColorThemes.mainOrange)}>
+              <Nav.Link
+                eventKey="one"
+                className="pos"
+                style={activeStyles.activeStyle(ColorThemes.mainOrange)}
+              >
                 Publicity Intern Positions
               </Nav.Link>
             </Nav.Item>
           </Nav>
           <Tab.Content>
-            <TabsCardNoImage
+            <TabCardsNoImage
               posHeader={"DETAILS"}
               generalColor={ColorThemes.mainOrange}
               posDescription={
@@ -59,7 +61,7 @@ export const PublicityPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainOrange}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link = {googleForms.publicity_intern_app_link}
+              link={googleForms.publicity_intern_app_link}
             />
             <br></br>
             <br></br>

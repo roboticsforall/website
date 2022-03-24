@@ -9,16 +9,15 @@ import { ColorThemes } from "@/colors";
 
 export const CorpBylaws: React.FC = () => {
   const background: React.CSSProperties = {
-    background: "rgba(255, 204, 0, 0.5)",
+    background: ColorThemes.lightYellow,
     borderRadius: "15px",
   };
   const header: React.CSSProperties = {
-    background: "rgba(255, 204, 0, 0.5)",
+    background: ColorThemes.lightYellow,
     borderRadius: "20px",
     border: "10px solid white",
     padding: "5px",
     textAlign: "center",
-    color: "black",
   };
   return (
     <div>

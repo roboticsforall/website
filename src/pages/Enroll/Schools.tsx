@@ -24,8 +24,7 @@ export const Schools: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
   };
-  const boldNote = {
-  };
+  const boldNote = {};
   const bodyText = {
     lineHeight: 1.5,
   };
@@ -39,9 +38,7 @@ export const Schools: React.FC = () => {
         headerTextColor={"#33cc66"}
         image={headerBlobGreen}
         title={"Partner with us Today for After-School STEM Programs!"}
-        description={
-          ""
-        }
+        description={""}
       />
       <br />
       <br />
@@ -54,20 +51,24 @@ export const Schools: React.FC = () => {
           <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
         </h5>
         <br />
-        <LongButtonWithHyperlink title = {"Partner With Us Today!"} location = {enroll_links.schools_and_partners_link} backgroundColor = {ColorThemes.mainGreen} />
-
+        <LongButtonWithHyperlink
+          title={"Partner With Us Today!"}
+          location={enroll_links.schools_and_partners_link}
+          backgroundColor={ColorThemes.mainGreen}
+        />
       </Container>
       <br></br>
       <div style={greenRow}>
-      <Container>
-      <br></br>
+        <Container>
+          <br></br>
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
           <br></br>
           <h5 style={bodyText}>
-            View our selection of courses below and click on the boxes to learn more.
+            View our selection of courses below and click on the boxes to learn
+            more.
           </h5>
           <br></br>
-          <Row className = "g-4">
+          <Row className="g-4">
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
                 key={i}
@@ -75,50 +76,45 @@ export const Schools: React.FC = () => {
                 courseImage={courseInfo.file_path.replace("/public", "")}
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightGreen}
-                dropdownCourseDescription={
-                  courseInfo.course_description
-                }
+                dropdownCourseDescription={courseInfo.course_description}
                 dropdownCourseImage={courseInfo.file_path.replace(
                   "/public",
                   ""
                 )}
-                />
-                ))}
+              />
+            ))}
           </Row>
           <br></br>
           <br></br>
-        <br/>
-      </Container>
-      <Container>
-          <hr/>
-        <br/>
-        <h2 style={positionsTitle}>COURSE SYLLABI</h2>
-        <br/>
-        <Row className="justify-content-between m-0">
-          {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-            <FlagCard
-            image={flagInfo.file_path.replace("/public", "")}
-              title={flagInfo.language}
-              link={flagInfo.link}
-              backgroundColor= {ColorThemes.lightGreen}
-              key={i}
-            />
-            ))}
-        </Row>
-        <br/>
+          <br />
         </Container>
-      </div>
-      <div>
-        <br/>
-        <h2 style={positionsTitle}>FAQs</h2>
         <Container>
-          <FAQDropdowns
-              data = {forschoolsFAQJSON.schools_and_partners_faqs}
-            />
+          <hr />
+          <br />
+          <h2 style={positionsTitle}>COURSE SYLLABI</h2>
+          <br />
+          <Row className="justify-content-between m-0">
+            {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+              <FlagCard
+                image={flagInfo.file_path.replace("/public", "")}
+                title={flagInfo.language}
+                link={flagInfo.link}
+                backgroundColor={ColorThemes.lightGreen}
+                key={i}
+              />
+            ))}
+          </Row>
           <br />
         </Container>
       </div>
-
+      <div>
+        <br />
+        <h2 style={positionsTitle}>FAQs</h2>
+        <Container>
+          <FAQDropdowns data={forschoolsFAQJSON.schools_and_partners_faqs} />
+          <br />
+        </Container>
+      </div>
     </>
   );
 };
