@@ -15,7 +15,6 @@ export const NewsCard: React.FC<{
       border: "none",
       transition: "200ms",
       backgroundColor: ColorThemes.lightYellow,
-      fontFamily: "Oswald-Medium",
 		  "&:hover": {
         transition: "200ms",
         backgroundColor: ColorThemes.mainYellow,

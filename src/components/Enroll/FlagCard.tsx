@@ -15,7 +15,6 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
     },
     text: {
       composes: "text-center mb-4",
-      fontFamily: "BeVietnam-Bold",
     },
     cardBackground: {
       composes: "mb-2 rounded",

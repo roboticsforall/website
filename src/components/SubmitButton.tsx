@@ -5,7 +5,6 @@ import { createUseStyles } from "react-jss";
 
 export const SubmitButton: React.FC<{ state?: boolean }> = (props) => {
   const textStyle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
     color: "black",
   };

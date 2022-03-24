@@ -15,14 +15,11 @@ export const Footer: React.FC = () => {
     color: "#532F0A",
   };
   const linkStyle: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
     color: "#C06202"
   };
   const headerStyle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
   };
   const copyrightDisclaimer: React.CSSProperties = {
-    fontFamily: "BeVietnam-Light",
     textAlign: "center",
   };
   const iconSize: React.CSSProperties = {

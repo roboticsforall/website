@@ -19,7 +19,6 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const handleShow = () => setShow(true);
 
   const text: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     // whiteSpace: "nowrap",
   };
 

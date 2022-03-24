@@ -11,7 +11,6 @@ import { ColorThemes } from "@/colors";
 export const Newsletter: React.FC = () => {
 
 	const positionsTitle: React.CSSProperties = {
-		fontFamily: "Oswald-Medium",
 		textAlign: "center",
 	  };
 

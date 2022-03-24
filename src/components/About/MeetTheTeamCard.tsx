@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Col, Image, Modal, Button } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
-
-import "../../index.css";
+import { ColorThemes } from "../../colors";
 
 interface IProps {
   info: {
@@ -29,8 +28,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
     textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
   };
   const bodyText: React.CSSProperties = {
-
-    color: "white",
+    color: ColorThemes.white,
   };
   const imgBoxShadow = {
     boxShadow: "0px 7px 8px -8px #000000",

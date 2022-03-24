@@ -9,11 +9,9 @@ import { PosButton } from "@/components/Volunteer/PosButton";
 
 export const Donate: React.FC = () => {
   const positionsDescription = {
-    fontFamily: "BeVietnam-Medium",
   };
 
   const buttonText = {
-    fontFamily: "Mazzard-H-Extrabold",
   };
 
   return (

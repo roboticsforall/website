@@ -13,7 +13,6 @@ export const FormInput: React.FC<{
     borderRadius: 15,
     borderWidth: 1,
     height: props.height,
-    fontFamily: "BeVietnam-ExtraBold",
     paddingLeft: "0.5em",
     marginBottom: "0.5em",
   };

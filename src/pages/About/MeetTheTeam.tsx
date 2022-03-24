@@ -29,7 +29,6 @@ export const MeetTheTeam: React.FC = () => {
     backgroundColor: ColorThemes.lightOrange,
   };
   const header: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     textAlign: "center",
   };
 

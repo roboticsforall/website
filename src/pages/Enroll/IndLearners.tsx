@@ -19,15 +19,12 @@ import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
 
 export const IndLearners: React.FC = () => {
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainBlue,
     textAlign: "center",
   };
   const boldNote = {
-    fontFamily: "BeVietnam-ExtraBold",
   };
   const bodyText = {
-    fontFamily: "BeVietnam-Medium",
     lineHeight: 1.5,
   };
   const blueRow = {

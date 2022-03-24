@@ -33,7 +33,6 @@ import { ColorThemes } from "@/colors";
 export const TeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     color: ColorThemes.mainOrange,
     textAlign: "center",
   };

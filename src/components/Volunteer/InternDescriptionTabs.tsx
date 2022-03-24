@@ -30,7 +30,6 @@ export const InternDescriptionTabs: React.FC<IProps2> = (props: IProps2) => {
     general: (props: any) => ({
       background: props.backgroundColor,
       border: "none",
-      fontFamily: "BeVietnam-ExtraBold",
       padding: "20px",
       height: "100%",
     }),

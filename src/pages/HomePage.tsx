@@ -25,20 +25,16 @@ import { ColorThemes } from "../colors";
 
 export const HomePage: React.FC = () => {
   const header: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainYellow,
     textAlign: "center",
   };
   const headerDescription: React.CSSProperties = {
-    fontFamily: "BeVietnam-Regular",
     textAlign: "center",
   };
   const sponsorsLabel: React.CSSProperties = {
-    fontFamily: "BeVietnam-Bold",
     textAlign: "center",
   };
   const affOrgsHeader: React.CSSProperties = {
-    fontFamily: "Oswald-Medium",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordWrap: "break-word",
@@ -103,7 +99,7 @@ export const HomePage: React.FC = () => {
                   <Image fluid src={info.src} />
                   <h2
                     style={{
-                      fontFamily: "Oswald-Medium",
+  
                       textAlign: "center",
                       color: info.color,
                     }}
@@ -197,7 +193,6 @@ const HomeAffOrgsCard: React.FC<{
   logo: string;
 }> = (props) => {
   const affOrgsTitle: React.CSSProperties = {
-    fontFamily: "Mazzard-H-ExtraBold",
     color: "white",
     textAlign: "center",
   };
@@ -209,7 +204,6 @@ const HomeAffOrgsCard: React.FC<{
   const useStyles = createUseStyles({
     link: {
       composes: "hyperlink",
-      fontFamily: "BeVietnam-ExtraBold",
       transition: "0.2s",
       color: props.linkColor,
       "&:hover": {

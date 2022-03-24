@@ -6,7 +6,6 @@ import { createUseStyles } from "react-jss";
 export const activeStyles : any = {
   activeStyle: (backgroundColor: string) => ({
     background: backgroundColor,
-    fontFamily: "BeVietnam-ExtraBold",
     color: ColorThemes.black,
     padding: "20px"
   })
@@ -14,12 +13,10 @@ export const activeStyles : any = {
 
 const styles: any = {
   posHeader: {
-    fontFamily: "BeVietnam-ExtraBold",
     textAlign: "center",
     wordBreak: "break-word"
   },
   posDescription: {
-    fontFamily: "BeVietnam-Medium",
     color: ColorThemes.black,
   },
   posContainer: (props: any) => ({

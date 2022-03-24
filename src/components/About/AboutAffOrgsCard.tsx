@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Image, Col } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 
-import "../../index.css";
 
 export const AboutAffOrgsCard: React.FC<{
 	mainColor: string;
@@ -17,7 +16,6 @@ export const AboutAffOrgsCard: React.FC<{
 	const useStyles = createUseStyles({
 		link: {
 		  composes: "hyperlink text-center",
-		  fontFamily: "BeVietnam-ExtraBold",
 		  transition: "0.2s",
 		  letterSpacing: "0.1em",
 		  color: props.linkColor,

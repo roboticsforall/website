@@ -13,13 +13,10 @@ export const VolOverviewStats: React.FC<{
     textAlign: "center",
   };
   const circleTitle: React.CSSProperties = {
-    fontFamily: "Mazzard-H-ExtraBold",
   };
   const circleSubtext: React.CSSProperties = {
-    fontFamily: "BeVietnam-SemiBold",
   };
   const statNumbers: React.CSSProperties = {
-    fontFamily: "Mazzard-H-Bold",
     color: "black",
   };
   return (

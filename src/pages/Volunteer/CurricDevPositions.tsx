@@ -19,7 +19,6 @@ export const CurricDevPositions: React.FC = () => {
   const [key, setKey] = useState("one");
 
   const positionsTitle: React.CSSProperties = {
-    fontFamily: "BeVietnam-ExtraBold",
     color: ColorThemes.mainYellow,
     textAlign: "center",
     textTransform: "uppercase",
