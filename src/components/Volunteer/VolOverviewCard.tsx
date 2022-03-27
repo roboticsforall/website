@@ -11,8 +11,6 @@ export const VolOverviewCard: React.FC<{
   title: string;
   description: string;
 }> = (props) => {
-  const positionsTitle = {};
-  const description = {};
   const card = {
     backgroundColor: props.backgroundcolor,
   };
@@ -37,8 +35,8 @@ export const VolOverviewCard: React.FC<{
       <Row>
         <Col className="rounded center-align me-3 px-4" md={8} style={card}>
           <Row className="align-items-center">
-            <h2 style={positionsTitle}>{props.title}</h2>
-            <p style={description}>{props.description}</p>
+            <h2>{props.title}</h2>
+            <p>{props.description}</p>
           </Row>
         </Col>
         <Col className="center-align rounded" style={button}>

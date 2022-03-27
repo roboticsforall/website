@@ -23,7 +23,7 @@ export const Donate: React.FC = () => {
       <br></br>
       <Container>
         <Row className="text-center justify-content-center align-items-center">
-          <p style={positionsDescription} className="text-center">
+          <p className="text-center">
             As a part of our mission, we strive to provide cost-free education
             to students from low-income communities. As with any business, we
             have expenses such as equipment purchases, online software fees and
@@ -34,7 +34,7 @@ export const Donate: React.FC = () => {
             PayPal by clicking the button below. You also might be able to get
             your donation matched through your employer.
           </p>
-          <p style={positionsDescription} className="text-center">
+          <p className="text-center">
             Robotics for All is a 501(c)(3) non-profit organization. All
             donations are fully tax-deductible.
           </p>
