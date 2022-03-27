@@ -61,7 +61,7 @@ export const HomePage: React.FC = () => {
       <Container>
         <Row className="justify-content-center">
           <h1 style={header}>ROBOTICS FOR ALL</h1>
-          <p style={headerDescription}>
+          <p className="lead" style={headerDescription}>
             Robotics For All provides free STEM education to students of all
             backgrounds, particularly students from underserved communities. We
             aim to inspire children to pursue careers in STEM later in their
@@ -96,7 +96,7 @@ export const HomePage: React.FC = () => {
             ].map((info, i) => (
               <Col key = {i} md={4} className="text-center">
                 <Link to={info.to} className="hyperlink">
-                  <Image width = "100" src={info.src} />
+                  <Image width = "200" src={info.src} />
                   <h2
                     style={{
                       textAlign: "center",

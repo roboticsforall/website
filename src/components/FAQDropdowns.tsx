@@ -15,10 +15,10 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
       {props.data.map((QAPair: Object, i) => (
         <Accordion.Item key = {i} eventKey={i.toString()}>
           <Accordion.Header>
-            {Object.values(QAPair)[0]}
+            <h5>{Object.values(QAPair)[0]}</h5>
           </Accordion.Header>
           <Accordion.Body>
-            <Markdown>{Object.values(QAPair)[1]}</Markdown>
+            <p><Markdown>{Object.values(QAPair)[1]}</Markdown></p>
           </Accordion.Body>
         </Accordion.Item>
       ))}

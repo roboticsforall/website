@@ -92,6 +92,11 @@ a {
     sans-serif !important;
 }
 
+p, li { 
+  font-size: 1.25rem !important;
+}
+
+
 input::placeholder,
 textarea::placeholder {
   color: #b38f00;
