@@ -40,7 +40,8 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
             <img src={props.courseImage} />
           </div>
           <div className="text-center">
-            <h4>{props.title}</h4>
+            <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
+            <h4>{props.title.substring(props.title.indexOf("("))}</h4>
           </div>
         </Container>
       </Col>
