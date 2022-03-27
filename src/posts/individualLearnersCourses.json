@@ -35,6 +35,12 @@
       "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.bs3rj0uc5m65",
       "file_path": "https://ucarecdn.com/0acd5110-ca96-44f2-8d6d-bbe6f49b8f49/-/preview/400x400/",
       "course_description": "The Java (6-8) class introduces students to the basics of Java, a popular programming language. Students do not need experience with Java or programming to take this course."
+    },
+    {
+      "course_name": "Cool Course",
+      "link": "Cool Course",
+      "course_description": "Cool Course",
+      "file_path": "https://ucarecdn.com/8b923a22-8f4c-47f4-ac86-5919c963aaa9/--/scale_crop/400x400/smart/"
     }
   ]
 }
