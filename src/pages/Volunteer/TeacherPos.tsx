@@ -159,6 +159,9 @@ export const TeacherPos: React.FC = () => {
                 title={"Apply Now!"}
                 link={googleForms.teacher_app_link}
               />
+              <br />
+              <br />
+
               <h2 style={positionsTitle}>FAQs</h2>
               <Container>
                 <FAQDropdowns data={teachingfaqsJSON.teacher_faqs} />
@@ -235,14 +238,14 @@ export const TeacherPos: React.FC = () => {
                   </Markdown>
                 }
               />
-              <br></br>
-              <br></br>
               <PosButton
                 backgroundColor={ColorThemes.mainOrange}
                 backgroundHover={ColorThemes.mainYellow}
                 title={"Apply Now!"}
                 link={googleForms.ta_app_link}
-              />
+                />
+                <br></br>
+                <br></br>
               <h2 style={positionsTitle}>FAQs</h2>
               <Container>
                 <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />

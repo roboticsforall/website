@@ -71,6 +71,7 @@ export const CurricDevPositions: React.FC = () => {
               link={googleForms.curriculum_developer_app_link}
             />
             <br />
+            <br />
             <h2 style={positionsTitle}>Positions</h2>
             <FAQDropdowns data={curricdevpositionsJSON.positions} />
             <br></br>
