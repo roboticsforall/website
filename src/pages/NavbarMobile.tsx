@@ -55,7 +55,11 @@ export const NavbarMobile: React.FC = () => {
       <div style={screenCover}>
         <header className="py-5" style={navHeader}>
           <Link to="/">
-            <img src={TobyHeaderLogo} style={logoImageSize} />
+            <img
+              className="imageSize"
+              src={TobyHeaderLogo}
+              style={logoImageSize}
+            />
           </Link>
           <img onClick={setNavHeight} width="50" src={exitIcon} />
         </header>

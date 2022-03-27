@@ -49,13 +49,7 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <div style={yellowRow} className="d-flex justify-content-center">
-        <video
-          className="video-width"
-          autoPlay
-          loop
-          muted
-          // src={homePageVideo}
-        />
+      <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <Container>
