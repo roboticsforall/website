@@ -243,9 +243,9 @@ export const TeacherPos: React.FC = () => {
                 backgroundHover={ColorThemes.mainYellow}
                 title={"Apply Now!"}
                 link={googleForms.ta_app_link}
-                />
-                <br></br>
-                <br></br>
+              />
+              <br></br>
+              <br></br>
               <h2 style={positionsTitle}>FAQs</h2>
               <Container>
                 <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />

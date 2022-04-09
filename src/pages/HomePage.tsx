@@ -48,132 +48,145 @@ export const HomePage: React.FC = () => {
 
   return (
     <>
-      <div style={yellowRow} className="d-flex justify-content-center">
-      <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      <header style={yellowRow}>
+        <div role="container" className="center-align">
+          <iframe
+            className="video-width"
+            src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </header>
 
-      <Container>
-        <Row className="justify-content-center">
-          <h1 style={header}>ROBOTICS FOR ALL</h1>
-          <p className="lead" style={headerDescription}>
-            Robotics For All provides free STEM education to students of all
-            backgrounds, particularly students from underserved communities. We
-            aim to inspire children to pursue careers in STEM later in their
-            lives. We support student volunteers to teach our classes and engage
-            with their local communities.
-          </p>
-        </Row>
-      </Container>
-
-      <div style={yellowRow} className="d-flex justify-content-center p-5">
+      <section>
         <Container>
-          <Row>
-            {[
-              {
-                to: "/enroll/individlearners",
-                src: home,
-                label: "Students and Parents",
-                color: ColorThemes.mainBlue,
-              },
-              {
-                to: "/enroll/schools",
-                src: apple,
-                label: "Schools and Partners",
-                color: ColorThemes.mainGreen,
-              },
-              {
-                to: "/volunteer/overview",
-                src: world,
-                label: "Volunteers",
-                color: ColorThemes.mainOrange,
-              },
-            ].map((info, i) => (
-              <Col key = {i} md={4} className="text-center">
-                <Link to={info.to} className="hyperlink">
-                  <Image width = "200" src={info.src} />
-                  <h2
-                    style={{
-                      textAlign: "center",
-                      color: info.color,
-                    }}
-                  >
-                    {info.label}
-                  </h2>
-                </Link>
-              </Col>
-            ))}
+          <Row className="justify-content-center">
+            <h1 style={header}>ROBOTICS FOR ALL</h1>
+            <p className="lead" style={headerDescription}>
+              Robotics For All provides free STEM education to students of all
+              backgrounds, particularly students from underserved communities.
+              We aim to inspire children to pursue careers in STEM later in
+              their lives. We support student volunteers to teach our classes
+              and engage with their local communities.
+            </p>
           </Row>
         </Container>
-      </div>
-      <Container>
-        <br></br>
-        <br></br>
-        <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
-        <br></br>
-        {[
-          {
-            label: "tutoring for all",
-            logo: TFALogo,
-            linkColor: ColorThemes.darkOrange,
-            bgColor: ColorThemes.lightOrange,
-            link: "https://www.tutoringforall.org/about",
-          },
-          {
-            label: "crafts for charity",
-            logo: CFCLogo,
-            linkColor: ColorThemes.darkBlue,
-            bgColor: ColorThemes.lightBlue,
-            link: "https://craftsforcharity.com/about-us/",
-          },
-        ].map((afforgs, i) => (
-          <HomeAffOrgsCard
-            key={i}
-            org={afforgs.label}
-            link={afforgs.link}
-            linkColor={afforgs.linkColor}
-            bgColor={afforgs.bgColor}
-            logo={afforgs.logo}
-          />
-        ))}
-      </Container>
-      <Container>
-        <h3 style={sponsorsLabel}>
-          Supported by the following organizations and over 50 independent
-          donors:
-        </h3>
-        <br />
-        <br />
-        <div className="d-flex justify-content-around flex-wrap">
-          {[LM, TF, WMM, Google, NSP].map((sponsor, i) => (
-            <Image
-              key={i}
-              className="m-3"
-              style={sponsorImageSize}
-              src={sponsor}
-            />
-          ))}
-        </div>
-        <br />
-        <br />
+      </section>
 
-        <h3 style={sponsorsLabel}>
-          Proud partners of the following organizations:
-        </h3>
-        <br />
-        <br />
-        <div className="d-flex justify-content-around flex-wrap">
-          {[AH, YMCA, NGN, WH].map((partner, i) => (
-            <Image
+      <section style={yellowRow}>
+        <Container>
+          <div className="center-align">
+            <Row>
+              {[
+                {
+                  to: "/enroll/individlearners",
+                  src: home,
+                  label: "Students and Parents",
+                  color: ColorThemes.mainBlue,
+                },
+                {
+                  to: "/enroll/schools",
+                  src: apple,
+                  label: "Schools and Partners",
+                  color: ColorThemes.mainGreen,
+                },
+                {
+                  to: "/volunteer/overview",
+                  src: world,
+                  label: "Volunteers",
+                  color: ColorThemes.mainOrange,
+                },
+              ].map((info, i) => (
+                <Col key={i} md={4} className="text-center">
+                  <Link to={info.to} className="hyperlink">
+                    <Image width="200" src={info.src} />
+                    <h2
+                      style={{
+                        textAlign: "center",
+                        color: info.color,
+                      }}
+                    >
+                      {info.label}
+                    </h2>
+                  </Link>
+                </Col>
+              ))}
+            </Row>
+          </div>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
+          <br></br>
+          {[
+            {
+              label: "tutoring for all",
+              logo: TFALogo,
+              linkColor: ColorThemes.darkOrange,
+              bgColor: ColorThemes.lightOrange,
+              link: "https://www.tutoringforall.org/about",
+            },
+            {
+              label: "crafts for charity",
+              logo: CFCLogo,
+              linkColor: ColorThemes.darkBlue,
+              bgColor: ColorThemes.lightBlue,
+              link: "https://craftsforcharity.com/about-us/",
+            },
+          ].map((afforgs, i) => (
+            <HomeAffOrgsCard
               key={i}
-              className="m-2"
-              style={sponsorImageSize}
-              src={partner}
+              org={afforgs.label}
+              link={afforgs.link}
+              linkColor={afforgs.linkColor}
+              bgColor={afforgs.bgColor}
+              logo={afforgs.logo}
             />
           ))}
-        </div>
-        <br />
-        <br />
-      </Container>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <h3 style={sponsorsLabel}>
+            Supported by the following organizations and over 50 independent
+            donors:
+          </h3>
+          <div className="d-flex justify-content-around flex-wrap">
+            {[LM, TF, WMM, Google, NSP].map((sponsor, i) => (
+              <Image
+                key={i}
+                className="m-3"
+                style={sponsorImageSize}
+                src={sponsor}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section>
+        <Container>
+          <h3 style={sponsorsLabel}>
+            Proud partners of the following organizations:
+          </h3>
+          <div className="d-flex justify-content-around flex-wrap">
+            {[AH, YMCA, NGN, WH].map((partner, i) => (
+              <Image
+                key={i}
+                className="m-2"
+                style={sponsorImageSize}
+                src={partner}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
     </>
   );
 };

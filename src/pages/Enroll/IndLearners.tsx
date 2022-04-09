@@ -37,84 +37,75 @@ export const IndLearners: React.FC = () => {
         title={"Take a Class with us Today!"}
         description={""}
       />
-      <br />
-      <br />
-      <Container>
-        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-        <br />
-        <h3 style={boldNote}>
-          {indLearnersCourseOverview.indlearners_bold_text}
-        </h3>
-        <br />
-        <h5 style={bodyText}>
-          <Markdown>{indLearnersCourseOverview.indlearners_body_text}</Markdown>
-        </h5>
-        <br />
-        <LongButtonWithHyperlink
-          title={"Enroll in a Course Today!"}
-          location={enroll_links.ind_learners_link}
-          backgroundColor={ColorThemes.mainBlue}
-        />
-      </Container>
-      <br></br>
-      <br></br>
-      <div style={blueRow}>
+      <section>
         <Container>
-          <br></br>
-          <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-          <br></br>
+          <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+
+          <h3 style={boldNote}>
+            {indLearnersCourseOverview.indlearners_bold_text}
+          </h3>
           <h5 style={bodyText}>
-            View our selection of courses below and click on the boxes to learn
-            more.
+            <Markdown>
+              {indLearnersCourseOverview.indlearners_body_text}
+            </Markdown>
           </h5>
-          <br></br>
-          <Row className="g-4">
-            {coursesInfoJSON.courses_list.map((courseInfo, i) => (
-              <CourseCard
-                key={i}
-                link={courseInfo.link}
-                courseImage={courseInfo.file_path.replace("/public", "")}
-                title={courseInfo.course_name}
-                backgroundColor={ColorThemes.lightBlue}
-                dropdownCourseDescription={courseInfo.course_description}
-                dropdownCourseImage={courseInfo.file_path.replace(
-                  "/public",
-                  ""
-                )}
-              />
-            ))}
-          </Row>
-          <br></br>
-          <br></br>
+          <LongButtonWithHyperlink
+            title={"Enroll in a Course Today!"}
+            location={enroll_links.ind_learners_link}
+            backgroundColor={ColorThemes.mainBlue}
+          />
         </Container>
+      </section>
+
+      <section style={blueRow}>
+        <section>
+          <Container>
+            <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
+            <h5 style={bodyText}>
+              View our selection of courses below and click on the boxes to
+              learn more.
+            </h5>
+            <Row className="g-4">
+              {coursesInfoJSON.courses_list.map((courseInfo, i) => (
+                <CourseCard
+                  key={i}
+                  link={courseInfo.link}
+                  courseImage={courseInfo.file_path}
+                  title={courseInfo.course_name}
+                  backgroundColor={ColorThemes.lightBlue}
+                  dropdownCourseDescription={courseInfo.course_description}
+                  dropdownCourseImage={courseInfo.file_path}
+                />
+              ))}
+            </Row>
+          </Container>
+        </section>
+
+        <section>
+          <Container>
+            <hr />
+            <h2 style={positionsTitle}>COURSE SYLLABI</h2>
+            <Row className="justify-content-between m-0">
+              {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+                <FlagCard
+                  image={flagInfo.file_path}
+                  title={flagInfo.language}
+                  link={flagInfo.link}
+                  backgroundColor={ColorThemes.lightBlue}
+                  key={i}
+                />
+              ))}
+            </Row>
+          </Container>
+        </section>
+      </section>
+
+      <section>
         <Container>
-          <hr />
-          <br />
-          <h2 style={positionsTitle}>COURSE SYLLABI</h2>
-          <br />
-          <Row className="justify-content-between m-0">
-            {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-              <FlagCard
-                image={flagInfo.file_path.replace("/public", "")}
-                title={flagInfo.language}
-                link={flagInfo.link}
-                backgroundColor={ColorThemes.lightBlue}
-                key={i}
-              />
-            ))}
-          </Row>
-          <br />
-          <br />
-        </Container>
-      </div>
-      <div>
-        <br />
-        <h2 style={positionsTitle}>FAQs</h2>
-        <Container>
+          <h2 style={positionsTitle}>FAQs</h2>
           <FAQDropdowns data={indlearnersFAQJSON.ind_learners_faqs} />
-          <br />
         </Container>
-      </div>
+      </section>
     </>
   );
 };

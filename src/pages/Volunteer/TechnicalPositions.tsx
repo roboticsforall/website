@@ -66,7 +66,7 @@ export const TechnicalPositions: React.FC = () => {
               backgroundColor={ColorThemes.mainGreen}
               backgroundHover={ColorThemes.mainYellow}
               title={"Apply Now!"}
-              link={googleForms.publicity_intern_app_link}
+              link={googleForms.technical_intern_app_link}
             />
             <br />
             <br />

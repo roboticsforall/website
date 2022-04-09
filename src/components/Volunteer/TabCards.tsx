@@ -93,14 +93,14 @@ export const TabCardsLeftImage: React.FC<IProps> = (props: IProps) => {
             <div style={styles.posDescription}>{props.posDescription}</div>
             {props.button ? (
               <>
-              <PosButton
-                link={props.button.link}
-                title={props.button.title}
-                backgroundColor={props.button.backgroundColor}
-                backgroundHover={props.button.backgroundHover}
-              />
-              <br/>
-            </>
+                <PosButton
+                  link={props.button.link}
+                  title={props.button.title}
+                  backgroundColor={props.button.backgroundColor}
+                  backgroundHover={props.button.backgroundHover}
+                />
+                <br />
+              </>
             ) : (
               <></>
             )}
@@ -125,7 +125,7 @@ export const TabCardsRightImage: React.FC<IProps> = (props: IProps) => {
         <h2 style={styles.posHeader}>{props.posHeader}</h2>
         <Row>
           <Col>
-            <p style = {styles.posDescription}>{props.posDescription}</p>{" "}
+            <p style={styles.posDescription}>{props.posDescription}</p>{" "}
             {props.button ? (
               <>
                 <PosButton
@@ -134,7 +134,7 @@ export const TabCardsRightImage: React.FC<IProps> = (props: IProps) => {
                   backgroundColor={props.button.backgroundColor}
                   backgroundHover={props.button.backgroundHover}
                 />
-                <br/>
+                <br />
               </>
             ) : (
               <></>

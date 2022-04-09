@@ -49,7 +49,7 @@ export const MeetTheTeam: React.FC = () => {
       <div style={yellowRow}>
         <Carousel>
           {bmInfoJSON.board_members_list.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
+            <Carousel.Item key={i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainYellow}
@@ -70,7 +70,7 @@ export const MeetTheTeam: React.FC = () => {
       <div style={greenRow}>
         <Carousel>
           {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
+            <Carousel.Item key={i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainGreen}
@@ -91,7 +91,7 @@ export const MeetTheTeam: React.FC = () => {
       <div style={blueRow}>
         <Carousel>
           {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
+            <Carousel.Item key={i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainBlue}
@@ -111,7 +111,7 @@ export const MeetTheTeam: React.FC = () => {
       <div style={orangeRow}>
         <Carousel>
           {pcInfoJSON.pub_committee.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
+            <Carousel.Item key={i}>
               <MeetTheTeamCard
                 info={info}
                 backgroundColor={ColorThemes.mainOrange}

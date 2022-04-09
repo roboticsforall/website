@@ -16,7 +16,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
   const [key, setKey] = useState("one");
 
   const styles = {
-    general: (props: {backgroundColor: string}) => ({
+    general: (props: { backgroundColor: string }) => ({
       background: props.backgroundColor,
       border: "none",
       padding: "20px",
@@ -83,7 +83,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                 posHeader={"GENERAL BUSINESS PATH"}
                 posImage={TobyHeaderLogo}
                 posDescription={props.businessDescription}
-                generalColor = {ColorThemes.mainBlue}
+                generalColor={ColorThemes.mainBlue}
                 button={{
                   link: "/volunteer/businesspositions",
                   title: "Learn More",
@@ -97,7 +97,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                 posHeader={"TECHNICAL PATH"}
                 posImage={TobyHeaderLogo}
                 posDescription={props.technicalDescription}
-                generalColor = {ColorThemes.mainGreen}
+                generalColor={ColorThemes.mainGreen}
                 button={{
                   link: "/volunteer/technicalpositions",
                   title: "Learn More",
@@ -111,7 +111,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                 posHeader={"PUBLICITY PATH"}
                 posImage={TobyHeaderLogo}
                 posDescription={props.publicityDescription}
-                generalColor = {ColorThemes.mainOrange}
+                generalColor={ColorThemes.mainOrange}
                 button={{
                   link: "/volunteer/publicitypositions",
                   title: "Learn More",

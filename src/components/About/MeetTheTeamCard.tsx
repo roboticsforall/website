@@ -43,7 +43,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         onClick={handleShow}
         onKeyDown={handleShow}
         className="d-flex my-3 p-3"
-        role = "button"
+        role="button"
       >
         <Col md={"auto"}>
           <Image

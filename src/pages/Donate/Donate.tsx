@@ -8,7 +8,6 @@ import { ColorThemes } from "@/colors";
 import { PosButton } from "@/components/Volunteer/PosButton";
 
 export const Donate: React.FC = () => {
-  
   return (
     <>
       <Header

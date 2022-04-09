@@ -32,7 +32,7 @@ export const PastNewsletter: React.FC = () => {
               <Col key={i} md={3}>
                 <NewsCard
                   title={newsletter.date}
-                  file={newsletter.file_path.replace("/public", "")}
+                  file={newsletter.file_path}
                 />
                 <br />
               </Col>

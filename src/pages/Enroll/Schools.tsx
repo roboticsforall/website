@@ -73,14 +73,11 @@ export const Schools: React.FC = () => {
               <CourseCard
                 key={i}
                 link={courseInfo.link}
-                courseImage={courseInfo.file_path.replace("/public", "")}
+                courseImage={courseInfo.file_path}
                 title={courseInfo.course_name}
                 backgroundColor={ColorThemes.lightGreen}
                 dropdownCourseDescription={courseInfo.course_description}
-                dropdownCourseImage={courseInfo.file_path.replace(
-                  "/public",
-                  ""
-                )}
+                dropdownCourseImage={courseInfo.file_path}
               />
             ))}
           </Row>
@@ -96,7 +93,7 @@ export const Schools: React.FC = () => {
           <Row className="justify-content-between m-0">
             {syllabiJSON.syllabi_list.map((flagInfo, i) => (
               <FlagCard
-                image={flagInfo.file_path.replace("/public", "")}
+                image={flagInfo.file_path}
                 title={flagInfo.language}
                 link={flagInfo.link}
                 backgroundColor={ColorThemes.lightGreen}

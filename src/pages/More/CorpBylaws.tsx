@@ -48,7 +48,7 @@ export const CorpBylaws: React.FC = () => {
             key={i}
             date={bylawEntry.date}
             bylawName={bylawEntry.item_name}
-            download={bylawEntry.file_path.replace("/public", "")}
+            download={bylawEntry.file_path}
           />
         ))}
       </Container>

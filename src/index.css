@@ -75,6 +75,11 @@ body {
   line-height: 2 !important;
 }
 
+section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 h1,
 h2,
 h3,
@@ -92,10 +97,10 @@ a {
     sans-serif !important;
 }
 
-p, li { 
+p,
+li {
   font-size: 1.25rem !important;
 }
-
 
 input::placeholder,
 textarea::placeholder {
@@ -231,25 +236,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-/*#endregion*/
-
-/* #region Fade Animation for Webpages */
-.fade-enter {
-  opacity: 0;
-  transition: opacity 200ms;
-}
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 200ms;
-}
-.fade-exit {
-  opacity: 1;
-  transition: opacity 200ms;
-}
-.fade-active {
-  opacity: 0;
-  transition: opacity 200ms;
 }
 /*#endregion*/
 

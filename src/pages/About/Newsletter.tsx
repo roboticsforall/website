@@ -35,7 +35,7 @@ export const Newsletter: React.FC = () => {
             <Col key={i} md>
               <NewsCard
                 title={newsletter.date}
-                file={newsletter.file_path.replace("/public", "")}
+                file={newsletter.file_path}
               />
               <br />
             </Col>
@@ -52,7 +52,7 @@ export const Newsletter: React.FC = () => {
         <Row>
           <h2 style={positionsTitle}>Subscribe for Updates!</h2>
           <iframe
-            title = "Mail Chimp Subscribe Form"
+            title="Mail Chimp Subscribe Form"
             height="1000vh"
             scrolling="yes"
             src="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201"
