@@ -1,74 +1,14 @@
 @font-face {
-  font-family: "Mazzard-H-Bold";
-  src: url("./fonts/Mazzard/MazzardH-Bold.otf") format("woff"),
-    url("./fonts/Mazzard/MazzardH-Bold.otf") format("opentype"),
-    url("./fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
-}
-@font-face {
-  font-family: "Mazzard-H-Black";
-  src: url("./fonts/Mazzard/MazzardH-Black.otf") format("woff"),
-    url("./fonts/Mazzard/MazzardH-Black.otf") format("opentype"),
-    url("./fonts/Mazzard/MazzardH-Black.otf") format("truetype");
-}
-@font-face {
-  font-family: "Mazzard-H-ExtraBold";
-  src: url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
-    url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
-    url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-Medium";
-  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
-}
-@font-face {
   font-family: "BeVietnam-Bold";
-  src: url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-ExtraBold";
-  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-SemiBold";
-  src: url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
+  src: url("./fonts/BeVietnam-Bold.ttf") format("tff"),
+    url("./fonts/BeVietnam-Bold.ttf") format("opentype"),
+    url("./fonts/BeVietnam-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "BeVietnam-Regular";
-  src: url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-Light";
-  src: url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald-Medium";
-  src: url("./fonts/Oswald/Oswald-Medium.ttf") format("tff"),
-    url("./fonts/Oswald/Oswald-Medium.ttf") format("opentype"),
-    url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald-Regular";
-  src: url("./fonts/Oswald/Oswald-Regular.ttf") format("tff"),
-    url("./fonts/Oswald/Oswald-Regular.ttf") format("opentype"),
-    url("./fonts/Oswald/Oswald-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald-Bold";
-  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("tff"),
-    url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
-    url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+  src: url("./fonts/BeVietnam-Regular.ttf") format("tff"),
+    url("./fonts/BeVietnam-Regular.ttf") format("opentype"),
+    url("./fonts/BeVietnam-Regular.ttf") format("truetype");
 }
 
 body {

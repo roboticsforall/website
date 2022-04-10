@@ -12,13 +12,8 @@ export const PosButton: React.FC<{
   const useStyles = createUseStyles({
     button: (props: { backgroundColor: string; backgroundHover: string }) => ({
       composes: "py-3 justify-content-between align-items-center rounded",
-      transition: "200ms",
       color: ColorThemes.black,
       backgroundColor: props.backgroundColor,
-      "&:hover": {
-        backgroundColor: props.backgroundHover,
-        transition: "200ms",
-      },
     }),
   });
 

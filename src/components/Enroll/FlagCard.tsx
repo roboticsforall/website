@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Col } from "react-bootstrap";
+import { Image, Col, Button } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 
 interface IProps {
@@ -17,31 +17,24 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
       composes: "text-center mb-4",
     },
     cardBackground: {
-      composes: "mb-2 rounded",
-      transition: "200ms",
+      composes: "mb-2 border-0",
       backgroundColor: props.backgroundColor,
-      "&:hover": {
-        transition: "200ms",
-        backgroundColor: "#ffdb4d",
-      },
     },
   });
 
   const classes = useStyles();
 
   return (
-    <Col className={classes.cardBackground} md={3} lg={3}>
-      <a
-        className="hyperlink"
+    <Col md={3} lg={3}>
+      <Button
         target="_blank"
         href={props.link}
         rel="noreferrer"
+        className={classes.cardBackground}
       >
-        <div className="m-3 text-center">
-          <Image fluid src={props.image} />
+          <img src={props.image} />
           <h3 className={classes.text}>{props.title}</h3>
-        </div>
-      </a>
+      </Button>
     </Col>
   );
 };

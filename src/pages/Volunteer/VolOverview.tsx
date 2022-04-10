@@ -31,104 +31,81 @@ export const VolOverview: React.FC = () => {
           "Volunteer with us to teach or develop your skills as a business development intern!"
         }
       />
-      <br />
-      <br />
-      <Container>
-        <Row className="justify-content-around">
-          <Col md>
-            <VolOverviewStats
-              title={"Work With:"}
-              subtext={"Levels of Curriculum"}
-              end={12}
-            />
-          </Col>
-          <Col md>
-            <VolOverviewStats
-              title={"Join our:"}
-              subtext={"Active Volunteers"}
-              end={240}
-            />
-          </Col>
-          <Col md>
-            <VolOverviewStats
-              title={"Support our:"}
-              subtext={"Students Taught"}
-              end={1296}
-            />
-          </Col>
-        </Row>
-
-        <br />
-        <br />
-        <br />
-
-        <Row>
-          <h2 style={positionsTitle}>VOLUNTEER POSTIONS</h2>
-          <p style={positionsDescription}>
-            Robotics for All is run through the support of volunteers like you!
-            Apply today to become a volunteer teacher or business development
-            intern. Volunteer with us virtually from anywhere in the world!
-          </p>
-        </Row>
-        <br></br>
-        <Row>
-          <Col sm className="d-flex justify-content-center">
-            <VolOverviewImg
-              image={TeacherToby}
-              color={ColorThemes.darkGreen}
+      <section>
+        <Container>
+          <Row className="justify-content-around">
+            <Col md>
+              <VolOverviewStats
+                title={"Work With:"}
+                subtext={"Levels of Curriculum"}
+                end={12}
+              />
+            </Col>
+            <Col md>
+              <VolOverviewStats
+                title={"Join our:"}
+                subtext={"Active Volunteers"}
+                end={240}
+              />
+            </Col>
+            <Col md>
+              <VolOverviewStats
+                title={"Support our:"}
+                subtext={"Students Taught"}
+                end={1296}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <h2 style={positionsTitle}>VOLUNTEER POSTIONS</h2>
+            <p style={positionsDescription}>
+              Robotics for All is run through the support of volunteers like you!
+              Apply today to become a volunteer teacher or business development
+              intern. Volunteer with us virtually from anywhere in the world!
+            </p>
+          </Row>
+        </Container>
+      </section>
+        <section>
+        <Container>
+          <Row className = "g-4">
+            <VolOverviewCard
+              location="/volunteer/teacherpos"
+              backgroundColor={ColorThemes.lightGreen}
+              buttonColor={ColorThemes.darkGreen}
               title={"Lead Instructor"}
+              description={
+                "Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."
+              }
+              image = {TeacherToby}
             />
-          </Col>
-          <Col sm className="d-flex justify-content-center">
-            <VolOverviewImg
-              image={TAToby}
-              color={ColorThemes.darkOrange}
+            <VolOverviewCard
+              location="/volunteer/teacherpos"
+              backgroundColor={ColorThemes.lightOrange}
+              buttonColor={ColorThemes.darkOrange}
               title={"Teacher Assistant"}
+              description={
+                "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."
+              }
+              image = {TAToby}
             />
-          </Col>
-          <Col sm className="d-flex justify-content-center">
-            <VolOverviewImg
-              image={InternToby}
-              color={ColorThemes.darkBlue}
+            <VolOverviewCard
+              location="/volunteer/internoverview"
+              backgroundColor={ColorThemes.lightBlue}
+              buttonColor={ColorThemes.darkBlue}
               title={"Intern"}
+              description={
+                "Interns help across the backend of our organization in many ways and provide a vital service to our nonprofit, while gaining valuable business experiences."
+              }
+              image = {InternToby}
             />
-          </Col>
-        </Row>
-        <br></br>
-        <Col>
-          <VolOverviewCard
-            learnMoreLink="/volunteer/teacherpos"
-            backgroundcolor={ColorThemes.lightGreen}
-            buttonColor={ColorThemes.darkGreen}
-            title={"Lead Instructor"}
-            description={
-              "Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."
-            }
-          ></VolOverviewCard>
-          <br></br>
-          <VolOverviewCard
-            learnMoreLink="/volunteer/teacherpos"
-            backgroundcolor={ColorThemes.lightOrange}
-            buttonColor={ColorThemes.darkOrange}
-            title={"Teacher Assistant"}
-            description={
-              "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."
-            }
-          ></VolOverviewCard>
-          <br></br>
-          <VolOverviewCard
-            learnMoreLink="/volunteer/internoverview"
-            backgroundcolor={ColorThemes.lightBlue}
-            buttonColor={ColorThemes.darkBlue}
-            title={"Intern"}
-            description={
-              "Interns help across the backend of our organization in many ways and provide a vital service to our nonprofit, while gaining valuable business experiences."
-            }
-          ></VolOverviewCard>
-        </Col>
-        <br />
-        <br />
+          </Row>
       </Container>
+      </section>
     </>
   );
 };

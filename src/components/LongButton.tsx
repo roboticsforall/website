@@ -1,38 +1,12 @@
 import { ColorThemes } from "@/colors";
 import React from "react";
 import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { createUseStyles } from "react-jss";
 
 const title: React.CSSProperties = {
   textAlign: "center",
-};
-
-export const LongButtonWithRouterLink: React.FC<{
-  location: string;
-  title: string;
-}> = (props) => {
-  const useStyles = createUseStyles({
-    button: {
-      composes: "rounded p-2 justify-content-center align-items-center",
-      border: "none",
-      transition: "200ms",
-      backgroundColor: ColorThemes.mainYellow,
-      "&:hover": {
-        transition: "200ms",
-      },
-    },
-  });
-
-  const classes = useStyles();
-
-  return (
-    <Link className="hyperlink" to={props.location}>
-      <Row className={classes.button}>
-        <h3 style={title}>{props.title}</h3>
-      </Row>
-    </Link>
-  );
 };
 
 export const LongButtonWithHyperlink: React.FC<{
@@ -42,29 +16,21 @@ export const LongButtonWithHyperlink: React.FC<{
 }> = (props) => {
   const useStyles = createUseStyles({
     button: {
-      composes: "rounded p-2 justify-content-center align-items-center",
-      border: "none",
-      transition: "200ms",
+      composes: "w-100 border-0",
       backgroundColor: props.backgroundColor,
-      "&:hover": {
-        transition: "200ms",
-        backgroundColor: ColorThemes.mainYellow,
-      },
     },
   });
 
   const classes = useStyles();
 
   return (
-    <a
+    <Button
       target="_blank"
       rel="noreferrer"
       href={props.location}
-      className="hyperlink"
+      className = {classes.button}
     >
-      <Row className={classes.button}>
         <h3 style={title}>{props.title}</h3>
-      </Row>
-    </a>
+    </Button>
   );
 };

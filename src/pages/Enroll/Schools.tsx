@@ -24,10 +24,6 @@ export const Schools: React.FC = () => {
     color: ColorThemes.mainGreen,
     textAlign: "center",
   };
-  const boldNote = {};
-  const bodyText = {
-    lineHeight: 1.5,
-  };
   const greenRow = {
     backgroundColor: "#33cc664D",
   };
@@ -40,34 +36,34 @@ export const Schools: React.FC = () => {
         title={"Partner with us Today for After-School STEM Programs!"}
         description={""}
       />
-      <br />
-      <br />
-      <Container>
-        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-        <br />
-        <h3 style={boldNote}>{schoolsCourseOverview.schools_bold_text}</h3>
-        <br />
-        <h5 style={bodyText}>
-          <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
-        </h5>
-        <br />
-        <LongButtonWithHyperlink
-          title={"Partner With Us Today!"}
-          location={enroll_links.schools_and_partners_link}
-          backgroundColor={ColorThemes.mainGreen}
-        />
-      </Container>
-      <br></br>
-      <div style={greenRow}>
+      <section>
         <Container>
-          <br></br>
+          <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+          
+          <h3>{schoolsCourseOverview.schools_bold_text}</h3>
+          
+          <h5>
+            <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
+          </h5>
+          
+          <LongButtonWithHyperlink
+            title={"Partner With Us Today!"}
+            location={enroll_links.schools_and_partners_link}
+            backgroundColor={ColorThemes.mainGreen}
+          />
+        </Container>
+      </section>
+      <section style={greenRow}>
+        <section>
+        <Container>
+          
           <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-          <br></br>
-          <h5 style={bodyText}>
+          
+          <h5>
             View our selection of courses below and click on the boxes to learn
             more.
           </h5>
-          <br></br>
+          
           <Row className="g-4">
             {coursesInfoJSON.courses_list.map((courseInfo, i) => (
               <CourseCard
@@ -81,16 +77,17 @@ export const Schools: React.FC = () => {
               />
             ))}
           </Row>
-          <br></br>
-          <br></br>
-          <br />
+          
+          
+          
         </Container>
+        </section>
+        <section>
         <Container>
           <hr />
-          <br />
           <h2 style={positionsTitle}>COURSE SYLLABI</h2>
-          <br />
-          <Row className="justify-content-between m-0">
+          
+          <Row className = "g-4">
             {syllabiJSON.syllabi_list.map((flagInfo, i) => (
               <FlagCard
                 image={flagInfo.file_path}
@@ -101,17 +98,16 @@ export const Schools: React.FC = () => {
               />
             ))}
           </Row>
-          <br />
+          
         </Container>
-      </div>
-      <div>
-        <br />
-        <h2 style={positionsTitle}>FAQs</h2>
+        </section>
+      </section>
+      <section>
         <Container>
+          <h2 style={positionsTitle}>FAQs</h2>
           <FAQDropdowns data={forschoolsFAQJSON.schools_and_partners_faqs} />
-          <br />
         </Container>
-      </div>
+      </section>
     </>
   );
 };

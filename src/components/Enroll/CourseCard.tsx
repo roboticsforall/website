@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Image, Row, Col, Container, Modal } from "react-bootstrap";
+import { Image, Row, Col, Container, Modal, Button } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import { createUseStyles } from "react-jss";
 
@@ -20,13 +20,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
 
   const useStyles = createUseStyles({
     cardBackground: {
-      composes: "d-flex flex-column justify-content-center rounded",
-      transition: "200ms",
       backgroundColor: props.backgroundColor,
-      "&:hover": {
-        transition: "200ms",
-        backgroundColor: "#ffdb4d",
-      },
     },
   });
 
@@ -35,15 +29,11 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   return (
     <>
       <Col md={4} lg={3} onClick={handleShow}>
-        <Container className={classes.cardBackground}>
-          <div className="d-flex justify-content-center">
+        <Button className={classes.cardBackground}>
             <img src={props.courseImage} />
-          </div>
-          <div className="text-center">
             <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
             <h4>{props.title.substring(props.title.indexOf("("))}</h4>
-          </div>
-        </Container>
+        </Button>
       </Col>
 
       <Modal

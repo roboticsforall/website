@@ -22,10 +22,6 @@ export const IndLearners: React.FC = () => {
     color: ColorThemes.mainBlue,
     textAlign: "center",
   };
-  const boldNote = {};
-  const bodyText = {
-    lineHeight: 1.5,
-  };
   const blueRow = {
     backgroundColor: "#3399ff4D",
   };
@@ -41,10 +37,10 @@ export const IndLearners: React.FC = () => {
         <Container>
           <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
 
-          <h3 style={boldNote}>
+          <h3>
             {indLearnersCourseOverview.indlearners_bold_text}
           </h3>
-          <h5 style={bodyText}>
+          <h5>
             <Markdown>
               {indLearnersCourseOverview.indlearners_body_text}
             </Markdown>
@@ -61,7 +57,7 @@ export const IndLearners: React.FC = () => {
         <section>
           <Container>
             <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-            <h5 style={bodyText}>
+            <h5 >
               View our selection of courses below and click on the boxes to
               learn more.
             </h5>
@@ -85,7 +81,7 @@ export const IndLearners: React.FC = () => {
           <Container>
             <hr />
             <h2 style={positionsTitle}>COURSE SYLLABI</h2>
-            <Row className="justify-content-between m-0">
+            <Row className="g-4">
               {syllabiJSON.syllabi_list.map((flagInfo, i) => (
                 <FlagCard
                   image={flagInfo.file_path}

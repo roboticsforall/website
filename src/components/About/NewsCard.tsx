@@ -11,12 +11,7 @@ export const NewsCard: React.FC<{
     card: {
       composes: "rounded",
       border: "none",
-      transition: "200ms",
       backgroundColor: ColorThemes.lightYellow,
-      "&:hover": {
-        transition: "200ms",
-        backgroundColor: ColorThemes.mainYellow,
-      },
     },
   });
 
