@@ -37,10 +37,10 @@
       "course_description": "The Java (6-8) class introduces students to the basics of Java, a popular programming language. Students do not need experience with Java or programming to take this course."
     },
     {
-      "course_name": "Cool Course",
-      "link": "Cool Course",
-      "course_description": "Cool Course",
-      "file_path": "https://ucarecdn.com/ba395390-e43f-4b55-9721-13676ebb4264/-/scale_crop/400x400/smart/"
+      "course_name": "Tinkercad (5-8)",
+      "file_path": "https://ucarecdn.com/dd2b33f7-32a8-48dc-b34e-0aa829b1a6f4/-/scale_crop/400x400/smart/",
+      "link": "https://docs.google.com/document/d/1khPJJN96lEFsvtt6z8PTVDjsZeWS9pa2SeyMRQZoWlA/edit?usp=sharing",
+      "course_description": "The Computer-Aided Design with Tinkercad class introduces students to the basics of computer-aided design (the use of software to help with designing objects) using Tinkercad, an easy-to-use online platform. Students do not need any experience with computer-aided design to take this course."
     }
   ]
 }
