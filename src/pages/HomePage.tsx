@@ -48,9 +48,15 @@ export const HomePage: React.FC = () => {
 
   return (
     <>
+      {(window.innerWidth > 768) ? (
+
       <div style={yellowRow} className="d-flex justify-content-center">
-      <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+
+      ) : (
+        <></>
+      )}
 
       <Container>
         <Row className="justify-content-center">
