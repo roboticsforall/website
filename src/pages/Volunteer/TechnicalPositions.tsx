@@ -68,9 +68,7 @@ export const TechnicalPositions: React.FC = () => {
               title={"Apply Now!"}
               link={googleForms.technical_intern_app_link}
             />
-            <br />
-            <br />
-            <h2 style={positionsTitle}>Positions</h2>
+    <h2 style={positionsTitle}>Positions</h2>
             <FAQDropdowns data={technicalInternJSON.positions} />
             <br></br>
             <br></br>

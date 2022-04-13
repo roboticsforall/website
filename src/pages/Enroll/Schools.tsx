@@ -50,6 +50,7 @@ export const Schools: React.FC = () => {
             title={"Partner With Us Today!"}
             location={enroll_links.schools_and_partners_link}
             backgroundColor={ColorThemes.mainGreen}
+            variant = "success"
           />
         </Container>
       </section>
@@ -74,6 +75,7 @@ export const Schools: React.FC = () => {
                 backgroundColor={ColorThemes.lightGreen}
                 dropdownCourseDescription={courseInfo.course_description}
                 dropdownCourseImage={courseInfo.file_path}
+                variant = "success"
               />
             ))}
           </Row>
@@ -95,6 +97,7 @@ export const Schools: React.FC = () => {
                 link={flagInfo.link}
                 backgroundColor={ColorThemes.lightGreen}
                 key={i}
+                variant = "success"
               />
             ))}
           </Row>

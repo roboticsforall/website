@@ -10,6 +10,7 @@ interface IProps {
   backgroundColor: string;
   dropdownCourseDescription: string;
   dropdownCourseImage: string;
+  variant: string;
 }
 
 export const CourseCard: React.FC<IProps> = (props: IProps) => {
@@ -29,7 +30,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   return (
     <>
       <Col md={4} lg={3} onClick={handleShow}>
-        <Button className={classes.cardBackground}>
+        <Button variant = {props.variant} className={classes.cardBackground}>
             <img src={props.courseImage} />
             <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
             <h4>{props.title.substring(props.title.indexOf("("))}</h4>

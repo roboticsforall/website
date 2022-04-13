@@ -13,6 +13,7 @@ export const LongButtonWithHyperlink: React.FC<{
   location: string;
   title: string;
   backgroundColor: string;
+  variant: string;
 }> = (props) => {
   const useStyles = createUseStyles({
     button: {
@@ -29,6 +30,7 @@ export const LongButtonWithHyperlink: React.FC<{
       rel="noreferrer"
       href={props.location}
       className = {classes.button}
+      variant = {props.variant}
     >
         <h3 style={title}>{props.title}</h3>
     </Button>

@@ -47,6 +47,7 @@ export const Newsletter: React.FC = () => {
           title={"Read Previous Newsletters"}
           location="/about/pastnewsletter"
           backgroundColor={ColorThemes.mainYellow}
+          variant = "warning"
         />
         <br></br>
         <br></br>

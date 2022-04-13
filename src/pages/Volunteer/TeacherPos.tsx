@@ -246,13 +246,15 @@ export const TeacherPos: React.FC = () => {
               />
               <br></br>
               <br></br>
-              <h2 style={positionsTitle}>FAQs</h2>
-              <Container>
-                <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />
-                <br />
-              </Container>
+            <h2 style={positionsTitle}>FAQs</h2>
+            <Container>
+              <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />
+              <br />
+              <br></br>
+              <br></br>
+            </Container>
             </Tab.Pane>
-          </Tab.Content>
+            </Tab.Content>
         </Tab.Container>
       </Container>
       <br />

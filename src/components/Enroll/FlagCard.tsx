@@ -7,6 +7,7 @@ interface IProps {
   title: string;
   image: string;
   backgroundColor: string;
+  variant: string;
 }
 export const FlagCard: React.FC<IProps> = (props: IProps) => {
   const useStyles = createUseStyles({
@@ -31,6 +32,7 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
         href={props.link}
         rel="noreferrer"
         className={classes.cardBackground}
+        variant = {props.variant}
       >
           <img src={props.image} />
           <h3 className={classes.text}>{props.title}</h3>

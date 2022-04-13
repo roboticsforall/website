@@ -49,6 +49,7 @@ export const IndLearners: React.FC = () => {
           title={"Enroll in a Course Today!"}
           location={enroll_links.ind_learners_link}
           backgroundColor={ColorThemes.mainBlue}
+          variant = "primary"
         />
       </Container>
       </section>
@@ -71,6 +72,7 @@ export const IndLearners: React.FC = () => {
                   backgroundColor={ColorThemes.lightBlue}
                   dropdownCourseDescription={courseInfo.course_description}
                   dropdownCourseImage={courseInfo.file_path}
+                  variant = "primary"
                 />
               ))}
             </Row>

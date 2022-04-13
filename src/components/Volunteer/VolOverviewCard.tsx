@@ -3,7 +3,6 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
-import { LongButtonWithHyperlink } from "../LongButton";
 
 export const VolOverviewCard: React.FC<{
   backgroundColor: string;
