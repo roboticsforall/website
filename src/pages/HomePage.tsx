@@ -26,10 +26,6 @@ import { ColorThemes } from "../colors";
 export const HomePage: React.FC = () => {
   const header: React.CSSProperties = {
     color: ColorThemes.mainYellow,
-    textAlign: "center",
-  };
-  const headerDescription: React.CSSProperties = {
-    textAlign: "center",
   };
   const sponsorsLabel: React.CSSProperties = {
     textAlign: "center",
@@ -59,9 +55,9 @@ export const HomePage: React.FC = () => {
       )}
 
       <Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center text-center">
           <h1 style={header}>ROBOTICS FOR ALL</h1>
-          <p className="lead" style={headerDescription}>
+          <p>
             Robotics For All provides free STEM education to students of all
             backgrounds, particularly students from underserved communities. We
             aim to inspire children to pursue careers in STEM later in their
