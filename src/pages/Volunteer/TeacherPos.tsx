@@ -9,7 +9,6 @@ import {
 } from "@/components/Volunteer/TabCards";
 import { activeStyles } from "@/components/Volunteer/TabCards";
 
-import { PosButton } from "@/components/Volunteer/PosButton";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 
 import Calendar from "@/media/Graphics/calendar.png";
@@ -28,6 +27,7 @@ import teachingfaqsJSON from "@/posts/faqs/recruitment_faqs.json";
 import googleForms from "@/posts/volunteer_sign_up_forms.json";
 
 import { ColorThemes } from "@/colors";
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
 export const TeacherPos: React.FC = () => {
   const [key, setKey] = useState("one");
@@ -153,11 +153,10 @@ export const TeacherPos: React.FC = () => {
                   </Markdown>
                 }
               />
-              <PosButton
-                backgroundColor={ColorThemes.mainOrange}
-                backgroundHover={ColorThemes.mainYellow}
-                title={"Apply Now!"}
-                link={googleForms.teacher_app_link}
+              <ButtonFullWidth
+                location={googleForms.ta_app_link}
+                variant={"primaryOrange"}
+                title="Apply Now"
               />
               <br />
               <br />
@@ -238,23 +237,22 @@ export const TeacherPos: React.FC = () => {
                   </Markdown>
                 }
               />
-              <PosButton
-                backgroundColor={ColorThemes.mainOrange}
-                backgroundHover={ColorThemes.mainYellow}
-                title={"Apply Now!"}
-                link={googleForms.ta_app_link}
+              <ButtonFullWidth
+                location={googleForms.ta_app_link}
+                variant={"primaryOrange"}
+                title="Apply Now"
               />
               <br></br>
               <br></br>
-            <h2 style={positionsTitle}>FAQs</h2>
-            <Container>
-              <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />
-              <br />
-              <br></br>
-              <br></br>
-            </Container>
+              <h2 style={positionsTitle}>FAQs</h2>
+              <Container>
+                <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />
+                <br />
+                <br></br>
+                <br></br>
+              </Container>
             </Tab.Pane>
-            </Tab.Content>
+          </Tab.Content>
         </Tab.Container>
       </Container>
       <br />

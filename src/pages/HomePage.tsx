@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Container, Col, Image, Button } from "react-bootstrap";
+import { Row, Container, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
@@ -44,12 +44,17 @@ export const HomePage: React.FC = () => {
 
   return (
     <>
-      {(window.innerWidth > 768) ? (
-
+      {window.innerWidth > 768 ? (
         <div style={yellowRow} className="d-flex justify-content-center">
-          <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe
+            className="video-width"
+            src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-
       ) : (
         <></>
       )}
@@ -71,42 +76,42 @@ export const HomePage: React.FC = () => {
 
       <section style={yellowRow}>
         <Container>
-            <Row>
-              {[
-                {
-                  location: "/enroll/individlearners",
-                  src: home,
-                  label: "Students and Parents",
-                  color: ColorThemes.mainBlue,
-                },
-                {
-                  location: "/enroll/schools",
-                  src: apple,
-                  label: "Schools and Partners",
-                  color: ColorThemes.mainGreen,
-                },
-                {
-                  location: "/volunteer/overview",
-                  src: world,
-                  label: "Volunteers",
-                  color: ColorThemes.mainOrange,
-                },
-              ].map((info, i) => (
-                <Col key={i} md={4} className="text-center">
-                  <Link className = "hyperlink" to = {info.location}>
-                    <Image width="200" src={info.src} />
-                    <h2
-                      style={{
-                        textAlign: "center",
-                        color: info.color,
-                      }}
-                    >
-                      {info.label}
-                    </h2>
-                  </Link>
-                </Col>
-              ))}
-            </Row>
+          <Row>
+            {[
+              {
+                location: "/enroll/individlearners",
+                src: home,
+                label: "Students and Parents",
+                color: ColorThemes.mainBlue,
+              },
+              {
+                location: "/enroll/schools",
+                src: apple,
+                label: "Schools and Partners",
+                color: ColorThemes.mainGreen,
+              },
+              {
+                location: "/volunteer/overview",
+                src: world,
+                label: "Volunteers",
+                color: ColorThemes.mainOrange,
+              },
+            ].map((info, i) => (
+              <Col key={i} md={4} className="text-center">
+                <Link className="hyperlink" to={info.location}>
+                  <Image width="200" src={info.src} />
+                  <h2
+                    style={{
+                      textAlign: "center",
+                      color: info.color,
+                    }}
+                  >
+                    {info.label}
+                  </h2>
+                </Link>
+              </Col>
+            ))}
+          </Row>
         </Container>
       </section>
 

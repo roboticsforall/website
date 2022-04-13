@@ -3,8 +3,9 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/yellow.png";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
-import { PosButton } from "@/components/Volunteer/PosButton";
 import { activeStyles } from "@/components/Volunteer/TabCards";
+
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
 import Markdown from "markdown-to-jsx";
 
@@ -64,11 +65,10 @@ export const CurricDevPositions: React.FC = () => {
                 </div>
               }
             />
-            <PosButton
-              backgroundColor={ColorThemes.mainYellow}
-              backgroundHover={ColorThemes.mainYellow}
+            <ButtonFullWidth
               title={"Apply Now!"}
-              link={googleForms.curriculum_developer_app_link}
+              location={googleForms.curriculum_developer_app_link}
+              variant="primaryYellow"
             />
             <br />
             <br />

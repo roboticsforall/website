@@ -42,6 +42,8 @@ li {
   font-size: 1.25rem !important;
 }
 
+/* button variants */
+/* 
 input::placeholder,
 textarea::placeholder {
   color: #b38f00;
@@ -59,7 +61,7 @@ textarea {
   background-color: #ffcc004d;
   font-family: "BeVietnam-ExtraBold" !important;
   color: #000000;
-}
+} */
 
 /* #region Custom styles for navbar */
 .nav-item {

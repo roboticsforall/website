@@ -21,21 +21,17 @@ export const VolOverviewCard: React.FC<{
   const classes = useStyles();
 
   return (
-  <Col md = {4}>
-    <Container className = {classes.cardBackground}>
-      <Row className = "justify-content-center">
-        <Col>
-          {(window.innerWidth >= 768) ? (
-            <img src = {props.image}/>
-          ) : (
-            <></>
-          )}
-          <h2>{props.title}</h2>
-          <p>{props.description}</p>
-          <a href = {props.location}>Learn More</a>
-        </Col>
-      </Row>
-    </Container>
+    <Col md={4}>
+      <Container className={classes.cardBackground}>
+        <Row className="justify-content-center">
+          <Col>
+            {window.innerWidth >= 768 ? <img src={props.image} /> : <></>}
+            <h2>{props.title}</h2>
+            <p>{props.description}</p>
+            <a href={props.location}>Learn More</a>
+          </Col>
+        </Row>
+      </Container>
     </Col>
   );
 };

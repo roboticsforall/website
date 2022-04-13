@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { FlagCard } from "@/components/Enroll/FlagCard";
 import { CourseCard } from "@/components/Enroll//CourseCard";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import { LongButtonWithHyperlink } from "@/components/LongButton";
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
 import Markdown from "markdown-to-jsx";
 
@@ -43,66 +43,60 @@ export const Schools: React.FC = () => {
           <h3>{schoolsCourseOverview.schools_enrollment_status_text}</h3>
           <br />
           <p>
-            <Markdown>{schoolsCourseOverview.indlearners_details_text}</Markdown>
+            <Markdown>
+              {schoolsCourseOverview.indlearners_details_text}
+            </Markdown>
           </p>
           <br />
-          <LongButtonWithHyperlink
+          <ButtonFullWidth
             title={"Partner With Us Today!"}
             location={enroll_links.schools_and_partners_link}
-            backgroundColor={ColorThemes.mainGreen}
-            variant = "success"
+            variant="primaryGreen"
           />
         </Container>
       </section>
       <section style={greenRow}>
         <section>
-        <Container>
-          
-          <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-          
-          <h5>
-            View our selection of courses below and click on the boxes to learn
-            more.
-          </h5>
-          
-          <Row className="g-4">
-            {coursesInfoJSON.courses_list.map((courseInfo, i) => (
-              <CourseCard
-                key={i}
-                link={courseInfo.link}
-                courseImage={courseInfo.file_path}
-                title={courseInfo.course_name}
-                backgroundColor={ColorThemes.lightGreen}
-                dropdownCourseDescription={courseInfo.course_description}
-                dropdownCourseImage={courseInfo.file_path}
-                variant = "success"
-              />
-            ))}
-          </Row>
-          
-          
-          
-        </Container>
+          <Container>
+            <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
+
+            <h5>
+              View our selection of courses below and click on the boxes to
+              learn more.
+            </h5>
+
+            <Row className="g-4">
+              {coursesInfoJSON.courses_list.map((courseInfo, i) => (
+                <CourseCard
+                  key={i}
+                  link={courseInfo.link}
+                  courseImage={courseInfo.file_path}
+                  title={courseInfo.course_name}
+                  dropdownCourseDescription={courseInfo.course_description}
+                  dropdownCourseImage={courseInfo.file_path}
+                  variant="primaryGreen"
+                />
+              ))}
+            </Row>
+          </Container>
         </section>
         <section>
-        <Container>
-          <hr />
-          <h2 style={positionsTitle}>COURSE SYLLABI</h2>
-          
-          <Row className = "g-4">
-            {syllabiJSON.syllabi_list.map((flagInfo, i) => (
-              <FlagCard
-                image={flagInfo.file_path}
-                title={flagInfo.language}
-                link={flagInfo.link}
-                backgroundColor={ColorThemes.lightGreen}
-                key={i}
-                variant = "success"
-              />
-            ))}
-          </Row>
-          
-        </Container>
+          <Container>
+            <hr />
+            <h2 style={positionsTitle}>COURSE SYLLABI</h2>
+
+            <Row className="g-4">
+              {syllabiJSON.syllabi_list.map((flagInfo, i) => (
+                <FlagCard
+                  image={flagInfo.file_path}
+                  title={flagInfo.language}
+                  link={flagInfo.link}
+                  key={i}
+                  variant="primaryGreen"
+                />
+              ))}
+            </Row>
+          </Container>
         </section>
       </section>
       <section>

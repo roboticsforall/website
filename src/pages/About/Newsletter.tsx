@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import { NewsCard } from "@/components/About/NewsCard";
-import { LongButtonWithHyperlink } from "@/components/LongButton";
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image here
 import newsletterJSON from "@/posts/newsletters.json";
 
@@ -33,21 +33,17 @@ export const Newsletter: React.FC = () => {
         <Row>
           {newsletterJSON.newsletters_list.slice(0, 4).map((newsletter, i) => (
             <Col key={i} md>
-              <NewsCard
-                title={newsletter.date}
-                file={newsletter.file_path}
-              />
+              <NewsCard title={newsletter.date} file={newsletter.file_path} />
               <br />
             </Col>
           ))}
         </Row>
 
         {/* Read Previous News Button */}
-        <LongButtonWithHyperlink
+        <ButtonFullWidth
           title={"Read Previous Newsletters"}
           location="/about/pastnewsletter"
-          backgroundColor={ColorThemes.mainYellow}
-          variant = "warning"
+          variant="primaryYellow"
         />
         <br></br>
         <br></br>

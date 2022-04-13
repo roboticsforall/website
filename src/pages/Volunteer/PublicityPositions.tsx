@@ -3,7 +3,7 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
-import { PosButton } from "@/components/Volunteer/PosButton";
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
 import { activeStyles } from "@/components/Volunteer/TabCards";
 
@@ -57,11 +57,10 @@ export const PublicityPositions: React.FC = () => {
                 </div>
               }
             />
-            <PosButton
-              backgroundColor={ColorThemes.mainOrange}
-              backgroundHover={ColorThemes.mainYellow}
+            <ButtonFullWidth
               title={"Apply Now!"}
-              link={googleForms.publicity_intern_app_link}
+              location={googleForms.publicity_intern_app_link}
+              variant="primaryOrange"
             />
             <br></br>
             <br></br>

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $container-max-widths: (
   sm: 540px,
   md: 600px,
@@ -5,7 +7,50 @@ $container-max-widths: (
   xl: 800px,
   xxl: 1000px,
 );
-
+  
 $border-radius: 0.5em;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+$primaryYellow: (
+  "main": #ffcc00,
+  "light": #ffdb4d,
+  "dark": #b38f00,
+);
+$primaryGreen: (
+  "main": #33cc66,
+  "light": #70db94,
+  "dark": #248f47,
+);
+    
+$primaryBlue: (
+  "main": #3399ff,
+  "light": #70b8ff,
+  "dark": #006bd6,
+);
+
+$primaryOrange: (
+  "main": #fa8d1f,
+  "light": #fcaf62,
+  "dark": #c06204,
+);
+
+$colors: (
+  'primaryBlue': $primaryBlue,
+  'primaryGreen': $primaryGreen,
+  'primaryYellow': $primaryYellow,
+  'primaryOrange': $primaryOrange,
+);
+
+@each $name, $color in $colors {
+  .btn-#{$name} {
+      background-color: map.get($color, "main");
+      color: white;
+    &:hover {
+      background-color: map.get($color, "dark");
+      color: white;
+    }
+  }
+}
+
+

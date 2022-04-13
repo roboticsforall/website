@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { FlagCard } from "@/components/Enroll/FlagCard";
 import { CourseCard } from "@/components/Enroll/CourseCard";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
-import { LongButtonWithHyperlink } from "@/components/LongButton";
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
 import Markdown from "markdown-to-jsx";
 
@@ -34,31 +34,32 @@ export const IndLearners: React.FC = () => {
         description={""}
       />
       <section>
-      <Container>
-        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-        <br />
-        <h3>
-          {indLearnersCourseOverview.indlearners_enrollment_status_text}
-        </h3>
-        <br />
-        <p>
-          <Markdown>{indLearnersCourseOverview.indlearners_details_text}</Markdown>
-        </p>
-        <br />
-        <LongButtonWithHyperlink
-          title={"Enroll in a Course Today!"}
-          location={enroll_links.ind_learners_link}
-          backgroundColor={ColorThemes.mainBlue}
-          variant = "primary"
-        />
-      </Container>
+        <Container>
+          <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+          <br />
+          <h3>
+            {indLearnersCourseOverview.indlearners_enrollment_status_text}
+          </h3>
+          <br />
+          <p>
+            <Markdown>
+              {indLearnersCourseOverview.indlearners_details_text}
+            </Markdown>
+          </p>
+          <br />
+          <ButtonFullWidth
+            title={"Enroll in a Course Today!"}
+            location={enroll_links.ind_learners_link}
+            variant="primaryBlue"
+          />
+        </Container>
       </section>
 
       <section style={blueRow}>
         <section>
           <Container>
             <h2 style={positionsTitle}>COURSE OFFERINGS</h2>
-            <h5 >
+            <h5>
               View our selection of courses below and click on the boxes to
               learn more.
             </h5>
@@ -69,10 +70,9 @@ export const IndLearners: React.FC = () => {
                   link={courseInfo.link}
                   courseImage={courseInfo.file_path}
                   title={courseInfo.course_name}
-                  backgroundColor={ColorThemes.lightBlue}
                   dropdownCourseDescription={courseInfo.course_description}
                   dropdownCourseImage={courseInfo.file_path}
-                  variant = "primary"
+                  variant="primaryBlue"
                 />
               ))}
             </Row>
@@ -89,8 +89,8 @@ export const IndLearners: React.FC = () => {
                   image={flagInfo.file_path}
                   title={flagInfo.language}
                   link={flagInfo.link}
-                  backgroundColor={ColorThemes.lightBlue}
                   key={i}
+                  variant="primaryBlue"
                 />
               ))}
             </Row>

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { Image, Row, Col, Container, Modal, Button } from "react-bootstrap";
+import { Image, Row, Col, Container, Modal, Button} from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
-import { createUseStyles } from "react-jss";
+import { ButtonFullWidth } from "../ButtonFullWidth";
 
 interface IProps {
   link: string;
   title: string;
   courseImage: string;
-  backgroundColor: string;
   dropdownCourseDescription: string;
   dropdownCourseImage: string;
   variant: string;
@@ -19,21 +18,13 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const useStyles = createUseStyles({
-    cardBackground: {
-      backgroundColor: props.backgroundColor,
-    },
-  });
-
-  const classes = useStyles();
-
   return (
     <>
       <Col md={4} lg={3} onClick={handleShow}>
-        <Button variant = {props.variant} className={classes.cardBackground}>
-            <img src={props.courseImage} />
-            <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
-            <h4>{props.title.substring(props.title.indexOf("("))}</h4>
+        <Button variant={props.variant}>
+          <img src={props.courseImage} />
+          <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
+          <h4>{props.title.substring(props.title.indexOf("("))}</h4>
         </Button>
       </Col>
 
@@ -64,17 +55,11 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
         <Modal.Footer>
           <Container>
             <Row>
-              <h4 className="text-center">
-                <a
-                  style={{ color: props.backgroundColor }}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="hyperlink aff-org-card-link"
-                  href={props.link}
-                >
-                  Learn More
-                </a>
-              </h4>
+                <ButtonFullWidth
+                  variant = {"primaryBlue"}
+                  location = {props.link}
+                  title = "Learn More"
+                />
             </Row>
           </Container>
         </Modal.Footer>
