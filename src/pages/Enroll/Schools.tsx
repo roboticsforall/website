@@ -13,7 +13,7 @@ import coursesInfoJSON from "@/posts/schoolsAndPartnersCourses.json";
 import syllabiJSON from "@/posts/course_syllabi.json";
 import enroll_links from "@/posts/enrollment_form_document_link.json";
 
-import schoolsCourseOverview from "@/posts/editable_texts.json";
+import schoolsCourseOverview from "@/posts/course_overviews.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
 
@@ -39,13 +39,13 @@ export const Schools: React.FC = () => {
       <section>
         <Container>
           <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-          
-          <h3>{schoolsCourseOverview.schools_bold_text}</h3>
-          
+          <br />
+          <h3>{schoolsCourseOverview.schools_enrollment_status_text}</h3>
+          <br />
           <p>
-            <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
+            <Markdown>{schoolsCourseOverview.indlearners_details_text}</Markdown>
           </p>
-          
+          <br />
           <LongButtonWithHyperlink
             title={"Partner With Us Today!"}
             location={enroll_links.schools_and_partners_link}

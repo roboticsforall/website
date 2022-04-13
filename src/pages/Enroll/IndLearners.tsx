@@ -34,23 +34,23 @@ export const IndLearners: React.FC = () => {
         description={""}
       />
       <section>
-        <Container>
-          <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-          <br />
-          <h3>
-            {indLearnersCourseOverview.indlearners_enrollment_status_text}
-          </h3>
-          <br />
-          <p>
-            <Markdown>{indLearnersCourseOverview.indlearners_details_text}</Markdown>
-          </p>
-          <br />
-          <LongButtonWithHyperlink
-            title={"Enroll in a Course Today!"}
-            location={enroll_links.ind_learners_link}
-            backgroundColor={ColorThemes.mainBlue}
-          />
-        </Container>
+      <Container>
+        <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
+        <br />
+        <h3>
+          {indLearnersCourseOverview.indlearners_enrollment_status_text}
+        </h3>
+        <br />
+        <p>
+          <Markdown>{indLearnersCourseOverview.indlearners_details_text}</Markdown>
+        </p>
+        <br />
+        <LongButtonWithHyperlink
+          title={"Enroll in a Course Today!"}
+          location={enroll_links.ind_learners_link}
+          backgroundColor={ColorThemes.mainBlue}
+        />
+      </Container>
       </section>
 
       <section style={blueRow}>
