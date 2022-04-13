@@ -13,7 +13,7 @@ import coursesInfoJSON from "@/posts/schoolsAndPartnersCourses.json";
 import syllabiJSON from "@/posts/course_syllabi.json";
 import enroll_links from "@/posts/enrollment_form_document_link.json";
 
-import schoolsCourseOverview from "@/posts/editable_texts.json";
+import schoolsCourseOverview from "@/posts/course_overviews.json";
 
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
 
@@ -45,10 +45,10 @@ export const Schools: React.FC = () => {
       <Container>
         <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
         <br />
-        <h3 style={boldNote}>{schoolsCourseOverview.schools_bold_text}</h3>
+        <h3 style={boldNote}>{schoolsCourseOverview.schools_enrollment_status_text}</h3>
         <br />
         <h5 style={bodyText}>
-          <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
+          <Markdown>{schoolsCourseOverview.indlearners_details_text}</Markdown>
         </h5>
         <br />
         <LongButtonWithHyperlink

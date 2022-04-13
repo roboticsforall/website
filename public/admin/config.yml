@@ -63,14 +63,14 @@ collections:
         fields:
           - {label: Individual Learners link, name: ind_learners_link, widget: string}
           - {label: Schools and Partners Link, name: schools_and_partners_link, widget: string}
-      - label: Editable Texts # used in UI
-        name: editable_texts # used in routes
-        file: src/posts/editable_texts.json
+      - label: Course Overviews # used in UI
+        name: course_overviews # used in routes
+        file: src/posts/course_overviews.json
         fields:
-          - {label: Individual Learners Course Overview Bold Text, name: indlearners_bold_text, widget: string}
-          - {label: Individual Learners Course Overview Body Text, name: indlearners_body_text, widget: markdown}
-          - {label: Schools and Partners Course Overview Bold Text, name: schools_bold_text, widget: string}
-          - {label: Schools and Partners Course Overview Body Text, name: schools_body_text, widget: markdown}
+          - {label: Individual Learners Course Overview Enrollment Status Text, name: indlearners_enrollment_status_text, widget: string}
+          - {label: Individual Learners Course Overview Details Text, name: indlearners_details_text, widget: markdown}
+          - {label: Schools and Partners Course Overview Enrollment Status Text, name: schools_enrollment_status_text, widget: string}
+          - {label: Schools and Partners Course Overview Details Text, name: schools_details_text, widget: markdown}
       - label: FAQs For Learners and Schools and Partners
         name: coordination_faqs
         file: src/posts/faqs/coordination_faqs.json
