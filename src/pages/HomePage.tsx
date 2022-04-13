@@ -1,8 +1,8 @@
 import React from "react";
-import { Row, Container, Col, Image } from "react-bootstrap";
+import { Row, Container, Col, Image, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { createUseStyles } from "react-jss";
-// import homePageVideo from "@/media/homePageVideo.mp4";
+
+import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
@@ -46,9 +46,9 @@ export const HomePage: React.FC = () => {
     <>
       {(window.innerWidth > 768) ? (
 
-      <div style={yellowRow} className="d-flex justify-content-center">
-        <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+        <div style={yellowRow} className="d-flex justify-content-center">
+          <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
       ) : (
         <></>
@@ -71,30 +71,29 @@ export const HomePage: React.FC = () => {
 
       <section style={yellowRow}>
         <Container>
-          <div className="center-align">
             <Row>
               {[
                 {
-                  to: "/enroll/individlearners",
+                  location: "/enroll/individlearners",
                   src: home,
                   label: "Students and Parents",
                   color: ColorThemes.mainBlue,
                 },
                 {
-                  to: "/enroll/schools",
+                  location: "/enroll/schools",
                   src: apple,
                   label: "Schools and Partners",
                   color: ColorThemes.mainGreen,
                 },
                 {
-                  to: "/volunteer/overview",
+                  location: "/volunteer/overview",
                   src: world,
                   label: "Volunteers",
                   color: ColorThemes.mainOrange,
                 },
               ].map((info, i) => (
                 <Col key={i} md={4} className="text-center">
-                  <Link to={info.to} className="hyperlink">
+                  <Link className = "hyperlink" to = {info.location}>
                     <Image width="200" src={info.src} />
                     <h2
                       style={{
@@ -108,7 +107,6 @@ export const HomePage: React.FC = () => {
                 </Col>
               ))}
             </Row>
-          </div>
         </Container>
       </section>
 
@@ -180,68 +178,6 @@ export const HomePage: React.FC = () => {
           </div>
         </Container>
       </section>
-    </>
-  );
-};
-
-const HomeAffOrgsCard: React.FC<{
-  linkColor: string;
-  bgColor: string;
-  link: string;
-  org: string;
-  logo: string;
-}> = (props) => {
-  const affOrgsTitle: React.CSSProperties = {
-    color: "white",
-    textAlign: "center",
-  };
-  const imageSize: React.CSSProperties = {
-    objectFit: "scale-down",
-  };
-
-  const useStyles = createUseStyles({
-    link: {
-      composes: "hyperlink",
-      transition: "0.2s",
-      color: props.linkColor,
-      "&:hover": {
-        transition: "0.2s",
-        color: ColorThemes.white,
-      },
-    },
-  });
-  const classes = useStyles();
-
-  return (
-    <>
-      <Row
-        style={{ backgroundColor: props.bgColor }}
-        className="justify-content-center rounded align-items-center mx-2"
-      >
-        <Col
-          className="d-flex justify-content-center"
-          sm={3}
-          md={3}
-          lg={3}
-          xl={3}
-        >
-          <Image fluid style={imageSize} src={props.logo} />
-        </Col>
-        <Col md={6} lg={6} xl={6}>
-          <h2 style={affOrgsTitle}>{props.org}</h2>
-        </Col>
-        <Col className="text-center" md={3} lg={3} xl={3}>
-          <a
-            href={props.link}
-            target="_blank"
-            className={classes.link}
-            rel="noreferrer"
-          >
-            <h5>LEARN MORE</h5>
-          </a>
-        </Col>
-      </Row>
-      <br />
     </>
   );
 };

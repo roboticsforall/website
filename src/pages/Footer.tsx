@@ -75,9 +75,12 @@ export const Footer: React.FC = () => {
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
-              <a className="hyperlink " href={"tel:+6506659734"}>
-                (234) 564-2057
-              </a>
+              <a
+                  className="hyperlink"
+                  href={"tel:(234)-564-2057"}
+                >
+                  +(234)-564-2057
+                </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
               ADDRESS |{" "}

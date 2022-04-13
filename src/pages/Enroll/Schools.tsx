@@ -42,9 +42,9 @@ export const Schools: React.FC = () => {
           
           <h3>{schoolsCourseOverview.schools_bold_text}</h3>
           
-          <h5>
+          <p>
             <Markdown>{schoolsCourseOverview.schools_body_text}</Markdown>
-          </h5>
+          </p>
           
           <LongButtonWithHyperlink
             title={"Partner With Us Today!"}

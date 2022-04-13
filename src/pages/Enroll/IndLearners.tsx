@@ -40,11 +40,11 @@ export const IndLearners: React.FC = () => {
           <h3>
             {indLearnersCourseOverview.indlearners_bold_text}
           </h3>
-          <h5>
+          <p>
             <Markdown>
               {indLearnersCourseOverview.indlearners_body_text}
             </Markdown>
-          </h5>
+          </p>
           <LongButtonWithHyperlink
             title={"Enroll in a Course Today!"}
             location={enroll_links.ind_learners_link}
