@@ -12,7 +12,7 @@ import Markdown from "markdown-to-jsx";
 import indlearnersFAQJSON from "@/posts/faqs/coordination_faqs.json";
 import coursesInfoJSON from "@/posts/individualLearnersCourses.json";
 import syllabiJSON from "@/posts/course_syllabi.json";
-import indLearnersCourseOverview from "@/posts/editable_texts.json";
+import indLearnersCourseOverview from "@/posts/course_overviews.json";
 import enroll_links from "@/posts/enrollment_form_document_link.json";
 
 import headerBlobBlue from "@/media/HeaderBlobs/blue.png";
@@ -36,15 +36,15 @@ export const IndLearners: React.FC = () => {
       <section>
         <Container>
           <h2 style={positionsTitle}>COURSE OVERVIEWS</h2>
-
+          <br />
           <h3>
-            {indLearnersCourseOverview.indlearners_bold_text}
+            {indLearnersCourseOverview.indlearners_enrollment_status_text}
           </h3>
+          <br />
           <p>
-            <Markdown>
-              {indLearnersCourseOverview.indlearners_body_text}
-            </Markdown>
+            <Markdown>{indLearnersCourseOverview.indlearners_details_text}</Markdown>
           </p>
+          <br />
           <LongButtonWithHyperlink
             title={"Enroll in a Course Today!"}
             location={enroll_links.ind_learners_link}
