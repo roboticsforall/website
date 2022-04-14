@@ -1,38 +1,27 @@
 import React from "react";
-import { Row } from "react-bootstrap";
-import { createUseStyles } from "react-jss";
-import { ColorThemes } from "@/colors";
+import Button from "react-bootstrap/Button";
 
 export const NewsCard: React.FC<{
   file: string;
   title: string;
+  variant: string;
 }> = (props) => {
-  const useStyles = createUseStyles({
-    card: {
-      composes: "rounded",
-      border: "none",
-      backgroundColor: ColorThemes.lightYellow,
-    },
-  });
-
-  const classes = useStyles();
-
   return (
-    <a className="hyperlink" href={props.file} download>
-      <div className={classes.card}>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Row className="justify-content-center">
-          <h3 className="mb-4 text-center">{props.title}</h3>
-        </Row>
-      </div>
-    </a>
+    <Button
+      target="_blank"
+      rel="noreferrer"
+      href={props.file}
+      className="w-100 border-0"
+      variant={props.variant}
+      download
+    >
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h3>{props.title}</h3>
+    </Button>
   );
 };

@@ -30,7 +30,11 @@ export const PastNewsletter: React.FC = () => {
             .slice(4, newsletterJSON.newsletters_list.length)
             .map((newsletter, i) => (
               <Col key={i} md={3}>
-                <NewsCard title={newsletter.date} file={newsletter.file_path} />
+                <NewsCard
+                  title={newsletter.date}
+                  file={newsletter.file_path}
+                  variant={"primaryYellow"}
+                />
                 <br />
               </Col>
             ))}

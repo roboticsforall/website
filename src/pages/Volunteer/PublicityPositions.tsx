@@ -62,8 +62,6 @@ export const PublicityPositions: React.FC = () => {
               location={googleForms.publicity_intern_app_link}
               variant="primaryOrange"
             />
-            <br></br>
-            <br></br>
           </Tab.Content>
         </Tab.Container>
       </Container>

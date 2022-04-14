@@ -33,49 +33,48 @@ export const TechnicalPositions: React.FC = () => {
           "Technical interns use their STEM skills to create and revise curriculum and make custom software."
         }
       />
-      <Container>
-        <br></br>
-        <br></br>
-        <br></br>
-        <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
-          <Nav justify fill variant="tabs">
-            <Nav.Item>
-              <Nav.Link
-                eventKey="one"
-                className="pos"
-                style={activeStyles.activeStyle(ColorThemes.mainGreen)}
-              >
-                Technical Intern Positions
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-          <Tab.Content>
-            <TabCardsNoImage
-              posHeader={"DETAILS"}
-              generalColor={ColorThemes.mainGreen}
-              posDescription={
-                <div>
-                  <p>
-                    <Markdown>
-                      {technicalInternJSON.technical_intern_details}
-                    </Markdown>
-                  </p>
-                </div>
-              }
-            />
-            <ButtonFullWidth
-              title={"Apply Now!"}
-              location={googleForms.technical_intern_app_link}
-              variant="primaryGreen"
-            />
+      <section>
+        <Container>
+          <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
+            <Nav justify fill variant="tabs">
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="one"
+                  className="pos"
+                  style={activeStyles.activeStyle(ColorThemes.mainGreen)}
+                >
+                  Technical Intern Positions
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+            <Tab.Content>
+              <TabCardsNoImage
+                posHeader={"DETAILS"}
+                generalColor={ColorThemes.mainGreen}
+                posDescription={
+                  <div>
+                    <p>
+                      <Markdown>
+                        {technicalInternJSON.technical_intern_details}
+                      </Markdown>
+                    </p>
+                  </div>
+                }
+              />
+              <ButtonFullWidth
+                title={"Apply Now!"}
+                location={googleForms.technical_intern_app_link}
+                variant="primaryGreen"
+              />
 
-            <h2 style={positionsTitle}>Positions</h2>
-            <FAQDropdowns data={technicalInternJSON.positions} />
-            <br></br>
-            <br></br>
-          </Tab.Content>
-        </Tab.Container>
-      </Container>
+              <section>
+                <h2 style={positionsTitle}>Positions</h2>
+                <FAQDropdowns data={technicalInternJSON.positions} />
+              </section>
+            </Tab.Content>
+          </Tab.Container>
+        </Container>
+      </section>
     </div>
   );
 };

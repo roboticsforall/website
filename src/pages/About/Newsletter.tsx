@@ -9,10 +9,6 @@ import newsletterJSON from "@/posts/newsletters.json";
 import { ColorThemes } from "@/colors";
 
 export const Newsletter: React.FC = () => {
-  const positionsTitle: React.CSSProperties = {
-    textAlign: "center",
-  };
-
   return (
     <>
       <Header
@@ -23,42 +19,50 @@ export const Newsletter: React.FC = () => {
           "Read through our monthly newsletter to learn more about our work!"
         }
       />
-      <Container>
-        <Row>
-          <h3 className="mt-4">
-            Read through our newsletters month by month down below.
-          </h3>
-        </Row>
-        <br />
-        <Row>
-          {newsletterJSON.newsletters_list.slice(0, 4).map((newsletter, i) => (
-            <Col key={i} md>
-              <NewsCard title={newsletter.date} file={newsletter.file_path} />
-              <br />
-            </Col>
-          ))}
-        </Row>
+      <section>
+        <Container>
+          <Row>
+            <h2>Read through our newsletters month by month down below.</h2>
+          </Row>
+          <section>
+            <Row>
+              {newsletterJSON.newsletters_list
+                .slice(0, 4)
+                .map((newsletter, i) => (
+                  <Col key={i} md>
+                    <NewsCard
+                      title={newsletter.date}
+                      file={newsletter.file_path}
+                      variant={"primaryYellow"}
+                    />
+                    <br />
+                  </Col>
+                ))}
+            </Row>
+          </section>
 
-        {/* Read Previous News Button */}
-        <ButtonFullWidth
-          title={"Read Previous Newsletters"}
-          location="/about/pastnewsletter"
-          variant="primaryYellow"
-        />
-        <br></br>
-        <br></br>
-        <Row>
-          <h2 style={positionsTitle}>Subscribe for Updates!</h2>
-          <iframe
-            title="Mail Chimp Subscribe Form"
-            height="1000vh"
-            scrolling="yes"
-            src="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201"
-          ></iframe>
-        </Row>
-        <br></br>
-        <br></br>
-      </Container>
+          {/* Read Previous News Button */}
+          <ButtonFullWidth
+            title={"Read Previous Newsletters"}
+            location="/about/pastnewsletter"
+            variant="primaryYellow"
+          />
+          <br />
+          <br />
+
+          <section>
+            <Row>
+              <h2>Subscribe for Updates!</h2>
+              <iframe
+                title="Mail Chimp Subscribe Form"
+                height="1000vh"
+                scrolling="yes"
+                src="https://roboticsforall.us3.list-manage.com/subscribe/post?u=3ef87e40741b0c3fadf90e578&amp;id=0ec3a22201"
+              />
+            </Row>
+          </section>
+        </Container>
+      </section>
     </>
   );
 };

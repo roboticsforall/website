@@ -30,7 +30,7 @@ export const InternOverview: React.FC = () => {
   };
 
   return (
-    <div>
+    <>
       <Header
         headerTextColor={"#FA8D1F"}
         image={headerBlobOrange}
@@ -39,89 +39,85 @@ export const InternOverview: React.FC = () => {
           "Interns work on anything from graphic design to curriculum development!"
         }
       />
-      <Container>
-        <br></br>
-        <br></br>
-        <br></br>
-        <Tab.Container>
-          <Tab.Content>
-            <TabCardsNoImage
-              posHeader={"OVERVIEW"}
-              generalColor={ColorThemes.mainYellow}
-              posDescription={
-                <div>
-                  <p>
-                    <Markdown>{internOverviewJSON.overview}</Markdown>
-                  </p>
-                </div>
-              }
-            />
-            <InternDescriptionTabs
-              publicityDescription={
-                <Markdown>{internOverviewJSON.requirments}</Markdown>
-              }
-              technicalDescription={
-                <Markdown>{internOverviewJSON.requirments}</Markdown>
-              }
-              businessDescription={
-                <Markdown>{internOverviewJSON.requirments}</Markdown>
-              }
-              addButtons={true}
-            />
-            <TabCardsRightImage
-              posHeader={"SCHEDULING"}
-              posImage={Calendar}
-              generalColor={ColorThemes.lightYellow}
-              posDescription={
-                <div>
-                  <Markdown>{internOverviewJSON.scheduling}</Markdown>
-                </div>
-              }
-            />
-            <TabCardsLeftImage
-              posHeader={"TIME COMMITMENT"}
-              posImage={Clock}
-              generalColor={ColorThemes.mainYellow}
-              posDescription={
-                <Markdown>{internOverviewJSON.time_commitment}</Markdown>
-              }
-            />
-            <TabCardsRightImage
-              posHeader={"BENEFITS"}
-              posImage={ThumbsUp}
-              generalColor={ColorThemes.lightYellow}
-              posDescription={
-                <Markdown>{internOverviewJSON.benefits}</Markdown>
-              }
-            />
-            <TabCardsLeftImage
-              posHeader={"REQUIREMENTS"}
-              posImage={Laptop}
-              generalColor={ColorThemes.mainYellow}
-              posDescription={
-                <Markdown>{internOverviewJSON.requirments}</Markdown>
-              }
-            />
-            <TabCardsRightImage
-              posHeader={"BENEFICIAL QUALIFICATIONS"}
-              posImage={Presentation}
-              generalColor={ColorThemes.lightYellow}
-              posDescription={
-                <Markdown>
-                  {internOverviewJSON.beneficial_qualifications}
-                </Markdown>
-              }
-            />
-            <h2 style={positionsTitle}>FAQs</h2>
-            <Container>
-              <FAQDropdowns data={internfaqsJSON.intern_faqs} />
-              <br />
-            </Container>
-            <br></br>
-            <br></br>
-          </Tab.Content>
-        </Tab.Container>
-      </Container>
-    </div>
+      <section>
+        <Container>
+          <Tab.Container>
+            <Tab.Content>
+              <TabCardsNoImage
+                posHeader={"OVERVIEW"}
+                generalColor={ColorThemes.mainYellow}
+                posDescription={
+                  <div>
+                    <p>
+                      <Markdown>{internOverviewJSON.overview}</Markdown>
+                    </p>
+                  </div>
+                }
+              />
+              <InternDescriptionTabs
+                publicityDescription={
+                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                }
+                technicalDescription={
+                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                }
+                businessDescription={
+                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                }
+                addButtons={true}
+              />
+              <TabCardsRightImage
+                posHeader={"SCHEDULING"}
+                posImage={Calendar}
+                generalColor={ColorThemes.lightYellow}
+                posDescription={
+                  <div>
+                    <Markdown>{internOverviewJSON.scheduling}</Markdown>
+                  </div>
+                }
+              />
+              <TabCardsLeftImage
+                posHeader={"TIME COMMITMENT"}
+                posImage={Clock}
+                generalColor={ColorThemes.mainYellow}
+                posDescription={
+                  <Markdown>{internOverviewJSON.time_commitment}</Markdown>
+                }
+              />
+              <TabCardsRightImage
+                posHeader={"BENEFITS"}
+                posImage={ThumbsUp}
+                generalColor={ColorThemes.lightYellow}
+                posDescription={
+                  <Markdown>{internOverviewJSON.benefits}</Markdown>
+                }
+              />
+              <TabCardsLeftImage
+                posHeader={"REQUIREMENTS"}
+                posImage={Laptop}
+                generalColor={ColorThemes.mainYellow}
+                posDescription={
+                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                }
+              />
+              <TabCardsRightImage
+                posHeader={"BENEFICIAL QUALIFICATIONS"}
+                posImage={Presentation}
+                generalColor={ColorThemes.lightYellow}
+                posDescription={
+                  <Markdown>
+                    {internOverviewJSON.beneficial_qualifications}
+                  </Markdown>
+                }
+              />
+              <section>
+                <h2 style={positionsTitle}>FAQs</h2>
+                <FAQDropdowns data={internfaqsJSON.intern_faqs} />
+              </section>
+            </Tab.Content>
+          </Tab.Container>
+        </Container>
+      </section>
+    </>
   );
 };

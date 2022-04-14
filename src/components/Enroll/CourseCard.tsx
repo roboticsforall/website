@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Image, Row, Col, Container, Modal, Button} from "react-bootstrap";
+import { Image, Row, Col, Container, Modal, Button } from "react-bootstrap";
 import Markdown from "markdown-to-jsx";
 import { ButtonFullWidth } from "../ButtonFullWidth";
 
@@ -55,11 +55,11 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
         <Modal.Footer>
           <Container>
             <Row>
-                <ButtonFullWidth
-                  variant = {"primaryBlue"}
-                  location = {props.link}
-                  title = "Learn More"
-                />
+              <ButtonFullWidth
+                variant={props.variant}
+                location={props.link}
+                title="Learn More"
+              />
             </Row>
           </Container>
         </Modal.Footer>

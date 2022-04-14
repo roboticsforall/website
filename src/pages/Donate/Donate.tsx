@@ -5,7 +5,7 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct im
 
 import { ColorThemes } from "@/colors";
 
-import { PosButton } from "@/components/Volunteer/PosButton";
+import { ButtonFullWidth } from "../../components/ButtonFullWidth"
 
 export const Donate: React.FC = () => {
   return (
@@ -18,9 +18,9 @@ export const Donate: React.FC = () => {
           "Donate to help support Robotics for All continue to teach our students."
         }
       />
-      <br></br>
-      <br></br>
+      <section>
       <Container>
+        <section>
         <Row className="text-center justify-content-center align-items-center">
           <p className="text-center">
             As a part of our mission, we strive to provide cost-free education
@@ -38,15 +38,14 @@ export const Donate: React.FC = () => {
             donations are fully tax-deductible.
           </p>
         </Row>
-        <br />
-        <PosButton
-          backgroundColor={ColorThemes.mainYellow}
-          backgroundHover={ColorThemes.mainYellow}
+        </section>
+        <ButtonFullWidth
+          variant = "primaryYellow"
+          location = "https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"
           title={"Donate"}
-          link={"https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"}
         />
       </Container>
-      <br />
+      </section>
     </>
   );
 };

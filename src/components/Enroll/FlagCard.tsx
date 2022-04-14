@@ -12,9 +12,6 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
   const imageSize = {
     height: "11vmax",
   };
-  const text = {
-    composes: "text-center mb-4",
-  };
 
   return (
     <Col md={3} lg={3}>
@@ -22,11 +19,11 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
         target="_blank"
         href={props.link}
         rel="noreferrer"
-        className = "mb-2"
+        className="mb-2"
         variant={props.variant}
       >
-        <img style = {imageSize} src={props.image} />
-        <h3 style ={text}>{props.title}</h3>
+        <img style={imageSize} src={props.image} />
+        <h3>{props.title}</h3>
       </Button>
     </Col>
   );

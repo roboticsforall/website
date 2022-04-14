@@ -101,7 +101,7 @@ export const contactaboutdonate = [
       },
       {
         subPageName: "Merch",
-        to: "https://www.bonfire.com/org/robotics-for-all-832012119/",
+        to: "https://www.bonfire.com/store/rfa/",
       },
     ]
   }
