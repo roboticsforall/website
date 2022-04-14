@@ -18,7 +18,7 @@ import googleForms from "@/posts/volunteer_sign_up_forms.json";
 export const PublicityPositions: React.FC = () => {
   const [key, setKey] = useState("one");
   return (
-    <div>
+    <>
       <Header
         headerTextColor={ColorThemes.mainOrange}
         image={headerBlobOrange}
@@ -27,10 +27,8 @@ export const PublicityPositions: React.FC = () => {
           "Volunteer to help with graphic design, illustrations, and much much more!"
         }
       />
+      <section>
       <Container>
-        <br></br>
-        <br></br>
-        <br></br>
         <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
           <Nav justify fill variant="tabs">
             <Nav.Item>
@@ -65,6 +63,8 @@ export const PublicityPositions: React.FC = () => {
           </Tab.Content>
         </Tab.Container>
       </Container>
-    </div>
+      </section>
+    </>
+
   );
 };
