@@ -98,7 +98,7 @@ export const NavbarDesktop: React.FC = () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://www.bonfire.com/store//"
+              href="https://www.bonfire.com/store/rfa"
               className="hyperlink"
             >
               <li className="rounded">

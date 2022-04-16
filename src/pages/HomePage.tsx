@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Container, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { createUseStyles } from "react-jss";
-// import homePageVideo from "@/media/homePageVideo.mp4";
+
+import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
 
 import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
@@ -44,55 +44,64 @@ export const HomePage: React.FC = () => {
 
   return (
     <>
-      {(window.innerWidth > 768) ? (
-
-      <div style={yellowRow} className="d-flex justify-content-center">
-        <iframe className = "video-width" src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
+      {window.innerWidth > 768 ? (
+        <div style={yellowRow} className="d-flex justify-content-center">
+          <iframe
+            className="video-width"
+            src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
       ) : (
         <></>
       )}
 
-      <Container>
-        <Row className="justify-content-center text-center">
-          <h1 style={header}>ROBOTICS FOR ALL</h1>
-          <p>
-            Robotics For All provides free STEM education to students of all
-            backgrounds, particularly students from underserved communities. We
-            aim to inspire children to pursue careers in STEM later in their
-            lives. We support student volunteers to teach our classes and engage
-            with their local communities.
-          </p>
-        </Row>
-      </Container>
+      <section>
+        <Container>
+          <Row className="justify-content-center text-center">
+            <h1 style={header}>ROBOTICS FOR ALL</h1>
+            <p>
+              Robotics For All provides free STEM education to students of all
+              backgrounds, particularly students from underserved communities.
+              We aim to inspire children to pursue careers in STEM later in
+              their lives. We support student volunteers to teach our classes
+              and engage with their local communities.
+            </p>
+          </Row>
+        </Container>
+      </section>
 
-      <div style={yellowRow} className="d-flex justify-content-center p-5">
+      <section style={yellowRow}>
         <Container>
           <Row>
             {[
               {
-                to: "/enroll/individlearners",
+                location: "/enroll/individlearners",
                 src: home,
                 label: "Students and Parents",
                 color: ColorThemes.mainBlue,
               },
               {
-                to: "/enroll/schools",
+                location: "/enroll/schools",
                 src: apple,
                 label: "Schools and Partners",
                 color: ColorThemes.mainGreen,
               },
               {
-                to: "/volunteer/overview",
+                location: "/volunteer/overview",
                 src: world,
                 label: "Volunteers",
                 color: ColorThemes.mainOrange,
               },
             ].map((info, i) => (
-              <Col key = {i} md={4} className="text-center">
-                <Link to={info.to} className="hyperlink">
-                  <Image width = "200" src={info.src} />
+              <Col key={i} md={4} className="text-center">
+                <Link className="hyperlink" to={info.location}>
+                  <Image 
+                    src={info.src}
+                    fluid
+                  />
                   <h2
                     style={{
                       textAlign: "center",
@@ -106,138 +115,76 @@ export const HomePage: React.FC = () => {
             ))}
           </Row>
         </Container>
-      </div>
-      <Container>
-        <br></br>
-        <br></br>
-        <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
-        <br></br>
-        {[
-          {
-            label: "tutoring for all",
-            logo: TFALogo,
-            linkColor: ColorThemes.darkOrange,
-            bgColor: ColorThemes.lightOrange,
-            link: "https://www.tutoringforall.org/about",
-          },
-          {
-            label: "crafts for charity",
-            logo: CFCLogo,
-            linkColor: ColorThemes.darkBlue,
-            bgColor: ColorThemes.lightBlue,
-            link: "https://craftsforcharity.com/about-us/",
-          },
-        ].map((afforgs, i) => (
-          <HomeAffOrgsCard
-            key={i}
-            org={afforgs.label}
-            link={afforgs.link}
-            linkColor={afforgs.linkColor}
-            bgColor={afforgs.bgColor}
-            logo={afforgs.logo}
-          />
-        ))}
-      </Container>
-      <Container>
-        <h3 style={sponsorsLabel}>
-          Supported by the following organizations and over 50 independent
-          donors:
-        </h3>
-        <br />
-        <br />
-        <div className="d-flex justify-content-around flex-wrap">
-          {[LM, TF, WMM, Google, NSP].map((sponsor, i) => (
-            <Image
+      </section>
+
+      <section>
+        <Container>
+          <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
+          <br></br>
+          {[
+            {
+              label: "tutoring for all",
+              logo: TFALogo,
+              linkColor: ColorThemes.darkOrange,
+              bgColor: ColorThemes.lightOrange,
+              link: "https://www.tutoringforall.org/about",
+            },
+            {
+              label: "crafts for charity",
+              logo: CFCLogo,
+              linkColor: ColorThemes.darkBlue,
+              bgColor: ColorThemes.lightBlue,
+              link: "https://craftsforcharity.com/about-us/",
+            },
+          ].map((afforgs, i) => (
+            <HomeAffOrgsCard
               key={i}
-              className="m-3"
-              style={sponsorImageSize}
-              src={sponsor}
+              org={afforgs.label}
+              link={afforgs.link}
+              linkColor={afforgs.linkColor}
+              bgColor={afforgs.bgColor}
+              logo={afforgs.logo}
             />
           ))}
-        </div>
-        <br />
-        <br />
+        </Container>
+      </section>
 
-        <h3 style={sponsorsLabel}>
-          Proud partners of the following organizations:
-        </h3>
-        <br />
-        <br />
-        <div className="d-flex justify-content-around flex-wrap">
-          {[AH, YMCA, NGN, WH].map((partner, i) => (
-            <Image
-              key={i}
-              className="m-2"
-              style={sponsorImageSize}
-              src={partner}
-            />
-          ))}
-        </div>
-        <br />
-        <br />
-      </Container>
-    </>
-  );
-};
+      <section>
+        <Container>
+          <h3 style={sponsorsLabel}>
+            Supported by the following organizations and over 50 independent
+            donors:
+          </h3>
+          <div className="d-flex justify-content-around flex-wrap">
+            {[LM, TF, WMM, Google, NSP].map((sponsor, i) => (
+              <Image
+                key={i}
+                className="m-3"
+                style={sponsorImageSize}
+                src={sponsor}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
 
-const HomeAffOrgsCard: React.FC<{
-  linkColor: string;
-  bgColor: string;
-  link: string;
-  org: string;
-  logo: string;
-}> = (props) => {
-  const affOrgsTitle: React.CSSProperties = {
-    color: "white",
-    textAlign: "center",
-  };
-  const imageSize: React.CSSProperties = {
-    objectFit: "scale-down",
-  };
-
-  const useStyles = createUseStyles({
-    link: {
-      composes: "hyperlink",
-      transition: "0.2s",
-      color: props.linkColor,
-      "&:hover": {
-        transition: "0.2s",
-        color: ColorThemes.white,
-      },
-    },
-  });
-  const classes = useStyles();
-
-  return (
-    <>
-      <Row
-        style={{ backgroundColor: props.bgColor }}
-        className="justify-content-center rounded align-items-center mx-2"
-      >
-        <Col
-          className="d-flex justify-content-center"
-          sm={3}
-          md={3}
-          lg={3}
-          xl={3}
-        >
-          <Image fluid style={imageSize} src={props.logo} />
-        </Col>
-        <Col md={6} lg={6} xl={6}>
-          <h2 style={affOrgsTitle}>{props.org}</h2>
-        </Col>
-        <Col className="text-center" md={3} lg={3} xl={3}>
-          <a
-            href={props.link}
-            target="_blank"
-            className={classes.link}
-            rel="noreferrer"
-          >
-            <h5>LEARN MORE</h5>
-          </a>
-        </Col>
-      </Row>
-      <br />
+      <section>
+        <Container>
+          <h3 style={sponsorsLabel}>
+            Proud partners of the following organizations:
+          </h3>
+          <div className="d-flex justify-content-around flex-wrap">
+            {[AH, YMCA, NGN, WH].map((partner, i) => (
+              <Image
+                key={i}
+                className="m-2"
+                style={sponsorImageSize}
+                src={partner}
+              />
+            ))}
+          </div>
+        </Container>
+      </section>
     </>
   );
 };

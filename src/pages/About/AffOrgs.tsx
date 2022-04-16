@@ -21,35 +21,33 @@ export const AffOrgs: React.FC = () => {
         }
       />
       <Container>
-        <br />
-        <br />
-        <AboutAffOrgsCard
-          website={"https://www.tutoringforall.org"}
-          logo={TFALogo}
-          linkColor={ColorThemes.darkOrange}
-          orgAbrv={"TFA"}
-          mainColor={ColorThemes.mainOrange}
-          affOrgName={"Tutoring For All"}
-          affOrgsDescription={
-            "Tutoring for All is a branch of the non-profit organization Robotics for All. Our goal is to provide free, quality tutoring services to primarily low income and disadvantaged students."
-          }
-        />
-        <br />
-        <br />
-        <AboutAffOrgsCard
-          website={"https://craftsforcharity.com/"}
-          logo={CFCLogo}
-          linkColor={ColorThemes.darkBlue}
-          orgAbrv={"CFC"}
-          mainColor={ColorThemes.mainBlue}
-          affOrgName={"Crafts For Charity"}
-          affOrgsDescription={
-            "Crafts for Charity is a student-led nonprofit providing classes and opportunities for everyone to give back to their communities through crafting! They help donate handmade goods to charities for causes like homelessness and we are their primary fiscal sponsor."
-          }
-        />
+        <section>
+          <AboutAffOrgsCard
+            website={"https://www.tutoringforall.org"}
+            logo={TFALogo}
+            linkColor={ColorThemes.darkOrange}
+            orgAbrv={"TFA"}
+            mainColor={ColorThemes.mainOrange}
+            affOrgName={"Tutoring For All"}
+            affOrgsDescription={
+              "Tutoring for All is a branch of the non-profit organization Robotics for All. Our goal is to provide free, quality tutoring services to primarily low income and disadvantaged students."
+            }
+          />
+        </section>
+        <section>
+          <AboutAffOrgsCard
+            website={"https://craftsforcharity.com/"}
+            logo={CFCLogo}
+            linkColor={ColorThemes.darkBlue}
+            orgAbrv={"CFC"}
+            mainColor={ColorThemes.mainBlue}
+            affOrgName={"Crafts For Charity"}
+            affOrgsDescription={
+              "Crafts for Charity is a student-led nonprofit providing classes and opportunities for everyone to give back to their communities through crafting! They help donate handmade goods to charities for causes like homelessness and we are their primary fiscal sponsor."
+            }
+          />
+        </section>
       </Container>
-      <br />
-      <br />
     </div>
   );
 };

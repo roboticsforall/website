@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
 
-
 export const BylawEntry: React.FC<{
   date: string;
   bylawName: string;

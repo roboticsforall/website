@@ -132,15 +132,15 @@ const MobileNavbarItem: React.FC<{
       <ul style={{ display: dropdownDisplay, ...list }}>
         {props.subPages.map((subPageInfo, i) => (
           <>
-            <Link
+            <a
               key={i}
               onClick={props.setNavHeight}
               style={dropdownItemText}
               className="hyperlink"
-              to={subPageInfo.to}
+              href={subPageInfo.to}
             >
               <li>{subPageInfo.subPageName}</li>
-            </Link>
+            </a>
             <hr />
           </>
         ))}

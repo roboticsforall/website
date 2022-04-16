@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-export const NewsCard: React.FC<{
-  file: string;
+export const ButtonFullWidth: React.FC<{
+  location: string;
   title: string;
   variant: string;
 }> = (props) => {
@@ -10,17 +10,10 @@ export const NewsCard: React.FC<{
     <Button
       target="_blank"
       rel="noreferrer"
-      href={props.file}
+      href={props.location}
       className="w-100 border-0"
       variant={props.variant}
-      download
     >
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <h3>{props.title}</h3>
     </Button>
   );

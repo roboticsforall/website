@@ -1,50 +1,37 @@
 import { ColorThemes } from "@/colors";
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 
 export const VolOverviewCard: React.FC<{
-  backgroundcolor: string;
+  backgroundColor: string;
   buttonColor: string;
-  learnMoreLink: string;
+  location: string;
   title: string;
   description: string;
+  image: string;
 }> = (props) => {
-  const card = {
-    backgroundColor: props.backgroundcolor,
-  };
-  const button = {
-    backgroundColor: props.backgroundcolor,
-  };
   const useStyles = createUseStyles({
-    link: {
-      composes: "hyperlink",
-      transition: "0.2s",
-      color: props.buttonColor,
-      "&:hover": {
-        transition: "0.2s",
-        color: ColorThemes.white,
-      },
+    cardBackground: {
+      composes: "rounded h-100",
+      backgroundColor: props.backgroundColor,
     },
   });
   const classes = useStyles();
 
   return (
-    <Container>
-      <Row>
-        <Col className="rounded center-align me-3 px-4" md={8} style={card}>
-          <Row className="align-items-center">
+    <Col md={4}>
+      <Container className={classes.cardBackground}>
+        <Row className="justify-content-center">
+          <Col>
+            {window.innerWidth >= 768 ? <img src={props.image} /> : <></>}
             <h2>{props.title}</h2>
             <p>{props.description}</p>
-          </Row>
-        </Col>
-        <Col className="center-align rounded" style={button}>
-          <Link to={props.learnMoreLink} className={classes.link}>
-            <h5>Learn More</h5>
-          </Link>
-        </Col>
-      </Row>
-    </Container>
+            <a href={props.location}>Learn More</a>
+          </Col>
+        </Row>
+      </Container>
+    </Col>
   );
 };

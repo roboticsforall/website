@@ -42,10 +42,10 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         }}
         onClick={handleShow}
         onKeyDown={handleShow}
-        className="d-flex my-3 p-3"
-        role = "button"
+        className="d-flex m-3 p-3"
+        role="button"
       >
-        <Col md={"auto"}>
+        <Col className = "center-align" md={"auto"}>
           <Image
             fluid
             src={props.info.image.replace("/public", "")}

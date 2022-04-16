@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Carousel, Image } from "react-bootstrap";
+import { Container, Row, Col, Card, Carousel, Image, Button } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
@@ -40,15 +40,6 @@ export const News: React.FC = () => {
     Promise.all(photosImport).then(setPhotos);
   }, []);
 
-  const linkStyles: React.CSSProperties = {
-    textDecoration: "none",
-    color: "black",
-    textAlign: "center",
-  };
-  const cardStyles: React.CSSProperties = {
-    background: ColorThemes.lightGreen,
-    border: "none",
-  };
   return (
     <div>
       <Header
@@ -58,7 +49,7 @@ export const News: React.FC = () => {
         description="Learn more about our progress and community outreach."
       />
       <Container>
-        <Row className="mt-3">
+        <Row>
           <Container
             style={{
               backgroundColor: ColorThemes.lightYellow,
@@ -83,7 +74,6 @@ export const News: React.FC = () => {
                   statistics, stories, and more details. Contact us at{" "}
                   <a
                     href="mailto:info@roboticsforall.net"
-                    style={{ color: "black" }}
                   >
                     info@roboticsforall.net
                   </a>{" "}
@@ -93,7 +83,7 @@ export const News: React.FC = () => {
             </Row>
           </Container>
         </Row>
-        <Row className="mt-3">
+        <Row>
           <h1
             style={{
               color: ColorThemes.mainGreen,
@@ -103,54 +93,34 @@ export const News: React.FC = () => {
           </h1>
           <Row className="g-4">
             <Col md={4}>
-              <a
-                style={linkStyles}
+              <Button
                 href="https://paloaltoonline.com/news/2018/07/04/gunn-underclassmen-aim-to-change-educational-outcomes-through-robotics"
+                variant = "primaryGreen"
               >
-                <Card className="h-100" style={cardStyles}>
-                  <Card.Img src={paloaltoonline} />
-                  <Card.Body>
-                    <Card.Text>
-                      Gunn Underclassmen Aim to Change Educational Outcomes
-                      through Robotics
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </a>
+                <Image fluid src = {paloaltoonline}/>
+                <p>Gunn Underclassmen Aim to Change Educational Outcomes
+                      through Robotics</p>
+              </Button>
             </Col>
             <Col md={4}>
-              <a
+              <Button
                 href="https://www.mercurynews.com/2019/05/06/palo-alto-teens-turn-school-project-into-national-nonprofit-that-tackles-achievement-gap/"
-                style={linkStyles}
+                variant = "primaryGreen"
               >
-                <Card className="h-100 p-2" style={cardStyles}>
-                  <Card.Img src={mercurynews} />
-                  <Card.Body>
-                    <Card.Text>
-                      Palo Alto Teens Turn School Project into National
+                <Image fluid src = {mercurynews}/>
+                <p>Palo Alto Teens Turn School Project into National
                       Nonprofit that Tackles Achievement Gap
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </a>
+                </p>
+              </Button>
             </Col>
             <Col md={4}>
-              <a
+              <Button
                 href="https://www.roboticsforall.net/uploads/1/1/5/4/115434321/scan0001_1.jpg"
-                style={linkStyles}
+                variant = "primaryGreen"
               >
-                <Card className="h-100 p-2" style={cardStyles}>
-                  <Card.Img
-                    src={houseofreps}
-                    style={{ height: "150px", width: "150px", margin: "auto" }}
-                  />
-                  <Card.Body>
-                    <Card.Text>
-                      Congresswoman Anna G. Eshoo recognizes Robotics for All
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </a>
+                <Image fluid src = {houseofreps}/>
+                <p>Congresswoman Anna G. Eshoo recognizes Robotics for All</p>
+              </Button>
             </Col>
           </Row>
         </Row>
@@ -194,7 +164,7 @@ export const News: React.FC = () => {
             </Carousel>
           </Container>
         </Row> */}
-        <Row className="mt-3">
+        <Row>
           <h1
             style={{
               color: ColorThemes.mainYellow,
@@ -260,7 +230,7 @@ export const News: React.FC = () => {
             </Carousel>
           </Container>
         </Row>
-        <Row className="mt-3">
+        <Row>
           <h1
             style={{
               color: ColorThemes.mainOrange,

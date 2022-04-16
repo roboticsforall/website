@@ -26,8 +26,7 @@ export const AbtOverview: React.FC = () => {
         title={"Welcome to Robotics for All!"}
         description={"Learn more about Robotics for All and what we do!"}
       />
-      <Container fluid>
-        <br />
+      <section>
         <Container>
           <h2 style={{ ...missionColor }}>OUR MISSION</h2>
           <p>
@@ -36,10 +35,8 @@ export const AbtOverview: React.FC = () => {
             background.
           </p>
         </Container>
-        <br />
-      </Container>
-      <Container fluid style={{ backgroundColor: ColorThemes.lightGreen }}>
-        <br />
+      </section>
+      <section style={{ backgroundColor: ColorThemes.lightGreen }}>
         <Container>
           <h2 style={{ ...visionColor }}>OUR VISION</h2>
           <p>
@@ -47,10 +44,8 @@ export const AbtOverview: React.FC = () => {
             opportunities to create their futures.
           </p>
         </Container>
-        <br />
-      </Container>
-      <Container fluid>
-        <br />
+      </section>
+      <section>
         <Container>
           <h2 style={{ ...valuesColor }}>OUR VALUES</h2>
           <p>
@@ -82,8 +77,7 @@ export const AbtOverview: React.FC = () => {
             community.
           </p>
         </Container>
-        <br />
-      </Container>
+      </section>
     </div>
   );
 };

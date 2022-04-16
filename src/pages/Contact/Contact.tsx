@@ -1,10 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Form, Image } from "react-bootstrap";
+import { Container, Row, Col, Form, Image, Button } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import { useForm, ValidationError } from "@formspree/react";
-import { FormInput } from "@/components/FormInput";
-import { TextArea } from "@/components/TextArea";
-import { SubmitButton } from "@/components/SubmitButton";
 
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
@@ -18,7 +15,6 @@ export const Contact: React.FC = () => {
 
   const checkFormState = () => {
     if (state.succeeded) {
-      // handleMessage("Thank you for contacting Robotics for All!");
       return (
         <p style={{ color: "green" }}>
           Thank you for contacting Robotics for All!
@@ -38,12 +34,9 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const contactInfo = {};
-
   const linkStyle = {
     color: ColorThemes.darkOrange,
-  };
-
+  }
   const iconSize = {
     width: "auto",
     height: "5vmax",
@@ -61,11 +54,12 @@ export const Contact: React.FC = () => {
         }
       />
 
+<section>
       <Container>
-        <br />
         <Row className="justify-content-between">
-          <Col style={contactInfo} md={5}>
+          <Col md={5}>
             <Row className="flex-column">
+              <section>
               <h3>
                 EMAIL |{" "}
                 <a
@@ -76,7 +70,8 @@ export const Contact: React.FC = () => {
                   info@roboticsforall.net
                 </a>
               </h3>
-              <br></br>
+              </section>
+              <section>
               <h3>
                 PHONE |{" "}
                 <a
@@ -87,7 +82,8 @@ export const Contact: React.FC = () => {
                   +(234)-564-2057
                 </a>
               </h3>
-              <br></br>
+              </section>
+              <section>
               <h3>
                 ADDRESS |{" "}
                 <a
@@ -100,7 +96,9 @@ export const Contact: React.FC = () => {
                   P.O. Box 56, Palo Alto, CA 94302
                 </a>
               </h3>
+              </section>
             </Row>
+            <section>
             <div className="d-flex">
               <a
                 target="_blank"
@@ -124,50 +122,60 @@ export const Contact: React.FC = () => {
                 <Image style={iconSize} src={linkedin} />
               </a>
             </div>
-            <br></br>
+            </section>
           </Col>
           <Col md={6} className="justify-content-end">
             <Form id="contact-form" onSubmit={handleSubmit}>
-              <FormInput
-                type="text"
-                placeholder="Full Name"
-                height="3em"
-                id="user_name"
-                name="user_name"
-              />
-              <FormInput
-                type="email"
-                placeholder="Email"
-                height="3em"
-                id="user_email"
-                name="user_email"
-              />
+              <Form.Group>
+                <Form.Label>Full Name</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Full Name"
+                  id="user_name"
+                  name="user_name"
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  required
+                  type="email"
+                  placeholder="Email"
+                  height="3em"
+                  id="user_email"
+                  name="user_email"
+                />
+              </Form.Group>
               <ValidationError
                 prefix="Email"
                 field="email"
                 errors={state.errors}
               />
-              <TextArea
-                rows={4}
-                placeholder="Question, Comments, or Concerns"
-                id="message"
-                name="message"
-              />
+              <Form.Group>
+                <Form.Label>Questions, Comments, or Concerns</Form.Label>
+                <Form.Control
+                  id="message"
+                  name="message"
+                  as="textarea"
+                  rows={4}
+                />
+              </Form.Group>
+
               <ValidationError
                 prefix="Message"
                 field="message"
                 errors={state.errors}
               />
-              <br></br>
-              <SubmitButton state={state.submitting} />
-              <br />
-              <br />
+              <br/>
+              <Button className = "w-100 border" type = "submit" variant = "primaryYellow" disabled = {state.submitting}><h3>Submit</h3></Button>
               {checkFormState()}
             </Form>
           </Col>
         </Row>
         <br></br>
       </Container>
+      </section>
     </>
   );
 };

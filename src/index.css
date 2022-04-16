@@ -1,81 +1,26 @@
 @font-face {
-  font-family: "Mazzard-H-Bold";
-  src: url("./fonts/Mazzard/MazzardH-Bold.otf") format("woff"),
-    url("./fonts/Mazzard/MazzardH-Bold.otf") format("opentype"),
-    url("./fonts/Mazzard/MazzardH-Bold.otf") format("truetype");
-}
-@font-face {
-  font-family: "Mazzard-H-Black";
-  src: url("./fonts/Mazzard/MazzardH-Black.otf") format("woff"),
-    url("./fonts/Mazzard/MazzardH-Black.otf") format("opentype"),
-    url("./fonts/Mazzard/MazzardH-Black.otf") format("truetype");
-}
-@font-face {
-  font-family: "Mazzard-H-ExtraBold";
-  src: url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("woff"),
-    url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("opentype"),
-    url("./fonts/Mazzard/MazzardH-ExtraBold.otf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-Medium";
-  src: url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Medium.ttf") format("truetype");
-}
-@font-face {
   font-family: "BeVietnam-Bold";
-  src: url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-ExtraBold";
-  src: url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-ExtraBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-SemiBold";
-  src: url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-SemiBold.ttf") format("truetype");
+  src: url("./fonts/BeVietnam-Bold.ttf") format("tff"),
+    url("./fonts/BeVietnam-Bold.ttf") format("opentype"),
+    url("./fonts/BeVietnam-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "BeVietnam-Regular";
-  src: url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "BeVietnam-Light";
-  src: url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("tff"),
-    url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("opentype"),
-    url("./fonts/BeVietnam/BeVietnam-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald-Medium";
-  src: url("./fonts/Oswald/Oswald-Medium.ttf") format("tff"),
-    url("./fonts/Oswald/Oswald-Medium.ttf") format("opentype"),
-    url("./fonts/Oswald/Oswald-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald-Regular";
-  src: url("./fonts/Oswald/Oswald-Regular.ttf") format("tff"),
-    url("./fonts/Oswald/Oswald-Regular.ttf") format("opentype"),
-    url("./fonts/Oswald/Oswald-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Oswald-Bold";
-  src: url("./fonts/Oswald/Oswald-Bold.ttf") format("tff"),
-    url("./fonts/Oswald/Oswald-Bold.ttf") format("opentype"),
-    url("./fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+  src: url("./fonts/BeVietnam-Regular.ttf") format("tff"),
+    url("./fonts/BeVietnam-Regular.ttf") format("opentype"),
+    url("./fonts/BeVietnam-Regular.ttf") format("truetype");
 }
 
 body {
   line-height: 2 !important;
 }
 
-/* h1,
+section {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h1,
 h2,
 h3,
 h4,
@@ -90,13 +35,15 @@ a {
   font-family: "BeVietnam-Regular", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif !important;
-} */
+}
 
-p, li { 
+p,
+li {
   font-size: 1.25rem !important;
 }
 
-
+/* button variants */
+/* 
 input::placeholder,
 textarea::placeholder {
   color: #b38f00;
@@ -114,7 +61,7 @@ textarea {
   background-color: #ffcc004d;
   font-family: "BeVietnam-ExtraBold" !important;
   color: #000000;
-}
+} */
 
 /* #region Custom styles for navbar */
 .nav-item {
@@ -231,25 +178,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-/*#endregion*/
-
-/* #region Fade Animation for Webpages */
-.fade-enter {
-  opacity: 0;
-  transition: opacity 200ms;
-}
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 200ms;
-}
-.fade-exit {
-  opacity: 1;
-  transition: opacity 200ms;
-}
-.fade-active {
-  opacity: 0;
-  transition: opacity 200ms;
 }
 /*#endregion*/
 

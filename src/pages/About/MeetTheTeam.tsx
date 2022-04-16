@@ -9,10 +9,9 @@ import pcInfoJSON from "@/posts/pub_committee.json";
 import { MeetTheTeamCard } from "@/components/About/MeetTheTeamCard";
 
 import Carousel from "react-bootstrap/Carousel";
+import Container from "react-bootstrap/Container";
 
 import { ColorThemes } from "@/colors";
-
-import "../../index.css";
 
 export const MeetTheTeam: React.FC = () => {
   const yellowRow = {
@@ -40,90 +39,86 @@ export const MeetTheTeam: React.FC = () => {
         description={"Get to know the faces behind Robotics for All!"}
       />
 
-      <br />
+      <section>
+        <h2 style={{ color: ColorThemes.mainOrange, ...header }}>
+          BOARD OF DIRECTORS
+        </h2>
 
-      <h2 style={{ color: ColorThemes.mainOrange, ...header }}>
-        BOARD OF DIRECTORS
-      </h2>
+        <section style={yellowRow}>
+          <Carousel>
+            {bmInfoJSON.board_members_list.map((info: any, i: number) => (
+              <Carousel.Item key={i}>
+                <MeetTheTeamCard
+                  info={info}
+                  backgroundColor={ColorThemes.mainYellow}
+                  color={ColorThemes.darkYellow}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </section>
+      </section>
 
-      <div style={yellowRow}>
-        <Carousel>
-          {bmInfoJSON.board_members_list.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
-              <MeetTheTeamCard
-                info={info}
-                backgroundColor={ColorThemes.mainYellow}
-                color={ColorThemes.darkYellow}
-              />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
+      <section>
+        <h2 style={{ color: ColorThemes.mainGreen, ...header }}>
+          EXECUTIVE ASSISTANT DIRECTOR
+        </h2>
 
-      <br />
-      <br />
+        <section style={greenRow}>
+          <Carousel>
+            {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
+              <Carousel.Item key={i}>
+                <MeetTheTeamCard
+                  info={info}
+                  backgroundColor={ColorThemes.mainGreen}
+                  color={ColorThemes.darkGreen}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </section>
+      </section>
 
-      <h2 style={{ color: ColorThemes.mainGreen, ...header }}>
-        EXECUTIVE ASSISTANT DIRECTOR
-      </h2>
+      <section>
+        <h2 style={{ color: ColorThemes.mainBlue, ...header }}>
+          CURRICULUM COMMITTEE
+        </h2>
 
-      <div style={greenRow}>
-        <Carousel>
-          {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
-              <MeetTheTeamCard
-                info={info}
-                backgroundColor={ColorThemes.mainGreen}
-                color={ColorThemes.darkGreen}
-              />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
+        <section style={blueRow}>
+          <Carousel>
+            {ccInfoJSON.curriculum_committee_list.map(
+              (info: any, i: number) => (
+                <Carousel.Item key={i}>
+                  <MeetTheTeamCard
+                    info={info}
+                    backgroundColor={ColorThemes.mainBlue}
+                    color={ColorThemes.darkBlue}
+                    />
+                </Carousel.Item>
+              )
+            )}
+          </Carousel>
+        </section>
+      </section>
 
-      <br />
-      <br />
-
-      <h2 style={{ color: ColorThemes.mainBlue, ...header }}>
-        CURRICULUM COMMITTEE
-      </h2>
-
-      <div style={blueRow}>
-        <Carousel>
-          {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
-              <MeetTheTeamCard
-                info={info}
-                backgroundColor={ColorThemes.mainBlue}
-                color={ColorThemes.darkBlue}
-              />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
-
-      <br />
-      <br />
-
-      <h2 style={{ color: ColorThemes.mainYellow, ...header }}>
-        PUBLICITY COMMITTEE
-      </h2>
-      <div style={orangeRow}>
-        <Carousel>
-          {pcInfoJSON.pub_committee.map((info: any, i: number) => (
-            <Carousel.Item key = {i}>
-              <MeetTheTeamCard
-                info={info}
-                backgroundColor={ColorThemes.mainOrange}
-                color={ColorThemes.darkOrange}
-              />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      </div>
-      <br />
-      <br />
-      <br />
+      <section>
+        <h2 style={{ color: ColorThemes.mainYellow, ...header }}>
+          PUBLICITY COMMITTEE
+        </h2>
+        <section style={orangeRow}>
+          <Carousel>
+            {pcInfoJSON.pub_committee.map((info: any, i: number) => (
+              <Carousel.Item key={i}>
+                <MeetTheTeamCard
+                  info={info}
+                  backgroundColor={ColorThemes.mainOrange}
+                  color={ColorThemes.darkOrange}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </section>
+      </section>
     </>
   );
 };

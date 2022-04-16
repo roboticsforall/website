@@ -3,8 +3,9 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlob from "@/media/HeaderBlobs/blue.png";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
-import { PosButton } from "@/components/Volunteer/PosButton";
 import { activeStyles } from "@/components/Volunteer/TabCards";
+
+import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
 import Markdown from "markdown-to-jsx";
 
@@ -16,7 +17,7 @@ export const BusinessPositions: React.FC = () => {
   const [key, setKey] = useState("one");
 
   return (
-    <div>
+    <>
       <Header
         headerTextColor={ColorThemes.mainBlue}
         image={headerBlob}
@@ -25,47 +26,43 @@ export const BusinessPositions: React.FC = () => {
           "General Business Interns help with a variety of tasks from recruitment to data analysis!"
         }
       />
-      <Container>
-        <br></br>
-        <br></br>
-        <br></br>
-        <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
-          <Nav justify fill variant="tabs">
-            <Nav.Item>
-              <Nav.Link
-                eventKey="one"
-                className="pos"
-                style={activeStyles.activeStyle(ColorThemes.mainBlue)}
-              >
-                Business Intern Positions
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-          <Tab.Content>
-            <TabCardsNoImage
-              posHeader={"DETAILS"}
-              generalColor={ColorThemes.mainBlue}
-              posDescription={
-                <div>
-                  <p>
-                    <Markdown>
-                      {generalInternJSON.general_intern_details}
-                    </Markdown>
-                  </p>
-                </div>
-              }
-            />
-            <PosButton
-              backgroundColor={ColorThemes.mainBlue}
-              backgroundHover={ColorThemes.mainYellow}
-              title={"Apply Now!"}
-              link={googleForms.general_intern_app_link}
-            />
-            <br></br>
-            <br></br>
-          </Tab.Content>
-        </Tab.Container>
-      </Container>
-    </div>
+      <section>
+        <Container>
+          <Tab.Container activeKey={key} onSelect={(key) => setKey(key!)}>
+            <Nav justify fill variant="tabs">
+              <Nav.Item>
+                <Nav.Link
+                  eventKey="one"
+                  className="pos"
+                  style={activeStyles.activeStyle(ColorThemes.mainBlue)}
+                >
+                  Business Intern Positions
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+            <Tab.Content>
+              <TabCardsNoImage
+                posHeader={"DETAILS"}
+                generalColor={ColorThemes.mainBlue}
+                posDescription={
+                  <div>
+                    <p>
+                      <Markdown>
+                        {generalInternJSON.general_intern_details}
+                      </Markdown>
+                    </p>
+                  </div>
+                }
+              />
+              <ButtonFullWidth
+                title={"Apply Now!"}
+                location={googleForms.general_intern_app_link}
+                variant="primaryBlue"
+              />
+            </Tab.Content>
+          </Tab.Container>
+        </Container>
+      </section>
+    </>
   );
 };

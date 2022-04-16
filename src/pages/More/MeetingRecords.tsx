@@ -50,14 +50,8 @@ export const MeetingRecords: React.FC = () => {
             <MeetingEntry
               key={i}
               date={meeting_record_entry.date}
-              agendaDownload={meeting_record_entry.agenda_file_path.replace(
-                "/public",
-                ""
-              )}
-              minutesDownload={meeting_record_entry.meeting_minute_file_path.replace(
-                "/public",
-                ""
-              )}
+              agendaDownload={meeting_record_entry.agenda_file_path}
+              minutesDownload={meeting_record_entry.meeting_minute_file_path}
             />
           )
         )}
