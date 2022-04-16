@@ -100,7 +100,7 @@ export const HomePage: React.FC = () => {
               <Col key={i} md={4} className="text-center">
                 <Link className="hyperlink" to={info.location}>
                   <img 
-                    src="/src/media/HoverImages/apple_1.png" 
+                    src={info.src}
                     // srcSet="https://ucarecdn.com/b59aae3f-f980-44c2-8186-761d0edf6c12/-/preview/300x300/ 300w"
                     // sizes = "70vmin"
 
