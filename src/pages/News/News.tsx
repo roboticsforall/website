@@ -49,7 +49,7 @@ export const News: React.FC = () => {
         description="Learn more about our progress and community outreach."
       />
       <Container>
-        <Row>
+        <section>
           <Container
             style={{
               backgroundColor: ColorThemes.lightYellow,
@@ -82,7 +82,7 @@ export const News: React.FC = () => {
               </Col>
             </Row>
           </Container>
-        </Row>
+        </section>
         <Row>
           <h1
             style={{
