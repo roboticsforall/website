@@ -21,11 +21,9 @@ export const Newsletter: React.FC = () => {
       />
       <section>
         <Container>
-          <Row>
-            <h2>Read through our newsletters month by month down below.</h2>
-          </Row>
+          <h2>Read through our newsletters month by month down below.</h2>
           <section>
-            <Row>
+            <Row className = "g-3">
               {newsletterJSON.newsletters_list
                 .slice(0, 4)
                 .map((newsletter, i) => (
@@ -35,7 +33,6 @@ export const Newsletter: React.FC = () => {
                       file={newsletter.file_path}
                       variant={"primaryYellow"}
                     />
-                    <br />
                   </Col>
                 ))}
             </Row>

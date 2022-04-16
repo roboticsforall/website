@@ -2,9 +2,6 @@ import React from "react";
 import { Container, Row, Col, Form, Image, Button } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import { useForm, ValidationError } from "@formspree/react";
-import { FormInput } from "@/components/FormInput";
-import { TextArea } from "@/components/TextArea";
-import { SubmitButton } from "@/components/SubmitButton";
 
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
 import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
@@ -18,7 +15,6 @@ export const Contact: React.FC = () => {
 
   const checkFormState = () => {
     if (state.succeeded) {
-      // handleMessage("Thank you for contacting Robotics for All!");
       return (
         <p style={{ color: "green" }}>
           Thank you for contacting Robotics for All!

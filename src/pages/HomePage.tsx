@@ -52,7 +52,6 @@ export const HomePage: React.FC = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
           ></iframe>
         </div>
       ) : (
@@ -99,14 +98,10 @@ export const HomePage: React.FC = () => {
             ].map((info, i) => (
               <Col key={i} md={4} className="text-center">
                 <Link className="hyperlink" to={info.location}>
-                  <img 
+                  <Image 
                     src={info.src}
-                    // srcSet="https://ucarecdn.com/b59aae3f-f980-44c2-8186-761d0edf6c12/-/preview/300x300/ 300w"
-                    // sizes = "70vmin"
-
+                    fluid
                   />
-
-
                   <h2
                     style={{
                       textAlign: "center",

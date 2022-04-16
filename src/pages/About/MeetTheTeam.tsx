@@ -9,10 +9,9 @@ import pcInfoJSON from "@/posts/pub_committee.json";
 import { MeetTheTeamCard } from "@/components/About/MeetTheTeamCard";
 
 import Carousel from "react-bootstrap/Carousel";
+import Container from "react-bootstrap/Container";
 
 import { ColorThemes } from "@/colors";
-
-import "../../index.css";
 
 export const MeetTheTeam: React.FC = () => {
   const yellowRow = {
@@ -94,7 +93,7 @@ export const MeetTheTeam: React.FC = () => {
                     info={info}
                     backgroundColor={ColorThemes.mainBlue}
                     color={ColorThemes.darkBlue}
-                  />
+                    />
                 </Carousel.Item>
               )
             )}

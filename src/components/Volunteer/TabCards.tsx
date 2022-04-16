@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
-import { PosButton } from "./PosButton";
+import { ButtonFullWidth } from "../ButtonFullWidth";
 
 export const activeStyles: any = {
   activeStyle: (backgroundColor: string) => ({
@@ -37,10 +37,9 @@ interface IProps {
   backgroundColor?: string;
   posImage?: string;
   button?: {
-    link: string;
-    title: string;
-    backgroundColor: string;
-    backgroundHover: string;
+    location: string,
+    title: string,
+    variant: string,
   };
 }
 
@@ -93,11 +92,10 @@ export const TabCardsLeftImage: React.FC<IProps> = (props: IProps) => {
               <div style={styles.posDescription}>{props.posDescription}</div>
               {props.button ? (
                 <>
-                  <PosButton
-                    link={props.button.link}
+                  <ButtonFullWidth
+                    location={props.button.link}
                     title={props.button.title}
-                    backgroundColor={props.button.backgroundColor}
-                    backgroundHover={props.button.backgroundHover}
+                    variant = {props.button.variant}
                   />
                   <br />
                 </>
@@ -130,11 +128,10 @@ export const TabCardsRightImage: React.FC<IProps> = (props: IProps) => {
               <p style={styles.posDescription}>{props.posDescription}</p>{" "}
               {props.button ? (
                 <>
-                  <PosButton
-                    link={props.button.link}
+                  <ButtonFullWidth
+                    location={props.button.link}
                     title={props.button.title}
-                    backgroundColor={props.button.backgroundColor}
-                    backgroundHover={props.button.backgroundHover}
+                    variant = {props.button.variant}
                   />
                   <br />
                 </>
