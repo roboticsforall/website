@@ -17,8 +17,8 @@
       "answer": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
     },
     {
-      "answer": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this.",
-      "question": "What software do we use to teach?"
+      "question": "What software do we use to teach?",
+      "answer": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
     },
     {
       "question": "Some Question",
