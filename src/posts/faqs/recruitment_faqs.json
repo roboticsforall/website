@@ -19,6 +19,10 @@
     {
       "answer": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this.",
       "question": "What software do we use to teach?"
+    },
+    {
+      "question": "Some Question",
+      "answer": "Some Answer"
     }
   ],
   "ta_faqs": [
