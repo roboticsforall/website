@@ -17,12 +17,12 @@
       "answer": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
     },
     {
-      "question": "What software do we use to teach?",
-      "answer": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
+      "question": "When do classes run?",
+      "answer": "Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time)."
     },
     {
-      "question": "Some Question",
-      "answer": "Some Answer"
+      "question": "What software do we use to teach?",
+      "answer": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
     }
   ],
   "ta_faqs": [
@@ -37,6 +37,10 @@
     {
       "question": "How soon will you be able to start teaching classes? ",
       "answer": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
+    },
+    {
+      "question": "When do classes run?",
+      "answer": "Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time)."
     },
     {
       "question": "What software will we be using to teach? ",
