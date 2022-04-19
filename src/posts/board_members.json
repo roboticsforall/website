@@ -1,22 +1,70 @@
 {
   "board_members_list": [
     {
-      "name": "Max",
-      "title_pronouns": "CEO Guy",
-      "description": "gzzgs",
+      "name": "Ben Wyler",
+      "title_pronouns": "President and Chief Executive Officer (he/him)",
+      "description": "​Ben Wyler is a high school junior at The Overlake School, living in Bellevue, Washington. He joined Robotics For All in September of 2020 as a teacher's assistant. After teaching, he joined the curriculum development and class coordination teams, while continuing to teach classes. Then, in late 2020 he became the Director of Recruitment. In his free time, he enjoys programming, listening to podcasts, and playing video games.",
+      "image": "https://ucarecdn.com/aa9a6acf-d6ae-4e11-a1bb-09bebee1b204/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Garrett Tieng ",
+      "title_pronouns": "COO and Vice President (he/him) ",
+      "description": "Garrett Tieng is a sophomore at Case Western Reserve University, studying aerospace and mechanical engineering. He joined in November 2017 as teacher and was promoted to lead instructor before becoming vice president in June 2018. Garrett helped develop several early in-person curricula including Lego Builders, Lego Robotics, and Arduino Explorers curricula. He led the development of online curricula as well, including Code.org, Python, and Scratch. Outside of Robotics for All, Garrett was a co-captain of an internationally awarded Botball robotics team. In his free time, Garrett enjoys exercising, playing table-top games, and writing stories. Garrett.tieng.net",
+      "image": "https://ucarecdn.com/86b845e5-d418-4d35-bef1-6bf01b7b19e2/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Maximilian Goetz",
+      "title_pronouns": "Founder, Chair and Head of Growth (he/him)",
+      "description": "coming soon...",
       "image": "https://ucarecdn.com/e853e911-98ba-4f12-a023-1062377cd09c/"
     },
     {
-      "name": "Bax",
-      "title_pronouns": "BEO",
-      "description": "BAXY MAX who is BEO",
-      "image": "https://ucarecdn.com/48680b99-d33b-48e3-a1cb-7b6810ecf139/"
+      "name": "Jack Wang",
+      "title_pronouns": "CFO and Treasurer (he/him)",
+      "description": "Jack Wang is a junior at Mission San Jose High School. He joined Robotics For All in June 2020 as a teacher's assistant, and later became a lead instructor for the Python course. In December of 2021, he became the CFO. In his free time, he enjoys studying for physics competitions and watching anime.",
+      "image": "https://ucarecdn.com/c108610b-f2ac-4f80-aa85-4edee73a591a/-/crop/457x470/0,139/-/preview/-/scale_crop/400x400/smart/"
     },
     {
-      "name": "Drax",
-      "title_pronouns": "Unknown species of Max",
-      "description": "From the planet Lax",
-      "image": "https://ucarecdn.com/4e99563a-49a4-4cbb-89e5-163546d41489/"
+      "name": "Crystal Lee",
+      "title_pronouns": "​Director of Publicity (she/her)",
+      "description": "coming soon...",
+      "image": "https://ucarecdn.com/3753a9ba-fca8-45d1-90c6-13f87643e6ec/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Kenneth Meng",
+      "description": "Kenneth Meng is an incoming freshman at Purdue University. He joined Robotics For All in January 2019 as a teacher, and became a board member in March 2020. He was appointed as the Director of Curriculum in July 2020. In his free time, he enjoys baking, cooking, and playing Stardew Valley.",
+      "title_pronouns": "Director of Curriculum (he/him)",
+      "image": "https://ucarecdn.com/8e6ace28-4f13-4ad2-8522-cd7fc873951d/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Jessica Fu ",
+      "title_pronouns": "Director of Intern Operations (she/her)",
+      "description": "Jessica Fu is a senior at Aragon High School in California. She joined Robotics For All as a teacher and business development intern in 2020 and then transitioned to an intern lead and event planning co-lead. Now she serves as the Director of Intern Operations and oversees all business, publicity and technical interns. In her free time, she enjoys programming, playing tennis, and listening to music.",
+      "image": "https://ucarecdn.com/ccbe2a1b-0ed5-4d6a-ab50-98a4dcfbc279/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Victoria Tsai ",
+      "description": "Victoria Tsai is a junior at Atholton High School in Clarksville, MD. She joined Robotics for All as a teacher in 2020. She is also the Founder and President of Crafts for Charity and serves as a CFC Representative. Victoria also serves on the publicity committee as Director of Graphic Design. She enjoys making arts and crafts, participating in Science Olympiad and engineering!",
+      "title_pronouns": "Director of Coordination and Crafts for Charity Representative (she/her)",
+      "image": "https://ucarecdn.com/3c0f7444-8862-40da-ac28-cfd9c97b977d/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Jake Runyon",
+      "title_pronouns": "Director of Recruitment (he/him)",
+      "description": "coming soon....",
+      "image": "https://ucarecdn.com/5e0c874c-e134-43e4-b9aa-fb31325bf72d/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Beiqi Wang",
+      "description": "Beiqi Wang is a sophomore at UC Berkeley. She joined Robotics For All in May 2020 as a lead instructor. After her teaching position at Robotics for All, she joined Tutoring for All in November 2020 as the lead of media design. Then, in November 2021, she became the President of Tutoring for All. In her free time, she enjoys reading, hiking, and watching movies.",
+      "title_pronouns": "President of Tutoring for All (she/her)",
+      "image": "https://ucarecdn.com/633e523b-2fd5-42c2-ba1d-abf3a56232e6/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Christine Nam",
+      "description": "Christine is a junior at Carlmont Highschool in the Bay Area. She first joined Robotics for All as a lead instructor for the K-1 code.org classes but also worked as a teacher's assistant,  intern, and Tutoring for All outreach volunteer. Outside of Robotics for All, she volunteers with Greenpeace and participates in extracurriculars such as Students Demand Action and her school's debate team. She enjoys spending time with her dog (Bori) and playing video games (Valorant, League of Legends) in her free time.",
+      "title_pronouns": "Secretary (she/her)",
+      "image": "https://ucarecdn.com/7c832174-5a4d-4a8e-9150-93fa32e4f451/-/scale_crop/400x400/smart/"
     }
   ]
 }
