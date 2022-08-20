@@ -25,6 +25,12 @@
       "course_description": "* Introduces students to the basics of block-based programming through creating games in Scratch. \n* Serves as a bridge to learning about text-based programming languages such as Python."
     },
     {
+      "course_name": "Tinkercad (5th-8th)",
+      "file_path": "https://ucarecdn.com/dd2b33f7-32a8-48dc-b34e-0aa829b1a6f4/-/scale_crop/400x400/smart/",
+      "link": "https://docs.google.com/document/d/1khPJJN96lEFsvtt6z8PTVDjsZeWS9pa2SeyMRQZoWlA/edit?usp=sharing",
+      "course_description": "* Introduces students to the basics of computer-aided design (the use of software to help with designing objects) using Tinkercad, an easy-to-use online platform. \n* No experience needed."
+    },
+    {
       "course_name": "Python (6th-8th)",
       "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=kix.glvs347dinnl",
       "course_description": "* Introduces students to the basics of Python, a text-based programming language that is widely used. \n* No experience needed.",
@@ -35,18 +41,6 @@
       "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=kix.eep0teidfpj4",
       "course_description": "* Introduces students to the use of HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) to design websites.\n* No experience needed.",
       "file_path": "https://ucarecdn.com/3b642569-6c15-4b40-9c3c-70c6f2e3a003/-/preview/400x400/"
-    },
-    {
-      "course_name": "Java (6th-8th)",
-      "link": "https://docs.google.com/document/d/1DJ0TorjSWHcvqLdqcWsm2RoO2Ug_XlsD3SybXR7y-g4/edit#bookmark=id.bs3rj0uc5m65",
-      "file_path": "https://ucarecdn.com/0acd5110-ca96-44f2-8d6d-bbe6f49b8f49/-/preview/400x400/",
-      "course_description": "* Introduces students to the basics of Java, a popular programming language. \n* No experience needed."
-    },
-    {
-      "course_name": "Tinkercad (5th-8th)",
-      "file_path": "https://ucarecdn.com/dd2b33f7-32a8-48dc-b34e-0aa829b1a6f4/-/scale_crop/400x400/smart/",
-      "link": "https://docs.google.com/document/d/1khPJJN96lEFsvtt6z8PTVDjsZeWS9pa2SeyMRQZoWlA/edit?usp=sharing",
-      "course_description": "* Introduces students to the basics of computer-aided design (the use of software to help with designing objects) using Tinkercad, an easy-to-use online platform. \n* No experience needed."
     }
   ]
 }
