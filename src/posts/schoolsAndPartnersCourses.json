@@ -1,16 +1,10 @@
 {
   "courses_list": [
     {
-      "course_name": "Lego Explorers (K-1)",
-      "file_path": "https://ucarecdn.com/aa229224-8d34-4f32-b722-96e34fded70c/-/scale_crop/400x400/smart/",
-      "link": "https://docs.google.com/document/d/177ToKgQabE7PQ2h3uOFwvSZ8KLRKgBkR5IlVU4Qz44w/edit?usp=sharing",
-      "course_description": "* Teaches students to build creatively with LEGO bricks, preparing them for more complex builds and robotics. \n* Class may be administered online or in-person."
-    },
-    {
-      "course_name": "Snap Circuits (2-3)",
-      "link": "https://docs.google.com/document/d/1mBUvRSysTZnPwCtJDZi9pXS61KWR2fKkCwlck6tEKCo/edit?usp=sharing",
-      "file_path": "https://ucarecdn.com/138f1432-140c-4fee-94fa-2d86952d4ef0/-/scale_crop/400x400/smart/",
-      "course_description": "* Introduces students to the basics of electricity and circuits through projects using the Snap Circuits Jr. kit. \n* Class may be administered online or in-person."
+      "course_name": "Code.org (K-1st)",
+      "link": "https://docs.google.com/document/d/1z6AXFT2LQvHLvvmkNcMtXvazYjHgEeJLI0CfHO2QGAE/edit#heading=h.zhy3ra3jp4ku",
+      "course_description": "**Overview**\n\n* Fundamentals of Programming with Code.org is designed to be an entry level programming course for all K-1st graders. \n* Students will be introduced to block-based coding through lessons from Code.org, an organization that runs a popular platform for learning programming. \n\n**Who should take this course?**\n\n*  K-1st graders. \n\n  * Unless K-1st graders have extensive experience with Code.org, they should take this course.\n\n**Who shouldn’t take this course?**\n\n* 2nd-3rd Graders.\n\n  * These students should take Basic Scratch Part 1 (2-3).\n* 4th Graders and above.\n\n  * Other entry-level courses exist for older students, such as Scratch (4-6), HTML/CSS (6-8), Python (6-8).\n\n**Topics Overview**\n\n* Digital Citizenship\n* Sequencing\n* Loops\n* Events\n* Binary\n* Conditionals\n\n**Class Structure**\n\n1. First class meeting: 1 hour video call (Monday or Tuesday)\n2. Second class meeting: 1 hour video call (Thursday or Friday)\n\n**Curriculum Goals**\n\n* Students will be introduced to the foundations of programming and computer science through fun activities that combine critical thinking and creative application. \n* Students should be ready to transition to Basic Scratch Pt 1 (2-3).\n\n**Required Materials**\n\n* Paper and a writing utensil (pen or pencil) will also occasionally be used for various activities. \n\n  * Students should have these materials ready for each class, although they will not be used in every class.",
+      "file_path": "https://ucarecdn.com/80db6b81-c0cf-4b6a-a990-687e36ee2ab3/-/scale_crop/400x400/smart/"
     },
     {
       "course_name": "VEX GO (3-5)",
