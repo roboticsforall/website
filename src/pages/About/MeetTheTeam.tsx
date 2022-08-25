@@ -9,9 +9,15 @@ import pcInfoJSON from "@/posts/pub_committee.json";
 import { MeetTheTeamCard } from "@/components/About/MeetTheTeamCard";
 
 import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
 
 import { ColorThemes } from "@/colors";
+
+enum Headers {
+  First = "EXECUTIVE COMMITTEE",
+  Second = "BOARD OF DIRECTORS",
+  Third = "CURRICULUM COMMITTEE",
+  Fourth = "PUBLICITY COMMITTEE"
+}
 
 export const MeetTheTeam: React.FC = () => {
   const yellowRow = {
@@ -41,7 +47,7 @@ export const MeetTheTeam: React.FC = () => {
 
       <section>
         <h2 style={{ color: ColorThemes.mainOrange, ...header }}>
-          BOARD OF DIRECTORS
+          {Headers.First}
         </h2>
 
         <section style={yellowRow}>
@@ -61,7 +67,7 @@ export const MeetTheTeam: React.FC = () => {
 
       <section>
         <h2 style={{ color: ColorThemes.mainGreen, ...header }}>
-          EXECUTIVE ASSISTANT DIRECTOR
+          {Headers.Second}
         </h2>
 
         <section style={greenRow}>
@@ -81,7 +87,7 @@ export const MeetTheTeam: React.FC = () => {
 
       <section>
         <h2 style={{ color: ColorThemes.mainBlue, ...header }}>
-          CURRICULUM COMMITTEE
+          {Headers.Third}
         </h2>
 
         <section style={blueRow}>
@@ -103,7 +109,7 @@ export const MeetTheTeam: React.FC = () => {
 
       <section>
         <h2 style={{ color: ColorThemes.mainYellow, ...header }}>
-          PUBLICITY COMMITTEE
+          {Headers.Fourth}
         </h2>
         <section style={orangeRow}>
           <Carousel>
