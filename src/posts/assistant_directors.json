@@ -1,3 +1,34 @@
 {
-  "assistant_directors_list": []
+  "assistant_directors_list": [
+    {
+      "name": "Maximilian Goetz",
+      "title_pronouns": "Board Chairman/President, Founder (he/him)",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/72329d83-83b7-4e9e-b218-428bb874523b/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Garrett Tieng",
+      "title_pronouns": "Board Secretary (he/him)",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/ac0bcd73-3b38-4b7f-9bd2-5a8dfb5cfde7/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Aarushi Khandelwal",
+      "title_pronouns": "Board Treasurer (she/her)",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/360159b9-b79d-44a5-904d-5d4b5b18eb1a/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Chris Langlois",
+      "title_pronouns": "Board Member (he/him)",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/678f7243-946b-4079-ad08-c000389c655c/-/scale_crop/400x400/smart/"
+    },
+    {
+      "name": "Kenneth Meng ",
+      "title_pronouns": "Board Member (he/him) ",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/adccc1f9-e7b3-45dd-abbf-7325e7a30bf8/-/scale_crop/400x400/smart/"
+    }
+  ]
 }
