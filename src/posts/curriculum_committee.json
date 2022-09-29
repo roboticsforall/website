@@ -1,3 +1,16 @@
 {
-  "curriculum_committee_list": []
+  "curriculum_committee_list": [
+    {
+      "name": "Arvind Ganeshkumar",
+      "title_pronouns": "Head of Programming Curriculum​",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/9989f4f1-a0f1-4322-aacc-2d7b53dcfa81/-/scale_crop/400x400/smart/"
+    },
+    {
+      "title_pronouns": "Head of In-Person Curriculum",
+      "name": "Krish Vazirani",
+      "image": "https://ucarecdn.com/9cfde363-c45e-4dee-bd87-6b4da9445039/-/scale_crop/400x400/smart/",
+      "description": "t﻿bd..."
+    }
+  ]
 }
