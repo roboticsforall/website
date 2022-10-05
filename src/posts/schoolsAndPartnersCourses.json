@@ -19,6 +19,12 @@
       "course_description": "Basic Scratch Part 2 (2-3) is the second part of a two-part course introducing the Scratch platform to 2nd and 3rd graders. Students should have taken Basic Scratch Part 1 before taking this class. Scratch is a popular visual block-based programming language developed by the MIT Media Lab. Students need internet access and a personal device (preferably computer)"
     },
     {
+      "course_name": "VEX GO (3-5)",
+      "link": "https://docs.google.com/document/d/1m04QCFIJ3D-K3PDlNP7k1sfHL5vfdPhJcWrlQ20KlJI/edit?usp=sharing",
+      "course_description": "V﻿EX GO (3-5) introduces students to robotics using the VEX GO kit, an accessible robotics kit that includes structural pieces, electronic components, and motors. Robotics for All can lend kits to schools and partner organizations that require them. ",
+      "file_path": "https://ucarecdn.com/85fefab6-0a77-4032-a3ba-93e007117315/-/scale_crop/400x400/smart/"
+    },
+    {
       "course_name": "Scratch (4th-6th)",
       "link": "https://docs.google.com/document/d/1FGjioEv8UY_Q_RSd89adssDLtwYcxXYEbehWKcR3j74/edit#heading=h.a99ezfun0e4a",
       "file_path": "https://ucarecdn.com/ecb45c74-afc5-44c9-828a-4b9e9ffe8728/-/scale_crop/400x400/smart/",
@@ -29,12 +35,6 @@
       "link": "https://docs.google.com/document/d/1FGjioEv8UY_Q_RSd89adssDLtwYcxXYEbehWKcR3j74/edit#heading=h.xtk7ppt4rxb5",
       "course_description": "C﻿omputer-Aided Design (CAD) with Tinkercad introduces students in 5th-8th grades to the basics of computer-aided design using Tinkercad, a simple web-based platform. Students do not need prior experience or knowledge of CAD. Students will need internet access and a personal device (preferably computer).",
       "file_path": "https://ucarecdn.com/dd2b33f7-32a8-48dc-b34e-0aa829b1a6f4/-/scale_crop/400x400/smart/"
-    },
-    {
-      "course_name": "VEX GO (3-5)",
-      "link": "https://docs.google.com/document/d/1m04QCFIJ3D-K3PDlNP7k1sfHL5vfdPhJcWrlQ20KlJI/edit?usp=sharing",
-      "course_description": "V﻿EX GO (3-5) introduces students to robotics using the VEX GO kit, an accessible robotics kit that includes structural pieces, electronic components, and motors. Robotics for All can lend kits to schools and partner organizations that require them. ",
-      "file_path": "https://ucarecdn.com/85fefab6-0a77-4032-a3ba-93e007117315/-/scale_crop/400x400/smart/"
     }
   ]
 }
