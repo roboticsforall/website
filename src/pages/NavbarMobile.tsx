@@ -41,7 +41,7 @@ export const NavbarMobile: React.FC = () => {
   };
 
   return (
-    <nav className="py-5 border-bottom" style={navContainer}>
+    <nav className="py-4 border-bottom" style={navContainer}>
       <header style={navHeader}>
         <Link to="/">
           <img
