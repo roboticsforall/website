@@ -174,14 +174,10 @@ export const Footer: React.FC = () => {
         <Container>
           <p style={copyrightDisclaimer}>
             <strong>
-              Robotics For All 2018-2021© Photos of minors were used with
+              Robotics For All 2018-2022© Photos of minors were used with
               permission from their parent/guardian.{" "}
             </strong>
-            Robotics for All has and will never discriminate against a student
-            or a volunteer on any basis, including gender expression, ethnicity,
-            sexual orientation, religion, nationality, legal status, disability,
-            political stances, or any other factor that can be discriminated
-            against.
+            Robotics for All does not discriminate against any students or volunteers on the basis of gender identity or expression, race, color, religion, sex, sexual orientation, age, disability, marital status, national origin, military status or any other characteristic protected by law. We celebrate our diversity and take pride in our inclusive environment for all people.
           </p>
         </Container>
       </Container>
