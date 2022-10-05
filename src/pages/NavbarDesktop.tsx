@@ -33,7 +33,7 @@ export const NavbarDesktop: React.FC = () => {
   // const navItem:
 
   return (
-    <nav className="py-5" style={navContainer}>
+    <nav className="py-4" style={navContainer}>
       <header style={navHeader}>
         <Link to="/">
           <img
