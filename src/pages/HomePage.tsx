@@ -174,7 +174,7 @@ export const HomePage: React.FC = () => {
             Proud partners of the following organizations:
           </h3>
           <div className="d-flex justify-content-around flex-wrap">
-            {[AH, YMCA, NGN, WH].map((partner, i) => (
+            {[WH].map((partner, i) => (
               <Image
                 key={i}
                 className="m-2"

@@ -98,7 +98,6 @@ export const App: React.FC = () => {
 
               <Route exact path="/about/overview" component={AbtOverview} />
               <Route exact path="/about/afforgs" component={AffOrgs} />
-              <Route exact path="/about/newsletter" component={Newsletter} />
               <Route
                 exact
                 path="/about/pastnewsletter"
