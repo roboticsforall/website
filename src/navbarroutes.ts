@@ -63,10 +63,6 @@ export const enrollvolunteerabout = [
           subPageName: "Affiliated Organizations",
           to: "/about/afforgs",
         },
-        {
-          subPageName: "Newsletter",
-          to: "/about/newsletter",
-        },
       ]
     }
   ]

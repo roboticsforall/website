@@ -44,7 +44,7 @@ export const Schools: React.FC = () => {
           <br />
           <p>
             <Markdown>
-              {schoolsCourseOverview.indlearners_details_text}
+              {schoolsCourseOverview.schools_details_text}
             </Markdown>
           </p>
           <br />
