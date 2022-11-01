@@ -123,13 +123,6 @@ export const HomePage: React.FC = () => {
           <br></br>
           {[
             {
-              label: "tutoring for all",
-              logo: TFALogo,
-              linkColor: ColorThemes.darkOrange,
-              bgColor: ColorThemes.lightOrange,
-              link: "https://www.tutoringforall.org/about",
-            },
-            {
               label: "crafts for charity",
               logo: CFCLogo,
               linkColor: ColorThemes.darkBlue,
