@@ -1,10 +1,9 @@
-import React from "react";
-import { Row, Container, Col, Image } from "react-bootstrap";
+import React, {useState, useEffect} from "react";
+import { Row, Container, Col, Image, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
 
-import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 
 import LM from "@/media/Sponsors/lm.png";
@@ -23,7 +22,13 @@ import world from "@/media/HoverImages/world_1.png";
 
 import { ColorThemes } from "../colors";
 
+const photosImport = Array.from(
+  { length: 10 },
+  (_, i) => import(`../media/Photos/${(i + 1).toString()}.jpg`)
+);
+
 export const HomePage: React.FC = () => {
+
   const header: React.CSSProperties = {
     color: ColorThemes.mainYellow,
   };
@@ -42,21 +47,29 @@ export const HomePage: React.FC = () => {
     backgroundColor: ColorThemes.lightYellow,
   };
 
+  const [photos, setPhotos] = useState([] as { default: string }[]);
+
+  useEffect(() => {
+    Promise.all(photosImport).then(setPhotos);
+  }, []);
+
   return (
     <>
-      {window.innerWidth > 768 ? (
-        <div style={yellowRow} className="d-flex justify-content-center">
-          <iframe
-            className="video-width"
-            src="https://www.youtube.com/embed/Dr57cHpN27Y?controls=0&mute=1&autoplay=1"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
+      {/* {window.innerWidth > 768 ? ( */}
+          <div style={yellowRow}>
+            <Carousel>
+              {photos.map((x, i) => (
+                <Carousel.Item>
+                  <div className="d-flex justify-content-center">
+                    <Image className = "imageSize" src={x.default} alt="" />
+                  </div>
+                </Carousel.Item>
+              ))}
+            </Carousel>
         </div>
-      ) : (
+      {/* ) : (
         <></>
-      )}
+      )} */}
 
       <section>
         <Container>
@@ -149,7 +162,7 @@ export const HomePage: React.FC = () => {
             donors:
           </h3>
           <div className="d-flex justify-content-around flex-wrap">
-            {[LM, TF, WMM, Google, NSP].map((sponsor, i) => (
+            {[].map((sponsor, i) => (
               <Image
                 key={i}
                 className="m-3"

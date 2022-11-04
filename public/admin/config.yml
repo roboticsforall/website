@@ -441,3 +441,13 @@ collections:
                 name: file_path
                 widget: file
                 media_folder: '/public/uploads/newsletters'
+      - label: Homepage Carousel Images
+        name: homepage_carousel
+        file: src/posts/homepage_carousel.json
+        fields:
+          - label: Homepage Carousel Images
+            name: homepage_carousel_images_list
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+

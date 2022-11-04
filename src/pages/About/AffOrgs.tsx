@@ -3,7 +3,6 @@ import { Header } from "@/components/Header";
 import { Container } from "react-bootstrap";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
-import TFALogo from "@/media/AffiliatedOrgs/TFA_Logo.png";
 
 import { ColorThemes } from "@/colors";
 
@@ -21,19 +20,6 @@ export const AffOrgs: React.FC = () => {
         }
       />
       <Container>
-        <section>
-          <AboutAffOrgsCard
-            website={"https://www.tutoringforall.org"}
-            logo={TFALogo}
-            linkColor={ColorThemes.darkOrange}
-            orgAbrv={"TFA"}
-            mainColor={ColorThemes.mainOrange}
-            affOrgName={"Tutoring For All"}
-            affOrgsDescription={
-              "Tutoring for All is a branch of the non-profit organization Robotics for All. Our goal is to provide free, quality tutoring services to primarily low income and disadvantaged students."
-            }
-          />
-        </section>
         <section>
           <AboutAffOrgsCard
             website={"https://craftsforcharity.com/"}

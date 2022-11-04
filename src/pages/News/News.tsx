@@ -13,6 +13,7 @@ const photosImport = Array.from(
   (_, i) => import(`../../media/Photos/${(i + 1).toString()}.jpg`)
 );
 
+
 export const News: React.FC = () => {
   const [images, setImages] = useState(
     [] as {
