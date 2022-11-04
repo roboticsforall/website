@@ -378,7 +378,7 @@ collections:
     files:
       - label: Privacy Policy
         name: privacy_policy
-        file: src/posts/privacy_policy.json
+        file: src/posts/downloads/privacy_policy.json
         fields:
           - label: Privacy Policy
             name: privacy_policy_list
@@ -388,7 +388,7 @@ collections:
               - {label: Description, name: description, widget: markdown}
       - label: Website TOS
         name: website_tos
-        file: src/posts/website_tos.json
+        file: src/posts/downloads/website_tos.json
         fields:
           - label: Website TOS
             name: website_tos_list
