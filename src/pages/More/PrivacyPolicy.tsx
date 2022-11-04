@@ -3,12 +3,12 @@ import { Container, Row, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
-// import privacypolicyJSON from "@/posts/privacy_policy.json";
+import privacypolicyJSON from "@/posts/privacy_policy.json";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
 export const PrivacyPolicy: React.FC = () => {
-  const ActiveStyle = (props: any) => ({
+  const ActiveStyle = (props: any) : React.CSSProperties => ({
     color: "#000000",
     backgroundColor:
       props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange,
@@ -38,13 +38,13 @@ export const PrivacyPolicy: React.FC = () => {
       />
       <br />
       <br />
-      {/* <Container>
-        {privacypolicyJSON.sections.map((sections, i) => (
+      <Container>
+        {privacypolicyJSON.privacy_policy_list.map((sections, i) => (
           <Tab.Container>
             <Nav justify fill variant="tabs">
               <Nav.Item>
                 <Nav.Link eventKey="one" style={ActiveStyle({ i: i })}>
-                  <h1 style={headerText}>{sections.header}</h1>
+                  <h1 style={headerText}>{sections.heading}</h1>
                 </Nav.Link>
               </Nav.Item>
             </Nav>
@@ -67,7 +67,7 @@ export const PrivacyPolicy: React.FC = () => {
             email at info@roboticsforall.net.
           </p>
         </Row>
-      </Container> */}
+      </Container>
     </div>
   );
 };

@@ -3,12 +3,12 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
-// import websitetosJSON from "@/posts/website_tos.json";
+import websitetosJSON from "@/posts/website_tos.json";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
 export const WebsiteTOS: React.FC = () => {
-  const ActiveStyle = (props: any) => ({
+  const ActiveStyle = (props: any) : React.CSSProperties => ({
     color: "#000000",
     backgroundColor:
       props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange,
@@ -33,13 +33,13 @@ export const WebsiteTOS: React.FC = () => {
       />
       <br />
       <br />
-      {/* <Container>
-        {websitetosJSON.sections.map((sections, i) => (
+      <Container>
+        {websitetosJSON.website_tos_list.map((sections, i) => (
           <Tab.Container>
             <Nav justify fill variant="tabs">
               <Nav.Item>
-                <Nav.Link eventKey="one" style={ActiveStyle({ i: i })}>
-                  <h1 style={headerText}>{sections.header}</h1>
+                <Nav.Link eventKey="one" style={ActiveStyle({ i })}>
+                  <h1 style={headerText}>{sections.heading}</h1>
                 </Nav.Link>
               </Nav.Item>
             </Nav>
@@ -54,7 +54,7 @@ export const WebsiteTOS: React.FC = () => {
             </Tab.Content>
           </Tab.Container>
         ))}
-      </Container> */}
+      </Container>
     </div>
   );
 };

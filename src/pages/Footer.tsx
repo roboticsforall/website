@@ -8,6 +8,8 @@ import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
 import linkedin from "@/media/SocialMediaLogos/linkedin.png";
 import guidestar from "@/media/SocialMediaLogos/guidestar.png";
 
+import orgLogisticsJSON from "@/posts/org_logistics.json";
+
 import { Link } from "react-router-dom";
 
 export const Footer: React.FC = () => {
@@ -69,14 +71,14 @@ export const Footer: React.FC = () => {
             <h1 style={headerStyle}>FIND US</h1>
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
-              <a className="hyperlink " href={"mailto:info@roboticsforall.net"}>
-                info@roboticsforall.net
+              <a className="hyperlink " href={"mailto:" + orgLogisticsJSON.email}>
+                {orgLogisticsJSON.email}
               </a>
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
-              <a className="hyperlink" href={"tel:(650)-260-8144"}>
-                +(650) 260-8144
+              <a className="hyperlink" href={"tel:" + orgLogisticsJSON.phone_number}>
+                {orgLogisticsJSON.phone_number}
               </a>
             </p>
             <div style={{ ...darkBrown, ...linkStyle }}>
@@ -87,7 +89,7 @@ export const Footer: React.FC = () => {
                 className=" hyperlink"
                 rel="noreferrer"
               >
-                P.O. Box 56, Palo Alto, CA 94302
+                {orgLogisticsJSON.address}
               </a>
             </div>
             <div className="d-flex align-items-end">
