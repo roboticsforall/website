@@ -5,8 +5,6 @@ media_library:
   name: uploadcare
   config:
     publicKey: 39d4c131575846254cf8
-  settings:
-    defaultOperations: '/scale_crop/400x400/smart/'
 public_folder: /public # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - label: Site Settings # Collection 1
@@ -26,6 +24,9 @@ collections:
           - {label: Email, name: email, widget: string}
           - {label: Phone Number, name: phone_number, widget: string}
           - {label: Address, name: address, widget: string}
+          - {label: Number of Levels of Curriculum, name: num_levels_curriculum, widget: number}
+          - {label: Number of Volunteers, name: num_volunteers, widget: number}
+          - {label: Number of Students Taught, name: num_students_taught, widget: number}
   - label: Coordination # Collection 1
     name: coordination
     files:

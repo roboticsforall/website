@@ -48,7 +48,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         <Col className = "center-align" md={"auto"}>
           <Image
             fluid
-            src={props.info.image.replace("/public", "")}
+            src={props.info.image + "-/scale_crop/400x400/smart/"}
             style={imgBoxShadow}
           />
         </Col>

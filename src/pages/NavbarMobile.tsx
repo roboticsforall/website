@@ -28,7 +28,7 @@ export const NavbarMobile: React.FC = () => {
     height: dropdownHeight,
     width: "100%",
     position: "fixed",
-    zIndex: 1,
+    zIndex: 100,
     top: 0,
     left: 0,
     transition: "0.5s",

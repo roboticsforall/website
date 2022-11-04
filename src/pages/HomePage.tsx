@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from "react";
-import { Row, Container, Col, Image, Carousel } from "react-bootstrap";
+import React from "react";
+import { Row, Container, Col, Image, Carousel, Ratio } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
 
 import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
+
+import carouselImagesJSON from "@/posts/homepage_carousel.json";
 
 import LM from "@/media/Sponsors/lm.png";
 import TF from "@/media/Sponsors/tf.png";
@@ -21,11 +23,6 @@ import apple from "@/media/HoverImages/apple_1.png";
 import world from "@/media/HoverImages/world_1.png";
 
 import { ColorThemes } from "../colors";
-
-const photosImport = Array.from(
-  { length: 10 },
-  (_, i) => import(`../media/Photos/${(i + 1).toString()}.jpg`)
-);
 
 export const HomePage: React.FC = () => {
 
@@ -47,29 +44,23 @@ export const HomePage: React.FC = () => {
     backgroundColor: ColorThemes.lightYellow,
   };
 
-  const [photos, setPhotos] = useState([] as { default: string }[]);
-
-  useEffect(() => {
-    Promise.all(photosImport).then(setPhotos);
-  }, []);
-
   return (
     <>
-      {/* {window.innerWidth > 768 ? ( */}
-          <div style={yellowRow}>
-            <Carousel>
-              {photos.map((x, i) => (
-                <Carousel.Item>
-                  <div className="d-flex justify-content-center">
-                    <Image className = "imageSize" src={x.default} alt="" />
-                  </div>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-        </div>
-      {/* ) : (
-        <></>
-      )} */}
+      <div>
+          <Carousel fade>
+            {carouselImagesJSON.homepage_carousel_images_list.map((x, i) => (
+              <Carousel.Item>
+                <div className="d-flex justify-content-center">
+                  {window.innerWidth > 768 ? (
+                    <Image className = "imageSize" fluid src={x.image + "-/crop/21:9/"} alt="" />
+                  ) : (
+                    <Image className = "imageSize" fluid src={x.image + "-/crop/4:3/"} alt="" />
+                  )}
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+      </div>
 
       <section>
         <Container>
