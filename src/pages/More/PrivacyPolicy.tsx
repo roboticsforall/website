@@ -3,7 +3,7 @@ import { Container, Row, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "../../media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
-import privacypolicyJSON from "@/posts/privacy_policy.json";
+// import privacypolicyJSON from "@/posts/privacy_policy.json";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
@@ -38,7 +38,7 @@ export const PrivacyPolicy: React.FC = () => {
       />
       <br />
       <br />
-      <Container>
+      {/* <Container>
         {privacypolicyJSON.sections.map((sections, i) => (
           <Tab.Container>
             <Nav justify fill variant="tabs">
@@ -67,7 +67,7 @@ export const PrivacyPolicy: React.FC = () => {
             email at info@roboticsforall.net.
           </p>
         </Row>
-      </Container>
+      </Container> */}
     </div>
   );
 };

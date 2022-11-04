@@ -3,7 +3,7 @@ import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import { ColorThemes } from "@/colors";
-import websitetosJSON from "@/posts/website_tos.json";
+// import websitetosJSON from "@/posts/website_tos.json";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
@@ -33,7 +33,7 @@ export const WebsiteTOS: React.FC = () => {
       />
       <br />
       <br />
-      <Container>
+      {/* <Container>
         {websitetosJSON.sections.map((sections, i) => (
           <Tab.Container>
             <Nav justify fill variant="tabs">
@@ -54,7 +54,7 @@ export const WebsiteTOS: React.FC = () => {
             </Tab.Content>
           </Tab.Container>
         ))}
-      </Container>
+      </Container> */}
     </div>
   );
 };
