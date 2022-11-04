@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 media_library:
   name: uploadcare
@@ -19,6 +19,13 @@ collections:
           - label: General Website Updates
             name: updates
             widget: string
+      - label: Logistical Information
+        name: org_logistics
+        file: src/posts/org_logistics.json
+        fields:
+          - {label: Email, name: email, widget: string}
+          - {label: Phone Number, name: phone_number, widget: string}
+          - {label: Address, name: address, widget: string}
   - label: Coordination # Collection 1
     name: coordination
     files:
@@ -369,6 +376,26 @@ collections:
   - label: Other # Collection 1
     name: other
     files:
+      - label: Privacy Policy
+        name: privacy_policy
+        file: src/posts/downloads/privacy_policy.json
+        fields:
+          - label: Privacy Policy
+            name: privacy_policy_list
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Description, name: description, widget: markdown}
+      - label: Website TOS
+        name: website_tos
+        file: src/posts/downloads/website_tos.json
+        fields:
+          - label: Website TOS
+            name: website_tos_list
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Description, name: description, widget: markdown}
       - label: Corporation Bylaws
         name: corp_bylaws
         file: src/posts/downloads/corp_bylaws.json
