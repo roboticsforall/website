@@ -3,12 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import TeacherToby from "@/media/TobyImages/Teacher_Toby.png";
 import InternToby from "@/media/TobyImages/Intern_Toby.png";
 import TAToby from "@/media/TobyImages/TA_Toby.png";
-import { VolOverviewImg } from "@/components/Volunteer/VolOverviewImg";
 import { VolOverviewCard } from "@/components/Volunteer/VolOverviewCard";
 import { VolOverviewStats } from "@/components/Volunteer/VolOverviewStats";
 import headerBlob from "@/media/HeaderBlobs/orange.png";
 
 import { Header } from "@/components/Header";
+
+import orgLogisticsJSON from "@/posts/org_logistics.json";
+
 
 import { ColorThemes } from "../../colors";
 
@@ -38,21 +40,21 @@ export const VolOverview: React.FC = () => {
               <VolOverviewStats
                 title={"Work With:"}
                 subtext={"Levels of Curriculum"}
-                end={12}
+                end={orgLogisticsJSON.num_levels_curriculum}
               />
             </Col>
             <Col md>
               <VolOverviewStats
                 title={"Join our:"}
                 subtext={"Active Volunteers"}
-                end={240}
+                end={orgLogisticsJSON.num_volunteers}
               />
             </Col>
             <Col md>
               <VolOverviewStats
                 title={"Support our:"}
                 subtext={"Students Taught"}
-                end={1296}
+                end={orgLogisticsJSON.num_students_taught}
               />
             </Col>
           </Row>
