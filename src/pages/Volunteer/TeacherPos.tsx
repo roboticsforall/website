@@ -155,7 +155,7 @@ export const TeacherPos: React.FC = () => {
                   }
                 />
                 <ButtonFullWidth
-                  location={googleForms.ta_app_link}
+                  location={googleForms.teacher_app_link}
                   variant={"primaryYellow"}
                   title="Apply Now"
                 />
