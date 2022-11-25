@@ -57,7 +57,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
             <Row>
               <Col>
                 <ButtonFullWidth
-                  variant={"primary"}
+                  variant={props.variant}
                   location={props.link}
                   title="Learn More"
                 />
