@@ -15,7 +15,7 @@ type TProps = {
   headerTitle: string,
   headerDescription : string,
   data : any,
-  headerBlob : string,
+  headerBlob: string,
 }
 
 export const PosOverview: React.FC<TProps> = (props : TProps) => {
