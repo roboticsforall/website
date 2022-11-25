@@ -105,6 +105,16 @@ export const VolOverview: React.FC = () => {
               }
               image={TAToby}
             />
+            <VolOverviewCard
+              location="/volunteer/curricdevpositions"
+              backgroundColor={ColorThemes.lightYellow}
+              buttonColor={ColorThemes.darkYellow}
+              title={"Curriculum Development"}
+              description={
+                "Curriculum Developers at Robotics for All are in charge of developing new standardized curricula for our classes."
+              }
+              image={TAToby}
+            />
           </Row>
         </Container>
       </section>

@@ -1,148 +1,114 @@
 import React from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navbar } from "@/pages/Navbar";
-import { Update } from "@/pages/Update";
-import ScrollToTop from "@/pages/ScrollToTop";
-// Base Pages
-import { HomePage } from "@/pages/HomePage";
-import { Footer } from "@/pages/Footer";
-//Enroll
-import { IndLearners } from "@/pages/Enroll/IndLearners";
-import { Schools } from "@/pages/Enroll/Schools";
-//Volunteer
-import { VolOverview } from "@/pages/Volunteer/VolOverview";
-import { TeacherPos } from "@/pages/Volunteer/TeacherPos";
-import { InternOverview } from "@/pages/Volunteer/InternOverview";
-//About
-import { AffOrgs } from "@/pages/About/AffOrgs";
-import { AbtOverview } from "@/pages/About/AbtOverview";
-import { MeetTheTeam } from "@/pages/About/MeetTheTeam";
-import { PastNewsletter } from "@/pages/About/PastNewsletter";
-
-//News
-import { News } from "@/pages/News/News";
-//More
-import { CorpBylaws } from "@/pages/More/CorpBylaws";
-import { MeetingRecords } from "@/pages/More/MeetingRecords";
-import { WebsiteTOS } from "@/pages/More/WebsiteTOS";
-import { PrivacyPolicy } from "@/pages/More/PrivacyPolicy";
-//Contact
-import { Contact } from "@/pages/Contact/Contact";
-//Donate
-import { Donate } from "@/pages/Donate/Donate";
-
-//Page Redirect
-import { PageNotFound } from "@/pages/PageNotFound";
-import { PositionsOverview } from "./pages/Volunteer/PositionOverviewExports";
-import { LeadershipPositions } from "./pages/Volunteer/LeadershipPositions";
+import * as components from "@/pages/Imports";
 
 export const App: React.FC = () => {
   return (
     <Router>
-      <Update />
-      <Navbar />
-      <ScrollToTop />
+      <components.Update />
+      <components.Navbar />
+      <components.ScrollToTop />
       <Route
         render={({ location }) => (
           <div id="wrapper" role="main">
             <Switch location={location}>
-              <Route exact path="/" component={HomePage} />
+              <Route exact path="/" component={components.HomePage} />
 
               {/* Enroll Pages */}
               <Route
                 exact
                 path="/enroll/individlearners"
-                component={IndLearners}
+                component={components.IndLearners}
               />
-              <Route exact path="/enroll/schools" component={Schools} />
+              <Route exact path="/enroll/schools" component={components.Schools} />
 
               {/* Volunteer Pages */}
-              <Route exact path="/volunteer/overview" component={VolOverview} />
+              <Route exact path="/volunteer/overview" component={components.VolOverview} />
 
               <Route
                 exact
                 path="/volunteer/teacherpos"
-                component={TeacherPos}
+                component={components.TeacherPos}
               />
               <Route
                 exact
                 path="/volunteer/leadershippositions"
-                component={LeadershipPositions}
+                component={components.LeadershipPositions}
               />
               <Route
                 exact
                 path="/volunteer/internoverview"
-                component={InternOverview}
+                component={components.InternOverview}
               />
               <Route
                 exact
                 path="/volunteer/publicitypositions"
               >
-                <PositionsOverview path = "/volunteer/publicitypositions"/>
+                <components.PositionsOverviewAll path = "/volunteer/publicitypositions"/>
               </Route>
               <Route
                 exact
                 path="/volunteer/technicalpositions"
               >
-                <PositionsOverview path = "/volunteer/technicalpositions"/>
+                <components.PositionsOverviewAll path = "/volunteer/technicalpositions"/>
               </Route>
               <Route
                 exact
                 path="/volunteer/businesspositions"
               >
-                <PositionsOverview path = "/volunteer/businesspositions"/>
+                <components.PositionsOverviewAll path = "/volunteer/businesspositions"/>
               </Route>
               <Route
                 exact
                 path="/volunteer/curricdevpositions"
               >
-                <PositionsOverview path = "/volunteer/curricdevpositions"/>
+                <components.PositionsOverviewAll path = "/volunteer/curricdevpositions"/>
               </Route>
 
               {/* About Pages */}
 
-              <Route exact path="/about/overview" component={AbtOverview} />
-              <Route exact path="/about/afforgs" component={AffOrgs} />
+              <Route exact path="/about/overview" component={components.AbtOverview} />
+              <Route exact path="/about/afforgs" component={components.AffOrgs} />
               <Route
                 exact
                 path="/about/pastnewsletter"
-                component={PastNewsletter}
+                component={components.PastNewsletter}
               />
-              <Route exact path="/about/meettheteam" component={MeetTheTeam} />
+              <Route exact path="/about/meettheteam" component={components.MeetTheTeam} />
 
               {/* Contact Page */}
 
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/contact" component={components.Contact} />
 
               {/* News Page */}
 
-              <Route exact path="/news" component={News} />
+              <Route exact path="/news" component={components.News} />
 
               {/* More Pages */}
 
               <Route
                 exact
                 path="/more-privacypolicy"
-                component={PrivacyPolicy}
+                component={components.PrivacyPolicy}
               />
-              <Route exact path="/more-websitetos" component={WebsiteTOS} />
-              <Route exact path="/more-bylaws" component={CorpBylaws} />
+              <Route exact path="/more-websitetos" component={components.WebsiteTOS} />
+              <Route exact path="/more-bylaws" component={components.CorpBylaws} />
               <Route
                 exact
                 path="/more-meetingrecords"
-                component={MeetingRecords}
+                component={components.MeetingRecords}
               />
 
               {/* Donate Pages */}
 
-              <Route exact path="/donate" component={Donate} />
-              <Route component={PageNotFound} />
+              <Route exact path="/donate" component={components.Donate} />
+              <Route component={components.PageNotFound} />
             </Switch>
           </div>
         )}
       />
-      <Footer />
+      <components.Footer />
     </Router>
   );
 };

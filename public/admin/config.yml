@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 media_library:
   name: uploadcare
@@ -39,7 +39,8 @@ collections:
             widget: list
             fields:
               - {label: Course Name, name: course_name, widget: string}
-              - {label: Google Drive Link to Course Description, name: link, widget: string}
+              - {label: Course Syllabus Link, name: syllabus_link, widget: string}
+              - {label: Enrollment Link, name: enrollment_link, widget: string}
               - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
               - {label: Brief Course Description, name: course_description, widget: markdown}
       - label: Schools and Partners Courses

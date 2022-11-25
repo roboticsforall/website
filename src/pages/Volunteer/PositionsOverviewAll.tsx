@@ -11,7 +11,6 @@ import headerBlobOrange from "@/media/HeaderBlobs/orange.png";
 import headerBlobGreen from "@/media/HeaderBlobs/green.png";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 
-
 const options = {
     businessProps: {
         color: ColorThemes.mainBlue,
@@ -41,8 +40,8 @@ const options = {
         headerBlob: headerBlobGreen,
     },
     curricDevProps : {
-        color: ColorThemes.mainOrange,
-        variant: "primaryOrange",
+        color: ColorThemes.mainYellow,
+        variant: "primaryYellow",
         position: "Curriculum Developer",
         headerTitle: "Help develop curriculum!",
         headerDescription: "Curriculum developers construct the diverse set of curriculum at Robotics For All",
@@ -51,7 +50,7 @@ const options = {
     }
 }
 
-export const PositionsOverview = ({path} : {path : string}) : JSX.Element => { 
+export const PositionsOverviewAll = ({path} : {path : string}) : JSX.Element => { 
     switch (path) {
         case "/volunteer/publicitypositions":
             return <PosOverview {...options.publicityProps}/>

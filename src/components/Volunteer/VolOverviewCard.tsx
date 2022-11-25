@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
+import { Link } from "react-router-dom";
 
 type TVolOverviewCard = {
   backgroundColor: string,
@@ -28,7 +29,7 @@ export const VolOverviewCard: React.FC<TVolOverviewCard> = (props : TVolOverview
             {window.innerWidth >= 768 ? <img src={props.image} /> : <></>}
             <h2>{props.title}</h2>
             <p>{props.description}</p>
-            <a href={props.location}>Learn More</a>
+            <Link to ={props.location}>Learn More</Link>
           </Col>
         </Row>
       </Container>

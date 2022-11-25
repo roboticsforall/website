@@ -55,11 +55,20 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
         <Modal.Footer>
           <Container>
             <Row>
-              <ButtonFullWidth
-                variant={props.variant}
-                location={props.link}
-                title="Learn More"
-              />
+              <Col>
+                <ButtonFullWidth
+                  variant={"primary"}
+                  location={props.link}
+                  title="Learn More"
+                />
+              </Col>
+              <Col>
+                <ButtonFullWidth
+                  variant={props.variant}
+                  location={props.link}
+                  title="ENROLL NOW!"
+                />
+              </Col>
             </Row>
           </Container>
         </Modal.Footer>
