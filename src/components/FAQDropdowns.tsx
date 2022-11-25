@@ -15,7 +15,7 @@ export const FAQDropdowns: React.FC<IProps> = (props: IProps) => {
             <h5>{pair.header}</h5>
           </Accordion.Header>
           <Accordion.Body>
-            {typeof pair.link != "undefined" ? <a href = {pair.link}>Apply Now!</a> : <></>}
+            {typeof pair.link != "undefined" ? <p><a target = "_blank" rel = "noreferrer noopener" href = {pair.link}>Apply Now!</a> </p>: <></>}
             <p>
               <Markdown>{pair.description}</Markdown>
             </p>

@@ -14,10 +14,6 @@ import { Schools } from "@/pages/Enroll/Schools";
 import { VolOverview } from "@/pages/Volunteer/VolOverview";
 import { TeacherPos } from "@/pages/Volunteer/TeacherPos";
 import { InternOverview } from "@/pages/Volunteer/InternOverview";
-import { PublicityPositions } from "@/pages/Volunteer/PublicityPositions";
-import { TechnicalPositions } from "@/pages/Volunteer/TechnicalPositions";
-import { BusinessPositions } from "@/pages/Volunteer/BusinessPositions";
-import { CurricDevPositions } from "@/pages/Volunteer/CurricDevPositions";
 //About
 import { AffOrgs } from "@/pages/About/AffOrgs";
 import { AbtOverview } from "@/pages/About/AbtOverview";
