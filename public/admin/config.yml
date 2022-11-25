@@ -39,8 +39,7 @@ collections:
             widget: list
             fields:
               - {label: Course Name, name: course_name, widget: string}
-              - {label: Course Syllabus Link, name: syllabus_link, widget: string}
-              - {label: Enrollment Link, name: enrollment_link, widget: string}
+              - {label: Syllabus Link, name: link, widget: string}
               - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
               - {label: Brief Course Description, name: course_description, widget: markdown}
       - label: Schools and Partners Courses
@@ -52,8 +51,7 @@ collections:
             widget: list
             fields:
               - {label: Course Name, name: course_name, widget: string}
-              - {label: Course Syllabus Link, name: syllabus_link, widget: string}
-              - {label: Enrollment Link, name: enrollment_link, widget: string}
+              - {label: Syllabus Link, name: link, widget: string}
               - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
               - {label: Brief Course Description, name: course_description, widget: markdown}
       - label: Course Syllabi
