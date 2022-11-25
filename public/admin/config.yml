@@ -102,6 +102,7 @@ collections:
         name: teacher_overview # used in routes
         file: src/posts/teacher_overview.json
         fields:
+          - {label : Link to Apply, name: link, widget : string}
           - label: Overview
             name: overview
             widget: markdown
