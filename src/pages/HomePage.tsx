@@ -8,15 +8,8 @@ import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 
 import carouselImagesJSON from "@/posts/homepage_carousel.json";
 
-import LM from "@/media/Sponsors/lm.png";
-import TF from "@/media/Sponsors/tf.png";
-import WMM from "@/media/Sponsors/wmm.png";
-import Google from "@/media/Sponsors/google.png";
-import NSP from "@/media/Sponsors/nsp.png";
-import AH from "@/media/Sponsors/ah.png";
-import NGN from "@/media/Sponsors/ngn.png";
 import WH from "@/media/Sponsors/wh.png";
-import YMCA from "@/media/Sponsors/ymca.png";
+import LQFF from "@/media/Sponsors/lqff.png";
 
 import home from "@/media/HoverImages/house_1.png";
 import apple from "@/media/HoverImages/apple_1.png";
@@ -153,30 +146,12 @@ export const HomePage: React.FC = () => {
             donors:
           </h3>
           <div className="d-flex justify-content-around flex-wrap">
-            {[].map((sponsor, i) => (
+            {[WH, LQFF].map((sponsor, i) => (
               <Image
                 key={i}
                 className="m-3"
                 style={sponsorImageSize}
                 src={sponsor}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <h3 style={sponsorsLabel}>
-            Proud partners of the following organizations:
-          </h3>
-          <div className="d-flex justify-content-around flex-wrap">
-            {[WH].map((partner, i) => (
-              <Image
-                key={i}
-                className="m-2"
-                style={sponsorImageSize}
-                src={partner}
               />
             ))}
           </div>

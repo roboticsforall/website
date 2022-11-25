@@ -2,45 +2,45 @@
   "ind_learners_faqs": [
     {
       "header": "Are there prerequisites for taking the classes?",
-      "answer": "Most courses have no prerequisites or prior experience required. Some courses are more advanced and have prerequisites. Please see the individual course descriptions for details."
+      "description": "Most courses have no prerequisites or prior experience required. Some courses are more advanced and have prerequisites. Please see the individual course descriptions for details."
     },
     {
       "header": "How much do the classes cost?",
-      "answer": "While we charge a $100 fee and recommend a $50 donation (any amount over $100 is tax-deductible), fee waivers are readily available."
+      "description": "While we charge a $100 fee and recommend a $50 donation (any amount over $100 is tax-deductible), fee waivers are readily available."
     },
     {
       "header": "What materials are needed for the classes?",
-      "answer": "A desktop or laptop computer is recommended for the best experience. Tablets may be used but could lack certain features for some of the platforms used in our classes."
+      "description": "A desktop or laptop computer is recommended for the best experience. Tablets may be used but could lack certain features for some of the platforms used in our classes."
     },
     {
       "header": "What is the format of the class?",
-      "answer": "Classes include two one-hour classes over zoom every week. Most classes have optional homework for enrichment purposes."
+      "description": "Classes include two one-hour classes over zoom every week. Most classes have optional homework for enrichment purposes."
     },
     {
       "header": "How long is one session?",
-      "answer": "All of our direct enrollment classes are 8 weeks."
+      "description": "All of our direct enrollment classes are 8 weeks."
     },
     {
       "header": "Will there be more classes in the future?",
-      "answer": "Robotics for All may offer more classes in a later session. Please check this page in the future for any updates!"
+      "description": "Robotics for All may offer more classes in a later session. Please check this page in the future for any updates!"
     },
     {
       "header": "What is the cancellation policy?",
-      "answer": "All registrations cancelled two weeks before the course starts will receive a full refund, minus a 3% payment processing fee. All registrations cancelled one week before the course starts will receive a 50% refund, minus a 3% payment processing fee. Registrations cancelled less than one week prior to the course start date will receive no refund."
+      "description": "All registrations cancelled two weeks before the course starts will receive a full refund, minus a 3% payment processing fee. All registrations cancelled one week before the course starts will receive a 50% refund, minus a 3% payment processing fee. Registrations cancelled less than one week prior to the course start date will receive no refund."
     }
   ],
   "schools_and_partners_faqs": [
     {
       "header": "How much does the program cost?",
-      "answer": "Robotics for All provides its classes free of cost to schools and partner organizations."
+      "description": "Robotics for All provides its classes free of cost to schools and partner organizations."
     },
     {
       "header": "What materials are needed for the classes?",
-      "answer": "Some classes require a laptop computer or a tablet. Most classes require store-bought kits. Please contact us to discuss options for acquiring the kits."
+      "description": "Some classes require a laptop computer or a tablet. Most classes require store-bought kits. Please contact us to discuss options for acquiring the kits."
     },
     {
       "header": "What is the format of the classes?",
-      "answer": "All of our courses offered to partners can be taught in-person. Some courses may be taught virtually with videoconferencing software. Most classes consist of 16 1-hour lessons, which are typically taught twice a week for 8 weeks. You may choose to teach the class as frequently as needed."
+      "description": "All of our courses offered to partners can be taught in-person. Some courses may be taught virtually with videoconferencing software. Most classes consist of 16 1-hour lessons, which are typically taught twice a week for 8 weeks. You may choose to teach the class as frequently as needed."
     }
   ]
 }

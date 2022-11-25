@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import Container from "react-bootstrap/Container";
 
 import headerBlob from "@/media/HeaderBlobs/orange.png";
+import leadershipPositionJSON from "@/posts/leadership_positions.json";
 
 export const LeadershipPositions: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ export const LeadershipPositions: React.FC = () => {
       <Container>
         <h4>
             Interested in applying to a Leadership Role at RFA{" "}
-            <a href = "https://roboticsforall.notion.site/Robotics-for-All-Leadership-Openings-0b7bd0178d634b48be50cb8624243100">
+            <a href = {leadershipPositionJSON.link}>
                 Read More Here
             </a>
         </h4>

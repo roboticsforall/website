@@ -25,8 +25,8 @@ export const BylawEntry: React.FC<{
       </Col>
       <Col xs={3} style={background}>
         <p>
-          <a href={props.download} className="hyperlink" download>
-            Download
+          <a href={props.download} target = "_blank" rel = "noreferrer noopener" className="hyperlink">
+            View
           </a>
         </p>
       </Col>
