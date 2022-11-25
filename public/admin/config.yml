@@ -87,14 +87,14 @@ collections:
             name: ind_learners_faqs
             widget: list
             fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: markdown}
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
           - label: Schools and Partners FAQs
             name: schools_and_partners_faqs
             widget: list
             fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: markdown}
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
   - label: Recruitment # Collection 2
     name: recruitment
     files:
@@ -203,7 +203,7 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: name, widget: string}
+              - {label: Position Name, name: header, widget: string}
               - {label : Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: Technical Intern Position Description
@@ -217,7 +217,7 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: name, widget: string}
+              - {label: Position Name, name: header, widget: string}
               - {label: Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: Publicity Intern Position Description
@@ -231,7 +231,7 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: name, widget: string}
+              - {label: Position Name, name: header, widget: string}
               - {label : Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: Curriculum Developer Position Description
@@ -245,7 +245,7 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: name, widget: string}
+              - {label: Position Name, name: header, widget: string}
               - {label : Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: FAQ's For Teachers, TAs, and Interns
@@ -256,20 +256,20 @@ collections:
             name: teacher_faqs
             widget: list
             fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: markdown}
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
           - label: TA FAQs
             name: ta_faqs
             widget: list
             fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: markdown}
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
           - label: Intern FAQs
             name: intern_faqs
             widget: list
             fields:
-              - {label: Question, name: question, widget: string}
-              - {label: Answer, name: answer, widget: markdown}
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
   - label: Leadership Team Info # used in UI
     name: leadership_team_info # used in routes
     files:

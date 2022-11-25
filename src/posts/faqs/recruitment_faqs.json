@@ -1,68 +1,68 @@
 {
   "teacher_faqs": [
     {
-      "question": "How will the community service hours be documented? Will I receive official records of service hours from this? ",
-      "answer": "If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!"
+      "header": "How will the community service hours be documented? Will I receive official records of service hours from this? ",
+      "description": "If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!"
     },
     {
-      "question": "Are there training programs available to the teachers?",
-      "answer": "If you are accepted as a teacher we will give you some basic training, although it’s primary purpose is to explain our software and policies. We have a full curriculum which will guide you through teaching the classes. We can offer additional support as needed."
+      "header": "Are there training programs available to the teachers?",
+      "description": "If you are accepted as a teacher we will give you some basic training, although it’s primary purpose is to explain our software and policies. We have a full curriculum which will guide you through teaching the classes. We can offer additional support as needed."
     },
     {
-      "question": "How many students are there per class? ",
-      "answer": "There are 3 to 15 students per class with a 1:5 student to teacher ratio."
+      "header": "How many students are there per class? ",
+      "description": "There are 3 to 15 students per class with a 1:5 student to teacher ratio."
     },
     {
-      "question": "How soon will you be able to start teaching classes? ",
-      "answer": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
+      "header": "How soon will you be able to start teaching classes? ",
+      "description": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
     },
     {
-      "question": "When do classes run?",
-      "answer": "Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time)."
+      "header": "When do classes run?",
+      "description": "Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time)."
     },
     {
-      "question": "What software do we use to teach?",
-      "answer": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
+      "header": "What software do we use to teach?",
+      "description": "We use Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
     }
   ],
   "ta_faqs": [
     {
-      "question": "How will the community service hours be documented? Will I receive official records of service hours from this?",
-      "answer": "If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!"
+      "header": "How will the community service hours be documented? Will I receive official records of service hours from this?",
+      "description": "If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!"
     },
     {
-      "question": "How many leading opportunities will there be?",
-      "answer": "Feel free to ask the lead instructor for opportunities to lead the class when you feel comfortable. You will also have the opportunity to become a lead instructor after being a TA for 8 weeks."
+      "header": "How many leading opportunities will there be?",
+      "description": "Feel free to ask the lead instructor for opportunities to lead the class when you feel comfortable. You will also have the opportunity to become a lead instructor after being a TA for 8 weeks."
     },
     {
-      "question": "How soon will you be able to start teaching classes? ",
-      "answer": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
+      "header": "How soon will you be able to start teaching classes? ",
+      "description": "Once a new session starts, a form will be sent to you that contains all available classes to teach. The system is first come-first serve. You will be waitlisted for each of the classes you are available to teach. If you are chosen to teach a class, an email will be sent to you which will include class details."
     },
     {
-      "question": "When do classes run?",
-      "answer": "Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time)."
+      "header": "When do classes run?",
+      "description": "Classes run on either a Monday/Thursday or Tuesday/Friday schedule, with times ranging from roughly 2:00 pm Pacific Time to 6:00 pm Pacific Time (5:00 pm Eastern Time to 9:00 pm Eastern Time)."
     },
     {
-      "question": "What software will we be using to teach? ",
-      "answer": "We will be using Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
+      "header": "What software will we be using to teach? ",
+      "description": "We will be using Zoom and Google Classroom to teach. There are a few school specific exceptions to this."
     }
   ],
   "intern_faqs": [
     {
-      "question": "How will the community service hours be documented? Will I receive official records of service hours from this?",
-      "answer": "<!--StartFragment-->\n\n**If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!**\n\n<!--EndFragment-->"
+      "header": "How will the community service hours be documented? Will I receive official records of service hours from this?",
+      "description": "<!--StartFragment-->\n\n**If you are accepted as a teacher, Robotics for All is a 501(c)(3) organization and we will be glad to provide documentation or signatures needed to verify hours!**\n\n<!--EndFragment-->"
     },
     {
-      "question": "What specific tasks would I be doing for this position?",
-      "answer": "<!--StartFragment-->\n\n**Tasks will vary depending on area, but some common ones include outreach, curriculum development, publicity planning, and software development.**\n\n\n\n<!--EndFragment-->"
+      "header": "What specific tasks would I be doing for this position?",
+      "description": "<!--StartFragment-->\n\n**Tasks will vary depending on area, but some common ones include outreach, curriculum development, publicity planning, and software development.**\n\n\n\n<!--EndFragment-->"
     },
     {
-      "question": "When would I start?",
-      "answer": "<!--StartFragment-->\n\n**The internship runs in 8 week cycles year round.  The next session information can be found at the top of the page. Candidates are usually accepted before the start of an internship. If accepted, a Robotics For All representative will contact you with details about the orientation.**\n\n<!--EndFragment-->"
+      "header": "When would I start?",
+      "description": "<!--StartFragment-->\n\n**The internship runs in 8 week cycles year round.  The next session information can be found at the top of the page. Candidates are usually accepted before the start of an internship. If accepted, a Robotics For All representative will contact you with details about the orientation.**\n\n<!--EndFragment-->"
     },
     {
-      "question": "I do not live in the United States of America. Am I still eligible to apply?",
-      "answer": "<!--StartFragment-->\n\n**Yes, you may apply! However, please keep in mind that all meetings are optimized for the US Pacific and Eastern time zones.** \n\n\n\n<!--EndFragment-->"
+      "header": "I do not live in the United States of America. Am I still eligible to apply?",
+      "description": "<!--StartFragment-->\n\n**Yes, you may apply! However, please keep in mind that all meetings are optimized for the US Pacific and Eastern time zones.** \n\n\n\n<!--EndFragment-->"
     }
   ]
 }

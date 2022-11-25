@@ -1,17 +1,11 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
-import headerBlob from "@/media/HeaderBlobs/blue.png";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import { activeStyles } from "@/components/Volunteer/TabCards";
 
-import { ButtonFullWidth } from "@/components/ButtonFullWidth";
-
 import Markdown from "markdown-to-jsx";
 
-import { ColorThemes } from "@/colors";
-import generalInternJSON from "@/posts/general_intern_position_description.json";
-import googleForms from "@/posts/volunteer_sign_up_forms.json";
 import { FAQDropdowns } from "../FAQDropdowns";
 
 type TProps = {
