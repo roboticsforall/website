@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 media_library:
   name: uploadcare
@@ -130,6 +130,7 @@ collections:
         name: ta_overviews # used in routes
         file: src/posts/ta_overview.json
         fields:
+          - {label : Link to Apply, name: link, widget : string}
           - label: Overview
             name: overview
             widget: markdown
@@ -157,7 +158,7 @@ collections:
       - label: Intern Overview # used in UI
         name: intern_overview # used in routes
         file: src/posts/intern_overview.json
-        fields:            
+        fields:
           - label: General Business Path
             name: general_business_path
             widget: markdown
@@ -191,80 +192,62 @@ collections:
           - label: Beneficial Qualifications (Add Bulleted List)
             name: beneficial_qualifications
             widget: markdown
-      - label: General Intern Position Description
-        name: general_intern_position_description
-        file: src/posts/general_intern_position_description.json
+      - label: Business Development Intern Position Description
+        name: business_dev_intern_position_description
+        file: src/posts/business_intern_position_description.json
         fields:
-          - label: General Intern Details
-            name: general_intern_details
+          - label: Business Development Intern Details
+            name: overview
             widget: markdown
           - label: Positions
             name: positions
             widget: list
             fields:
               - {label: Position Name, name: name, widget: string}
+              - {label : Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: Technical Intern Position Description
         name: technical_intern_position_description
         file: src/posts/technical_intern_position_description.json
         fields:
           - label: Technical Intern Details
-            name: technical_intern_details
+            name: overview
             widget: markdown
           - label: Positions
             name: positions
             widget: list
             fields:
               - {label: Position Name, name: name, widget: string}
+              - {label: Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: Publicity Intern Position Description
         name: publicity_intern_position_description
         file: src/posts/publicity_intern_position_description.json
         fields:
           - label: Publicity Intern Details
-            name: publicity_intern_details
+            name: overview
             widget: markdown
           - label: Positions
             name: positions
             widget: list
             fields:
               - {label: Position Name, name: name, widget: string}
+              - {label : Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
       - label: Curriculum Developer Position Description
         name: curriculum_developer_position_description
         file: src/posts/curriculum_developer_position_description.json
         fields:
           - label: Curriculum Developer Details
-            name: curriculum_developer_details
+            name: overview
             widget: markdown
           - label: Positions
             name: positions
             widget: list
             fields:
               - {label: Position Name, name: name, widget: string}
+              - {label : Link to Apply, name: link, widget : string}
               - {label: Position Description, name: description, widget: markdown}
-      - label: Volunteer Sign Up Google Forms # used in UI
-        name: volunteer_sign_up_forms # used in routes
-        file: src/posts/volunteer_sign_up_forms.json
-        fields:
-          - label: Teacher Google Form Link
-            name: teacher_app_link
-            widget: string
-          - label: TA Google Form Link
-            name: ta_app_link
-            widget: string
-          - label: General Intern Google Form Link
-            name: general_intern_app_link
-            widget: string
-          - label: Publicity Intern Google Form Link
-            name: publicity_intern_app_link
-            widget: string
-          - label: Technical Intern Google Form Link
-            name: technical_intern_app_link
-            widget: string
-          - label: Curriculum Developer Google Form Link
-            name: curriculum_developer_app_link
-            widget: string
       - label: FAQ's For Teachers, TAs, and Interns
         name: recruitment_faqs
         file: src/posts/faqs/recruitment_faqs.json

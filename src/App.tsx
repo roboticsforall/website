@@ -22,7 +22,6 @@ import { CurricDevPositions } from "@/pages/Volunteer/CurricDevPositions";
 import { AffOrgs } from "@/pages/About/AffOrgs";
 import { AbtOverview } from "@/pages/About/AbtOverview";
 import { MeetTheTeam } from "@/pages/About/MeetTheTeam";
-import { Newsletter } from "@/pages/About/Newsletter";
 import { PastNewsletter } from "@/pages/About/PastNewsletter";
 
 //News
@@ -39,6 +38,7 @@ import { Donate } from "@/pages/Donate/Donate";
 
 //Page Redirect
 import { PageNotFound } from "@/pages/PageNotFound";
+import { PositionsOverview } from "./pages/Volunteer/PositionOverviewExports";
 
 export const App: React.FC = () => {
   return (
@@ -76,23 +76,27 @@ export const App: React.FC = () => {
               <Route
                 exact
                 path="/volunteer/publicitypositions"
-                component={PublicityPositions}
-              />
+              >
+                <PositionsOverview path = "/volunteer/publicitypositions"/>
+              </Route>
               <Route
                 exact
                 path="/volunteer/technicalpositions"
-                component={TechnicalPositions}
-              />
+              >
+                <PositionsOverview path = "/volunteer/technicalpositions"/>
+              </Route>
               <Route
                 exact
                 path="/volunteer/businesspositions"
-                component={BusinessPositions}
-              />
+              >
+                <PositionsOverview path = "/volunteer/businesspositions"/>
+              </Route>
               <Route
                 exact
                 path="/volunteer/curricdevpositions"
-                component={CurricDevPositions}
-              />
+              >
+                <PositionsOverview path = "/volunteer/curricdevpositions"/>
+              </Route>
 
               {/* About Pages */}
 

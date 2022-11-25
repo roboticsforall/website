@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
 import { Header } from "@/components/Header";
+import headerBlob from "@/media/HeaderBlobs/blue.png";
 import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import { activeStyles } from "@/components/Volunteer/TabCards";
 
@@ -11,19 +12,35 @@ import Markdown from "markdown-to-jsx";
 import { ColorThemes } from "@/colors";
 import generalInternJSON from "@/posts/general_intern_position_description.json";
 import googleForms from "@/posts/volunteer_sign_up_forms.json";
+import { FAQDropdowns } from "../FAQDropdowns";
 
-export const BusinessPositions: React.FC = () => {
+type TProps = {
+  color : string,
+  variant : string,
+  position : string,
+  headerTitle: string,
+  headerDescription : string,
+  data : any,
+  headerBlob : string,
+}
+
+export const PosOverview: React.FC<TProps> = (props : TProps) => {
   const [key, setKey] = useState("one");
+
+  const positionsTitle: React.CSSProperties = {
+    color: props.color,
+    textAlign: "center",
+    textTransform: "uppercase",
+    wordBreak: "break-word",
+  };
 
   return (
     <>
       <Header
-        headerTextColor={ColorThemes.mainBlue}
-        image={headerBlob}
-        title={"Become a General Business Intern!"}
-        description={
-          "General Business Interns help with a variety of tasks from recruitment to data analysis!"
-        }
+        headerTextColor={props.color}
+        image={props.headerBlob}
+        title={props.headerTitle}
+        description={props.headerDescription}
       />
       <section>
         <Container>
@@ -33,33 +50,32 @@ export const BusinessPositions: React.FC = () => {
                 <Nav.Link
                   eventKey="one"
                   className="pos"
-                  style={activeStyles.activeStyle(ColorThemes.mainBlue)}
+                  style={activeStyles.activeStyle(props.color)}
                 >
-                  Business Intern Positions
+                  {props.position}
                 </Nav.Link>
               </Nav.Item>
             </Nav>
             <Tab.Content>
               <TabCardsNoImage
-                posHeader={"DETAILS"}
-                generalColor={ColorThemes.mainBlue}
+                posHeader={"OVERVIEW"}
+                generalColor={props.color}
                 posDescription={
                   <div>
                     <p>
                       <Markdown>
-                        {generalInternJSON.general_intern_details}
+                        {props.data.overview}
                       </Markdown>
                     </p>
                   </div>
                 }
               />
-              <ButtonFullWidth
-                title={"Apply Now!"}
-                location={googleForms.general_intern_app_link}
-                variant="primaryBlue"
-              />
             </Tab.Content>
           </Tab.Container>
+          <section>
+            <h2 style = {positionsTitle}>Positions</h2>
+            <FAQDropdowns data = {props.data.positions} />
+          </section>
         </Container>
       </section>
     </>

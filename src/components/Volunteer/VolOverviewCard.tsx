@@ -1,17 +1,17 @@
-import { ColorThemes } from "@/colors";
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
-import { Link } from "react-router-dom";
 
-export const VolOverviewCard: React.FC<{
-  backgroundColor: string;
-  buttonColor: string;
-  location: string;
-  title: string;
-  description: string;
-  image: string;
-}> = (props) => {
+type TVolOverviewCard = {
+  backgroundColor: string,
+  buttonColor: string,
+  location: string,
+  title: string,
+  description: string,
+  image: string,
+}
+
+export const VolOverviewCard: React.FC<TVolOverviewCard> = (props : TVolOverviewCard) => {
   const useStyles = createUseStyles({
     cardBackground: {
       composes: "rounded h-100",

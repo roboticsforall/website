@@ -56,13 +56,13 @@ export const InternOverview: React.FC = () => {
               />
               <InternDescriptionTabs
                 publicityDescription={
-                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                  <Markdown>{internOverviewJSON.publicity_path}</Markdown>
                 }
                 technicalDescription={
-                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                  <Markdown>{internOverviewJSON.technical_path}</Markdown>
                 }
                 businessDescription={
-                  <Markdown>{internOverviewJSON.requirments}</Markdown>
+                  <Markdown>{internOverviewJSON.general_business_path}</Markdown>
                 }
                 addButtons={true}
               />

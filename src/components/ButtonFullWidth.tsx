@@ -8,8 +8,6 @@ export const ButtonFullWidth: React.FC<{
 }> = (props) => {
   return (
     <Button
-      target="_blank"
-      rel="noreferrer"
       href={props.location}
       className="w-100 border-0"
       variant={props.variant}
