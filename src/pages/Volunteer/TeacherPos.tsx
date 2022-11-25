@@ -24,8 +24,6 @@ import teacherOverviewJSON from "@/posts/teacher_overview.json";
 import taOverviewJSON from "@/posts/ta_overview.json";
 import teachingfaqsJSON from "@/posts/faqs/recruitment_faqs.json";
 
-import googleForms from "@/posts/volunteer_sign_up_forms.json";
-
 import { ColorThemes } from "@/colors";
 import { ButtonFullWidth } from "@/components/ButtonFullWidth";
 
@@ -155,7 +153,7 @@ export const TeacherPos: React.FC = () => {
                   }
                 />
                 <ButtonFullWidth
-                  location={googleForms.teacher_app_link}
+                  location={teacherOverviewJSON.link}
                   variant={"primaryYellow"}
                   title="Apply Now"
                 />
@@ -237,7 +235,7 @@ export const TeacherPos: React.FC = () => {
                   }
                 />
                 <ButtonFullWidth
-                  location={taOverviewJSON.}
+                  location={taOverviewJSON.link}
                   variant={"primaryOrange"}
                   title="Apply Now"
                 />
