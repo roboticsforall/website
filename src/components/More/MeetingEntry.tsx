@@ -24,14 +24,14 @@ export const MeetingEntry: React.FC<{
       <Col xs={3} style={background}>
         <p>
           <a href={props.agendaDownload} className="hyperlink" download>
-            Agenda
+            Download
           </a>
         </p>
       </Col>
       <Col xs={3} style={background}>
         <p>
           <a href={props.minutesDownload} className="hyperlink" download>
-            Minutes
+            Download
           </a>
         </p>
       </Col>

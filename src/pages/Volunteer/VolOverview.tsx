@@ -11,7 +11,6 @@ import { Header } from "@/components/Header";
 
 import orgLogisticsJSON from "@/posts/org_logistics.json";
 
-
 import { ColorThemes } from "../../colors";
 
 export const VolOverview: React.FC = () => {
@@ -80,21 +79,21 @@ export const VolOverview: React.FC = () => {
               location="/volunteer/teacherpos"
               backgroundColor={ColorThemes.lightGreen}
               buttonColor={ColorThemes.darkGreen}
-              title={"Lead Instructor"}
+              title={"Teachers"}
               description={
-                "Lead Instructors are in charge of managing and teaching computer science or CAD classes to 3-15 students."
+                "Lead Instructor and TAs are in charge of teaching the several STEM courses RFA has to offer. Teachers are the backbone of our organization!"
               }
               image={TeacherToby}
             />
             <VolOverviewCard
-              location="/volunteer/teacherpos"
+              location="/volunteer/leadershippositions"
               backgroundColor={ColorThemes.lightOrange}
               buttonColor={ColorThemes.darkOrange}
-              title={"Teacher Assistant"}
+              title={"Leadership Team"}
               description={
-                "Teacher’s Assistants help Lead Instructors in teaching computer science or CAD classes, often using breakout rooms to teach smaller sections."
+                "Leadership members are responsible for running the organization and its various facets."
               }
-              image={TAToby}
+              image={InternToby}
             />
             <VolOverviewCard
               location="/volunteer/internoverview"
@@ -104,7 +103,7 @@ export const VolOverview: React.FC = () => {
               description={
                 "Interns help across the backend of our organization in many ways and provide a vital service to our nonprofit, while gaining valuable business experiences."
               }
-              image={InternToby}
+              image={TAToby}
             />
           </Row>
         </Container>
