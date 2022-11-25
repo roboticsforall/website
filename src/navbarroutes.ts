@@ -30,6 +30,10 @@ export const enrollvolunteerabout = [
           to: "/volunteer/internoverview",
         },
         {
+          subPageName: "Leadership Positions",
+          to: "/volunteer/leadershippositions",
+        },
+        {
           subPageName: "Publicity Internship Details",
           to: "/volunteer/publicitypositions",
         },

@@ -35,6 +35,7 @@ import { Donate } from "@/pages/Donate/Donate";
 //Page Redirect
 import { PageNotFound } from "@/pages/PageNotFound";
 import { PositionsOverview } from "./pages/Volunteer/PositionOverviewExports";
+import { LeadershipPositions } from "./pages/Volunteer/LeadershipPositions";
 
 export const App: React.FC = () => {
   return (
@@ -63,6 +64,11 @@ export const App: React.FC = () => {
                 exact
                 path="/volunteer/teacherpos"
                 component={TeacherPos}
+              />
+              <Route
+                exact
+                path="/volunteer/leadershippositions"
+                component={LeadershipPositions}
               />
               <Route
                 exact

@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: master # Branch to update (optional; defaults to master)
 media_library:
   name: uploadcare
@@ -98,6 +98,11 @@ collections:
   - label: Recruitment # Collection 2
     name: recruitment
     files:
+      - label: Leadership Positions # used in UI
+        name: leadership_positions # used in routes
+        file: src/posts/leadership_positions.json
+        fields:
+          - {label : Leadership Positions Link, name: link, widget : string}
       - label: Teacher Overview # used in UI
         name: teacher_overview # used in routes
         file: src/posts/teacher_overview.json
