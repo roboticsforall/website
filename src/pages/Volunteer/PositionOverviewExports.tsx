@@ -1,7 +1,7 @@
 import React from "react";
 import { PosOverview } from "@/components/Volunteer/PosOverview";
 import { ColorThemes } from "@/colors";
-import generalInternJSON from "@/posts/general_intern_position_description.json";
+import generalInternJSON from "@/posts/business_intern_position_description.json";
 import publicityInternJSON from "@/posts/publicity_intern_position_description.json";
 import technicalInternJSON from "@/posts/technical_intern_position_description.json";
 import curricdevpositionsJSON from "@/posts/curriculum_developer_position_description.json";
