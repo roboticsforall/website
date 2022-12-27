@@ -7,6 +7,7 @@ import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct im
 import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
 import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
 import linkedin from "@/media/SocialMediaLogos/linkedin.png";
+import orgLogisticsJSON from "@/posts/org_logistics.json";
 
 import { ColorThemes } from "@/colors";
 
@@ -65,9 +66,9 @@ export const Contact: React.FC = () => {
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"mailto:info@roboticsforall.net"}
+                  href={"mailto:" + orgLogisticsJSON.email}
                 >
-                  info@roboticsforall.net
+                  {orgLogisticsJSON.email}
                 </a>
               </h3>
               </section>
@@ -77,9 +78,9 @@ export const Contact: React.FC = () => {
                 <a
                   className="hyperlink"
                   style={linkStyle}
-                  href={"tel:(234)-564-2057"}
+                  href={"tel:" + orgLogisticsJSON.phone_number}
                 >
-                  +(234)-564-2057
+                  {orgLogisticsJSON.phone_number}
                 </a>
               </h3>
               </section>
@@ -93,7 +94,7 @@ export const Contact: React.FC = () => {
                   rel="noreferrer"
                   style={linkStyle}
                 >
-                  P.O. Box 56, Palo Alto, CA 94302
+                  {orgLogisticsJSON.address}
                 </a>
               </h3>
               </section>
