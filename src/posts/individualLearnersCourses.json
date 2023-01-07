@@ -31,6 +31,12 @@
       "course_description": "C﻿omputer-Aided Design (CAD) with Tinkercad introduces students in 5th-8th grades to the basics of computer-aided design using Tinkercad, a simple web-based platform. Students do not need prior experience or knowledge of CAD. Students will need internet access and a personal device (preferably computer)."
     },
     {
+      "course_name": "Onshape (5th-8th)",
+      "link": "https://docs.google.com/document/d/1FGjioEv8UY_Q_RSd89adssDLtwYcxXYEbehWKcR3j74/edit#bookmark=kix.jfkdtp59mbef",
+      "file_path": "https://ucarecdn.com/6882118d-020a-4248-a7e2-840174739f4d/",
+      "course_description": "C﻿omputer-Aided Design (CAD) with Onshape introduces students in 5th-8th grades to the basics of computer-aided design using Onshape, a cloud-based CAD platform that runs in a browser and is frequently used by industry. This curriculum teaches sketch-based modeling with an emphasis on dimensions and constraints for engineering design. Students do not need prior experience or knowledge of CAD. Students will need internet access and a personal device (preferably computer)."
+    },
+    {
       "course_name": "HTML/CSS (6th-8th)",
       "link": "https://docs.google.com/document/d/1FGjioEv8UY_Q_RSd89adssDLtwYcxXYEbehWKcR3j74/edit#heading=h.2x0hpf21nmqk",
       "course_description": "W﻿eb Design with HTML/CSS (6-8) introduces students in 6th-8th grades to how websites are developed. HTML provides structure to a website, and CSS provides style. Students do not need previous experience or knowledge of web development. Students will need an internet connection and a computer. \n",
@@ -41,12 +47,6 @@
       "link": "https://docs.google.com/document/d/1FGjioEv8UY_Q_RSd89adssDLtwYcxXYEbehWKcR3j74/edit#heading=h.c2uu5p6okls",
       "course_description": "P﻿ython (6-8) introduces students to the Python coding language, which is a text-based programming language widely used by many companies. Students do not need previous experience with programming. Students will need an internet connection and a personal device (preferably computer). ",
       "file_path": "https://ucarecdn.com/6da0c1a8-8aef-4a8a-847e-d88ba09aeb43/-/preview/400x400/"
-    },
-    {
-      "course_name": "Java (6th-8th)",
-      "link": "https://docs.google.com/document/d/1FGjioEv8UY_Q_RSd89adssDLtwYcxXYEbehWKcR3j74/edit#bookmark=kix.jfkdtp59mbef",
-      "file_path": "https://ucarecdn.com/6882118d-020a-4248-a7e2-840174739f4d/",
-      "course_description": "C﻿omputer-Aided Design (CAD) with Onshape introduces students in 5th-8th grades to the basics of computer-aided design using Onshape, a cloud-based CAD platform that runs in a browser and is frequently used by industry. This curriculum teaches sketch-based modeling with an emphasis on dimensions and constraints for engineering design. Students do not need prior experience or knowledge of CAD. Students will need internet access and a personal device (preferably computer)."
     }
   ]
 }
