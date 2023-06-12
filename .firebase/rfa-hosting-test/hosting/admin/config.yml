@@ -1,0 +1,443 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 39d4c131575846254cf8
+public_folder: /public # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - label: Site Settings # Collection 1
+    name: site_settings
+    files:
+      - label: Updates
+        name: updates
+        file: src/posts/updates.json
+        fields:
+          - label: General Website Updates
+            name: updates
+            widget: string
+      - label: Logistical Information
+        name: org_logistics
+        file: src/posts/org_logistics.json
+        fields:
+          - {label: Email, name: email, widget: string}
+          - {label: Phone Number, name: phone_number, widget: string}
+          - {label: Address, name: address, widget: string}
+          - {label: Number of Levels of Curriculum, name: num_levels_curriculum, widget: number}
+          - {label: Number of Volunteers, name: num_volunteers, widget: number}
+          - {label: Number of Students Taught, name: num_students_taught, widget: number}
+  - label: Coordination # Collection 1
+    name: coordination
+    files:
+      - label: Individual Learners Courses
+        name: individual_learners_courses
+        file: src/posts/individualLearnersCourses.json
+        fields:
+          - label: Courses
+            name: courses_list
+            widget: list
+            fields:
+              - {label: Course Name, name: course_name, widget: string}
+              - {label: Syllabus Link, name: link, widget: string}
+              - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
+              - {label: Brief Course Description, name: course_description, widget: markdown}
+      - label: Schools and Partners Courses
+        name: schools_partners_courses
+        file: src/posts/schoolsAndPartnersCourses.json
+        fields:
+          - label: Courses
+            name: courses_list
+            widget: list
+            fields:
+              - {label: Course Name, name: course_name, widget: string}
+              - {label: Syllabus Link, name: link, widget: string}
+              - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
+              - {label: Brief Course Description, name: course_description, widget: markdown}
+      - label: Course Syllabi
+        name: course_syllabi
+        file: src/posts/course_syllabi.json
+        fields:
+          - label: Syllabus
+            name: syllabi_list
+            widget: list
+            fields:
+              - {label: Language of Syllabi Google Document, name: language, widget: string}
+              - {label: Google Drive Link to Syllabi Google Document, name: link, widget: string}
+              - {label: Flag of Country Language Belongs To, name: file_path, widget: image, media_folder: /public/uploads/flagimg}
+      - label: Google Drive Links to Enrollment Signup Document
+        name: enrollment_form_document_link
+        file: src/posts/enrollment_form_document_link.json
+        fields:
+          - {label: Individual Learners link, name: ind_learners_link, widget: string}
+          - {label: Schools and Partners Link, name: schools_and_partners_link, widget: string}
+      - label: Course Overviews # used in UI
+        name: course_overviews # used in routes
+        file: src/posts/course_overviews.json
+        fields:
+          - {label: Individual Learners Course Overview Enrollment Status Text, name: indlearners_enrollment_status_text, widget: string}
+          - {label: Individual Learners Course Overview Details Text, name: indlearners_details_text, widget: markdown}
+          - {label: Schools and Partners Course Overview Enrollment Status Text, name: schools_enrollment_status_text, widget: string}
+          - {label: Schools and Partners Course Overview Details Text, name: schools_details_text, widget: markdown}
+      - label: FAQs For Learners and Schools and Partners
+        name: coordination_faqs
+        file: src/posts/faqs/coordination_faqs.json
+        fields:
+          - label: Individual Learners FAQs
+            name: ind_learners_faqs
+            widget: list
+            fields:
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
+          - label: Schools and Partners FAQs
+            name: schools_and_partners_faqs
+            widget: list
+            fields:
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
+  - label: Recruitment # Collection 2
+    name: recruitment
+    files:
+      - label: Leadership Positions # used in UI
+        name: leadership_positions # used in routes
+        file: src/posts/leadership_positions.json
+        fields:
+          - {label : Leadership Positions Link, name: link, widget : string}
+      - label: Teacher Overview # used in UI
+        name: teacher_overview # used in routes
+        file: src/posts/teacher_overview.json
+        fields:
+          - {label : Link to Apply, name: link, widget : string}
+          - label: Overview
+            name: overview
+            widget: markdown
+          - label: Scheduling
+            name: scheduling
+            widget: markdown
+          - label: Tasks (Add Bulleted List)
+            name: tasks
+            widget: markdown
+          - label: Curriculum (Add Bulleted List)
+            name: curriculum
+            widget: markdown
+          - label: Time Commitment (Add Bulleted List)
+            name: time_commitment
+            widget: markdown
+          - label: Benefits (Add Bulleted List)
+            name: benefits
+            widget: markdown
+          - label: Requirments (Add Bulleted List)
+            name: requirments
+            widget: markdown
+          - label: Beneficial Qualifications (Add Bulleted List)
+            name: beneficial_qualifications
+            widget: markdown
+      - label: TA Overview # used in UI
+        name: ta_overviews # used in routes
+        file: src/posts/ta_overview.json
+        fields:
+          - {label : Link to Apply, name: link, widget : string}
+          - label: Overview
+            name: overview
+            widget: markdown
+          - label: Scheduling
+            name: scheduling
+            widget: markdown
+          - label: Tasks (Add Bulleted List)
+            name: tasks
+            widget: markdown
+          - label: Curriculum (Add Bulleted List)
+            name: curriculum
+            widget: markdown
+          - label: Time Commitment (Add Bulleted List)
+            name: time_commitment
+            widget: markdown
+          - label: Benefits (Add Bulleted List)
+            name: benefits
+            widget: markdown
+          - label: Requirments (Add Bulleted List)
+            name: requirments
+            widget: markdown
+          - label: Beneficial Qualifications (Add Bulleted List)
+            name: beneficial_qualifications
+            widget: markdown
+      - label: Intern Overview # used in UI
+        name: intern_overview # used in routes
+        file: src/posts/intern_overview.json
+        fields:
+          - label: General Business Path
+            name: general_business_path
+            widget: markdown
+          - label: Technical Path
+            name: technical_path
+            widget: markdown
+          - label: Publicity Path
+            name: publicity_path
+            widget: markdown
+          - label: Overview
+            name: overview
+            widget: markdown
+          - label: Intern Path
+            name: internpath
+            widget: markdown
+          - label: Scheduling
+            name: scheduling
+            widget: markdown
+          - label: Curriculum (Add Bulleted List)
+            name: curriculum
+            widget: markdown
+          - label: Time Commitment (Add Bulleted List)
+            name: time_commitment
+            widget: markdown
+          - label: Benefits (Add Bulleted List)
+            name: benefits
+            widget: markdown
+          - label: Requirments (Add Bulleted List)
+            name: requirments
+            widget: markdown
+          - label: Beneficial Qualifications (Add Bulleted List)
+            name: beneficial_qualifications
+            widget: markdown
+      - label: Business Development Intern Position Description
+        name: business_dev_intern_position_description
+        file: src/posts/business_intern_position_description.json
+        fields:
+          - label: Business Development Intern Details
+            name: overview
+            widget: markdown
+          - label: Positions
+            name: positions
+            widget: list
+            fields:
+              - {label: Position Name, name: header, widget: string}
+              - {label : Link to Apply, name: link, widget : string}
+              - {label: Position Description, name: description, widget: markdown}
+      - label: Technical Intern Position Description
+        name: technical_intern_position_description
+        file: src/posts/technical_intern_position_description.json
+        fields:
+          - label: Technical Intern Details
+            name: overview
+            widget: markdown
+          - label: Positions
+            name: positions
+            widget: list
+            fields:
+              - {label: Position Name, name: header, widget: string}
+              - {label: Link to Apply, name: link, widget : string}
+              - {label: Position Description, name: description, widget: markdown}
+      - label: Publicity Intern Position Description
+        name: publicity_intern_position_description
+        file: src/posts/publicity_intern_position_description.json
+        fields:
+          - label: Publicity Intern Details
+            name: overview
+            widget: markdown
+          - label: Positions
+            name: positions
+            widget: list
+            fields:
+              - {label: Position Name, name: header, widget: string}
+              - {label : Link to Apply, name: link, widget : string}
+              - {label: Position Description, name: description, widget: markdown}
+      - label: Curriculum Developer Position Description
+        name: curriculum_developer_position_description
+        file: src/posts/curriculum_developer_position_description.json
+        fields:
+          - label: Curriculum Developer Details
+            name: overview
+            widget: markdown
+          - label: Positions
+            name: positions
+            widget: list
+            fields:
+              - {label: Position Name, name: header, widget: string}
+              - {label : Link to Apply, name: link, widget : string}
+              - {label: Position Description, name: description, widget: markdown}
+      - label: FAQ's For Teachers, TAs, and Interns
+        name: recruitment_faqs
+        file: src/posts/faqs/recruitment_faqs.json
+        fields:
+          - label: Teacher FAQs
+            name: teacher_faqs
+            widget: list
+            fields:
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
+          - label: TA FAQs
+            name: ta_faqs
+            widget: list
+            fields:
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
+          - label: Intern FAQs
+            name: intern_faqs
+            widget: list
+            fields:
+              - {label: Question, name: header, widget: string}
+              - {label: Answer, name: description, widget: markdown}
+  - label: Leadership Team Info # used in UI
+    name: leadership_team_info # used in routes
+    files:
+      - label: Board Members
+        name: board_members
+        file: src/posts/board_members.json
+        fields:
+          - label: Board Members List
+            name: board_members_list
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title/Pronouns
+                name: title_pronouns
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown  
+              - label: Image
+                name: image
+                widget: image 
+                media_folder: '/public/uploads/leadershipteamimg/boardmembers'
+      - label: Assistant Directors
+        name: assistant_directors
+        file: src/posts/assistant_directors.json
+        fields:
+          - label: Assistant Directors List
+            name: assistant_directors_list
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title/Pronouns
+                name: title_pronouns
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown  
+              - label: Image
+                name: image
+                widget: image 
+                media_folder: '/public/uploads/leadershipteamimg/assistantdirectors'
+      - label: Curriculum Committee
+        name: curriculum_committee
+        file: src/posts/curriculum_committee.json
+        fields:
+          - label: Curriculum Committee List
+            name: curriculum_committee_list
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title/Pronouns
+                name: title_pronouns
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown  
+              - label: Image
+                name: image
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
+      - label: Publicity Committee
+        name: pub_committee
+        file: src/posts/pub_committee.json
+        fields:
+          - label: Publicity Committee List
+            name: pub_committee
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Title/Pronouns
+                name: title_pronouns
+                widget: string
+              - label: Description
+                name: description
+                widget: markdown  
+              - label: Image
+                name: image
+                widget: image
+                media_folder: '/public/uploads/leadershipteamimg/pubcommittee'
+  - label: Other # Collection 1
+    name: other
+    files:
+      - label: Privacy Policy
+        name: privacy_policy
+        file: src/posts/privacy_policy.json
+        fields:
+          - label: Privacy Policy
+            name: privacy_policy_list
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Description, name: description, widget: markdown}
+      - label: Website TOS
+        name: website_tos
+        file: src/posts/website_tos.json
+        fields:
+          - label: Website TOS
+            name: website_tos_list
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Description, name: description, widget: markdown}
+      - label: Corporation Bylaws
+        name: corp_bylaws
+        file: src/posts/downloads/corp_bylaws.json
+        fields:
+          - label: Corporation Bylaws
+            name: corp_bylaws_list
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+              - {label: Item Name, name: item_name, widget: string}
+              - label: file
+                name: file_path
+                widget: file
+                media_folder: '/public/uploads/downloads/corpsbylaws'
+      - label: Meeting Minutes and Agendas
+        name: meeting_records
+        file: src/posts/downloads/meeting_records.json
+        fields:
+          - label: Meeting Minutes and Agendas
+            name: meeting_records_list
+            widget: list
+            fields:
+              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
+              - {label: Item Name, name: item_name, widget: string}
+              - label: Meeting Minute File
+                name: meeting_minute_file_path
+                widget: file
+                media_folder: '/public/uploads/downloads/meetingrecords'
+              - label: Agenda File
+                name: agenda_file_path
+                widget: file
+                media_folder: '/public/uploads/downloads/meetingrecords'
+      - label: Newsletters
+        name: newsletters
+        file: src/posts/newsletters.json
+        fields:
+          - label: Newsletters
+            name: newsletters_list
+            widget: list
+            fields:
+              - {label: Date of Newsletter (Add month and year of newsletter. Ignore date), name: date, widget: date, default: "", format: "MMMM YYYY"}
+              - label: file
+                name: file_path
+                widget: file
+                media_folder: '/public/uploads/newsletters'
+      - label: Homepage Carousel Images
+        name: homepage_carousel
+        file: src/posts/homepage_carousel.json
+        fields:
+          - label: Homepage Carousel Images
+            name: homepage_carousel_images_list
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+
