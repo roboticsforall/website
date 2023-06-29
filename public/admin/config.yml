@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  name: github
+  repo: roboticsforall/website # Path to your Github/Gitlab repository
+  branch: master # Branch to update
+  base_url: https://protected-plains-77279-f2614edafeeb.herokuapp.com/ # Path to ext auth provider
 media_library:
   name: uploadcare
   config:
@@ -21,12 +23,24 @@ collections:
         name: org_logistics
         file: src/posts/org_logistics.json
         fields:
-          - {label: Email, name: email, widget: string}
-          - {label: Phone Number, name: phone_number, widget: string}
-          - {label: Address, name: address, widget: string}
-          - {label: Number of Levels of Curriculum, name: num_levels_curriculum, widget: number}
-          - {label: Number of Volunteers, name: num_volunteers, widget: number}
-          - {label: Number of Students Taught, name: num_students_taught, widget: number}
+          - { label: Email, name: email, widget: string }
+          - { label: Phone Number, name: phone_number, widget: string }
+          - { label: Address, name: address, widget: string }
+          - {
+              label: Number of Levels of Curriculum,
+              name: num_levels_curriculum,
+              widget: number,
+            }
+          - {
+              label: Number of Volunteers,
+              name: num_volunteers,
+              widget: number,
+            }
+          - {
+              label: Number of Students Taught,
+              name: num_students_taught,
+              widget: number,
+            }
   - label: Coordination # Collection 1
     name: coordination
     files:
@@ -38,10 +52,19 @@ collections:
             name: courses_list
             widget: list
             fields:
-              - {label: Course Name, name: course_name, widget: string}
-              - {label: Syllabus Link, name: link, widget: string}
-              - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
-              - {label: Brief Course Description, name: course_description, widget: markdown}
+              - { label: Course Name, name: course_name, widget: string }
+              - { label: Syllabus Link, name: link, widget: string }
+              - {
+                  label: Logo,
+                  name: file_path,
+                  widget: image,
+                  media_folder: /public/uploads/coursesimg,
+                }
+              - {
+                  label: Brief Course Description,
+                  name: course_description,
+                  widget: markdown,
+                }
       - label: Schools and Partners Courses
         name: schools_partners_courses
         file: src/posts/schoolsAndPartnersCourses.json
@@ -50,10 +73,19 @@ collections:
             name: courses_list
             widget: list
             fields:
-              - {label: Course Name, name: course_name, widget: string}
-              - {label: Syllabus Link, name: link, widget: string}
-              - {label: Logo, name: file_path, widget: image, media_folder: /public/uploads/coursesimg}
-              - {label: Brief Course Description, name: course_description, widget: markdown}
+              - { label: Course Name, name: course_name, widget: string }
+              - { label: Syllabus Link, name: link, widget: string }
+              - {
+                  label: Logo,
+                  name: file_path,
+                  widget: image,
+                  media_folder: /public/uploads/coursesimg,
+                }
+              - {
+                  label: Brief Course Description,
+                  name: course_description,
+                  widget: markdown,
+                }
       - label: Course Syllabi
         name: course_syllabi
         file: src/posts/course_syllabi.json
@@ -62,23 +94,60 @@ collections:
             name: syllabi_list
             widget: list
             fields:
-              - {label: Language of Syllabi Google Document, name: language, widget: string}
-              - {label: Google Drive Link to Syllabi Google Document, name: link, widget: string}
-              - {label: Flag of Country Language Belongs To, name: file_path, widget: image, media_folder: /public/uploads/flagimg}
+              - {
+                  label: Language of Syllabi Google Document,
+                  name: language,
+                  widget: string,
+                }
+              - {
+                  label: Google Drive Link to Syllabi Google Document,
+                  name: link,
+                  widget: string,
+                }
+              - {
+                  label: Flag of Country Language Belongs To,
+                  name: file_path,
+                  widget: image,
+                  media_folder: /public/uploads/flagimg,
+                }
       - label: Google Drive Links to Enrollment Signup Document
         name: enrollment_form_document_link
         file: src/posts/enrollment_form_document_link.json
         fields:
-          - {label: Individual Learners link, name: ind_learners_link, widget: string}
-          - {label: Schools and Partners Link, name: schools_and_partners_link, widget: string}
+          - {
+              label: Individual Learners link,
+              name: ind_learners_link,
+              widget: string,
+            }
+          - {
+              label: Schools and Partners Link,
+              name: schools_and_partners_link,
+              widget: string,
+            }
       - label: Course Overviews # used in UI
         name: course_overviews # used in routes
         file: src/posts/course_overviews.json
         fields:
-          - {label: Individual Learners Course Overview Enrollment Status Text, name: indlearners_enrollment_status_text, widget: string}
-          - {label: Individual Learners Course Overview Details Text, name: indlearners_details_text, widget: markdown}
-          - {label: Schools and Partners Course Overview Enrollment Status Text, name: schools_enrollment_status_text, widget: string}
-          - {label: Schools and Partners Course Overview Details Text, name: schools_details_text, widget: markdown}
+          - {
+              label: Individual Learners Course Overview Enrollment Status Text,
+              name: indlearners_enrollment_status_text,
+              widget: string,
+            }
+          - {
+              label: Individual Learners Course Overview Details Text,
+              name: indlearners_details_text,
+              widget: markdown,
+            }
+          - {
+              label: Schools and Partners Course Overview Enrollment Status Text,
+              name: schools_enrollment_status_text,
+              widget: string,
+            }
+          - {
+              label: Schools and Partners Course Overview Details Text,
+              name: schools_details_text,
+              widget: markdown,
+            }
       - label: FAQs For Learners and Schools and Partners
         name: coordination_faqs
         file: src/posts/faqs/coordination_faqs.json
@@ -87,14 +156,14 @@ collections:
             name: ind_learners_faqs
             widget: list
             fields:
-              - {label: Question, name: header, widget: string}
-              - {label: Answer, name: description, widget: markdown}
+              - { label: Question, name: header, widget: string }
+              - { label: Answer, name: description, widget: markdown }
           - label: Schools and Partners FAQs
             name: schools_and_partners_faqs
             widget: list
             fields:
-              - {label: Question, name: header, widget: string}
-              - {label: Answer, name: description, widget: markdown}
+              - { label: Question, name: header, widget: string }
+              - { label: Answer, name: description, widget: markdown }
   - label: Recruitment # Collection 2
     name: recruitment
     files:
@@ -102,12 +171,12 @@ collections:
         name: leadership_positions # used in routes
         file: src/posts/leadership_positions.json
         fields:
-          - {label : Leadership Positions Link, name: link, widget : string}
+          - { label: Leadership Positions Link, name: link, widget: string }
       - label: Teacher Overview # used in UI
         name: teacher_overview # used in routes
         file: src/posts/teacher_overview.json
         fields:
-          - {label : Link to Apply, name: link, widget : string}
+          - { label: Link to Apply, name: link, widget: string }
           - label: Overview
             name: overview
             widget: markdown
@@ -136,7 +205,7 @@ collections:
         name: ta_overviews # used in routes
         file: src/posts/ta_overview.json
         fields:
-          - {label : Link to Apply, name: link, widget : string}
+          - { label: Link to Apply, name: link, widget: string }
           - label: Overview
             name: overview
             widget: markdown
@@ -209,9 +278,13 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: header, widget: string}
-              - {label : Link to Apply, name: link, widget : string}
-              - {label: Position Description, name: description, widget: markdown}
+              - { label: Position Name, name: header, widget: string }
+              - { label: Link to Apply, name: link, widget: string }
+              - {
+                  label: Position Description,
+                  name: description,
+                  widget: markdown,
+                }
       - label: Technical Intern Position Description
         name: technical_intern_position_description
         file: src/posts/technical_intern_position_description.json
@@ -223,9 +296,13 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: header, widget: string}
-              - {label: Link to Apply, name: link, widget : string}
-              - {label: Position Description, name: description, widget: markdown}
+              - { label: Position Name, name: header, widget: string }
+              - { label: Link to Apply, name: link, widget: string }
+              - {
+                  label: Position Description,
+                  name: description,
+                  widget: markdown,
+                }
       - label: Publicity Intern Position Description
         name: publicity_intern_position_description
         file: src/posts/publicity_intern_position_description.json
@@ -237,9 +314,13 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: header, widget: string}
-              - {label : Link to Apply, name: link, widget : string}
-              - {label: Position Description, name: description, widget: markdown}
+              - { label: Position Name, name: header, widget: string }
+              - { label: Link to Apply, name: link, widget: string }
+              - {
+                  label: Position Description,
+                  name: description,
+                  widget: markdown,
+                }
       - label: Curriculum Developer Position Description
         name: curriculum_developer_position_description
         file: src/posts/curriculum_developer_position_description.json
@@ -251,9 +332,13 @@ collections:
             name: positions
             widget: list
             fields:
-              - {label: Position Name, name: header, widget: string}
-              - {label : Link to Apply, name: link, widget : string}
-              - {label: Position Description, name: description, widget: markdown}
+              - { label: Position Name, name: header, widget: string }
+              - { label: Link to Apply, name: link, widget: string }
+              - {
+                  label: Position Description,
+                  name: description,
+                  widget: markdown,
+                }
       - label: FAQ's For Teachers, TAs, and Interns
         name: recruitment_faqs
         file: src/posts/faqs/recruitment_faqs.json
@@ -262,20 +347,20 @@ collections:
             name: teacher_faqs
             widget: list
             fields:
-              - {label: Question, name: header, widget: string}
-              - {label: Answer, name: description, widget: markdown}
+              - { label: Question, name: header, widget: string }
+              - { label: Answer, name: description, widget: markdown }
           - label: TA FAQs
             name: ta_faqs
             widget: list
             fields:
-              - {label: Question, name: header, widget: string}
-              - {label: Answer, name: description, widget: markdown}
+              - { label: Question, name: header, widget: string }
+              - { label: Answer, name: description, widget: markdown }
           - label: Intern FAQs
             name: intern_faqs
             widget: list
             fields:
-              - {label: Question, name: header, widget: string}
-              - {label: Answer, name: description, widget: markdown}
+              - { label: Question, name: header, widget: string }
+              - { label: Answer, name: description, widget: markdown }
   - label: Leadership Team Info # used in UI
     name: leadership_team_info # used in routes
     files:
@@ -295,11 +380,11 @@ collections:
                 widget: string
               - label: Description
                 name: description
-                widget: markdown  
+                widget: markdown
               - label: Image
                 name: image
-                widget: image 
-                media_folder: '/public/uploads/leadershipteamimg/boardmembers'
+                widget: image
+                media_folder: "/public/uploads/leadershipteamimg/boardmembers"
       - label: Assistant Directors
         name: assistant_directors
         file: src/posts/assistant_directors.json
@@ -316,11 +401,11 @@ collections:
                 widget: string
               - label: Description
                 name: description
-                widget: markdown  
+                widget: markdown
               - label: Image
                 name: image
-                widget: image 
-                media_folder: '/public/uploads/leadershipteamimg/assistantdirectors'
+                widget: image
+                media_folder: "/public/uploads/leadershipteamimg/assistantdirectors"
       - label: Curriculum Committee
         name: curriculum_committee
         file: src/posts/curriculum_committee.json
@@ -337,11 +422,11 @@ collections:
                 widget: string
               - label: Description
                 name: description
-                widget: markdown  
+                widget: markdown
               - label: Image
                 name: image
                 widget: image
-                media_folder: '/public/uploads/leadershipteamimg/curriculumcommittee'
+                media_folder: "/public/uploads/leadershipteamimg/curriculumcommittee"
       - label: Publicity Committee
         name: pub_committee
         file: src/posts/pub_committee.json
@@ -358,11 +443,11 @@ collections:
                 widget: string
               - label: Description
                 name: description
-                widget: markdown  
+                widget: markdown
               - label: Image
                 name: image
                 widget: image
-                media_folder: '/public/uploads/leadershipteamimg/pubcommittee'
+                media_folder: "/public/uploads/leadershipteamimg/pubcommittee"
   - label: Other # Collection 1
     name: other
     files:
@@ -374,8 +459,8 @@ collections:
             name: privacy_policy_list
             widget: list
             fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Description, name: description, widget: markdown}
+              - { label: Heading, name: heading, widget: string }
+              - { label: Description, name: description, widget: markdown }
       - label: Website TOS
         name: website_tos
         file: src/posts/website_tos.json
@@ -384,8 +469,8 @@ collections:
             name: website_tos_list
             widget: list
             fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Description, name: description, widget: markdown}
+              - { label: Heading, name: heading, widget: string }
+              - { label: Description, name: description, widget: markdown }
       - label: Corporation Bylaws
         name: corp_bylaws
         file: src/posts/downloads/corp_bylaws.json
@@ -394,12 +479,18 @@ collections:
             name: corp_bylaws_list
             widget: list
             fields:
-              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
-              - {label: Item Name, name: item_name, widget: string}
+              - {
+                  label: Date,
+                  name: date,
+                  widget: date,
+                  default: "",
+                  format: "MMMM Do, YYYY",
+                }
+              - { label: Item Name, name: item_name, widget: string }
               - label: file
                 name: file_path
                 widget: file
-                media_folder: '/public/uploads/downloads/corpsbylaws'
+                media_folder: "/public/uploads/downloads/corpsbylaws"
       - label: Meeting Minutes and Agendas
         name: meeting_records
         file: src/posts/downloads/meeting_records.json
@@ -408,16 +499,22 @@ collections:
             name: meeting_records_list
             widget: list
             fields:
-              - {label: Date, name: date, widget: date, default: "", format: "MMMM Do, YYYY"}
-              - {label: Item Name, name: item_name, widget: string}
+              - {
+                  label: Date,
+                  name: date,
+                  widget: date,
+                  default: "",
+                  format: "MMMM Do, YYYY",
+                }
+              - { label: Item Name, name: item_name, widget: string }
               - label: Meeting Minute File
                 name: meeting_minute_file_path
                 widget: file
-                media_folder: '/public/uploads/downloads/meetingrecords'
+                media_folder: "/public/uploads/downloads/meetingrecords"
               - label: Agenda File
                 name: agenda_file_path
                 widget: file
-                media_folder: '/public/uploads/downloads/meetingrecords'
+                media_folder: "/public/uploads/downloads/meetingrecords"
       - label: Newsletters
         name: newsletters
         file: src/posts/newsletters.json
@@ -426,11 +523,17 @@ collections:
             name: newsletters_list
             widget: list
             fields:
-              - {label: Date of Newsletter (Add month and year of newsletter. Ignore date), name: date, widget: date, default: "", format: "MMMM YYYY"}
+              - {
+                  label: Date of Newsletter (Add month and year of newsletter. Ignore date),
+                  name: date,
+                  widget: date,
+                  default: "",
+                  format: "MMMM YYYY",
+                }
               - label: file
                 name: file_path
                 widget: file
-                media_folder: '/public/uploads/newsletters'
+                media_folder: "/public/uploads/newsletters"
       - label: Homepage Carousel Images
         name: homepage_carousel
         file: src/posts/homepage_carousel.json
@@ -439,5 +542,4 @@ collections:
             name: homepage_carousel_images_list
             widget: list
             fields:
-              - {label: Image, name: image, widget: image}
-
+              - { label: Image, name: image, widget: image }
