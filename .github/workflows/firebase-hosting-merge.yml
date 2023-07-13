@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - master
@@ -13,8 +13,11 @@ jobs:
       - uses: actions/checkout@v3
       - run: npm i && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ROBOTICS_FOR_ALL_9009F }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_ROBOTICS_FOR_ALL_9009F }}"
           channelId: live
           projectId: robotics-for-all-9009f
+    env:
+      FIREBASE_CLI_EXPERIMENTS: webframeworks
