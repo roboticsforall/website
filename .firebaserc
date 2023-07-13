@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "robotics-for-all-9009f"
+  },
+  "targets": {
+    "robotics-for-all-9009f": {
+      "hosting": {
+        "website": [
+          "robotics-for-all-9009f"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
