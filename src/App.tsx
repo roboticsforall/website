@@ -14,17 +14,31 @@ export const App: React.FC = () => {
           <div id="wrapper" role="main">
             <Switch location={location}>
               <Route exact path="/" component={components.HomePage} />
-
+              <Route
+                path="/admin"
+                component={() => {
+                  window.location.href = "https://cms.roboticsforall.net";
+                  return null;
+                }}
+              />
               {/* Enroll Pages */}
               <Route
                 exact
                 path="/enroll/individlearners"
                 component={components.IndLearners}
               />
-              <Route exact path="/enroll/schools" component={components.Schools} />
+              <Route
+                exact
+                path="/enroll/schools"
+                component={components.Schools}
+              />
 
               {/* Volunteer Pages */}
-              <Route exact path="/volunteer/overview" component={components.VolOverview} />
+              <Route
+                exact
+                path="/volunteer/overview"
+                component={components.VolOverview}
+              />
 
               <Route
                 exact
@@ -41,41 +55,41 @@ export const App: React.FC = () => {
                 path="/volunteer/internoverview"
                 component={components.InternOverview}
               />
-              <Route
-                exact
-                path="/volunteer/publicitypositions"
-              >
-                <components.PositionsOverviewAll path = "/volunteer/publicitypositions"/>
+              <Route exact path="/volunteer/publicitypositions">
+                <components.PositionsOverviewAll path="/volunteer/publicitypositions" />
               </Route>
-              <Route
-                exact
-                path="/volunteer/technicalpositions"
-              >
-                <components.PositionsOverviewAll path = "/volunteer/technicalpositions"/>
+              <Route exact path="/volunteer/technicalpositions">
+                <components.PositionsOverviewAll path="/volunteer/technicalpositions" />
               </Route>
-              <Route
-                exact
-                path="/volunteer/businesspositions"
-              >
-                <components.PositionsOverviewAll path = "/volunteer/businesspositions"/>
+              <Route exact path="/volunteer/businesspositions">
+                <components.PositionsOverviewAll path="/volunteer/businesspositions" />
               </Route>
-              <Route
-                exact
-                path="/volunteer/curricdevpositions"
-              >
-                <components.PositionsOverviewAll path = "/volunteer/curricdevpositions"/>
+              <Route exact path="/volunteer/curricdevpositions">
+                <components.PositionsOverviewAll path="/volunteer/curricdevpositions" />
               </Route>
 
               {/* About Pages */}
 
-              <Route exact path="/about/overview" component={components.AbtOverview} />
-              <Route exact path="/about/afforgs" component={components.AffOrgs} />
+              <Route
+                exact
+                path="/about/overview"
+                component={components.AbtOverview}
+              />
+              <Route
+                exact
+                path="/about/afforgs"
+                component={components.AffOrgs}
+              />
               <Route
                 exact
                 path="/about/pastnewsletter"
                 component={components.PastNewsletter}
               />
-              <Route exact path="/about/meettheteam" component={components.MeetTheTeam} />
+              <Route
+                exact
+                path="/about/meettheteam"
+                component={components.MeetTheTeam}
+              />
 
               {/* Contact Page */}
 
@@ -92,8 +106,16 @@ export const App: React.FC = () => {
                 path="/more-privacypolicy"
                 component={components.PrivacyPolicy}
               />
-              <Route exact path="/more-websitetos" component={components.WebsiteTOS} />
-              <Route exact path="/more-bylaws" component={components.CorpBylaws} />
+              <Route
+                exact
+                path="/more-websitetos"
+                component={components.WebsiteTOS}
+              />
+              <Route
+                exact
+                path="/more-bylaws"
+                component={components.CorpBylaws}
+              />
               <Route
                 exact
                 path="/more-meetingrecords"
