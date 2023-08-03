@@ -18,7 +18,6 @@ import world from "@/media/HoverImages/world_1.png";
 import { ColorThemes } from "../colors";
 
 export const HomePage: React.FC = () => {
-
   const header: React.CSSProperties = {
     color: ColorThemes.mainYellow,
   };
@@ -40,19 +39,29 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <div>
-          <Carousel fade>
-            {carouselImagesJSON.homepage_carousel_images_list.map((x, i) => (
-              <Carousel.Item>
-                <div className="d-flex justify-content-center">
-                  {window.innerWidth > 768 ? (
-                    <Image className = "imageSize" fluid src={x.image + "-/crop/21:9/"} alt="" />
-                  ) : (
-                    <Image className = "imageSize" fluid src={x.image + "-/crop/4:3/"} alt="" />
-                  )}
-                </div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+        <Carousel fade>
+          {carouselImagesJSON.homepage_carousel_images_list.map((x, i) => (
+            <Carousel.Item>
+              <div className="d-flex justify-content-center">
+                {window.innerWidth > 768 ? (
+                  <Image
+                    className="imageSize"
+                    fluid
+                    src={x.image + "-/crop/21:9/"}
+                    alt=""
+                  />
+                ) : (
+                  <Image
+                    className="imageSize"
+                    fluid
+                    src={x.image + "-/crop/4:3/"}
+                    alt=""
+                  />
+                )}
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
 
       <section>
@@ -95,10 +104,7 @@ export const HomePage: React.FC = () => {
             ].map((info, i) => (
               <Col key={i} md={4} className="text-center">
                 <Link className="hyperlink" to={info.location}>
-                  <Image 
-                    src={info.src}
-                    fluid
-                  />
+                  <Image src={info.src} fluid />
                   <h2
                     style={{
                       textAlign: "center",

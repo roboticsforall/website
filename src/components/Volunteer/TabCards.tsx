@@ -11,7 +11,7 @@ export const activeStyles: any = {
 };
 
 const styles = {
-  posHeader : {
+  posHeader: {
     textAlign: "center" as "center",
     wordBreak: "break-word" as "break-word",
   },
@@ -37,9 +37,9 @@ interface IProps {
   backgroundColor?: string;
   posImage?: string;
   button?: {
-    location: string,
-    title: string,
-    variant: string,
+    location: string;
+    title: string;
+    variant: string;
   };
 }
 
@@ -95,7 +95,7 @@ export const TabCardsLeftImage: React.FC<IProps> = (props: IProps) => {
                   <ButtonFullWidth
                     location={props.button.location}
                     title={props.button.title}
-                    variant = {props.button.variant}
+                    variant={props.button.variant}
                   />
                   <br />
                 </>
@@ -129,9 +129,9 @@ export const TabCardsRightImage: React.FC<IProps> = (props: IProps) => {
               {props.button ? (
                 <>
                   <ButtonFullWidth
-                    location = {props.button.location}
+                    location={props.button.location}
                     title={props.button.title}
-                    variant = {props.button.variant}
+                    variant={props.button.variant}
                   />
                   <br />
                 </>

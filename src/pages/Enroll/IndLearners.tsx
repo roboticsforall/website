@@ -67,7 +67,7 @@ export const IndLearners: React.FC = () => {
               {coursesInfoJSON.courses_list.map((courseInfo, i) => (
                 <CourseCard
                   key={i}
-                  link = {courseInfo.link}
+                  link={courseInfo.link}
                   courseImage={courseInfo.file_path}
                   title={courseInfo.course_name}
                   dropdownCourseDescription={courseInfo.course_description}

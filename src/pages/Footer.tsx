@@ -71,13 +71,19 @@ export const Footer: React.FC = () => {
             <h1 style={headerStyle}>FIND US</h1>
             <p style={{ ...darkBrown, ...linkStyle }}>
               EMAIL |{" "}
-              <a className="hyperlink " href={"mailto:" + orgLogisticsJSON.email}>
+              <a
+                className="hyperlink "
+                href={"mailto:" + orgLogisticsJSON.email}
+              >
                 {orgLogisticsJSON.email}
               </a>
             </p>
             <p style={{ ...darkBrown, ...linkStyle }}>
               PHONE |{" "}
-              <a className="hyperlink" href={"tel:" + orgLogisticsJSON.phone_number}>
+              <a
+                className="hyperlink"
+                href={"tel:" + orgLogisticsJSON.phone_number}
+              >
                 {orgLogisticsJSON.phone_number}
               </a>
             </p>
@@ -176,10 +182,15 @@ export const Footer: React.FC = () => {
         <Container>
           <p style={copyrightDisclaimer}>
             <strong>
-              Robotics For All 2018-{new Date().getFullYear()}© Photos of minors were used with
-              permission from their parent/guardian.{" "}
+              Robotics For All 2018-{new Date().getFullYear()}© Photos of minors
+              were used with permission from their parent/guardian.{" "}
             </strong>
-            Robotics for All does not discriminate against any students or volunteers on the basis of gender identity or expression, race, color, religion, sex, sexual orientation, age, disability, marital status, national origin, military status or any other characteristic protected by law. We celebrate our diversity and take pride in our inclusive environment for all people.
+            Robotics for All does not discriminate against any students or
+            volunteers on the basis of gender identity or expression, race,
+            color, religion, sex, sexual orientation, age, disability, marital
+            status, national origin, military status or any other characteristic
+            protected by law. We celebrate our diversity and take pride in our
+            inclusive environment for all people.
           </p>
         </Container>
       </Container>

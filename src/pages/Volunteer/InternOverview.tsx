@@ -62,7 +62,9 @@ export const InternOverview: React.FC = () => {
                   <Markdown>{internOverviewJSON.technical_path}</Markdown>
                 }
                 businessDescription={
-                  <Markdown>{internOverviewJSON.general_business_path}</Markdown>
+                  <Markdown>
+                    {internOverviewJSON.general_business_path}
+                  </Markdown>
                 }
                 addButtons={true}
               />

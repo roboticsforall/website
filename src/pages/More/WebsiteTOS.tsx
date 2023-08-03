@@ -8,7 +8,7 @@ import { TabCardsNoImage } from "@/components/Volunteer/TabCards";
 import Markdown from "markdown-to-jsx";
 
 export const WebsiteTOS: React.FC = () => {
-  const ActiveStyle = (props: any) : React.CSSProperties => ({
+  const ActiveStyle = (props: any): React.CSSProperties => ({
     color: "#000000",
     backgroundColor:
       props.i % 2 == 0 ? ColorThemes.lightYellow : ColorThemes.lightOrange,

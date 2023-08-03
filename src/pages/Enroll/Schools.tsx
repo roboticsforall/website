@@ -43,9 +43,7 @@ export const Schools: React.FC = () => {
           <h3>{schoolsCourseOverview.schools_enrollment_status_text}</h3>
           <br />
           <p>
-            <Markdown>
-              {schoolsCourseOverview.schools_details_text}
-            </Markdown>
+            <Markdown>{schoolsCourseOverview.schools_details_text}</Markdown>
           </p>
           <br />
           <ButtonFullWidth
@@ -69,7 +67,7 @@ export const Schools: React.FC = () => {
               {coursesInfoJSON.courses_list.map((courseInfo, i) => (
                 <CourseCard
                   key={i}
-                  link = {courseInfo.link}
+                  link={courseInfo.link}
                   courseImage={courseInfo.file_path}
                   title={courseInfo.course_name}
                   dropdownCourseDescription={courseInfo.course_description}

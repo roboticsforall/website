@@ -241,7 +241,7 @@ export const TeacherPos: React.FC = () => {
                 />
                 <section>
                   <h2 style={positionsTitleTA}>FAQs</h2>
-                    <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />
+                  <FAQDropdowns data={teachingfaqsJSON.ta_faqs} />
                 </section>
               </Tab.Pane>
             </Tab.Content>

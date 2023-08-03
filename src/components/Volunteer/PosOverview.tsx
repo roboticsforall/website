@@ -9,16 +9,16 @@ import Markdown from "markdown-to-jsx";
 import { FAQDropdowns } from "../FAQDropdowns";
 
 type TProps = {
-  color : string,
-  variant : string,
-  position : string,
-  headerTitle: string,
-  headerDescription : string,
-  data : any,
-  headerBlob: string,
-}
+  color: string;
+  variant: string;
+  position: string;
+  headerTitle: string;
+  headerDescription: string;
+  data: any;
+  headerBlob: string;
+};
 
-export const PosOverview: React.FC<TProps> = (props : TProps) => {
+export const PosOverview: React.FC<TProps> = (props: TProps) => {
   const [key, setKey] = useState("one");
 
   const positionsTitle: React.CSSProperties = {
@@ -57,9 +57,7 @@ export const PosOverview: React.FC<TProps> = (props : TProps) => {
                 posDescription={
                   <div>
                     <p>
-                      <Markdown>
-                        {props.data.overview}
-                      </Markdown>
+                      <Markdown>{props.data.overview}</Markdown>
                     </p>
                   </div>
                 }
@@ -67,8 +65,8 @@ export const PosOverview: React.FC<TProps> = (props : TProps) => {
             </Tab.Content>
           </Tab.Container>
           <section>
-            <h2 style = {positionsTitle}>Positions</h2>
-            <FAQDropdowns data = {props.data.positions} />
+            <h2 style={positionsTitle}>Positions</h2>
+            <FAQDropdowns data={props.data.positions} />
           </section>
         </Container>
       </section>

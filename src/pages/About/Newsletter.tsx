@@ -23,7 +23,7 @@ export const Newsletter: React.FC = () => {
         <Container>
           <h2>Read through our newsletters month by month down below.</h2>
           <section>
-            <Row className = "g-3">
+            <Row className="g-3">
               {newsletterJSON.newsletters_list
                 .slice(0, 4)
                 .map((newsletter, i) => (

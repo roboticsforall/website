@@ -23,14 +23,24 @@ export const MeetingEntry: React.FC<{
       </Col>
       <Col xs={3} style={background}>
         <p>
-          <a href={props.agendaDownload} target = "_blank" rel = "noreferrer noopener" className="hyperlink">
+          <a
+            href={props.agendaDownload}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hyperlink"
+          >
             View
           </a>
         </p>
       </Col>
       <Col xs={3} style={background}>
         <p>
-          <a href={props.minutesDownload} target = "_blank" rel = "noreferrer noopener" className="hyperlink">
+          <a
+            href={props.minutesDownload}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hyperlink"
+          >
             View
           </a>
         </p>

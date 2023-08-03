@@ -19,10 +19,8 @@ export const LeadershipPositions: React.FC = () => {
       <br />
       <Container>
         <h4>
-            Interested in applying to a Leadership Role at RFA{" "}
-            <a href = {leadershipPositionJSON.link}>
-                Read More Here
-            </a>
+          Interested in applying to a Leadership Role at RFA{" "}
+          <a href={leadershipPositionJSON.link}>Read More Here</a>
         </h4>
       </Container>
       <br />

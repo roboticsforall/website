@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Carousel, Image, Button } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Carousel,
+  Image,
+  Button,
+} from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
@@ -12,7 +20,6 @@ const photosImport = Array.from(
   { length: 10 },
   (_, i) => import(`../../media/Photos/${(i + 1).toString()}.jpg`)
 );
-
 
 export const News: React.FC = () => {
   const [images, setImages] = useState(
@@ -73,9 +80,7 @@ export const News: React.FC = () => {
                 <p>
                   Find all of our press information here! This includes photos,
                   statistics, stories, and more details. Contact us at{" "}
-                  <a
-                    href="mailto:info@roboticsforall.net"
-                  >
+                  <a href="mailto:info@roboticsforall.net">
                     info@roboticsforall.net
                   </a>{" "}
                   for press inquiries.
@@ -96,30 +101,33 @@ export const News: React.FC = () => {
             <Col md={4}>
               <Button
                 href="https://paloaltoonline.com/news/2018/07/04/gunn-underclassmen-aim-to-change-educational-outcomes-through-robotics"
-                variant = "primaryGreen"
+                variant="primaryGreen"
               >
-                <Image fluid src = {paloaltoonline}/>
-                <p>Gunn Underclassmen Aim to Change Educational Outcomes
-                      through Robotics</p>
+                <Image fluid src={paloaltoonline} />
+                <p>
+                  Gunn Underclassmen Aim to Change Educational Outcomes through
+                  Robotics
+                </p>
               </Button>
             </Col>
             <Col md={4}>
               <Button
                 href="https://www.mercurynews.com/2019/05/06/palo-alto-teens-turn-school-project-into-national-nonprofit-that-tackles-achievement-gap/"
-                variant = "primaryGreen"
+                variant="primaryGreen"
               >
-                <Image fluid src = {mercurynews}/>
-                <p>Palo Alto Teens Turn School Project into National
-                      Nonprofit that Tackles Achievement Gap
+                <Image fluid src={mercurynews} />
+                <p>
+                  Palo Alto Teens Turn School Project into National Nonprofit
+                  that Tackles Achievement Gap
                 </p>
               </Button>
             </Col>
             <Col md={4}>
               <Button
                 href="https://www.roboticsforall.net/uploads/1/1/5/4/115434321/scan0001_1.jpg"
-                variant = "primaryGreen"
+                variant="primaryGreen"
               >
-                <Image fluid src = {houseofreps}/>
+                <Image fluid src={houseofreps} />
                 <p>Congresswoman Anna G. Eshoo recognizes Robotics for All</p>
               </Button>
             </Col>

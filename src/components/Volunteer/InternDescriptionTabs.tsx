@@ -38,7 +38,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                     : styles.general({ backgroundColor: ColorThemes.lightBlue })
                 }
               >
-               General Business
+                General Business
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -52,7 +52,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                       })
                 }
               >
-               Technical
+                Technical
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -82,7 +82,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                 button={{
                   location: "/volunteer/businesspositions",
                   title: "Learn More",
-                  variant: "primaryBlue"
+                  variant: "primaryBlue",
                 }}
               />
             </Tab.Pane>
@@ -95,7 +95,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                 button={{
                   location: "/volunteer/technicalpositions",
                   title: "Learn More",
-                  variant: "primaryGreen"
+                  variant: "primaryGreen",
                 }}
               />
             </Tab.Pane>
@@ -108,7 +108,7 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
                 button={{
                   location: "/volunteer/publicitypositions",
                   title: "Learn More",
-                  variant: "primaryOrange"
+                  variant: "primaryOrange",
                 }}
               />
             </Tab.Pane>

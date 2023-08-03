@@ -45,7 +45,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         className="d-flex m-3 p-3"
         role="button"
       >
-        <Col className = "center-align" md={"auto"}>
+        <Col className="center-align" md={"auto"}>
           <Image
             fluid
             src={props.info.image + "-/scale_crop/400x400/smart/"}

@@ -16,7 +16,7 @@ enum Headers {
   First = "EXECUTIVE COMMITTEE",
   Second = "BOARD OF DIRECTORS",
   Third = "CURRICULUM COMMITTEE",
-  Fourth = "PUBLICITY COMMITTEE"
+  Fourth = "PUBLICITY COMMITTEE",
 }
 
 export const MeetTheTeam: React.FC = () => {
@@ -99,7 +99,7 @@ export const MeetTheTeam: React.FC = () => {
                     info={info}
                     backgroundColor={ColorThemes.mainBlue}
                     color={ColorThemes.darkBlue}
-                    />
+                  />
                 </Carousel.Item>
               )
             )}
