@@ -44,13 +44,29 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         onKeyDown={handleShow}
         className="d-flex m-3 p-3"
         role="button"
+        tabIndex={0}
       >
         <Col className="center-align" md={"auto"}>
-          <Image
-            fluid
-            src={props.info.image + "-/scale_crop/400x400/smart/"}
-            style={imgBoxShadow}
-          />
+          <picture>
+            <source
+              srcSet={
+                props.info.image + "-/scale_crop/320x320/smart/-/format/webp/"
+              }
+              type="image/webp"
+            />
+            <source
+              srcSet={
+                props.info.image + "-/scale_crop/320x320/smart/-/format/png/"
+              }
+              type="image/png"
+            />
+            <Image
+              fluid
+              src={props.info.image + "-/scale_crop/320x320/smart/"}
+              style={imgBoxShadow}
+              alt={props.info.name + "Headshot"}
+            />
+          </picture>
         </Col>
 
         {window.innerWidth <= 600 ? (
