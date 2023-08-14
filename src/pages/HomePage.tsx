@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Container, Col, Image, Carousel, Ratio } from "react-bootstrap";
+import { Row, Container, Col, Image, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
@@ -11,9 +11,12 @@ import carouselImagesJSON from "@/posts/homepage_carousel.json";
 import WH from "@/media/Sponsors/wh.png";
 import LQFF from "@/media/Sponsors/lqff.png";
 
-import home from "@/media/HoverImages/house_1.png";
-import apple from "@/media/HoverImages/apple_1.png";
-import world from "@/media/HoverImages/world_1.png";
+import house320w from "@/media/HoverImages/house-320w.png";
+import house600w from "@/media/HoverImages/house-600w.png";
+import apple320w from "@/media/HoverImages/apple-320w.png";
+import apple600w from "@/media/HoverImages/apple-600w.png";
+import world320w from "@/media/HoverImages/world-320w.png";
+import world600w from "@/media/HoverImages/world-600w.png";
 
 import { ColorThemes } from "../colors";
 
@@ -40,7 +43,7 @@ export const HomePage: React.FC = () => {
     <>
       <div>
         <Carousel fade>
-          {carouselImagesJSON.homepage_carousel_images_list.map((x, i) => (
+          {carouselImagesJSON.homepage_carousel_images_list.map((x) => (
             <Carousel.Item>
               <picture>
                 <source
@@ -119,26 +122,34 @@ export const HomePage: React.FC = () => {
             {[
               {
                 location: "/enroll/individlearners",
-                src: home,
+                src: house600w,
+                srcset: `${house320w} 320w, ${house600w} 600w`,
                 label: "Students and Parents",
                 color: ColorThemes.mainBlue,
               },
               {
                 location: "/enroll/schools",
-                src: apple,
+                src: apple600w,
+                srcset: `${apple320w} 320w, ${apple600w} 600w`,
                 label: "Schools and Partners",
                 color: ColorThemes.mainGreen,
               },
               {
                 location: "/volunteer/overview",
-                src: world,
+                src: world600w,
+                srcset: `${world320w} 320w, ${world600w} 600w`,
                 label: "Volunteers",
                 color: ColorThemes.mainOrange,
               },
             ].map((info, i) => (
               <Col key={i} md={4} className="text-center">
                 <Link className="hyperlink" to={info.location}>
-                  <Image src={info.src} fluid />
+                  <Image
+                    src={info.src}
+                    srcSet={info.srcset}
+                    sizes={"50vw"}
+                    fluid
+                  />
                   <h2
                     style={{
                       textAlign: "center",
