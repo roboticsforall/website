@@ -8,8 +8,8 @@ import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 
 import carouselImagesJSON from "@/posts/homepage_carousel.json";
 
-import WH from "@/media/Sponsors/wh.png";
-import LQFF from "@/media/Sponsors/lqff.png";
+import WH from "@/media/Sponsors/wh-600w.png";
+import LQFF from "@/media/Sponsors/lqff-600w.png";
 
 import house320w from "@/media/HoverImages/house-320w.png";
 import house600w from "@/media/HoverImages/house-600w.png";

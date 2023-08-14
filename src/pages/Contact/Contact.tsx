@@ -4,9 +4,9 @@ import { Header } from "@/components/Header";
 import { useForm, ValidationError } from "@formspree/react";
 
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
-import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
-import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
-import linkedin from "@/media/SocialMediaLogos/linkedin.png";
+import facebookIcon from "@/media/SocialMediaLogos/facebook-320w.png";
+import instagramIcon from "@/media/SocialMediaLogos/instagram-320w.png";
+import linkedin from "@/media/SocialMediaLogos/linkedin-320w.png";
 import orgLogisticsJSON from "@/posts/org_logistics.json";
 
 import { ColorThemes } from "@/colors";

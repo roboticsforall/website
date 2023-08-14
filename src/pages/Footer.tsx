@@ -3,10 +3,10 @@ import { Row, Container, Col, Image } from "react-bootstrap";
 
 import { ColorThemes } from "@/colors";
 
-import facebookIcon from "@/media/SocialMediaLogos/facebook.png";
-import instagramIcon from "@/media/SocialMediaLogos/instagram.png";
-import linkedin from "@/media/SocialMediaLogos/linkedin.png";
-import guidestar from "@/media/SocialMediaLogos/guidestar.png";
+import facebookIcon from "@/media/SocialMediaLogos/facebook-320w.png";
+import instagramIcon from "@/media/SocialMediaLogos/instagram-320w.png";
+import linkedin from "@/media/SocialMediaLogos/linkedin-320w.png";
+import guidestar from "@/media/SocialMediaLogos/guidestar-320w.png";
 
 import orgLogisticsJSON from "@/posts/org_logistics.json";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 
@@ -28,7 +28,7 @@ export const VolOverviewCard: React.FC<TVolOverviewCard> = (
       <Container className={classes.cardBackground}>
         <Row className="justify-content-center">
           <Col>
-            {window.innerWidth >= 768 ? <img src={props.image} /> : <></>}
+            {window.innerWidth >= 768 && <Image fluid src={props.image} />}
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <Link to={props.location}>Learn More</Link>

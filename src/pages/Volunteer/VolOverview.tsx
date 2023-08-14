@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import TeacherToby from "@/media/TobyImages/Teacher_Toby.png";
-import InternToby from "@/media/TobyImages/Intern_Toby.png";
-import TAToby from "@/media/TobyImages/TA_Toby.png";
+import TeacherToby from "@/media/TobyImages/Teacher_Toby-320w.png";
+import InternToby from "@/media/TobyImages/Intern_Toby-320w.png";
+import TAToby from "@/media/TobyImages/TA_Toby-320w.png";
 import { VolOverviewCard } from "@/components/Volunteer/VolOverviewCard";
 import { VolOverviewStats } from "@/components/Volunteer/VolOverviewStats";
 import headerBlob from "@/media/HeaderBlobs/orange.png";

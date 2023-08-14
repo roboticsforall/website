@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col, Carousel, Image, Button } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
-import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
-import mercurynews from "@/media/News/Mercury-News.png";
-import houseofreps from "@/media/News/House-of-Representatives.png";
+import paloaltoonline from "@/media/News/Palo-Alto-Online-320w.png";
+import mercurynews from "@/media/News/Mercury-News-320w.png";
+import houseofreps from "@/media/News/House-of-Representatives-320w.png";
 
 import { ColorThemes } from "@/colors";
 
