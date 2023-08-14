@@ -3,9 +3,9 @@ import { Container, Image } from "react-bootstrap";
 import { Header } from "@/components/Header";
 
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png"; // add correct image and filepath here
-import facebookIcon from "@/media/SocialMediaLogos/facebook-320w.png";
-import instagramIcon from "@/media/SocialMediaLogos/instagram-320w.png";
-import linkedin from "@/media/SocialMediaLogos/linkedin-320w.png";
+import facebookIcon from "@/media/SocialMediaLogos/facebook-100w.png";
+import instagramIcon from "@/media/SocialMediaLogos/instagram-100w.png";
+import linkedin from "@/media/SocialMediaLogos/linkedin-100w.png";
 import orgLogisticsJSON from "@/posts/org_logistics.json";
 
 import { ColorThemes } from "@/colors";
@@ -14,7 +14,11 @@ export const Contact: React.FC = () => {
   const linkStyle = {
     color: ColorThemes.darkOrange,
   };
-
+  const iconSize: React.CSSProperties = {
+    width: "4vmax",
+    height: "4vmax",
+    margin: "0.1em",
+  };
   return (
     <>
       <Header
@@ -61,29 +65,31 @@ export const Contact: React.FC = () => {
             </a>
           </h3>
           <section>
-            <div className="d-flex">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/roboticsforalleducation/"
-                rel="noreferrer"
-              >
-                <Image src={facebookIcon} alt="Facebook Logo" />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/roboticsforall/"
-                rel="noreferrer"
-              >
-                <Image src={instagramIcon} alt="Instagram Logo" />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/company/robotics-for-all"
-                rel="noreferrer"
-              >
-                <Image src={linkedin} alt="LinkedIn Logo" />
-              </a>
-            </div>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/roboticsforalleducation/"
+              rel="noreferrer"
+            >
+              <Image style={iconSize} src={facebookIcon} alt="Facebook Logo" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/roboticsforall/"
+              rel="noreferrer"
+            >
+              <Image
+                style={iconSize}
+                src={instagramIcon}
+                alt="Instagram Logo"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/robotics-for-all"
+              rel="noreferrer"
+            >
+              <Image style={iconSize} src={linkedin} alt="LinkedIn Logo" />
+            </a>
           </section>
           <br></br>
         </Container>

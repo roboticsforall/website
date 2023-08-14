@@ -42,7 +42,7 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <div>
-        <Carousel fade>
+        <Carousel>
           {carouselImagesJSON.homepage_carousel_images_list.map((x) => (
             <Carousel.Item>
               <picture>
@@ -76,7 +76,7 @@ export const HomePage: React.FC = () => {
                   srcSet={`${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/900x/900.webp 900w,
                           ${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/1200x/1200.webp 1200w`}
                   type="image/webp"
-                  sizes="(max-width: 1000px) 50vw, 10vw"
+                  sizes="(max-width: 1000px) 50vw, 90vw"
                   alt={x.alt}
                 />
                 <source
