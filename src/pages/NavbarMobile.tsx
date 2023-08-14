@@ -48,6 +48,7 @@ export const NavbarMobile: React.FC = () => {
             className="imageSize"
             src={TobyHeaderLogo}
             style={logoImageSize}
+            alt="Robotics For All Logo"
           />
         </Link>
         <img onClick={setNavHeight} width="50" src={dropdownIcon} />
@@ -59,6 +60,7 @@ export const NavbarMobile: React.FC = () => {
               className="imageSize"
               src={TobyHeaderLogo}
               style={logoImageSize}
+              alt="Robotics For All Logo"
             />
           </Link>
           <img onClick={setNavHeight} width="50" src={exitIcon} />
