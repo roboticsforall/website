@@ -1,28 +1,24 @@
 {
   "homepage_carousel_images_list": [
     {
-      "image": "https://ucarecdn.com/7317a7c8-1f44-4684-84ee-7a33bf3ee32b/"
+      "image": "https://ucarecdn.com/7317a7c8-1f44-4684-84ee-7a33bf3ee32b/",
+      "alt": "Student demonstrating robotic claw designed with Vex Go kit"
     },
     {
-      "image": "https://ucarecdn.com/54137454-eaeb-462e-895c-b9b22e16e59d/"
+      "image": "https://ucarecdn.com/54137454-eaeb-462e-895c-b9b22e16e59d/",
+      "alt": "Student showing newly built Vex Go 2 wheel car"
     },
     {
-      "image": "https://ucarecdn.com/726b759c-ce95-4694-bbbb-1ad77d340f35/"
+      "image": "https://ucarecdn.com/726b759c-ce95-4694-bbbb-1ad77d340f35/",
+      "alt": "Instructor leading class through a Vex Go activity"
     },
     {
-      "image": "https://ucarecdn.com/323a0f10-3150-454f-bd78-4a68a9f7453b/"
+      "image": "https://ucarecdn.com/323a0f10-3150-454f-bd78-4a68a9f7453b/",
+      "alt": "Vex Go robot driving on Vex Go challenge feld (square track)"
     },
     {
-      "image": "https://ucarecdn.com/00ac3888-2764-4e63-a181-c9d5720e9580/"
-    },
-    {
-      "image": "https://ucarecdn.com/f299dff5-5ddd-4177-9e8c-2439a9dcf3ea/"
-    },
-    {
-      "image": "https://ucarecdn.com/b9826343-fbd3-4b80-9a8c-909c0839f541/"
-    },
-    {
-      "image": "https://ucarecdn.com/102d902f-84a6-4db1-93f2-86138b0be835/"
+      "image": "https://ucarecdn.com/102d902f-84a6-4db1-93f2-86138b0be835/",
+      "alt": "Student picking up cups with Vex Go robotic claw"
     }
   ]
 }
