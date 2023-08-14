@@ -3,8 +3,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { ColorThemes } from "@/colors";
 import { ButtonFullWidth } from "../ButtonFullWidth";
 
-export const activeStyles: any = {
-  activeStyle: (backgroundColor: string) => ({
+export const activeStyles = {
+  activeStyle: (backgroundColor: string): React.CSSProperties => ({
     background: backgroundColor,
     color: ColorThemes.black,
   }),
@@ -12,13 +12,17 @@ export const activeStyles: any = {
 
 const styles = {
   posHeader: {
-    textAlign: "center" as "center",
-    wordBreak: "break-word" as "break-word",
+    textAlign: "center" as const,
+    wordBreak: "break-word" as const,
   },
   posDescription: {
     color: ColorThemes.black,
   },
-  posContainer: (props: any) => ({
+  posContainer: (props: {
+    color: string | undefined;
+    borderColor: string | undefined;
+    backgroundColor: string | undefined;
+  }): React.CSSProperties => ({
     border: "15px solid",
     color: props.color,
     borderColor: props.borderColor,
@@ -59,6 +63,17 @@ export const TabCardsNoImage: React.FC<IProps> = (props: IProps) => {
             <Col>
               <h2 style={styles.posHeader}>{props.posHeader}</h2>
               <p style={styles.posDescription}>{props.posDescription}</p>
+              {props.button && (
+                <>
+                  <ButtonFullWidth
+                    location={props.button.location}
+                    title={props.button.title}
+                    variant={props.button.variant}
+                  />
+                  <br />
+                  <br />
+                </>
+              )}
             </Col>
           </Row>
         </div>

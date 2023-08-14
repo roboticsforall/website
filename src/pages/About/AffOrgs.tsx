@@ -31,6 +31,7 @@ export const AffOrgs: React.FC = () => {
             affOrgsDescription={
               "Crafts for Charity is a student-led nonprofit providing classes and opportunities for everyone to give back to their communities through crafting! They help donate handmade goods to charities for causes like homelessness and we are their primary fiscal sponsor."
             }
+            alt={"Crafts for Charity Logo"}
           />
         </section>
       </Container>

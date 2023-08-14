@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Container, Col, Image } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { ColorThemes } from "../colors";
 
@@ -9,6 +9,7 @@ export const HomeAffOrgsCard: React.FC<{
   link: string;
   org: string;
   logo: string;
+  alt: string;
 }> = (props) => {
   const affOrgsTitle: React.CSSProperties = {
     color: ColorThemes.white,
@@ -44,7 +45,7 @@ export const HomeAffOrgsCard: React.FC<{
           lg={3}
           xl={3}
         >
-          <Image fluid style={imageSize} src={props.logo} />
+          <Image fluid style={imageSize} src={props.logo} alt={props.alt} />
         </Col>
         <Col md={6} lg={6} xl={6}>
           <h2 style={affOrgsTitle}>{props.org}</h2>

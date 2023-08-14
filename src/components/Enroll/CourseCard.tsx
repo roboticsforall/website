@@ -10,6 +10,7 @@ interface IProps {
   dropdownCourseDescription: string;
   dropdownCourseImage: string;
   variant: string;
+  alt: string;
 }
 
 export const CourseCard: React.FC<IProps> = (props: IProps) => {
@@ -22,7 +23,14 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
     <>
       <Col md={4} lg={3} onClick={handleShow}>
         <Button variant={props.variant}>
-          <img src={props.courseImage} />
+          <Image
+            fluid
+            src={`${props.courseImage}-/resize/600x/600.png`}
+            srcSet={`${props.courseImage}-/resize/320x/320.png 320w,
+                    ${props.courseImage}-/resize/600x/600.png 600w`}
+            sizes="(max-width: 1000px) 50vw, 90vw"
+            alt={props.alt}
+          />
           <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
           <h4>{props.title.substring(props.title.indexOf("("))}</h4>
         </Button>
@@ -39,18 +47,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
           <Modal.Title>{props.title.toUpperCase()}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Container>
-            <Row>
-              <Col md={8}>
-                <Markdown>{props.dropdownCourseDescription}</Markdown>
-              </Col>
-              <Col>
-                <Row className="justify-content-center">
-                  <Image fluid src={props.dropdownCourseImage} />
-                </Row>
-              </Col>
-            </Row>
-          </Container>
+          <Markdown>{props.dropdownCourseDescription}</Markdown>
         </Modal.Body>
         <Modal.Footer>
           <Container>

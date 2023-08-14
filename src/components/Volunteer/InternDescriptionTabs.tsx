@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Tab, Nav } from "react-bootstrap";
-import { TabCardsLeftImage } from "./TabCards";
-import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
+import { TabCardsNoImage } from "./TabCards";
 
 import { ColorThemes } from "@/colors";
 
@@ -74,9 +73,8 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="one">
-              <TabCardsLeftImage
+              <TabCardsNoImage
                 posHeader={"GENERAL BUSINESS PATH"}
-                posImage={TobyHeaderLogo}
                 posDescription={props.businessDescription}
                 generalColor={ColorThemes.mainBlue}
                 button={{
@@ -87,9 +85,8 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
               />
             </Tab.Pane>
             <Tab.Pane eventKey="two">
-              <TabCardsLeftImage
+              <TabCardsNoImage
                 posHeader={"TECHNICAL PATH"}
-                posImage={TobyHeaderLogo}
                 posDescription={props.technicalDescription}
                 generalColor={ColorThemes.mainGreen}
                 button={{
@@ -100,9 +97,8 @@ export const InternDescriptionTabs: React.FC<IProps> = (props: IProps) => {
               />
             </Tab.Pane>
             <Tab.Pane eventKey="three">
-              <TabCardsLeftImage
+              <TabCardsNoImage
                 posHeader={"PUBLICITY PATH"}
-                posImage={TobyHeaderLogo}
                 posDescription={props.publicityDescription}
                 generalColor={ColorThemes.mainOrange}
                 button={{

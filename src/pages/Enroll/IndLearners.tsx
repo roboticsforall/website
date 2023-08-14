@@ -69,6 +69,7 @@ export const IndLearners: React.FC = () => {
                   key={i}
                   link={courseInfo.link}
                   courseImage={courseInfo.file_path}
+                  alt={courseInfo.alt}
                   title={courseInfo.course_name}
                   dropdownCourseDescription={courseInfo.course_description}
                   dropdownCourseImage={courseInfo.file_path}
@@ -87,6 +88,7 @@ export const IndLearners: React.FC = () => {
               {syllabiJSON.syllabi_list.map((flagInfo, i) => (
                 <FlagCard
                   image={flagInfo.file_path}
+                  alt={flagInfo.alt}
                   title={flagInfo.language}
                   link={flagInfo.link}
                   key={i}

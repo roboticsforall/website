@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
+import TobyHeaderLogo from "@/media/TobyHeaderLogo-320w.png";
 import { Link } from "react-router-dom";
 import dropdownIcon from "../media/Icons/dropdownIcon.svg";
 import exitIcon from "../media/Icons/exitIcon.svg";
@@ -48,9 +48,15 @@ export const NavbarMobile: React.FC = () => {
             className="imageSize"
             src={TobyHeaderLogo}
             style={logoImageSize}
+            alt="Robotics For All Logo"
           />
         </Link>
-        <img onClick={setNavHeight} width="50" src={dropdownIcon} />
+        <img
+          onClick={setNavHeight}
+          width="50"
+          src={dropdownIcon}
+          alt="Dropdown icon"
+        />
       </header>
       <div style={screenCover}>
         <header className="py-5" style={navHeader}>
@@ -59,9 +65,15 @@ export const NavbarMobile: React.FC = () => {
               className="imageSize"
               src={TobyHeaderLogo}
               style={logoImageSize}
+              alt="Robotics For All Logo"
             />
           </Link>
-          <img onClick={setNavHeight} width="50" src={exitIcon} />
+          <img
+            onClick={setNavHeight}
+            width="50"
+            src={exitIcon}
+            alt="Close icon (X)"
+          />
         </header>
         <ul
           className="mx-3 p-0"

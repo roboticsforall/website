@@ -15,3 +15,5 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_ROBOTICS_FOR_ALL_9009F }}"
           projectId: robotics-for-all-9009f
+    env:
+      FIREBASE_CLI_EXPERIMENTS: webframeworks

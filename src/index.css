@@ -196,9 +196,6 @@ video {
     width: 100% !important;
     height: auto;
   }
-  img {
-    max-width: 50% !important;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -207,16 +204,13 @@ video {
     width: 100%;
     height: auto;
   }
-  img {
-    max-width: 50% !important;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  img {
+  /* img {
     max-width: 100% !important;
-  }
+  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

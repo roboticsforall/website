@@ -82,11 +82,6 @@ export const App: React.FC = () => {
               />
               <Route
                 exact
-                path="/about/pastnewsletter"
-                component={components.PastNewsletter}
-              />
-              <Route
-                exact
                 path="/about/meettheteam"
                 component={components.MeetTheTeam}
               />
