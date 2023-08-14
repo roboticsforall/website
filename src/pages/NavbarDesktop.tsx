@@ -40,6 +40,7 @@ export const NavbarDesktop: React.FC = () => {
             className="imageSize"
             src={TobyHeaderLogo}
             style={logoImageSize}
+            alt="Robotics For All Logo"
           />
         </Link>
         <Link className="hyperlink" to="/">

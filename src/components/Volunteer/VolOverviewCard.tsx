@@ -10,6 +10,7 @@ type TVolOverviewCard = {
   title: string;
   description: string;
   image: string;
+  alt: string;
 };
 
 export const VolOverviewCard: React.FC<TVolOverviewCard> = (
@@ -28,7 +29,9 @@ export const VolOverviewCard: React.FC<TVolOverviewCard> = (
       <Container className={classes.cardBackground}>
         <Row className="justify-content-center">
           <Col>
-            {window.innerWidth >= 768 && <Image fluid src={props.image} />}
+            {window.innerWidth >= 768 && (
+              <Image fluid src={props.image} alt={props.alt} />
+            )}
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <Link to={props.location}>Learn More</Link>

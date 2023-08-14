@@ -76,7 +76,8 @@ export const HomePage: React.FC = () => {
                   srcSet={`${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/900x/900.webp 900w,
                           ${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/1200x/1200.webp 1200w`}
                   type="image/webp"
-                  sizes="(max-width: 1000px) 50vw, 90vw"
+                  sizes="(max-width: 1000px) 50vw, 10vw"
+                  alt={x.alt}
                 />
                 <source
                   media="(min-width: 801px)"
@@ -94,7 +95,11 @@ export const HomePage: React.FC = () => {
                   type="image/jpeg"
                   sizes="(max-width: 1000px) 50vw, 90vw"
                 />
-                <img style={{ width: "100%" }} src={x.image + "-/crop/21:9/"} />
+                <img
+                  style={{ width: "100%" }}
+                  src={x.image + "-/crop/21:9/"}
+                  alt={x.alt}
+                />
               </picture>
             </Carousel.Item>
           ))}
@@ -124,6 +129,7 @@ export const HomePage: React.FC = () => {
                 location: "/enroll/individlearners",
                 src: house600w,
                 srcset: `${house320w} 320w, ${house600w} 600w`,
+                alt: "Graphic of blue house",
                 label: "Students and Parents",
                 color: ColorThemes.mainBlue,
               },
@@ -131,6 +137,7 @@ export const HomePage: React.FC = () => {
                 location: "/enroll/schools",
                 src: apple600w,
                 srcset: `${apple320w} 320w, ${apple600w} 600w`,
+                alt: "Graphic of green apple",
                 label: "Schools and Partners",
                 color: ColorThemes.mainGreen,
               },
@@ -138,6 +145,7 @@ export const HomePage: React.FC = () => {
                 location: "/volunteer/overview",
                 src: world600w,
                 srcset: `${world320w} 320w, ${world600w} 600w`,
+                alt: "Graphic of orange planet",
                 label: "Volunteers",
                 color: ColorThemes.mainOrange,
               },
@@ -148,6 +156,7 @@ export const HomePage: React.FC = () => {
                     src={info.src}
                     srcSet={info.srcset}
                     sizes={"50vw"}
+                    alt={info.alt}
                     fluid
                   />
                   <h2
@@ -172,6 +181,7 @@ export const HomePage: React.FC = () => {
           {[
             {
               label: "crafts for charity",
+              alt: "Crafts for Charity Logo",
               logo: CFCLogo,
               linkColor: ColorThemes.darkBlue,
               bgColor: ColorThemes.lightBlue,
@@ -181,6 +191,7 @@ export const HomePage: React.FC = () => {
             <HomeAffOrgsCard
               key={i}
               org={afforgs.label}
+              alt={afforgs.alt}
               link={afforgs.link}
               linkColor={afforgs.linkColor}
               bgColor={afforgs.bgColor}
@@ -197,12 +208,22 @@ export const HomePage: React.FC = () => {
             donors:
           </h3>
           <div className="d-flex justify-content-around flex-wrap">
-            {[WH, LQFF].map((sponsor, i) => (
+            {[
+              {
+                image: WH,
+                alt: "Wilmerhale Logo",
+              },
+              {
+                image: LQFF,
+                alt: "Inituitive Logo",
+              },
+            ].map((sponsor, i) => (
               <Image
                 key={i}
                 className="m-3"
                 style={sponsorImageSize}
-                src={sponsor}
+                src={sponsor.image}
+                alt={sponsor.alt}
                 fluid
               />
             ))}

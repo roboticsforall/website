@@ -84,6 +84,7 @@ export const VolOverview: React.FC = () => {
                 "Lead Instructor and TAs are in charge of teaching the several STEM courses RFA has to offer. Teachers are the backbone of our organization!"
               }
               image={TeacherToby}
+              alt="Graphic of teacher"
             />
             <VolOverviewCard
               location="/volunteer/leadershippositions"
@@ -94,6 +95,7 @@ export const VolOverview: React.FC = () => {
                 "Leadership members are responsible for running the organization and its various facets."
               }
               image={InternToby}
+              alt="Graphic of leadership team member"
             />
             <VolOverviewCard
               location="/volunteer/internoverview"
@@ -104,6 +106,7 @@ export const VolOverview: React.FC = () => {
                 "Interns help across the backend of our organization in many ways and provide a vital service to our nonprofit, while gaining valuable business experiences."
               }
               image={TAToby}
+              alt="Graphic of TA"
             />
             <VolOverviewCard
               location="/volunteer/curricdevpositions"
@@ -114,6 +117,7 @@ export const VolOverview: React.FC = () => {
                 "Curriculum Developers at Robotics for All are in charge of developing new standardized curricula for our classes."
               }
               image={TAToby}
+              alt="Graphic of curriculum developer"
             />
           </Row>
         </Container>

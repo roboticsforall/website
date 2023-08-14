@@ -108,6 +108,7 @@ export const Footer: React.FC = () => {
                   className="imageSize"
                   style={iconSize}
                   src={facebookIcon}
+                  alt={"Facebook Logo"}
                 />
               </a>
               <a
@@ -119,6 +120,7 @@ export const Footer: React.FC = () => {
                   className="imageSize"
                   style={iconSize}
                   src={instagramIcon}
+                  alt={"Instagram Logo"}
                 />
               </a>
               <a
@@ -126,14 +128,24 @@ export const Footer: React.FC = () => {
                 href="https://www.linkedin.com/company/robotics-for-all"
                 rel="noreferrer"
               >
-                <Image className="imageSize" style={iconSize} src={linkedin} />
+                <Image
+                  className="imageSize"
+                  style={iconSize}
+                  src={linkedin}
+                  alt={"LinkedIn Logo"}
+                />
               </a>
               <a
                 target="_blank"
                 href="https://www.guidestar.org/"
                 rel="noreferrer"
               >
-                <Image className="imageSize" style={iconSize} src={guidestar} />
+                <Image
+                  className="imageSize"
+                  style={iconSize}
+                  src={guidestar}
+                  alt={"Guidestar Logo"}
+                />
               </a>
             </div>
           </Col>

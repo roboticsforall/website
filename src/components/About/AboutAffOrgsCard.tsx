@@ -10,6 +10,7 @@ export const AboutAffOrgsCard: React.FC<{
   website: string;
   orgAbrv: string;
   linkColor: string;
+  alt: string;
 }> = (props) => {
   const useStyles = createUseStyles({
     link: {
@@ -44,13 +45,13 @@ export const AboutAffOrgsCard: React.FC<{
           >
             {window.innerWidth >= 768 ? (
               <Col sm={3} md={3} lg={3} xl={3} className="p-3 center-align">
-                <Image fluid className="" src={props.logo} />
+                <Image fluid className="" src={props.logo} alt={props.alt} />
               </Col>
             ) : (
               <Col>
                 <Row className="p-2">
                   <Col sm={3} lg={3} md={3} className="center-align">
-                    <Image fluid src={props.logo} />
+                    <Image fluid src={props.logo} alt={props.alt} />
                   </Col>
                   <Col className="center-align">
                     <h1
