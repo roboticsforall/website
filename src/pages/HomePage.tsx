@@ -42,23 +42,57 @@ export const HomePage: React.FC = () => {
         <Carousel fade>
           {carouselImagesJSON.homepage_carousel_images_list.map((x, i) => (
             <Carousel.Item>
-              <div className="d-flex justify-content-center">
-                {window.innerWidth > 768 ? (
-                  <Image
-                    className="imageSize"
-                    fluid
-                    src={x.image + "-/crop/21:9/"}
-                    alt=""
-                  />
-                ) : (
-                  <Image
-                    className="imageSize"
-                    fluid
-                    src={x.image + "-/crop/4:3/"}
-                    alt=""
-                  />
-                )}
-              </div>
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  src={`${x.image}-/crop/4:3/`}
+                  srcSet={`${x.image}-/crop/4:3/-/progressive/yes/-/format/webp/-/resize/600x/600.webp 600w,
+                          ${x.image}-/crop/4:3/-/progressive/yes/-/format/webp/-/resize/750x/750.webp 750w`}
+                  type="image/webp"
+                  sizes="50vw"
+                />
+                <source
+                  media="(max-width: 800px)"
+                  src={`${x.image}-/crop/4:3/`}
+                  srcSet={`${x.image}-/crop/4:3/-/progressive/yes/-/format/png/-/resize/600x/600.png 600w,
+                          ${x.image}-/crop/4:3/-/progressive/yes/-/format/png/-/resize/750x/750.png 750w`}
+                  type="image/png"
+                  sizes="50vw"
+                />
+                <source
+                  media="(max-width: 800px)"
+                  src={`${x.image}-/crop/4:3/`}
+                  srcSet={`${x.image}-/crop/4:3/-/progressive/yes/-/format/jpeg/-/resize/600x/600.jpeg 600w,
+                          ${x.image}-/crop/4:3/-/progressive/yes/-/format/jpeg/-/resize/750x/750.jpeg 750w`}
+                  type="image/jpeg"
+                  sizes="50vw"
+                />
+                <source
+                  media="(min-width: 801px)"
+                  src={`${x.image}-/crop/21:9/`}
+                  srcSet={`${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/900x/900.webp 900w,
+                          ${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/1200x/1200.webp 1200w`}
+                  type="image/webp"
+                  sizes="(max-width: 1000px) 50vw, 90vw"
+                />
+                <source
+                  media="(min-width: 801px)"
+                  src={`${x.image}-/crop/21:9/`}
+                  srcSet={`${x.image}-/crop/21:9/-/progressive/yes/-/format/png/-/resize/900x/900.png 900w,
+                          ${x.image}-/crop/21:9/-/progressive/yes/-/format/png/-/resize/1200x/1200.png 1200w`}
+                  type="image/png"
+                  sizes="(max-width: 1000px) 50vw, 90vw"
+                />
+                <source
+                  media="(min-width: 801px)"
+                  src={`${x.image}-/crop/21:9/`}
+                  srcSet={`${x.image}-/crop/21:9/-/progressive/yes/-/format/jpeg/-/resize/900x/900.jpeg 900w,
+                          ${x.image}-/crop/21:9/-/progressive/yes/-/format/jpeg/-/resize/1200x/1200.jpeg 1200w`}
+                  type="image/jpeg"
+                  sizes="(max-width: 1000px) 50vw, 90vw"
+                />
+                <img style={{ width: "100%" }} src={x.image + "-/crop/21:9/"} />
+              </picture>
             </Carousel.Item>
           ))}
         </Carousel>

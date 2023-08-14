@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Carousel,
-  Image,
-  Button,
-} from "react-bootstrap";
+import { Container, Row, Col, Carousel, Image, Button } from "react-bootstrap";
 import { Header } from "@/components/Header";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 import paloaltoonline from "@/media/News/Palo-Alto-Online.png";
@@ -16,38 +8,7 @@ import houseofreps from "@/media/News/House-of-Representatives.png";
 
 import { ColorThemes } from "@/colors";
 
-const photosImport = Array.from(
-  { length: 10 },
-  (_, i) => import(`../../media/Photos/${(i + 1).toString()}.jpg`)
-);
-
 export const News: React.FC = () => {
-  const [images, setImages] = useState(
-    [] as {
-      media_type: string;
-      media_url: string;
-      key: string;
-      permalink: string;
-      id: string;
-    }[]
-  );
-  // useEffect(() => {
-  //   (async () => {
-  //     const data = await fetch(
-  //       "https://graph.instagram.com/me/media?fields=media_count,media_type,permalink,media_url&&access_token=IGQVJYTWU0MzNrQW85YkVBdTZA5ck5GQnI5OF95Wm81SWN1U3pyaUlLbXdqU2pKZAGI3cEcxRjNqT013M0tDUGZAFazhQQ2dDQWQ5cWpPMTc2M3VJZA2NmYlJhaGRUT2dTaElURjhadHE2U1lFQlUzV2dlNAZDZD"
-  //     );
-  //     const json = await data.json();
-  //     if (json.error) console.error("Importing images failed", json.error);
-  //     else setImages(json.data);
-  //   })();
-  // }, []);
-
-  const [photos, setPhotos] = useState([] as { default: string }[]);
-
-  useEffect(() => {
-    Promise.all(photosImport).then(setPhotos);
-  }, []);
-
   return (
     <div>
       <Header
@@ -133,46 +94,6 @@ export const News: React.FC = () => {
             </Col>
           </Row>
         </Row>
-        {/* <Row className="mt-3">
-          <h1
-            style={{
-              color: ColorThemes.mainBlue,
-            }}
-          >
-            Social Media
-          </h1>
-
-          <Container
-            style={{
-              background: ColorThemes.lightBlue,
-              padding: "15px",
-            }}
-            className = "rounded"
-          >
-            <Carousel>
-              {images.map((x) => (
-                <a href={x.permalink} key={x.id}>
-                  {x.media_type === "VIDEO" ? (
-                    <video
-                      key={x.key}
-                      style={{ width: "100%", display: "block" }}
-                      controls
-                    >
-                      <source src={x.media_url} type="video/mp4" />
-                    </video>
-                  ) : (
-                    <img
-                      src={x.media_url}
-                      key={x.key}
-                      style={{ width: "100%", display: "block" }}
-                      alt=""
-                    />
-                  )}
-                </a>
-              ))}
-            </Carousel>
-          </Container>
-        </Row> */}
         <Row>
           <h1
             style={{
@@ -236,32 +157,6 @@ export const News: React.FC = () => {
                   ></iframe>
                 </div>
               </Carousel.Item>
-            </Carousel>
-          </Container>
-        </Row>
-        <Row>
-          <h1
-            style={{
-              color: ColorThemes.mainOrange,
-            }}
-          >
-            Photos
-          </h1>
-          <Container
-            style={{
-              background: ColorThemes.lightOrange,
-              padding: "15px",
-            }}
-            className="rounded"
-          >
-            <Carousel>
-              {photos.map((x, i) => (
-                <Carousel.Item>
-                  <div className="d-flex justify-content-center">
-                    <Image fluid src={x.default} alt="" />
-                  </div>
-                </Carousel.Item>
-              ))}
             </Carousel>
           </Container>
         </Row>
