@@ -25,7 +25,7 @@ export const InternOverview: React.FC = () => {
       <Header
         headerTextColor={"#FA8D1F"}
         image={headerBlobOrange}
-        title={"Intern at Robotics for All in 20+ groups."}
+        title={"Intern at Robotics for All in 20+ groups"}
         description={
           "Interns work on anything from graphic design to curriculum development!"
         }
