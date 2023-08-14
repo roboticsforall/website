@@ -203,6 +203,7 @@ export const HomePage: React.FC = () => {
                 className="m-3"
                 style={sponsorImageSize}
                 src={sponsor}
+                fluid
               />
             ))}
           </div>

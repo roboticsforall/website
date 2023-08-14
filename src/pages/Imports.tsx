@@ -17,7 +17,6 @@ import { LeadershipPositions } from "@/pages/Volunteer/LeadershipPositions";
 import { AffOrgs } from "@/pages/About/AffOrgs";
 import { AbtOverview } from "@/pages/About/AbtOverview";
 import { MeetTheTeam } from "@/pages/About/MeetTheTeam";
-import { PastNewsletter } from "@/pages/About/PastNewsletter";
 
 //News
 import { News } from "@/pages/News/News";
@@ -48,7 +47,6 @@ export {
   AffOrgs,
   AbtOverview,
   MeetTheTeam,
-  PastNewsletter,
   News,
   CorpBylaws,
   MeetingRecords,
