@@ -51,7 +51,12 @@ export const NavbarMobile: React.FC = () => {
             alt="Robotics For All Logo"
           />
         </Link>
-        <img onClick={setNavHeight} width="50" src={dropdownIcon} />
+        <img
+          onClick={setNavHeight}
+          width="50"
+          src={dropdownIcon}
+          alt="Dropdown icon"
+        />
       </header>
       <div style={screenCover}>
         <header className="py-5" style={navHeader}>
@@ -63,7 +68,12 @@ export const NavbarMobile: React.FC = () => {
               alt="Robotics For All Logo"
             />
           </Link>
-          <img onClick={setNavHeight} width="50" src={exitIcon} />
+          <img
+            onClick={setNavHeight}
+            width="50"
+            src={exitIcon}
+            alt="Close icon (X)"
+          />
         </header>
         <ul
           className="mx-3 p-0"
