@@ -10,6 +10,7 @@ interface IProps {
   dropdownCourseDescription: string;
   dropdownCourseImage: string;
   variant: string;
+  alt: string;
 }
 
 export const CourseCard: React.FC<IProps> = (props: IProps) => {
@@ -28,6 +29,7 @@ export const CourseCard: React.FC<IProps> = (props: IProps) => {
             srcSet={`${props.courseImage}-/resize/320x/320.png 320w,
                     ${props.courseImage}-/resize/600x/600.png 600w`}
             sizes="(max-width: 1000px) 50vw, 90vw"
+            alt={props.alt}
           />
           <h4>{props.title.substring(0, props.title.indexOf("(") - 1)}</h4>
           <h4>{props.title.substring(props.title.indexOf("("))}</h4>

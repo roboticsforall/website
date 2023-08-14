@@ -6,6 +6,7 @@ interface IProps {
   title: string;
   image: string;
   variant: string;
+  alt: string;
 }
 export const FlagCard: React.FC<IProps> = (props: IProps) => {
   return (
@@ -23,6 +24,7 @@ export const FlagCard: React.FC<IProps> = (props: IProps) => {
           srcSet={`${props.image}-/resize/320x/320.png 320w,
                   ${props.image}-/resize/600x/600.png 600w`}
           sizes="(max-width: 1000px) 50vw, 90vw"
+          alt={props.alt}
         />
 
         {/* <img
