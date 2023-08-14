@@ -106,21 +106,33 @@ export const Contact: React.FC = () => {
                     href="https://www.facebook.com/roboticsforalleducation/"
                     rel="noreferrer"
                   >
-                    <Image style={iconSize} src={facebookIcon} />
+                    <Image
+                      style={iconSize}
+                      src={facebookIcon}
+                      alt="Facebook Logo"
+                    />
                   </a>
                   <a
                     target="_blank"
                     href="https://www.instagram.com/roboticsforall/"
                     rel="noreferrer"
                   >
-                    <Image style={iconSize} src={instagramIcon} />
+                    <Image
+                      style={iconSize}
+                      src={instagramIcon}
+                      alt="Instagram Logo"
+                    />
                   </a>
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/company/robotics-for-all"
                     rel="noreferrer"
                   >
-                    <Image style={iconSize} src={linkedin} />
+                    <Image
+                      style={iconSize}
+                      src={linkedin}
+                      alt="LinkedIn Logo"
+                    />
                   </a>
                 </div>
               </section>
