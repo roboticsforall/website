@@ -1,5 +1,5 @@
 import React from "react";
-import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
+import TobyHeaderLogo from "@/media/TobyHeaderLogo-320w.png";
 import { Link } from "react-router-dom";
 import { enrollvolunteerabout } from "@/navbarroutes";
 

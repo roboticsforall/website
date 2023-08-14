@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TobyHeaderLogo from "@/media/TobyHeaderLogo.png";
+import TobyHeaderLogo from "@/media/TobyHeaderLogo-320w.png";
 import { Link } from "react-router-dom";
 import dropdownIcon from "../media/Icons/dropdownIcon.svg";
 import exitIcon from "../media/Icons/exitIcon.svg";
