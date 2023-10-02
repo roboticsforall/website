@@ -71,6 +71,13 @@
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
       "syllabus_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
       "alt": "Python (6th-8th) Logo"
+    },
+    {
+      "course_name": "ScratchJr (K-2nd)",
+      "link": "https://forms.gle/ua8FDxF5HxAw7Mfe6 ",
+      "course_description": "ScratchJr (K-2) introduces students to the basics of block-based programming using the ScratchJr app, which runs on tablets and smartphones.  Students do not need previous experience with programming. Students will need an internet connection and a tablet, computer, or phone.",
+      "file_path": "https://ucarecdn.com/bf2069fa-433a-4004-aa73-0eef7e0976ce/",
+      "alt": "ScratchJr (K-2) Logo"
     }
   ]
 }
