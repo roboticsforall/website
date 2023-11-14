@@ -188,7 +188,17 @@ video {
 .imageSize {
   max-width: 100% !important;
 }
-
+/* Meet Team Page */
+.meet-team-card-title {
+  font-size: 24px;
+  text-align: center;
+}
+.meet-team-card-text {
+  font-size: 1rem !important;
+  line-height: normal;
+  text-align: center;
+  
+}
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
