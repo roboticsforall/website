@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Col, Image, Modal, Button } from "react-bootstrap";
-import Markdown from "markdown-to-jsx";
-import { ColorThemes } from "../../colors";
+import { Col, Card, Modal, Button } from "react-bootstrap";
+//import { ColorThemes } from "../../colors";
 
 interface IProps {
   info: {
@@ -19,85 +18,38 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const nameHeader: React.CSSProperties = {
-    textShadow: "0px 1px 3px rgba(0,0,0,0.58)",
-    wordBreak: "break-word",
-    width: "75%",
-  };
-  const titleHeader: React.CSSProperties = {
-    textShadow: "0px 1px 3px rgba(0,0,0,0.22)",
-  };
-  const bodyText: React.CSSProperties = {
-    color: ColorThemes.white,
-  };
-  const imgBoxShadow = {
-    boxShadow: "0px 7px 8px -8px #000000",
-  };
   return (
     <>
-      <div
-        style={{
-          backgroundColor: props.backgroundColor,
-          borderRadius: "15px",
-        }}
-        onClick={handleShow}
-        onKeyDown={handleShow}
-        className="d-flex m-3 p-3"
-        role="button"
-        tabIndex={0}
-      >
-        <Col className="center-align" md={"auto"}>
-          <picture>
-            <source
-              srcSet={
-                props.info.image + "-/scale_crop/320x320/smart/-/format/webp/"
-              }
-              type="image/webp"
-            />
-            <source
-              srcSet={
-                props.info.image + "-/scale_crop/320x320/smart/-/format/png/"
-              }
-              type="image/png"
-            />
-            <Image
-              fluid
-              src={props.info.image + "-/scale_crop/320x320/smart/"}
-              style={imgBoxShadow}
-              alt={props.info.name + "Headshot"}
-            />
-          </picture>
-        </Col>
-
-        {window.innerWidth <= 600 ? (
-          <></>
-        ) : (
-          <Col style={{ overflowY: "auto" }} className="ms-2">
-            <h2 style={nameHeader}>{props.info.name}</h2>
-            <h3 style={{ color: props.color, ...titleHeader }}>
+    <Col>
+      <div className='holder'>
+        <Card onClick={handleShow} style={{border: 'none', cursor: 'pointer' }}>
+          <Card.Img variant="top" src={props.info.image + "-/scale_crop/100x150/smart/-/format/webp/"} />
+          <Card.Body>
+            <Card.Title className="meet-team-card-title">
+              {props.info.name }</Card.Title>
+            <Card.Text className="meet-team-card-text">
               {props.info.title_pronouns}
-            </h3>
-            <Markdown style={bodyText}>{props.info.description}</Markdown>
-          </Col>
-        )}
+              </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
+    </Col>
 
-      <Modal
-        centered
-        fullscreen={"md-down"}
-        size={"lg"}
-        show={show}
-        onHide={handleClose}
+    <Modal 
+      show={show} 
+      onHide={handleClose}
+      centered
+      fullscreen={"md-down"}
+      size={"lg"}
       >
-        <Modal.Header closeButton>
-          <Modal.Title>
-            <h2>{props.info.name}</h2>
-            <h3>{props.info.title_pronouns}</h3>
-          </Modal.Title>
+      <Modal.Header closeButton>
+          <Modal.Title>{props.info.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{props.info.description}</Modal.Body>
         <Modal.Footer>
-          <Button onClick={handleClose}>Close</Button>
+          <Button variant="primary" onClick={handleClose}>
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
     </>
