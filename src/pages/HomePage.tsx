@@ -1,5 +1,13 @@
 import React from "react";
-import { Row, Container, Col, Image, Carousel } from "react-bootstrap";
+import {
+  Row,
+  Container,
+  Col,
+  Image,
+  Carousel,
+  Card,
+  Button,
+} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import { HomeAffOrgsCard } from "../components/HomeAffOrgsCard";
@@ -168,6 +176,61 @@ export const HomePage: React.FC = () => {
                     {info.label}
                   </h2>
                 </Link>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
+
+      <section>
+        <Container style={{ maxWidth: "75%" }}>
+          <h1 style={affOrgsHeader}>News</h1>
+          <br />
+          <Row>
+            {[
+              {
+                title: "News 1",
+                text: "This is a sample text",
+                piclink:
+                  "https://images.pexels.com/photos/2883049/pexels-photo-2883049.jpeg?cs=srgb&dl=pexels-karl-solano-2883049.jpg&fm=jpg",
+              },
+              {
+                title: "News 2",
+                text: "This is a sample text",
+                piclink:
+                  "https://img.freepik.com/free-photo/modern-office-with-view-city_1340-37363.jpg",
+              },
+              {
+                title: "News 3",
+                text: "This is a sample text",
+                piclink:
+                  "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtNDY1LXRkLTcxNjQuanBn.jpg",
+              },
+            ].map((info, i) => (
+              <Col key={i}>
+                <Card
+                  style={{
+                    background: "rgb(109 208 142)",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                    fontWeight: "bolder",
+                    padding: "10px",
+                  }}
+                  key={i}
+                >
+                  <Card.Img variant="top" src={info.piclink} />
+                  <Card.Body>
+                    <Card.Title
+                      style={{ fontSize: "20px", color: "rgb(252 228 133)" }}
+                    >
+                      {info.title}
+                    </Card.Title>
+                    <Card.Text style={{ color: "white" }}>
+                      {info.text}
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
               </Col>
             ))}
           </Row>
