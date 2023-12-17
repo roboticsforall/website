@@ -18,6 +18,10 @@ import apple600w from "@/media/HoverImages/apple-600w.png";
 import world320w from "@/media/HoverImages/world-320w.png";
 import world600w from "@/media/HoverImages/world-600w.png";
 
+import partner from "@/media/Graphics/curriculumImpacts.png";
+import students from "@/media/Graphics/group.png";
+import ongoing from "@/media/Graphics/partners.png";
+
 import { ColorThemes } from "../colors";
 
 export const HomePage: React.FC = () => {
@@ -32,12 +36,45 @@ export const HomePage: React.FC = () => {
     textAlign: "center",
     wordWrap: "break-word",
   };
+  const ourImpactsHeader: React.CSSProperties = {
+    color: ColorThemes.mainYellow,
+    textAlign: "center",
+    wordWrap: "break-word",
+  };
   const sponsorImageSize: React.CSSProperties = {
     maxHeight: "7vh",
   };
   const yellowRow = {
     backgroundColor: ColorThemes.lightYellow,
   };
+  const lightGrayRow = {
+    backgroundColor: ColorThemes.lightgray,
+  };
+
+  interface ImpactNumberProps {
+    number: number;
+    color: string;
+    plusSign?: string;
+    style?: React.CSSProperties;
+  };
+  
+  const ImpactNumber: React.FC<ImpactNumberProps> = ({ number, color, plusSign, style }) => (
+    <div style={{ color, fontSize: '50px', ...style }}>
+    <span style={{ fontWeight: 'normal' }}>
+      {number}
+      {plusSign && `${plusSign}`}
+    </span>
+  </div>
+  );
+  
+
+
+  const impactData = [
+      { label: 'Ongoing Partners', number: 6, color: ColorThemes.black, location: '/', src: partner, srcset: `${partner} 320w, ${partner} 400w`, alt: 'Alt text for image' },
+      { label: 'Participating Students', number: 100 , color: ColorThemes.black,  location: '/', src: students, srcset: `${students} 320w, ${students} 400w`, alt: 'Alt text for image' },
+      { label: 'Curriculum Options', number: 7, color: ColorThemes.black, location: '/', src: ongoing, srcset: `${ongoing} 320w, ${ongoing} 400w`, alt: 'Alt text for image' },
+  ];
+  
 
   return (
     <>
@@ -174,7 +211,117 @@ export const HomePage: React.FC = () => {
         </Container>
       </section>
 
-      <section>
+
+
+      <section style={{ ...lightGrayRow, width: '100%' }}>
+  <Container>
+    <h1 style={{ ...ourImpactsHeader }}>OUR IMPACTS</h1>
+    <div className="d-flex flex-wrap justify-content-between align-items-center" style={{  width: '100%' }}>
+      {impactData.map((info, i) => (
+        <React.Fragment key={i}>
+          <Col xs={12} sm={6} md={3} className="text-center">
+            <Link className="hyperlink" to={info.location}>
+              <div className="d-flex flex-column align-items-center">
+                <Image
+                  src={info.src}
+                  srcSet={info.srcset}
+                  sizes={'15vw'} 
+                  alt={info.alt}
+                  fluid
+                  style={{ marginBottom: '5px' }}
+                />
+                <h2
+                  style={{
+                    textAlign: 'center',
+                    color: info.color,
+                    fontWeight: 'normal',
+                    fontSize: '20px',
+                    marginTop: '10px',
+                  }}
+                >
+                  {info.label}
+                </h2>
+                {info.label === 'Participating Students' ? (
+                  <ImpactNumber number={info.number} color={info.color} plusSign="+" />
+                ) : (
+                  <ImpactNumber number={info.number} color={info.color} />
+                )}
+              </div>
+            </Link>
+          </Col>
+          {i < impactData.length - 1 && (
+            <div className="d-none d-md-block border-left border-black" style={{ height: '100px', margin: '20px 0' }}></div>
+          )}
+          {i < impactData.length - 1 && (
+            <div className="d-md-none w-100 border-top my-2"></div>
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  </Container>
+</section>
+
+
+
+<section style={lightGrayRow}>
+  <Container className="mt-2">
+    <h1 style={ourImpactsHeader}>OUR IMPACTS</h1>
+  
+    <br></br>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '-20px' }}>
+      {impactData.map((info, i) => (
+        <React.Fragment key={i}>
+          <Col md={3} className="text-center">
+            <Link className="hyperlink" to={info.location}>
+              <Image
+                src={info.src}
+                srcSet={info.srcset}
+                sizes={'5vw'}
+                alt={info.alt}
+                fluid
+              />
+              <br></br>
+             
+                <h2
+                  className="fs-5 fs-md-6" 
+                  style={{
+                    textAlign: 'center',
+                    color: info.color,
+                    fontWeight: 'normal', 
+                    marginTop: '20px',
+                    marginBottom: '0px',
+                    
+                  }}
+                >
+                {info.label}
+                </h2>
+                <span className="fs-5 fs-md-6">
+              {info.label === 'Participating Students' ? (
+                
+                <ImpactNumber number={info.number} color={info.color} plusSign="+" style={{ fontWeight: 'normal', paddingTop: '0px', paddingBottom: '0px'}}/>
+                
+              ) : (
+                <ImpactNumber number={info.number} color={info.color} style={{  fontWeight: 'normal', paddingTop: '0px', paddingBottom: '0px' }}/>
+              )}
+              
+              </span>
+            </Link>
+          </Col>
+          {i < impactData.length - 1 && (
+            <div
+              style={{
+                borderLeft: '2px solid #000', 
+                height: '100px', 
+              }}
+            />
+          )}
+        </React.Fragment>
+      ))}
+    </div>
+  </Container>
+</section>
+
+<section>
         <Container>
           <h1 style={affOrgsHeader}>AFFILIATED ORGANIZATIONS</h1>
           <br></br>
