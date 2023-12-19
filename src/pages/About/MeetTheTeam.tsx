@@ -38,9 +38,9 @@ return (
                 {Headers.First}
             </h2>
             <Container fluid className="container">
-                <Row>
+                <Row className="d-flex justify-content-center ">
                     {bmInfoJSON.board_members_list.map((info: any, i: number) => (
-                    <Col xs={10} sm={6} md={4} lg={4} xl={3} key={i}>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={4} key={i}>
                         <MeetTheTeamCard 
                         info={info}
                         backgroundColor={ColorThemes.mainYellow}
@@ -58,9 +58,9 @@ return (
             {Headers.Second}
         </h2>
         <Container fluid className="container">
-                <Row>
+                <Row className="d-flex justify-content-center">
                     {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
-                    <Col xs={12} sm={6} md={4} lg={3} key={i}>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={4} key={i}>
                         <MeetTheTeamCard 
                         info={info}
                         backgroundColor={ColorThemes.mainYellow}
@@ -78,9 +78,9 @@ return (
                 {Headers.Third}
             </h2>
             <Container fluid className="container">
-                <Row>
+                <Row className="d-flex justify-content-center">
                     {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
-                    <Col xs={12} sm={6} md={4} lg={3} key={i}>
+                    <Col xs={12} sm={6} md={6} lg={6} xl={4} key={i} >
                         <MeetTheTeamCard 
                         info={info}
                         backgroundColor={ColorThemes.mainYellow}
