@@ -38,9 +38,15 @@ return (
                 {Headers.First}
             </h2>
             <Container fluid className="container">
+<<<<<<< HEAD
                 <Row className="d-flex justify-content-center ">
                     {bmInfoJSON.board_members_list.map((info: any, i: number) => (
                     <Col xs={12} sm={6} md={6} lg={6} xl={4} key={i}>
+=======
+                <Row>
+                    {bmInfoJSON.board_members_list.map((info: any, i: number) => (
+                    <Col xs={10} sm={6} md={4} lg={4} xl={3} key={i}>
+>>>>>>> faac4fe1aec2f7a6db41a08a8865d6e7e26c52c5
                         <MeetTheTeamCard 
                         info={info}
                         backgroundColor={ColorThemes.mainYellow}
@@ -58,9 +64,15 @@ return (
             {Headers.Second}
         </h2>
         <Container fluid className="container">
+<<<<<<< HEAD
                 <Row className="d-flex justify-content-center">
                     {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
                     <Col xs={12} sm={6} md={6} lg={6} xl={4} key={i}>
+=======
+                <Row>
+                    {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
+                    <Col xs={12} sm={6} md={4} lg={3} key={i}>
+>>>>>>> faac4fe1aec2f7a6db41a08a8865d6e7e26c52c5
                         <MeetTheTeamCard 
                         info={info}
                         backgroundColor={ColorThemes.mainYellow}
@@ -78,9 +90,15 @@ return (
                 {Headers.Third}
             </h2>
             <Container fluid className="container">
+<<<<<<< HEAD
                 <Row className="d-flex justify-content-center">
                     {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
                     <Col xs={12} sm={6} md={6} lg={6} xl={4} key={i} >
+=======
+                <Row>
+                    {ccInfoJSON.curriculum_committee_list.map((info: any, i: number) => (
+                    <Col xs={12} sm={6} md={4} lg={3} key={i}>
+>>>>>>> faac4fe1aec2f7a6db41a08a8865d6e7e26c52c5
                         <MeetTheTeamCard 
                         info={info}
                         backgroundColor={ColorThemes.mainYellow}

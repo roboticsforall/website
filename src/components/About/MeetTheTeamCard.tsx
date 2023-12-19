@@ -20,6 +20,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
 
   return (
     <>
+<<<<<<< HEAD
     <div className='holder'>
       <Col>
         <Card className="meet-card" onClick={handleShow} 
@@ -40,14 +41,29 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
             <Card.Title className="meet-team-card-title" style={{margin: '0'}}>
               {props.info.name }</Card.Title>
             <Card.Text className="meet-team-card-text" style={{padding: '5px'}}>
+=======
+    <Col>
+      <div className='holder'>
+        <Card onClick={handleShow} style={{border: 'none', cursor: 'pointer' }}>
+          <Card.Img variant="top" src={props.info.image + "-/scale_crop/100x150/smart/-/format/webp/"} />
+          <Card.Body>
+            <Card.Title className="meet-team-card-title">
+              {props.info.name }</Card.Title>
+            <Card.Text className="meet-team-card-text">
+>>>>>>> faac4fe1aec2f7a6db41a08a8865d6e7e26c52c5
               {props.info.title_pronouns}
               </Card.Text>
           </Card.Body>
         </Card>
+<<<<<<< HEAD
     </Col>
 
      </div>
     
+=======
+      </div>
+    </Col>
+>>>>>>> faac4fe1aec2f7a6db41a08a8865d6e7e26c52c5
 
     <Modal 
       show={show} 

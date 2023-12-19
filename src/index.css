@@ -41,7 +41,17 @@ p,
 li {
   font-size: 1.25rem !important;
 }
-
+/* Meet Team Page */
+.meet-team-card-title {
+  font-size: 24px;
+  text-align: center;
+}
+.meet-team-card-text {
+  font-size: 1rem !important;
+  line-height: normal;
+  text-align: center;
+  
+}
 /* button variants */
 /* 
 input::placeholder,
