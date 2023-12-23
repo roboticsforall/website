@@ -41,17 +41,7 @@ p,
 li {
   font-size: 1.25rem !important;
 }
-/* Meet Team Page */
-.meet-team-card-title {
-  font-size: 24px;
-  text-align: center;
-}
-.meet-team-card-text {
-  font-size: 1rem !important;
-  line-height: normal;
-  text-align: center;
-  
-}
+
 /* button variants */
 /* 
 input::placeholder,
@@ -198,18 +188,6 @@ video {
 .imageSize {
   max-width: 100% !important;
 }
-/* Meet Team Page */
-
-.meet-team-card-title {
-  font-size: 24px;
-  text-align: center;
-}
-.meet-team-card-text {
-  font-size: 1rem !important;
-  line-height: normal;
-  text-align: center;
-  
-}
 /* #region media queries */
 /* Extra small devices (phones, 600px and down) */
 
@@ -217,14 +195,6 @@ video {
   .video-width {
     width: 100% !important;
     height: auto;
-  }
-  img.card-img {
-    width: 250px;
-    align-self: center;
-  }
-  .meet-card {
-    width: 80%;
-    justify-content: center;
   }
 }
 
