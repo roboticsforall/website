@@ -210,23 +210,30 @@ export const HomePage: React.FC = () => {
               <Col key={i}>
                 <Card
                   style={{
-                    background: "rgb(109 208 142)",
+                    background: "transparent",
                     marginLeft: "15px",
                     marginRight: "15px",
                     fontWeight: "bolder",
-                    padding: "10px",
+                    // padding: "10px",
+                    // border: "5px solid " + ColorThemes.lightGreen,
+                    // boxShadow: "0 0 5px black",
+                    marginBottom: "30px",
                   }}
+                  className=".shadow-5"
                   key={i}
                 >
                   <Card.Img variant="top" src={info.piclink} />
                   <Card.Body>
                     <Card.Title
-                      style={{ fontSize: "20px", color: "rgb(252 228 133)" }}
+                      style={{
+                        fontSize: "20px",
+                        color: ColorThemes.mainBlue,
+                      }}
                     >
                       {info.title}
                     </Card.Title>
-                    <Card.Text style={{ color: "white" }}>
-                      {info.text}
+                    <Card.Text style={{ color: "black" }}>
+                      <span style={{ fontSize: "17px" }}>{info.text}</span>
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                   </Card.Body>
