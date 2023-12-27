@@ -1,6 +1,6 @@
 import { Navbar } from "@/pages/Navbar";
 import { Update } from "@/pages/Update";
-import ScrollToTop from "@/pages/ScrollToTop";
+import { ScrollToTop } from "@/pages/ScrollToTop";
 // Base Pages
 import { HomePage } from "@/pages/HomePage";
 import { Footer } from "@/pages/Footer";
