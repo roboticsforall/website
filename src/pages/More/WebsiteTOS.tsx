@@ -35,7 +35,7 @@ export const WebsiteTOS: React.FC = () => {
       <br />
       <Container>
         {websitetosJSON.website_tos_list.map((sections, i) => (
-          <Tab.Container>
+          <Tab.Container key={i}>
             <Nav justify fill variant="tabs">
               <Nav.Item>
                 <Nav.Link eventKey="one" style={ActiveStyle({ i })}>

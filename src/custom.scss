@@ -7,7 +7,7 @@ $container-max-widths: (
   xl: 800px,
   xxl: 1000px,
 );
-  
+
 $border-radius: 0.5em;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -22,7 +22,7 @@ $primaryGreen: (
   "light": #70db94,
   "dark": #248f47,
 );
-    
+
 $primaryBlue: (
   "main": #3399ff,
   "light": #70b8ff,
@@ -36,21 +36,19 @@ $primaryOrange: (
 );
 
 $colors: (
-  'primaryBlue': $primaryBlue,
-  'primaryGreen': $primaryGreen,
-  'primaryYellow': $primaryYellow,
-  'primaryOrange': $primaryOrange,
+  "primaryBlue": $primaryBlue,
+  "primaryGreen": $primaryGreen,
+  "primaryYellow": $primaryYellow,
+  "primaryOrange": $primaryOrange,
 );
 
 @each $name, $color in $colors {
   .btn-#{$name} {
-      background-color: map.get($color, "main");
-      color: white;
+    background-color: map.get($color, "main");
+    color: white;
     &:hover {
       background-color: map.get($color, "dark");
       color: white;
     }
   }
 }
-
-
