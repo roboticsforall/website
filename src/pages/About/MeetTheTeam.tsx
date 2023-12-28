@@ -12,10 +12,9 @@ import { ColorThemes } from "@/colors";
 import headerBlobYellow from "@/media/HeaderBlobs/yellow.png";
 
 enum Headers {
-  First = "EXECUTIVE COMMITTEE",
-  Second = "BOARD OF DIRECTORS",
-  Third = "CURRICULUM COMMITTEE",
-  Fourth = "PUBLICITY COMMITTEE",
+  First = "BOARD OF DIRECTORS",
+  Second = "EXECUTIVE COMMITTEE",
+  Third = "OTHER LEADERSHIP",
 }
 
 export const MeetTheTeam: React.FC = () => {
@@ -39,7 +38,7 @@ export const MeetTheTeam: React.FC = () => {
         <Container>
           <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
             {leadership_team.leadership_team_list
-              .filter((person) => person.includes("board_of_directors"))
+              .filter((person) => person.team.includes("board_of_directors"))
               .map((info: any, i: number) => (
                 <Col key={i}>
                   <MeetTheTeamCard
@@ -65,7 +64,7 @@ export const MeetTheTeam: React.FC = () => {
         <Container>
           <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
             {leadership_team.leadership_team_list
-              .filter((person) => person.includes("executive_team"))
+              .filter((person) => person.team.includes("executive_team"))
               .map((info: any, i: number) => (
                 <Col key={i}>
                   <MeetTheTeamCard
@@ -91,7 +90,7 @@ export const MeetTheTeam: React.FC = () => {
         <Container>
           <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
             {leadership_team.leadership_team_list
-              .filter((person) => person.includes("other_leadership"))
+              .filter((person) => person.team.includes("other_leadership"))
               .map((info: any, i: number) => (
                 <Col key={i}>
                   <MeetTheTeamCard

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Col, Card, Modal, Button } from "react-bootstrap";
-//import { ColorThemes } from "../../colors";
+import { Card, Modal, Button } from "react-bootstrap";
 
 interface IProps {
   info: {
     name: string;
-    title_pronouns: string;
+    title: string;
+    pronouns: string;
     description: string;
     image: string;
   };
@@ -31,7 +31,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
 
         <Card.Body className="my-auto">
           <Card.Title>{props.info.name}</Card.Title>
-          <Card.Subtitle>{props.info.title_pronouns}</Card.Subtitle>
+          <Card.Subtitle>{props.info.title}</Card.Subtitle>
         </Card.Body>
       </Card>
 
@@ -43,7 +43,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
         size={"lg"}
       >
         <Modal.Header closeButton>
-          <Modal.Title>{props.info.name}</Modal.Title>
+          <Modal.Title>{`${props.info.name} (${props.info.pronouns})`}</Modal.Title>
         </Modal.Header>
         <Modal.Body>{props.info.description}</Modal.Body>
         <Modal.Footer>
