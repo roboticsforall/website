@@ -40,7 +40,7 @@ export const PrivacyPolicy: React.FC = () => {
       <br />
       <Container>
         {privacypolicyJSON.privacy_policy_list.map((sections, i) => (
-          <Tab.Container>
+          <Tab.Container key={i}>
             <Nav justify fill variant="tabs">
               <Nav.Item>
                 <Nav.Link eventKey="one" style={ActiveStyle({ i: i })}>
