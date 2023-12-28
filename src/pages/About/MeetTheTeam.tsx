@@ -1,8 +1,5 @@
 import React from "react";
-import bmInfoJSON from "@/posts/board_members.json";
-import ccInfoJSON from "@/posts/curriculum_committee.json";
-import adInfoJSON from "@/posts/assistant_directors.json";
-//import pcInfoJSON from "@/posts/pub_committee.json";
+import leadership_team from "@/posts/leadership_team.json";
 
 import { Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
@@ -41,15 +38,17 @@ export const MeetTheTeam: React.FC = () => {
         </h2>
         <Container>
           <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
-            {bmInfoJSON.board_members_list.map((info: any, i: number) => (
-              <Col key={i}>
-                <MeetTheTeamCard
-                  info={info}
-                  backgroundColor={ColorThemes.mainYellow}
-                  color={ColorThemes.darkYellow}
-                />
-              </Col>
-            ))}
+            {leadership_team.leadership_team_list
+              .filter((person) => person.includes("board_of_directors"))
+              .map((info: any, i: number) => (
+                <Col key={i}>
+                  <MeetTheTeamCard
+                    info={info}
+                    backgroundColor={ColorThemes.mainYellow}
+                    color={ColorThemes.darkYellow}
+                  />
+                </Col>
+              ))}
           </Row>
         </Container>
       </section>
@@ -65,15 +64,17 @@ export const MeetTheTeam: React.FC = () => {
         </h2>
         <Container>
           <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
-            {adInfoJSON.assistant_directors_list.map((info: any, i: number) => (
-              <Col key={i}>
-                <MeetTheTeamCard
-                  info={info}
-                  backgroundColor={ColorThemes.mainYellow}
-                  color={ColorThemes.darkYellow}
-                />
-              </Col>
-            ))}
+            {leadership_team.leadership_team_list
+              .filter((person) => person.includes("executive_team"))
+              .map((info: any, i: number) => (
+                <Col key={i}>
+                  <MeetTheTeamCard
+                    info={info}
+                    backgroundColor={ColorThemes.mainYellow}
+                    color={ColorThemes.darkYellow}
+                  />
+                </Col>
+              ))}
           </Row>
         </Container>
       </section>
@@ -89,8 +90,9 @@ export const MeetTheTeam: React.FC = () => {
         </h2>
         <Container>
           <Row xs={1} sm={2} md={3} lg={4} xl={4} className="g-4">
-            {ccInfoJSON.curriculum_committee_list.map(
-              (info: any, i: number) => (
+            {leadership_team.leadership_team_list
+              .filter((person) => person.includes("other_leadership"))
+              .map((info: any, i: number) => (
                 <Col key={i}>
                   <MeetTheTeamCard
                     info={info}
@@ -98,8 +100,7 @@ export const MeetTheTeam: React.FC = () => {
                     color={ColorThemes.darkYellow}
                   />
                 </Col>
-              )
-            )}
+              ))}
           </Row>
         </Container>
       </section>
