@@ -1,0 +1,100 @@
+{
+  "leadership_team_list": [
+    {
+      "name": "Chris Langlois",
+      "title": "President and Chief Executive Officer (he/him)",
+      "description": "Chris Langlois is passionate about STEM education and teaching and has a history of volunteering with organizations that further these causes. He has an educational background in software and electrical engineering and loves to see young people get excited about engineering. Chris joined Robotics for All in 2021 as a Lead Instructor before transitioning to Chief Executive Officer in 2022. In his free time he enjoys cycling, swimming, running, programming, and spending time with family and friends.",
+      "image": "https://ucarecdn.com/aeac1506-18ff-4d8d-bff2-49ffff15ef93/"
+    },
+    {
+      "name": "Garrett Tieng ",
+      "title": "COO and Vice President (he/him) ",
+      "description": "Garrett Tieng is a junior at Case Western Reserve University, studying aerospace and mechanical engineering. He joined in November 2017 as teacher and was promoted to lead instructor before becoming vice president in June 2018. Garrett helped develop several early in-person curricula including Lego Builders, Lego Robotics, and Arduino Explorers curricula. He led the development of online curricula as well, including Code.org, Python, and Scratch. Outside of Robotics for All, Garrett was a co-captain of an internationally awarded Botball robotics team. In his free time, Garrett enjoys exercising, playing table-top games, and writing stories. Garrett.tieng.net",
+      "image": "https://ucarecdn.com/86b845e5-d418-4d35-bef1-6bf01b7b19e2/"
+    },
+    {
+      "name": "Krish Vazirani",
+      "title": "CFO (he/him)",
+      "description": "Krish Vazirani is a senior at Lynbrook High School. He joined Robotics For All in June 2022 as the Head of In-Person Curriculum and later became Head of Fundraising and Grants. In April of 2023, he became the CFO. In his free time, he enjoys studying cooking, rock climbing, and playing video games.",
+      "image": "https://ucarecdn.com/5f59aed3-a596-4f1c-b523-35159c698a99/"
+    },
+    {
+      "name": "Crystal Lee",
+      "title": "​Director of Publicity (she/her)",
+      "description": "Crystal Lee is a current senior living in the Bay Area. She joined Robotics For All as an intern in 2020, and in November of 2020 she became the Director of Publicity. In 2022 she started the Curriculum Partnerships Initiative and currently leads partnerships with Boys and Girls Clubs nationwide to train teachers and bring in-person classes to students. Her other interests include volleyball, fashion design, and yearbook.",
+      "image": "https://ucarecdn.com/1a9991ea-c6d6-42ca-94a2-b8adc93fcec0/"
+    },
+    {
+      "name": "Kenneth Meng",
+      "description": "Kenneth Meng is a sophmore at Purdue University. He joined Robotics For All in January 2019 as a teacher, and became a board member in March 2020. He was appointed as the Director of Curriculum in July 2020. In his free time, he enjoys baking, cooking, and playing Stardew Valley.",
+      "title": "Director of Curriculum (he/him)",
+      "image": "https://ucarecdn.com/8e6ace28-4f13-4ad2-8522-cd7fc873951d/"
+    },
+    {
+      "description": "Elaine Nie is a sophomore at the University of Toronto studying forensic biology. She joined Robotics for All in 2020 as a lead instructor and taught HTML/CSS courses before becoming the CTO in April 2023. Outside of Robotics for All, her interests include water polo, cubing, and video games.",
+      "title": "CTO (she/her)",
+      "name": "Elaine Nie",
+      "image": "https://ucarecdn.com/3b227c1d-dc30-4f64-bbd4-61bc4d3839d2/"
+    },
+    {
+      "name": "Ameya Ravi",
+      "title": "Director of Intern Operations (she/her)",
+      "description": "Ameya is a freshman at Washington High School in Fremont, California. She joined Robotics For All as a business development intern in 2021, and worked in multiple tasks (including leading an intern group) before joining the leadership team as Director of Intern Operations. When she’s not working, Ameya enjoys dancing, pursuing musical interests, writing, and spending time with family.",
+      "image": "https://ucarecdn.com/88ecc685-1e7b-485e-86e0-20a0c13b4e74/"
+    },
+    {
+      "name": "Shubha Vajragiri",
+      "description": "Shubha Vajragiri is a high school senior in the Bay Area. She joined Robotics For All as a teacher in 2022 and later became a Class Coordinator. This year, she became the Head of Coordination. In her free time, Shubha loves to listen to music and play with her dog.",
+      "title": "Director of Coordination (she/her)",
+      "image": "https://ucarecdn.com/7f94e846-9dd2-4e0e-a9d0-4231f3115722/"
+    },
+    {
+      "name": "Rishin Chatterjee",
+      "title": "Director of Recruitment (he/him)",
+      "description": "Rishin Chatterjee is a High School Senior from Long Island, New York. He joined Robotics for All in November 2020 as a business development intern. Since then, he has worked in many areas of the organization including recruitment, finance, and publicity. He has taught classes in Scratch and Lego Explorers as Lead Teacher. Prior to becoming the the Director of Recruitment, he was the Head of Fundraising and Grants. In his free time, he enjoys playing tennis and golf.",
+      "image": "https://ucarecdn.com/09684f8c-404c-4555-b436-2f6f5347516e/"
+    },
+    {
+      "name": "Maximilian Goetz",
+      "title_pronouns": "Board Chairman/President, Founder (he/him)",
+      "description": "Maximilian Goetz is a junior at Georgetown University, where he is majoring in Business and Global Affairs and minoring in Computer Science. He is originally from Palo Alto, California, and is an aspiring business strategist. As a freshman in high school, he envisioned the idea of a youth-led organization dedicated to closing the opportunity gap . From there, he built Robotics For All from the ground up, teaching its first classes and eventually expanding it into a nationwide 501(c)(3) nonprofit organization with both in-person and virtual classes. He served as CEO until December 2021 and remains at Robotics For All as president of the board. At Georgetown, Maximilian is a project manager for two consulting clubs (Georgetown Marketing Association and DCivitas nonprofit consulting) and is a campus tour guide. He has interned in business strategy and marketing at several startups, including Savi Solutions, Talentsteps GmbH and Limber Health. Maximilian is honored to be a two-time TEDx speaker. In his free time, he is an avid aviation geek, enjoys traveling and recreational biking",
+      "image": "https://ucarecdn.com/aba3949d-da3d-4b63-bfbd-7915c65423b7/"
+    },
+    {
+      "name": "Garrett Tieng",
+      "title_pronouns": "Board Secretary (he/him)",
+      "description": "Garrett Tieng is a junior at Case Western Reserve University, studying aerospace and mechanical engineering. He joined in November 2017 as teacher and was promoted to lead instructor before becoming vice president in June 2018. Garrett helped develop several early in-person curricula including Lego Builders, Lego Robotics, and Arduino Explorers curricula. He led the development of online curricula as well, including Code.org, Python, and Scratch. Outside of Robotics for All, Garrett was a co-captain of an internationally awarded Botball robotics team. In his free time, Garrett enjoys exercising, playing table-top games, and writing stories. Garrett.tieng.net",
+      "image": "https://ucarecdn.com/a2d9fa6f-4bc9-404e-a5c1-5311525f9b08/"
+    },
+    {
+      "name": "Aarushi Khandelwal",
+      "title_pronouns": "Board Treasurer (she/her)",
+      "description": "t﻿bd...",
+      "image": "https://ucarecdn.com/360159b9-b79d-44a5-904d-5d4b5b18eb1a/"
+    },
+    {
+      "name": "Chris Langlois",
+      "title_pronouns": "Board Member (he/him)",
+      "description": "Chris Langlois is passionate about STEM education and teaching and has a history of volunteering with organizations that further these causes. He has an educational background in software and electrical engineering and loves to see young people get excited about engineering. Chris joined Robotics for All in 2021 as a Lead Instructor before transitioning to Chief Executive Officer in 2022. In his free time he enjoys cycling, swimming, running, programming, and spending time with family and friends.",
+      "image": "https://ucarecdn.com/ea881c18-f0a1-4b33-8c3b-f36d39b2c200/"
+    },
+    {
+      "name": "Kenneth Meng ",
+      "title_pronouns": "Board Member (he/him) ",
+      "description": "Kenneth Meng is an sophmore at Purdue University. He joined Robotics For All in January 2019 as a teacher, and became a board member in March 2020. He was appointed as the Director of Curriculum in July 2020. In his free time, he enjoys baking, cooking, and playing Stardew Valley.",
+      "image": "https://ucarecdn.com/a16bfdf2-c800-493d-ae80-9b6dee3bb06f/"
+    },
+    {
+      "name": "Arvind Ganeshkumar",
+      "title_pronouns": "Head of Programming Curriculum​ (he/him)",
+      "description": "Arvind Ganeshkumar is a senior at William Fremd High School with a passion for computer science and teaching. Arvind joined Robotics for All in the summer of 2020 as a Lead Instructor for Python. Now he is the Director of Programming Curriculum and is responsible for all programming curriculum development. Outside of Robotics for All, Arvind is a member of Robotics Club, Coding Club, Environmental Club, and Speech Team. In his spare time, Arvind loves programming, woodworking, gaming, and spending quality time with family and friends.",
+      "image": "https://ucarecdn.com/6c5db5b4-b5f6-4d41-9d2d-f4bf400b1f47/"
+    },
+    {
+      "title_pronouns": "Head of In-Person Curriculum (he/him)",
+      "name": "Krish Vazirani",
+      "image": "https://ucarecdn.com/6580e095-e773-4feb-8ba8-31733f9fff92/",
+      "description": "Krish Vazirani is a junior at Lynbrook High School and joined RFA in April of 2022. He currently serves as the Head of In-Person Curriculum. Since middle school, he has been interested in programming and business. Outside of Robotics for All he likes to cook, play video games and play chess."
+    }
+  ]
+}

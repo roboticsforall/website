@@ -29,7 +29,7 @@ export const MeetTheTeamCard: React.FC<IProps> = (props: IProps) => {
           alt={props.info.name}
         />
 
-        <Card.Body>
+        <Card.Body className="my-auto">
           <Card.Title>{props.info.name}</Card.Title>
           <Card.Subtitle>{props.info.title_pronouns}</Card.Subtitle>
         </Card.Body>
