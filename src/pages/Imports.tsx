@@ -13,7 +13,7 @@ import { TeacherPos } from "@/pages/Volunteer/TeacherPos";
 import { InternOverview } from "@/pages/Volunteer/InternOverview";
 import { PositionsOverviewAll } from "@/pages/Volunteer/PositionsOverviewAll";
 import { LeadershipPositions } from "@/pages/Volunteer/LeadershipPositions";
-import { OpenPositions } from "@/pages/Volunteer/OpenPositions";
+import { PVSA } from "@/pages/Volunteer/PVSA";
 //About
 import { AffOrgs } from "@/pages/About/AffOrgs";
 import { AbtOverview } from "@/pages/About/AbtOverview";
@@ -58,5 +58,5 @@ export {
   PageNotFound,
   PositionsOverviewAll,
   LeadershipPositions,
-  OpenPositions,
+  PVSA,
 };

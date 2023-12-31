@@ -9,7 +9,7 @@ import { ColorThemes } from "@/colors";
 import { FAQDropdowns } from "@/components/FAQDropdowns";
 import internOverviewJSON from "@/posts/intern_overview.json";
 
-export const OpenPositions: React.FC = () => {
+export const PVSA: React.FC = () => {
   return (
     <>
       <Header

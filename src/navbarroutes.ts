@@ -50,8 +50,8 @@ export const enrollvolunteerabout = [
         to: "/volunteer/curricdevpositions",
       },
       {
-        subPageName: "Open Positions",
-        to: "/volunteer/openpositions",
+        subPageName: "Presidential Volunteer Service Award",
+        to: "/volunteer/pvsa",
       },
     ],
   },
