@@ -68,6 +68,12 @@ export const App: React.FC = () => {
                 <components.PositionsOverviewAll path="/volunteer/curricdevpositions" />
               </Route>
 
+              <Route
+                exact
+                path="/volunteer/openpositions"
+                component={components.OpenPositions}
+              />
+
               {/* About Pages */}
 
               <Route
