@@ -42,7 +42,7 @@ export const Donate: React.FC = () => {
           </section>
           <ButtonFullWidth
             variant="primaryYellow"
-            location="https://www.paypal.com/donate/?hosted_button_id=N8ZAMTBXH5BQA"
+            location="https://www.paypal.com/US/fundraiser/charity/3581117"
             title={"Donate"}
           />
         </Container>
