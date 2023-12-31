@@ -8,7 +8,7 @@ import CFCLogo from "@/media/AffiliatedOrgs/CFC_Logo.png";
 
 import carouselImagesJSON from "@/posts/homepage_carousel.json";
 
-import WH from "@/media/Sponsors/wh-600w.png";
+import OC from "@/media/Sponsors/oc-600w.png";
 import LQFF from "@/media/Sponsors/lqff-600w.png";
 
 import house320w from "@/media/HoverImages/house-320w.png";
@@ -23,17 +23,12 @@ import { ColorThemes } from "../colors";
 export const HomePage: React.FC = () => {
   const header: React.CSSProperties = {
     color: ColorThemes.mainYellow,
-  };
-  const sponsorsLabel: React.CSSProperties = {
     textAlign: "center",
   };
   const affOrgsHeader: React.CSSProperties = {
     color: ColorThemes.mainYellow,
     textAlign: "center",
     wordWrap: "break-word",
-  };
-  const sponsorImageSize: React.CSSProperties = {
-    maxHeight: "7vh",
   };
   const yellowRow = {
     backgroundColor: ColorThemes.lightYellow,
@@ -43,8 +38,8 @@ export const HomePage: React.FC = () => {
     <>
       <div>
         <Carousel>
-          {carouselImagesJSON.homepage_carousel_images_list.map((x) => (
-            <Carousel.Item>
+          {carouselImagesJSON.homepage_carousel_images_list.map((x, i) => (
+            <Carousel.Item key={i}>
               <picture>
                 <source
                   media="(max-width: 800px)"
@@ -77,7 +72,6 @@ export const HomePage: React.FC = () => {
                           ${x.image}-/crop/21:9/-/progressive/yes/-/format/webp/-/resize/1200x/1200.webp 1200w`}
                   type="image/webp"
                   sizes="(max-width: 1000px) 50vw, 90vw"
-                  alt={x.alt}
                 />
                 <source
                   media="(min-width: 801px)"
@@ -202,32 +196,25 @@ export const HomePage: React.FC = () => {
       </section>
 
       <section>
-        <Container>
-          <h3 style={sponsorsLabel}>
-            Supported by the following organizations and over 50 independent
-            donors:
-          </h3>
-          <div className="d-flex justify-content-around flex-wrap">
+        <Container className="mb-4">
+          <h1 className="text-center">Thanks for Trusting Us</h1>
+          <br></br>
+          <Row className="justify-content-center">
             {[
               {
-                image: WH,
-                alt: "Wilmerhale Logo",
+                image: LQFF,
+                alt: "Li-Qiu Family Foundation Logo",
               },
               {
-                image: LQFF,
-                alt: "Inituitive Logo",
+                image: OC,
+                alt: "Ottercares Logo",
               },
             ].map((sponsor, i) => (
-              <Image
-                key={i}
-                className="m-3"
-                style={sponsorImageSize}
-                src={sponsor.image}
-                alt={sponsor.alt}
-                fluid
-              />
+              <Col key={i} md={4} className="p-3">
+                <Image src={sponsor.image} alt={sponsor.alt} fluid />
+              </Col>
             ))}
-          </div>
+          </Row>
         </Container>
       </section>
     </>
