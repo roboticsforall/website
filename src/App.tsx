@@ -13,14 +13,6 @@ export const App: React.FC = () => {
           <div id="wrapper" role="main">
             <Switch location={location}>
               <Route exact path="/" component={components.HomePage} />
-              <Route
-                path="/admin"
-                component={() => {
-                  window.location.href =
-                    "https://rfa-cms-007dbe0be65c.herokuapp.com/";
-                  return null;
-                }}
-              />
               {/* Enroll Pages */}
               <Route
                 exact
