@@ -1,5 +1,5 @@
 backend:
-  name: main
+  name: github
   repo: roboticsforall/website # Path to your Github/Gitlab repository
   branch: main # Branch to update
   base_url: https://cms.roboticsforall.net # Path to ext auth provider
