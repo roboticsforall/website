@@ -2,7 +2,7 @@
   "courses_list": [
     {
       "course_name": "Code.org (K-1st)",
-      "link": "https://forms.gle/fLfiQAZ3taRpYj4P8",
+      "link": "https://forms.gle/bHZbu2nmqQuskwtCA",
       "course_description": "The Fundamentals of Programming with Code.org course is an entry-level class for K-1st graders. No experience is necessary for this class. Code.org is an easy-to-use platform that teaches fundamental programming concepts. Students will need internet access, paper, and a writing utensil.",
       "file_path": "https://ucarecdn.com/a7759313-2958-4d84-b05e-adb241da2bdb/",
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -11,7 +11,7 @@
     },
     {
       "course_name": "ScratchJr (K-2nd)",
-      "link": "https://forms.gle/FBW2XMiZcgMvFAaPA",
+      "link": "https://forms.gle/SBSsCG2MjKqx9LK18",
       "course_description": "ScratchJr (K-2) introduces students to the basics of block-based programming using the ScratchJr app, which runs on tablets and smartphones.  Students do not need previous experience with programming. Students will need an internet connection and a tablet, computer, or phone.",
       "file_path": "https://ucarecdn.com/bf2069fa-433a-4004-aa73-0eef7e0976ce/",
       "alt": "ScratchJr (K-2) Logo"
@@ -27,7 +27,7 @@
     },
     {
       "course_name": "Basic Scratch (2nd-3rd) Pt 2",
-      "link": "https://forms.gle/MwfiF3ETNyLipmjG7",
+      "link": "https://forms.gle/Q7WqGdeSheYtoaot6",
       "course_description": "Basic Scratch Part 2 (2-3) is the second part of a two-part course introducing the Scratch platform to 2nd and 3rd graders. Students should have taken Basic Scratch Part 1 before taking this class.  Scratch is a popular visual block-based programming language developed by the MIT Media Lab. Students need internet access and a personal device (preferably computer)",
       "file_path": "https://ucarecdn.com/34f5545c-23c0-4cb0-9551-05fa5c79b7af/",
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -36,7 +36,7 @@
     },
     {
       "course_name": "Scratch Dev (4th-6th)",
-      "link": "https://forms.gle/rCYJYF82rL9iSeoL9",
+      "link": "https://forms.gle/zs3ApzLL684f3ogR7",
       "file_path": "https://ucarecdn.com/6cab923d-c43d-455a-ab9d-b1857a66778c/",
       "course_description": "S﻿cratch Dev (4-6) is an entry-level course introducing students to the Scratch platform, a popular block-based programming language developed by the MIT Media Lab. Students do not need prior experience with programming. Students will need an internet connection and a personal device (preferably computer).",
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -45,7 +45,7 @@
     },
     {
       "course_name": "Scratch Game Dev (3red-8th)",
-      "link": "https://forms.gle/iZJhtXGhpb5cFa9b6",
+      "link": "https://forms.gle/F8jnNGS4NWoZhkLx8",
       "file_path": "https://ucarecdn.com/6cab923d-c43d-455a-ab9d-b1857a66778c/",
       "course_description": "S﻿cratch Game Dev (3-8) is an intermediate-level course where students will continue to learn Scratch, a popular block-based programming language developed by the MIT Media Lab. In this course, students will advance and apply their knowledge of Scratch to create their own games. Students need prior experience with Scratch. Students will need an internet connection and a personal device (preferably computer).",
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -54,7 +54,7 @@
     },
     {
       "course_name": "Tinkercad (3rd-8th)",
-      "file_path": "https://ucarecdn.com/28d5cf25-d0de-4834-8217-6929810dde7c/",
+      "file_path": "https://forms.gle/bcXpUbXrce8g6wx88",
       "link": "https://forms.gle/nTztHBjX3A5bhzWQ8",
       "course_description": "C﻿omputer-Aided Design (CAD) with Tinkercad introduces students in 3rd-8th grades to the basics of computer-aided design using Tinkercad, a simple web-based platform. Students do not need prior experience or knowledge of CAD. Students will need internet access and a personal device (preferably computer).",
       "syllabus_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -63,7 +63,7 @@
     },
     {
       "course_name": "Onshape (5th-12th)",
-      "link": "https://forms.gle/Nqxiv1pVB3wjR2yN6",
+      "link": "https://forms.gle/bvwM6XSXhQ4791hi7",
       "file_path": "https://ucarecdn.com/6882118d-020a-4248-a7e2-840174739f4d/",
       "course_description": "**Onshape will not be running over the summer. Please check in during August to see if it will be running for our fall session.**\n\nC﻿omputer-Aided Design (CAD) with Onshape introduces students in 5th-8th grades to the basics of computer-aided design using Onshape, a cloud-based CAD platform that runs in a browser and is frequently used by industry. This curriculum teaches sketch-based modeling with an emphasis on dimensions and constraints for engineering design. Students do not need prior experience or knowledge of CAD. Students will need internet access and a personal device (preferably computer).",
       "syllabus_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -72,7 +72,7 @@
     },
     {
       "course_name": "HTML/CSS (6th-8th)",
-      "link": "https://forms.gle/4NCSsJHP9YxpY7xMA",
+      "link": "https://forms.gle/xwx9hgTZVBJ99B2GA",
       "course_description": "W﻿eb Design with HTML/CSS (6-8) introduces students in 6th-8th grades to how websites are developed. HTML provides structure to a website, and CSS provides style. Students do not need previous experience or knowledge of web development. Students will need an internet connection and a computer.",
       "file_path": "https://ucarecdn.com/80953391-e256-4103-be91-dfeff3818a3a/",
       "syllabus_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -81,7 +81,7 @@
     },
     {
       "course_name": "Python (6th-8th)",
-      "link": "https://forms.gle/o4P5cV4EznWcJwq38",
+      "link": "https://forms.gle/7u3tinC8zLnuuGAq8",
       "course_description": "P﻿ython (6-8) introduces students to the Python coding language, which is a text-based programming language widely used by many companies. Students do not need previous experience with programming. Students will need an internet connection and a personal device (preferably computer).",
       "file_path": "https://ucarecdn.com/6da0c1a8-8aef-4a8a-847e-d88ba09aeb43/",
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
@@ -90,7 +90,7 @@
     },
     {
       "course_name": "Java (6-8)",
-      "link": "https://forms.gle/pFZLnCCJpMAwYDF39",
+      "link": "https://forms.gle/jyw2agXB1SGSbD3B9",
       "course_description": "Java (6-8) introduces students to the Java coding language, which is an Object-Oriented programming language widely used by many companies. Students do not need previous experience with programming. Students will need an internet connection and a personal device (preferably computer).",
       "file_path": "https://ucarecdn.com/6da0c1a8-8aef-4a8a-847e-d88ba09aeb43/",
       "enroll_link": "https://en.wikipedia.org/wiki/Wiki#:~:text=A%20wiki%20(%2F%CB%88w%C9%AA,audience%2C%20using%20a%20web%20browser.",
